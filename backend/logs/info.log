@@ -90,3 +90,26 @@
 2023-11-25 14:23:17 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
 2023-11-25 14:23:17 info: POST /user/register [31m500 338.652 ms - 791
 2023-11-25 14:23:25 info: POST /user/register [32m200 457.450 ms - 334
+2023-11-25 14:38:38 error: 404 - route not found - /user/login - GET - ::ffff:127.0.0.1
+2023-11-25 14:38:38 info: GET /user/login [33m404 15.009 ms - 57
+2023-11-25 14:38:54 error: 401 - Invalid login credentials - /user/login - POST - ::ffff:127.0.0.1
+2023-11-25 14:38:54 info: POST /user/login [33m401 159.971 ms - 452
+2023-11-25 14:38:59 error: 401 - Invalid login credentials - /user/login - POST - ::ffff:127.0.0.1
+2023-11-25 14:38:59 info: POST /user/login [33m401 169.169 ms - 452
+2023-11-25 14:39:13 error: 401 - Invalid login credentials - /user/login - POST - ::ffff:127.0.0.1
+2023-11-25 14:39:13 info: POST /user/login [33m401 280.703 ms - 452
+2023-11-25 14:42:12 error: 401 - Invalid login credentials - /user/login - POST - ::ffff:127.0.0.1
+2023-11-25 14:42:12 info: POST /user/login [33m401 441.664 ms - 452
+2023-11-25 14:42:57 error: 400 - Email already registered - /user/register - POST - ::ffff:127.0.0.1
+2023-11-25 14:42:57 info: POST /user/register [33m400 226.052 ms - 306
+2023-11-25 14:43:06 error: 401 - Invalid login credentials - /user/login - POST - ::ffff:127.0.0.1
+2023-11-25 14:43:06 info: POST /user/login [33m401 206.996 ms - 452
+2023-11-25 14:44:00 error: 401 - Invalid login credentials - /user/login - POST - ::ffff:127.0.0.1
+2023-11-25 14:44:00 info: POST /user/login [33m401 213.131 ms - 452
+2023-11-25 14:44:30 error: 401 - Invalid login credentials - /user/login - POST - ::ffff:127.0.0.1
+2023-11-25 14:44:30 info: POST /user/login [33m401 350.897 ms - 452
+2023-11-25 14:45:14 error: 401 - Incorrect password - /user/login - POST - ::ffff:127.0.0.1
+2023-11-25 14:45:15 info: POST /user/login [33m401 3667.276 ms - 355
+2023-11-25 14:45:32 info: POST /user/login [32m200 438.007 ms - 121
+2023-11-25 14:58:55 info: POST /user/login [32m200 488.096 ms - 121
+2023-11-25 14:59:49 info: POST /user/login [32m200 680.678 ms - 121

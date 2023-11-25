@@ -31,13 +31,36 @@ export const registerUser = catchAsync(async (req, res) => {
 
   const newUser = new User(req.body);
 
-  const alreadyUser = await User.findOne({ email: req.body.email });
+  const alreadyUser = await User.findOne({ email: email });
 
   if (alreadyUser) {
-    throw new AppError("Email already registeres", 400);
+    throw new AppError("Email already registered", 400);
   }
   const token = await newUser.generateAuthToken();
+  // Store the token in a cookie
+  res.cookie("authToken", token, { httpOnly: true });
   await newUser.save();
 
-  res.status(200).send({ newUser, token });
+  res.status(200).send({ newUser });
 });
+
+export const loginUser = catchAsync(async (req, res) => {
+  const { email, password } = req.body;
+
+  if (isNullOrEmpty(email) || isNullOrEmpty(password)) {
+    throw new AppError("Please fill all the inputs", 400);
+  }``
+
+  const user = await User.findByCredentials(password, email);
+
+  const token = user.generateAuthToken();
+  console.log(token)
+
+  res.cookie("authToken", token, { httpOnly: true });
+
+  await user.save();
+
+  res.status(200).send(user);
+});
+
+
