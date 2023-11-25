@@ -53,17 +53,15 @@ export const loginUser = catchAsync(async (req, res) => {
 
   const user = await User.findByCredentials(password, email);
 
-  const token = user.generateAuthToken();
-  console.log(token);
-
-  res.cookie("authToken", token, { httpOnly: true });
-
+  const token = await user.generateAuthToken();
+  // Set a cookie named 'authToken' with the encoded token
+  await res.cookie("auth", token, { httpOnly: true });
   await user.save();
 
   res.status(200).send(user);
 });
 
 export const getUser = catchAsync(async (req, res) => {
-  console.log(req.user)
+  console.log(req.user);
   res.send(req.user);
 });

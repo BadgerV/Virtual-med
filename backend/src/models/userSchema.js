@@ -34,9 +34,6 @@ const UserSchema = new mongoose.Schema({
     required: true,
     validate: {
       validator: (value) => {
-        if (value.toLowerCase().includes("password")) {
-          throw new Error("Password cannot include passord");
-        }
         // Use the validator library to check if the password is strong enough
         // You can customize the strength criteria based on your requirements
         return validator.isStrongPassword(value, {

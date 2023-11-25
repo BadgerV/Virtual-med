@@ -117,3 +117,79 @@
 2023-11-25 15:15:18 error: 500 - user is not defined - /user/profile - GET - ::1
 2023-11-25 15:15:18 info: GET /user/profile [31m500 23.215 ms - 1428
 2023-11-25 15:15:49 info: GET /user/profile [32m200 6.815 ms - -
+2023-11-25 15:30:27 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-11-25 15:30:27 info: GET /user/profile [33m404 22.270 ms - 61
+2023-11-25 15:31:24 info: POST /user/login [32m200 469.353 ms - 121
+2023-11-25 15:32:39 info: POST /user/login [32m200 445.980 ms - 121
+2023-11-25 15:32:57 info: POST /user/login [32m200 375.899 ms - 121
+2023-11-25 15:33:06 error: 404 - route not found - /user/profile - POST - ::1
+2023-11-25 15:33:06 info: POST /user/profile [33m404 3.664 ms - 57
+2023-11-25 15:35:50 info: POST /user/login [32m200 682.021 ms - 121
+2023-11-25 15:36:03 error: 500 - jwt must be a string - /user/profile - GET - ::1
+2023-11-25 15:36:03 info: GET /user/profile [31m500 6.111 ms - 1432
+2023-11-25 15:37:53 error: 500 - jwt must be a string - /user/profile - GET - ::1
+2023-11-25 15:37:53 info: GET /user/profile [31m500 24.356 ms - 1432
+2023-11-25 15:38:23 error: 500 - jwt malformed - /user/profile - GET - ::1
+2023-11-25 15:38:23 info: GET /user/profile [31m500 26.994 ms - 1418
+2023-11-25 15:39:32 info: GET /user/profile [32m200 6.439 ms - 15
+2023-11-25 15:39:32 error: 500 - jwt malformed - /user/profile - GET - ::1
+2023-11-25 15:39:52 info: GET /user/profile [32m200 5.622 ms - 1
+2023-11-25 15:39:52 error: 500 - jwt malformed - /user/profile - GET - ::1
+2023-11-25 15:41:03 info: GET /user/profile [32m200 6.061 ms - 1
+2023-11-25 15:41:03 error: 500 - jwt malformed - /user/profile - GET - ::1
+2023-11-25 15:41:55 error: 404 - route not found - /user/login - GET - ::1
+2023-11-25 15:41:55 info: GET /user/login [33m404 18.525 ms - 57
+2023-11-25 15:42:08 info: POST /user/login [32m200 516.179 ms - 121
+2023-11-25 15:43:47 info: POST /user/login [32m200 5940.557 ms - 121
+2023-11-25 15:45:58 info: POST /user/login [32m200 506.137 ms - 122
+2023-11-25 15:46:08 error: 404 - route not found - /user/lprofile - GET - ::1
+2023-11-25 15:46:08 info: GET /user/lprofile [33m404 4.254 ms - 57
+2023-11-25 15:46:26 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-11-25 15:46:26 info: GET /user/profile [33m401 9.444 ms - 1402
+2023-11-25 15:49:00 info: POST /user/login [32m200 593.926 ms - 122
+2023-11-25 15:49:11 error: 404 - route not found - /user/profile - POST - ::1
+2023-11-25 15:49:11 info: POST /user/profile [33m404 3.754 ms - 57
+2023-11-25 15:49:16 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-11-25 15:49:16 info: GET /user/profile [33m401 8.529 ms - 1402
+2023-11-25 15:55:37 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-11-25 15:55:37 info: GET /user/profile [33m401 25.364 ms - 1402
+2023-11-25 15:55:46 error: 500 - encodedToken is not defined - /user/login - POST - ::1
+2023-11-25 15:55:46 info: POST /user/login [31m500 253.432 ms - 238
+2023-11-25 15:56:26 info: POST /user/login [32m200 17363.911 ms - 122
+2023-11-25 15:56:28 info: POST /user/login [32m200 9240.246 ms - 122
+2023-11-25 15:57:28 info: POST /user/login [32m200 525.834 ms - 122
+2023-11-25 15:57:51 info: POST /user/login [32m200 758.833 ms - 122
+2023-11-25 15:59:00 error: 500 - prop is not defined - /user/login - POST - ::1
+2023-11-25 15:59:01 info: POST /user/login [31m500 386.810 ms - 221
+2023-11-25 15:59:26 error: 500 - prop is not defined - /user/login - POST - ::1
+2023-11-25 15:59:26 info: POST /user/login [31m500 289.892 ms - 221
+2023-11-25 15:59:46 info: POST /user/login [32m200 2231.805 ms - 122
+2023-11-25 16:00:24 info: POST /user/login [32m200 575.578 ms - 122
+2023-11-25 16:00:56 info: POST /user/login [32m200 1828.507 ms - 122
+2023-11-25 16:01:43 info: POST /user/login [32m200 608.987 ms - 122
+2023-11-25 16:02:53 info: POST /user/login [32m200 545.175 ms - 122
+2023-11-25 16:03:06 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-11-25 16:03:06 info: GET /user/profile [33m401 21.300 ms - 1402
+2023-11-25 16:04:57 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-11-25 16:04:57 info: GET /user/profile [33m401 35.564 ms - 1402
+2023-11-25 16:05:06 info: POST /user/login [32m200 567.479 ms - 122
+2023-11-25 16:05:18 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-11-25 16:05:18 info: GET /user/profile [33m401 14.384 ms - 1402
+2023-11-25 16:06:23 info: POST /user/login [32m200 661.353 ms - 122
+2023-11-25 16:06:58 info: POST /user/login [32m200 551.231 ms - 122
+2023-11-25 16:07:21 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-11-25 16:07:21 info: GET /user/profile [33m401 9.242 ms - 1402
+2023-11-25 16:07:52 info: POST /user/login [32m200 571.286 ms - 122
+2023-11-25 16:08:00 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-11-25 16:08:00 info: GET /user/profile [33m401 7.848 ms - 1402
+2023-11-25 16:08:27 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-11-25 16:08:27 info: GET /user/profile [33m404 4.589 ms - 61
+2023-11-25 16:09:19 info: POST /user/login [32m200 617.345 ms - 122
+2023-11-25 16:09:41 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-11-25 16:09:41 info: GET /user/profile [33m401 10.988 ms - 1402
+2023-11-25 16:10:42 info: POST /user/login [32m200 451.889 ms - 122
+2023-11-25 16:11:11 info: POST /user/login [32m200 1828.368 ms - 122
+2023-11-25 16:12:20 info: POST /user/login [32m200 491.528 ms - 122
+2023-11-25 16:12:42 error: 404 - route not found - /user/profile - POST - ::1
+2023-11-25 16:12:42 info: POST /user/profile [33m404 7.255 ms - 57
+2023-11-25 16:12:49 info: GET /user/profile [32m200 470.938 ms - 122
