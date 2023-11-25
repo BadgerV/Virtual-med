@@ -49,30 +49,23 @@ const StaffSchema = new mongoose.Schema({
   },
   cerfiticate1: {
     type: Buffer,
-    required: true,
   },
   certificate2: {
     type: Buffer,
-    required: true,
   },
   speciality: {
     type: String,
-    required: true,
   },
   location: {
     type: String,
-    required: true,
   },
   isActive: {
     type: String,
-    required: true,
     default: true,
   },
   hourlyPrice: {
     type: Number,
-    required: true,
   },
 });
-
 
 export default StaffSchema;

@@ -1,4 +1,6 @@
 import Staff from "../models/StaffModel";
+import multer from "multer";
+import User from "../models/UserModel";
 
 export const registerStaff = catchAsync(async (req, res) => {
   const { firstName, lastName, email, password } = req.body;
@@ -16,7 +18,9 @@ export const registerStaff = catchAsync(async (req, res) => {
 
   const alreadyStaff = await Staff.findOne({ email: email });
 
-  if (alreadyStaff) {
+  const alreadyUser = await User.findOne({ email: email });
+
+  if (alreadyStaff || alreadyUser) {
     throw new AppError("Email already registered", 400);
   }
   const token = await newStaff.generateAuthToken();

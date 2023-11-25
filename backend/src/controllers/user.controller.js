@@ -33,7 +33,10 @@ export const registerUser = catchAsync(async (req, res) => {
 
   const alreadyUser = await User.findOne({ email: email });
 
-  if (alreadyUser) {
+  const alreadyStaff = await Staff.findOne({ email: email });
+
+
+  if (alreadyUser || alreadyStaff) {
     throw new AppError("Email already registered", 400);
   }
   const token = await newUser.generateAuthToken();
