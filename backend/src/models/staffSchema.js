@@ -20,6 +20,15 @@ const StaffSchema = new mongoose.Schema({
       message: "Name can only contain letters",
     },
   },
+  email: {
+    type: String,
+    required: true,
+    trim: true,
+    unique: true,
+    validate: {
+      validator: (value) => validator.isEmail(value),
+    },
+  },
   password: {
     type: String,
     required: true,
@@ -40,7 +49,6 @@ const StaffSchema = new mongoose.Schema({
   },
   yearsOfExperience: {
     type: Number,
-    required: true,
     trim: true,
     validate: {
       validator: (value) => Number.isInteger(value) && value > 0,
@@ -56,6 +64,9 @@ const StaffSchema = new mongoose.Schema({
   speciality: {
     type: String,
   },
+  passportImgae: {
+    type: Buffer,
+  },
   location: {
     type: String,
   },
@@ -66,6 +77,22 @@ const StaffSchema = new mongoose.Schema({
   hourlyPrice: {
     type: Number,
   },
+  hasProvidedCredentials: {
+    type: Boolean,
+    default: false,
+  },
+  accountType: {
+    type: String,
+    default: "staff",
+  },
+
+  tokens: [
+    {
+      token: {
+        type: String,
+      },
+    },
+  ],
 });
 
 export default StaffSchema;

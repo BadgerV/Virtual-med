@@ -193,3 +193,65 @@
 2023-11-25 16:12:42 error: 404 - route not found - /user/profile - POST - ::1
 2023-11-25 16:12:42 info: POST /user/profile [33m404 7.255 ms - 57
 2023-11-25 16:12:49 info: GET /user/profile [32m200 470.938 ms - 122
+2023-11-25 17:24:55 error: 500 - isNullOrEmpty is not defined - /staff/signup - POST - ::1
+2023-11-25 17:24:55 info: POST /staff/signup [31m500 11.061 ms - 1445
+2023-11-25 17:25:39 error: 500 - isNullOrEmpty is not defined - /staff/signup - POST - ::1
+2023-11-25 17:25:39 info: POST /staff/signup [31m500 11.368 ms - 1445
+2023-11-25 17:26:01 error: 500 - AppError is not defined - /staff/signup - POST - ::1
+2023-11-25 17:26:01 info: POST /staff/signup [31m500 372.687 ms - 313
+2023-11-25 17:26:19 error: 400 - Email already registered - /staff/signup - POST - ::1
+2023-11-25 17:26:19 info: POST /staff/signup [33m400 1483.329 ms - 307
+2023-11-25 17:26:55 error: 401 - Invalid token - /staff/provide-credentials - POST - ::1
+2023-11-25 17:26:55 info: POST /staff/provide-credentials [33m401 19.424 ms - 1402
+2023-11-25 17:27:23 error: 500 - Staff validation failed: yearsOfExperience: Path `yearsOfExperience` is required. - /staff/signup - POST - ::1
+2023-11-25 17:27:23 info: POST /staff/signup [31m500 437.331 ms - 695
+2023-11-25 17:27:57 info: POST /staff/signup [32m200 559.334 ms - 2
+2023-11-25 17:29:37 info: POST /staff/signup [32m200 532.521 ms - -
+2023-11-25 17:29:42 info: POST /staff/signup [32m200 537.895 ms - -
+2023-11-25 17:30:14 info: POST /staff/signup [32m200 1890.512 ms - -
+2023-11-25 17:31:57 info: POST /staff/signup [32m200 589.297 ms - -
+2023-11-25 17:32:02 error: 400 - Email already registered - /staff/signup - POST - ::1
+2023-11-25 17:32:02 info: POST /staff/signup [33m400 338.351 ms - 307
+2023-11-25 17:32:38 error: 400 - Email already registered - /staff/signup - POST - ::1
+2023-11-25 17:32:38 info: POST /staff/signup [33m400 379.577 ms - 307
+2023-11-25 17:32:43 info: POST /staff/signup [32m200 625.596 ms - 2
+2023-11-25 17:33:40 error: 404 - route not found - /user/signup - POST - ::1
+2023-11-25 17:33:40 info: POST /user/signup [33m404 2.473 ms - 57
+2023-11-25 17:34:04 error: 500 - Staff is not defined - /user/register - POST - ::1
+2023-11-25 17:34:04 info: POST /user/register [31m500 192.699 ms - 307
+2023-11-25 17:34:29 error: 400 - Email already registered - /user/register - POST - ::1
+2023-11-25 17:34:30 info: POST /user/register [33m400 358.013 ms - 306
+2023-11-25 17:34:36 info: POST /user/register [32m200 517.572 ms - 157
+2023-11-25 17:36:12 info: POST /staff/signup [32m200 544.073 ms - 2
+2023-11-25 17:38:16 error: 400 - Email already registered - /staff/signup - POST - ::1
+2023-11-25 17:38:16 info: POST /staff/signup [33m400 338.677 ms - 307
+2023-11-25 17:38:28 error: 400 - Email already registered - /staff/signup - POST - ::1
+2023-11-25 17:38:28 info: POST /staff/signup [33m400 333.308 ms - 307
+2023-11-25 17:39:47 info: POST /staff/signup [32m200 2.912 ms - 9
+2023-11-25 17:40:36 info: POST /staff/signup [32m200 581.590 ms - 2
+2023-11-25 17:44:04 info: POST /staff/signup [32m200 533.386 ms - 2
+2023-11-25 17:45:29 error: 400 - Email already registered - /staff/signup - POST - ::1
+2023-11-25 17:45:29 info: POST /staff/signup [33m400 327.245 ms - 307
+2023-11-25 17:45:35 info: POST /staff/signup [32m200 501.871 ms - 2
+2023-11-25 17:46:49 info: POST /staff/signup [32m200 592.567 ms - 2
+2023-11-25 17:48:41 info: POST /staff/signup [32m200 546.145 ms - 2
+2023-11-25 17:49:09 info: POST /staff/signup [32m200 532.205 ms - 2
+2023-11-25 17:50:21 info: POST /staff/signup [32m200 524.281 ms - 2
+2023-11-25 17:51:01 info: POST /staff/signup [32m200 529.207 ms - 5
+2023-11-25 17:51:26 info: POST /staff/signup [32m200 563.865 ms - -
+2023-11-25 17:51:48 info: POST /staff/signup [32m200 551.800 ms - -
+2023-11-25 17:55:01 info: POST /staff/signup [32m200 553.409 ms - 2
+2023-11-25 17:55:41 info: POST /staff/signup [32m200 576.971 ms - 469
+2023-11-25 17:56:57 error: 404 - Please authenticate - /staff/provide-credentials - POST - ::1
+2023-11-25 17:56:57 info: POST /staff/provide-credentials [33m404 15.195 ms - 61
+2023-11-25 17:57:01 error: 404 - Please authenticate - /staff/provide-credentials - POST - ::1
+2023-11-25 17:57:01 info: POST /staff/provide-credentials [33m404 3.190 ms - 61
+2023-11-25 17:57:17 info: POST /staff/signup [32m200 565.818 ms - 470
+2023-11-25 17:57:33 error: 404 - Please authenticate - /staff/provide-credentials - POST - ::1
+2023-11-25 17:57:33 info: POST /staff/provide-credentials [33m404 1.700 ms - 61
+2023-11-25 17:58:09 error: 404 - Please authenticate - /staff/provide-credentials - POST - ::1
+2023-11-25 17:58:09 info: POST /staff/provide-credentials [33m404 11.421 ms - 61
+2023-11-25 17:59:16 error: 404 - Please authenticate - /staff/provide-credentials - POST - ::1
+2023-11-25 17:59:16 info: POST /staff/provide-credentials [33m404 10.877 ms - 61
+2023-11-25 18:01:00 info: POST /staff/register [32m200 564.723 ms - 471
+2023-11-25 18:04:15 info: POST /staff/provide-credentials [32m200 188.383 ms - 458

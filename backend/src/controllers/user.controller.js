@@ -2,6 +2,7 @@ import AppError from "../common/utils/appError.js";
 import { catchAsync } from "../common/utils/errorHandler.js";
 import User from "../models/UserModel.js";
 import { isNullOrEmpty } from "../common/utils/helper.js";
+import Staff from "../models/StaffModel.js";
 
 // //GET USER
 // export const getUser = catchAsync(async (req, res) => {
@@ -34,7 +35,6 @@ export const registerUser = catchAsync(async (req, res) => {
   const alreadyUser = await User.findOne({ email: email });
 
   const alreadyStaff = await Staff.findOne({ email: email });
-
 
   if (alreadyUser || alreadyStaff) {
     throw new AppError("Email already registered", 400);

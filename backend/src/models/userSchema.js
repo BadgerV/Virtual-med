@@ -53,11 +53,15 @@ const UserSchema = new mongoose.Schema({
   },
   tokens: [
     {
-      token : {
-        type : String,
-      }
+      token: {
+        type: String,
+      },
     },
   ],
+  accountType: {
+    type: String,
+    default: "user",
+  },
 });
 
 export default UserSchema;

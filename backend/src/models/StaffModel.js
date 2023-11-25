@@ -1,4 +1,4 @@
-import StaffSchema from "./staffSchema";
+import StaffSchema from "./staffSchema.js";
 import mongoose from "mongoose";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
@@ -8,11 +8,13 @@ import { ENVIRONMENT } from "../common/config/environment.js";
 StaffSchema.methods.toJSON = function () {
   const staff = this;
 
-  const staffObject = staff;
+  const staffObject = staff.toObject();
 
   delete staffObject.password;
   delete staffObject.cerfiticate1;
   delete staffObject.cerfiticate2;
+
+  return staffObject;
 };
 
 //this is to compare the password with the already hashed passowrd
@@ -61,7 +63,10 @@ StaffSchema.methods.generateAuthToken = async function () {
   //   }
 
   const token = jwt.sign(
-    { _id: staff._id.toString() },
+    {
+      _id: staff._id.toString(),
+      type: "staff",
+    },
     ENVIRONMENT.APP.SECRET,
     {
       expiresIn: "1d",

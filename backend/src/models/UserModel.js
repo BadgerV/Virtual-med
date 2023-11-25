@@ -60,9 +60,13 @@ UserSchema.methods.generateAuthToken = async function () {
   //     throw new AppError("No user", 400)
   //   }
 
-  const token = jwt.sign({ _id: user._id.toString() }, ENVIRONMENT.APP.SECRET, {
-    expiresIn: "1d",
-  });
+  const token = jwt.sign(
+    { _id: user._id.toString(), type: "user" },
+    ENVIRONMENT.APP.SECRET,
+    {
+      expiresIn: "1d",
+    }
+  );
 
   user.tokens = user.tokens.concat({ token });
 

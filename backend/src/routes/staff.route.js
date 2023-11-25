@@ -1,10 +1,15 @@
-import { Express } from "express";
-import { registerStaff } from "../controllers/staff.controller";
+import { Router } from "express";
+import {
+  provideCredentials,
+  registerStaff,
+} from "../controllers/staff.controller.js";
+import { staffAuth } from "../common/middleware/auth.js";
 
-const router = Express();
+const router = Router();
 
 const staffRoutes = () => {
-  router.post("/signup", registerStaff);
+  router.post("/register", registerStaff);
+  router.post("/provide-credentials", staffAuth, provideCredentials);
 
   return router;
 };
