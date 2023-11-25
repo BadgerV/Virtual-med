@@ -1,12 +1,22 @@
-import React from 'react';
-import './App.css'
+import React from "react";
+import "./App.css";
 
 const App = () => {
   return (
-   <div>
-     first test:; lets fucking go.
-   </div>
-  )
-}
+    <div className="container">
+      <div className="one">
+        <span>DAVE</span>
+      </div>
 
-export default App
+      <div className="second">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact Doctors</a>
+        <a href="">Donations</a>
+        <a href="">Help</a>
+      </div>
+    </div>
+  );
+};
+
+export default App;
