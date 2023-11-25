@@ -3,19 +3,19 @@ import { catchAsync } from "../common/utils/errorHandler.js";
 import User from "../models/UserModel.js";
 import { isNullOrEmpty } from "../common/utils/helper.js";
 
-//GET USER
-export const getUser = catchAsync(async (req, res) => {
-  const user = {
-    name: "jc",
-    email: "coder",
-  };
+// //GET USER
+// export const getUser = catchAsync(async (req, res) => {
+//   const user = {
+//     name: "jc",
+//     email: "coder",
+//   };
 
-  if (!user) {
-    throw new AppError("User not found", 404);
-  }
+//   if (!user) {
+//     throw new AppError("User not found", 404);
+//   }
 
-  return res.status(200).json(user);
-});
+//   return res.status(200).json(user);
+// });
 
 export const registerUser = catchAsync(async (req, res) => {
   const { firstName, lastName, email, password } = req.body;
@@ -49,12 +49,12 @@ export const loginUser = catchAsync(async (req, res) => {
 
   if (isNullOrEmpty(email) || isNullOrEmpty(password)) {
     throw new AppError("Please fill all the inputs", 400);
-  }``
+  }
 
   const user = await User.findByCredentials(password, email);
 
   const token = user.generateAuthToken();
-  console.log(token)
+  console.log(token);
 
   res.cookie("authToken", token, { httpOnly: true });
 
@@ -63,4 +63,7 @@ export const loginUser = catchAsync(async (req, res) => {
   res.status(200).send(user);
 });
 
-
+export const getUser = catchAsync(async (req, res) => {
+  console.log(req.user)
+  res.send(req.user);
+});

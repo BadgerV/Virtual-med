@@ -113,3 +113,7 @@
 2023-11-25 14:45:32 info: POST /user/login [32m200 438.007 ms - 121
 2023-11-25 14:58:55 info: POST /user/login [32m200 488.096 ms - 121
 2023-11-25 14:59:49 info: POST /user/login [32m200 680.678 ms - 121
+2023-11-25 15:14:44 info: GET /user/profile [32m200 4.653 ms - -
+2023-11-25 15:15:18 error: 500 - user is not defined - /user/profile - GET - ::1
+2023-11-25 15:15:18 info: GET /user/profile [31m500 23.215 ms - 1428
+2023-11-25 15:15:49 info: GET /user/profile [32m200 6.815 ms - -
