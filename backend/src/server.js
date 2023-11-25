@@ -61,15 +61,15 @@ app.all(
 app.use(timeoutMiddleware);
 app.use(handleError);
 
-/**
- * status check
- */
-app.get("*", (req, res) =>
-  res.send({
-    Time: new Date(),
-    status: "running",
-  })
-);
+// /**
+//  * status check
+//  */
+// app.get("*", (req, res) =>
+//   res.send({
+//     Time: new Date(),
+//     status: "running",
+//   })
+// );
 
 /**
  * Bootstrap server

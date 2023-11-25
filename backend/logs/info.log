@@ -1,0 +1,92 @@
+2023-11-25 13:08:00 info: GET /user [32m200 6.359 ms - 29
+2023-11-25 13:08:28 error: 500 - user is not defined - /user - GET - ::ffff:127.0.0.1
+2023-11-25 13:08:28 info: GET /user [31m500 17.427 ms - 1427
+2023-11-25 13:55:04 error: 500 - checkValidation is not defined - /user/register - POST - ::ffff:127.0.0.1
+2023-11-25 13:55:04 info: POST /user/register [31m500 42.608 ms - 1449
+2023-11-25 13:55:31 error: 500 - User validation failed: tokens.0: Cast to [string] failed for value "[\n' +
+  '  {\n' +
+  "    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTYxZWViZTY2NzNlMDliNDczMzA4ODIiLCJpYXQiOjE3MDA5MTY5MzEsImV4cCI6MTcwMTAwMzMzMX0.rhqD_wwKS_xB9ab7GzYV3W8wzLNWe1nvkwgfcGF5mh0'\n" +
+  '  }\n' +
+  ']" (type string) at path "tokens.0" because of "CastError", email: Path `email` is required., lastName: Path `lastName` is required., firstName: Path `firstName` is required. - /user/register - POST - ::ffff:127.0.0.1
+2023-11-25 13:55:31 info: POST /user/register [31m500 5121.891 ms - 1807
+2023-11-25 14:01:41 error: 500 - Cannot read properties of undefined (reading 'trim') - /user/register - POST - ::ffff:127.0.0.1
+2023-11-25 14:01:41 info: POST /user/register [31m500 23.182 ms - 1469
+2023-11-25 14:03:31 info: GET /user [32m200 7.920 ms - 29
+2023-11-25 14:03:35 error: 500 - User validation failed: tokens.0: Cast to [string] failed for value "[\n' +
+  '  {\n' +
+  "    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTYxZjBhNjI3MzdkZDg0ZmE5ZWI3ZWIiLCJpYXQiOjE3MDA5MTc0MTUsImV4cCI6MTcwMTAwMzgxNX0.JW6ZfgwfMHvtAYwYy9AbpFEW5exYJPSOM_EoFEJeBdc'\n" +
+  '  }\n' +
+  ']" (type string) at path "tokens.0" because of "CastError", email: Path `email` is required., lastName: Path `lastName` is required., firstName: Path `firstName` is required. - /user/register - POST - ::ffff:127.0.0.1
+2023-11-25 14:03:35 info: POST /user/register [31m500 456.781 ms - 1807
+2023-11-25 14:05:15 error: 500 - User validation failed: tokens.0: Cast to [string] failed for value "[\n' +
+  '  {\n' +
+  "    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTYxZjEwYTA3MDU3OWYyMTQyNGU0ZDMiLCJpYXQiOjE3MDA5MTc1MTUsImV4cCI6MTcwMTAwMzkxNX0.14gxYSGUgGPrNiQ_GHG3pNt3unVXZ_1eO-ZpaDUu3ho'\n" +
+  '  }\n' +
+  ']" (type string) at path "tokens.0" because of "CastError", email: Path `email` is required., lastName: Path `lastName` is required. - /user/register - POST - ::ffff:127.0.0.1
+2023-11-25 14:05:15 info: POST /user/register [31m500 1416.962 ms - 1723
+2023-11-25 14:08:21 error: 500 - User validation failed: tokens.0: Cast to [string] failed for value "[\n' +
+  '  {\n' +
+  "    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTYxZjFjNGI2Y2UwN2Q2MjhmYWE0ZTciLCJpYXQiOjE3MDA5MTc3MDEsImV4cCI6MTcwMTAwNDEwMX0.qGo1-rIqtArsRIZt_eFO3B_A-KwICO1_Ol5IeGYNGi0'\n" +
+  '  }\n' +
+  ']" (type string) at path "tokens.0" because of "CastError", email: Path `email` is required., lastName: Path `lastName` is required. - /user/register - POST - ::ffff:127.0.0.1
+2023-11-25 14:08:21 info: POST /user/register [31m500 299.899 ms - 1723
+2023-11-25 14:08:49 error: 500 - User validation failed: tokens.0: Cast to [string] failed for value "[\n' +
+  '  {\n' +
+  "    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTYxZjFlMWI2Y2UwN2Q2MjhmYWE0ZTkiLCJpYXQiOjE3MDA5MTc3MjksImV4cCI6MTcwMTAwNDEyOX0.RrMV2SysPAqyVAmfMvcwXDFudBLqSk-KX_jfhxTJ600'\n" +
+  '  }\n' +
+  ']" (type string) at path "tokens.0" because of "CastError", email: Path `email` is required., lastName: Path `lastName` is required. - /user/register - POST - ::ffff:127.0.0.1
+2023-11-25 14:08:49 info: POST /user/register [31m500 338.695 ms - 1723
+2023-11-25 14:09:36 error: 500 - User validation failed: tokens.0: Cast to [string] failed for value "[\n' +
+  '  {\n' +
+  "    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTYxZjIwZjhhMDlmNzgyMTc3YTBhZjMiLCJpYXQiOjE3MDA5MTc3NzYsImV4cCI6MTcwMTAwNDE3Nn0.V_O_CcAEDFFZ8DJBHn06OnE971oHq0ZZK4pJQXrlKRw'\n" +
+  '  }\n' +
+  ']" (type string) at path "tokens.0" because of "CastError", email: Path `email` is required., lastName: Path `lastName` is required. - /user/register - POST - ::ffff:127.0.0.1
+2023-11-25 14:09:36 info: POST /user/register [31m500 362.433 ms - 1723
+2023-11-25 14:10:29 error: 500 - token is not defined - /user/register - POST - ::ffff:127.0.0.1
+2023-11-25 14:10:29 info: POST /user/register [31m500 406.214 ms - 307
+2023-11-25 14:10:49 info: POST /user/register - - ms - -
+2023-11-25 14:12:24 error: 500 - User validation failed: tokens.0: Cast to [string] failed for value "[\n' +
+  '  {\n' +
+  "    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTYxZjJiN2QyZGY4ZDI2YjYxZDI1OGMiLCJpYXQiOjE3MDA5MTc5NDQsImV4cCI6MTcwMTAwNDM0NH0.3fw7ZNoo_4Nd1-Qa7pXBF3M6nfsSnRPGn25ksVptCz4'\n" +
+  '  }\n' +
+  ']" (type string) at path "tokens.0" because of "CastError", email: Path `email` is required., lastName: Path `lastName` is required. - /user/register - POST - ::ffff:127.0.0.1
+2023-11-25 14:12:24 info: POST /user/register [31m500 554.661 ms - 1723
+2023-11-25 14:13:10 error: 500 - Cannot read properties of undefined (reading 'toString') - /user/register - POST - ::ffff:127.0.0.1
+2023-11-25 14:13:10 info: POST /user/register [31m500 31.269 ms - 1477
+2023-11-25 14:13:35 error: 500 - Cannot read properties of undefined (reading 'toString') - /user/register - POST - ::ffff:127.0.0.1
+2023-11-25 14:13:35 info: POST /user/register [31m500 34.544 ms - 1477
+2023-11-25 14:14:54 error: 400 - Please fill all the inputs - /user/register - POST - ::ffff:127.0.0.1
+2023-11-25 14:14:54 info: POST /user/register [33m400 23.194 ms - 1433
+2023-11-25 14:15:35 error: 500 - User validation failed: tokens.0: Cast to [string] failed for value "[\n' +
+  '  {\n' +
+  "    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTYxZjM3N2QzOGE2OTMzNmFmMWZjMzkiLCJpYXQiOjE3MDA5MTgxMzUsImV4cCI6MTcwMTAwNDUzNX0.bKzoJVxYbnd6ldDUsLwU2ly7nlzu1Je8wZn8QcVnGW8'\n" +
+  '  }\n' +
+  ']" (type string) at path "tokens.0" because of "CastError" - /user/register - POST - ::ffff:127.0.0.1
+2023-11-25 14:15:35 info: POST /user/register [31m500 226.013 ms - 1575
+2023-11-25 14:19:51 error: 500 - User validation failed: tokens.0: Cast to [string] failed for value "[\n' +
+  '  {\n' +
+  "    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTYxZjQ3N2JkZWY2YTA0OWRiNGRkNTUiLCJpYXQiOjE3MDA5MTgzOTEsImV4cCI6MTcwMTAwNDc5MX0.REUT1_3k5aPsHtHfojPo9gMf4mY81apqwRbNNglfCrA'\n" +
+  '  }\n' +
+  ']" (type string) at path "tokens.0" because of "CastError", password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-25 14:19:51 info: POST /user/register [31m500 258.968 ms - 1789
+2023-11-25 14:21:39 error: 500 - User validation failed: tokens.0: Cast to [string] failed for value "[\n' +
+  '  {\n' +
+  "    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTYxZjRlMzE2ZTJlNjc2MWNmNmIyMmEiLCJpYXQiOjE3MDA5MTg0OTksImV4cCI6MTcwMTAwNDg5OX0.hjgSidT1lb8XQptR9P8EjVAWNg5DnMFTnjBmVFRy23s'\n" +
+  '  }\n' +
+  ']" (type string) at path "tokens.0" because of "CastError", password: Password cannot include passord - /user/register - POST - ::ffff:127.0.0.1
+2023-11-25 14:21:39 info: POST /user/register [31m500 397.477 ms - 1661
+2023-11-25 14:22:02 error: 500 - User validation failed: tokens.0: Cast to [string] failed for value "[\n' +
+  '  {\n' +
+  "    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTYxZjRmOTE2ZTJlNjc2MWNmNmIyMmMiLCJpYXQiOjE3MDA5MTg1MjIsImV4cCI6MTcwMTAwNDkyMn0._G7MQP4AnazKzB5VavXlw2UfblgN52ty4Sz3HHsUTu4'\n" +
+  '  }\n' +
+  ']" (type string) at path "tokens.0" because of "CastError" - /user/register - POST - ::ffff:127.0.0.1
+2023-11-25 14:22:02 info: POST /user/register [31m500 194.942 ms - 1575
+2023-11-25 14:22:11 error: 500 - User validation failed: tokens.0: Cast to [string] failed for value "[\n' +
+  '  {\n' +
+  "    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTYxZjUwMzE2ZTJlNjc2MWNmNmIyMmUiLCJpYXQiOjE3MDA5MTg1MzEsImV4cCI6MTcwMTAwNDkzMX0.x3n-TAcZWjQjILY_WWDgwSY_ooczCeR0eR1aEpYHwjQ'\n" +
+  '  }\n' +
+  ']" (type string) at path "tokens.0" because of "CastError" - /user/register - POST - ::ffff:127.0.0.1
+2023-11-25 14:22:11 info: POST /user/register [31m500 437.164 ms - 1575
+2023-11-25 14:23:17 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-25 14:23:17 info: POST /user/register [31m500 338.652 ms - 791
+2023-11-25 14:23:25 info: POST /user/register [32m200 457.450 ms - 334
