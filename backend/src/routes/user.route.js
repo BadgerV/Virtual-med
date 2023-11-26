@@ -2,6 +2,8 @@ import { Router } from "express";
 import { auth } from "../common/middleware/auth.js";
 import {
   getUser,
+  initializePayment,
+  // initiatePremiumSubscription,
   loginUser,
   registerUser,
 } from "../controllers/user.controller.js";
@@ -16,6 +18,7 @@ export const userRoutes = () => {
   router.post("/register", registerUser);
   router.post("/login", loginUser);
   router.get("/profile", auth, getUser);
+  router.post("/initiatePremiumSubscription", initializePayment.acceptPayment);
 
   return router;
 };

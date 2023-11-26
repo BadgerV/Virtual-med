@@ -4,7 +4,9 @@ import User from "../models/UserModel.js";
 import { catchAsync } from "../common/utils/errorHandler.js";
 import { isNullOrEmpty } from "../common/utils/helper.js";
 import AppError from "../common/utils/appError.js";
-import sharp from "sharp";
+import Paystack from "paystack";
+
+const PayStackInstance = Paystack(process.env.PAYSTACK_PUBLIC_KEY);
 
 export const registerStaff = catchAsync(async (req, res) => {
   const { firstName, lastName, email, password } = req.body;
@@ -77,16 +79,20 @@ export const provideCredentials = catchAsync(async (req, res) => {
   staff.age = age;
   staff.hourlyPrice = hourlyPrice;
   staff.professionalMemberShip = professionalMemberShip;
-  // staff.medicalLisense = images[0];
-  // staff.boardCertification = images[1];
-  // staff.passportImages = images[2];
-  // staff.proofOfIdentity = images[3];
+  staff.medicalLisense = images[0];
+  staff.boardCertification = images[1];
+  staff.passportImages = images[2];
+  staff.proofOfIdentity = images[3];
 
   for (var reference of professionalReferences) {
-    staff.professionalReferences.push(reference)
+    staff.professionalReferences.push(reference);
   }
 
   await staff.save();
 
   res.status(200).send(staff);
+});
+
+export const getStaff = catchAsync(async (req, res) => {
+  res.send(req.staff);
 });
