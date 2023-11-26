@@ -36,17 +36,16 @@ export const registerStaff = catchAsync(async (req, res) => {
 });
 
 export const provideCredentials = catchAsync(async (req, res) => {
-  // Access the files using req.files
-  const certificate1 = req.files["certificate1"];
-  const certificate2 = req.files["certificate2"];
-  const passport = req.files["passport"];
+   const files = req.files;
 
-  const certificate1Buffer = certificate1[0].buffer;
+  // Save information about the uploaded images to MongoDB
+  const images = await Promise.all(
+    files.map(async (file) => {
+      return file.buffer;
+    })
+  );
 
-  const resizedBuffer = await sharp(certificate1Buffer)
-    .resize({ width: 250, height: 250 })
-    .png()
-    .toBuffer();
-
-  res.send(resizedBuffer);
+  res.send(images)
 });
+
+

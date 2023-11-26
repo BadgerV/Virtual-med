@@ -5,6 +5,7 @@ import {
 } from "../controllers/staff.controller.js";
 import { staffAuth } from "../common/middleware/auth.js";
 import multer from "multer";
+import uploadMiddleware from "../common/middleware/uploadMiddleware.js";
 
 const router = Router();
 
@@ -20,17 +21,11 @@ const upload = multer({
   },
 });
 
-const fields = [
-  { name: "certificate1", maxCount: 1 },
-  { name: "certificate2", maxCount: 1 },
-  { name: "passport", maxCount: 1 },
-];
-
 const staffRoutes = () => {
   router.post("/register", registerStaff);
   router.post(
     "/provide-credentials",
-    upload.fields(fields),
+    upload.array("images", 4),
     staffAuth,
     provideCredentials
   );

@@ -290,3 +290,45 @@
 2023-11-25 20:24:49 info: POST /staff/provide-credentials [32m200 242.655 ms - -
 2023-11-25 20:25:14 info: POST /staff/provide-credentials [32m200 234.708 ms - 97955
 2023-11-25 20:29:57 info: POST /staff/provide-credentials [32m200 276.152 ms - 60975
+2023-11-26 08:13:48 error: 401 - Invalid token - /staff/provide-credentials - POST - ::1
+2023-11-26 08:13:48 info: POST /staff/provide-credentials [33m401 10048.754 ms - 279
+2023-11-26 09:05:45 info: POST /staff/register [32m200 502.167 ms - 449
+2023-11-26 09:06:25 error: 500 - Cannot read properties of undefined (reading 'forEach') - /staff/provide-credentials - POST - ::1
+2023-11-26 09:06:25 info: POST /staff/provide-credentials [31m500 5.425 ms - 1533
+2023-11-26 09:06:58 error: 500 - Cannot read properties of undefined (reading 'forEach') - /staff/provide-credentials - POST - ::1
+2023-11-26 09:06:58 info: POST /staff/provide-credentials [31m500 16.895 ms - 1533
+2023-11-26 09:07:02 error: 500 - Cannot read properties of undefined (reading 'forEach') - /staff/provide-credentials - POST - ::1
+2023-11-26 09:07:02 info: POST /staff/provide-credentials [31m500 5.634 ms - 1533
+2023-11-26 09:07:38 error: 404 - Please authenticate - /staff/provide-credentials - POST - ::1
+2023-11-26 09:07:38 info: POST /staff/provide-credentials [33m404 13.680 ms - 61
+2023-11-26 09:07:59 info: POST /staff/register [32m200 487.737 ms - 450
+2023-11-26 09:08:07 error: 500 - Cannot read properties of undefined (reading 'certificate1') - /staff/provide-credentials - POST - ::1
+2023-11-26 09:08:07 info: POST /staff/provide-credentials [31m500 143.728 ms - 874
+2023-11-26 09:09:39 info: POST /staff/provide-credentials [33m400 11.336 ms - 28
+2023-11-26 09:10:11 info: POST /staff/provide-credentials [33m400 14.242 ms - 28
+2023-11-26 09:26:54 error: 500 - Unexpected field - /staff/provide-credentials - POST - ::1
+2023-11-26 09:26:54 info: POST /staff/provide-credentials [31m500 21.555 ms - 1295
+2023-11-26 09:28:44 error: 500 - Unexpected field - /staff/provide-credentials - POST - ::1
+2023-11-26 09:28:44 info: POST /staff/provide-credentials [31m500 24.370 ms - 1295
+2023-11-26 09:29:25 error: 500 - Unexpected field - /staff/provide-credentials - POST - ::1
+2023-11-26 09:29:25 info: POST /staff/provide-credentials [31m500 23.327 ms - 1295
+2023-11-26 09:30:42 error: 500 - Unexpected field - /staff/provide-credentials - POST - ::1
+2023-11-26 09:30:42 info: POST /staff/provide-credentials [31m500 20.582 ms - 1295
+2023-11-26 09:31:11 error: 500 - Unexpected field - /staff/provide-credentials - POST - ::1
+2023-11-26 09:31:11 info: POST /staff/provide-credentials [31m500 7.219 ms - 1295
+2023-11-26 09:31:16 error: 500 - Unexpected field - /staff/provide-credentials - POST - ::1
+2023-11-26 09:31:16 info: POST /staff/provide-credentials [31m500 5.167 ms - 1295
+2023-11-26 09:31:48 info: POST /staff/provide-credentials [32m200 162.585 ms - 612
+2023-11-26 09:32:15 info: POST /staff/provide-credentials [32m200 152.730 ms - 612
+2023-11-26 09:32:24 info: POST /staff/provide-credentials [32m200 155.502 ms - 143966
+2023-11-26 09:34:58 info: POST /staff/provide-credentials [32m200 3872.833 ms - 498
+2023-11-26 09:35:57 info: POST /staff/provide-credentials [32m200 179.624 ms - 498
+2023-11-26 09:36:02 info: POST /staff/provide-credentials [32m200 163.185 ms - 498
+2023-11-26 09:36:14 info: POST /staff/provide-credentials [32m200 145.679 ms - 498
+2023-11-26 09:37:02 info: POST /staff/provide-credentials [32m200 163.182 ms - 287679
+2023-11-26 09:37:49 info: POST /staff/provide-credentials [32m200 143.519 ms - 655
+2023-11-26 09:43:02 error: 500 - Please upload an image - /staff/provide-credentials - POST - ::1
+2023-11-26 09:43:02 info: POST /staff/provide-credentials [31m500 7.387 ms - 1352
+2023-11-26 09:43:13 info: POST /staff/provide-credentials [32m200 169.910 ms - 685447
+2023-11-26 09:53:46 info: POST /staff/register [32m200 498.615 ms - 450
+2023-11-26 09:54:07 info: POST /staff/provide-credentials [32m200 240.193 ms - 203
