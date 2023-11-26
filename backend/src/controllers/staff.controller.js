@@ -36,7 +36,7 @@ export const registerStaff = catchAsync(async (req, res) => {
 });
 
 export const provideCredentials = catchAsync(async (req, res) => {
-   const files = req.files;
+   const files = req.files
 
   // Save information about the uploaded images to MongoDB
   const images = await Promise.all(
