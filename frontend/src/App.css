@@ -1,3 +1,5 @@
+/* everything should be in em, except maybe border radius and thickness of border or outline */
+
 .container{ 
   max-width: 1250px;
   margin: 0 auto;

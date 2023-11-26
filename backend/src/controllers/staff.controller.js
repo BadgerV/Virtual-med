@@ -4,6 +4,7 @@ import User from "../models/UserModel.js";
 import { catchAsync } from "../common/utils/errorHandler.js";
 import { isNullOrEmpty } from "../common/utils/helper.js";
 import AppError from "../common/utils/appError.js";
+import sharp from "sharp";
 
 export const registerStaff = catchAsync(async (req, res) => {
   const { firstName, lastName, email, password } = req.body;
@@ -31,10 +32,21 @@ export const registerStaff = catchAsync(async (req, res) => {
   res.cookie("auth", token, { httpOnly: true });
   await newStaff.save();
 
-
-  res.status(200).send({newStaff});
+  res.status(200).send({ newStaff });
 });
 
 export const provideCredentials = catchAsync(async (req, res) => {
-  res.status(200).send(req.staff);
+  // Access the files using req.files
+  const certificate1 = req.files["certificate1"];
+  const certificate2 = req.files["certificate2"];
+  const passport = req.files["passport"];
+
+  const certificate1Buffer = certificate1[0].buffer;
+
+  const resizedBuffer = await sharp(certificate1Buffer)
+    .resize({ width: 250, height: 250 })
+    .png()
+    .toBuffer();
+
+  res.send(resizedBuffer);
 });

@@ -255,3 +255,38 @@
 2023-11-25 17:59:16 info: POST /staff/provide-credentials [33m404 10.877 ms - 61
 2023-11-25 18:01:00 info: POST /staff/register [32m200 564.723 ms - 471
 2023-11-25 18:04:15 info: POST /staff/provide-credentials [32m200 188.383 ms - 458
+2023-11-25 19:50:48 error: 404 - route not found - /staff/provide-credentials - POST - ::1
+2023-11-25 19:50:48 info: POST /staff/provide-credentials [33m404 312.739 ms - 57
+2023-11-25 19:51:33 error: 404 - route not found - /staff/provide-credentials - POST - ::1
+2023-11-25 19:51:33 info: POST /staff/provide-credentials [33m404 343.067 ms - 57
+2023-11-25 20:09:12 error: 404 - route not found - /staff/provide-credentials - POST - ::1
+2023-11-25 20:09:12 info: POST /staff/provide-credentials [33m404 173.880 ms - 57
+2023-11-25 20:11:51 error: 500 - Cannot read properties of undefined (reading 'certificate1') - /staff/provide-credentials - POST - ::1
+2023-11-25 20:11:51 info: POST /staff/provide-credentials [31m500 204.799 ms - 874
+2023-11-25 20:14:55 error: 500 - Please upload an image - /staff/provide-credentials - POST - ::1
+2023-11-25 20:14:55 info: POST /staff/provide-credentials [31m500 34.950 ms - 1352
+2023-11-25 20:15:39 error: 500 - Cannot read properties of undefined (reading '0') - /staff/provide-credentials - POST - ::1
+2023-11-25 20:15:39 info: POST /staff/provide-credentials [31m500 392.986 ms - 852
+2023-11-25 20:17:12 error: 500 - Cannot read properties of undefined (reading '0') - /staff/provide-credentials - POST - ::1
+2023-11-25 20:17:12 info: POST /staff/provide-credentials [31m500 264.738 ms - 852
+2023-11-25 20:17:29 error: 500 - Cannot read properties of undefined (reading '0') - /staff/provide-credentials - POST - ::1
+2023-11-25 20:17:29 info: POST /staff/provide-credentials [31m500 321.464 ms - 852
+2023-11-25 20:17:54 error: 500 - Unsupported input '[object Object]' of type object - /staff/provide-credentials - POST - ::1
+2023-11-25 20:17:54 info: POST /staff/provide-credentials [31m500 292.013 ms - 1242
+2023-11-25 20:18:33 error: 500 - Cannot read properties of undefined (reading '0') - /staff/provide-credentials - POST - ::1
+2023-11-25 20:18:33 info: POST /staff/provide-credentials [31m500 238.583 ms - 852
+2023-11-25 20:19:18 info: POST /staff/provide-credentials [32m200 2355.968 ms - 350999
+2023-11-25 20:20:33 info: POST /staff/provide-credentials [32m200 205.552 ms - -
+2023-11-25 20:20:37 info: POST /staff/provide-credentials [32m200 208.191 ms - -
+2023-11-25 20:21:10 error: 500 - Unsupported input '[object Object]' of type object - /staff/provide-credentials - POST - ::1
+2023-11-25 20:21:10 info: POST /staff/provide-credentials [31m500 227.748 ms - 1242
+2023-11-25 20:21:39 error: 500 - Unsupported input '[object Object]' of type object - /staff/provide-credentials - POST - ::1
+2023-11-25 20:21:39 info: POST /staff/provide-credentials [31m500 245.116 ms - 1242
+2023-11-25 20:22:24 info: POST /staff/provide-credentials [32m200 4456.272 ms - 350999
+2023-11-25 20:23:02 error: 500 - Input file is missing: - /staff/provide-credentials - POST - ::1
+2023-11-25 20:23:02 info: POST /staff/provide-credentials [31m500 318.684 ms - 109
+2023-11-25 20:24:29 error: 500 - Invalid input - /staff/provide-credentials - POST - ::1
+2023-11-25 20:24:29 info: POST /staff/provide-credentials [31m500 229.316 ms - 900
+2023-11-25 20:24:49 info: POST /staff/provide-credentials [32m200 242.655 ms - -
+2023-11-25 20:25:14 info: POST /staff/provide-credentials [32m200 234.708 ms - 97955
+2023-11-25 20:29:57 info: POST /staff/provide-credentials [32m200 276.152 ms - 60975
