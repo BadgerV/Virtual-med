@@ -5,7 +5,6 @@ import {
 } from "../controllers/staff.controller.js";
 import { staffAuth } from "../common/middleware/auth.js";
 import multer from "multer";
-import uploadMiddleware from "../common/middleware/uploadMiddleware.js";
 
 const router = Router();
 

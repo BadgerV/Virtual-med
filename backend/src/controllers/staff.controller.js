@@ -36,8 +36,29 @@ export const registerStaff = catchAsync(async (req, res) => {
 });
 
 export const provideCredentials = catchAsync(async (req, res) => {
-   const files = req.files
+  const files = req.files;
+  const staff = req.staff;
 
+  const {
+    speciality,
+    hourlyPrice,
+    age,
+    professionalMemberShip,
+    professionalReferences,
+    yearsOfExperience,
+  } = req.body;
+
+  if (
+    isNullOrEmpty(speciality) ||
+    hourlyPrice < 0 ||
+    age < 0 ||
+    age > 80 ||
+    yearsOfExperience <= 0 ||
+    !professionalReferences ||
+    professionalReferences.length == 0
+  ) {
+    throw new AppError("Please validate all fields", 400);
+  }
   // Save information about the uploaded images to MongoDB
   const images = await Promise.all(
     files.map(async (file) => {
@@ -45,7 +66,27 @@ export const provideCredentials = catchAsync(async (req, res) => {
     })
   );
 
-  res.send(images)
+  if (images.length != 4) {
+    throw new AppError(
+      "Please upload 4 images, the Medical Lisense, Board Certification, Passport, Proof of Identity"
+    );
+  }
+
+  staff.yearsOfExperience = yearsOfExperience;
+  staff.speciality = speciality;
+  staff.age = age;
+  staff.hourlyPrice = hourlyPrice;
+  staff.professionalMemberShip = professionalMemberShip;
+  // staff.medicalLisense = images[0];
+  // staff.boardCertification = images[1];
+  // staff.passportImages = images[2];
+  // staff.proofOfIdentity = images[3];
+
+  for (var reference of professionalReferences) {
+    staff.professionalReferences.push(reference)
+  }
+
+  await staff.save();
+
+  res.status(200).send(staff);
 });
-
-

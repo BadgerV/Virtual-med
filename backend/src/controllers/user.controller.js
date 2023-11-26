@@ -65,6 +65,5 @@ export const loginUser = catchAsync(async (req, res) => {
 });
 
 export const getUser = catchAsync(async (req, res) => {
-  console.log(req.user);
   res.send(req.user);
 });

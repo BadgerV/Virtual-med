@@ -333,3 +333,53 @@
 2023-11-26 09:53:46 info: POST /staff/register [32m200 498.615 ms - 450
 2023-11-26 09:54:07 info: POST /staff/provide-credentials [32m200 240.193 ms - 203
 2023-11-26 09:54:40 info: POST /staff/provide-credentials [32m200 8320.653 ms - 1152
+2023-11-26 21:03:45 error: 500 - image is not defined - /staff/provide-credentials - POST - ::1
+2023-11-26 21:03:45 info: POST /staff/provide-credentials [31m500 250.328 ms - 308
+2023-11-26 21:04:24 info: POST /staff/provide-credentials [32m200 248.391 ms - 555504
+2023-11-26 21:13:31 error: 500 - Cannot read properties of undefined (reading 'length') - /staff/provide-credentials - POST - ::1
+2023-11-26 21:13:31 info: POST /staff/provide-credentials [31m500 248.547 ms - 862
+2023-11-26 21:14:06 error: 400 - Please validate all fields - /staff/provide-credentials - POST - ::1
+2023-11-26 21:14:06 info: POST /staff/provide-credentials [33m400 1877.424 ms - 802
+2023-11-26 21:16:26 info: POST /staff/provide-credentials [32m200 394.416 ms - 555635
+2023-11-26 21:17:51 info: POST /staff/provide-credentials [32m200 257.430 ms - 555727
+2023-11-26 21:19:43 error: 500 - professionalReferences.foreach is not a function - /staff/provide-credentials - POST - ::1
+2023-11-26 21:19:43 info: POST /staff/provide-credentials [31m500 2704.979 ms - 359
+2023-11-26 21:20:07 error: 500 - professionalReferences.map is not a function - /staff/provide-credentials - POST - ::1
+2023-11-26 21:20:07 info: POST /staff/provide-credentials [31m500 7387.615 ms - 351
+2023-11-26 21:21:43 error: 500 - professionalReferences.map is not a function - /staff/provide-credentials - POST - ::1
+2023-11-26 21:21:43 info: POST /staff/provide-credentials [31m500 288.302 ms - 351
+2023-11-26 21:22:01 info: POST /staff/provide-credentials [32m200 7143.195 ms - 557874
+2023-11-26 21:22:41 info: POST /staff/provide-credentials [32m200 7379.109 ms - 555635
+2023-11-26 21:24:00 error: 401 - Invalid token - /staff/provide-credentials - POST - ::1
+2023-11-26 21:24:00 info: POST /staff/provide-credentials [33m401 10059.943 ms - 279
+2023-11-26 21:24:10 error: 500 - Cannot read properties of undefined (reading 'map') - /staff/provide-credentials - POST - ::1
+2023-11-26 21:24:10 info: POST /staff/provide-credentials [31m500 361.138 ms - 856
+2023-11-26 21:24:23 error: 500 - Cannot read properties of undefined (reading 'map') - /staff/provide-credentials - POST - ::1
+2023-11-26 21:24:23 info: POST /staff/provide-credentials [31m500 335.541 ms - 856
+2023-11-26 21:24:52 info: POST /staff/register [32m200 797.491 ms - 479
+2023-11-26 21:24:59 error: 500 - Cannot read properties of undefined (reading 'map') - /staff/provide-credentials - POST - ::1
+2023-11-26 21:24:59 info: POST /staff/provide-credentials [31m500 151.177 ms - 856
+2023-11-26 21:25:54 error: 500 - Cannot read properties of undefined (reading 'map') - /staff/provide-credentials - POST - ::1
+2023-11-26 21:25:54 info: POST /staff/provide-credentials [31m500 196.008 ms - 856
+2023-11-26 21:27:01 error: 500 - Cannot read properties of undefined (reading 'map') - /staff/provide-credentials - POST - ::1
+2023-11-26 21:27:01 info: POST /staff/provide-credentials [31m500 252.651 ms - 856
+2023-11-26 21:27:45 error: 401 - Invalid token - /staff/provide-credentials - POST - ::1
+2023-11-26 21:27:45 info: POST /staff/provide-credentials [33m401 10071.784 ms - 279
+2023-11-26 21:27:55 info: POST /staff/register [32m200 641.262 ms - 480
+2023-11-26 21:28:01 error: 500 - images is not defined - /staff/provide-credentials - POST - ::1
+2023-11-26 21:28:01 info: POST /staff/provide-credentials [31m500 169.535 ms - 800
+2023-11-26 21:28:39 error: 500 - images is not defined - /staff/provide-credentials - POST - ::1
+2023-11-26 21:28:39 info: POST /staff/provide-credentials [31m500 1376.568 ms - 800
+2023-11-26 21:29:05 info: POST /staff/provide-credentials [32m200 2519.715 ms - 467
+2023-11-26 21:29:20 info: POST /staff/provide-credentials [32m200 217.976 ms - 596
+2023-11-26 21:29:45 info: POST /staff/provide-credentials [32m200 247.178 ms - 596
+2023-11-26 21:31:27 info: POST /staff/provide-credentials [32m200 256.499 ms - 596
+2023-11-26 21:32:28 info: POST /staff/provide-credentials [32m200 953.131 ms - 661
+2023-11-26 21:34:06 info: POST /staff/provide-credentials [32m200 2039.054 ms - 661
+2023-11-26 21:38:25 info: POST /staff/provide-credentials [32m200 257.822 ms - 658
+2023-11-26 21:41:43 info: POST /staff/provide-credentials [32m200 4583.814 ms - 601
+2023-11-26 21:43:11 info: POST /staff/provide-credentials [32m200 5012.222 ms - 601
+2023-11-26 21:43:18 info: POST /staff/provide-credentials [32m200 163.030 ms - 601
+2023-11-26 21:43:20 info: POST /staff/provide-credentials [32m200 230.510 ms - 601
+2023-11-26 21:43:38 info: POST /staff/register [32m200 572.511 ms - 448
+2023-11-26 21:44:14 info: POST /staff/register [32m200 1401.316 ms - 482

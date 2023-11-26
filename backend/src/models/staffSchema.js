@@ -1,6 +1,21 @@
 import mongoose from "mongoose";
 import validator from "validator";
 
+const referenceSchema = new mongoose.Schema(
+  {
+    nameOfReference: String,
+    numberOfReference: String,
+  },
+  { _id: false } // Disable _id for the professionalReferences subdocument
+);
+
+const tokenSchema = new mongoose.Schema(
+  {
+    token: String,
+  },
+  { _id: false }
+);
+
 const StaffSchema = new mongoose.Schema({
   firstName: {
     type: String,
@@ -55,16 +70,16 @@ const StaffSchema = new mongoose.Schema({
       message: "Age must be a positive integer",
     },
   },
-  cerfiticate1: {
+  medicalLisense: {
     type: Buffer,
   },
-  certificate2: {
+  boardCertification: {
     type: Buffer,
   },
   speciality: {
     type: String,
   },
-  passportImgae: {
+  passportImage: {
     type: Buffer,
   },
   location: {
@@ -84,15 +99,19 @@ const StaffSchema = new mongoose.Schema({
   accountType: {
     type: String,
     default: "staff",
+    immutable: true, // Make the field immutable
   },
-
-  tokens: [
-    {
-      token: {
-        type: String,
-      },
-    },
-  ],
+  proofOfIdentity: {
+    type: Buffer,
+  },
+  age: {
+    type: Number,
+  },
+  professionalMemberShip: {
+    type: String,
+  },
+  professionalReferences: [referenceSchema],
+  tokens: [tokenSchema],
 });
 
 export default StaffSchema;

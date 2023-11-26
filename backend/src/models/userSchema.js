@@ -61,6 +61,7 @@ const UserSchema = new mongoose.Schema({
   accountType: {
     type: String,
     default: "user",
+    immutable: true, // Make the field immutable
   },
 });
 
