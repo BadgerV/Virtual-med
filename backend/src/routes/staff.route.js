@@ -1,5 +1,6 @@
 import { Router } from "express";
 import {
+  getStaff,
   provideCredentials,
   registerStaff,
 } from "../controllers/staff.controller.js";
@@ -29,6 +30,9 @@ const staffRoutes = () => {
     provideCredentials
   );
 
+  router.get("/profile", staffAuth, getStaff);
+
+  
   return router;
 };
 

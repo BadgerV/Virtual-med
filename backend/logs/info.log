@@ -383,3 +383,34 @@
 2023-11-26 21:43:20 info: POST /staff/provide-credentials [32m200 230.510 ms - 601
 2023-11-26 21:43:38 info: POST /staff/register [32m200 572.511 ms - 448
 2023-11-26 21:44:14 info: POST /staff/register [32m200 1401.316 ms - 482
+2023-11-26 21:47:42 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-11-26 21:47:42 info: GET /user/profile [33m401 336.007 ms - 279
+2023-11-26 21:48:06 info: GET /staff/profile [32m200 1.682 ms - -
+2023-11-26 21:49:02 info: GET /staff/profile [32m200 2331.852 ms - 469
+2023-11-26 21:50:50 info: GET /staff/profile [32m200 282.158 ms - 469
+2023-11-26 21:51:25 info: POST /staff/provide-credentials [32m200 439.726 ms - 699
+2023-11-26 21:51:44 info: POST /staff/provide-credentials [32m200 4312.926 ms - 555803
+2023-11-26 22:31:03 error: 401 - Invalid token - /user/initiatePremiumSubscription - POST - ::1
+2023-11-26 22:31:03 info: POST /user/initiatePremiumSubscription [33m401 279.623 ms - 279
+2023-11-26 22:32:30 info: POST /user/register [32m200 675.482 ms - 242
+2023-11-26 22:32:37 error: 401 - Invalid token - /user/initiatePremiumSubscription - POST - ::1
+2023-11-26 22:32:37 info: POST /user/initiatePremiumSubscription [33m401 180.123 ms - 279
+2023-11-26 22:33:37 info: POST /user/initiatePremiumSubscription [31m500 21.938 ms - 26
+2023-11-26 22:35:34 info: POST /user/initiatePremiumSubscription [31m500 15.763 ms - 26
+2023-11-26 22:43:02 error: 500 - Paystack is not a function - /user/initiatePremiumSubscription - POST - ::1
+2023-11-26 22:43:02 info: POST /user/initiatePremiumSubscription [31m500 28.645 ms - 1437
+2023-11-26 22:45:00 error: 500 - Paystack is not a function - /user/initiatePremiumSubscription - POST - ::1
+2023-11-26 22:45:00 info: POST /user/initiatePremiumSubscription [31m500 17.310 ms - 1437
+2023-11-26 22:53:36 info: POST /user/initiatePremiumSubscription [31m500 18.358 ms - 29
+2023-11-26 22:54:40 info: POST /user/initiatePremiumSubscription [32m200 580.830 ms - 80
+2023-11-26 22:55:40 info: POST /user/initiatePremiumSubscription [32m200 684.970 ms - 88
+2023-11-26 22:56:46 info: POST /user/initiatePremiumSubscription [32m200 491.083 ms - 88
+2023-11-26 22:56:49 info: POST /user/initiatePremiumSubscription [32m200 690.694 ms - 88
+2023-11-26 22:56:51 info: POST /user/initiatePremiumSubscription [32m200 502.955 ms - 80
+2023-11-26 22:56:53 info: POST /user/initiatePremiumSubscription [32m200 510.010 ms - 88
+2023-11-26 22:56:56 info: POST /user/initiatePremiumSubscription [32m200 560.039 ms - 80
+2023-11-26 22:57:02 info: POST /user/initiatePremiumSubscription [32m200 598.251 ms - 88
+2023-11-26 22:58:57 info: POST /user/initiatePremiumSubscription [32m200 655.721 ms - 80
+2023-11-26 23:00:54 info: POST /user/initiatePremiumSubscription [32m200 581.711 ms - 88
+2023-11-26 23:00:57 info: POST /user/initiatePremiumSubscription [32m200 547.667 ms - 88
+2023-11-26 23:02:30 info: POST /user/initiatePremiumSubscription [32m200 845.283 ms - 209
