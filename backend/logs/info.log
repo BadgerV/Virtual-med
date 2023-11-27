@@ -495,3 +495,219 @@
 2023-11-27 11:39:42 error: 404 - Please authenticate - /user/initiatePremiumSubscription - POST - ::1
 2023-11-27 11:39:42 info: POST /user/initiatePremiumSubscription [33m404 10.048 ms - 61
 2023-11-27 11:39:55 info: POST /user/register [32m200 506.250 ms - 261
+2023-11-27 11:40:54 info: POST /user/initiatePremiumSubscription [32m200 967.377 ms - 185
+2023-11-27 11:41:15 info: GET /user/confirmPremiumSubscription/hdhdhdsh [33m400 1999.916 ms - 948
+2023-11-27 11:41:44 info: GET /user/confirmPremiumSubscription/hdhdhdsh [33m400 690.555 ms - 39
+2023-11-27 11:41:47 info: GET /user/confirmPremiumSubscription/hdhdhdsh [32m200 932.424 ms - 1459
+2023-11-27 11:41:58 info: GET /user/profile [32m200 153.129 ms - 248
+2023-11-27 11:56:58 info: GET /staff/get-staffs [32m200 1024.706 ms - 558839
+2023-11-27 11:59:11 info: GET /staff/get-staffs [32m200 1323.382 ms - 3161
+2023-11-27 11:59:32 info: GET /staff/get-staffs [32m200 1038.754 ms - 3161
+2023-11-27 12:00:30 info: GET /staff/get-active-staffs [32m200 252.106 ms - 2
+2023-11-27 12:16:59 info: GET /staff/get-specialists/farmer [32m200 1466.949 ms - 2
+2023-11-27 12:17:07 info: GET /staff/get-specialists/Farmer [32m200 1124.916 ms - 711
+2023-11-27 12:18:46 info: GET /staff/get-specialists/farmer [32m200 2993.669 ms - 711
+2023-11-27 12:52:49 info: GET /staff/get-staffs [32m200 1002.626 ms - 3308
+2023-11-27 12:53:17 info: POST /user/connectUserWithDoctor [32m200 795.109 ms - 30
+2023-11-27 13:06:57 info: POST /staff/login [32m200 491.606 ms - 676
+2023-11-27 13:07:29 error: 401 - Invalid token - /user/connectUserWithDoctor - POST - ::1
+2023-11-27 13:07:29 info: POST /user/connectUserWithDoctor [33m401 258.261 ms - 279
+2023-11-27 13:08:26 info: POST /user/login [32m200 461.503 ms - 250
+2023-11-27 13:09:06 error: 400 - Become a premium subscriber to enjoy this feature - /user/connectUserWithDoctor - POST - ::1
+2023-11-27 13:09:06 info: POST /user/connectUserWithDoctor [33m400 380.844 ms - 351
+2023-11-27 13:09:41 info: POST /user/initiatePremiumSubscription [32m200 1255.419 ms - 187
+2023-11-27 13:10:16 error: 404 - route not found - /user/confirmPremiumSubscription/hdhjjsdhdh - POST - ::1
+2023-11-27 13:10:16 info: POST /user/confirmPremiumSubscription/hdhjjsdhdh [33m404 3.150 ms - 57
+2023-11-27 13:10:30 error: 404 - route not found - /user/confirmPremiumSubscription/ - POST - ::1
+2023-11-27 13:10:30 info: POST /user/confirmPremiumSubscription/ [33m404 2.741 ms - 57
+2023-11-27 13:11:19 error: 404 - route not found - /user/confirmPremiumSubscription/hdhjjsdhdh - POST - ::1
+2023-11-27 13:11:19 info: POST /user/confirmPremiumSubscription/hdhjjsdhdh [33m404 2.313 ms - 57
+2023-11-27 13:11:40 info: GET /user/confirmPremiumSubscription/hdhjjsdhdh [33m400 700.272 ms - 39
+2023-11-27 13:11:46 info: GET /user/confirmPremiumSubscription/hdhjjsdhdh [32m200 1062.582 ms - 1460
+2023-11-27 13:11:55 info: POST /user/connectUserWithDoctor [32m200 424.567 ms - 30
+2023-11-27 13:12:08 info: POST /staff/login [32m200 466.434 ms - 881
+2023-11-27 13:15:06 info: POST /user/login [32m200 693.671 ms - 250
+2023-11-27 13:15:19 info: POST /user/connectUserWithDoctor [32m200 637.169 ms - 30
+2023-11-27 13:15:25 info: POST /staff/login [32m200 373.529 ms - 1112
+2023-11-27 13:19:23 info: POST /user/login [32m200 477.524 ms - 250
+2023-11-27 13:19:42 info: POST /staff/login [32m200 409.884 ms - 1317
+2023-11-27 13:20:30 info: POST /staff/login [32m200 415.407 ms - 1522
+2023-11-27 13:23:28 info: GET /staff/view-pending-patients [32m200 7548.724 ms - 4
+2023-11-27 13:24:02 info: GET /staff/view-pending-patients [32m200 379.369 ms - 4
+2023-11-27 13:46:10 info: GET /staff/view-pending-patients [32m200 265.904 ms - 4
+2023-11-27 13:48:31 info: GET /staff/view-pending-patients [32m200 528.265 ms - 252
+2023-11-27 13:49:19 error: 500 - User is not your patient - /staff/apporve-pending-patients - POST - ::1
+2023-11-27 13:49:19 info: POST /staff/apporve-pending-patients [31m500 443.847 ms - 308
+2023-11-27 13:55:28 error: 500 - User is not your patient - /staff/apporve-pending-patients - POST - ::1
+2023-11-27 13:55:28 info: POST /staff/apporve-pending-patients [31m500 439.444 ms - 308
+2023-11-27 13:57:17 error: 500 - Invalid status code: [ new ObjectId("6563b96ea97ad36f3472b54e") ] - /staff/apporve-pending-patients - POST - ::1
+2023-11-27 13:57:17 info: POST /staff/apporve-pending-patients [31m500 531.396 ms - 1169
+2023-11-27 14:00:20 error: 500 - boolean false is not iterable (cannot read property Symbol(Symbol.iterator)) - /staff/apporve-pending-patients - POST - ::1
+2023-11-27 14:00:20 info: POST /staff/apporve-pending-patients [31m500 409.928 ms - 451
+2023-11-27 14:04:12 error: 500 - User is not in your pending patients list - /staff/apporve-pending-patients - POST - ::1
+2023-11-27 14:04:12 info: POST /staff/apporve-pending-patients [31m500 1583.979 ms - 342
+2023-11-27 14:04:42 error: 500 - User is not in your pending patients list - /staff/apporve-pending-patients - POST - ::1
+2023-11-27 14:04:42 info: POST /staff/apporve-pending-patients [31m500 355.638 ms - 342
+2023-11-27 14:04:53 info: GET /staff/view-pending-patients [32m200 153.760 ms - 2
+2023-11-27 14:04:59 info: GET /staff/view-pending-patients [32m200 284.741 ms - 2
+2023-11-27 14:05:29 info: POST /user/register [32m200 807.129 ms - 263
+2023-11-27 14:06:02 info: POST /user/initiatePremiumSubscription [32m200 1116.407 ms - 180
+2023-11-27 14:06:35 info: GET /user/confirmPremiumSubscription/phj [33m400 728.220 ms - 39
+2023-11-27 14:06:42 info: GET /user/confirmPremiumSubscription/phj [33m400 628.436 ms - 39
+2023-11-27 14:06:49 info: GET /user/confirmPremiumSubscription/phj [33m400 703.532 ms - 39
+2023-11-27 14:06:53 info: GET /user/confirmPremiumSubscription/phj [32m200 1059.039 ms - 1455
+2023-11-27 14:07:17 info: POST /user/connectUserWithDoctor [32m200 594.991 ms - 30
+2023-11-27 14:07:26 info: POST /staff/login [32m200 429.567 ms - 1727
+2023-11-27 14:08:00 info: POST /user/login [32m200 345.084 ms - 251
+2023-11-27 14:08:09 info: POST /staff/login [32m200 420.604 ms - 1932
+2023-11-27 14:08:16 info: POST /staff/apporve-pending-patients [32m200 486.133 ms - 122
+2023-11-27 14:10:31 info: GET /staff/view-pending-patients [32m200 565.736 ms - 253
+2023-11-27 14:10:39 info: POST /staff/apporve-pending-patients [32m200 765.639 ms - 123
+2023-11-27 14:10:58 info: POST /user/register [32m200 507.999 ms - 264
+2023-11-27 14:11:08 info: POST /user/initiatePremiumSubscription [32m200 790.002 ms - 77
+2023-11-27 14:11:13 info: POST /user/initiatePremiumSubscription [32m200 1548.795 ms - 181
+2023-11-27 14:11:40 info: GET /user/confirmPremiumSubscription/phj [33m400 721.780 ms - 39
+2023-11-27 14:11:43 info: GET /user/confirmPremiumSubscription/phj [33m400 735.831 ms - 39
+2023-11-27 14:11:45 info: GET /user/confirmPremiumSubscription/phj [33m400 778.161 ms - 39
+2023-11-27 14:11:48 info: GET /user/confirmPremiumSubscription/phj [32m200 943.145 ms - 1455
+2023-11-27 14:12:02 info: GET /user/confirmPremiumSubscription/ssdf [33m400 717.898 ms - 39
+2023-11-27 14:12:05 info: GET /user/confirmPremiumSubscription/ssdf [33m400 755.881 ms - 1510
+2023-11-27 14:12:14 info: POST /user/connectUserWithDoctor [32m200 564.059 ms - 30
+2023-11-27 14:12:17 info: POST /user/connectUserWithDoctor [32m200 437.776 ms - 30
+2023-11-27 14:12:58 info: GET /user/profile [32m200 3549.936 ms - 269
+2023-11-27 14:17:01 info: POST /user/register [32m200 753.834 ms - 283
+2023-11-27 14:17:18 info: POST /user/initiatePremiumSubscription [32m200 987.882 ms - 77
+2023-11-27 14:17:23 info: POST /user/initiatePremiumSubscription [32m200 2602.128 ms - 181
+2023-11-27 14:17:40 info: GET /user/confirmPremiumSubscription/sbdg [33m400 685.103 ms - 947
+2023-11-27 14:17:44 info: GET /user/confirmPremiumSubscription/sbdg [33m400 637.806 ms - 39
+2023-11-27 14:17:47 info: GET /user/confirmPremiumSubscription/sbdg [33m400 962.547 ms - 947
+2023-11-27 14:17:50 info: GET /user/confirmPremiumSubscription/sbdg [33m400 774.813 ms - 39
+2023-11-27 14:17:52 info: GET /user/confirmPremiumSubscription/sbdg [33m400 831.646 ms - 39
+2023-11-27 14:17:55 info: GET /user/confirmPremiumSubscription/sbdg [33m400 692.830 ms - 39
+2023-11-27 14:17:57 info: GET /user/confirmPremiumSubscription/sbdg [33m400 657.085 ms - 39
+2023-11-27 14:17:59 info: GET /user/confirmPremiumSubscription/sbdg [33m400 752.223 ms - 39
+2023-11-27 14:18:13 info: GET /user/confirmPremiumSubscription/sbdg [33m400 12733.521 ms - 947
+2023-11-27 14:18:52 info: GET /user/confirmPremiumSubscription/sbdg [33m400 764.694 ms - 39
+2023-11-27 14:18:54 info: GET /user/confirmPremiumSubscription/sbdg [33m400 677.625 ms - 39
+2023-11-27 14:18:57 info: GET /user/confirmPremiumSubscription/sbdg [33m400 782.988 ms - 1392
+2023-11-27 14:18:59 info: GET /user/confirmPremiumSubscription/sbdg [33m400 760.187 ms - 1392
+2023-11-27 14:19:03 info: GET /user/confirmPremiumSubscription/sbdg [33m400 1052.716 ms - 39
+2023-11-27 14:19:13 info: GET /user/confirmPremiumSubscription/sbdg [32m200 1116.314 ms - 1581
+2023-11-27 14:20:09 info: POST /user/register [32m200 657.589 ms - 284
+2023-11-27 14:20:20 info: POST /user/initiatePremiumSubscription [32m200 804.558 ms - 77
+2023-11-27 14:20:23 info: POST /user/initiatePremiumSubscription [32m200 779.021 ms - 77
+2023-11-27 14:20:26 info: POST /user/initiatePremiumSubscription [32m200 813.146 ms - 77
+2023-11-27 14:20:29 info: POST /user/initiatePremiumSubscription [32m200 886.868 ms - 77
+2023-11-27 14:20:31 info: POST /user/initiatePremiumSubscription [32m200 666.785 ms - 77
+2023-11-27 14:20:33 info: POST /user/initiatePremiumSubscription [32m200 666.580 ms - 77
+2023-11-27 14:20:37 info: POST /user/initiatePremiumSubscription [32m200 663.573 ms - 77
+2023-11-27 14:20:40 info: POST /user/initiatePremiumSubscription [32m200 1075.097 ms - 183
+2023-11-27 14:21:05 info: GET /user/confirmPremiumSubscription/dfffff [33m400 872.262 ms - 1394
+2023-11-27 14:21:08 info: GET /user/confirmPremiumSubscription/dfffff [33m400 841.957 ms - 39
+2023-11-27 14:21:10 info: GET /user/confirmPremiumSubscription/dfffff [33m400 761.430 ms - 39
+2023-11-27 14:21:12 info: GET /user/confirmPremiumSubscription/dfffff [33m400 720.935 ms - 39
+2023-11-27 14:21:15 info: GET /user/confirmPremiumSubscription/dfffff [33m400 804.163 ms - 39
+2023-11-27 14:21:19 error: 400 - Become a premium subscriber to enjoy this feature - /user/connectUserWithDoctor - POST - ::1
+2023-11-27 14:21:19 info: POST /user/connectUserWithDoctor [33m400 340.863 ms - 351
+2023-11-27 14:21:33 error: 400 - Become a premium subscriber to enjoy this feature - /user/connectUserWithDoctor - POST - ::1
+2023-11-27 14:21:33 info: POST /user/connectUserWithDoctor [33m400 289.148 ms - 351
+2023-11-27 14:21:36 error: 400 - Become a premium subscriber to enjoy this feature - /user/connectUserWithDoctor - POST - ::1
+2023-11-27 14:21:36 info: POST /user/connectUserWithDoctor [33m400 290.917 ms - 351
+2023-11-27 14:21:38 error: 400 - Become a premium subscriber to enjoy this feature - /user/connectUserWithDoctor - POST - ::1
+2023-11-27 14:21:38 info: POST /user/connectUserWithDoctor [33m400 372.743 ms - 351
+2023-11-27 14:21:40 error: 400 - Become a premium subscriber to enjoy this feature - /user/connectUserWithDoctor - POST - ::1
+2023-11-27 14:21:40 info: POST /user/connectUserWithDoctor [33m400 401.055 ms - 351
+2023-11-27 14:21:45 info: GET /user/confirmPremiumSubscription/dfffff [33m400 784.379 ms - 39
+2023-11-27 14:21:47 info: GET /user/confirmPremiumSubscription/dfffff [33m400 758.662 ms - 39
+2023-11-27 14:21:52 info: GET /user/confirmPremiumSubscription/dfffff [32m200 1039.222 ms - 1583
+2023-11-27 14:21:57 info: POST /user/connectUserWithDoctor [32m200 709.873 ms - 30
+2023-11-27 14:22:14 info: POST /staff/login [32m200 380.145 ms - 2192
+2023-11-27 14:23:01 info: GET /staff/view-pending-patients [32m200 309.642 ms - 813
+2023-11-27 14:23:52 info: POST /staff/apporve-pending-patients [32m200 474.754 ms - 150
+2023-11-27 14:24:00 info: GET /staff/view-pending-patients [32m200 323.215 ms - 2
+2023-11-27 14:24:52 info: POST /user/register [32m200 608.873 ms - 285
+2023-11-27 14:25:07 info: POST /user/initiatePremiumSubscription [32m200 750.736 ms - 77
+2023-11-27 14:25:10 info: POST /user/initiatePremiumSubscription [32m200 1050.341 ms - 184
+2023-11-27 14:25:38 info: GET /user/confirmPremiumSubscription/dfffsff [33m400 673.189 ms - 39
+2023-11-27 14:25:40 info: GET /user/confirmPremiumSubscription/dfffsff [33m400 845.571 ms - 39
+2023-11-27 14:25:43 info: GET /user/confirmPremiumSubscription/dfffsff [33m400 812.118 ms - 39
+2023-11-27 14:25:46 info: GET /user/confirmPremiumSubscription/dfffsff [32m200 1074.637 ms - 1463
+2023-11-27 14:25:53 info: POST /user/connectUserWithDoctor [32m200 476.870 ms - 30
+2023-11-27 14:26:05 info: POST /user/register [32m200 478.953 ms - 286
+2023-11-27 14:26:13 info: POST /user/initiatePremiumSubscription [32m200 773.249 ms - 77
+2023-11-27 14:26:24 info: POST /user/initiatePremiumSubscription [32m200 774.869 ms - 77
+2023-11-27 14:26:31 info: POST /user/initiatePremiumSubscription [32m200 5124.058 ms - 185
+2023-11-27 14:26:56 info: GET /user/confirmPremiumSubscription/ssssbbdg [33m400 689.586 ms - 39
+2023-11-27 14:27:00 info: GET /user/confirmPremiumSubscription/ssssbbdg [33m400 1035.455 ms - 39
+2023-11-27 14:27:02 info: GET /user/confirmPremiumSubscription/ssssbbdg [32m200 905.112 ms - 1465
+2023-11-27 14:27:13 info: POST /user/connectUserWithDoctor [32m200 501.808 ms - 30
+2023-11-27 14:27:21 info: POST /staff/login [32m200 448.175 ms - 2370
+2023-11-27 14:27:29 info: GET /staff/view-pending-patients [32m200 297.311 ms - 548
+2023-11-27 14:27:42 info: POST /staff/apporve-pending-patients [32m200 662.147 ms - 177
+2023-11-27 14:29:34 info: POST /user/login [32m200 517.295 ms - 272
+2023-11-27 14:29:40 info: POST /user/connectUserWithDoctor [32m200 747.621 ms - 30
+2023-11-27 14:30:06 info: POST /user/login [32m200 414.662 ms - 271
+2023-11-27 14:30:11 info: POST /user/connectUserWithDoctor [32m200 569.852 ms - 30
+2023-11-27 14:30:17 info: POST /staff/login [32m200 378.983 ms - 2575
+2023-11-27 14:30:26 info: GET /staff/view-pending-patients [32m200 380.607 ms - 546
+2023-11-27 14:30:35 info: POST /staff/apporve-pending-patients [32m200 520.716 ms - 257
+2023-11-27 14:31:23 info: POST /staff/apporve-pending-patients [32m200 720.419 ms - 231
+2023-11-27 14:34:52 info: POST /user/login [32m200 1101.723 ms - 271
+2023-11-27 14:34:57 info: POST /user/connectUserWithDoctor [32m200 800.475 ms - 30
+2023-11-27 14:35:03 info: POST /user/login [32m200 380.677 ms - 272
+2023-11-27 14:35:10 info: POST /user/connectUserWithDoctor [32m200 449.119 ms - 30
+2023-11-27 14:35:16 info: POST /staff/login [32m200 599.258 ms - 2780
+2023-11-27 14:35:24 info: GET /staff/view-pending-patients [32m200 435.777 ms - 546
+2023-11-27 14:35:35 info: POST /staff/apporve-pending-patients [32m200 627.744 ms - 311
+2023-11-27 14:37:11 info: POST /staff/apporve-pending-patients [32m200 754.489 ms - 311
+2023-11-27 14:39:35 info: POST /user/login [32m200 523.434 ms - 272
+2023-11-27 14:39:41 error: 400 - Doctor not found! - /user/connectUserWithDoctor - POST - ::1
+2023-11-27 14:39:41 info: POST /user/connectUserWithDoctor [33m400 479.909 ms - 293
+2023-11-27 14:39:50 error: 400 - Doctor not found! - /user/connectUserWithDoctor - POST - ::1
+2023-11-27 14:39:50 info: POST /user/connectUserWithDoctor [33m400 773.502 ms - 293
+2023-11-27 14:39:54 info: POST /user/login [32m200 404.641 ms - 272
+2023-11-27 14:40:00 error: 400 - Doctor not found! - /user/connectUserWithDoctor - POST - ::1
+2023-11-27 14:40:00 info: POST /user/connectUserWithDoctor [33m400 457.279 ms - 293
+2023-11-27 14:40:21 info: POST /staff/register [32m200 792.186 ms - 493
+2023-11-27 14:40:36 info: POST /user/login [32m200 453.385 ms - 272
+2023-11-27 14:40:42 info: POST /user/connectUserWithDoctor [32m200 522.409 ms - 30
+2023-11-27 14:41:03 info: POST /staff/login [32m200 504.609 ms - 711
+2023-11-27 14:41:13 info: GET /staff/view-pending-patients [32m200 355.002 ms - 274
+2023-11-27 14:41:24 info: POST /staff/apporve-pending-patients [32m200 502.042 ms - 73
+2023-11-27 14:41:37 info: POST /user/login [32m200 467.365 ms - 272
+2023-11-27 14:41:41 info: POST /user/connectUserWithDoctor [32m200 460.413 ms - 30
+2023-11-27 14:41:53 info: POST /user/login [32m200 400.903 ms - 271
+2023-11-27 14:41:57 info: POST /user/connectUserWithDoctor [32m200 645.232 ms - 30
+2023-11-27 14:42:02 info: POST /staff/login [32m200 438.910 ms - 948
+2023-11-27 14:42:10 info: GET /staff/view-pending-patients [32m200 293.110 ms - 551
+2023-11-27 14:42:34 info: POST /staff/apporve-pending-patients [32m200 514.516 ms - 110
+2023-11-27 14:43:41 info: POST /user/login [32m200 490.811 ms - 271
+2023-11-27 14:43:45 info: POST /user/connectUserWithDoctor [32m200 629.982 ms - 30
+2023-11-27 14:43:54 info: POST /user/login [32m200 518.620 ms - 272
+2023-11-27 14:43:59 info: POST /user/connectUserWithDoctor [32m200 465.864 ms - 30
+2023-11-27 14:44:06 info: POST /staff/login [32m200 481.948 ms - 1163
+2023-11-27 14:44:19 info: GET /staff/view-pending-patients [32m200 1351.397 ms - 561
+2023-11-27 14:44:27 info: POST /staff/apporve-pending-patients [32m200 485.460 ms - 216
+2023-11-27 14:45:13 info: POST /staff/register [32m200 1036.905 ms - 494
+2023-11-27 14:45:23 info: POST /user/login [32m200 585.878 ms - 272
+2023-11-27 14:45:29 info: POST /user/connectUserWithDoctor [32m200 474.182 ms - 30
+2023-11-27 14:45:38 info: POST /user/login [32m200 462.595 ms - 271
+2023-11-27 14:45:43 info: POST /user/connectUserWithDoctor [32m200 704.619 ms - 30
+2023-11-27 14:46:02 info: POST /staff/login [32m200 766.341 ms - 739
+2023-11-27 14:46:08 info: GET /staff/view-pending-patients [32m200 360.363 ms - 546
+2023-11-27 14:46:18 info: POST /staff/apporve-pending-patients [32m200 660.713 ms - 132
+2023-11-27 14:48:02 info: POST /staff/apporve-pending-patients [32m200 711.926 ms - 122
+2023-11-27 14:49:34 info: POST /staff/apporve-pending-patients [32m200 576.636 ms - 123
+2023-11-27 14:50:15 info: POST /user/login [32m200 534.378 ms - 271
+2023-11-27 14:50:20 info: POST /user/connectUserWithDoctor [32m200 625.177 ms - 30
+2023-11-27 14:50:32 info: POST /user/login [32m200 426.330 ms - 272
+2023-11-27 14:50:37 info: POST /user/connectUserWithDoctor [32m200 491.664 ms - 30
+2023-11-27 14:50:42 info: POST /staff/login [32m200 365.412 ms - 971
+2023-11-27 14:51:11 info: POST /staff/apporve-pending-patients [32m200 690.109 ms - 203
+2023-11-27 14:51:29 info: POST /staff/apporve-pending-patients [32m200 463.335 ms - 203
+2023-11-27 14:51:49 info: POST /staff/apporve-pending-patients [32m200 513.479 ms - 257
+2023-11-27 14:52:51 info: POST /staff/apporve-pending-patients [32m200 2114.998 ms - 284
+2023-11-27 14:53:00 info: POST /staff/apporve-pending-patients [32m200 634.327 ms - 258
+2023-11-27 14:54:28 info: POST /user/login [32m200 469.141 ms - 273
+2023-11-27 14:54:35 error: 400 - Doctor not found! - /user/connectUserWithDoctor - POST - ::1
+2023-11-27 14:54:35 info: POST /user/connectUserWithDoctor [33m400 492.916 ms - 293

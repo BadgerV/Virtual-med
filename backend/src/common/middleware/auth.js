@@ -5,6 +5,9 @@ import { ENVIRONMENT } from "../config/environment.js";
 import { catchAsync } from "../utils/errorHandler.js";
 import Staff from "../../models/StaffModel.js";
 
+
+
+
 export const auth = catchAsync(async (req, res, next) => {
   // Retrieve the token from the cookie instead of the Authorization header
   const token = req.cookies.auth;
@@ -65,5 +68,20 @@ export const staffAuth = catchAsync(async (req, res, next) => {
     next();
   } catch (error) {
     throw new AppError("Invalid token", 401);
+  }
+});
+
+export const isPremium = catchAsync(async (req, res, next) => {
+  const user = req.user;
+
+  const foundUser = await User.findOne({ _id: user._id });
+
+  if (foundUser.isPremium === true) {
+    next();
+  } else {
+    throw new AppError(
+      "Become a premium subscriber to enjoy this feature",
+      400
+    );
   }
 });

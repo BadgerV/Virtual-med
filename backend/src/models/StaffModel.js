@@ -11,8 +11,14 @@ StaffSchema.methods.toJSON = function () {
   const staffObject = staff.toObject();
 
   delete staffObject.password;
-  delete staffObject.cerfiticate1;
-  delete staffObject.cerfiticate2;
+  delete staffObject.medicalLisense;
+  delete staffObject.boardCertification;
+  // delete staffObject.passportImage;
+  delete staffObject.hasProvidedCredentials;
+  delete staffObject.accountType;
+  delete staffObject.proofOfIdentity;
+  delete staffObject.currentPatients;
+  delete staffObject.allPatients;
 
   return staffObject;
 };

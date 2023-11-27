@@ -173,7 +173,10 @@ const payStack = {
           const responseData = JSON.parse(data);
 
           // Check the status of the verification response
-          if (responseData.data?.status === "success") {
+          if (
+            responseData.data?.status == "success" &&
+            responseData.data?.paid_at !== null
+          ) {
             // await PremiumSubscribers.ids.push(req.user._id);
             req.user.isPremium = true;
             await req.user.save();
@@ -210,3 +213,43 @@ const payStack = {
 };
 
 export const initializePayment = payStack;
+
+export const ConnectUserWithDoctor = catchAsync(async (req, res) => {
+  const { staffId } = req.body;
+  const user = req.user;
+
+  // Check if the doctor is not occupied
+  const isDoctorOccupied = await Staff.exists({
+    _id: staffId,
+    "currentPatients.7": { $exists: false },
+  });
+
+  if (!isDoctorOccupied) {
+    throw new AppError("Doctor is occupied at the moment", 400);
+  }
+
+  // Find the doctor
+  const foundStaff = await Staff.findOne({ _id: staffId });
+
+  if (!foundStaff) {
+    throw new AppError("Doctor not found!", 400);
+  }
+
+  // Check if the doctor is not already in pendingPatients or currentPatients
+  if (
+    foundStaff.pendingPatients.includes(user._id) ||
+    foundStaff.currentPatients.includes(user._id)
+  ) {
+    throw new AppError("You are already a patient to this specialist");
+  }
+
+  // Update the doctor by pushing the new patient to pendingPatients
+  foundStaff.pendingPatients.push(user._id);
+
+  // Save the changes to the database
+  await foundStaff.save();
+
+  console.log(foundStaff.pendingPatients);
+
+  res.status(200).send(`Dr. ${foundStaff.lastName} has been notified.`);
+});

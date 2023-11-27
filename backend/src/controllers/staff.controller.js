@@ -1,12 +1,8 @@
 import Staff from "../models/StaffModel.js";
-import multer from "multer";
 import User from "../models/UserModel.js";
 import { catchAsync } from "../common/utils/errorHandler.js";
 import { isNullOrEmpty } from "../common/utils/helper.js";
 import AppError from "../common/utils/appError.js";
-import Paystack from "paystack";
-
-const PayStackInstance = Paystack(process.env.PAYSTACK_PUBLIC_KEY);
 
 export const registerStaff = catchAsync(async (req, res) => {
   const { firstName, lastName, email, password } = req.body;
@@ -35,6 +31,27 @@ export const registerStaff = catchAsync(async (req, res) => {
   await newStaff.save();
 
   res.status(200).send({ newStaff });
+});
+
+export const loginStaff = catchAsync(async (req, res) => {
+  const { email, password } = req.body;
+
+  if (isNullOrEmpty(email) || isNullOrEmpty(password)) {
+    throw new AppError("Please fill all the inputs", 400);
+  }
+
+  const staff = await Staff.findByCredentials(password, email);
+
+  const token = await staff.generateAuthToken();
+  // Set a cookie named 'authToken' with the encoded token
+  await res.cookie("auth", token, { httpOnly: true });
+  await staff.save();
+
+  res.status(200).send(staff);
+});
+
+export const getUser = catchAsync(async (req, res) => {
+  res.send(req.user);
 });
 
 export const provideCredentials = catchAsync(async (req, res) => {
@@ -95,4 +112,77 @@ export const provideCredentials = catchAsync(async (req, res) => {
 
 export const getStaff = catchAsync(async (req, res) => {
   res.send(req.staff);
+});
+
+export const getStaffs = catchAsync(async (req, res) => {
+  const staffs = await Staff.find({});
+
+  res.status(200).send(staffs);
+});
+
+export const getActiveStaffs = catchAsync(async (req, res) => {
+  const activeStaffs = await Staff.find({ isActive: false });
+
+  res.status(200).send(activeStaffs);
+});
+
+export const getSpecialists = catchAsync(async (req, res) => {
+  const { speciality } = req.params;
+  const foundSpecialists = await Staff.find({
+    speciality: { $regex: new RegExp(speciality, "i") },
+  });
+
+  res.status(200).send(foundSpecialists);
+});
+
+export const approvePatient = catchAsync(async (req, res) => {
+  const { userId } = req.body;
+  const staff = req.staff;
+
+  // Check if the user is a premium user
+  const user = await User.findOne({ _id: userId, isPremium: true });
+
+  if (!user) {
+    throw new AppError("Please subscribe to enjoy this feature", 400);
+  }
+
+  const isUserPending = staff.pendingPatients.includes(userId);
+  const isAlreadyPatient = staff.currentPatients.includes(userId);
+
+  if (!isUserPending) {
+    throw new AppError("User is not in your pending patients list");
+  }
+
+  if(isAlreadyPatient) {
+    throw new AppError("User is already your patient")
+  }
+  // Use filter to create a new array without the userId
+  const pendingPatients = staff.pendingPatients.filter(
+    (patientId) => patientId != userId
+  );
+
+  // Add the userId to the currentPatients array
+  staff.currentPatients.push(userId);
+  staff.pendingPatients = pendingPatients;
+
+  // Save the changes to the database
+  await staff.save();
+
+  // Return an object with currentPatients and pendingPatients
+  res
+    .status(200)
+    .send(`${user.firstName} has been added to you patient list successfully`);
+});
+
+export const viewPendingPatients = catchAsync(async (req, res) => {
+  const staff = req.staff;
+
+  const pendingPatients = await Promise.all(
+    staff.pendingPatients.map(async (patientId) => {
+      const patient = await User.findOne({ _id: patientId });
+      return patient;
+    })
+  );
+
+  res.send(pendingPatients);
 });

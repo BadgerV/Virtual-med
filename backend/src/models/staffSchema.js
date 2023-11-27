@@ -113,6 +113,9 @@ const StaffSchema = new mongoose.Schema(
     },
     professionalReferences: [referenceSchema],
     tokens: [tokenSchema],
+    currentPatients: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
+    allPatients: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
+    pendingPatients: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
   },
   { timestamps: true }
 );

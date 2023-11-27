@@ -1,8 +1,14 @@
 import { Router } from "express";
 import {
+  approvePatient,
+  getActiveStaffs,
+  getSpecialists,
   getStaff,
+  getStaffs,
+  loginStaff,
   provideCredentials,
   registerStaff,
+  viewPendingPatients,
 } from "../controllers/staff.controller.js";
 import { staffAuth } from "../common/middleware/auth.js";
 import multer from "multer";
@@ -23,6 +29,7 @@ const upload = multer({
 
 const staffRoutes = () => {
   router.post("/register", registerStaff);
+  router.post("/login", loginStaff);
   router.post(
     "/provide-credentials",
     upload.array("images", 4),
@@ -31,8 +38,12 @@ const staffRoutes = () => {
   );
 
   router.get("/profile", staffAuth, getStaff);
+  router.get("/get-staffs", getStaffs);
+  router.get("/get-active-staffs", getActiveStaffs);
+  router.get("/get-specialists/:speciality", getSpecialists);
+  router.get("/view-pending-patients", staffAuth, viewPendingPatients);
+  router.post("/apporve-pending-patients", staffAuth, approvePatient);
 
-  
   return router;
 };
 

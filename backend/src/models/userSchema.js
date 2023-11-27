@@ -72,6 +72,7 @@ const UserSchema = new mongoose.Schema(
       default: "user",
       immutable: true, // Make the field immutable
     },
+    assignedDoctor: [{ type: mongoose.Schema.Types.ObjectId, ref: "Staff" }],
   },
   { timestamps: true }
 );
