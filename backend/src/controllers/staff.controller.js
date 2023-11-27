@@ -153,8 +153,8 @@ export const approvePatient = catchAsync(async (req, res) => {
     throw new AppError("User is not in your pending patients list");
   }
 
-  if(isAlreadyPatient) {
-    throw new AppError("User is already your patient")
+  if (isAlreadyPatient) {
+    throw new AppError("User is already your patient");
   }
   // Use filter to create a new array without the userId
   const pendingPatients = staff.pendingPatients.filter(
@@ -163,10 +163,12 @@ export const approvePatient = catchAsync(async (req, res) => {
 
   // Add the userId to the currentPatients array
   staff.currentPatients.push(userId);
+  user.assignedDoctors.push(staff._id);
   staff.pendingPatients = pendingPatients;
 
   // Save the changes to the database
   await staff.save();
+  await user.save();
 
   // Return an object with currentPatients and pendingPatients
   res

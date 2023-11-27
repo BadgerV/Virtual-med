@@ -711,3 +711,27 @@
 2023-11-27 14:54:28 info: POST /user/login [32m200 469.141 ms - 273
 2023-11-27 14:54:35 error: 400 - Doctor not found! - /user/connectUserWithDoctor - POST - ::1
 2023-11-27 14:54:35 info: POST /user/connectUserWithDoctor [33m400 492.916 ms - 293
+2023-11-27 15:04:11 info: POST /staff/login [32m200 534.226 ms - 1097
+2023-11-27 15:04:23 info: POST /user/login [32m200 643.743 ms - 273
+2023-11-27 15:04:27 error: 400 - Doctor is occupied at the moment - /user/connectUserWithDoctor - POST - ::1
+2023-11-27 15:04:27 info: POST /user/connectUserWithDoctor [33m400 456.327 ms - 323
+2023-11-27 15:07:18 info: POST /user/register [32m200 668.899 ms - 288
+2023-11-27 15:07:43 info: POST /staff/register [32m200 751.080 ms - 496
+2023-11-27 15:07:58 info: POST /user/login [32m200 433.928 ms - 276
+2023-11-27 15:08:05 error: 400 - Become a premium subscriber to enjoy this feature - /user/connectUserWithDoctor - POST - ::1
+2023-11-27 15:08:05 info: POST /user/connectUserWithDoctor [33m400 432.458 ms - 351
+2023-11-27 15:08:13 info: POST /user/initiatePremiumSubscription [32m200 754.716 ms - 77
+2023-11-27 15:08:19 info: POST /user/initiatePremiumSubscription [32m200 975.986 ms - 188
+2023-11-27 15:08:45 info: GET /user/confirmPremiumSubscription/ssssbbddsdg [33m400 720.745 ms - 39
+2023-11-27 15:08:49 info: GET /user/confirmPremiumSubscription/ssssbbddsdg [33m400 766.151 ms - 39
+2023-11-27 15:08:53 info: GET /user/confirmPremiumSubscription/ssssbbddsdg [33m400 917.651 ms - 39
+2023-11-27 15:08:57 info: GET /user/confirmPremiumSubscription/ssssbbddsdg [33m400 764.073 ms - 39
+2023-11-27 15:09:00 info: GET /user/confirmPremiumSubscription/ssssbbddsdg [33m400 703.034 ms - 39
+2023-11-27 15:09:04 info: GET /user/confirmPremiumSubscription/ssssbbddsdg [33m400 745.513 ms - 39
+2023-11-27 15:09:07 info: GET /user/confirmPremiumSubscription/ssssbbddsdg [32m200 981.604 ms - 1468
+2023-11-27 15:09:16 info: POST /user/connectUserWithDoctor [32m200 837.474 ms - 30
+2023-11-27 15:09:40 info: POST /staff/login [32m200 354.576 ms - 714
+2023-11-27 15:09:51 info: POST /staff/apporve-pending-patients [32m200 483.307 ms - 54
+2023-11-27 15:09:59 info: GET /staff/view-pending-patients [32m200 161.623 ms - 2
+2023-11-27 15:10:08 info: POST /user/login [32m200 546.439 ms - 275
+2023-11-27 15:10:26 info: POST /user/login [32m200 340.285 ms - 275
