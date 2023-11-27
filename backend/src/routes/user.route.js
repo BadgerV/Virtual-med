@@ -23,8 +23,8 @@ export const userRoutes = () => {
     auth,
     initializePayment.acceptPayment
   );
-  router.post(
-    "/confirmPremiumSubscription",
+  router.get(
+    "/confirmPremiumSubscription/:reference",
     auth,
     initializePayment.verifyPayment
   );

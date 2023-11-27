@@ -443,3 +443,55 @@
 2023-11-27 10:56:14 error: 404 - route not found - /user/undefined - GET - ::1
 2023-11-27 10:56:14 info: GET /user/undefined [33m404 1.940 ms - 57
 2023-11-27 10:56:21 info: POST /user/initiatePremiumSubscription [36m302 714.123 ms - 67
+2023-11-27 11:09:12 error: 401 - Invalid token - /user/initiatePremiumSubscription - POST - ::1
+2023-11-27 11:09:12 info: POST /user/initiatePremiumSubscription [33m401 174.201 ms - 279
+2023-11-27 11:09:59 info: POST /user/register [32m200 562.016 ms - 243
+2023-11-27 11:10:30 info: POST /user/initiatePremiumSubscription [32m200 720.143 ms - -
+2023-11-27 11:11:13 info: POST /user/initiatePremiumSubscription [32m200 692.258 ms - -
+2023-11-27 11:11:16 info: POST /user/initiatePremiumSubscription [32m200 772.105 ms - 47
+2023-11-27 11:12:27 info: POST /user/confirmPremiumSubscription [33m400 704.225 ms - 39
+2023-11-27 11:12:34 info: POST /user/confirmPremiumSubscription [32m200 834.548 ms - 1542
+2023-11-27 11:12:39 info: POST /user/confirmPremiumSubscription [33m400 647.370 ms - 39
+2023-11-27 11:12:41 info: POST /user/confirmPremiumSubscription [33m400 674.631 ms - 39
+2023-11-27 11:12:43 info: POST /user/confirmPremiumSubscription [33m400 657.306 ms - 39
+2023-11-27 11:12:45 info: POST /user/confirmPremiumSubscription [33m400 694.973 ms - 39
+2023-11-27 11:14:33 info: POST /user/initiatePremiumSubscription [32m200 722.616 ms - -
+2023-11-27 11:15:17 info: POST /user/initiatePremiumSubscription [32m200 7752.374 ms - 77
+2023-11-27 11:15:58 info: POST /user/initiatePremiumSubscription [32m200 678.155 ms - 77
+2023-11-27 11:16:02 info: POST /user/initiatePremiumSubscription [32m200 1214.525 ms - 178
+2023-11-27 11:16:46 info: POST /user/initiatePremiumSubscription [32m200 765.327 ms - 203
+2023-11-27 11:17:21 error: 404 - route not found - /user/confirmPremiumSubscription - GET - ::1
+2023-11-27 11:17:21 info: GET /user/confirmPremiumSubscription [33m404 3.318 ms - 57
+2023-11-27 11:17:27 info: POST /user/confirmPremiumSubscription [33m400 633.760 ms - 39
+2023-11-27 11:17:31 info: POST /user/confirmPremiumSubscription [32m200 841.823 ms - 956
+2023-11-27 11:18:34 info: POST /user/confirmPremiumSubscription [33m400 651.199 ms - 39
+2023-11-27 11:18:36 info: POST /user/confirmPremiumSubscription [33m400 646.513 ms - 39
+2023-11-27 11:18:39 info: POST /user/confirmPremiumSubscription [32m200 1645.800 ms - 956
+2023-11-27 11:18:49 info: POST /user/confirmPremiumSubscription [32m200 716.060 ms - 956
+2023-11-27 11:19:22 info: POST /user/confirmPremiumSubscription [33m400 721.614 ms - 39
+2023-11-27 11:19:31 info: POST /user/confirmPremiumSubscription [32m200 695.710 ms - 1465
+2023-11-27 11:19:58 info: POST /user/initiatePremiumSubscription [32m200 644.392 ms - 77
+2023-11-27 11:20:01 info: POST /user/initiatePremiumSubscription [32m200 948.890 ms - 179
+2023-11-27 11:20:41 info: POST /user/confirmPremiumSubscription [33m400 673.103 ms - 39
+2023-11-27 11:20:46 info: POST /user/confirmPremiumSubscription [33m400 1107.869 ms - 39
+2023-11-27 11:20:47 info: POST /user/confirmPremiumSubscription [33m400 667.037 ms - 39
+2023-11-27 11:20:49 info: POST /user/confirmPremiumSubscription [33m400 642.229 ms - 39
+2023-11-27 11:20:57 info: POST /user/confirmPremiumSubscription [33m400 636.694 ms - 39
+2023-11-27 11:20:59 info: POST /user/confirmPremiumSubscription [33m400 675.819 ms - 39
+2023-11-27 11:21:01 info: POST /user/confirmPremiumSubscription [32m200 751.881 ms - 1440
+2023-11-27 11:21:51 info: POST /user/initiatePremiumSubscription [32m200 697.874 ms - 77
+2023-11-27 11:21:53 info: POST /user/initiatePremiumSubscription [32m200 681.152 ms - 77
+2023-11-27 11:21:55 info: POST /user/initiatePremiumSubscription [32m200 904.923 ms - 184
+2023-11-27 11:22:08 info: POST /user/confirmPremiumSubscription [33m400 766.903 ms - 39
+2023-11-27 11:22:10 info: POST /user/confirmPremiumSubscription [32m200 802.548 ms - 936
+2023-11-27 11:23:27 info: POST /user/confirmPremiumSubscription [33m400 7692.888 ms - 39
+2023-11-27 11:23:30 info: POST /user/confirmPremiumSubscription [32m200 700.215 ms - 936
+2023-11-27 11:24:04 info: POST /user/confirmPremiumSubscription [33m400 1599.031 ms - 39
+2023-11-27 11:24:07 info: POST /user/confirmPremiumSubscription [32m200 748.157 ms - 936
+2023-11-27 11:24:52 info: POST /user/confirmPremiumSubscription [32m200 777.243 ms - 1443
+2023-11-27 11:30:42 info: GET /user/confirmPremiumSubscription/hdhdhdh [32m200 1028.307 ms - 1443
+2023-11-27 11:31:31 info: GET /user/confirmPremiumSubscription/hdhdhdh [33m400 683.166 ms - 39
+2023-11-27 11:31:35 info: GET /user/confirmPremiumSubscription/hdhdhdh [32m200 1072.226 ms - 1443
+2023-11-27 11:39:42 error: 404 - Please authenticate - /user/initiatePremiumSubscription - POST - ::1
+2023-11-27 11:39:42 info: POST /user/initiatePremiumSubscription [33m404 10.048 ms - 61
+2023-11-27 11:39:55 info: POST /user/register [32m200 506.250 ms - 261

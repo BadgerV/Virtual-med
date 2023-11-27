@@ -8,6 +8,13 @@ const tokenSchema = new mongoose.Schema(
   { _id: false }
 );
 
+export const premiumSubscribers = new mongoose.Schema(
+  {
+    ids: [{ _id: String }],
+  },
+  { _id: false }
+);
+
 const UserSchema = new mongoose.Schema(
   {
     firstName: {

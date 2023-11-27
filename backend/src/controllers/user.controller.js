@@ -1,6 +1,6 @@
 import AppError from "../common/utils/appError.js";
 import { catchAsync } from "../common/utils/errorHandler.js";
-import User from "../models/UserModel.js";
+import User, { PremiumSubscribers } from "../models/UserModel.js";
 import { isNullOrEmpty } from "../common/utils/helper.js";
 import Staff from "../models/StaffModel.js";
 import https from "https";
@@ -103,12 +103,11 @@ const payStack = {
   acceptPayment: async (req, res) => {
     try {
       // request body from the clients
-      const email = req.body.email;
       const reference = req.body.reference;
       const amount = ENVIRONMENT.APP.SUB_PRICE;
       // params
       const params = JSON.stringify({
-        email: email,
+        email: req.user.email,
         amount: amount * 100,
         reference: reference,
       });
@@ -131,8 +130,8 @@ const payStack = {
             data += chunk;
           });
           apiRes.on("end", () => {
-            res.redirect(JSON.parse(data).data?.authorization_url);
-            // return res.status(200).json(JSON.parse(data));
+            // res.redirect(JSON.parse(data).data?.authorization_url);
+            return res.status(200).json(JSON.parse(data));
           });
         })
         .on("error", (error) => {
@@ -149,7 +148,7 @@ const payStack = {
   verifyPayment: async (req, res) => {
     try {
       // Retrieve the payment reference from the request body or query parameters
-      const paymentReference = req.body.reference; // Adjust as needed
+      const paymentReference = req.params.reference; // Adjust as needed
 
       // Make a request to the Paystack API to verify the payment
       const verificationOptions = {
@@ -170,11 +169,14 @@ const payStack = {
           data += chunk;
         });
 
-        apiRes.on("end", () => {
+        apiRes.on("end", async () => {
           const responseData = JSON.parse(data);
 
           // Check the status of the verification response
-          if (responseData.status) {
+          if (responseData.data?.status === "success") {
+            // await PremiumSubscribers.ids.push(req.user._id);
+            req.user.isPremium = true;
+            await req.user.save();
             // Payment verification successful
             return res.status(200).json({
               message: "Payment verification successful",
