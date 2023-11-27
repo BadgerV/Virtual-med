@@ -821,3 +821,99 @@
 2023-11-27 17:56:39 error: 404 - route not found - /user/verify?token=d8220379df30c2bbcbf232a9cb3c1440daaba011 - POST - ::1
 2023-11-27 17:56:39 info: POST /user/verify?token=d8220379df30c2bbcbf232a9cb3c1440daaba011 [33m404 2.916 ms - 57
 2023-11-27 17:57:33 info: GET /user/verify?token=d8220379df30c2bbcbf232a9cb3c1440daaba011 [32m200 378.868 ms - 303
+2023-11-27 22:08:03 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:04 info: GET /get-staffs [33m404 44.652 ms - 57
+2023-11-27 22:08:04 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:04 info: GET /get-staffs [33m404 12.903 ms - 57
+2023-11-27 22:08:04 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:04 info: GET /get-staffs [33m404 2.509 ms - 57
+2023-11-27 22:08:04 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:04 info: GET /get-staffs [33m404 2.407 ms - 57
+2023-11-27 22:08:15 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:15 info: GET /get-staffs [33m404 2.293 ms - 57
+2023-11-27 22:08:15 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:15 info: GET /get-staffs [33m404 1.920 ms - 57
+2023-11-27 22:08:15 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:15 info: GET /get-staffs [33m404 2.182 ms - 57
+2023-11-27 22:08:15 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:15 info: GET /get-staffs [33m404 1.651 ms - 57
+2023-11-27 22:08:30 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:30 info: GET /get-staffs [33m404 3.263 ms - 57
+2023-11-27 22:08:30 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:30 info: GET /get-staffs [33m404 3.106 ms - 57
+2023-11-27 22:08:30 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:30 info: GET /get-staffs [33m404 3.663 ms - 57
+2023-11-27 22:08:30 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:30 info: GET /get-staffs [33m404 1.786 ms - 57
+2023-11-27 22:08:42 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:42 info: GET /get-staffs [33m404 1.877 ms - 57
+2023-11-27 22:08:42 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:42 info: GET /get-staffs [33m404 2.135 ms - 57
+2023-11-27 22:08:43 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:43 info: GET /get-staffs [33m404 1.922 ms - 57
+2023-11-27 22:08:43 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:43 info: GET /get-staffs [33m404 1.522 ms - 57
+2023-11-27 22:08:47 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:47 info: GET /get-staffs [33m404 1.386 ms - 57
+2023-11-27 22:08:47 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:47 info: GET /get-staffs [33m404 3.138 ms - 57
+2023-11-27 22:08:52 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:52 info: GET /get-staffs [33m404 1.405 ms - 57
+2023-11-27 22:08:52 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:52 info: GET /get-staffs [33m404 1.656 ms - 57
+2023-11-27 22:08:52 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:52 info: GET /get-staffs [33m404 1.323 ms - 57
+2023-11-27 22:08:52 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:52 info: GET /get-staffs [33m404 1.742 ms - 57
+2023-11-27 22:08:54 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:54 info: GET /get-staffs [33m404 1.737 ms - 57
+2023-11-27 22:08:54 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:08:54 info: GET /get-staffs [33m404 1.344 ms - 57
+2023-11-27 22:09:14 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:09:14 info: GET /get-staffs [33m404 1.688 ms - 57
+2023-11-27 22:09:14 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:09:14 info: GET /get-staffs [33m404 2.389 ms - 57
+2023-11-27 22:09:18 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:09:18 info: GET /get-staffs [33m404 1.393 ms - 57
+2023-11-27 22:09:18 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:09:18 info: GET /get-staffs [33m404 1.962 ms - 57
+2023-11-27 22:09:24 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:09:24 info: GET /get-staffs [33m404 1.455 ms - 57
+2023-11-27 22:09:24 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:09:24 info: GET /get-staffs [33m404 1.976 ms - 57
+2023-11-27 22:09:36 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:09:36 info: GET /get-staffs [33m404 1.409 ms - 57
+2023-11-27 22:09:36 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:09:36 info: GET /get-staffs [33m404 1.347 ms - 57
+2023-11-27 22:09:37 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:09:37 info: GET /get-staffs [33m404 1.312 ms - 57
+2023-11-27 22:09:37 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:09:37 info: GET /get-staffs [33m404 1.341 ms - 57
+2023-11-27 22:09:50 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:09:50 info: GET /get-staffs [33m404 1.280 ms - 57
+2023-11-27 22:09:50 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:09:50 info: GET /get-staffs [33m404 1.664 ms - 57
+2023-11-27 22:10:01 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:10:01 info: GET /get-staffs [33m404 2.422 ms - 57
+2023-11-27 22:10:01 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:10:01 info: GET /get-staffs [33m404 1.396 ms - 57
+2023-11-27 22:10:30 error: 404 - route not found - /get-staffs - GET - ::ffff:127.0.0.1
+2023-11-27 22:10:30 info: GET /get-staffs [33m404 3.131 ms - 57
+2023-11-27 22:10:30 error: 404 - route not found - /get-staffs - GET - ::ffff:127.0.0.1
+2023-11-27 22:10:30 info: GET /get-staffs [33m404 1.533 ms - 57
+2023-11-27 22:11:00 error: 404 - route not found - /get-staffs - GET - ::ffff:127.0.0.1
+2023-11-27 22:11:00 info: GET /get-staffs [33m404 2.721 ms - 57
+2023-11-27 22:11:00 error: 404 - route not found - /get-staffs - GET - ::ffff:127.0.0.1
+2023-11-27 22:11:00 info: GET /get-staffs [33m404 3.012 ms - 57
+2023-11-27 22:11:03 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:11:03 info: GET /get-staffs [33m404 1.591 ms - 57
+2023-11-27 22:11:03 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:11:03 info: GET /get-staffs [33m404 1.416 ms - 57
+2023-11-27 22:11:04 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:11:04 info: GET /get-staffs [33m404 1.457 ms - 57
+2023-11-27 22:11:04 error: 404 - route not found - /get-staffs - GET - ::1
+2023-11-27 22:11:04 info: GET /get-staffs [33m404 1.294 ms - 57
+2023-11-27 22:12:38 error: 404 - route not found - /get-staffs - GET - ::ffff:127.0.0.1
+2023-11-27 22:12:38 info: GET /get-staffs [33m404 1.615 ms - 57
+2023-11-27 22:12:39 error: 404 - route not found - /get-staffs - GET - ::ffff:127.0.0.1
+2023-11-27 22:12:39 info: GET /get-staffs [33m404 1.140 ms - 57

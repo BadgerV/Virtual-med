@@ -1,5 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
+// const DEVELOPMENT = "http://localhost:8000/";
+
 const initialState = {
   user: null,
   loading: false,
