@@ -21,3 +21,9 @@ export function isNullOrEmpty(str) {
   }
   // return stringValue === "null" || stringValue === "" || stringValue === undefined || stringValue === null;
 }
+
+import crypto from "crypto"
+
+export const generateToken = () => {
+  return crypto.randomBytes(20).toString("hex"); // Adjust the length as needed
+};

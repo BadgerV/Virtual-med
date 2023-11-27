@@ -1,7 +1,7 @@
 import Staff from "../models/StaffModel.js";
 import User from "../models/UserModel.js";
 import { catchAsync } from "../common/utils/errorHandler.js";
-import { isNullOrEmpty } from "../common/utils/helper.js";
+import { generateToken, isNullOrEmpty } from "../common/utils/helper.js";
 import AppError from "../common/utils/appError.js";
 
 export const registerStaff = catchAsync(async (req, res) => {
@@ -18,6 +18,8 @@ export const registerStaff = catchAsync(async (req, res) => {
 
   const newStaff = new Staff(req.body);
 
+  newStaff.verificationToken = generateToken();
+
   const alreadyStaff = await Staff.findOne({ email: email });
 
   const alreadyUser = await User.findOne({ email: email });
@@ -31,6 +33,23 @@ export const registerStaff = catchAsync(async (req, res) => {
   await newStaff.save();
 
   res.status(200).send({ newStaff });
+});
+
+export const verifyAccount = catchAsync(async (req, res) => {
+  const { token } = req.body;
+
+  // Find the user by the verification token
+  const staff = await Staff.findOne({ verificationToken: token });
+
+  if (!staff) {
+    throw new AppError("Invalid token or staff not found.", 400);
+  }
+  // Mark the staff as verified (update your database accordingly)
+  staff.isVerified = true;
+  staff.verificationToken = null; // Optional: Clear the token after verification
+  await staff.save();
+
+  res.status(200).send("Account verified successfully");
 });
 
 export const loginStaff = catchAsync(async (req, res) => {

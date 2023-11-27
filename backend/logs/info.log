@@ -735,3 +735,89 @@
 2023-11-27 15:09:59 info: GET /staff/view-pending-patients [32m200 161.623 ms - 2
 2023-11-27 15:10:08 info: POST /user/login [32m200 546.439 ms - 275
 2023-11-27 15:10:26 info: POST /user/login [32m200 340.285 ms - 275
+2023-11-27 15:12:08 info: POST /user/register [32m200 570.503 ms - 291
+2023-11-27 15:12:16 info: POST /user/login [32m200 380.657 ms - 279
+2023-11-27 15:12:25 info: POST /user/initiatePremiumSubscription [32m200 764.738 ms - 77
+2023-11-27 15:12:33 info: POST /user/initiatePremiumSubscription [32m200 4624.856 ms - 189
+2023-11-27 15:13:00 info: GET /user/confirmPremiumSubscription/ssssbbddssdg [33m400 898.239 ms - 39
+2023-11-27 15:13:04 info: GET /user/confirmPremiumSubscription/ssssbbddssdg [32m200 1044.355 ms - 1472
+2023-11-27 15:13:11 info: POST /user/connectUserWithDoctor [32m200 1068.703 ms - 30
+2023-11-27 15:13:16 info: POST /staff/login [32m200 568.831 ms - 919
+2023-11-27 15:13:35 info: POST /staff/apporve-pending-patients [32m200 710.593 ms - 54
+2023-11-27 15:13:43 info: POST /user/login [32m200 417.498 ms - 304
+2023-11-27 16:42:24 error: 500 - user is not defined - /user/register - POST - ::1
+2023-11-27 16:42:24 info: POST /user/register [31m500 28.224 ms - 1427
+2023-11-27 16:42:51 info: POST /user/register [32m200 631.871 ms - 355
+2023-11-27 16:47:35 info: POST /user/register [32m200 575.594 ms - 376
+2023-11-27 16:48:01 error: 400 - Please fill all the inputs - /user/verify/ea0ead8c97d6b9fd225c2d68b61f12618338508e - POST - ::1
+2023-11-27 16:48:01 info: POST /user/verify/ea0ead8c97d6b9fd225c2d68b61f12618338508e [33m400 5.333 ms - 1424
+2023-11-27 16:49:13 info: POST /user/verify/ea0ead8c97d6b9fd225c2d68b61f12618338508e [32m200 446.775 ms - 30
+2023-11-27 16:49:40 error: 400 - Please fill all the inputs - /user/login - POST - ::1
+2023-11-27 16:49:40 info: POST /user/login [33m400 5.745 ms - 1433
+2023-11-27 16:50:07 info: POST /user/verify/ea0ead8c97d6b9fd225c2d68b61f12618338508e [32m200 331.971 ms - 30
+2023-11-27 16:50:13 info: POST /user/verify/ea0ead8c97d6b9fd225c2d68b61f12618338508e [32m200 374.361 ms - 30
+2023-11-27 16:50:19 info: POST /user/login [32m200 411.623 ms - 364
+2023-11-27 16:51:23 info: POST /user/verify/ea0ead8c97d6b9fd225c2d68b61f12618338508e [32m200 401.262 ms - 30
+2023-11-27 16:51:46 info: POST /user/verify/ea0ead8c97d6b9fd225c2d68b61f12618338508e [32m200 405.336 ms - 331
+2023-11-27 16:52:21 info: POST /user/login [32m200 415.217 ms - 331
+2023-11-27 16:52:29 info: POST /user/verify/ea0ead8c97d6b9fd225c2d68b61f12618338508e [32m200 364.378 ms - 331
+2023-11-27 16:53:43 error: 400 - User already verified - /user/verify/ea0ead8c97d6b9fd225c2d68b61f12618338508e - POST - ::1
+2023-11-27 16:53:43 info: POST /user/verify/ea0ead8c97d6b9fd225c2d68b61f12618338508e [33m400 228.323 ms - 300
+2023-11-27 16:54:41 info: POST /user/register [32m200 623.963 ms - 377
+2023-11-27 16:54:51 error: 400 - User already verified - /user/verify/f7a8620d9b049554f301c14456c3de691d6e33f - POST - ::1
+2023-11-27 16:54:51 info: POST /user/verify/f7a8620d9b049554f301c14456c3de691d6e33f [33m400 196.136 ms - 300
+2023-11-27 16:55:00 error: 400 - User already verified - /user/verify/f7a8620d9b049554f301c14456c3de691d6e - POST - ::1
+2023-11-27 16:55:00 info: POST /user/verify/f7a8620d9b049554f301c14456c3de691d6e [33m400 749.992 ms - 300
+2023-11-27 16:55:35 error: 400 - User already verified - /user/verify/f7a8620d9b049554f301c14456c3de691d6e - POST - ::1
+2023-11-27 16:55:35 info: POST /user/verify/f7a8620d9b049554f301c14456c3de691d6e [33m400 3609.431 ms - 300
+2023-11-27 16:56:15 info: POST /user/verify/f7a8620d9b049554f301c14456c3de691d6e [32m200 385.160 ms - 331
+2023-11-27 16:56:26 info: POST /user/verify/f7a8620d9b049554f301c14456c3de691d6e33f8 [32m200 410.165 ms - 331
+2023-11-27 16:56:32 info: POST /user/verify/f7a8620d9b049554 [32m200 353.114 ms - 331
+2023-11-27 16:57:05 error: 404 - route not found - /user/verify - POST - ::1
+2023-11-27 16:57:05 info: POST /user/verify [33m404 10.557 ms - 57
+2023-11-27 16:57:12 error: 404 - route not found - /user/verify/ - POST - ::1
+2023-11-27 16:57:12 info: POST /user/verify/ [33m404 2.682 ms - 57
+2023-11-27 16:57:29 info: POST /user/verify/ [32m200 434.141 ms - 326
+2023-11-27 16:57:35 error: 400 - Invalid token or user not found. - /user/verify/ - POST - ::1
+2023-11-27 16:57:35 info: POST /user/verify/ [33m400 181.136 ms - 322
+2023-11-27 16:57:57 error: 400 - Invalid token or user not found. - /user/verify/ - POST - ::1
+2023-11-27 16:57:57 info: POST /user/verify/ [33m400 228.891 ms - 322
+2023-11-27 16:58:03 error: 400 - Invalid token or user not found. - /user/verify/ - POST - ::1
+2023-11-27 16:58:03 info: POST /user/verify/ [33m400 196.935 ms - 322
+2023-11-27 16:58:15 error: 400 - Invalid token or user not found. - /user/verify/ - POST - ::1
+2023-11-27 16:58:15 info: POST /user/verify/ [33m400 174.044 ms - 322
+2023-11-27 16:58:56 error: 400 - Invalid token or user not found. - /user/verify/ - POST - ::1
+2023-11-27 16:58:56 info: POST /user/verify/ [33m400 181.301 ms - 322
+2023-11-27 16:59:06 info: POST /user/register [32m200 585.684 ms - 378
+2023-11-27 16:59:19 error: 400 - Something went wrong - /user/verify/ - POST - ::1
+2023-11-27 16:59:19 info: POST /user/verify/ [33m400 170.694 ms - 298
+2023-11-27 16:59:36 info: POST /user/verify/ [32m200 457.060 ms - 327
+2023-11-27 16:59:42 error: 400 - Invalid token or user not found. - /user/verify/ - POST - ::1
+2023-11-27 16:59:42 info: POST /user/verify/ [33m400 173.724 ms - 322
+2023-11-27 17:03:24 error: 500 - Staff validation failed: email: Validator failed for path `email` with value `daviddddjoshnsssonssddgmail.com` - /staff/register - POST - ::1
+2023-11-27 17:03:24 info: POST /staff/register [31m500 434.914 ms - 753
+2023-11-27 17:03:36 info: POST /staff/register [32m200 599.237 ms - 553
+2023-11-27 17:04:31 info: POST /staff/register [32m200 643.016 ms - 584
+2023-11-27 17:05:16 info: POST /staff/verify [32m200 374.467 ms - 532
+2023-11-27 17:17:52 info: POST /user/register [32m200 547.631 ms - 353
+2023-11-27 17:20:37 info: POST /user/register [32m200 511.157 ms - 353
+2023-11-27 17:31:42 info: POST /user/register [32m200 537.147 ms - 349
+2023-11-27 17:32:51 info: POST /user/register [32m200 516.026 ms - 352
+2023-11-27 17:35:06 info: POST /user/register [32m200 514.453 ms - 353
+2023-11-27 17:36:41 info: POST /user/register [32m200 487.011 ms - 353
+2023-11-27 17:37:00 error: 404 - route not found - /user/verify?token=73e4f82c544161e67f117e13775cc37f9abd8376 - GET - ::ffff:127.0.0.1
+2023-11-27 17:37:00 info: GET /user/verify?token=73e4f82c544161e67f117e13775cc37f9abd8376 [33m404 6.875 ms - 57
+2023-11-27 17:41:27 error: 500 - url is not defined - /user/verify?token=73e4f82c544161e67f117e13775cc37f9abd8376 - POST - ::1
+2023-11-27 17:41:27 info: POST /user/verify?token=73e4f82c544161e67f117e13775cc37f9abd8376 [31m500 18.572 ms - 1426
+2023-11-27 17:42:00 error: 500 - url is not defined - /user/verify?token=73e4f82c544161e67f117e13775cc37f9abd8376 - POST - ::1
+2023-11-27 17:42:00 info: POST /user/verify?token=73e4f82c544161e67f117e13775cc37f9abd8376 [31m500 8.248 ms - 1426
+2023-11-27 17:42:21 error: 500 - url is not defined - /user/verify?token=73e4f82c544161e67f117e13775cc37f9abd8376 - POST - ::1
+2023-11-27 17:42:21 info: POST /user/verify?token=73e4f82c544161e67f117e13775cc37f9abd8376 [31m500 3.385 ms - 1426
+2023-11-27 17:45:58 error: 500 - Cast to string failed for value "{ token: '73e4f82c544161e67f117e13775cc37f9abd8376' }" (type Object) at path "verificationToken" for model "User" - /user/verify/73e4f82c544161e67f117e13775cc37f9abd8376 - POST - ::1
+2023-11-27 17:45:58 info: POST /user/verify/73e4f82c544161e67f117e13775cc37f9abd8376 [31m500 25.627 ms - 1662
+2023-11-27 17:55:37 info: POST /user/register [32m200 572.182 ms - 354
+2023-11-27 17:55:47 error: 404 - route not found - /user/verify?token=d8220379df30c2bbcbf232a9cb3c1440daaba011 - POST - ::1
+2023-11-27 17:55:47 info: POST /user/verify?token=d8220379df30c2bbcbf232a9cb3c1440daaba011 [33m404 4.040 ms - 57
+2023-11-27 17:56:39 error: 404 - route not found - /user/verify?token=d8220379df30c2bbcbf232a9cb3c1440daaba011 - POST - ::1
+2023-11-27 17:56:39 info: POST /user/verify?token=d8220379df30c2bbcbf232a9cb3c1440daaba011 [33m404 2.916 ms - 57
+2023-11-27 17:57:33 info: GET /user/verify?token=d8220379df30c2bbcbf232a9cb3c1440daaba011 [32m200 378.868 ms - 303

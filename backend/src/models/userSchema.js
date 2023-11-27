@@ -72,6 +72,15 @@ const UserSchema = new mongoose.Schema(
       default: "user",
       immutable: true, // Make the field immutable
     },
+    verificationToken: {
+      type: String,
+      default : "Nothing yet"
+    },
+    isVerified: {
+      type: Boolean,
+      default: false,
+      required: true,
+    },
     assignedDoctors: [{ type: mongoose.Schema.Types.ObjectId, ref: "Staff" }],
   },
   { timestamps: true }

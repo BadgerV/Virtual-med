@@ -113,6 +113,16 @@ const StaffSchema = new mongoose.Schema(
     },
     professionalReferences: [referenceSchema],
     tokens: [tokenSchema],
+
+    verificationToken: {
+      type: String,
+      default: "Nothing yet",
+    },
+    isVerified: {
+      type: Boolean,
+      default: false,
+      required: true,
+    },
     currentPatients: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
     allPatients: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
     pendingPatients: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],

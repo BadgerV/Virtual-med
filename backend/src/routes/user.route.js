@@ -7,6 +7,7 @@ import {
   // initiatePremiumSubscription,
   loginUser,
   registerUser,
+  verifyAccount,
 } from "../controllers/user.controller.js";
 import { isPremium } from "../common/middleware/auth.js";
 
@@ -18,6 +19,7 @@ export const userRoutes = () => {
    */
   // router.get("/", getUser);
   router.post("/register", registerUser);
+  router.get("/verify/", verifyAccount);
   router.post("/login", loginUser);
   router.get("/profile", auth, getUser);
   router.post(

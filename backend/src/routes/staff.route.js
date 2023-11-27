@@ -8,6 +8,7 @@ import {
   loginStaff,
   provideCredentials,
   registerStaff,
+  verifyAccount,
   viewPendingPatients,
 } from "../controllers/staff.controller.js";
 import { staffAuth } from "../common/middleware/auth.js";
@@ -29,6 +30,7 @@ const upload = multer({
 
 const staffRoutes = () => {
   router.post("/register", registerStaff);
+  router.post("/verify", verifyAccount);
   router.post("/login", loginStaff);
   router.post(
     "/provide-credentials",

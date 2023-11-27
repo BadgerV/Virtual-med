@@ -5,6 +5,8 @@ import { isNullOrEmpty } from "../common/utils/helper.js";
 import Staff from "../models/StaffModel.js";
 import https from "https";
 import { ENVIRONMENT } from "../common/config/environment.js";
+import { generateToken } from "../common/utils/helper.js";
+import nodemailer from "nodemailer";
 
 // const Paystack = import("paystack");
 // const sdk = await Paystack(process.env.PAYSTACK_PUBLIC_KEY);
@@ -23,6 +25,15 @@ import { ENVIRONMENT } from "../common/config/environment.js";
 //   return res.status(200).json(user);
 // });
 
+// Step 1: Create a nodemailer transporter
+const transporter = nodemailer.createTransport({
+  service: "gmail", // Use your email service provider
+  auth: {
+    user: ENVIRONMENT.APP.EMAIL,
+    pass: ENVIRONMENT.APP.PASSWORD,
+  },
+});
+
 export const registerUser = catchAsync(async (req, res) => {
   const { firstName, lastName, email, password } = req.body;
 
@@ -37,6 +48,31 @@ export const registerUser = catchAsync(async (req, res) => {
 
   const newUser = new User(req.body);
 
+  newUser.verificationToken = generateToken();
+
+  console.log(newUser.verificationToken);
+
+  // Step 2: Generate the verification link and compose the email
+  const verificationLink = `http://localhost:8000/user/verify?token=${newUser.verificationToken}`;
+
+  const mailOptions = {
+    from: "your_email@gmail.com",
+    to: newUser.email,
+    subject: "Account Verification",
+    text: `Click the following link to verify your account: ${verificationLink}`,
+  };
+
+  // Step 3: Send the email
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error(error);
+    } else {
+      console.log("Email sent: " + info.response);
+    }
+  });
+
+  // REMEMBER TO MAKE SURE THE ACCOUNT IS USELESS WITHOUT VERIFICATION
+
   const alreadyUser = await User.findOne({ email: email });
 
   const alreadyStaff = await Staff.findOne({ email: email });
@@ -45,11 +81,35 @@ export const registerUser = catchAsync(async (req, res) => {
     throw new AppError("Email already registered", 400);
   }
   const token = await newUser.generateAuthToken();
+
   // Store the token in a cookie
   res.cookie("auth", token, { httpOnly: true });
   await newUser.save();
 
   res.status(200).send({ newUser });
+});
+
+export const verifyAccount = catchAsync(async (req, res) => {
+  const { token } = req.query; // Get the token from the query parameters
+
+  // Find the user by the verification token
+  const user = await User.findOne({ verificationToken: token });
+
+  console.log(user);
+
+  if (!user) {
+    throw new AppError("Invalid token or user not found.", 400);
+  }
+
+  if (user.verificationToken === null && user.isVerified) {
+    throw new AppError("User already verified", 400);
+  }
+  // Mark the user as verified (update your database accordingly)
+  user.isVerified = true;
+  user.verificationToken = null; // Optional: Clear the token after verification
+  await user.save();
+
+  res.status(200).send(user);
 });
 
 export const loginUser = catchAsync(async (req, res) => {
