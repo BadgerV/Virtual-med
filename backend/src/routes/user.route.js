@@ -18,7 +18,16 @@ export const userRoutes = () => {
   router.post("/register", registerUser);
   router.post("/login", loginUser);
   router.get("/profile", auth, getUser);
-  router.post("/initiatePremiumSubscription", initializePayment.acceptPayment);
+  router.post(
+    "/initiatePremiumSubscription",
+    auth,
+    initializePayment.acceptPayment
+  );
+  router.post(
+    "/confirmPremiumSubscription",
+    auth,
+    initializePayment.verifyPayment
+  );
 
   return router;
 };

@@ -46,7 +46,7 @@ export const registerUser = catchAsync(async (req, res) => {
   }
   const token = await newUser.generateAuthToken();
   // Store the token in a cookie
-  res.cookie("authToken", token, { httpOnly: true });
+  res.cookie("auth", token, { httpOnly: true });
   await newUser.save();
 
   res.status(200).send({ newUser });
@@ -73,42 +73,44 @@ export const getUser = catchAsync(async (req, res) => {
   res.send(req.user);
 });
 
-export const initiatePremiumSubscription = catchAsync(async (req, res) => {
-  const { amount, currency, email, reference } = req.body;
+// export const initiatePremiumSubscription = catchAsync(async (req, res) => {
+//   const { amount, currency, email, reference } = req.body;
 
-  const Paystack = import("paystack");
-  const sdk = await Paystack(process.env.PAYSTACK_PUBLIC_KEY);
+//   const Paystack = import("paystack");
+//   const sdk = await Paystack(process.env.PAYSTACK_PUBLIC_KEY);
 
-  try {
-    const transaction = await sdk.initializeTransaction({
-      amount: amount,
-      currency: currency,
-      email: email,
-      reference: reference,
-    });
+//   try {
+//     const transaction = await sdk.initializeTransaction({
+//       amount: amount,
+//       currency: currency,
+//       email: email,
+//       reference: reference,
+//     });
 
-    res.json({
-      status: "success",
-      data: {
-        authorizationUrl: transaction.data.authorization_url,
-      },
-    });
-  } catch (error) {
-    console.error(error);
-    res.status(500).send("Error initializing payment");
-  }
-});
+//     res.json({
+//       status: "success",
+//       data: {
+//         authorizationUrl: transaction.data.authorization_url,
+//       },
+//     });
+//   } catch (error) {
+//     console.error(error);
+//     res.status(500).send("Error initializing payment");
+//   }
+// });
 
 const payStack = {
   acceptPayment: async (req, res) => {
     try {
       // request body from the clients
       const email = req.body.email;
-      const amount = 500;
+      const reference = req.body.reference;
+      const amount = ENVIRONMENT.APP.SUB_PRICE;
       // params
       const params = JSON.stringify({
         email: email,
         amount: amount * 100,
+        reference: reference,
       });
       // options
       const options = {
@@ -129,8 +131,8 @@ const payStack = {
             data += chunk;
           });
           apiRes.on("end", () => {
-            console.log(JSON.parse(data));
-            return res.status(200).json(data);
+            res.redirect(JSON.parse(data).data?.authorization_url);
+            // return res.status(200).json(JSON.parse(data));
           });
         })
         .on("error", (error) => {
@@ -142,6 +144,65 @@ const payStack = {
       // Handle any errors that occur during the request
       console.error(error);
       res.status(500).json({ error: "An error occurred" });
+    }
+  },
+  verifyPayment: async (req, res) => {
+    try {
+      // Retrieve the payment reference from the request body or query parameters
+      const paymentReference = req.body.reference; // Adjust as needed
+
+      // Make a request to the Paystack API to verify the payment
+      const verificationOptions = {
+        hostname: "api.paystack.co",
+        port: 443,
+        path: `/transaction/verify/${paymentReference}`,
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${ENVIRONMENT.APP.PAYSTACK}`,
+          "Content-Type": "application/json",
+        },
+      };
+
+      const verificationReq = https.request(verificationOptions, (apiRes) => {
+        let data = "";
+
+        apiRes.on("data", (chunk) => {
+          data += chunk;
+        });
+
+        apiRes.on("end", () => {
+          const responseData = JSON.parse(data);
+
+          // Check the status of the verification response
+          if (responseData.status) {
+            // Payment verification successful
+            return res.status(200).json({
+              message: "Payment verification successful",
+              data: responseData.data,
+            });
+          } else {
+            // Payment verification failed
+            return res.status(400).json({
+              error: "Payment verification failed",
+              data: responseData.data,
+            });
+          }
+        });
+      });
+
+      verificationReq.on("error", (error) => {
+        console.error(error);
+        res
+          .status(500)
+          .json({ error: "An error occurred during payment verification" });
+      });
+
+      verificationReq.end();
+    } catch (error) {
+      console.error(error);
+      res
+        .status(500)
+        .json({ error: "An error occurred during payment verification" });
     }
   },
 };

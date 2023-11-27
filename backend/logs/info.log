@@ -414,3 +414,32 @@
 2023-11-26 23:00:54 info: POST /user/initiatePremiumSubscription [32m200 581.711 ms - 88
 2023-11-26 23:00:57 info: POST /user/initiatePremiumSubscription [32m200 547.667 ms - 88
 2023-11-26 23:02:30 info: POST /user/initiatePremiumSubscription [32m200 845.283 ms - 209
+2023-11-27 10:39:26 info: POST /user/confirmPremiumSubscription [31m500 13.896 ms - 23
+2023-11-27 10:39:44 info: POST /user/initiatePremiumSubscription [32m200 610.994 ms - 88
+2023-11-27 10:42:20 info: POST /user/initiatePremiumSubscription [32m200 535.058 ms - 88
+2023-11-27 10:42:52 info: POST /user/initiatePremiumSubscription [32m200 576.494 ms - 88
+2023-11-27 10:44:23 info: POST /user/initiatePremiumSubscription [32m200 736.781 ms - 223
+2023-11-27 10:45:20 info: POST /user/confirmPremiumSubscription [31m500 6.222 ms - 23
+2023-11-27 10:49:41 info: POST /user/confirmPremiumSubscription [33m400 603.784 ms - 39
+2023-11-27 10:50:24 info: POST /user/confirmPremiumSubscription [32m200 559.840 ms - 1457
+2023-11-27 10:51:53 info: POST /user/initiatePremiumSubscription [32m200 586.370 ms - 77
+2023-11-27 10:52:01 info: POST /user/initiatePremiumSubscription [32m200 716.347 ms - 202
+2023-11-27 10:53:41 info: POST /user/initiatePremiumSubscription [32m200 849.272 ms - 203
+2023-11-27 10:54:00 info: POST /user/initiatePremiumSubscription [32m200 519.531 ms - 77
+2023-11-27 10:54:05 info: POST /user/initiatePremiumSubscription [32m200 2218.140 ms - 60
+2023-11-27 10:54:10 info: POST /user/initiatePremiumSubscription [32m200 669.140 ms - 77
+2023-11-27 10:54:12 info: POST /user/initiatePremiumSubscription [32m200 529.412 ms - 77
+2023-11-27 10:54:15 info: POST /user/initiatePremiumSubscription [32m200 669.059 ms - 204
+2023-11-27 10:55:11 info: POST /user/initiatePremiumSubscription [32m200 572.617 ms - 77
+2023-11-27 10:55:15 info: POST /user/initiatePremiumSubscription [32m200 651.283 ms - 60
+2023-11-27 10:55:17 info: POST /user/initiatePremiumSubscription [32m200 519.441 ms - 77
+2023-11-27 10:55:21 info: POST /user/initiatePremiumSubscription [32m200 487.132 ms - 77
+2023-11-27 10:55:24 info: POST /user/initiatePremiumSubscription [32m200 530.364 ms - 77
+2023-11-27 10:55:28 info: POST /user/initiatePremiumSubscription [32m200 2305.874 ms - 201
+2023-11-27 10:56:08 info: POST /user/initiatePremiumSubscription [36m302 505.668 ms - 31
+2023-11-27 10:56:08 error: 404 - route not found - /user/undefined - GET - ::1
+2023-11-27 10:56:08 info: GET /user/undefined [33m404 5.202 ms - 57
+2023-11-27 10:56:14 info: POST /user/initiatePremiumSubscription [36m302 547.915 ms - 31
+2023-11-27 10:56:14 error: 404 - route not found - /user/undefined - GET - ::1
+2023-11-27 10:56:14 info: GET /user/undefined [33m404 1.940 ms - 57
+2023-11-27 10:56:21 info: POST /user/initiatePremiumSubscription [36m302 714.123 ms - 67
