@@ -24,7 +24,6 @@ const Home = lazy(() => import("./pages/Home/Home.jsx"));
 
 //i was thinking we should start with the redux store and the asynchronous detchings from the backend pending the time we will get a designer.
 
-//i created a flder called redux already
 
 const App = () => {
   // FETCH USERS FROM REDUX STATE
