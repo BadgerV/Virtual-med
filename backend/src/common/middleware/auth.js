@@ -40,6 +40,7 @@ export const auth = catchAsync(async (req, res, next) => {
   }
 });
 
+
 export const staffAuth = catchAsync(async (req, res, next) => {
   const token = req.cookies.auth;
 

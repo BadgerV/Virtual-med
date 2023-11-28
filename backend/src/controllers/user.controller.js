@@ -34,6 +34,8 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+
+
 export const registerUser = catchAsync(async (req, res) => {
   const { firstName, lastName, email, password } = req.body;
 

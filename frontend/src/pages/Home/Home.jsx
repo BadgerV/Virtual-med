@@ -1,5 +1,4 @@
 import "./Home.css";
-import Navbar from "../../components/Navbar/Navbar";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { getDoctors } from "../../redux/doctors/DoctorsSlice";
@@ -18,7 +17,6 @@ const Home = () => {
   }, []);
   return (
     <>
-      <Navbar />
       <div>First</div>
       <div>Firstb</div>
       <div>First</div>
