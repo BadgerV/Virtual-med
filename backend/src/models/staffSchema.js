@@ -71,6 +71,10 @@ const StaffSchema = new mongoose.Schema(
         message: "Age must be a positive integer",
       },
     },
+    phoneNumber: {
+      type: String,
+      required: true,
+    },
     medicalLisense: {
       type: Buffer,
     },

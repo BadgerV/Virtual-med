@@ -1,3 +1,4 @@
+// import crypto from "crypto"
 import { randomBytes } from "crypto";
 
 /**
@@ -9,6 +10,7 @@ import { randomBytes } from "crypto";
 export function generateRandomString(length) {
   return randomBytes(length).toString("hex");
 }
+
 export function isNullOrEmpty(str) {
   if (str === undefined) {
     return true;
@@ -22,8 +24,6 @@ export function isNullOrEmpty(str) {
   // return stringValue === "null" || stringValue === "" || stringValue === undefined || stringValue === null;
 }
 
-import crypto from "crypto"
-
 export const generateToken = () => {
-  return crypto.randomBytes(20).toString("hex"); // Adjust the length as needed
+  return randomBytes(16).toString("hex");
 };

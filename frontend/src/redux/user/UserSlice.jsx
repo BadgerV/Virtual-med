@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import axios from "axios";
 
-// const DEVELOPMENT = "http://localhost:8000/";
+const DEVELOPMENT = "http://localhost:8000";
 
 const initialState = {
   user: null,
@@ -9,7 +10,23 @@ const initialState = {
   error: false,
 };
 
-const registerUser = createAsyncThunk("/user/registerUser", async () => {});
+export const registerUser = createAsyncThunk(
+  "/user/registerUser",
+  async ({ firstName, lastName, nickName, email, password, phoneNumber }) => {
+    const response = await axios.post(`${DEVELOPMENT}/user/register`, {
+      firstName,
+      lastName,
+      email,
+      password,
+      phoneNumber,
+      nickName,
+    });
+
+    console.log(response.data.newUser);
+
+    return response.data.newUser;
+  }
+);
 const loginUser = createAsyncThunk("/user/loginUser", async () => {});
 const deleteUser = createAsyncThunk("/user/deleteUser", async () => {});
 
@@ -68,6 +85,7 @@ const userSlice = createSlice({
       .addCase(registerUser.fulfilled, (state, action) => {
         state.loading = false;
         state.user = action.payload;
+        console.log(state.user);
       })
       .addCase(registerUser.rejected, (state, action) => {
         state.loading = false;

@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import AppError from "../common/utils/appError.js";
 import { ENVIRONMENT } from "../common/config/environment.js";
-import UserSchema, { premiumSubscribers } from "./userSchema.js";
+import UserSchema, { premiumSubscribers } from "./UserSchema.js";
 
 UserSchema.methods.toJSON = function () {
   const user = this;

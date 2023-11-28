@@ -51,26 +51,26 @@ export const registerUser = catchAsync(async (req, res) => {
 
   newUser.verificationToken = generateToken();
 
-  console.log(newUser.verificationToken);
+  // console.log(newUser.verificationToken);
 
-  // Step 2: Generate the verification link and compose the email
-  const verificationLink = `http://localhost:8000/user/verify?token=${newUser.verificationToken}`;
+  // // Step 2: Generate the verification link and compose the email
+  // const verificationLink = `http://localhost:8000/user/verify?token=${newUser.verificationToken}`;
 
-  const mailOptions = {
-    from: "your_email@gmail.com",
-    to: newUser.email,
-    subject: "Account Verification",
-    text: `Click the following link to verify your account: ${verificationLink}`,
-  };
+  // const mailOptions = {
+  //   from: "your_email@gmail.com",
+  //   to: newUser.email,
+  //   subject: "Account Verification",
+  //   text: `Click the following link to verify your account: ${verificationLink}`,
+  // };
 
-  // Step 3: Send the email
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      console.error(error);
-    } else {
-      console.log("Email sent: " + info.response);
-    }
-  });
+  // // Step 3: Send the email
+  // transporter.sendMail(mailOptions, (error, info) => {
+  //   if (error) {
+  //     console.error(error);
+  //   } else {
+  //     console.log("Email sent: " + info.response);
+  //   }
+  // });
 
   // REMEMBER TO MAKE SURE THE ACCOUNT IS USELESS WITHOUT VERIFICATION
 

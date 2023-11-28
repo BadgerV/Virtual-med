@@ -35,10 +35,9 @@ const UserSchema = new mongoose.Schema(
         message: "Name can only contain letters",
       },
     },
-    // nickName: {
-    //   type: String,
-    //   required: true,
-    // },
+    nickName: {
+      type: String,
+    },
     email: {
       type: String,
       required: true,
@@ -66,9 +65,13 @@ const UserSchema = new mongoose.Schema(
           "Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers",
       },
     },
+    phoneNumber: {
+      type: String,
+      required: true,
+    },
     isPremium: {
       type: Boolean,
-      default: true,
+      default: false,
     },
     tokens: [tokenSchema],
     accountType: {

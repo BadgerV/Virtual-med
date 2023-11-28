@@ -1256,3 +1256,14 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2023-11-28 17:09:19 info: PUT /chat/communityAdd [31m500 6652.575 ms - 305
 2023-11-28 17:10:28 error: 500 - User is not in this community - /chat/communityRemove - PUT - ::1
 2023-11-28 17:10:28 info: PUT /chat/communityRemove [31m500 671.086 ms - 317
+2023-11-28 18:06:11 info: POST /user/register [32m200 700.931 ms - 240
+2023-11-28 18:08:46 info: POST /user/register [32m200 566.827 ms - 241
+2023-11-28 18:10:37 error: 400 - Email already registered - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 18:10:37 info: POST /user/register [33m400 281.610 ms - 306
+2023-11-28 18:12:19 error: 400 - Email already registered - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 18:16:36 info: POST /user/register [33m400 269395.780 ms - 306
+2023-11-28 18:16:56 info: POST /user/register [32m200 5341.734 ms - 231
+2023-11-28 18:18:27 error: 400 - Email already registered - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 18:18:27 info: POST /user/register [33m400 294.868 ms - 306
+2023-11-28 18:18:39 error: 400 - Email already registered - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 18:18:47 info: POST /user/register [33m400 8990.185 ms - 306
