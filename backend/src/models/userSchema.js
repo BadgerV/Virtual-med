@@ -35,6 +35,10 @@ const UserSchema = new mongoose.Schema(
         message: "Name can only contain letters",
       },
     },
+    // nickName: {
+    //   type: String,
+    //   required: true,
+    // },
     email: {
       type: String,
       required: true,
@@ -64,7 +68,7 @@ const UserSchema = new mongoose.Schema(
     },
     isPremium: {
       type: Boolean,
-      default: false,
+      default: true,
     },
     tokens: [tokenSchema],
     accountType: {
@@ -74,7 +78,7 @@ const UserSchema = new mongoose.Schema(
     },
     verificationToken: {
       type: String,
-      default : "Nothing yet"
+      default: "Nothing yet",
     },
     isVerified: {
       type: Boolean,

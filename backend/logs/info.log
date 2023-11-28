@@ -917,3 +917,342 @@
 2023-11-27 22:12:38 info: GET /get-staffs [33m404 1.615 ms - 57
 2023-11-27 22:12:39 error: 404 - route not found - /get-staffs - GET - ::ffff:127.0.0.1
 2023-11-27 22:12:39 info: GET /get-staffs [33m404 1.140 ms - 57
+2023-11-27 22:16:22 info: GET /staff/get-staffs [32m200 1634.478 ms - 10414
+2023-11-27 22:16:22 info: GET /staff/get-staffs [32m200 1709.665 ms - 10414
+2023-11-27 22:16:23 info: GET /staff/get-staffs [32m200 1095.466 ms - 10414
+2023-11-27 22:16:23 info: GET /staff/get-staffs [36m304 721.084 ms - -
+2023-11-27 22:16:50 info: GET /staff/get-staffs [36m304 1799.098 ms - -
+2023-11-27 22:16:50 info: GET /staff/get-staffs [32m200 2085.595 ms - 10414
+2023-11-27 22:16:51 info: GET /staff/get-staffs [36m304 2279.717 ms - -
+2023-11-27 22:16:52 info: GET /staff/get-staffs [36m304 1075.544 ms - -
+2023-11-27 22:17:42 info: GET /staff/get-staffs [36m304 5379.601 ms - -
+2023-11-27 22:17:43 info: GET /staff/get-staffs [36m304 9180.230 ms - -
+2023-11-27 22:17:45 info: GET /staff/get-staffs [36m304 1513.897 ms - -
+2023-11-27 22:17:45 info: GET /staff/get-staffs [32m200 8098.765 ms - 10414
+2023-11-27 22:20:05 info: GET /staff/get-staffs [36m304 1450.723 ms - -
+2023-11-27 22:20:05 info: GET /staff/get-staffs [32m200 1873.655 ms - 10414
+2023-11-27 22:20:07 info: GET /staff/get-staffs [36m304 1160.102 ms - -
+2023-11-27 22:20:07 info: GET /staff/get-staffs [36m304 803.984 ms - -
+2023-11-27 22:20:43 info: GET /staff/get-staffs [36m304 1096.483 ms - -
+2023-11-27 22:20:44 info: GET /staff/get-staffs [36m304 686.788 ms - -
+2023-11-27 22:20:49 info: GET /staff/get-staffs [36m304 1883.362 ms - -
+2023-11-27 22:20:50 info: GET /staff/get-staffs [36m304 1221.109 ms - -
+2023-11-27 22:20:52 info: GET /staff/get-staffs [36m304 1029.363 ms - -
+2023-11-27 22:20:53 info: GET /staff/get-staffs [32m200 1261.485 ms - 10414
+2023-11-27 22:21:15 info: GET /staff/get-staffs [36m304 996.756 ms - -
+2023-11-27 22:21:16 info: GET /staff/get-staffs [36m304 608.935 ms - -
+2023-11-27 22:21:27 info: GET /staff/get-staffs [36m304 1334.012 ms - -
+2023-11-27 22:21:28 info: GET /staff/get-staffs [36m304 4993.792 ms - -
+2023-11-27 22:21:28 info: GET /staff/get-staffs [32m200 2014.160 ms - 10414
+2023-11-27 22:21:29 info: GET /staff/get-staffs - - ms - -
+2023-11-27 22:21:35 info: GET /staff/get-staffs [32m200 1879.791 ms - 10414
+2023-11-27 22:21:37 info: GET /staff/get-staffs [32m200 1965.372 ms - 10414
+2023-11-27 22:21:37 info: GET /staff/get-staffs [36m304 2280.238 ms - -
+2023-11-27 22:21:37 info: GET /staff/get-staffs [36m304 1899.951 ms - -
+2023-11-28 12:08:32 error: 404 - route not found - /get-all-users/?keyword=%22firstname%22 - GET - ::ffff:127.0.0.1
+2023-11-28 12:08:32 info: GET /get-all-users/?keyword=%22firstname%22 [33m404 17.334 ms - 57
+2023-11-28 12:08:45 error: 404 - route not found - /get-all-users/?keyword=%22firstname%22 - GET - ::ffff:127.0.0.1
+2023-11-28 12:08:45 info: GET /get-all-users/?keyword=%22firstname%22 [33m404 2.821 ms - 57
+2023-11-28 12:08:58 error: 404 - route not found - /user/get-all-users/?keyword=%22firstname%22 - GET - ::ffff:127.0.0.1
+2023-11-28 12:08:58 info: GET /user/get-all-users/?keyword=%22firstname%22 [33m404 2.197 ms - 57
+2023-11-28 12:09:05 error: 404 - route not found - /users/get-all-users/?keyword=%22firstname%22 - GET - ::ffff:127.0.0.1
+2023-11-28 12:09:05 info: GET /users/get-all-users/?keyword=%22firstname%22 [33m404 1.699 ms - 57
+2023-11-28 12:10:00 error: 404 - route not found - /user/get-all-users/?keyword=%22firstname%22 - GET - ::1
+2023-11-28 12:10:00 info: GET /user/get-all-users/?keyword=%22firstname%22 [33m404 2.891 ms - 57
+2023-11-28 12:10:09 error: 404 - route not found - /user/get-all-users/?keyword=%22firstname%22 - GET - ::1
+2023-11-28 12:10:09 info: GET /user/get-all-users/?keyword=%22firstname%22 [33m404 2.759 ms - 57
+2023-11-28 12:10:47 error: 404 - route not found - /user/get-all-users/?keyword=%22firstname%22 - GET - ::ffff:127.0.0.1
+2023-11-28 12:10:47 info: GET /user/get-all-users/?keyword=%22firstname%22 [33m404 1.915 ms - 57
+2023-11-28 12:10:48 error: 404 - route not found - /user/get-all-users/?keyword=%22firstname%22 - GET - ::ffff:127.0.0.1
+2023-11-28 12:10:48 info: GET /user/get-all-users/?keyword=%22firstname%22 [33m404 2.262 ms - 57
+2023-11-28 12:11:06 error: 404 - route not found - /user/jdns/?keyword=%22firstname%22 - GET - ::ffff:127.0.0.1
+2023-11-28 12:11:06 info: GET /user/jdns/?keyword=%22firstname%22 [33m404 15.148 ms - 57
+2023-11-28 12:11:07 error: 404 - route not found - /user/jdns/?keyword=%22firstname%22 - GET - ::ffff:127.0.0.1
+2023-11-28 12:11:07 info: GET /user/jdns/?keyword=%22firstname%22 [33m404 3.265 ms - 57
+2023-11-28 12:11:54 info: GET /user/get-all-users?keyword=%22firstname%22 - - ms - -
+2023-11-28 12:17:39 info: GET /user/get-all-users/?keyword=%22david%22 [32m200 813.879 ms - 7171
+2023-11-28 12:17:59 error: 404 - Please authenticate - /user/get-all-users/?keyword=%22david%22 - GET - ::1
+2023-11-28 12:17:59 info: GET /user/get-all-users/?keyword=%22david%22 [33m404 4.652 ms - 61
+2023-11-28 12:18:03 error: 500 - User validation failed: nickName: Path `nickName` is required. - /user/login - POST - ::1
+2023-11-28 12:18:03 info: POST /user/login [31m500 247.073 ms - 657
+2023-11-28 12:18:24 error: 500 - User validation failed: nickName: Path `nickName` is required. - /user/login - POST - ::1
+2023-11-28 12:18:24 info: POST /user/login [31m500 189.078 ms - 657
+2023-11-28 12:19:12 info: POST /user/login [32m200 410.788 ms - 364
+2023-11-28 12:19:24 info: GET /user/get-all-users/?keyword=%22faozan%22 [32m200 621.103 ms - 7110
+2023-11-28 12:30:07 info: POST /staff/login [32m200 467.536 ms - 1151
+2023-11-28 12:30:15 error: 404 - route not found - /chat/ - GET - ::1
+2023-11-28 12:30:15 info: GET /chat/ [33m404 3.705 ms - 57
+2023-11-28 12:30:35 error: 500 - Cannot read properties of undefined (reading '_id') - /chat/ - GET - ::1
+2023-11-28 12:30:35 info: GET /chat/ [31m500 20.307 ms - 1480
+2023-11-28 12:31:21 error: 500 - Cannot read properties of undefined (reading '_id') - /chat/ - GET - ::1
+2023-11-28 12:31:21 info: GET /chat/ [31m500 206.527 ms - 1480
+2023-11-28 12:35:15 info: POST /staff/login [32m200 448.310 ms - 1356
+2023-11-28 12:35:19 error: 500 - Cannot read properties of undefined (reading '_id') - /chat/ - GET - ::1
+2023-11-28 12:35:19 info: GET /chat/ [31m500 8.271 ms - 1480
+2023-11-28 12:36:50 error: 500 - Cannot read properties of undefined (reading '_id') - /chat/ - GET - ::1
+2023-11-28 12:36:50 info: GET /chat/ [31m500 14.528 ms - 1480
+2023-11-28 12:40:00 info: GET /chat/ [32m200 193.007 ms - 7
+2023-11-28 12:40:27 info: POST /user/login [32m200 409.711 ms - 364
+2023-11-28 12:40:34 error: 401 - Invalid token - /chat/ - GET - ::1
+2023-11-28 12:40:34 info: GET /chat/ [33m401 6.779 ms - 1400
+2023-11-28 12:43:58 info: POST /user/login [32m200 444.906 ms - 364
+2023-11-28 12:44:02 info: GET /chat/ [32m200 5.147 ms - 7
+2023-11-28 12:44:02 error: 404 - route not found - /chat/ - GET - ::1
+2023-11-28 12:44:23 info: POST /user/register [32m200 557.218 ms - 375
+2023-11-28 12:44:28 info: GET /chat/ [32m200 3.177 ms - 7
+2023-11-28 12:44:28 error: 404 - route not found - /chat/ - GET - ::1
+2023-11-28 12:45:01 info: GET /chat/ [32m200 10.066 ms - 7
+2023-11-28 12:45:01 error: 500 - Cannot read properties of undefined (reading '_id') - /chat/ - GET - ::1
+2023-11-28 12:51:22 error: 400 - Please authenticate - /chat/ - GET - ::1
+2023-11-28 12:51:22 info: GET /chat/ [33m400 17.547 ms - 1412
+2023-11-28 12:51:48 error: 400 - Please authenticate - /chat/ - GET - ::1
+2023-11-28 12:51:48 info: GET /chat/ [33m400 4.476 ms - 1412
+2023-11-28 12:51:55 info: POST /user/login [32m200 643.062 ms - 364
+2023-11-28 12:52:03 error: 400 - Please authenticate - /chat/ - GET - ::1
+2023-11-28 12:52:03 info: GET /chat/ [33m400 3.282 ms - 1412
+2023-11-28 12:56:52 info: GET /chat/ [32m200 184.185 ms - 7
+2023-11-28 12:57:11 info: POST /user/register [32m200 707.161 ms - 376
+2023-11-28 12:57:16 info: GET /chat/ [32m200 166.115 ms - 7
+2023-11-28 12:57:39 error: 401 - Invalid token - /chat/ - GET - ::1
+2023-11-28 12:57:39 info: GET /chat/ [33m401 332.425 ms - 280
+2023-11-28 12:57:54 info: POST /user/register [32m200 548.231 ms - 377
+2023-11-28 12:57:58 error: 401 - Invalid token - /chat/ - GET - ::1
+2023-11-28 12:57:58 info: GET /chat/ [33m401 162.348 ms - 280
+2023-11-28 12:59:13 error: 401 - Invalid token - /chat/ - GET - ::1
+2023-11-28 12:59:13 info: GET /chat/ [33m401 264.457 ms - 280
+2023-11-28 13:01:27 error: 401 - Invalid token - /chat/ - GET - ::1
+2023-11-28 13:01:27 info: GET /chat/ [33m401 430.564 ms - 280
+2023-11-28 13:03:17 error: 401 - Error: Become a premium subscriber to enjoy this feature - /chat/ - GET - ::1
+2023-11-28 13:03:17 info: GET /chat/ [33m401 202.052 ms - 366
+2023-11-28 13:03:46 info: POST /user/login [32m200 373.159 ms - 364
+2023-11-28 13:04:34 info: POST /user/register [32m200 842.447 ms - 378
+2023-11-28 13:04:39 info: GET /chat/ [32m200 232.878 ms - 7
+2023-11-28 13:04:50 info: POST /staff/login [32m200 477.603 ms - 1561
+2023-11-28 13:04:54 info: GET /chat/ [32m200 4.683 ms - 7
+2023-11-28 13:19:54 error: 404 - route not found - /chat/accessChat - GET - ::1
+2023-11-28 13:19:54 info: GET /chat/accessChat [33m404 73.321 ms - 57
+2023-11-28 13:20:00 info: POST /chat/accessChat [32m200 4.885 ms - -
+2023-11-28 13:23:29 info: POST /chat/accessChat [32m200 248.155 ms - 1561
+2023-11-28 13:23:59 info: POST /user/register [32m200 656.485 ms - 379
+2023-11-28 13:24:05 info: POST /chat/accessChat [32m200 162.623 ms - 367
+2023-11-28 13:54:47 info: POST /chat/accessChat [32m200 228.639 ms - 367
+2023-11-28 13:54:47 error: 400 - UserID param not sent with request - /chat/accessChat - POST - ::1
+2023-11-28 13:55:35 error: 400 - UserID param not sent with request - /chat/accessChat - POST - ::1
+2023-11-28 13:55:35 info: POST /chat/accessChat [33m400 1796.337 ms - 1449
+2023-11-28 13:56:22 info: POST /user/register [32m200 755.302 ms - 380
+2023-11-28 13:56:40 info: POST /staff/login [32m200 411.353 ms - 1767
+2023-11-28 13:58:31 error: 400 - UserId param not sent with request - /chat/accessChat - POST - ::1
+2023-11-28 13:58:31 info: POST /chat/accessChat [33m400 273.221 ms - 1449
+2023-11-28 13:59:06 error: 500 - User is not defined - /chat/accessChat - POST - ::1
+2023-11-28 13:59:06 info: POST /chat/accessChat [31m500 540.803 ms - 304
+2023-11-28 14:00:13 error: 500 - User is not defined - /chat/accessChat - POST - ::1
+2023-11-28 14:00:13 info: POST /chat/accessChat [31m500 338.825 ms - 304
+2023-11-28 14:01:23 info: POST /chat/accessChat [32m200 828.986 ms - 461
+2023-11-28 14:05:36 info: POST /staff/login [32m200 438.827 ms - 1972
+2023-11-28 14:05:47 info: POST /chat/accessChat [32m200 497.273 ms - 461
+2023-11-28 14:05:58 info: POST /user/register [32m200 523.652 ms - 382
+2023-11-28 14:06:07 info: POST /staff/login [32m200 355.002 ms - 2177
+2023-11-28 14:06:14 info: POST /chat/accessChat [32m200 515.441 ms - 461
+2023-11-28 14:12:21 info: POST /chat/accessChat [32m200 2352.919 ms - 461
+2023-11-28 14:15:23 error: 401 - MongooseError: Operation `staffs.findOne()` buffering timed out after 10000ms - /chat/accessChat - POST - ::1
+2023-11-28 14:15:23 info: POST /chat/accessChat [33m401 10042.272 ms - 408
+2023-11-28 14:22:03 error: 500 - mongoose is not defined - /chat/accessChat - POST - ::1
+2023-11-28 14:22:04 info: POST /chat/accessChat [31m500 189.702 ms - 1436
+2023-11-28 14:22:14 error: 500 - mongoose is not defined - /chat/accessChat - POST - ::1
+2023-11-28 14:22:14 info: POST /chat/accessChat [31m500 141.917 ms - 1436
+2023-11-28 14:22:46 error: 500 - Class constructor ObjectId cannot be invoked without 'new' - /chat/accessChat - POST - ::1
+2023-11-28 14:22:46 info: POST /chat/accessChat [31m500 9330.451 ms - 1501
+2023-11-28 14:25:52 error: 500 - Class constructor ObjectId cannot be invoked without 'new' - /chat/accessChat - POST - ::1
+2023-11-28 14:25:53 info: POST /chat/accessChat [31m500 194.579 ms - 1501
+2023-11-28 14:26:11 info: POST /chat/accessChat [32m200 4690.535 ms - 461
+2023-11-28 14:27:17 info: POST /chat/accessChat [32m200 497.032 ms - 461
+2023-11-28 14:30:04 info: POST /user/register [32m200 518.212 ms - 383
+2023-11-28 14:30:27 info: POST /staff/login [32m200 337.802 ms - 2382
+2023-11-28 14:30:35 info: POST /chat/accessChat [32m200 727.917 ms - 464
+2023-11-28 14:33:06 info: POST /user/register [32m200 513.571 ms - 356
+2023-11-28 14:33:27 info: POST /staff/login [32m200 341.827 ms - 2587
+2023-11-28 14:33:37 info: POST /chat/accessChat [32m200 593.647 ms - 146
+2023-11-28 14:36:30 info: POST /user/register [32m200 592.036 ms - 363
+2023-11-28 14:36:38 info: POST /user/register [32m200 486.387 ms - 361
+2023-11-28 14:36:48 info: POST /chat/accessChat [32m200 785.256 ms - 794
+2023-11-28 14:52:40 info: POST /user/register [32m200 542.804 ms - 358
+2023-11-28 14:52:54 info: POST /staff/login [32m200 351.039 ms - 2792
+2023-11-28 14:53:04 info: POST /chat/accessChat [32m200 769.912 ms - 439
+2023-11-28 14:54:09 info: POST /user/register [32m200 474.932 ms - 355
+2023-11-28 14:54:21 info: POST /staff/login [32m200 347.535 ms - 2997
+2023-11-28 14:54:31 info: POST /chat/accessChat [32m200 742.409 ms - 436
+2023-11-28 14:55:18 info: POST /chat/accessChat [32m200 5095.755 ms - 436
+2023-11-28 14:57:14 info: POST /user/register [32m200 545.899 ms - 354
+2023-11-28 14:57:25 info: POST /staff/login [32m200 391.959 ms - 3202
+2023-11-28 14:57:32 error: 400 - Schema hasn't been registered for model "{
+  _id: new ObjectId("6565f1cced3d0d3a5fd1309d"),
+  chatName: 'sender',
+  isCommunity: false,
+  users: [
+    new ObjectId("6564a2aef1d65c497228a407"),
+    new ObjectId("6565f1b9ed3d0d3a5fd13095")
+  ],
+  __v: 0
+}".
+Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
+2023-11-28 14:57:32 info: POST /chat/accessChat [33m400 582.682 ms - 870
+2023-11-28 15:01:28 error: 500 - Schema hasn't been registered for model "{
+  _id: new ObjectId("6565f1cced3d0d3a5fd1309d"),
+  chatName: 'sender',
+  isCommunity: false,
+  users: [
+    new ObjectId("6564a2aef1d65c497228a407"),
+    new ObjectId("6565f1b9ed3d0d3a5fd13095")
+  ],
+  __v: 0
+}".
+Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
+2023-11-28 15:01:28 info: POST /chat/accessChat [31m500 311.839 ms - 2009
+2023-11-28 15:01:59 info: POST /chat/accessChat [32m200 7027.559 ms - 435
+2023-11-28 15:02:16 info: POST /user/register [32m200 482.300 ms - 353
+2023-11-28 15:02:27 info: POST /staff/login [32m200 357.653 ms - 3407
+2023-11-28 15:02:47 info: POST /staff/register [32m200 468.871 ms - 581
+2023-11-28 15:03:03 info: POST /chat/accessChat [32m200 718.583 ms - 434
+2023-11-28 15:03:47 info: POST /user/register [32m200 519.740 ms - 353
+2023-11-28 15:03:55 info: POST /staff/login [32m200 336.403 ms - 3612
+2023-11-28 15:04:03 info: POST /chat/accessChat [32m200 762.144 ms - 3705
+2023-11-28 15:04:31 info: POST /user/register [32m200 3834.652 ms - 354
+2023-11-28 15:04:52 info: POST /staff/login [32m200 358.044 ms - 3817
+2023-11-28 15:04:58 info: POST /chat/accessChat [32m200 796.785 ms - 3910
+2023-11-28 15:11:30 error: 400 - Email already registered - /user/register - POST - ::1
+2023-11-28 15:11:30 info: POST /user/register [33m400 322.009 ms - 306
+2023-11-28 15:11:36 info: POST /user/register [32m200 490.813 ms - 354
+2023-11-28 15:11:46 info: POST /staff/login [32m200 350.135 ms - 4022
+2023-11-28 15:11:54 info: POST /chat/accessChat [32m200 772.198 ms - 506
+2023-11-28 15:13:14 info: POST /user/register [32m200 533.981 ms - 355
+2023-11-28 15:13:24 error: 400 - Cannot populate path `users,` because it is not in your schema. Set the `strictPopulate` option to false to override. - /chat/accessChat - POST - ::1
+2023-11-28 15:13:24 info: POST /chat/accessChat [33m400 656.985 ms - 492
+2023-11-28 15:15:46 info: POST /user/register [32m200 568.696 ms - 356
+2023-11-28 15:15:53 info: POST /chat/accessChat [32m200 772.418 ms - 4477
+2023-11-28 15:21:48 info: POST /user/register [32m200 537.922 ms - 216
+2023-11-28 15:21:58 info: POST /staff/login [32m200 371.743 ms - 219
+2023-11-28 15:22:11 info: POST /chat/accessChat [32m200 853.406 ms - 534
+2023-11-28 15:26:09 error: 404 - route not found - /chat/fetchChats - GET - ::1
+2023-11-28 15:26:09 info: GET /chat/fetchChats [33m404 227.815 ms - 57
+2023-11-28 15:26:24 info: GET /chat/fetchChats [32m200 1119.353 ms - 5
+2023-11-28 15:26:37 info: GET /chat/fetchChats [32m200 156.972 ms - 5
+2023-11-28 15:26:59 info: GET /chat/fetchChats [32m200 151.633 ms - 5
+2023-11-28 15:27:32 info: GET /chat/fetchChats [32m200 159.987 ms - 5
+2023-11-28 15:27:43 error: 404 - route not found - /chat/fetchChats - POST - ::1
+2023-11-28 15:27:43 info: POST /chat/fetchChats [33m404 150.046 ms - 57
+2023-11-28 15:28:24 info: GET /chat/fetchChats [32m200 160.451 ms - 5
+2023-11-28 15:28:48 info: POST /user/login [32m200 351.660 ms - 222
+2023-11-28 15:28:53 error: 401 - Error: Become a premium subscriber to enjoy this feature - /chat/fetchChats - GET - ::1
+2023-11-28 15:28:53 info: GET /chat/fetchChats [33m401 154.410 ms - 366
+2023-11-28 15:29:07 info: POST /user/register [32m200 501.624 ms - 220
+2023-11-28 15:29:12 info: GET /chat/fetchChats [32m200 144.939 ms - 4
+2023-11-28 15:31:56 info: GET /chat/fetchChats [32m200 303.647 ms - 2
+2023-11-28 15:32:03 info: POST /staff/login [32m200 424.422 ms - 219
+2023-11-28 15:32:06 info: GET /chat/fetchChats [32m200 299.118 ms - 655
+2023-11-28 15:36:27 info: POST /staff/register [32m200 488.702 ms - 239
+2023-11-28 15:36:44 info: POST /user/register [32m200 455.524 ms - 224
+2023-11-28 15:36:52 error: 500 - Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer - /chat/accessChat - POST - ::1
+2023-11-28 15:36:52 info: POST /chat/accessChat [31m500 163.858 ms - 1561
+2023-11-28 15:38:11 error: 500 - Cast to ObjectId failed for value "6565f77b4f9e8fea7e9702e1ft" (type string) at path "users" for model "Chat" - /chat/accessChat - POST - ::1
+2023-11-28 15:38:11 info: POST /chat/accessChat [31m500 2845.259 ms - 1688
+2023-11-28 15:38:36 info: POST /chat/accessChat [32m200 768.528 ms - 549
+2023-11-28 15:38:45 info: GET /chat/fetchChats [32m200 281.325 ms - 165
+2023-11-28 15:45:04 error: 500 - results is not defined - /chat/fetchChats - GET - ::1
+2023-11-28 15:45:04 info: GET /chat/fetchChats [31m500 219.121 ms - 1434
+2023-11-28 15:45:32 info: GET /chat/fetchChats [32m200 5465.013 ms - -
+2023-11-28 15:49:10 info: GET /chat/fetchChats [32m200 1903.078 ms - 351
+2023-11-28 15:50:00 info: GET /chat/fetchChats [32m200 5303.663 ms - 551
+2023-11-28 16:17:11 error: 401 - Invalid token - /chat//community/create - POST - ::1
+2023-11-28 16:17:11 info: POST /chat//community/create [33m401 193.652 ms - 1402
+2023-11-28 16:17:41 info: POST /staff/login [32m200 375.058 ms - 219
+2023-11-28 16:17:47 error: 400 - Please fill all the fields - /chat//community/create - POST - ::1
+2023-11-28 16:17:47 info: POST /chat//community/create [33m400 292.711 ms - 802
+2023-11-28 16:18:11 info: POST /chat//community/create [32m200 672.662 ms - 122
+2023-11-28 16:30:49 error: 404 - route not found - /chat/community/rename - POST - ::1
+2023-11-28 16:30:49 info: POST /chat/community/rename [33m404 224.079 ms - 57
+2023-11-28 16:31:00 error: 404 - route not found - /chat/community/rename - PUT - ::1
+2023-11-28 16:31:00 info: PUT /chat/community/rename [33m404 364.394 ms - 57
+2023-11-28 16:31:09 error: 404 - route not found - /chat/community/rename/ - PUT - ::1
+2023-11-28 16:31:09 info: PUT /chat/community/rename/ [33m404 153.212 ms - 57
+2023-11-28 16:31:37 error: 500 - Cast to ObjectId failed for value "knkd" (type string) at path "_id" for model "Chat" - /chat/community/rename/ - PUT - ::1
+2023-11-28 16:31:37 info: PUT /chat/community/rename/ [31m500 1011.206 ms - 1534
+2023-11-28 16:32:57 error: 401 - MongooseError: Operation `staffs.findOne()` buffering timed out after 10000ms - /chat/community/rename/ - PUT - ::1
+2023-11-28 16:32:57 info: PUT /chat/community/rename/ [33m401 10050.473 ms - 408
+2023-11-28 16:33:03 error: 500 - Please provide the required fields - /chat/community/rename/ - PUT - ::1
+2023-11-28 16:33:03 info: PUT /chat/community/rename/ [31m500 353.939 ms - 818
+2023-11-28 16:33:31 error: 500 - Cast to ObjectId failed for value "knkd" (type string) at path "_id" for model "Chat" - /chat/community/rename/ - PUT - ::1
+2023-11-28 16:33:31 info: PUT /chat/community/rename/ [31m500 476.128 ms - 1534
+2023-11-28 16:34:13 error: 500 - Cannot read properties of undefined (reading '_id') - /chat/community/rename/ - PUT - ::1
+2023-11-28 16:34:13 info: PUT /chat/community/rename/ [31m500 579.113 ms - 365
+2023-11-28 16:34:53 error: 500 - Cannot read properties of undefined (reading '_id') - /chat/community/rename/ - PUT - ::1
+2023-11-28 16:34:53 info: PUT /chat/community/rename/ [31m500 2828.623 ms - 365
+2023-11-28 16:35:19 error: 500 - Cannot read properties of undefined (reading '_id') - /chat/community/rename/ - PUT - ::1
+2023-11-28 16:35:19 info: PUT /chat/community/rename/ [31m500 7011.997 ms - 365
+2023-11-28 16:36:49 info: POST /staff/register [32m200 580.526 ms - 240
+2023-11-28 16:37:03 error: 500 - Cannot read properties of undefined (reading '_id') - /chat//community/create - POST - ::1
+2023-11-28 16:37:03 info: POST /chat//community/create [31m500 383.018 ms - 856
+2023-11-28 16:37:55 info: POST /chat//community/create [32m200 7449.270 ms - 354
+2023-11-28 16:38:13 error: 500 - Cannot read properties of undefined (reading '_id') - /chat/community/rename/ - PUT - ::1
+2023-11-28 16:38:13 info: PUT /chat/community/rename/ [31m500 440.442 ms - 365
+2023-11-28 16:38:19 error: 500 - Community does not exist - /chat/community/rename/ - PUT - ::1
+2023-11-28 16:38:19 info: PUT /chat/community/rename/ [31m500 560.140 ms - 307
+2023-11-28 16:38:43 error: 500 - You are not authorized to edit this community - /chat/community/rename/ - PUT - ::1
+2023-11-28 16:38:43 info: PUT /chat/community/rename/ [31m500 677.024 ms - 349
+2023-11-28 16:39:27 info: POST /staff/register [32m200 514.871 ms - 241
+2023-11-28 16:39:43 info: POST /staff/login [32m200 333.970 ms - 228
+2023-11-28 16:39:54 info: POST /chat//community/create [32m200 965.072 ms - 367
+2023-11-28 16:40:06 error: 500 - You are not authorized to edit this community - /chat/community/rename/ - PUT - ::1
+2023-11-28 16:40:06 info: PUT /chat/community/rename/ [31m500 704.846 ms - 349
+2023-11-28 16:40:57 error: 500 - You are not authorized to edit this community - /chat/community/rename/ - PUT - ::1
+2023-11-28 16:40:57 info: PUT /chat/community/rename/ [31m500 695.148 ms - 349
+2023-11-28 16:41:24 error: 500 - You are not authorized to edit this community - /chat/community/rename/ - PUT - ::1
+2023-11-28 16:41:24 info: PUT /chat/community/rename/ [31m500 3489.916 ms - 349
+2023-11-28 16:43:25 info: PUT /chat/community/rename/ [32m200 1089.283 ms - 365
+2023-11-28 16:43:54 info: POST /staff/register [32m200 666.258 ms - 242
+2023-11-28 16:44:02 error: 500 - You are not authorized to edit this community - /chat/community/rename/ - PUT - ::1
+2023-11-28 16:44:02 info: PUT /chat/community/rename/ [31m500 681.106 ms - 349
+2023-11-28 16:54:16 info: POST /staff/login [32m200 418.197 ms - 228
+2023-11-28 16:54:31 info: POST /chat//community/create [32m200 810.471 ms - 368
+2023-11-28 16:55:43 info: POST /user/login [32m200 391.641 ms - 222
+2023-11-28 16:56:01 error: 401 - Error: Become a premium subscriber to enjoy this feature - /chat/communityAdd - PUT - ::1
+2023-11-28 16:56:01 info: PUT /chat/communityAdd [33m401 258.640 ms - 366
+2023-11-28 16:56:21 error: 400 - Unexpected token " in JSON at position 4 - /user/login - POST - ::1
+2023-11-28 16:56:28 info: POST /user/login [32m200 343.646 ms - 212
+2023-11-28 16:56:38 error: 500 - Cannot read properties of undefined (reading '_id') - /chat/communityAdd - PUT - ::1
+2023-11-28 16:56:38 info: PUT /chat/communityAdd [31m500 753.741 ms - 365
+2023-11-28 16:57:45 info: POST /staff/login [32m200 1435.739 ms - 228
+2023-11-28 16:57:50 error: 500 - Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle - /chat/communityAdd - PUT - ::1
+2023-11-28 16:57:50 info: PUT /chat/communityAdd [31m500 681.439 ms - 1266
+2023-11-28 16:59:04 error: 500 - Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle - /chat/communityAdd - PUT - ::1
+2023-11-28 16:59:04 info: PUT /chat/communityAdd [31m500 713.553 ms - 1266
+2023-11-28 17:00:37 error: 500 - Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle - /chat/communityAdd - PUT - ::1
+2023-11-28 17:00:37 info: PUT /chat/communityAdd [31m500 2541.953 ms - 1266
+2023-11-28 17:02:07 info: PUT /chat/communityAdd [32m200 1153.034 ms - 580
+2023-11-28 17:02:38 info: GET /staff/get-staffs [32m200 1084.779 ms - 3408
+2023-11-28 17:02:51 info: PUT /chat/communityAdd [32m200 1002.434 ms - 716
+2023-11-28 17:04:27 error: 500 - Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle - /chat/communityRemove - PUT - ::1
+2023-11-28 17:04:27 info: PUT /chat/communityRemove [31m500 689.974 ms - 1266
+2023-11-28 17:04:55 info: PUT /chat/communityRemove [32m200 1180.815 ms - 580
+2023-11-28 17:05:34 info: PUT /chat/communityAdd [32m200 1190.306 ms - 716
+2023-11-28 17:07:12 info: PUT /chat/communityAdd [32m200 1083.150 ms - 853
+2023-11-28 17:08:42 info: PUT /chat/communityAdd [32m200 1472.656 ms - 990
+2023-11-28 17:09:19 error: 500 - Cannot add a user twice - /chat/communityAdd - PUT - ::1
+2023-11-28 17:09:19 info: PUT /chat/communityAdd [31m500 6652.575 ms - 305
+2023-11-28 17:10:28 error: 500 - User is not in this community - /chat/communityRemove - PUT - ::1
+2023-11-28 17:10:28 info: PUT /chat/communityRemove [31m500 671.086 ms - 317

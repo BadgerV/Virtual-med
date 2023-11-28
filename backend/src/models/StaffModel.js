@@ -19,7 +19,12 @@ StaffSchema.methods.toJSON = function () {
   delete staffObject.proofOfIdentity;
   delete staffObject.currentPatients;
   delete staffObject.allPatients;
-
+  delete staffObject.tokens;
+  delete staffObject.pendingPatients;
+  delete staffObject.professionalReferences;
+  delete staffObject.isVerified;
+  delete staffObject.verificationToken;
+  
   return staffObject;
 };
 

@@ -2,6 +2,7 @@ import { Router } from "express";
 import { auth } from "../common/middleware/auth.js";
 import {
   ConnectUserWithDoctor,
+  allUsers,
   getUser,
   initializePayment,
   // initiatePremiumSubscription,
@@ -22,6 +23,9 @@ export const userRoutes = () => {
   router.get("/verify/", verifyAccount);
   router.post("/login", loginUser);
   router.get("/profile", auth, getUser);
+
+  router.get("/get-all-users", auth, allUsers);
+
   router.post(
     "/initiatePremiumSubscription",
     auth,

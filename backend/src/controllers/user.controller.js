@@ -7,6 +7,7 @@ import https from "https";
 import { ENVIRONMENT } from "../common/config/environment.js";
 import { generateToken } from "../common/utils/helper.js";
 import nodemailer from "nodemailer";
+import { log } from "console";
 
 // const Paystack = import("paystack");
 // const sdk = await Paystack(process.env.PAYSTACK_PUBLIC_KEY);
@@ -33,8 +34,6 @@ const transporter = nodemailer.createTransport({
     pass: ENVIRONMENT.APP.PASSWORD,
   },
 });
-
-
 
 export const registerUser = catchAsync(async (req, res) => {
   const { firstName, lastName, email, password } = req.body;
@@ -314,4 +313,20 @@ export const ConnectUserWithDoctor = catchAsync(async (req, res) => {
   console.log(foundStaff.pendingPatients);
 
   res.status(200).send(`Dr. ${foundStaff.lastName} has been notified.`);
+});
+
+export const allUsers = catchAsync(async (req, res) => {
+  const keyword = req.query.search
+    ? {
+        $or: [
+          { firstName: { $regex: req.query.search, options: "i" } },
+          { email: { $regex: req.query.search, options: "i" } },
+          { lastName: { $regex: req.query.search, options: "i" } },
+        ],
+      }
+    : {};
+
+  const users = await User.find(keyword).find({ _id: { $ne: req.user._id } });
+
+  res.send(users);
 });

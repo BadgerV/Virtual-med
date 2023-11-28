@@ -11,9 +11,15 @@ UserSchema.methods.toJSON = function () {
 
   delete userObject.password;
   delete userObject.tokens;
+  delete userObject.isPremium;
+  delete userObject.accountType;
+  delete userObject.verificationToken;
+  delete userObject.isVerified;
+  delete userObject.assignedDoctors;
   // delete userObject.isPremium;
   return userObject;
 };
+
 
 //this is to compare the password with the already hashed passowrd
 UserSchema.statics.findByCredentials = async function (password, email) {
