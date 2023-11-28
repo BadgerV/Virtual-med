@@ -13,19 +13,14 @@ const SignUp = () => {
     password: "",
   });
 
-  const user = useSelector((state) => {
-    console.log(state)
-    state.userSlice.user;
-  });
+  const user = useSelector((state) => state.userSlice.user);
 
-  const isLoading = useSelector((state) => {
-    state.userSlice.loading;
-  });
+  const isLoading = useSelector((state) => state.userSlice.loading);
+
   const dispatch = useDispatch();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("working");
     await dispatch(registerUser(formData));
   };
 

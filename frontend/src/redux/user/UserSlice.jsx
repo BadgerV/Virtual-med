@@ -13,18 +13,22 @@ const initialState = {
 export const registerUser = createAsyncThunk(
   "/user/registerUser",
   async ({ firstName, lastName, nickName, email, password, phoneNumber }) => {
-    const response = await axios.post(`${DEVELOPMENT}/user/register`, {
-      firstName,
-      lastName,
-      email,
-      password,
-      phoneNumber,
-      nickName,
-    });
+    try {
+      const response = await axios.post(`${DEVELOPMENT}/user/register`, {
+        firstName,
+        lastName,
+        email,
+        password,
+        phoneNumber,
+        nickName,
+      });
 
-    console.log(response.data.newUser);
+      console.log(response.data.newUser);
 
-    return response.data.newUser;
+      return response.data.newUser;
+    } catch (error) {
+      return Promise.reject(error.response.data);
+    }
   }
 );
 const loginUser = createAsyncThunk("/user/loginUser", async () => {});
@@ -85,7 +89,6 @@ const userSlice = createSlice({
       .addCase(registerUser.fulfilled, (state, action) => {
         state.loading = false;
         state.user = action.payload;
-        console.log(state.user);
       })
       .addCase(registerUser.rejected, (state, action) => {
         state.loading = false;

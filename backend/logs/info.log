@@ -1267,3 +1267,69 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2023-11-28 18:18:27 info: POST /user/register [33m400 294.868 ms - 306
 2023-11-28 18:18:39 error: 400 - Email already registered - /user/register - POST - ::ffff:127.0.0.1
 2023-11-28 18:18:47 info: POST /user/register [33m400 8990.185 ms - 306
+2023-11-28 18:19:05 info: POST /user/register [32m200 507.223 ms - 235
+2023-11-28 18:19:55 error: 400 - Email already registered - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 18:19:55 info: POST /user/register [33m400 291.344 ms - 306
+2023-11-28 18:20:01 info: POST /user/register [32m200 495.546 ms - 239
+2023-11-28 18:20:27 info: POST /user/register [32m200 461.290 ms - 228
+2023-11-28 18:21:35 info: POST /user/register [32m200 481.614 ms - 229
+2023-11-28 18:22:14 info: POST /user/register [32m200 481.471 ms - 229
+2023-11-28 18:23:22 info: POST /user/register [32m200 599.504 ms - 236
+2023-11-28 18:26:26 info: POST /user/register [32m200 545.626 ms - 235
+2023-11-28 19:35:44 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:36:20 info: POST /user/register [31m500 37515.485 ms - 791
+2023-11-28 19:36:20 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:36:44 info: POST /user/register [31m500 24513.242 ms - 791
+2023-11-28 19:36:45 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:36:45 info: POST /user/register [31m500 281.292 ms - 791
+2023-11-28 19:37:27 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:37:27 info: POST /user/register [31m500 436.615 ms - 791
+2023-11-28 19:38:48 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:38:48 info: POST /user/register [31m500 278.329 ms - 791
+2023-11-28 19:39:08 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:39:08 info: POST /user/register [31m500 278.117 ms - 791
+2023-11-28 19:39:59 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:39:59 info: POST /user/register [31m500 318.765 ms - 791
+2023-11-28 19:40:11 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:40:22 info: POST /user/register [31m500 12114.331 ms - 791
+2023-11-28 19:40:27 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:40:27 info: POST /user/register [31m500 288.560 ms - 791
+2023-11-28 19:40:55 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:41:24 info: POST /user/register [31m500 29360.920 ms - 791
+2023-11-28 19:41:24 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:41:24 info: POST /user/register [31m500 305.141 ms - 791
+2023-11-28 19:49:06 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:49:06 info: POST /user/register [31m500 349.136 ms - 791
+2023-11-28 19:49:51 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:49:51 info: POST /user/register [31m500 328.188 ms - 791
+2023-11-28 19:50:05 info: POST /user/register [32m200 502.298 ms - 235
+2023-11-28 19:50:43 error: 400 - Email already registered - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:50:43 info: POST /user/register [33m400 272.190 ms - 306
+2023-11-28 19:51:19 error: 400 - Email already registered - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:51:19 info: POST /user/register [33m400 290.834 ms - 306
+2023-11-28 19:51:52 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:51:52 info: POST /user/register [31m500 272.597 ms - 791
+2023-11-28 19:52:59 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:52:59 info: POST /user/register [31m500 290.461 ms - 791
+2023-11-28 19:53:26 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:53:26 info: POST /user/register [31m500 272.406 ms - 791
+2023-11-28 19:53:53 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:53:53 info: POST /user/register [31m500 287.333 ms - 791
+2023-11-28 19:54:14 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:54:14 info: POST /user/register [31m500 326.491 ms - 791
+2023-11-28 19:55:10 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:55:10 info: POST /user/register [31m500 329.709 ms - 791
+2023-11-28 19:56:50 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:56:50 info: POST /user/register [31m500 293.716 ms - 791
+2023-11-28 19:57:41 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:57:41 info: POST /user/register [31m500 281.517 ms - 791
+2023-11-28 19:57:53 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 19:57:53 info: POST /user/register [31m500 306.414 ms - 791
+2023-11-28 19:58:44 info: POST /user/register [32m200 507.084 ms - 228
+2023-11-28 20:00:52 info: GET /staff/get-staffs [32m200 1036.040 ms - 3408
+2023-11-28 20:00:52 info: GET /staff/get-staffs [32m200 1107.419 ms - 3408
+2023-11-28 20:17:54 error: 400 - Email already registered - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 20:17:54 info: POST /user/register [33m400 20639.562 ms - 306
+2023-11-28 20:18:00 error: 400 - Email already registered - /user/register - POST - ::ffff:127.0.0.1
+2023-11-28 20:18:00 info: POST /user/register [33m400 287.728 ms - 306
+2023-11-28 20:18:10 info: POST /user/register [32m200 596.033 ms - 230

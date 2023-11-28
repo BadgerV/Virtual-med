@@ -9,12 +9,16 @@ const Home = () => {
 
   useEffect(() => {
     const fetchDoctors = async () => {
-      console.log("blast off")
+      console.log("blast off");
       await dispatch(getDoctors());
     };
 
     fetchDoctors();
   }, []);
+
+  useEffect(() => {
+    console.log(doctors);
+  }, [doctors]);
   return (
     <>
       <div>First</div>
