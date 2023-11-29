@@ -25,6 +25,7 @@ const chatSchema = mongoose.Schema(
     ],
     latestMessage: {
       type: mongoose.Schema.Types.ObjectId,
+      ref: "Message",
     },
     communityAdmin: {
       type: mongoose.Schema.Types.ObjectId,
@@ -32,7 +33,7 @@ const chatSchema = mongoose.Schema(
     },
   },
   {
-    timeStamps: true,
+    timestamps: true,
   }
 );
 

@@ -76,7 +76,6 @@ export const isPremiumOrStaff = catchAsync(async (req, res, next) => {
   }
   try {
     const decoded = jwt.verify(token, ENVIRONMENT.APP.SECRET);
-    console.log(decoded);
 
     if (decoded.type === "staff") {
       const staff = await Staff.findOne({
@@ -92,7 +91,6 @@ export const isPremiumOrStaff = catchAsync(async (req, res, next) => {
       req.staff = staff;
       next();
     } else if (decoded.type === "user") {
-      console.log("working");
       const decoded = jwt.verify(token, ENVIRONMENT.APP.SECRET);
 
       // Find the user based on the decoded token

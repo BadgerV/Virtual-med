@@ -70,12 +70,13 @@ export const accessChat = catchAsync(async (req, res) => {
 export const fetchChats = catchAsync(async (req, res) => {
   const user = req.user ? req.user : req.staff;
   const isUser = req.user ? true : false;
+
   const { userId } = req.body;
 
-  if (isUser) {
+  if (isUser === true) {
     Chat.find({ users: { $elemMatch: { $eq: user._id } } })
       .populate("users")
-      .populate("groupAdmin")
+      .populate("communityAdmin")
       .populate("latestMessage")
       .populate("staffMembers")
       .sort({ updatedAt: -1 })
@@ -87,9 +88,15 @@ export const fetchChats = catchAsync(async (req, res) => {
         res.status(200).send(results);
       });
   } else {
-    Chat.find({ staffMembers: { $elemMatch: { $eq: user._id } } })
+    Chat.find({
+      $or: [
+        { staffMembers: { $elemMatch: { $eq: user._id } } },
+        { communityAdmin: user._id },
+      ],
+    })
+
       .populate("users")
-      .populate("groupAdmin")
+      .populate("communityAdmin")
       .populate("latestMessage")
       .populate("staffMembers")
       .sort({ updatedAt: -1 })
@@ -120,6 +127,7 @@ export const createCommunity = catchAsync(async (req, res) => {
 
   res.status(200).send(fullCommunity);
 });
+
 export const renameCommunity = catchAsync(async (req, res) => {
   const { chatId, chatName } = req.body;
 
@@ -224,12 +232,12 @@ export const removeFromCommunity = catchAsync(async (req, res) => {
     throw new AppError("This is not a community");
   }
 
-   if (
-     !chatToUpdate.users.includes(userId) ||
-     !chatToUpdate.staffMembers.includes(userId)
-   ) {
-     throw new AppError("User is not in this community");
-   }
+  if (
+    !chatToUpdate.users.includes(userId) ||
+    !chatToUpdate.staffMembers.includes(userId)
+  ) {
+    throw new AppError("User is not in this community");
+  }
 
   const removed = await Chat.findByIdAndUpdate(
     chatId,
