@@ -1,0 +1,32 @@
+.home{
+    display: flex;
+    gap: 1em;
+    padding: 1.3em;
+ }
+
+ .home h1{
+    font-weight: bolder;
+  }
+
+  .home span{ 
+      font-weight: 300;
+  }
+
+ .right{
+     flex: 1;
+     display: flex;
+     padding: 2em;
+     flex-direction: column;
+     gap: 1em;
+     width: 100%;
+  }
+
+  .left{
+      flex: 1;
+   }
+
+   .left img{ 
+       width: 100%;
+       height: auto;
+       object-fit: cover;
+   }

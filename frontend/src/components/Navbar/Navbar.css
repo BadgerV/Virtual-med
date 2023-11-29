@@ -1,40 +1,108 @@
-.navbar {
-     display: flex;
-     justify-content: space-between;
-     max-width: 13800px;
-     margin: 0 auto;
-     background-color: aqua;
-     height: 50px;
+.navbar{ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3em;
+  gap: 1em;
+  border-bottom: 0.1px solid #000;
+
 
 }
 
-.navbar .h1{ 
-    color: red;
-    font-family: cursive;
+
+.navbar h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+h1 span {
+  color: red;
+ }
+
+ .navbar ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+  background-color: #eee;
+}
+
+.navbar-last {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
 }
 
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+.navbar-last span{
+  color: black;
+ }
+
+.navbar-last .btn {
+  background-color: #00008B;
+  color: #fff;
+  padding: 0.8em 1em;
+  border-radius: 1.2em;
+  margin-left: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+
+
+/* Media query for devices with a width between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar h1 {
+    font-size: 20px;
   }
 
-  li {
-    margin-right: 15px;
+  .navbar ul li a {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .navbar-last .btn {
+    padding: 0.5em 0.8em;
+    font-size: 12px;
+  }
+}
+
+/* Media query for devices with a width less than or equal to 768px */
+@media (max-width: 768px) {
+
+  .navbar{ 
+    padding: 0.5em;
     display: flex;
+    text-align: center;
     align-items: center;
-    justify-content: center;
+    font-weight: normal;
+  }
+  .navbar h1 {
+    font-size: 11px;
   }
 
-  a {
-    padding: 15px 20px;
-    text-decoration: none;
-    color: rgb(209, 37, 37);
-    transition: background-color 0.3s ease;
+  .navbar ul li a {
+    padding: 3px;
+    font-size: 10px;
   }
 
-  a:hover {
-    background-color: #555;
+
+  .navbar-last{ 
+    gap: 0.3px;
+    text-align: center;
   }
+  
+  .navbar-last span{
+    font-size: 10px;
+
+   }
+  
+  .navbar-last .btn {
+    padding: 0.4em 0.7em;
+    font-size: 9px;
+  }
+}
