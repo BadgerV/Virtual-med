@@ -96,7 +96,6 @@ export const verifyAccount = catchAsync(async (req, res) => {
   // Find the user by the verification token
   const user = await User.findOne({ verificationToken: token });
 
-  console.log(user);
 
   if (!user) {
     throw new AppError("Invalid token or user not found.", 400);
@@ -310,7 +309,6 @@ export const ConnectUserWithDoctor = catchAsync(async (req, res) => {
   // Save the changes to the database
   await foundStaff.save();
 
-  console.log(foundStaff.pendingPatients);
 
   res.status(200).send(`Dr. ${foundStaff.lastName} has been notified.`);
 });

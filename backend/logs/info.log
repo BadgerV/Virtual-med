@@ -1333,3 +1333,59 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2023-11-28 20:18:00 error: 400 - Email already registered - /user/register - POST - ::ffff:127.0.0.1
 2023-11-28 20:18:00 info: POST /user/register [33m400 287.728 ms - 306
 2023-11-28 20:18:10 info: POST /user/register [32m200 596.033 ms - 230
+2023-11-29 11:37:08 info: POST /chat/community/create [32m200 837.250 ms - 437
+2023-11-29 11:37:54 error: 404 - route not found - /message/sendMessage - GET - ::1
+2023-11-29 11:37:54 info: GET /message/sendMessage [33m404 151.498 ms - 57
+2023-11-29 11:38:01 error: 500 - message.populate(...).execPopulate is not a function - /message/sendMessage - POST - ::1
+2023-11-29 11:38:01 info: POST /message/sendMessage [31m500 317.834 ms - 368
+2023-11-29 11:38:58 info: POST /message/sendMessage [32m200 802.642 ms - 501
+2023-11-29 11:40:01 info: PUT /chat/communityAdd [32m200 887.953 ms - 616
+2023-11-29 11:40:47 error: 500 - User validation failed: phoneNumber: Path `phoneNumber` is required. - /user/login - POST - ::1
+2023-11-29 11:40:47 info: POST /user/login [31m500 187.139 ms - 669
+2023-11-29 11:41:16 info: POST /user/register [32m200 486.130 ms - 252
+2023-11-29 11:41:32 error: 500 - Staff validation failed: phoneNumber: Path `phoneNumber` is required. - /staff/login - POST - ::1
+2023-11-29 11:41:32 info: POST /staff/login [31m500 184.618 ms - 671
+2023-11-29 11:42:15 error: 400 - Email already registered - /staff/register - POST - ::1
+2023-11-29 11:42:15 info: POST /staff/register [33m400 8237.097 ms - 307
+2023-11-29 11:42:25 info: POST /staff/login [32m200 361.414 ms - 219
+2023-11-29 11:42:33 error: 500 - You are not authorized to add more members in this community - /chat/communityAdd - PUT - ::1
+2023-11-29 11:42:33 info: PUT /chat/communityAdd [31m500 600.741 ms - 379
+2023-11-29 11:42:51 info: POST /chat/community/create [32m200 747.461 ms - 429
+2023-11-29 11:43:20 info: PUT /chat/communityAdd [32m200 876.466 ms - 669
+2023-11-29 11:43:29 info: PUT /chat/communityAdd [32m200 942.088 ms - 669
+2023-11-29 11:44:09 info: GET /staff/get-staffs [32m200 950.114 ms - 3408
+2023-11-29 11:44:20 info: PUT /chat/communityAdd [32m200 943.876 ms - 843
+2023-11-29 11:44:49 info: POST /message/sendMessage [32m200 884.049 ms - 655
+2023-11-29 11:48:10 info: GET /chat/fetchChats [32m200 3766.837 ms - 1602
+2023-11-29 11:49:06 info: GET /chat/fetchChats [32m200 429.917 ms - 1602
+2023-11-29 11:49:25 info: POST /chat/community/create [32m200 725.617 ms - 430
+2023-11-29 11:49:33 info: GET /chat/fetchChats [32m200 413.319 ms - 1602
+2023-11-29 11:52:27 error: 500 - Cannot add a user twice - /chat/communityAdd - PUT - ::1
+2023-11-29 11:52:27 info: PUT /chat/communityAdd [31m500 583.813 ms - 305
+2023-11-29 11:52:38 info: GET /chat/fetchChats [32m200 419.322 ms - 1602
+2023-11-29 11:54:28 info: GET /chat/fetchChats [32m200 491.295 ms - 1602
+2023-11-29 11:55:26 info: GET /chat/fetchChats [32m200 523.461 ms - 1602
+2023-11-29 11:57:47 error: 500 - User validation failed: phoneNumber: Path `phoneNumber` is required. - /user/login - POST - ::1
+2023-11-29 11:57:47 info: POST /user/login [31m500 193.411 ms - 669
+2023-11-29 11:58:21 error: 500 - Operation `users.findOne()` buffering timed out after 10000ms - /user/login - POST - ::1
+2023-11-29 11:58:21 info: POST /user/login [31m500 10027.170 ms - 476
+2023-11-29 11:58:27 info: POST /user/login [32m200 370.983 ms - 222
+2023-11-29 11:58:40 error: 401 - Error: Become a premium subscriber to enjoy this feature - /chat/fetchChats - GET - ::1
+2023-11-29 11:58:40 info: GET /chat/fetchChats [33m401 166.596 ms - 366
+2023-11-29 11:59:01 info: POST /user/register [32m200 521.326 ms - 253
+2023-11-29 11:59:18 info: POST /staff/login [32m200 343.597 ms - 219
+2023-11-29 11:59:27 info: PUT /chat/communityAdd [32m200 931.130 ms - 1128
+2023-11-29 12:00:05 info: POST /user/login [32m200 333.815 ms - 241
+2023-11-29 12:00:16 info: GET /chat/fetchChats [32m200 1475.921 ms - 1347
+2023-11-29 12:00:29 info: POST /staff/login [32m200 332.594 ms - 219
+2023-11-29 12:00:34 info: GET /chat/fetchChats [32m200 525.638 ms - 1602
+2023-11-29 12:01:50 info: GET /chat/fetchChats [32m200 496.458 ms - 1602
+2023-11-29 12:02:15 info: GET /chat/fetchChats [32m200 482.129 ms - 1602
+2023-11-29 12:03:11 info: GET /chat/fetchChats [32m200 4620.018 ms - 1602
+2023-11-29 12:05:13 info: GET /chat/fetchChats [32m200 513.758 ms - 1602
+2023-11-29 12:07:15 info: GET /chat/fetchChats [32m200 1708.281 ms - 3379
+2023-11-29 12:08:41 info: POST /message/sendMessage [32m200 887.717 ms - 786
+2023-11-29 12:10:06 info: GET /chat/fetchChats [32m200 1401.483 ms - 3388
+2023-11-29 12:18:48 info: GET /message/656715ab1134e20314742f8d [32m200 473.404 ms - 1392
+2023-11-29 12:20:45 info: POST /message/sendMessage [32m200 881.196 ms - 917
+2023-11-29 12:20:51 info: GET /message/656715ab1134e20314742f8d [32m200 439.530 ms - 2093

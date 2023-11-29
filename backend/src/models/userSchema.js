@@ -67,11 +67,11 @@ const UserSchema = new mongoose.Schema(
     },
     phoneNumber: {
       type: String,
-      required: true,
+      // required: true,
     },
     isPremium: {
       type: Boolean,
-      default: false,
+      default: true,
     },
     tokens: [tokenSchema],
     accountType: {

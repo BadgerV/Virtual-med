@@ -73,7 +73,7 @@ const StaffSchema = new mongoose.Schema(
     },
     phoneNumber: {
       type: String,
-      required: true,
+      // required: true,
     },
     medicalLisense: {
       type: Buffer,
