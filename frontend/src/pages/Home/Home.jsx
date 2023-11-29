@@ -1,6 +1,5 @@
 import "./Home.css";
 
-
 import SwitchableButtons from "../../components/Button/Button";
 // import { useDispatch, useSelector } from "react-redux";
 // import { useEffect } from "react";
@@ -25,26 +24,67 @@ const Home = () => {
   return (
     <div className="home">
       <div className="right">
-        <h1>We provide digital<br/> healthcare for everyone, <br/>anywhere</h1>
+        <h1>
+          We provide digital
+          <br /> healthcare for everyone, <br />
+          anywhere
+        </h1>
 
         <span>
-          At VirtualMed, we strongly believe that everyone deserves access to<br />
+          At VirtualMed, we strongly believe that everyone deserves access to
+          <br />
           top-notch medical care, regardless of their location or schedule.
         </span>
 
-        <img src="*" alt="small doctors.png" />
+        <div className="home-last">
+          <div className="home-last-images">
+            <img src="/assets/Ellipse 1.png" alt="small doctors.png" />
+            <img src="/assets/Ellipse 2.png" alt="small doctors.png" />
+            <img src="/assets/Ellipse 3.png" alt="small doctors.png" />
+            <img src="/assets/Ellipse 4.png" alt="small doctors.png" />
+          </div>
+
+          <div className="home-lasts">
+            100 +<br />
+            Competent Doctors
+          </div>
+        </div>
 
         <SwitchableButtons />
+      </div>
+
+      <div className="left">
+        <div className="boxes">
+          <div className="box">
+            <img src="/assets/home-first.svg" />
+            <span>Chat with Medical Professionals</span>
+          </div>
+
+          <div className="box">
+            <img src="/assets/Stethoscope.svg" />
+            <span>Schedule online appointment</span>
+          </div>
+
+          <div className="box">
+            <img src="/assets/FolderLock.svg" />
+            <span>Access your Medical History</span>
+          </div>
         </div>
 
-        <div className="left">
-          <img src="/assets/code.png" alt="" />
-        </div>
+        <img
+          src="/assets/doctor-presenting-something-isolated-white-background 1.png"
+          alt=""
+        />
+      </div>
 
-        {/* {doctors?.map((doctor, index) => {
+
+      <div className="last">
+        
+      </div>
+
+      {/* {doctors?.map((doctor, index) => {
         return <h1 key={index}>{doctor.email}</h1>;
       })} */}
-      
     </div>
   );
 };
