@@ -3,6 +3,7 @@ import User from "../models/UserModel.js";
 import { catchAsync } from "../common/utils/errorHandler.js";
 import { generateToken, isNullOrEmpty } from "../common/utils/helper.js";
 import AppError from "../common/utils/appError.js";
+import { trusted } from "mongoose";
 
 export const registerStaff = catchAsync(async (req, res) => {
   const { firstName, lastName, email, password } = req.body;

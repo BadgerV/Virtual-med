@@ -1389,3 +1389,77 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2023-11-29 12:18:48 info: GET /message/656715ab1134e20314742f8d [32m200 473.404 ms - 1392
 2023-11-29 12:20:45 info: POST /message/sendMessage [32m200 881.196 ms - 917
 2023-11-29 12:20:51 info: GET /message/656715ab1134e20314742f8d [32m200 439.530 ms - 2093
+2023-11-29 14:12:30 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-29 14:12:31 info: POST /user/register [31m500 365.563 ms - 791
+2023-11-29 14:13:18 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::ffff:127.0.0.1
+2023-11-29 14:13:18 info: POST /user/register [31m500 964.509 ms - 791
+2023-11-29 14:14:27 info: POST /user/register [32m200 819.680 ms - 239
+2023-11-29 14:16:01 info: POST /user/register [32m200 860.002 ms - 227
+2023-11-29 14:16:49 error: 500 - User validation failed: firstName: Name can only contain letters - /user/register - POST - ::ffff:127.0.0.1
+2023-11-29 14:16:49 info: POST /user/register [31m500 387.826 ms - 661
+2023-11-29 14:17:02 info: POST /user/register [32m200 706.474 ms - 224
+2023-11-29 14:17:40 info: POST /user/register [32m200 777.102 ms - 227
+2023-11-29 14:23:18 info: POST /user/register [32m200 871.447 ms - 237
+2023-11-29 14:26:07 info: POST /user/register [32m200 986.075 ms - 238
+2023-11-29 14:31:24 info: OPTIONS /user/register [32m200 4.623 ms - 4
+2023-11-29 14:32:17 info: OPTIONS /user/register [32m200 2.437 ms - 4
+2023-11-29 14:44:42 info: GET /staff/get-staffs [32m200 1345.924 ms - 3408
+2023-11-29 14:45:12 info: GET /staff/get-staffs [36m304 827.279 ms - -
+2023-11-29 14:45:14 error: 400 - Please fill all the inputs - /user/register - POST - ::ffff:127.0.0.1
+2023-11-29 14:45:14 info: POST /user/register [33m400 7.703 ms - 1433
+2023-11-29 14:45:15 info: GET /staff/get-staffs [32m200 996.847 ms - 3408
+2023-11-29 14:45:15 info: GET /staff/get-staffs [32m200 1020.731 ms - 3408
+2023-11-29 14:45:15 info: GET /staff/get-staffs [36m304 1060.303 ms - -
+2023-11-29 14:45:16 info: GET /staff/get-staffs [32m200 2132.288 ms - 3408
+2023-11-29 14:55:38 info: GET /staff/get-staffs [36m304 2443.617 ms - -
+2023-11-29 14:56:24 info: GET /staff/get-staffs [36m304 958.186 ms - -
+2023-11-29 14:56:24 info: GET /staff/get-staffs [32m200 1027.807 ms - 3408
+2023-11-29 14:56:25 info: GET /staff/get-staffs [32m200 2081.900 ms - 3408
+2023-11-29 14:56:25 info: GET /staff/get-staffs [32m200 1976.717 ms - 3408
+2023-11-29 14:56:25 info: GET /staff/get-staffs [36m304 587.924 ms - -
+2023-11-29 14:56:25 info: GET /staff/get-staffs [32m200 524.138 ms - 3408
+2023-11-29 14:56:26 info: GET /staff/get-staffs [32m200 531.934 ms - 3408
+2023-11-29 14:56:26 info: GET /staff/get-staffs [32m200 496.999 ms - 3408
+2023-11-29 14:56:26 info: GET /staff/get-staffs [32m200 711.668 ms - 3408
+2023-11-29 14:56:26 info: GET /staff/get-staffs [32m200 352.749 ms - 3408
+2023-11-29 14:56:26 info: GET /staff/get-staffs [32m200 2632.391 ms - 3408
+2023-11-29 14:56:26 info: GET /staff/get-staffs [32m200 2672.622 ms - 3408
+2023-11-29 14:56:27 info: GET /staff/get-staffs [32m200 2092.680 ms - 3408
+2023-11-29 14:56:27 info: GET /staff/get-staffs [32m200 2101.344 ms - 3408
+2023-11-29 14:56:30 info: GET /staff/get-staffs [36m304 1019.361 ms - -
+2023-11-29 14:56:30 info: GET /staff/get-staffs [32m200 1146.584 ms - 3408
+2023-11-29 14:56:30 info: GET /staff/get-staffs [36m304 339.337 ms - -
+2023-11-29 14:56:30 info: GET /staff/get-staffs [32m200 492.779 ms - 3408
+2023-11-29 14:56:31 info: GET /staff/get-staffs [32m200 942.937 ms - 3408
+2023-11-29 14:56:31 info: GET /staff/get-staffs [32m200 1005.457 ms - 3408
+2023-11-29 14:56:33 info: GET /staff/get-staffs [32m200 904.295 ms - 3408
+2023-11-29 14:56:33 info: GET /staff/get-staffs [36m304 1050.792 ms - -
+2023-11-29 14:56:33 info: GET /staff/get-staffs [32m200 1010.005 ms - 3408
+2023-11-29 14:56:35 info: GET /staff/get-staffs [36m304 1632.445 ms - -
+2023-11-29 14:56:36 info: GET /staff/get-staffs [32m200 1197.921 ms - 3408
+2023-11-29 14:56:49 info: POST /user/register [32m200 591.366 ms - 231
+2023-11-29 14:56:49 info: GET /staff/get-staffs [36m304 907.519 ms - -
+2023-11-29 14:56:49 info: GET /staff/get-staffs [32m200 1028.984 ms - 3408
+2023-11-29 14:56:49 info: GET /staff/get-staffs [32m200 834.253 ms - 3408
+2023-11-29 14:56:49 info: GET /staff/get-staffs [32m200 857.766 ms - 3408
+2023-11-29 15:01:39 info: POST /staff/login [32m200 456.433 ms - 219
+2023-11-29 15:03:22 info: POST /user/register [32m200 897.784 ms - 229
+2023-11-29 15:13:34 error: 400 - Please fill all the inputs - /user/register - POST - ::ffff:127.0.0.1
+2023-11-29 15:13:34 info: POST /user/register [33m400 13.887 ms - 1433
+2023-11-29 15:13:52 info: POST /user/register [32m200 872.830 ms - 236
+2023-11-29 15:22:13 info: POST /user/register [32m200 908.545 ms - 237
+2023-11-29 15:23:31 error: 500 - User validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /user/register - POST - ::1
+2023-11-29 15:23:31 info: POST /user/register [31m500 324.019 ms - 791
+2023-11-29 15:23:51 info: POST /user/register [32m200 711.286 ms - 232
+2023-11-29 15:26:43 info: POST /user/register [32m200 791.485 ms - 228
+2023-11-29 15:37:33 info: GET /staff/get-staffs [32m200 1001.474 ms - 3408
+2023-11-29 15:38:33 info: GET /staff/get-staffs [32m200 1135.903 ms - 3408
+2023-11-29 15:39:17 info: GET /staff/get-staffs [32m200 1088.861 ms - 3408
+2023-11-29 15:41:19 info: POST /user/register [32m200 882.536 ms - 241
+2023-11-29 17:10:42 info: POST /user/login [32m200 661.830 ms - 223
+2023-11-29 17:10:58 info: POST /user/login [32m200 512.122 ms - 223
+2023-11-29 17:14:29 error: 400 - Please fill all the inputs - /user/register - POST - ::ffff:127.0.0.1
+2023-11-29 17:14:29 info: POST /user/register [33m400 12.053 ms - 1433
+2023-11-29 17:14:55 info: POST /user/register [32m200 644.385 ms - 238
+2023-11-29 17:16:28 info: POST /user/register [32m200 887.436 ms - 240
+2023-11-29 17:18:19 info: POST /user/register [32m200 823.731 ms - 241

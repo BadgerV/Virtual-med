@@ -13,21 +13,23 @@ import { stream } from "./common/utils/logger.js";
 import morgan from "morgan";
 import { connectDb } from "./common/config/database.js";
 import cookieParser from "cookie-parser";
-import io from "socket.io";
+import { Server as SocketIOServer } from "socket.io";
+import http from "http";
 
 /**
  * Default app configurations
  */
 const app = express();
 
-const socketIO = io(app, {
-  pingTimeout: 60000,
+const server = http.createServer(app);
+
+const io = new SocketIOServer(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "http://localhost:5173",
   },
 });
 
-socketIO.on("connection", (socket) => {
+io.on("connection", (socket) => {
   console.log("Connected to socket.io");
 });
 
@@ -40,13 +42,19 @@ const appName = ENVIRONMENT.APP.NAME;
 app.use(helmet());
 app.use(
   cors({
-    origin: "*",
+    origin: "http://localhost:5173",
+    credentials: true,
   })
 );
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.disable("x-powered-by");
-app.use(cookieParser(ENVIRONMENT.APP.SECRET));
+app.use(
+  cookieParser({
+    secret: ENVIRONMENT.APP.SECRET,
+    sameSite: "None", // Set SameSite to None for cross-origin cookies
+  })
+);
 
 /**
  * Logger Middleware
