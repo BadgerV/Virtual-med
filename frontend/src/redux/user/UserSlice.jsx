@@ -1,6 +1,12 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
+import Cookies from "js-cookie";
+
+// Your registration request code here...
+
+// Now you can use authToken as needed in your frontend code
+
 const DEVELOPMENT = "http://localhost:8000";
 
 const initialState = {
@@ -21,12 +27,21 @@ export const registerUser = createAsyncThunk(
         password,
         phoneNumber,
         nickName,
+      }, {
+        withCredentials: true
       });
+      console.log("not working");
 
-      console.log(response.data.newUser);
+      // Assuming the 'auth' cookie is set by the server
+      const authToken = Cookies.get("auth");
+
+      console.log("Authentication Token:", authToken);
+
+      console.log(response)
 
       return response.data.newUser;
     } catch (error) {
+      console.log(error.response.data);
       return Promise.reject(error.response.data);
     }
   }

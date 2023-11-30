@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { registerUser } from "../../redux/user/UserSlice";
 import { useDispatch, useSelector } from "react-redux";
 
+
 const SignUp = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -15,9 +16,9 @@ const SignUp = () => {
 
   const user = useSelector((state) => state.userSlice.user);
 
-  const isLoading = useSelector((state) => state.userSlice.loading);
-
   const dispatch = useDispatch();
+
+  const isLoading = useSelector((state) => state.userSlice.loading);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

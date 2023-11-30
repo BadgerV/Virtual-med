@@ -36,6 +36,7 @@ const transporter = nodemailer.createTransport({
 });
 
 export const registerUser = catchAsync(async (req, res) => {
+  
   const { firstName, lastName, email, password } = req.body;
 
   if (
@@ -84,7 +85,7 @@ export const registerUser = catchAsync(async (req, res) => {
   const token = await newUser.generateAuthToken();
 
   // Store the token in a cookie
-  res.cookie("auth", token, { httpOnly: true });
+  res.cookie("auth", token, { httpOnly: true, secure: true });
   await newUser.save();
 
   res.status(200).send({ newUser });
@@ -95,7 +96,6 @@ export const verifyAccount = catchAsync(async (req, res) => {
 
   // Find the user by the verification token
   const user = await User.findOne({ verificationToken: token });
-
 
   if (!user) {
     throw new AppError("Invalid token or user not found.", 400);
@@ -308,7 +308,6 @@ export const ConnectUserWithDoctor = catchAsync(async (req, res) => {
 
   // Save the changes to the database
   await foundStaff.save();
-
 
   res.status(200).send(`Dr. ${foundStaff.lastName} has been notified.`);
 });

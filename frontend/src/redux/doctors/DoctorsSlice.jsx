@@ -16,6 +16,8 @@ export const getDoctors = createAsyncThunk("/doctors/get-doctors", async () => {
   try {
     const response = await axios.get(`${DEVELOPMENT}/staff/get-staffs`);
 
+    console.log(response)
+
     return response.data;
   } catch (error) {
     return Promise.reject(error.response.data);
