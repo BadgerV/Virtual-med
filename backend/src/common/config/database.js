@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import { ENVIRONMENT } from "./environment.js";
+import AppError from "../utils/appError.js";
 
 export const connectDb = async () => {
   try {

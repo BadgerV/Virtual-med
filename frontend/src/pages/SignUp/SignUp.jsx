@@ -3,8 +3,10 @@ import "./SignUp.css";
 import { Link } from "react-router-dom";
 import { registerUser } from "../../redux/user/UserSlice";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -20,7 +22,14 @@ const SignUp = () => {
   //SELF EXPLANATORY
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await dispatch(registerUser(formData));
+    const response = await dispatch(registerUser(formData));
+
+    if (response.payload._id) {
+      navigate("/");
+    } 
+    else {
+      //TAKE CARE OF THE IF NOT
+    }
   };
 
   ////SELF EXPLANATORY

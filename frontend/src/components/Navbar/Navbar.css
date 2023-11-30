@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8em 5em;
+  padding: 0.8em 4em;
   border-bottom: 2px solid #edeaea;
 }
 
@@ -27,38 +27,35 @@ h1 span {
   gap: 3em;
   cursor: pointer;
 }
+
 .navbar ul li a {
   color: #000000;
   text-decoration: none;
   font-weight: 500;
 
-  font-size: 0.95em;
-}
-
-.navbar ul li a:hover {
-  background-color: #eee;
+  font-size: 0.93em;
 }
 
 .navbar-last {
   display: flex;
   align-items: center;
-  gap: 0.7em;
+  gap: 2em;
 }
 
 .navbar-last span {
   color: black;
+  font-weight: 500;
+  font-size: 0.93em;
 }
 
 .navbar-last .btn {
-  background-color: #00008b;
+  background-color: #023382;
   color: #fff;
-  padding: 0.8em 1em;
-  border-radius: 1.2em;
+  padding: 0.8em 1.5em;
+  border-radius: 50px;
   margin-left: 10px;
-  padding: 0.68em;
-  cursor: pointer;
-  border: none;
-  outline: none;
+  font-size: 0.93em;
+  font-weight: 600;
 }
 
 /* Media query for devices with a width between 768px and 1024px */

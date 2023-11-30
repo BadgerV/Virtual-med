@@ -45,12 +45,12 @@ export const registerUser = createAsyncThunk(
     }
   }
 );
-const loginUser = createAsyncThunk(
+export const loginUser = createAsyncThunk(
   "/user/loginUser",
   async ({ email, password }) => {
     try {
       const response = await axios.post(
-        `${DEVELOPMENT}/user/register`,
+        `${DEVELOPMENT}/user/login`,
         {
           email,
           password,
@@ -61,9 +61,9 @@ const loginUser = createAsyncThunk(
       );
 
       // Assuming the 'auth' cookie is set by the server
-      console.log(response.data.user);
+      // console.log(response.data);
 
-      return response.data.user;
+      return response.data;
     } catch (error) {
       console.log(error.response.data);
       return Promise.reject(error.response.data);
