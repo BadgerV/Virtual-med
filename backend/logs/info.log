@@ -1463,3 +1463,99 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2023-11-29 17:14:55 info: POST /user/register [32m200 644.385 ms - 238
 2023-11-29 17:16:28 info: POST /user/register [32m200 887.436 ms - 240
 2023-11-29 17:18:19 info: POST /user/register [32m200 823.731 ms - 241
+2023-11-29 22:37:49 info: POST /user/register [32m200 1859.165 ms - 229
+2023-11-29 22:44:28 info: POST /user/register [32m200 3750.822 ms - 232
+2023-11-29 22:50:07 error: 404 - route not found - /user/register - GET - ::1
+2023-11-29 22:50:07 info: GET /user/register [33m404 12.047 ms - 57
+2023-11-29 22:50:09 error: 404 - route not found - /user/register - GET - ::1
+2023-11-29 22:50:09 info: GET /user/register [33m404 7.753 ms - 57
+2023-11-29 22:50:35 error: 404 - route not found - /user/register - GET - ::1
+2023-11-29 22:50:35 info: GET /user/register [33m404 49.082 ms - 57
+2023-11-29 22:51:39 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-11-29 22:51:40 info: GET /user/profile [33m404 22.865 ms - 61
+2023-11-29 22:52:25 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-11-29 22:52:25 info: GET /user/profile [33m404 1.988 ms - 61
+2023-11-29 22:53:23 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-11-29 22:53:23 info: GET /user/profile [33m404 25.770 ms - 61
+2023-11-29 22:54:22 info: GET /user/profile [32m200 212.830 ms - 220
+2023-11-29 22:57:27 info: GET /user/profile [36m304 188.009 ms - -
+2023-11-29 22:57:53 info: GET /user/profile [36m304 328.399 ms - -
+2023-11-29 23:00:03 info: GET /user/profile [36m304 186.000 ms - -
+2023-11-29 23:00:18 info: GET /user/profile [36m304 143.965 ms - -
+2023-11-29 23:00:36 info: GET /user/profile [36m304 324.380 ms - -
+2023-11-29 23:01:14 info: GET /user/profile [36m304 276.500 ms - -
+2023-11-29 23:07:12 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-11-29 23:07:12 info: GET /user/profile [33m401 30025.732 ms - 279
+2023-11-29 23:13:26 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-11-29 23:13:26 info: GET /user/profile [33m401 30023.084 ms - 279
+2023-11-29 23:13:57 info: GET /user/profile [36m304 21945.966 ms - -
+2023-11-29 23:14:06 info: GET /user/profile [36m304 144.018 ms - -
+2023-11-29 23:14:09 info: GET /user/profile [36m304 150.774 ms - -
+2023-11-29 23:14:13 info: GET /user/profile [36m304 145.469 ms - -
+2023-11-29 23:14:35 info: GET /user/profile [36m304 148.400 ms - -
+2023-11-29 23:15:03 info: GET /user/profile [32m200 152.869 ms - 229
+2023-11-29 23:15:11 info: GET /user/profile [36m304 173.710 ms - -
+2023-11-29 23:22:33 info: GET /user/profile [36m304 148.608 ms - -
+2023-11-29 23:22:34 info: GET /user/profile [36m304 1062.789 ms - -
+2023-11-29 23:22:49 info: GET /user/profile [36m304 141.128 ms - -
+2023-11-29 23:22:49 info: GET /user/profile [36m304 149.517 ms - -
+2023-11-29 23:22:56 info: GET /user/profile [36m304 154.191 ms - -
+2023-11-29 23:22:56 info: GET /user/profile [36m304 140.961 ms - -
+2023-11-29 23:23:01 info: GET /user/profile [36m304 138.984 ms - -
+2023-11-29 23:23:02 info: GET /user/profile [36m304 141.915 ms - -
+2023-11-29 23:23:04 info: GET /user/profile [36m304 139.533 ms - -
+2023-11-29 23:23:04 info: GET /user/profile [36m304 138.066 ms - -
+2023-11-29 23:23:26 info: GET /user/profile [36m304 164.945 ms - -
+2023-11-29 23:23:27 info: GET /user/profile [36m304 150.238 ms - -
+2023-11-29 23:23:33 info: GET /user/profile [36m304 151.845 ms - -
+2023-11-29 23:23:34 info: GET /user/profile [36m304 174.147 ms - -
+2023-11-29 23:24:49 info: GET /user/profile [36m304 150.128 ms - -
+2023-11-29 23:24:50 info: GET /user/profile [36m304 147.106 ms - -
+2023-11-29 23:25:16 info: GET /user/profile [36m304 153.709 ms - -
+2023-11-29 23:25:17 info: GET /user/profile [36m304 151.282 ms - -
+2023-11-29 23:25:55 info: GET /user/profile [36m304 152.249 ms - -
+2023-11-29 23:25:56 info: GET /user/profile [36m304 198.642 ms - -
+2023-11-29 23:25:59 info: GET /user/profile [36m304 159.388 ms - -
+2023-11-29 23:26:00 info: GET /user/profile [36m304 150.085 ms - -
+2023-11-29 23:26:01 info: GET /user/profile [36m304 134.273 ms - -
+2023-11-29 23:26:02 info: GET /user/profile [36m304 146.533 ms - -
+2023-11-29 23:26:19 info: GET /user/profile [36m304 140.215 ms - -
+2023-11-29 23:26:43 info: GET /user/profile [36m304 140.748 ms - -
+2023-11-29 23:26:44 info: GET /user/profile [36m304 141.255 ms - -
+2023-11-29 23:26:48 info: GET /user/profile [36m304 151.148 ms - -
+2023-11-29 23:27:13 info: GET /user/profile [36m304 163.497 ms - -
+2023-11-29 23:29:34 info: GET /user/profile [36m304 136.106 ms - -
+2023-11-29 23:29:34 info: GET /user/profile [36m304 150.176 ms - -
+2023-11-29 23:29:37 info: GET /user/profile [36m304 165.651 ms - -
+2023-11-29 23:29:38 info: GET /user/profile [36m304 148.425 ms - -
+2023-11-29 23:29:40 info: GET /user/profile [36m304 147.578 ms - -
+2023-11-29 23:29:41 info: GET /user/profile [36m304 168.169 ms - -
+2023-11-29 23:29:42 info: GET /user/profile [36m304 149.947 ms - -
+2023-11-29 23:29:42 info: GET /user/profile [36m304 161.978 ms - -
+2023-11-29 23:29:53 info: GET /user/profile [36m304 147.376 ms - -
+2023-11-29 23:29:56 info: GET /user/profile [36m304 143.454 ms - -
+2023-11-29 23:29:57 info: GET /user/profile [36m304 151.002 ms - -
+2023-11-29 23:30:22 info: GET /user/profile [36m304 188.881 ms - -
+2023-11-29 23:30:23 info: GET /user/profile [36m304 145.189 ms - -
+2023-11-29 23:30:26 info: GET /user/profile [36m304 144.522 ms - -
+2023-11-29 23:31:55 info: GET /user/profile [36m304 136.910 ms - -
+2023-11-29 23:31:56 info: GET /user/profile [36m304 141.161 ms - -
+2023-11-29 23:32:48 info: GET /user/profile [36m304 150.179 ms - -
+2023-11-29 23:33:52 info: GET /user/profile [36m304 164.675 ms - -
+2023-11-29 23:34:02 info: GET /user/profile [36m304 162.865 ms - -
+2023-11-29 23:34:05 info: GET /user/profile [36m304 153.193 ms - -
+2023-11-29 23:39:13 info: GET /user/profile [32m200 349.437 ms - 229
+2023-11-29 23:42:37 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-11-29 23:42:37 info: GET /user/profile [33m401 30013.302 ms - 279
+2023-11-29 23:42:55 info: GET /user/profile - - ms - -
+2023-11-29 23:43:22 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-11-29 23:43:26 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-11-29 23:43:26 info: GET /user/profile [33m401 30008.664 ms - 279
+2023-11-29 23:43:26 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-11-29 23:43:26 info: GET /user/profile [33m404 3.518 ms - 61
+2023-11-29 23:43:30 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-11-29 23:43:30 info: GET /user/profile [33m404 4.007 ms - 61
+2023-11-29 23:44:18 info: POST /user/register - - ms - -
+2023-11-29 23:44:18 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-11-29 23:44:18 info: GET /user/profile [33m404 1.584 ms - 61
+2023-11-29 23:44:20 error: 500 - read ECONNRESET - /user/register - POST - ::ffff:127.0.0.1

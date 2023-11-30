@@ -1,9 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./SignUp.css";
 import { Link } from "react-router-dom";
 import { registerUser } from "../../redux/user/UserSlice";
 import { useDispatch, useSelector } from "react-redux";
-
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -13,18 +12,18 @@ const SignUp = () => {
     phoneNumber: "",
     password: "",
   });
-
-  const user = useSelector((state) => state.userSlice.user);
-
+  //EVERYTHIING RELATING TO STATE
   const dispatch = useDispatch();
-
+  // const user = useSelector((state) => state.userSlice.user);
   const isLoading = useSelector((state) => state.userSlice.loading);
 
+  //SELF EXPLANATORY
   const handleSubmit = async (e) => {
     e.preventDefault();
     await dispatch(registerUser(formData));
   };
 
+  ////SELF EXPLANATORY
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -32,13 +31,10 @@ const SignUp = () => {
     });
   };
 
-  useEffect(() => {
-    console.log(user);
-  }, [user]);
-
   return (
     <div className="newsign">
       <h1>Sign Up</h1>
+
       <form onSubmit={handleSubmit}>
         <input
           onChange={handleChange}

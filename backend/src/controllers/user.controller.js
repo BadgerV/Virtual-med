@@ -36,7 +36,6 @@ const transporter = nodemailer.createTransport({
 });
 
 export const registerUser = catchAsync(async (req, res) => {
-  
   const { firstName, lastName, email, password } = req.body;
 
   if (
@@ -85,7 +84,7 @@ export const registerUser = catchAsync(async (req, res) => {
   const token = await newUser.generateAuthToken();
 
   // Store the token in a cookie
-  res.cookie("auth", token, { httpOnly: true, secure: true });
+  res.cookie("auth", token, { secure: true });
   await newUser.save();
 
   res.status(200).send({ newUser });

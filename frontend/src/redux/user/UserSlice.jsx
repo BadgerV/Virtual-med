@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-import Cookies from "js-cookie";
+// import Cookies from "js-cookie";
 
 // Your registration request code here...
 
@@ -14,30 +14,29 @@ const initialState = {
   loading: false,
   isSuccess: false,
   error: false,
+  loadingUserProfile : true
 };
 
 export const registerUser = createAsyncThunk(
   "/user/registerUser",
   async ({ firstName, lastName, nickName, email, password, phoneNumber }) => {
     try {
-      const response = await axios.post(`${DEVELOPMENT}/user/register`, {
-        firstName,
-        lastName,
-        email,
-        password,
-        phoneNumber,
-        nickName,
-      }, {
-        withCredentials: true
-      });
-      console.log("not working");
+      const response = await axios.post(
+        `${DEVELOPMENT}/user/register`,
+        {
+          firstName,
+          lastName,
+          email,
+          password,
+          phoneNumber,
+          nickName,
+        },
+        {
+          withCredentials: true,
+        }
+      );
 
       // Assuming the 'auth' cookie is set by the server
-      const authToken = Cookies.get("auth");
-
-      console.log("Authentication Token:", authToken);
-
-      console.log(response)
 
       return response.data.newUser;
     } catch (error) {
@@ -46,7 +45,43 @@ export const registerUser = createAsyncThunk(
     }
   }
 );
-const loginUser = createAsyncThunk("/user/loginUser", async () => {});
+const loginUser = createAsyncThunk(
+  "/user/loginUser",
+  async ({ email, password }) => {
+    try {
+      const response = await axios.post(
+        `${DEVELOPMENT}/user/register`,
+        {
+          email,
+          password,
+        },
+        {
+          withCredentials: true,
+        }
+      );
+
+      // Assuming the 'auth' cookie is set by the server
+      console.log(response.data.user);
+
+      return response.data.user;
+    } catch (error) {
+      console.log(error.response.data);
+      return Promise.reject(error.response.data);
+    }
+  }
+);
+
+export const myProfile = createAsyncThunk("/user/profile", async () => {
+  try {
+    const response = await axios.get(`${DEVELOPMENT}/user/profile`, {
+      withCredentials: true,
+    });
+
+    return response.data;
+  } catch (error) {
+    await Promise.all(error);
+  }
+});
 const deleteUser = createAsyncThunk("/user/deleteUser", async () => {});
 
 const userSlice = createSlice({
@@ -133,6 +168,22 @@ const userSlice = createSlice({
         state.loading = false;
         state.isSuccess = false;
         state.error = action.error.message;
+      })
+      .addCase(myProfile.pending, (state) => {
+        state.isLoading = true;
+        state.isSuccess = false;
+        state.loadingUserProfile = true;
+      })
+      .addCase(myProfile.fulfilled, (state, action) => {
+        state.user = action.payload;
+        state.loading = false;
+        state.isSuccess = true;
+        state.loadingUserProfile = false;
+      })
+      .addCase(myProfile.rejected, (state, action) => {
+        state.isLoading = false;
+        state.error = action.payload;
+        state.loadingUserProfile = false;
       });
   },
 });

@@ -9,6 +9,8 @@ export const auth = catchAsync(async (req, res, next) => {
   // Retrieve the token from the cookie instead of the Authorization header
   const token = req.cookies.auth;
 
+  console.log(req.cookies.auth);
+
   if (!token) {
     throw new AppError("Please authenticate", 404);
   }

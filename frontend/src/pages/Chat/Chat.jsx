@@ -4,11 +4,12 @@ import "./chat.css";
 import SideDrawer from "../../components/miscellaneous/SideDrawer";
 
 const Chat = () => {
-  const user = useSelector((state) => state.userlice.user);
+  const user = useSelector((state) => state.userlice?.user);
   const isLoading = useSelector((state) => state.userSlice.isLoading);
+
   return (
     <div className="chat-page">
-      {user && <SideDrawer />}
+      {<SideDrawer />}
 
       <Box>
         {/* {user && <MyChats />} */}
