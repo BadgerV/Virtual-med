@@ -2349,3 +2349,14 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2023-11-30 16:36:47 info: GET /user/profile [36m304 174.990 ms - -
 2023-11-30 16:37:08 info: GET /user/profile [36m304 158.786 ms - -
 2023-11-30 16:37:09 info: GET /user/profile [36m304 1035.127 ms - -
+2023-11-30 16:57:29 info: GET /user/profile [36m304 1294.316 ms - -
+2023-11-30 16:58:29 info: GET /user/profile [36m304 242.686 ms - -
+2023-11-30 17:02:11 info: GET /user/profile [32m200 276.179 ms - 211
+2023-11-30 17:12:26 info: GET /user/profile [32m200 208.709 ms - 211
+2023-11-30 17:28:36 info: GET /user/profile [36m304 362.615 ms - -
+2023-11-30 17:28:41 info: GET /user/profile [32m200 262.328 ms - 211
+2023-11-30 17:28:42 info: GET /user/profile [36m304 278.738 ms - -
+2023-11-30 17:28:43 info: GET /user/profile [36m304 215.286 ms - -
+2023-11-30 17:28:49 info: GET /user/profile [36m304 186.338 ms - -
+2023-11-30 17:29:41 info: GET /user/profile [36m304 172.721 ms - -
+2023-11-30 17:36:22 info: GET /user/profile [36m304 233.409 ms - -
