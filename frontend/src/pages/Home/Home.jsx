@@ -23,63 +23,93 @@ const Home = () => {
   // }, [doctors]);
   return (
     <div className="home">
-      <div className="right">
-        <h1>
-          We provide digital
-          <br /> healthcare for everyone, <br />
-          anywhere
-        </h1>
+      <div className="home-container">
+        <div className="right">
+          <h1>
+            We provide digital
+            <br /> healthcare for everyone, <br />
+            anywhere
+          </h1>
 
-        <span>
-          At VirtualMed, we strongly believe that everyone deserves access to
-          <br />
-          top-notch medical care, regardless of their location or schedule.
-        </span>
+          <span>
+            At VirtualMed, we strongly believe that everyone deserves access to
+            <br />
+            top-notch medical care, regardless of their location or schedule.
+          </span>
 
-        <div className="home-last">
-          <div className="home-last-images">
-            <img src="/assets/Ellipse 1.png" alt="small doctors.png" />
-            <img src="/assets/Ellipse 2.png" alt="small doctors.png" />
-            <img src="/assets/Ellipse 3.png" alt="small doctors.png" />
-            <img src="/assets/Ellipse 4.png" alt="small doctors.png" />
+          <div className="home-last">
+            <div className="home-last-images">
+              <img src="/assets/Ellipse 1.png" alt="small doctors.png" />
+              <img src="/assets/Ellipse 2.png" alt="small doctors.png" />
+              <img src="/assets/Ellipse 3.png" alt="small doctors.png" />
+              <img src="/assets/Ellipse 4.png" alt="small doctors.png" />
+            </div>
+
+            <div className="home-lasts">
+              100 +<br />
+              Competent Doctors
+            </div>
           </div>
 
-          <div className="home-lasts">
-            100 +<br />
-            Competent Doctors
-          </div>
+          <SwitchableButtons />
         </div>
 
-        <SwitchableButtons />
-      </div>
+        <div className="left">
+          <div className="boxes">
+            <div className="box">
+              <img src="/assets/home-first.svg" />
+              <span>Chat with Medical Professionals</span>
+            </div>
 
-      <div className="left">
-        <div className="boxes">
-          <div className="box">
-            <img src="/assets/home-first.svg" />
-            <span>Chat with Medical Professionals</span>
+            <div className="box">
+              <img src="/assets/Stethoscope.svg" />
+              <span>Schedule online appointment</span>
+            </div>
+
+            <div className="box">
+              <img src="/assets/FolderLock.svg" />
+              <span>Access your Medical History</span>
+            </div>
           </div>
 
-          <div className="box">
-            <img src="/assets/Stethoscope.svg" />
-            <span>Schedule online appointment</span>
-          </div>
-
-          <div className="box">
-            <img src="/assets/FolderLock.svg" />
-            <span>Access your Medical History</span>
-          </div>
+          <img
+            src="/assets/doctor-presenting-something-isolated-white-background 1.png"
+            alt=""
+          />
         </div>
-
-        <img
-          src="/assets/doctor-presenting-something-isolated-white-background 1.png"
-          alt=""
-        />
       </div>
-
 
       <div className="last">
-        
+        <h1>Our Services</h1>
+
+        <div className="last-all">
+          <div className="last-first">
+            <h2>Telemedicine Consultations</h2>
+            <span>
+              Speak with a healthcare professional
+              <br /> via chat or phone calls and get the help you need at your
+              convenience.
+            </span>
+          </div>
+
+          <div className="last-first">
+            <h2>Prescription Services</h2>
+            <span>
+              Need prescription? Our medical
+              <br /> personnel can write you a prescription, making it it easy
+              for you to access necessary medications.
+            </span>
+          </div>
+
+          <div className="last-first">
+            <h2>Mental health Support</h2>
+            <span>
+              Your mental health is just as important
+              <br /> as your physical health. Our specialists are here to
+              provide the guidance and support you need..
+            </span>
+          </div>
+        </div>
       </div>
 
       {/* {doctors?.map((doctor, index) => {

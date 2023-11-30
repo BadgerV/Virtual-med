@@ -1,0 +1,103 @@
+.signs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  font-size: 2em;
+  gap: 1em;
+}
+
+.signs button {
+  gap: 1em;
+  border-bottom: 1.5px solid blue;
+}
+
+h2 {
+  color: #000000;
+}
+
+.nann{ 
+text-align: center;
+}
+
+#doctor-signup {
+    display: none;
+  }
+
+#patient-signup {
+  display: none;
+}
+
+.sign-ins {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: -2em;
+  gap: 1em;
+}
+
+.sign-in-header {
+  margin: 2em 0;
+  text-align: center;
+}
+
+.sign-in-header h1 {
+  font-size: 2em;
+}
+
+.sign-in-header span {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.form-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 15px;
+  width: 450px;
+  margin-bottom: 1.5em;
+}
+
+.form-input img {
+  margin-right: 8px;
+}
+
+.form-input input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.terms {
+  display: flex;
+  gap: 0.5em;
+}
+
+.sign-buttondiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.sign-button {
+  border: 1px solid white;
+  background-color: #00008b;
+  padding: 0.7em;
+  border-radius: 15px;
+  color: white;
+  width: 460px;
+}
+
+.sign-in-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-in-footer a {
+  color: blue;
+}

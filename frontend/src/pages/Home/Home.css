@@ -2,7 +2,14 @@
   display: flex;
   gap: 1em;
   height: 100vh;
+  width: 100%;
   padding: 1.3em;
+  flex-direction: column;
+}
+
+.home-container{ 
+  display: flex;
+  
 }
 
 .home h1 {
@@ -40,6 +47,7 @@
 
 .home-lasts {
   font-size: 15px;
+  font-weight: bold;
   padding: 10px;
 }
 
@@ -60,20 +68,19 @@
 
 .boxes .box:nth-child(1) {
   padding: 1em;
-  top: -80px;
+  top: -20px;
   left: 140px;
 }
 
 .boxes .box:nth-child(2) {
   padding: 1em;
   left: 40px;
-  top: -50px;
 }
 
 .boxes .box:nth-child(3) {
   padding: 1em;
   left: 150px;
-  top: -20px;
+  top: 40px;
 }
 
 .right {
@@ -93,16 +100,61 @@
 }
 
 .left img {
-  margin-top: -220px;
+  /* margin-top: -150px; */
   width: 500px;
   height: 450px;
   object-fit: cover;
 }
 
+
+.last{ 
+  display: flex;
+  flex-direction: column;
+}
+
+.last h1{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+ }
+
+
+.last-all{
+  display: flex;
+  gap: 1em;
+  margin-bottom: 3em;
+  padding: 3em;
+ }
+
+
+
+
+ 
+ .last-first {
+  flex: 1;
+  gap: 1em;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: inset 0 0 10px rgba(71, 66, 66, 0.8);
+}
+
+
+ 
+
+
+
+/* 
+
 @media screen and (max-width: 1024px) {
   .home-last img {
     height: 40px;
     width: 40px;
+  }
+
+  .home h1{ 
+    font-size: 25px;
   }
 
   .home-lasts {
@@ -113,6 +165,10 @@
     height: 15px;
     width: 15px;
   }
+
+  .boxes .box{
+    width: max-content;
+   }
 
   .left img {
     width: 400px;
@@ -126,25 +182,39 @@
     padding: 0.4em;
   }
 
+  .home h1{ 
+    font-size: 20px;
+  }
+
   .right {
     width: 100%;
   }
 
-  /* .boxes {
+   .boxes {
     flex-direction: row;
     gap: 0.5em;
-  } */
+  } 
 
-  /* .boxes .box {
+  /.boxes .box {
     width: 200px;
-  } */
+  } 
+
+  .boxes .box{
+     padding: 0.2em;
+     font-size: 15px;
+  }
+
+  .boxes .box span{
+    font-size: 12px;
+   }
 
   .boxes .box:nth-child(1) {
-    top: 0;
-    left: 0;
+    top: -20px;
+    left: 80px;
   }
 
   .boxes .box:nth-child(2) {
+    top: -30px;
     left: 50px;
   }
 
@@ -153,8 +223,9 @@
   }
 
   .left img {
-    width: 300px;
-    height: 300px;
+    width: 230px;
+    height: 230px;
     margin: 0;
-  }
-}
+  } 
+
+} 

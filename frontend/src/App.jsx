@@ -16,6 +16,7 @@ const Footer = lazy(() => import("./components/Footer/Footer"));
 const SignIn = lazy(() => import("./pages/SignIn/SignIn"));
 const SignUp = lazy(() => import("./pages/SignUp/SignUp"));
 const Home = lazy(() => import("./pages/Home/Home.jsx"));
+const SignUpPatient = lazy(() => import("./pages/SignUpPatient/SignUpPatient.jsx"));
 const PrivateRoutes = lazy(() =>
   import("./components/PrivateRoute/PrivateRoutes")
 );
@@ -36,15 +37,17 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/signupforpatient" element={<SignUpPatient /> } />
+          
 
           <Route element={<PrivateRoutes />}>
             <Route path="/profile" element={<Profile />} />
           </Route>
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Suspense>
     </BrowserRouter>
   );
 };
 
-export default App;
+export default App

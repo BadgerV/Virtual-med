@@ -37,3 +37,12 @@
    margin-left: 10px;
    align-items: center;
   }
+
+
+
+  @media screen and (max-width: 768px) {
+    .switch-btn button{ 
+      font-size: 15px;
+    }
+    }
+
