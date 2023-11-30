@@ -23,28 +23,124 @@ const chatSlice = createSlice({
 });
 
 // const { data } = await axios.get(`/api/user?search=${search}`, config);
-export const searchChats = createAsyncThunk(
-  "/chat/getChats",
-  async (search) => {
-    const { data } = await axios.get(`/api/user?search=${search}`, {
+// export const searchChats = createAsyncThunk(
+//   "/chat/getChats",
+//   async (search) => {
+//     const { data } = await axios.get(`/api/user?search=${search}`, {
+//       withCredentials: true,
+//     });
+
+//     console.log(data);
+//   }
+// );
+
+// export const getChats = createAsyncThunk("/chat/getChats", async (userId) => {
+//   const { data } = await axios.post(
+//     `${DEVELOPMENT}/chat/`,
+//     { userId },
+//     {
+//       withCredentials: true,
+//     }
+//   );
+
+//   console.log(data);
+// });
+
+export const fetchChats = createAsyncThunk("/chat/fetchChats", async () => {
+  try {
+    const response = await axios.get(`${DEVELOPMENT}/chat/fetchChats`, {
       withCredentials: true,
     });
 
-    console.log(data);
+    console.log(response);
+  } catch (error) {
+    return Promise.reject(error);
+  }
+});
+
+export const createCommunity = createAsyncThunk(
+  "/chat/createCommunity",
+  async (name) => {
+    try {
+      const response = axios.post(
+        `${DEVELOPMENT}/chat/community/create`,
+        name,
+        {
+          withCredentials: true,
+        }
+      );
+
+      console.log(response);
+    } catch (error) {
+      console.log(error);
+    }
   }
 );
 
-export const getChats = createAsyncThunk("/chat/getChats", async (userId) => {
-  const { data } = await axios.post(
-    `${DEVELOPMENT}/chat/`,
-    { userId },
-    {
-      withCredentials: true,
-    }
-  );
+export const addUsersToCommunity = createAsyncThunk(
+  "/chat/addUsersToCommunity",
+  async ({ chatId }) => {
+    try {
+      const response = await axios.put(
+        `${DEVELOPMENT}/chat/communityAdd`,
+        {
+          chatId: chatId,
+        },
+        {
+          withCredentials: true,
+        }
+      );
 
-  console.log(data);
-});
+      console.log(response);
+    } catch (error) {
+      console.log(error);
+      return Promise.reject(error);
+    }
+  }
+);
+
+export const removeUserFromCOmmunity = createAsyncThunk(
+  "/chat/removeUserFromCommunity",
+  async ({ chatId, userId }) => {
+    try {
+      const response = await axios.put(
+        `${DEVELOPMENT}/chat/communityRemove`,
+        {
+          chatId: chatId,
+          userId: userId,
+        },
+        {
+          withCredentials: true,
+        }
+      );
+
+      console.log(response);
+    } catch (error) {
+      console.log(error);
+      return Promise.reject(error);
+    }
+  }
+);
+
+export const sendMessage = createAsyncThunk(
+  "/chat/message/sendMessage",
+  async ({ chatId, content }) => {
+    try {
+      const response = await axios.put(
+        `${DEVELOPMENT}/chat/communityRemove`,
+        { chatId: chatId, content: content },
+        {
+          withCredentials: true,
+        }
+      );
+
+      console.log(response);
+    } catch (error) {
+      console.log(error);
+      Promise.reject(error);
+    }
+  }
+);
 
 // Export reducer
 export default chatSlice.reducer;
