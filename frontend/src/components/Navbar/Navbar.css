@@ -1,14 +1,11 @@
-.navbar{ 
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.3em;
   gap: 1em;
   border-bottom: 0.1px solid #000;
-
-
 }
-
 
 .navbar h1 {
   font-size: 24px;
@@ -17,10 +14,10 @@
 }
 
 h1 span {
-  color: red;
- }
+  color: blue
+}
 
- .navbar ul li a {
+.navbar ul li a {
   color: #333;
   text-decoration: none;
   padding: 10px;
@@ -37,22 +34,21 @@ h1 span {
   gap: 0.7em;
 }
 
-
-.navbar-last span{
+.navbar-last span {
   color: black;
- }
+}
 
 .navbar-last .btn {
-  background-color: #00008B;
+  background-color: #00008b;
   color: #fff;
   padding: 0.8em 1em;
   border-radius: 1.2em;
   margin-left: 10px;
+  padding: 0.68em;
   cursor: pointer;
   border: none;
+  outline: none;
 }
-
-
 
 /* Media query for devices with a width between 768px and 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -73,8 +69,7 @@ h1 span {
 
 /* Media query for devices with a width less than or equal to 768px */
 @media (max-width: 768px) {
-
-  .navbar{ 
+  .navbar {
     padding: 0.5em;
     display: flex;
     text-align: center;
@@ -90,17 +85,15 @@ h1 span {
     font-size: 10px;
   }
 
-
-  .navbar-last{ 
+  .navbar-last {
     gap: 0.3px;
     text-align: center;
   }
-  
-  .navbar-last span{
-    font-size: 10px;
 
-   }
-  
+  .navbar-last span {
+    font-size: 10px;
+  }
+
   .navbar-last .btn {
     padding: 0.4em 0.7em;
     font-size: 9px;

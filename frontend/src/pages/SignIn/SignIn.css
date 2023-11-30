@@ -1,0 +1,105 @@
+.sign-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 1em;
+    margin-top: 3em;
+ }
+
+ .sign-in-header{ 
+    margin: 2em 0;
+ }
+
+ .sign-in-header h1{
+    font-size: 2em;
+  }
+
+
+  .sign-in-header span{ 
+    font-size: 1em;
+    font-weight: normal;
+  }
+
+
+
+  .form-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 15px;
+    width: 450px;
+    margin-bottom: 1.5em;
+  }
+
+  .form-input img {
+    margin-right: 8px;
+  }
+
+  .form-input input {
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+
+  .terms{
+    display: flex;
+    gap: 0.5em;
+   }
+
+   .sign-buttondiv{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-top: 1em;
+    }
+
+
+   .sign-button{ 
+border: 1px solid white;
+background-color: #00008b;
+padding: 0.7em;
+border-radius: 15px;
+color: white;
+width: 460px;
+ }
+
+   .twobtn {
+    display: flex;
+    gap: 30px; 
+  }
+
+  .or{
+    text-align: center;
+    font-size: 16px;
+    margin: 0.5em 0;
+   }
+
+  .twobtn button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px;
+    color: black;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+  }
+
+
+
+  .twobtn button img {
+    margin-right: 10px;
+  }
+
+ 
+.sign-in-footer{
+    display: flex;
+    flex-direction: column;
+ }
+
+.sign-in-footer a{ 
+color: blue;
+}
