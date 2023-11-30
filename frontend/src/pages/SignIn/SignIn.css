@@ -96,7 +96,7 @@ label {
 .twobtn {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2em;
+  gap: 1em;
 }
 
 .or {
