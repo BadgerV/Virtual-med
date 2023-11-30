@@ -54,7 +54,7 @@ const SignIn = () => {
 
       <div className="sign-in-footer">
         <span>
-          Don't have an account? <a href="/signup" className="ball">Sign Up</a>
+          Don't have an account? <a href="/signupforpatient" className="ball">Sign Up</a>
         </span>
         <a href="#">Forgot Password</a>
       </div>
