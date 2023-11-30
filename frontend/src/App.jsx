@@ -6,24 +6,28 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Home from "./components/Home/Home";
 // import SignIn from "./pages/SignIn/SignIn";
 // import SignUp from "./pages/SignUp/SignUp";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import LoadingComponent from "./components/LoadingComponent/LoadingComponent";
 import Navbar from "./components/Navbar/Navbar";
 
-import { useSelector } from "react-redux";
-import { Navigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+// import { Navigate } from "react-router-dom";
+import { myProfile } from "./redux/user/UserSlice";
 //LAZY IMPORT PAGES FOR BETTER WEBSITE PERFORMANCE
 const Profile = lazy(() => import("./pages/Profile/Profile"));
-const Footer = lazy(() => import("./components/Footer/Footer"));
+// const Footer = lazy(() => import("./components/Footer/Footer"));
 const SignIn = lazy(() => import("./pages/SignIn/SignIn"));
 const SignUp = lazy(() => import("./pages/SignUp/SignUp"));
 const Home = lazy(() => import("./pages/Home/Home.jsx"));
 const SignUpPatient = lazy(() =>
   import("./pages/SignUpPatient/SignUpPatient.jsx")
 );
+<<<<<<< HEAD
 const DoctorProfile = lazy(() =>
   import("./pages/DoctorProfile/DoctorProfile.jsx")
 );
+=======
+>>>>>>> e4940758ada45dde05a87fc861ec176461e13426
 const PrivateRoutes = lazy(() =>
   import("./components/PrivateRoute/PrivateRoutes")
 );
@@ -36,7 +40,21 @@ const Chat = lazy(() => import("./pages/Chat/Chat"));
 //i was thinking we should start with the redux store and the asynchronous detchings from the backend pending the time we will get a designer.
 
 const App = () => {
-  const user = useSelector((state) => state.userSlice.useSelector);
+  const dispatch = useDispatch();
+  // const user = useSelector((state) => state.userSlice.useSelector);
+  const loadingUserProfile = useSelector(
+    (state) => state.userSlice.loadingUserProfile
+  );
+
+  console.log(loadingUserProfile);
+
+  useEffect(() => {
+    const verifyUser = async () => {
+      await dispatch(myProfile());
+    };
+
+    verifyUser();
+  }, []);
   return (
     <BrowserRouter>
       <Navbar />
@@ -47,14 +65,18 @@ const App = () => {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signupforpatient" element={<SignUpPatient />} />
+<<<<<<< HEAD
           <Route path="/doctorprofile" element={<DoctorProfile />} />
 
           <Route
             path="/chat"
             element={user ? <Chat /> : <Navigate to="/signup" />}
           />
+=======
+>>>>>>> e4940758ada45dde05a87fc861ec176461e13426
 
           <Route element={<PrivateRoutes />}>
+            <Route path="/chat" element={<Chat />} />
             <Route path="/profile" element={<Profile />} />
           </Route>
         </Routes>
