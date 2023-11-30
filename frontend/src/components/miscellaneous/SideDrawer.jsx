@@ -12,7 +12,7 @@ const SideDrawer = () => {
           placement="bottom-end"
         >
           <Button variant="ghost">
-            <Text d={{base: "none", md:"flex"}}>Search user</Text>
+            <Text display={{ base: "none", md: "flex" }}>Search user</Text>
             <span>intersting</span>
           </Button>
         </Tooltip>

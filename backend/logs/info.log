@@ -1559,3 +1559,13 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2023-11-29 23:44:18 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
 2023-11-29 23:44:18 info: GET /user/profile [33m404 1.584 ms - 61
 2023-11-29 23:44:20 error: 500 - read ECONNRESET - /user/register - POST - ::ffff:127.0.0.1
+2023-11-30 06:27:36 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-11-30 06:27:36 info: GET /user/profile [33m404 23.954 ms - 61
+2023-11-30 06:28:36 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-11-30 06:28:36 info: GET /user/profile [33m404 8.954 ms - 61
+2023-11-30 06:28:57 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-11-30 06:28:57 info: GET /user/profile [33m404 4.291 ms - 61
+2023-11-30 06:29:02 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-11-30 06:29:02 info: GET /user/profile [33m404 5.497 ms - 61
+2023-11-30 06:29:33 info: POST /user/register [32m200 634.335 ms - 227
+2023-11-30 06:29:48 info: GET /user/profile [32m200 195.758 ms - 215
