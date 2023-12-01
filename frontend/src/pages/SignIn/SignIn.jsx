@@ -13,7 +13,7 @@ const SignIn = () => {
   });
 
   const isLoading = useSelector((state) => state.userSlice.loading);
-  const user = useSelector((state) => state.userSlice.user);
+  // const user = useSelector((state) => state.userSlice.user);
 
   const handleChange = (e) => {
     setFormData({

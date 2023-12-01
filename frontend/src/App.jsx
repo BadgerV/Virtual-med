@@ -28,9 +28,12 @@ const SignUpPatient = lazy(() =>
 const DoctorProfile = lazy(() =>
   import("./pages/DoctorProfile/DoctorProfile.jsx")
 );
+<<<<<<< HEAD
 const DoctorRegister = lazy(() =>
   import("./pages/DoctorRegister/DoctorRegister.jsx")
 );
+=======
+>>>>>>> b484a9a3db7a588851865277e849387e9224ec74
 // =======
 // >>>>>>> e4940758ada45dde05a87fc861ec176461e13426
 const PrivateRoutes = lazy(() =>
@@ -62,7 +65,7 @@ const App = () => {
   }, []);
   return (
     <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <Suspense fallback={<LoadingComponent />}>
         <Routes>
@@ -73,7 +76,11 @@ const App = () => {
 
           <Route path="/finddoctor" element={<FindDoctor />} />
           <Route path="/doctor/:id" element={<DoctorProfile />} />
+<<<<<<< HEAD
           <Route path="/doctorregister" element={<DoctorRegister />} />
+=======
+
+>>>>>>> b484a9a3db7a588851865277e849387e9224ec74
           <Route path="/doctorprofile" element={<DoctorProfile />} />
 
           <Route

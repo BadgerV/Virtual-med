@@ -1,0 +1,114 @@
+.doctor-card-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em 1em;
+  gap: 1em;
+  outline: 1px solid hsl(0, 0%, 83%);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+.doctor-card-left {
+}
+.doctor-card-middle {
+  flex: 1;
+  padding-top: 0.3em;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+}
+
+.doctor-card_name {
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 100%;
+}
+.doctor-card_speciality {
+  font-size: 0.9em;
+  font-weight: 400;
+}
+.doctor-course {
+  font-size: 0.83em;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+}
+
+.doctor-card_rating-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.doctor-card_rating-container span {
+  font-size: 0.8em;
+}
+.doctor-card_rating-container img {
+  width: 14px;
+  height: 13px;
+}
+
+.doctor-card-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.doctor-card_view-button {
+  background-color: #023382;
+  color: white;
+  border-radius: 10px;
+  font-size: 0.93em;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+@media (max-width: 520px) {
+  .doctor-card-container {
+    padding: 0.2em 0.8em;
+  }
+  .doctor-card-left {
+    display: flex;
+    align-items: center;
+  }
+  .doctor-card-left img {
+    height: 5.5em;
+  }
+
+  .doctor-card_name {
+    font-size: 0.93em;
+  }
+
+  .doctor-card_speciality {
+    font-size: 0.8em;
+  }
+
+  .doctor-course {
+    font-size: 0.73em;
+  }
+
+  .doctor-card_rating-container span {
+    font-size: 0.73em;
+  }
+
+  .doctor-card_view-button {
+    background-color: #023382;
+    color: white;
+    border-radius: 10px;
+    font-size: 0.8em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 450px) {
+  .doctor-card-container {
+    padding: 0.2em 0.4em;
+    border-radius: 10px;
+    gap: 0.5em;
+  }
+}
+@media (max-width: 450px) {
+  .doctor-card_name {
+    font-size: 0.8em;
+  }
+}

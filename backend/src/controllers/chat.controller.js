@@ -2,7 +2,9 @@ import Chat from "../models/ChatModel.js";
 import { catchAsync } from "../common/utils/errorHandler.js";
 import AppError from "../common/utils/appError.js";
 import User from "../models/UserModel.js";
+import Staff from "../models/StaffModel.js";
 
+//CREATES A NEW CHAT
 export const accessChat = catchAsync(async (req, res) => {
   const user = req.user ? req.user : req.staff;
 
@@ -13,6 +15,30 @@ export const accessChat = catchAsync(async (req, res) => {
 
   if (!userId) {
     throw new AppError("UserId param not sent with request", 400);
+  }
+
+  if (!isUser) {
+    const isStaff = Staff.findOne({
+      $and: [
+        { _id: user._id },
+        { currentPatients: { $elemMatch: { userId } } },
+      ],
+    });
+
+    if (!isStaff) {
+      throw new AppError("This user is not you patient.");
+    }
+  } else {
+    const isAllowedUser = User.findOne({
+      $and: [
+        { _id: user._id },
+        { assignedDoctors: { $elemMatch: { userId } } },
+      ],
+    });
+
+    if (!isAllowedUser) {
+      throw new AppError("You are not a patient to this doctor");
+    }
   }
 
   var isChat = await Chat.find({
@@ -167,48 +193,68 @@ export const renameCommunity = catchAsync(async (req, res) => {
   res.status(200).send(updatedChat);
 });
 export const addToCommunity = catchAsync(async (req, res) => {
-  const { chatId, userId } = req.body;
-  const staff = req.staff;
+  const isUser = req.user ? true : false;
+  const { chatId } = req.body;
+
+  if (isUser) {
+    const foundUser = await User.findOne(
+      { _id: req.user._id },
+      { isPremium: true }
+    );
+
+    if (!foundUser) {
+      throw new AppError("Become a premium user to access the feature", 400);
+    }
+  }
 
   const chatToUpdate = await Chat.findOne({ _id: chatId }).populate(
     "communityAdmin"
   );
 
-  const isUser = (await User.findOne({ _id: userId })) ? true : false;
-
   if (!chatToUpdate) {
-    throw new AppError("Community does not exist");
+    throw new AppError("Community not found", 400);
   }
 
-  if (!chatToUpdate.communityAdmin._id.equals(staff._id)) {
-    throw new AppError(
-      "You are not authorized to add more members in this community"
-    );
-  } else if (chatToUpdate.isCommunity === false) {
-    throw new AppError("This is not a community");
-  }
-
-  if (
-    chatToUpdate.users.includes(userId) ||
-    chatToUpdate.staffMembers.includes(userId)
-  ) {
-    throw new AppError("Cannot add a user twice");
-  }
-
-  const added = await Chat.findByIdAndUpdate(
-    chatId,
-    {
-      $push: isUser ? { users: userId } : { staffMembers: userId },
-    },
-    {
-      new: true,
+  if (isUser) {
+    if (chatToUpdate.users.includes(req.user._id)) {
+      throw new AppError("Cannot add a user twice");
     }
-  )
-    .populate("users")
-    .populate("staffMembers")
-    .populate("communityAdmin");
 
-  res.status(200).send(added);
+    const added = await Chat.findByIdAndUpdate(
+      chatId,
+      {
+        $push: { users: req.user._id },
+      },
+      {
+        new: true,
+      }
+    )
+      .populate("users")
+      .populate("staffMembers")
+      .populate("communityAdmin");
+
+    res.send(added);
+  } else {
+    if (
+      chatToUpdate.staffMembers.includes(req.staff._id) ||
+      chatToUpdate.communityAdmin_id.equals(req.staff._id)
+    ) {
+      throw new AppError("Cannot add a user twice");
+    }
+
+    const added = await Chat.findByIdAndUpdate(
+      chatId,
+      {
+        $push: { staffMembers: req.staff._id },
+      },
+      {
+        new: true,
+      }
+    )
+      .populate("users")
+      .populate("staffMembers");
+    res.status(200).send(added);
+  }
 });
 export const removeFromCommunity = catchAsync(async (req, res) => {
   const { chatId, userId } = req.body;
@@ -254,3 +300,43 @@ export const removeFromCommunity = catchAsync(async (req, res) => {
 
   res.status(200).send(removed);
 });
+
+// const chatToUpdate = await Chat.findOne({ _id: chatId }).populate(
+//   "communityAdmin"
+// );
+
+// const isUser = (await User.findOne({ _id: userId })) ? true : false;
+
+// if (!chatToUpdate) {
+//   throw new AppError("Community does not exist");
+// }
+
+// if (!chatToUpdate.communityAdmin._id.equals(staff._id)) {
+//   throw new AppError(
+//     "You are not authorized to add more members in this community"
+//   );
+// } else if (chatToUpdate.isCommunity === false) {
+//   throw new AppError("This is not a community");
+// }
+
+// if (
+//   chatToUpdate.users.includes(userId) ||
+//   chatToUpdate.staffMembers.includes(userId)
+// ) {
+//   throw new AppError("Cannot add a user twice");
+// }
+
+// const added = await Chat.findByIdAndUpdate(
+//   chatId,
+//   {
+//     $push: isUser ? { users: userId } : { staffMembers: userId },
+//   },
+//   {
+//     new: true,
+//   }
+// )
+//   .populate("users")
+//   .populate("staffMembers")
+//   .populate("communityAdmin");
+
+// res.status(200).send(added);

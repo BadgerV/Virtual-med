@@ -8,6 +8,7 @@ import { ENVIRONMENT } from "../common/config/environment.js";
 import { generateToken } from "../common/utils/helper.js";
 import nodemailer from "nodemailer";
 import { log } from "console";
+import Chat from "../models/ChatModel.js";
 
 // const Paystack = import("paystack");
 // const sdk = await Paystack(process.env.PAYSTACK_PUBLIC_KEY);
@@ -326,3 +327,17 @@ export const allUsers = catchAsync(async (req, res) => {
 
   res.send(users);
 });
+
+export const joinCommunity = catchAsync(async (req,res) => {
+  const { communityId } = req.body;
+  const user = req.user;
+
+
+  const foundChat = await Chat.findOne({_id : communityId});
+
+  if(!foundChat) {
+    throw new AppError("Community not found", 400);
+  }
+
+  
+})

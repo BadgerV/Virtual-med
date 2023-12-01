@@ -3,7 +3,7 @@ import User from "../models/UserModel.js";
 import { catchAsync } from "../common/utils/errorHandler.js";
 import { generateToken, isNullOrEmpty } from "../common/utils/helper.js";
 import AppError from "../common/utils/appError.js";
-import { trusted } from "mongoose";
+import Chat from "../models/ChatModel.js";
 
 export const registerStaff = catchAsync(async (req, res) => {
   const { firstName, lastName, email, password } = req.body;
@@ -155,46 +155,65 @@ export const getSpecialists = catchAsync(async (req, res) => {
   res.status(200).send(foundSpecialists);
 });
 
-export const approvePatient = catchAsync(async (req, res) => {
-  const { userId } = req.body;
-  const staff = req.staff;
+export const approvePatient = catchAsync(
+  async (req, res) => {
+    const { userId } = req.body;
+    const staff = req.staff;
 
-  // Check if the user is a premium user
-  const user = await User.findOne({ _id: userId, isPremium: true });
+    // Check if the user is a premium user
+    const user = await User.findOne({ _id: userId, isPremium: true });
 
-  if (!user) {
-    throw new AppError("Please subscribe to enjoy this feature", 400);
+    if (!user) {
+      throw new AppError("Please subscribe to enjoy this feature", 400);
+    }
+
+    const isUserPending = staff.pendingPatients.includes(userId);
+    const isAlreadyPatient = staff.currentPatients.includes(userId);
+
+    if (!isUserPending) {
+      throw new AppError("User is not in your pending patients list");
+    }
+
+    if (isAlreadyPatient) {
+      throw new AppError("User is already your patient");
+    }
+    // Use filter to create a new array without the userId
+    const pendingPatients = staff.pendingPatients.filter(
+      (patientId) => patientId != userId
+    );
+
+    // Add the userId to the currentPatients array
+    staff.currentPatients.push(userId);
+    user.assignedDoctors.push(staff._id);
+    staff.pendingPatients = pendingPatients;
+
+    // Save the changes to the database
+    await staff.save();
+    await user.save();
+
+    var chatData = {
+      chatName: "sender",
+      isCommunity: false,
+      users: [user._id],
+      staffMembers: [staff._id],
+    };
+    try {
+      const createdChat = await Chat.create(chatData);
+
+      const FullChat = await Chat.findOne({
+        _id: createdChat._id,
+      })
+        .populate("users")
+        .populate("staffMembers");
+
+        console.log(FullChat)
+
+      res.status(200).send(FullChat);
+    } catch (error) {
+      throw new AppError(error.message, 400);
+    }
   }
-
-  const isUserPending = staff.pendingPatients.includes(userId);
-  const isAlreadyPatient = staff.currentPatients.includes(userId);
-
-  if (!isUserPending) {
-    throw new AppError("User is not in your pending patients list");
-  }
-
-  if (isAlreadyPatient) {
-    throw new AppError("User is already your patient");
-  }
-  // Use filter to create a new array without the userId
-  const pendingPatients = staff.pendingPatients.filter(
-    (patientId) => patientId != userId
-  );
-
-  // Add the userId to the currentPatients array
-  staff.currentPatients.push(userId);
-  user.assignedDoctors.push(staff._id);
-  staff.pendingPatients = pendingPatients;
-
-  // Save the changes to the database
-  await staff.save();
-  await user.save();
-
-  // Return an object with currentPatients and pendingPatients
-  res
-    .status(200)
-    .send(`${user.firstName} has been added to you patient list successfully`);
-});
+);
 
 export const viewPendingPatients = catchAsync(async (req, res) => {
   const staff = req.staff;

@@ -10,11 +10,13 @@ import {
   staffAuth,
 } from "../common/middleware/auth.js";
 import messageRoute from "./messageRoute.js";
+import appointmentRoute from "./appointmentRoute.js";
 
 export const setRoutes = () => {
   router.use("/user", userRoutes());
   router.use("/staff", staffRoutes());
   router.use("/chat", isPremiumOrStaff, chatRoute());
   router.use("/message", isPremiumOrStaff, messageRoute);
+  router.use("/appointment", isPremiumOrStaff, appointmentRoute());
   return router;
 };

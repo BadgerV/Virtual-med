@@ -14,7 +14,7 @@ const initialState = {
   loading: false,
   isSuccess: false,
   error: false,
-  loadingUserProfile : true
+  loadingUserProfile: true,
 };
 
 export const registerUser = createAsyncThunk(
@@ -82,6 +82,45 @@ export const myProfile = createAsyncThunk("/user/profile", async () => {
     await Promise.all(error);
   }
 });
+
+export const ConnectUserWithDoctor = createAsyncThunk(
+  "/user/connectUserWithDoctor",
+  async (staffId) => {
+    try {
+      const response = await axios.post(
+        `${DEVELOPMENT}/user/connectUserWithDoctor`,
+        staffId,
+        {
+          withCredentials: true,
+        }
+      );
+
+      console.log(response);
+    } catch (error) {
+      return Promise.reject(error);
+    }
+  }
+);
+
+
+export const ApproveUserByDoctor = createAsyncThunk(
+  "/user/approveUserByDoctor",
+  async (userId) => {
+    try {
+      const response = await axios.post(
+        `${DEVELOPMENT}/staff/apporve-pending-patients`,
+        userId,
+        {
+          withCredentials: true,
+        }
+      );
+
+      console.log(response);
+    } catch (error) {
+      return Promise.reject(error);
+    }
+  }
+);
 const deleteUser = createAsyncThunk("/user/deleteUser", async () => {});
 
 const userSlice = createSlice({
@@ -176,7 +215,7 @@ const userSlice = createSlice({
       })
       .addCase(myProfile.fulfilled, (state, action) => {
         state.user = action.payload;
-        console.log(state.user)
+        console.log(state.user);
         state.loading = false;
         state.isSuccess = true;
         state.loadingUserProfile = false;

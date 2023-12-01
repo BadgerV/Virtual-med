@@ -55,8 +55,14 @@
   flex-direction: row;
   align-items: center;
   /* outline: 1px solid red; */
+<<<<<<< HEAD
   min-width: calc(40% + 10px); /* Adjust the percentage and offset as needed */
   justify-content: space-around;
+=======
+  /* max-width: calc(40% + 10px); Adjust the percentage and offset as needed */
+  /* min-width: 100px; */
+  /* justify-content: space-around; */
+>>>>>>> b484a9a3db7a588851865277e849387e9224ec74
 }
 
 .profile-doctor-attribute {
@@ -64,7 +70,11 @@
   flex-direction: row;
   gap: 0.3em;
   align-items: center;
+<<<<<<< HEAD
   padding: 0.5em 0;
+=======
+  padding: 0.5em 3em;
+>>>>>>> b484a9a3db7a588851865277e849387e9224ec74
 }
 
 .profile-doctor-colored-text,
@@ -82,7 +92,10 @@
 .special-attribute {
   border-right: 2px solid #8d8d8d;
   border-left: 2px solid #8d8d8d;
+<<<<<<< HEAD
   padding: 0 3em;
+=======
+>>>>>>> b484a9a3db7a588851865277e849387e9224ec74
 }
 
 .profile-doctor-button-container {
@@ -114,7 +127,10 @@
 
   border-top: 1px solid #8d8d8d;
   border-bottom: 1px solid #8d8d8d;
+<<<<<<< HEAD
 
+=======
+>>>>>>> b484a9a3db7a588851865277e849387e9224ec74
 }
 
 .profile-doctor-sub-header span {
@@ -123,6 +139,7 @@
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 .profile-doctor_about-text, .profile-doctor_location-text, .profile-doctor_education-text {
     font-weight: 600;
     font-size: 1.1em;
@@ -147,3 +164,131 @@
 .profile-doctor-attribute-small-text {
     font-size: 0.93em;
 }
+=======
+.profile-doctor_about-text,
+.profile-doctor_location-text,
+.profile-doctor_education-text {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+
+.profile-doctor_about-body,
+.profile-doctor_location {
+  font-size: 0.93em;
+}
+
+.profile-doctor_together {
+  display: flex;
+  flex-direction: column;
+  line-height: 140%;
+  margin-bottom: 0.5em;
+}
+
+.profile-doctor-attribute-big-text {
+  font-weight: 500;
+  font-size: 0.93em;
+}
+.profile-doctor-attribute-small-text {
+  font-size: 0.93em;
+}
+
+.profile-doctor-review-container {
+  margin-top: 3em;
+}
+
+.profile-doctor-review_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* outline: 1px solid red; */
+  padding: 1em;
+
+  border-bottom: 1px solid #d3d3d3;
+  margin-bottom: 0.5em;
+}
+
+.profile-doctor-review_header-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-review-big-text {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.profile-review-small-text {
+  font-size: 0.9em;
+}
+
+.profile-doctor-review_header-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-doctor-review_header-right-top span {
+  font-size: 0.85em;
+  font-weight: 500;
+}
+.profile-doctor-review_header-right-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.3em;
+}
+.profile-doctor-review_header-right-bottom span {
+  font-size: 0.8em;
+}
+.rating-container {
+  /* outline: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+@media (max-width: 680px) {
+  .profile-doctor-attribute {
+    padding: 0.5em 2em;
+  }
+}
+@media (max-width: 540px) {
+  .profile-doctor-attributes {
+    width: 95%;
+    /* outline: 1px solid red; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .profile-doctor-attribute {
+    padding: 0.5em 0;
+  }
+ 
+  .special-attribute {
+    border: none;
+  }
+}
+@media (max-width: 455px) {
+  .profile-doctor-attributes {
+    width: 100%;
+    /* outline: 1px solid red; */
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 1em;
+  }
+
+  .profile-doctor-attribute {
+    padding: 0.5em 0;
+  }
+ 
+  .special-attribute {
+    border: none;
+  }
+
+  .doctor-profile-page {
+    padding: 2em 1em;
+  }
+}
+>>>>>>> b484a9a3db7a588851865277e849387e9224ec74
