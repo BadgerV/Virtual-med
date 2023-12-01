@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+// <<<<<<< HEAD
 import "./doctorProfile.css";
-=======
+// =======
 import Rating from "../../components/Rating/Rating";
 import "./doctorProfile.css";
 
@@ -155,7 +155,7 @@ export default DoctorProfile;
   /* =======
 // import React from 'react';
 import "./Doctor.css";
->>>>>>> b484a9a3db7a588851865277e849387e9224ec74
+// >>>>>>> b484a9a3db7a588851865277e849387e9224ec74
 
 const DoctorProfile = () => {
   return (
@@ -286,8 +286,8 @@ const DoctorProfile = () => {
           </div>
         </div>
       </div>
-<<<<<<< HEAD
-=======
+// <<<<<<< HEAD
+// =======
 
       <button type="submit">Sign Up</button>
     </form>
@@ -459,19 +459,19 @@ const ProfileSignup = () => {
       </ul>
 
       {renderForm()}
->>>>>>> b7a779e18afc827b7dead550dd8b8083c65b8d5e
->>>>>>> b484a9a3db7a588851865277e849387e9224ec74
-    </div>
-  );
-};
+// >>>>>>> b7a779e18afc827b7dead550dd8b8083c65b8d5e
+// >>>>>>> b484a9a3db7a588851865277e849387e9224ec74
+//     </div>
+//   );
+// };
 
-<<<<<<< HEAD
-export default DoctorProfile;
-=======
-<<<<<<< HEAD
+// <<<<<<< HEAD
+// export default DoctorProfile;
+// =======
+// <<<<<<< HEAD
 
-=======
-export default ProfileSignup;
->>>>>>> b7a779e18afc827b7dead550dd8b8083c65b8d5e */
+// =======
+// export default ProfileSignup;
+// >>>>>>> b7a779e18afc827b7dead550dd8b8083c65b8d5e */
 }
->>>>>>> b484a9a3db7a588851865277e849387e9224ec74
+// >>>>>>> b484a9a3db7a588851865277e849387e9224ec74
