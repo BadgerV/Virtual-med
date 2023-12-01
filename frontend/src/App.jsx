@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 // import Profile from "./components/Profile/Profile";
 // import Footer from "./components/Footer/Footer";
 // import Home from "./components/Home/Home";
@@ -14,7 +14,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { Navigate } from "react-router-dom";
 import { myProfile } from "./redux/user/UserSlice";
 import FindDoctor from "./pages/FindDoctor/FindDoctor";
-import DoctorRegister from "./pages/DoctorRegister/DoctorRegister.jsx";
 // import DoctorProfile from "./pages/DoctorProfile/DoctorProfile";
 //LAZY IMPORT PAGES FOR BETTER WEBSITE PERFORMANCE
 const Profile = lazy(() => import("./pages/Profile/Profile"));
@@ -63,7 +62,7 @@ const App = () => {
   }, []);
   return (
     <BrowserRouter>
-      {/* <Navbar /> */}
+      <Navbar />
 
       <Suspense fallback={<LoadingComponent />}>
         <Routes>

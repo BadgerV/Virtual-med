@@ -1,193 +1,254 @@
-import React from 'react';
-import './DoctorRegister.css';
-
 import React, { useState } from "react";
+import "./DoctorRegister.css";
 
 const BasicInfoForm = () => {
   return (
-    <form>
-      <label>Name*</label>
-      <input type="text" name="name" placeholder="First Name" />
-      <input type="text" name="name" placeholder="Last Name" />
-
-      <label>Gender*</label>
-      <div className="first">
-        <input type="text" name="gender" placeholder="Select" />
-        <img src="/assets/CaretDown.svg" alt="" />
+    <div className="basic-form">
+      <div className="photo-form">
+        <input type="image" />
+        <span>Upload Photo</span>
       </div>
 
-      <label>Location*</label>
+      <form>
+        <label>Name*</label>
+        <div className="name-form">
+          <input type="text" name="name" placeholder="First Name" />
+          <input type="text" name="name" placeholder="Last Name" />
+        </div>
 
-      <div className="first">
-        <input type="text" name="location" placeholder="Country" />
-        <img src="/assets/CaretDown.svg" alt="" />
-      </div>
+        <label>Gender*</label>
+        <div className="gender-form">
+          <input type="text" name="gender" placeholder="Select" />
+          <img src="/assets/CaretDown.svg" alt="" />
+        </div>
 
-      <div className="first">
-        <input type="email" name="email" placeholder="State" />
-        <img src="/assets/CaretDown.svg" alt="" />
-      </div>
+        <label>Location*</label>
+        <div className="location-form">
+          <input type="text" name="location" placeholder="Country" />
+          <img src="/assets/CaretDown.svg" alt="" />
+        </div>
 
-      <label>Date of Birth*</label>
-      <div className="first">
-        <input type="name" name="date of birth" placeholder="Day" />
-        <img src="/assets/CaretDown.svg" alt="" />
-      </div>
+        <div className="location-form">
+          <input type="email" name="email" placeholder="State" />
+          <img src="/assets/CaretDown.svg" alt="" />
+        </div>
 
-      <div className="first">
-        <input type="name" name="date of birth" placeholder="Month" />
-        <img src="/assets/CaretDown.svg" alt="" />
-      </div>
+        <label>Date of Birth*</label>
+        <div className="date-form">
+          <div className="dob-form">
+            <input type="name" name="date of birth" placeholder="Day" />
+            <img src="/assets/CaretDown.svg" alt="" />
+          </div>
 
-      <div className="first">
-        <input type="name" name="date of birth" placeholder="Year" />
-        <img src="/assets/CaretDown.svg" alt="" />
-      </div>
+          <div className="dob-form">
+            <input type="name" name="date of birth" placeholder="Month" />
+            <img src="/assets/CaretDown.svg" alt="" />
+          </div>
 
-      <button type="submit">Sign Up</button>
-    </form>
+          <div className="dob-form">
+            <input type="name" name="date of birth" placeholder="Year" />
+            <img src="/assets/CaretDown.svg" alt="" />
+          </div>
+        </div>
+
+        <div className="doctor-reg-btn">
+          <button>next</button>
+        </div>
+      </form>
+    </div>
   );
 };
 
 const EducationForm = () => {
   return (
-    <form>
-      <label>Degree*:</label>
-      <input type="text" name="specialty" placeholder="Enter your specialty" />
+    <div className="education-form">
+      <form>
+        <label>Degree*:</label>
+        <input type="text" name="degree" />
 
-      <label>Major*</label>
-      <input
-        type="text"
-        name="licenseNumber"
-        placeholder="Enter your license number"
-      />
+        <label>Major*</label>
+        <input type="text" name="major" />
 
-      <label>University*</label>
-      <input
-        type="text"
-        name="licenseNumber"
-        placeholder="Enter your license number"
-      />
+        <label>University*</label>
+        <input type="text" name="university" />
 
-      <label>Date of Gradution*</label>
-      <div className="edu">
-        <input type="text" name="lDate of Gradution" placeholder="Month" />
-        <img src="/assets/CaretDown.svg" alt="" />
-      </div>
+        <label>Date of Graduation*</label>
+        <div className="dategrad-form">
+          <div className="grad-form">
+            <input type="text" name="date of grad" placeholder="Month" />
+            <img src="/assets/CaretDown.svg" alt="" />
+          </div>
 
-      <label>Major*</label>
-      <div className="edu">
-        <input type="text" name="Date of Graduation" placeholder="Year" />
-        <img src="/assets/CaretDown.svg" alt="" />
-      </div>
+          <div className="grad-form">
+            <input type="text" name="date of grad" placeholder="Year" />
+            <img src="/assets/CaretDown.svg" alt="" />
+          </div>
+        </div>
 
-      <label>Degree Certificate*</label>
-      <div className="edu">
-        <img src="/assets/mingcute_add-line.svg" alt="" />
-        <span>Upload File (max file size 10 mb)</span>
-      </div>
+        <label>Degree Certificate*</label>
+        <div className="deg-form">
+          <img src="/assets/mingcute_add-line.svg" alt="" />
+          <span>Upload File (max file size 10 mb)</span>
+        </div>
 
-      <div className="edu">
-        <span>Add education</span>
-        <img src="assets/Frame 81.svg" alt="" />
-      </div>
+        <div className="edu-form">
+          <img src="assets/Frame 81.svg" alt="" />
+          <span>Add education</span>
+        </div>
 
-      <button type="submit">Sign Up</button>
-    </form>
+        <div className="doctor-reg-btn">
+          <button>next</button>
+        </div>
+      </form>
+    </div>
   );
 };
 
 const WorkForm = () => {
   return (
-    <form>
-      <label>Job Title*:</label>
-      <input type="text" name="job title" />
+    <div className="work-form">
+      <form>
+        <label>Job Title*:</label>
+        <input type="text" name="job title" />
 
-      <label>Institution*</label>
-      <input type="text" name="Institution" />
+        <label>Institution*</label>
+        <input type="text" name="Institution" />
 
-      <label>Start Date*</label>
-      <input type="text" name="start date" placeholder="month" />
+        <label>Start Date*</label>
+        <div className="start-form">
+          <div className="startdate-form">
+            <input type="text" name="start date" placeholder="month" />
+            <img src="/assets/CaretDown.svg" alt="" />
+          </div>
 
-      <input type="text" name="start date" placeholder="year" />
+          <div className="startdate-form"></div>
+          <input type="text" name="start date" placeholder="year" />
+          <img src="/assets/CaretDown.svg" alt="" />
+        </div>
 
-      <div className="alll">
-        <input type="checkbox" />
-        <span>current</span>
-      </div>
+        <label>End Date*</label>
 
-      <label>End Date*</label>
-      <input type="text" name="start date" placeholder="month" />
+        <div className="current-form">
+          <input type="checkbox" />
+          <span>current</span>
+        </div>
 
-      <input type="text" name="start date" placeholder="year" />
+        <div className="end-form">
+          <div className="enddate-form">
+            <input type="text" name="start date" placeholder="month" />
+            <img src="/assets/CaretDown.svg" alt="" />
+          </div>
 
+          <div className="enddate-form">
+            <input type="text" name="start date" placeholder="year" />
+            <img src="/assets/CaretDown.svg" alt="" />
+          </div>
+        </div>
 
-      <div className="edu">
-        <span>Add Work Experience</span>
-        <img src="assets/Frame 81.svg" alt="" />
-      </div>
+        <div className="add-exp">
+          <img src="assets/Frame 81.svg" alt="" />
+          <span>Add Work Experience</span>
+        </div>
 
-
-      <button type="submit">Sign Up</button>
-    </form>
+        <div className="doctor-reg-btn">
+          <button type="submit">next</button>
+        </div>
+      </form>
+    </div>
   );
 };
-
-
 
 const CertificationForm = () => {
   return (
-    <form>
-      <label>Medical License*:</label>
-      <input type="text" name="job title" />
+    <div className="certifcation-form">
+      <form>
+        <label>Medical License*:</label>
+        <input type="text" name="job title" />
 
-      <label>Issue Date*</label>
-      <input type="text" name="Institution" />
+        <label>Issue Date*</label>
+        <div className="issue">
+          <div className="first">
+            <input type="date" name="date" placeholder="Month" />
+            <img src="assets/Frame 81.svg" alt="" />
+          </div>
+          <div className="first">
+            <input type="date" name="date" placeholder="Year" />
+            <img src="assets/Frame 81.svg" alt="" />
+          </div>
+        </div>
 
-      <label>Start Date*</label>
-      <input type="text" name="start date" placeholder="month" />
+        <label>Certification*</label>
+        <input type="text" name="text" />
 
-      <input type="text" name="start date" placeholder="year" />
+        <label>Issuing Body*</label>
+        <input type="text" name="start date" />
 
-      <div className="alll">
-        <input type="checkbox" />
-        <span>current</span>
-      </div>
+        <div className="hold">
+          <input type="checkbox" />
+          <span> i don't hold any medical certification</span>
+        </div>
 
-      <label>End Date*</label>
-      <input type="text" name="start date" placeholder="month" />
+        <div className="cert">
+          <img src="assets/Frame 81.svg" alt="" />
+          <span>Add Certification</span>
+        </div>
 
-      <input type="text" name="start date" placeholder="year" />
-
-
-      <div className="edu">
-        <span>Add Work Experience</span>
-        <img src="assets/Frame 81.svg" alt="" />
-      </div>
-
-
-      <button type="submit">Sign Up</button>
-    </form>
+        <div className="doctor-reg-btn">
+          <button type="submit">next</button>
+        </div>
+      </form>
+    </div>
   );
 };
 
+// const ProfessionalForm = () => {
+//   return (
+//     <div className="professional-form">
+//       <form>
+//         <label>Medical License*:</label>
+//         <input type="text" name="job title" />
 
+//         <label>Issue Date*</label>
+//         <div className="issue">
+//           <div className="first">
+//             <input type="date" name="date" placeholder="Month" />
+//             <img src="assets/Frame 81.svg" alt="" />
+//           </div>
+//           <div className="first">
+//             <input type="date" name="date" placeholder="Year" />
+//             <img src="assets/Frame 81.svg" alt="" />
+//           </div>
+//         </div>
 
+//         <label>Certification*</label>
+//         <input type="text" name="text" />
 
+//         <label>Issuing Body*</label>
+//         <input type="text" name="start date" />
 
+//         <div className="hold">
+//           <input type="checkbox" />
+//           <span> i don't hold any medical certification</span>
+//         </div>
 
+//         <div className="cert">
+//           <img src="assets/Frame 81.svg" alt="" />
+//           <span>Add Certification</span>
+//         </div>
 
-
-
-
-
-
-
+//         <div className="doctor-reg-btn">
+//           <button type="submit">next</button>
+//         </div>
+//       </form>
+//     </div>
+//   );
+// };
 
 const DoctorRegister = () => {
   const [currentTab, setCurrentTab] = useState("basic-info");
 
   const handleTabChange = (tab) => {
+    console.log("Clicked on tab:", tab);
     setCurrentTab(tab);
   };
 
@@ -197,74 +258,67 @@ const DoctorRegister = () => {
         return <BasicInfoForm />;
       case "profile":
         return <EducationForm />;
-        case "work":
-            return<WorkForm />;
+      case "work":
+        return <WorkForm />;
+      case "cert":
+        return <CertificationForm />;
       default:
         return null;
     }
   };
 
-  return (
-    <div className="profile-signup">
-      <h2>Create Your Doctor Profile</h2>
+  
 
-      <ul className="nav nav-tabs">
+  return (
+    <div className="doctor-register">
+      <div className="doctor-container">
+
+      <ul className="nav-tabs">
+
         <li className="nav-item">
-          <a
-            className={`nav-link ${
-              currentTab === "basic-info" ? "active" : ""
-            }`}
-            onClick={() => handleTabChange("basic-info")}
-          >
-            <h1>Basic Info</h1>
+          <a className={`nav-link ${ currentTab === "basic-info" ? "active" : "" }` } onClick={() => handleTabChange("basic-info")}>
             <img src="/assets/Vector (9).svg" alt="" />
+            <h1>Basic Info</h1>
           </a>
         </li>
+
         <li className="nav-item">
-          <a
-            className={`nav-link ${currentTab === "profile" ? "active" : ""}`}
-            onClick={() => handleTabChange("profile")}
-          >
-            <h1>Education</h1>
+          <a className={`nav-link ${currentTab === "profile" ? "active" : ""}`}onClick={() => handleTabChange("profile")}>
             <img src="/assets/GraduationCap.svg" alt="" />
+            <h1>Education</h1>
           </a>
         </li>
+
         <li className="nav-item">
-          <a
-            className={`nav-link ${
-              currentTab === "basic-info" ? "active" : ""
-            }`}
-            onClick={() => handleTabChange("basic-info")}
-          >
+          <a href="#" className={`nav-link ${currentTab === "work" ? "active" : "" }`}onClick={() => handleTabChange("work")}>
+            <img src="/assets/Vector (10).svg" alt="" />
             <h1>Work Experience</h1>
-            <img src="/assets/Briefcase.svg" alt="" />
           </a>
         </li>
+
         <li className="nav-item">
           <a
-            className={`nav-link ${
-              currentTab === "basic-info" ? "active" : ""
-            }`}
-            onClick={() => handleTabChange("basic-info")}
-          >
-            <h1>Basic Info</h1>
-            <img src="/assets/Vector (9).svg" alt="" />
+            className={`nav-link ${currentTab === "cert" ? "active" : "" }`}onClick={() => handleTabChange("cert")}>
+            <img src="/assets/Vector (11).svg" alt="" />
+            <h1>Certifcation & License</h1>
           </a>
         </li>
-        <li className="nav-item">
+
+        {/* <li className="nav-item">
           <a
-            className={`nav-link ${
-              currentTab === "basic-info" ? "active" : ""
-            }`}
-            onClick={() => handleTabChange("basic-info")}
-          >
-            <h1>Basic Info</h1>
-            <img src="/assets/Vector (9).svg" alt="" />
+            className={`nav-link ${currentTab === "basic-info" ? "active" : "" }`}onClick={() => handleTabChange("basic-info")}>
+            <h1>Professional References</h1>
+            <img src="/assets/Vector (12).svg" alt="" />
           </a>
-        </li>
+        </li> */}
+        
       </ul>
 
-      {renderForm()}
+
+<div className="render-form">
+{renderForm()}
+</div>
+</div>
     </div>
   );
 };
