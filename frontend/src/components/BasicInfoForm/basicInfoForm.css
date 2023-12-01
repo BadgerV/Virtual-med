@@ -1,0 +1,119 @@
+/* BASIC FORM STYLES */
+.basic-form {
+  padding: 2em 1em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: white;
+
+  border-radius: 20px;
+}
+
+.photo-form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5em;
+}
+
+.photo-form span {
+  margin-top: 0.5em;
+  font-weight: 500;
+}
+
+.name-form {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  justify-content: space-between;
+}
+
+.name-form_div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+
+  margin-bottom: 0.75em;
+}
+
+.name-form_div label {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+.name-form_div input {
+  border-radius: 20px;
+  outline: 1px solid #d3d3d3;
+  padding: 0.8em 1em;
+  font-size: 0.9em;
+}
+
+.gender-form {
+  /* display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  align-items: start;
+  /* outline: 1px solid red; */
+  width: 100%;
+  margin-bottom: 0.75em;
+}
+
+.gender-form label {
+  font-size: 0.9em;
+  font-weight: 500;
+  margin-bottom: 0.2em;
+}
+
+.location-form {
+  margin-bottom: 0.75em;
+}
+
+.location-form label {
+  font-size: 0.9em;
+  font-weight: 500;
+  margin-bottom: 0.2em;
+}
+
+.location-mini_div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+.trade {
+  min-width: 50%;
+}
+
+.date-of-birth-form label {
+  font-size: 0.9em;
+  font-weight: 500;
+  margin-bottom: 0.2em;
+}
+
+.date-of-birth-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5em;
+}
+
+.date-of-birth-option {
+  min-width: 33.33%;
+}
+
+.buttons-container {
+  margin-top: 3em;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.buttons-container button {
+  color: white;
+  background-color: #023382;
+  padding: 0.8em 1.8em;
+  font-size: 0.9em;
+  border-radius: 20px;
+  font-weight: 500;
+}
