@@ -7,6 +7,8 @@ import { v4 as uuidv4 } from "uuid";
 import axios from "axios";
 import { ENVIRONMENT } from "../common/config/environment.js";
 import https from "https";
+import { calculateTotalCost } from "../common/utils/helper.js";
+import Chat from "../models/ChatModel.js";
 
 export const fetchAppointments = catchAsync(async (req, res) => {
   const isUser = req.user ? true : false;
@@ -53,6 +55,11 @@ export const fetchAppointments = catchAsync(async (req, res) => {
 });
 
 const checkAvailability = async (doctorId, appointmentTime, duration) => {
+  if (duration < 30 || duration > 180) {
+    throw new Error(
+      "Appointment cannot be greater then 3 hours or less than 30 minutes"
+    );
+  }
   const existingAppointments = await Appointment.find({ doctorId });
 
   const appointmentEndTime = new Date(
@@ -195,10 +202,13 @@ export const makeAppointment = catchAsync(async (req, res) => {
 
   const foundDoctor = await Staff.findOne({ _id: doctorId });
 
+  const totalCost = calculateTotalCost(foundDoctor.hourlyPrice, duration);
+
   if (!doctorId || !appointmentTime || !notes || !duration) {
     throw new AppError("Please fill out all the fields");
   }
   const realAppointmentTime = new Date(appointmentTime);
+  console.log(realAppointmentTime);
 
   const availability = await checkAvailability(
     doctorId,
@@ -215,13 +225,7 @@ export const makeAppointment = catchAsync(async (req, res) => {
   req.user.paystackRef = paymentReference;
   await req.user.save();
 
-  payStack.acceptPayment(
-    req,
-    res,
-    paymentReference,
-    foundDoctor.hourlyPrice,
-    req.user.email
-  );
+  payStack.acceptPayment(req, res, paymentReference, totalCost, req.user.email);
 
   const appointment = new Appointment({
     doctorId,
@@ -249,20 +253,17 @@ export const confirmAppointment = catchAsync(async (req, res) => {
     throw new AppError("Payment verification failed", 400);
   }
 
-  const foundAppointment = await Appointment.findOne(
-    { paystackRef },
-    { status: "confirmed" }
-  );
+  const foundAppointment = await Appointment.findOne({
+    $and: [{ paystackRef }, { status: "confirmed" }],
+  });
+
+  // console.log(foundAppointment);
 
   if (foundAppointment) {
     throw new Error("Apointment already verified");
   }
   // Find the appointment using paymentReference and update the property
-  const appointment = await Appointment.findOneAndUpdate(
-    { paystackRef },
-    { $set: { status: "confirmed" } },
-    { new: true }
-  ).populate("doctorId patientId");
+  const appointment = await Appointment.findOne({ paystackRef });
 
   if (!appointment) {
     throw new AppError("Appointment not found", 404);
@@ -294,7 +295,26 @@ export const confirmAppointment = catchAsync(async (req, res) => {
     console.error("Staff not found");
   }
 
-  console.log(foundUser);
+  var chatData = {
+    chatName: `sender`, //THIN OF A BETTER NAME
+    isCommunity: false,
+    users: [req.user._id],
+    staffMembers: [appointment.doctorId],
+  };
 
-  res.status(200).json(appointment);
+  const createdChat = await Chat.create(chatData);
+
+  const FullChat = await Chat.findOne({
+    _id: createdChat._id,
+  })
+    .populate("users")
+    .populate("staffMembers");
+
+  const updatedAppointment = await Appointment.findOneAndUpdate(
+    { paystackRef },
+    { $set: { status: "confirmed" } },
+    { new: true }
+  ).populate("doctorId patientId");
+
+  res.status(200).send(updatedAppointment);
 });
