@@ -28,6 +28,9 @@ const SignUpPatient = lazy(() =>
 const DoctorProfile = lazy(() =>
   import("./pages/DoctorProfile/DoctorProfile.jsx")
 );
+const DoctorRegister = lazy(() =>
+  import("./pages/DoctorRegister/DoctorRegister.jsx")
+);
 // =======
 // >>>>>>> e4940758ada45dde05a87fc861ec176461e13426
 const PrivateRoutes = lazy(() =>
@@ -52,7 +55,8 @@ const App = () => {
 
   useEffect(() => {
     const verifyUser = async () => {
-      await dispatch(myProfile());
+      const user = await dispatch(myProfile());
+      console.log(user)
     };
 
     verifyUser();
@@ -70,7 +74,7 @@ const App = () => {
 
           <Route path="/finddoctor" element={<FindDoctor />} />
           <Route path="/doctor/:id" element={<DoctorProfile />} />
-
+          <Route path="/registerdoctor" element={<DoctorRegister />} />
           <Route path="/doctorprofile" element={<DoctorProfile />} />
 
           <Route

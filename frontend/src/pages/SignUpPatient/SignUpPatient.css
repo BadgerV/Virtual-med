@@ -1,103 +1,163 @@
-.signs {
+.signs-doctors {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 1em;
-  font-size: 2em;
-  gap: 1em;
+  justify-content: center;
+  padding-bottom: 1em;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.signs button {
-  gap: 1em;
-  border-bottom: 1.5px solid blue;
-}
-
-h2 {
-  color: #000000;
-}
-
-.nann{ 
-text-align: center;
-}
-
-#doctor-signup {
-    display: none;
-  }
-
-#patient-signup {
-  display: none;
-}
-
-.sign-ins {
+.signs-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin-top: -2em;
   gap: 1em;
+  max-height: fit-content;
+  width: 40em;
+  /* outline: 1px solid red; */
 }
 
 .sign-in-header {
-  margin: 2em 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0 0.5em 0;
+  width: 100%;
 }
 
 .sign-in-header h1 {
-  font-size: 2em;
+  font-size: 1.9em;
 }
 
 .sign-in-header span {
-  font-size: 1em;
-  font-weight: normal;
+  font-size: 0.93em;
+}
+
+.form-container {
+  width: 80%;
+  /* outline: 1px solid green; */
+  padding: 1em;
+}
+
+.sign-in-form {
+  width: 100%;
 }
 
 .form-input {
   display: flex;
   align-items: center;
-  border: 1px solid #ccc;
-  padding: 8px;
+  border: 1px solid #d3d3d3;
+  padding: 0.8em;
   border-radius: 15px;
-  width: 450px;
-  margin-bottom: 1.5em;
+  width: 550px;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+label {
+  font-size: 0.93em;
+  font-weight: 400;
+  margin-bottom: 0.2em;
+  display: block;
 }
 
 .form-input img {
   margin-right: 8px;
+  scale: 0.8;
 }
 
 .form-input input {
   border: none;
   outline: none;
   width: 100%;
+  font-size: 0.93em;
 }
 
 .terms {
   display: flex;
   gap: 0.5em;
+  margin-bottom: 1.5em;
+  font-size: 0.93em;
 }
 
 .sign-buttondiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1em;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  margin-bottom: 0.6em;
 }
 
 .sign-button {
   border: 1px solid white;
-  background-color: #00008b;
+  background-color: #023382;
   padding: 0.7em;
-  border-radius: 15px;
+  border-radius: 50px;
   color: white;
-  width: 460px;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.signs-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.93em;
+  gap: 5em;
+}
+
+/* .signs-button button {
+  border: 1.5px solid blue;
+  padding: 0.5em;
+} */
+
+.signs-button button {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 0.5em;
+  transition: 0.2s all ease-in-out;
+  backface-visibility: hidden;
+  transform-origin: bottom left;
+}
+
+.ball {
+  color: #023382;
 }
 
 .sign-in-footer {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 0.5em;
+  justify-content: center;
 }
 
 .sign-in-footer a {
-  color: blue;
+  color: #023382;
+  font-weight: 400;
+  font-size: 0.93em;
+  font-weight: 300;
+}
+
+.sign-in-footer span {
+  font-size: 0.93em;
+}
+
+@media (max-width: 500px) {
+  .form-container {
+    width: 90%;
+    /* outline: 1px solid green; */
+    padding: 0.5em;
+  }
+}
+@media (max-width: 393px) {
+  .form-container {
+    width: 90%;
+    /* outline: 1px solid green; */
+    /* padding: 0.5em; */
+  }
 }

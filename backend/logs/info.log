@@ -2689,3 +2689,67 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2023-12-01 14:39:10 info: GET /chat/fetchChats [32m200 454.232 ms - 1499
 2023-12-01 14:42:22 error: 404 - route not found - /message/ - GET - ::1
 2023-12-01 14:42:22 info: GET /message/ [33m404 143.700 ms - 57
+2023-12-01 16:34:34 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 16:34:34 info: GET /user/profile [33m401 52.238 ms - 1402
+2023-12-01 16:34:37 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-01 16:34:37 info: GET /user/profile [33m401 20.598 ms - 1402
+2023-12-01 16:34:53 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-01 16:34:53 info: GET /user/profile [33m401 6.478 ms - 1402
+2023-12-01 16:34:55 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-01 16:34:55 info: GET /user/profile [33m401 9.249 ms - 1402
+2023-12-01 16:35:20 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-01 16:35:20 info: GET /user/profile [33m401 8.103 ms - 1402
+2023-12-01 16:35:49 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 16:35:49 info: GET /user/profile [33m401 6.752 ms - 1402
+2023-12-01 16:36:03 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 16:36:03 info: GET /user/profile [33m401 6.750 ms - 1402
+2023-12-01 16:36:19 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-01 16:36:19 info: GET /user/profile [33m401 8.245 ms - 1402
+2023-12-01 16:36:46 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 16:36:46 info: GET /user/profile [33m401 6.698 ms - 1402
+2023-12-01 16:47:36 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 16:47:36 info: GET /user/profile [33m401 5.931 ms - 1402
+2023-12-01 16:47:42 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 16:47:42 info: GET /user/profile [33m401 5.228 ms - 1402
+2023-12-01 16:48:02 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 16:48:02 info: GET /user/profile [33m401 6.295 ms - 1402
+2023-12-01 16:48:05 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-01 16:48:05 info: GET /user/profile [33m401 7.807 ms - 1402
+2023-12-01 16:48:18 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-01 16:48:18 info: GET /user/profile [33m401 5.747 ms - 1402
+2023-12-01 16:48:19 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-01 16:48:19 info: GET /user/profile [33m401 5.622 ms - 1402
+2023-12-01 16:48:20 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 16:48:20 info: GET /user/profile [33m401 6.526 ms - 1402
+2023-12-01 16:48:29 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 16:48:29 info: GET /user/profile [33m401 5.866 ms - 1402
+2023-12-01 16:48:54 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 16:48:54 info: GET /user/profile [33m401 6.424 ms - 1402
+2023-12-01 16:49:12 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-01 16:49:12 info: GET /user/profile [33m401 6.618 ms - 1402
+2023-12-01 16:49:13 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 16:49:13 info: GET /user/profile [33m401 5.328 ms - 1402
+2023-12-01 16:49:42 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 16:49:42 info: GET /user/profile [33m401 26.648 ms - 1402
+2023-12-01 16:49:58 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 16:49:58 info: GET /user/profile [33m404 3.649 ms - 61
+2023-12-01 16:50:08 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 16:50:08 info: GET /user/profile [33m404 2.244 ms - 61
+2023-12-01 16:50:22 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 16:50:22 info: GET /user/profile [33m404 2.147 ms - 61
+2023-12-01 16:51:38 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 16:51:38 info: GET /user/profile [33m404 2.862 ms - 61
+2023-12-01 16:56:46 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 16:56:46 info: GET /user/profile [33m404 2.597 ms - 61
+2023-12-01 17:05:18 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 17:05:18 info: GET /user/profile [33m404 2.661 ms - 61
+2023-12-01 17:06:29 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 17:06:29 info: GET /user/profile [33m404 2.011 ms - 61
+2023-12-01 17:06:39 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-01 17:06:39 info: GET /user/profile [33m401 11.083 ms - 1402
+2023-12-01 17:09:57 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 17:09:57 info: GET /user/profile [33m404 2.500 ms - 61
+2023-12-01 17:14:34 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 17:14:34 info: GET /user/profile [33m404 2.477 ms - 61
+2023-12-01 17:17:30 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-01 17:17:30 info: GET /user/profile [33m404 2.188 ms - 61

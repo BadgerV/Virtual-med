@@ -55,9 +55,8 @@
   flex-direction: row;
   align-items: center;
   /* outline: 1px solid red; */
-  /* max-width: calc(40% + 10px); Adjust the percentage and offset as needed */
-  /* min-width: 100px; */
-  /* justify-content: space-around; */
+  min-width: calc(40% + 10px); /* Adjust the percentage and offset as needed */
+  justify-content: space-around;
 }
 
 .profile-doctor-attribute {
@@ -65,7 +64,7 @@
   flex-direction: row;
   gap: 0.3em;
   align-items: center;
-  padding: 0.5em 3em;
+  padding: 0.5em 0;
 }
 
 .profile-doctor-colored-text,
@@ -83,6 +82,7 @@
 .special-attribute {
   border-right: 2px solid #8d8d8d;
   border-left: 2px solid #8d8d8d;
+  padding: 0 3em;
 }
 
 .profile-doctor-button-container {
@@ -121,7 +121,30 @@
   padding: 0.8em 0.5em;
   cursor: pointer;
 }
+.profile-doctor_about-text, .profile-doctor_location-text, .profile-doctor_education-text {
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
 
+.profile-doctor_about-body, .profile-doctor_location {
+    font-size: 0.93em;
+}
+
+.profile-doctor_together {
+    display: flex;
+    flex-direction: column;
+    line-height: 140%;
+    margin-bottom: 0.5em;
+}
+
+.profile-doctor-attribute-big-text {
+    font-weight: 500;
+    font-size: 0.93em;
+}
+.profile-doctor-attribute-small-text {
+    font-size: 0.93em;
+}
 .profile-doctor_about-text,
 .profile-doctor_location-text,
 .profile-doctor_education-text {
