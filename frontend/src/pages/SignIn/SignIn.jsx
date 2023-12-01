@@ -84,26 +84,15 @@ const SignIn = () => {
           </form>
         </div>
 
-<<<<<<< HEAD
-        </form>
-      </div>
-
-      <div className="sign-in-footer">
-        <span>
-          Don't have an account? <a href="/signupforpatient" className="ball">Sign Up</a>
-        </span>
-        <a href="#">Forgot Password</a>
-=======
         <div className="sign-in-footer">
           <span>
             Don't have an account?{" "}
-            <a href="/signup" className="ball">
+            <a href="/signupforpatient" className="ball">
               Sign Up
             </a>
           </span>
           <a href="#">Forgot Password</a>
         </div>
->>>>>>> e4940758ada45dde05a87fc861ec176461e13426
       </div>
     </div>
   );

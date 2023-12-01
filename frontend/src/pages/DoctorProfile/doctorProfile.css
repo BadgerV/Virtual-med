@@ -1,0 +1,149 @@
+.doctor-profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+.going-back {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  font-size: 0.93em;
+  cursor: pointer;
+}
+
+.doctor-profile-header {
+  margin-top: 2em;
+  /* outline: 1px solid red; */
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+  line-height: 150%;
+}
+
+.doctor-profile-header img {
+  height: 10em;
+  width: 10em;
+  border-radius: 50%;
+}
+
+.doctor-profile-name {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.doctor-profile-speciality {
+  font-weight: 400;
+
+  font-size: 0.93em;
+}
+
+.doctor-profile-course {
+  font-weight: 400;
+  font-size: 0.86em;
+}
+.profile-doctor-attributes {
+  margin-top: 0.7em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* outline: 1px solid red; */
+  min-width: calc(40% + 10px); /* Adjust the percentage and offset as needed */
+  justify-content: space-around;
+}
+
+.profile-doctor-attribute {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3em;
+  align-items: center;
+  padding: 0.5em 0;
+}
+
+.profile-doctor-colored-text,
+.profile-doctor-grey-text {
+  font-size: 0.8em;
+}
+
+.profile-doctor-colored-text {
+  color: #023382;
+}
+.profile-doctor-grey-text {
+  color: #8d8d8d;
+}
+
+.special-attribute {
+  border-right: 2px solid #8d8d8d;
+  border-left: 2px solid #8d8d8d;
+  padding: 0 3em;
+}
+
+.profile-doctor-button-container {
+  margin-top: 1em;
+  margin-bottom: 1.8em;
+}
+
+.profile-doctor-book-appointment {
+  background-color: #023382;
+  color: white;
+  border-radius: 20px;
+  padding: 0.7em 4em;
+  font-size: 0.93em;
+}
+
+.profile-doctor-main {
+  width: 80%;
+  /* outline: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.profile-doctor-sub-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+
+  border-top: 1px solid #8d8d8d;
+  border-bottom: 1px solid #8d8d8d;
+
+}
+
+.profile-doctor-sub-header span {
+  font-size: 0.93em;
+  padding: 0.8em 0.5em;
+  cursor: pointer;
+}
+
+.profile-doctor_about-text, .profile-doctor_location-text, .profile-doctor_education-text {
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+.profile-doctor_about-body, .profile-doctor_location {
+    font-size: 0.93em;
+}
+
+.profile-doctor_together {
+    display: flex;
+    flex-direction: column;
+    line-height: 140%;
+    margin-bottom: 0.5em;
+}
+
+.profile-doctor-attribute-big-text {
+    font-weight: 500;
+    font-size: 0.93em;
+}
+.profile-doctor-attribute-small-text {
+    font-size: 0.93em;
+}

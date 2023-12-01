@@ -8,11 +8,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import SignUp from "./pages/SignUp/SignUp";
 import { lazy, Suspense, useEffect } from "react";
 import LoadingComponent from "./components/LoadingComponent/LoadingComponent";
-import Navbar from "./components/Navbar/Navbar";
+// import Navbar from "./components/Navbar/Navbar";
 
 import { useDispatch, useSelector } from "react-redux";
-// import { Navigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import { myProfile } from "./redux/user/UserSlice";
+import FindDoctor from "./pages/FindDoctor/FindDoctor";
+import DoctorRegister from "./pages/DoctorRegister/DoctorRegister.jsx";
+// import DoctorProfile from "./pages/DoctorProfile/DoctorProfile";
 //LAZY IMPORT PAGES FOR BETTER WEBSITE PERFORMANCE
 const Profile = lazy(() => import("./pages/Profile/Profile"));
 // const Footer = lazy(() => import("./components/Footer/Footer"));
@@ -22,12 +25,15 @@ const Home = lazy(() => import("./pages/Home/Home.jsx"));
 const SignUpPatient = lazy(() =>
   import("./pages/SignUpPatient/SignUpPatient.jsx")
 );
-<<<<<<< HEAD
+// <<<<<<< HEAD
 const DoctorProfile = lazy(() =>
   import("./pages/DoctorProfile/DoctorProfile.jsx")
 );
-=======
->>>>>>> e4940758ada45dde05a87fc861ec176461e13426
+const DoctorRegister = lazy(() =>
+  import("./pages/DoctorRegister/DoctorRegister.jsx")
+);
+// =======
+// >>>>>>> e4940758ada45dde05a87fc861ec176461e13426
 const PrivateRoutes = lazy(() =>
   import("./components/PrivateRoute/PrivateRoutes")
 );
@@ -41,7 +47,7 @@ const Chat = lazy(() => import("./pages/Chat/Chat"));
 
 const App = () => {
   const dispatch = useDispatch();
-  // const user = useSelector((state) => state.userSlice.useSelector);
+  const user = useSelector((state) => state.userSlice.useSelector);
   const loadingUserProfile = useSelector(
     (state) => state.userSlice.loadingUserProfile
   );
@@ -57,7 +63,7 @@ const App = () => {
   }, []);
   return (
     <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <Suspense fallback={<LoadingComponent />}>
         <Routes>
@@ -65,15 +71,19 @@ const App = () => {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signupforpatient" element={<SignUpPatient />} />
-<<<<<<< HEAD
+
+          <Route path="/finddoctor" element={<FindDoctor />} />
+          <Route path="/doctor/:id" element={<DoctorProfile />} />
+          <Route path="/doctorregister" element={<DoctorRegister />} />
           <Route path="/doctorprofile" element={<DoctorProfile />} />
 
           <Route
             path="/chat"
             element={user ? <Chat /> : <Navigate to="/signup" />}
           />
-=======
+          {/* =======
 >>>>>>> e4940758ada45dde05a87fc861ec176461e13426
+>>>>>>> b7a779e18afc827b7dead550dd8b8083c65b8d5e */}
 
           <Route element={<PrivateRoutes />}>
             <Route path="/chat" element={<Chat />} />

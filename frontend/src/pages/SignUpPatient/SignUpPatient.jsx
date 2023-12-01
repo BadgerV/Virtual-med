@@ -19,20 +19,19 @@ const SignupPage = () => {
   };
 
   return (
-    <div>
-      <div className="signs">
-        <button onClick={handleDoctorClick}>Doctors</button>
-        <button onClick={handlePatientClick}>Patients</button>
-      </div>
+    <div className="signs-doctors">
+      <div className="signs-container">
+        <div className="sign-in-header">
+          <h1>Welcome!</h1>
+          <span>Please select account type</span>
+        </div>
 
-      <div style={{ display: showDoctorSignup ? "block" : "none" }}>
-        <h2 className="nann">Doctor Signup</h2>
-        <div className="sign-ins">
-          <div className="sign-in-header">
-            <h1>Welcome back!</h1>
-            <span>Please sign into your account</span>
-          </div>
+        <div className="signs-button">
+          <button onClick={handleDoctorClick}>Doctors</button>
+          <button onClick={handlePatientClick}>Patients</button>
+        </div>
 
+        <div style={{ display: showDoctorSignup ? "block" : "none" }}>
           <div className="sign-in-form">
             <form>
               <label htmlFor="">Name</label>
@@ -66,7 +65,7 @@ const SignupPage = () => {
               </div>
 
               <div className="sign-buttondiv">
-                <button className="sign-button">Sign Up</button>
+                <button className="sign-button">Sign Up For Doctors</button>
               </div>
             </form>
           </div>
@@ -80,18 +79,8 @@ const SignupPage = () => {
             </span>
           </div>
         </div>
-      </div>
 
-      <div style={{ display: showPatientSignup ? "block" : "none" }}>
-        <h2 className="nann">Patient Signup</h2>
-        {/* Patient signup form goes here */}
-      </div>
-      <div className="sign-ins">
-          <div className="sign-in-header">
-            <h1>Welcome back!</h1>
-            <span>Please sign into your account</span>
-          </div>
-
+        <div style={{ display: showPatientSignup ? "block" : "none" }}>
           <div className="sign-in-form">
             <form>
               <label htmlFor="">Name</label>
@@ -125,7 +114,7 @@ const SignupPage = () => {
               </div>
 
               <div className="sign-buttondiv">
-                <button className="sign-button">Sign Up</button>
+                <button className="sign-button">Sign Up For Patients</button>
               </div>
             </form>
           </div>
@@ -139,11 +128,11 @@ const SignupPage = () => {
             </span>
           </div>
         </div>
+      </div>
     </div>
   );
 };
 
 export default SignupPage;
-
 
 // mann
