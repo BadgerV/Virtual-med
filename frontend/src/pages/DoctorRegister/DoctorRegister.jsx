@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./DoctorRegister.css";
+import BasicInfoForm from "../../components/BasicInfoForm/BasicInfoForm.jsx";
 
 const BasicInfoForm = () => {
   return (
