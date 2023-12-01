@@ -26,7 +26,7 @@ const BasicInfoForm = () => {
         <div className="location-form">
           <input type="text" name="location" placeholder="Country" />
           <img src="/assets/CaretDown.svg" alt="" />
-        </div>
+        </div> 
 
         <div className="location-form">
           <input type="email" name="email" placeholder="State" />
@@ -324,3 +324,11 @@ const DoctorRegister = () => {
 };
 
 export default DoctorRegister;
+
+
+// manner
+
+// manner
+
+
+// manner
