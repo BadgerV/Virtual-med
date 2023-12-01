@@ -2427,3 +2427,129 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2023-12-01 11:00:28 error: 400 - Appointment time is not available - /appointment/makeAppointment - POST - ::1
 2023-12-01 11:00:28 info: POST /appointment/makeAppointment [33m400 413.280 ms - 331
 2023-12-01 11:00:35 info: POST /appointment/makeAppointment [32m200 976.076 ms - 321
+2023-12-01 11:23:25 error: 400 - Appointment time is not available - /appointment/makeAppointment - POST - ::1
+2023-12-01 11:23:26 info: POST /appointment/makeAppointment [33m400 2160.497 ms - 331
+2023-12-01 11:23:42 error: 500 - ENVIRONMENT is not defined - /appointment/makeAppointment - POST - ::1
+2023-12-01 11:23:42 info: POST /appointment/makeAppointment [31m500 426.448 ms - 326
+2023-12-01 11:24:01 error: 500 - Request failed with status code 401 - /appointment/makeAppointment - POST - ::1
+2023-12-01 11:24:01 info: POST /appointment/makeAppointment [31m500 2038.064 ms - 609
+2023-12-01 11:27:17 error: 500 - Cannot read properties of undefined (reading 'paystackRef') - /appointment/makeAppointment - POST - ::1
+2023-12-01 11:27:17 info: POST /appointment/makeAppointment [31m500 2636.091 ms - 387
+2023-12-01 11:28:11 error: 500 - Cannot read properties of undefined (reading 'paystackRef') - /appointment/makeAppointment - POST - ::1
+2023-12-01 11:28:11 info: POST /appointment/makeAppointment [31m500 2384.296 ms - 387
+2023-12-01 11:28:47 info: POST /user/register [32m200 758.907 ms - 224
+2023-12-01 11:28:54 error: 404 - Please authenticate - /appointment/makeAppointment - POST - ::1
+2023-12-01 11:28:54 info: POST /appointment/makeAppointment [33m404 3.590 ms - 61
+2023-12-01 11:29:03 info: POST /user/register [32m200 710.390 ms - 225
+2023-12-01 11:29:09 error: 404 - Please authenticate - /appointment/makeAppointment - POST - ::1
+2023-12-01 11:29:09 info: POST /appointment/makeAppointment [33m404 2.125 ms - 61
+2023-12-01 11:29:24 info: POST /user/login [32m200 441.701 ms - 213
+2023-12-01 11:29:29 error: 500 - Cannot read properties of undefined (reading 'paystackRef') - /appointment/makeAppointment - POST - ::1
+2023-12-01 11:29:29 info: POST /appointment/makeAppointment [31m500 435.211 ms - 387
+2023-12-01 11:30:01 error: 500 - Cannot read properties of undefined (reading 'paystackRef') - /appointment/makeAppointment - POST - ::1
+2023-12-01 11:30:01 info: POST /appointment/makeAppointment [31m500 3306.858 ms - 387
+2023-12-01 11:30:35 error: 500 - Request failed with status code 401 - /appointment/makeAppointment - POST - ::1
+2023-12-01 11:30:35 info: POST /appointment/makeAppointment [31m500 1401.243 ms - 609
+2023-12-01 11:36:18 info: POST /appointment/makeAppointment [31m500 476.501 ms - 29
+2023-12-01 11:36:42 info: POST /appointment/makeAppointment [32m200 2112.352 ms - 77
+2023-12-01 11:36:47 info: POST /appointment/makeAppointment [32m200 688.764 ms - 77
+2023-12-01 11:36:55 info: POST /appointment/makeAppointment [32m200 6815.511 ms - 77
+2023-12-01 11:36:58 info: POST /appointment/makeAppointment [32m200 751.947 ms - 77
+2023-12-01 11:37:01 info: POST /appointment/makeAppointment [32m200 792.263 ms - 77
+2023-12-01 11:37:03 info: POST /appointment/makeAppointment [32m200 891.926 ms - 77
+2023-12-01 11:39:15 info: POST /appointment/makeAppointment [32m200 881.374 ms - 187
+2023-12-01 11:42:22 info: POST /appointment/makeAppointment [32m200 1169.731 ms - 48
+2023-12-01 11:42:58 error: 400 - Email already registered - /staff/register - POST - ::1
+2023-12-01 11:42:58 info: POST /staff/register [33m400 902.796 ms - 307
+2023-12-01 11:43:07 info: POST /staff/register [32m200 1876.512 ms - 252
+2023-12-01 11:43:29 info: POST /staff/login [32m200 520.201 ms - 239
+2023-12-01 11:43:48 error: 400 - You are a staff, you cannot make an appointment - /appointment/makeAppointment - POST - ::1
+2023-12-01 11:43:48 info: POST /appointment/makeAppointment [33m400 561.174 ms - 1482
+2023-12-01 11:43:56 info: POST /user/login [32m200 468.655 ms - 213
+2023-12-01 11:44:06 info: POST /appointment/makeAppointment [32m200 1157.206 ms - 213
+2023-12-01 11:57:34 info: POST /appointment/makeAppointment [32m200 1250.815 ms - 213
+2023-12-01 11:57:42 error: 400 - Appointment time is not available - /appointment/makeAppointment - POST - ::1
+2023-12-01 11:57:42 info: POST /appointment/makeAppointment [33m400 795.584 ms - 331
+2023-12-01 11:57:49 error: 400 - Payment reference not found - /appointment/confirmAppointment - GET - ::1
+2023-12-01 11:57:49 info: GET /appointment/confirmAppointment [33m400 234.916 ms - 1442
+2023-12-01 11:58:27 error: 500 - paymentReference is not defined - /appointment/confirmAppointment - GET - ::1
+2023-12-01 11:58:27 info: GET /appointment/confirmAppointment [31m500 281.120 ms - 1458
+2023-12-01 11:58:46 error: 400 - Payment reference not found - /appointment/confirmAppointment - GET - ::1
+2023-12-01 11:58:47 info: GET /appointment/confirmAppointment [33m400 273.116 ms - 1442
+2023-12-01 11:59:24 error: 400 - Appointment time is not available - /appointment/makeAppointment - POST - ::1
+2023-12-01 11:59:24 info: POST /appointment/makeAppointment [33m400 644.186 ms - 331
+2023-12-01 11:59:35 error: 400 - Payment reference not found - /appointment/confirmAppointment - GET - ::1
+2023-12-01 11:59:35 info: GET /appointment/confirmAppointment [33m400 183.221 ms - 1442
+2023-12-01 12:00:47 info: POST /appointment/makeAppointment [32m200 1619.458 ms - 213
+2023-12-01 12:00:53 error: 500 - paymentReference is not defined - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:00:53 info: GET /appointment/confirmAppointment [31m500 224.198 ms - 1459
+2023-12-01 12:01:27 error: 500 - paymentReference is not defined - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:01:27 info: GET /appointment/confirmAppointment [31m500 576.330 ms - 1459
+2023-12-01 12:01:46 info: GET /appointment/confirmAppointment [32m200 646.120 ms - 432
+2023-12-01 12:02:35 info: GET /appointment/confirmAppointment [32m200 3124.484 ms - 432
+2023-12-01 12:15:57 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:15:57 info: GET /appointment/confirmAppointment [33m400 232.804 ms - 319
+2023-12-01 12:16:03 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:16:03 info: GET /appointment/confirmAppointment [33m400 164.681 ms - 319
+2023-12-01 12:16:27 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:16:27 info: GET /appointment/confirmAppointment [33m400 189.386 ms - 319
+2023-12-01 12:16:29 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:16:29 info: GET /appointment/confirmAppointment [33m400 190.258 ms - 319
+2023-12-01 12:16:30 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:16:30 info: GET /appointment/confirmAppointment [33m400 189.591 ms - 319
+2023-12-01 12:16:34 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:16:34 info: GET /appointment/confirmAppointment [33m400 172.998 ms - 319
+2023-12-01 12:16:35 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:16:35 info: GET /appointment/confirmAppointment [33m400 192.475 ms - 319
+2023-12-01 12:16:37 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:16:37 info: GET /appointment/confirmAppointment [33m400 195.346 ms - 319
+2023-12-01 12:16:38 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:16:38 info: GET /appointment/confirmAppointment [33m400 192.603 ms - 319
+2023-12-01 12:16:39 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:16:39 info: GET /appointment/confirmAppointment [33m400 210.323 ms - 319
+2023-12-01 12:16:40 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:16:40 info: GET /appointment/confirmAppointment [33m400 204.589 ms - 319
+2023-12-01 12:16:41 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:16:41 info: GET /appointment/confirmAppointment [33m400 179.090 ms - 319
+2023-12-01 12:16:42 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:16:42 info: GET /appointment/confirmAppointment [33m400 175.036 ms - 319
+2023-12-01 12:16:43 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:16:43 info: GET /appointment/confirmAppointment [33m400 189.542 ms - 319
+2023-12-01 12:16:44 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:16:44 info: GET /appointment/confirmAppointment [33m400 178.132 ms - 319
+2023-12-01 12:16:45 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:16:45 info: GET /appointment/confirmAppointment [33m400 184.105 ms - 319
+2023-12-01 12:17:13 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:17:13 info: GET /appointment/confirmAppointment [33m400 179.008 ms - 319
+2023-12-01 12:17:30 info: POST /appointment/makeAppointment [32m200 1147.450 ms - 213
+2023-12-01 12:17:59 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:17:59 info: GET /appointment/confirmAppointment [33m400 173.959 ms - 319
+2023-12-01 12:18:01 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:18:01 info: GET /appointment/confirmAppointment [33m400 155.976 ms - 319
+2023-12-01 12:18:03 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:18:03 info: GET /appointment/confirmAppointment [33m400 186.170 ms - 319
+2023-12-01 12:18:05 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:18:05 info: GET /appointment/confirmAppointment [33m400 219.944 ms - 319
+2023-12-01 12:18:06 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:18:06 info: GET /appointment/confirmAppointment [33m400 206.207 ms - 319
+2023-12-01 12:18:07 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:18:07 info: GET /appointment/confirmAppointment [33m400 172.418 ms - 319
+2023-12-01 12:18:09 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:18:09 info: GET /appointment/confirmAppointment [33m400 168.377 ms - 319
+2023-12-01 12:18:10 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:18:10 info: GET /appointment/confirmAppointment [33m400 184.839 ms - 319
+2023-12-01 12:18:47 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:18:47 info: GET /appointment/confirmAppointment [33m400 181.975 ms - 319
+2023-12-01 12:19:03 error: 400 - Appointment time is not available - /appointment/makeAppointment - POST - ::1
+2023-12-01 12:19:03 info: POST /appointment/makeAppointment [33m400 663.551 ms - 331
+2023-12-01 12:19:08 info: POST /appointment/makeAppointment [32m200 1406.091 ms - 213
+2023-12-01 12:19:13 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:19:13 info: GET /appointment/confirmAppointment [33m400 171.703 ms - 319
+2023-12-01 12:19:58 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:19:58 info: GET /appointment/confirmAppointment [33m400 1293.109 ms - 319
+2023-12-01 12:20:51 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:20:51 info: GET /appointment/confirmAppointment [33m400 195.265 ms - 319
+2023-12-01 12:30:03 info: POST /appointment/makeAppointment [32m200 1333.347 ms - 213
+2023-12-01 12:30:08 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:30:08 info: GET /appointment/confirmAppointment [33m400 490.601 ms - 319
+2023-12-01 12:31:02 info: GET /appointment/confirmAppointment [32m200 696.536 ms - 432

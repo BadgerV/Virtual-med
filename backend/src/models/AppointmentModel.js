@@ -1,4 +1,3 @@
-
 import mongoose from "mongoose";
 
 const appointmentSchema = new mongoose.Schema(
@@ -28,6 +27,10 @@ const appointmentSchema = new mongoose.Schema(
       default: "pending",
     },
     notes: {
+      type: String,
+    },
+
+    paystackRef: {
       type: String,
     },
   },

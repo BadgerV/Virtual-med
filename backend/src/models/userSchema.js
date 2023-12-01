@@ -89,6 +89,10 @@ const UserSchema = new mongoose.Schema(
       required: true,
     },
     assignedDoctors: [{ type: mongoose.Schema.Types.ObjectId, ref: "Staff" }],
+
+    paystackRef: {
+      type: String,
+    },
   },
   { timestamps: true }
 );
