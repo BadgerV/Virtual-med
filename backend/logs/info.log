@@ -2553,3 +2553,22 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2023-12-01 12:30:08 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
 2023-12-01 12:30:08 info: GET /appointment/confirmAppointment [33m400 490.601 ms - 319
 2023-12-01 12:31:02 info: GET /appointment/confirmAppointment [32m200 696.536 ms - 432
+2023-12-01 12:33:31 info: GET /appointment/fetchAppointments [32m200 696.993 ms - 1181
+2023-12-01 12:36:55 info: POST /appointment/makeAppointment [32m200 1633.380 ms - 213
+2023-12-01 12:37:22 info: GET /appointment/confirmAppointment [32m200 905.690 ms - 885
+2023-12-01 12:42:28 info: POST /appointment/makeAppointment [32m200 1523.184 ms - 213
+2023-12-01 12:42:41 error: 400 - Payment verification failed - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:42:41 info: GET /appointment/confirmAppointment [33m400 522.409 ms - 319
+2023-12-01 12:42:50 error: 500 - Cannot read properties of undefined (reading 'push') - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:42:50 info: GET /appointment/confirmAppointment [31m500 2163.699 ms - 373
+2023-12-01 12:43:29 error: 500 - Cannot read properties of undefined (reading 'push') - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:43:29 info: GET /appointment/confirmAppointment [31m500 1786.953 ms - 373
+2023-12-01 12:45:20 error: 500 - FieldPath field names may not start with '$'. Consider using $getField or $setField. - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:45:20 info: GET /appointment/confirmAppointment [31m500 1906.658 ms - 1174
+2023-12-01 12:45:40 error: 500 - Apointment already verified - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:45:40 info: GET /appointment/confirmAppointment [31m500 1411.044 ms - 319
+2023-12-01 12:49:01 error: 500 - foundAppointment is not defined - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:49:01 info: GET /appointment/confirmAppointment [31m500 6465.692 ms - 335
+2023-12-01 12:49:33 error: 500 - foundUser.staff is not a function - /appointment/confirmAppointment - GET - ::1
+2023-12-01 12:49:33 info: GET /appointment/confirmAppointment [31m500 1610.549 ms - 335
+2023-12-01 12:49:58 info: GET /appointment/confirmAppointment [32m200 2082.982 ms - 876

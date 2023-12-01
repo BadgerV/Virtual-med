@@ -15,7 +15,7 @@ UserSchema.methods.toJSON = function () {
   delete userObject.accountType;
   delete userObject.verificationToken;
   delete userObject.isVerified;
-  delete userObject.assignedDoctors;
+  // delete userObject.assignedDoctors;
   // delete userObject.isPremium;
   return userObject;
 };

@@ -237,7 +237,6 @@ export const makeAppointment = catchAsync(async (req, res) => {
 
 export const confirmAppointment = catchAsync(async (req, res) => {
   const { paystackRef } = req.user;
-  // console.log(req.user)
 
   if (!paystackRef) {
     throw new AppError("Payment reference not found", 400);
@@ -250,20 +249,52 @@ export const confirmAppointment = catchAsync(async (req, res) => {
     throw new AppError("Payment verification failed", 400);
   }
 
+  const foundAppointment = await Appointment.findOne(
+    { paystackRef },
+    { status: "confirmed" }
+  );
 
+  if (foundAppointment) {
+    throw new Error("Apointment already verified");
+  }
   // Find the appointment using paymentReference and update the property
   const appointment = await Appointment.findOneAndUpdate(
     { paystackRef },
     { $set: { status: "confirmed" } },
     { new: true }
-  );
+  ).populate("doctorId patientId");
 
   if (!appointment) {
     throw new AppError("Appointment not found", 404);
   }
 
-  res.status(200).json({
-    message: "Appointment confirmed successfully",
-    data: appointment,
-  });
+  const foundUser = await User.findOneAndUpdate(
+    { _id: appointment.patientId },
+    { $addToSet: { assignedDoctors: appointment.doctorId } },
+    { new: true }
+  );
+
+  await foundUser.save();
+
+  if (!foundUser) {
+    // Handle the case where the user is not found
+    console.error("User not found");
+  }
+
+  const foundStaff = await Staff.findOneAndUpdate(
+    { _id: appointment.doctorId },
+    { $addToSet: { currentPatients: appointment.patientId } },
+    { new: true }
+  );
+
+  await foundStaff.save();
+
+  if (!foundStaff) {
+    // Handle the case where the staff is not found
+    console.error("Staff not found");
+  }
+
+  console.log(foundUser);
+
+  res.status(200).json(appointment);
 });
