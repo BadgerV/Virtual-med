@@ -2360,3 +2360,70 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2023-11-30 17:28:49 info: GET /user/profile [36m304 186.338 ms - -
 2023-11-30 17:29:41 info: GET /user/profile [36m304 172.721 ms - -
 2023-11-30 17:36:22 info: GET /user/profile [36m304 233.409 ms - -
+2023-11-30 20:20:16 info: GET /user/profile [36m304 2274.088 ms - -
+2023-11-30 20:24:40 info: GET /user/profile [32m200 191.477 ms - 211
+2023-11-30 20:34:05 info: GET /user/profile [36m304 1297.599 ms - -
+2023-11-30 20:36:16 info: GET /user/profile [36m304 405.124 ms - -
+2023-11-30 21:00:54 info: GET /user/profile [36m304 178.393 ms - -
+2023-11-30 21:03:06 info: GET /user/profile [36m304 270.220 ms - -
+2023-11-30 21:34:22 info: GET /user/profile [36m304 3086.416 ms - -
+2023-12-01 07:47:30 error: 404 - route not found - /appointments/fetchAppointments - GET - ::1
+2023-12-01 07:47:30 info: GET /appointments/fetchAppointments [33m404 72.655 ms - 57
+2023-12-01 07:53:04 info: POST /user/login [32m200 695.993 ms - 223
+2023-12-01 07:53:14 error: 401 - Error: Become a premium subscriber to enjoy this feature - /appointment/fetchAppointments - GET - ::1
+2023-12-01 07:53:14 info: GET /appointment/fetchAppointments [33m401 306.041 ms - 366
+2023-12-01 07:53:33 info: POST /staff/login [32m200 707.287 ms - 219
+2023-12-01 07:55:47 info: GET /appointment/fetchAppointments - - ms - -
+2023-12-01 09:29:52 error: 500 - auth is not defined - /appointment/fetchAppointments - GET - ::1
+2023-12-01 09:29:52 info: GET /appointment/fetchAppointments [31m500 2018.794 ms - 1102
+2023-12-01 09:31:14 info: POST /staff/login [32m200 2275.499 ms - 219
+2023-12-01 09:39:52 info: POST /user/login [32m200 945.811 ms - 223
+2023-12-01 09:42:38 error: 401 - Error: Become a premium subscriber to enjoy this feature - /appointment/fetchAppointments - GET - ::1
+2023-12-01 09:42:38 info: GET /appointment/fetchAppointments [33m401 345.641 ms - 366
+2023-12-01 09:43:04 info: POST /user/register [32m200 1000.472 ms - 223
+2023-12-01 09:43:19 info: POST /user/login [32m200 1070.735 ms - 211
+2023-12-01 09:49:27 info: GET /appointment/fetchAppointments [32m200 241.808 ms - 7
+2023-12-01 09:51:17 info: GET /appointment/fetchAppointments [32m200 2692.626 ms - 2
+2023-12-01 10:02:05 info: GET /appointment/fetchAppointments [32m200 10501.260 ms - 2
+2023-12-01 10:03:07 info: GET /appointment/fetchAppointments [32m200 868.067 ms - 35
+2023-12-01 10:18:32 info: POST /staff/login [32m200 815.202 ms - 219
+2023-12-01 10:18:37 info: GET /appointment/fetchAppointments [32m200 554.877 ms - 35
+2023-12-01 10:23:07 error: 400 - You are a staff, you cannot make an appointment - /appointment/makeAppointment - POST - ::1
+2023-12-01 10:23:07 info: POST /appointment/makeAppointment [33m400 494.920 ms - 1481
+2023-12-01 10:40:29 error: 400 - You are a staff, you cannot make an appointment - /appointment/makeAppointment - POST - ::1
+2023-12-01 10:40:29 info: POST /appointment/makeAppointment [33m400 278.596 ms - 1481
+2023-12-01 10:40:42 info: POST /user/login [32m200 782.620 ms - 211
+2023-12-01 10:40:48 error: 500 - Please fill out all the fields - /appointment/makeAppointment - POST - ::1
+2023-12-01 10:40:48 info: POST /appointment/makeAppointment [31m500 269.921 ms - 1447
+2023-12-01 10:42:09 info: POST /user/login [32m200 410.476 ms - 211
+2023-12-01 10:42:21 info: POST /staff/login [32m200 499.371 ms - 219
+2023-12-01 10:42:30 info: POST /user/login [32m200 789.319 ms - 211
+2023-12-01 10:42:52 error: 500 - Please fill out all the fields - /appointment/makeAppointment - POST - ::1
+2023-12-01 10:42:52 info: POST /appointment/makeAppointment [31m500 329.922 ms - 1447
+2023-12-01 10:43:11 error: 500 - appointmentTime.getTime is not a function - /appointment/makeAppointment - POST - ::1
+2023-12-01 10:43:11 info: POST /appointment/makeAppointment [31m500 322.609 ms - 492
+2023-12-01 10:44:38 error: 500 - appointmentTime.getTime is not a function - /appointment/makeAppointment - POST - ::1
+2023-12-01 10:44:38 info: POST /appointment/makeAppointment [31m500 428.134 ms - 492
+2023-12-01 10:46:33 error: 500 - appointmentTime.getTime is not a function - /appointment/makeAppointment - POST - ::1
+2023-12-01 10:46:33 info: POST /appointment/makeAppointment [31m500 501.854 ms - 492
+2023-12-01 10:47:52 error: 500 - appointmentTime.getTime is not a function - /appointment/makeAppointment - POST - ::1
+2023-12-01 10:47:52 info: POST /appointment/makeAppointment [31m500 511.249 ms - 492
+2023-12-01 10:48:27 error: 500 - appointmentTime.getTime is not a function - /appointment/makeAppointment - POST - ::1
+2023-12-01 10:48:27 info: POST /appointment/makeAppointment [31m500 969.961 ms - 492
+2023-12-01 10:49:49 error: 500 - appointmentTime.getTime is not a function - /appointment/makeAppointment - POST - ::1
+2023-12-01 10:49:49 info: POST /appointment/makeAppointment [31m500 7601.420 ms - 492
+2023-12-01 10:52:23 error: 500 - appointmentTime.getTime is not a function - /appointment/makeAppointment - POST - ::1
+2023-12-01 10:52:23 info: POST /appointment/makeAppointment [31m500 2440.352 ms - 492
+2023-12-01 10:53:08 error: 500 - appointmentTime.getTime is not a function - /appointment/makeAppointment - POST - ::1
+2023-12-01 10:53:08 info: POST /appointment/makeAppointment [31m500 444.095 ms - 492
+2023-12-01 10:53:38 error: 500 - appointmentTime.getTime is not a function - /appointment/makeAppointment - POST - ::1
+2023-12-01 10:53:38 info: POST /appointment/makeAppointment [31m500 2093.748 ms - 492
+2023-12-01 10:55:36 error: 500 - Cannot access 'appointment' before initialization - /appointment/makeAppointment - POST - ::1
+2023-12-01 10:55:36 info: POST /appointment/makeAppointment [31m500 272.354 ms - 1494
+2023-12-01 10:56:21 info: POST /appointment/makeAppointment [32m200 1037.621 ms - 321
+2023-12-01 10:56:42 info: GET /appointment/fetchAppointments [32m200 823.582 ms - 516
+2023-12-01 10:57:09 error: 400 - Appointment time is not available - /appointment/makeAppointment - POST - ::1
+2023-12-01 10:57:09 info: POST /appointment/makeAppointment [33m400 537.248 ms - 331
+2023-12-01 11:00:28 error: 400 - Appointment time is not available - /appointment/makeAppointment - POST - ::1
+2023-12-01 11:00:28 info: POST /appointment/makeAppointment [33m400 413.280 ms - 331
+2023-12-01 11:00:35 info: POST /appointment/makeAppointment [32m200 976.076 ms - 321

@@ -1,6 +1,8 @@
+import Rating from "../../components/Rating/Rating";
 import "./doctorProfile.css";
 
 const DoctorProfile = () => {
+  const staticData = [1, 2, 3];
   return (
     <div className="doctor-profile-page">
       <div className="going-back">
@@ -125,8 +127,19 @@ const DoctorProfile = () => {
             <div className="profile-doctor-review_header-right-top">
               <span>Overall ratings (720)</span>
             </div>
-            <div className="profile-doctor-review_header-right-bottom"></div>
+            <div className="profile-doctor-review_header-right-bottom">
+              <img src="/assets/star.png" alt="" />
+              <span>4.8</span>
+            </div>
           </div>
+        </div>
+
+        <div className="rating-container">
+          {staticData.map((review, index) => {
+            return (
+                <Rating props={review} key={index} />
+            )
+          })}
         </div>
       </div>
     </div>
