@@ -26,8 +26,7 @@ const SignUp = () => {
 
     if (response.payload._id) {
       navigate("/");
-    } 
-    else {
+    } else {
       //TAKE CARE OF THE IF NOT
     }
   };
