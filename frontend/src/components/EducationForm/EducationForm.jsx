@@ -16,6 +16,7 @@ const EducationForm = () => {
       color: "#D3D3D3", // Text color for the container
       fontSize: "0.9em",
       fontWeight: "400",
+      // outline : "1px solid red"
     }),
     indicatorSeparator: () => ({
       display: "none",
@@ -54,48 +55,60 @@ const EducationForm = () => {
       </div>
 
       <div className="education-label_and_input">
-        <label>Degree *</label>
+        <label>Major *</label>
         <input type="text" />
       </div>
 
       <div className="education-label_and_input">
-        <label>Degree *</label>
+        <label>University *</label>
         <input type="text" />
       </div>
 
-      <div className="education-duo-inputs">
-        <Select
-          className="trade"
-          styles={customStyles}
-          options={options}
-          placeholder="Month"
-          components={{
-            IndicatorSeparator: () => null,
-            DropdownIndicator: () => <img src="/assets/CaretDown.svg" alt="" />,
-          }}
-        />
+      <div className="education-duo-inputs-container">
+        <label>Date of graduation *</label>
 
-        <Select
-          className="trade"
-          styles={customStyles}
-          options={options}
-          placeholder="Year"
-          components={{
-            IndicatorSeparator: () => null,
-            DropdownIndicator: () => <img src="/assets/CaretDown.svg" alt="" />,
-          }}
-        />
+        <div className="education-duo-inputs">
+          <Select
+            className="trade"
+            styles={customStyles}
+            options={options}
+            placeholder="Month"
+            components={{
+              IndicatorSeparator: () => null,
+              DropdownIndicator: () => (
+                <img src="/assets/CaretDown.svg" alt="" />
+              ),
+            }}
+          />
+
+          <Select
+            className="trade"
+            styles={customStyles}
+            options={options}
+            placeholder="Year"
+            components={{
+              IndicatorSeparator: () => null,
+              DropdownIndicator: () => (
+                <img src="/assets/CaretDown.svg" alt="" />
+              ),
+            }}
+          />
+        </div>
       </div>
 
       <div className="upload-image-div">
         <label htmlFor="">Degree Certificate *</label>
-        <input type="file" />
+        <div className="input-file-container">
+          <input type="file" />
+          <img src="/assets/cloud-icon.svg" alt="" />
+          <div className="input-chaarde">Upload File (max file size 10mb)</div>
+        </div>
       </div>
 
-      <div className="education-button-cont">
+      {/* <div className="education-button-cont">
         <button>back</button>
         <button>next</button>
-      </div>
+      </div> */}
     </div>
   );
 };

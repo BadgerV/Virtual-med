@@ -180,8 +180,8 @@ body {
   border-radius: 20px;
 
   display: grid;
-  grid-template-columns: 1fr 3.5fr;
-  gap: 2em;
+  grid-template-columns: 1.5fr 4.5fr;
+  gap: 3em;
   background-color: #033a95;
 }
 
@@ -194,6 +194,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  height: 42em;
 
   /* outline: 1px solid red; */
 }
@@ -225,3 +226,18 @@ body {
   font-weight: 500;
 }
 
+.render-form {
+  background-color: white;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.work-button-cont {
+  padding: 0 3em;
+  display: flex;
+  padding-bottom: 2em;
+  margin-top: auto;
+}

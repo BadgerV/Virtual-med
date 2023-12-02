@@ -1,0 +1,9 @@
+.certifcation-form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  border-radius: 20px;
+  padding: 3em;
+  transition: 0.2s all ease-in-out;
+}
