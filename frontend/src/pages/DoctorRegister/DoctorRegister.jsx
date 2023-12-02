@@ -263,6 +263,8 @@ const DoctorRegister = () => {
         return <WorkForm />;
       case "cert":
         return <CertificationForm />;
+      case "prof":
+        return <ProfessionalReferencesForm />;
       default:
         return null;
     }
@@ -274,31 +276,89 @@ const DoctorRegister = () => {
     <div className="doctor-register">
       <div className="doctor-container">
         <ul className="nav-tabs">
-          <li className="nav-item" style={isTabActive("basic-info") ? { backgroundColor: "white", width : "120%" } : {}}>
-            <a className={`nav-link ${isTabActive("basic-info") ? "active" : ""}`} onClick={() => handleTabChange("basic-info")}>
+          <li
+            className="nav-item"
+            style={
+              isTabActive("basic-info")
+                ? { backgroundColor: "white", width: "120%" }
+                : {}
+            }
+          >
+            <a
+              className={`nav-link ${
+                isTabActive("basic-info") ? "active" : ""
+              }`}
+              onClick={() => handleTabChange("basic-info")}
+            >
               <img src="/assets/Vector (9).svg" alt="" />
               <span>Basic Info</span>
             </a>
           </li>
 
-          <li className="nav-item" style={isTabActive("profile") ? { backgroundColor: "white" } : {}}>
-            <a className={`nav-link ${isTabActive("profile") ? "active" : ""}`} onClick={() => handleTabChange("profile")}>
+          <li
+            className="nav-item"
+            style={
+              isTabActive("profile")
+                ? { backgroundColor: "white", width: "120%" }
+                : {}
+            }
+          >
+            <a
+              className={`nav-link ${isTabActive("profile") ? "active" : ""}`}
+              onClick={() => handleTabChange("profile")}
+            >
               <img src="/assets/GraduationCap.svg" alt="" />
               <span>Education</span>
             </a>
           </li>
 
-          <li className="nav-item" style={isTabActive("work") ? { backgroundColor: "white" } : {}}>
-            <a className={`nav-link ${isTabActive("work") ? "active" : ""}`} onClick={() => handleTabChange("work")}>
+          <li
+            className="nav-item"
+            style={
+              isTabActive("work")
+                ? { backgroundColor: "white", width: "120%" }
+                : {}
+            }
+          >
+            <a
+              className={`nav-link ${isTabActive("work") ? "active" : ""}`}
+              onClick={() => handleTabChange("work")}
+            >
               <img src="/assets/Vector (10).svg" alt="" />
               <span>Work Experience</span>
             </a>
           </li>
 
-          <li className="nav-item" style={isTabActive("cert") ? { backgroundColor: "white" } : {}}>
-            <a className={`nav-link ${isTabActive("cert") ? "active" : ""}`} onClick={() => handleTabChange("cert")}>
+          <li
+            className="nav-item"
+            style={
+              isTabActive("cert")
+                ? { backgroundColor: "white", width: "120%" }
+                : {}
+            }
+          >
+            <a
+              className={`nav-link ${isTabActive("cert") ? "active" : ""}`}
+              onClick={() => handleTabChange("cert")}
+            >
               <img src="/assets/Vector (11).svg" alt="" />
               <span>Certification & License</span>
+            </a>
+          </li>
+          <li
+            className="nav-item"
+            style={
+              isTabActive("prof")
+                ? { backgroundColor: "white", width: "120%" }
+                : {}
+            }
+          >
+            <a
+              className={`nav-link ${isTabActive("prof") ? "active" : ""}`}
+              onClick={() => handleTabChange("prof")}
+            >
+              <img src="/assets/Vector (10).svg" alt="" />
+              <span>Professional Refernces</span>
             </a>
           </li>
         </ul>
@@ -310,8 +370,6 @@ const DoctorRegister = () => {
 };
 
 export default DoctorRegister;
-
-
 
 // manner
 

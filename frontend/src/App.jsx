@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import SignUp from "./pages/SignUp/SignUp";
 import { lazy, Suspense, useEffect } from "react";
 import LoadingComponent from "./components/LoadingComponent/LoadingComponent";
-// import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 
 import { useDispatch, useSelector } from "react-redux";
 import { Navigate } from "react-router-dom";
@@ -56,14 +56,14 @@ const App = () => {
   useEffect(() => {
     const verifyUser = async () => {
       const user = await dispatch(myProfile());
-      console.log(user)
+      console.log(user);
     };
 
     verifyUser();
   }, []);
   return (
     <BrowserRouter>
-      {/* <Navbar /> */}
+      <Navbar />
 
       <Suspense fallback={<LoadingComponent />}>
         <Routes>

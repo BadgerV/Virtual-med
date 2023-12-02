@@ -1,0 +1,9 @@
+
+.educational-form {
+    border: 1px solid yellow;
+    background-color: white;
+}
+
+.education-label_and_input {
+    outline: 2px solid red;
+}
