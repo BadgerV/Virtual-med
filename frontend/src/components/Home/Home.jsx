@@ -89,11 +89,29 @@ const Home = () => {
 <div className="simple-box">
 
 <div className="simple-boxes">
-    <img src="assests/user-md_9856641 1.svg" alt="" />
+    <img src="assets/user-md_9856641 1.svg 1.svg" alt="" />
     <h1>Check Doctor's Profile</h1>
     <span>Browse through our extensive and experienced medical practitioners</span>
   </div>
-  
+
+  <div className="simple-boxes">
+  <img src="/assets/schedule_1545407 1.svg" alt="" />
+    <h1>Check Doctor's Profile</h1>
+    <span>Browse through our extensive and experienced medical practitioners</span>
+  </div>
+
+  <div className="simple-boxes">
+    <img src="assets/stethoscope_2480303 1.svg" alt="" />
+    <h1>Check Doctor's Profile</h1>
+    <span>Browse through our extensive and experienced medical practitioners</span>
+  </div>
+
+  <div className="simple-boxes">
+    <img src="assets/positive-thinking_7660512 1.svg" alt="" />
+    <h1>Check Doctor's Profile</h1>
+    <span>Browse through our extensive and experienced medical practitioners</span>
+  </div>
+
 </div>
 </div>
 </div>
