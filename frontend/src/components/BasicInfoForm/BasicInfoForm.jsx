@@ -9,8 +9,10 @@ import {
   setLocation,
   setLastName,
   setEmail,
+  setDateOfBirth,
 } from "../../redux/doctors/FormSlice";
 import { useDispatch, useSelector } from "react-redux";
+import DatePicker from "react-datepicker";
 
 const BasicInfoForm = () => {
   const firstName = useSelector((state) => state.formSlice.firstName);
@@ -40,6 +42,7 @@ const BasicInfoForm = () => {
 
   const [locationCountry, setLocationCountry] = useState("");
   const [locationState, setLoadtionState] = useState("");
+  const [selectedDate, setSelectedDate] = useState(null);
 
   useEffect(() => {
     if (locationCountry !== "" && locationState !== "") {
@@ -49,6 +52,11 @@ const BasicInfoForm = () => {
       }));
     }
   }, [locationCountry, locationState]);
+
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
+    console.log(date);
+  };
 
   function getFormattedDateOfBirth(day, month, year) {
     // Ensure the input values are valid numbers
@@ -144,6 +152,8 @@ const BasicInfoForm = () => {
       ...prevFormData,
       dateOfBirth: dob,
     }));
+
+    console.log(formData);
   }, [selectedDay, selectedMonth, selectedYear]);
 
   const handleDayChange = (e) => {
@@ -194,10 +204,14 @@ const BasicInfoForm = () => {
     }
   }, [formData.gender]);
   useEffect(() => {
-    if (formData.location !== "") {
-      dispatch(setLocation(formData.location));
-    }
-  }, [formData.location]);
+      dispatch(setDateOfBirth(selectedDate));
+    
+  }, [selectedDate]);
+  // useEffect(() => {
+  //   if (formData.location !== "") {
+  //     dispatch(setLocation(formData.location));
+  //   }
+  // }, [formData.location]);
 
   const generateOptions = (start, end) => {
     const options = [];
@@ -293,7 +307,7 @@ const BasicInfoForm = () => {
           />
         </div>
 
-        <div className="gender-form">
+        {/* <div className="gender-form">
           <label>Gender *</label>
           <div className="gender-form">
             <select
@@ -307,9 +321,9 @@ const BasicInfoForm = () => {
 
             <img src="/assets/CaretDown.svg" alt="" className="dropdown-icon" />
           </div>
-        </div>
+        </div> */}
 
-        <div className="location-form">
+        {/* <div className="location-form">
           <label>Location*</label>
           <div className="location-mini_div">
             <div className="location-mini_left">
@@ -347,52 +361,26 @@ const BasicInfoForm = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="date-of-birth-form">
-          <label>Date of Birth*</label>
-          <div className="date-of-birth-div">
-            <div className="date-of-birth-mini">
-              <select onClick={handleDayChange} className="custom-dropdown">
-                <option value="" disabled defaultValue>
-                  Day
-                </option>
-                {days}
-              </select>
-              <img
-                src="/assets/CaretDown.svg"
-                alt=""
-                className="dropdown-icon"
-              />
-            </div>
-
-            <div className="date-of-birth-mini">
-              <select onClick={handleMonthChange} className="custom-dropdown">
-                <option value="" disabled defaultValue>
-                  Month
-                </option>
-                {months}
-              </select>
-              <img
-                src="/assets/CaretDown.svg"
-                alt=""
-                className="dropdown-icon"
-              />
-            </div>
-
-            <div className="date-of-birth-mini">
-              <select onClick={handleYearChange} className="custom-dropdown">
-                <option value="" disabled defaultValue>
-                  Year
-                </option>
-                {years}
-              </select>
-              <img
-                src="/assets/CaretDown.svg"
-                alt=""
-                className="dropdown-icon"
-              />
-            </div>
+          <div className="education-duo-inputs-container">
+            <label>Date of birth *</label>
+            <DatePicker
+              selected={selectedDate}
+              onChange={handleDateChange}
+              dateFormat="yyyy-MM-dd"
+              showYearDropdown
+              scrollableYearDropdown
+              yearDropdownItemNumber={40} // Number of years shown in the dropdown
+              yearDropdownMin={1980} // Minimum year in the dropdown
+              yearDropdownMax={2020} // Maximum year in the dropdown
+              className="custom-date-input"
+              id="dob"
+              name="dob"
+              placeholderText="Date of birth"
+              // style={customStyles}
+            />
           </div>
         </div>
 

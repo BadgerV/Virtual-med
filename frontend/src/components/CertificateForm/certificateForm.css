@@ -1,4 +1,4 @@
-.certifcation-form {
+.certification-form {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -6,4 +6,53 @@
   border-radius: 20px;
   padding: 3em;
   transition: 0.2s all ease-in-out;
+}
+
+.cert-label-and-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.cert-input-file-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  position: relative;
+
+  padding: 0.8em 2em;
+  position: relative;
+  width: max-content;
+  outline: 1px solid #d3d3d3;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.cert-label-and-input label {
+  font-weight: 500;
+  font-size: .9em;
+}
+
+.cert-input-file-container input {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  font-size: 0.6em;
+
+  cursor: pointer;
+}
+
+.cert-input-chaarde {
+  font-size: 0.9em;
+  cursor: pointer;
 }

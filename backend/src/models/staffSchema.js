@@ -155,6 +155,10 @@ const StaffSchema = new mongoose.Schema(
       type : String,
       required : true
     },
+    POMI : {
+      type : String,
+      required : true
+    },
     currentPatients: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
     allPatients: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
     pendingPatients: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],

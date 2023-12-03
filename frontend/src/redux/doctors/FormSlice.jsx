@@ -13,13 +13,15 @@ const initialState = {
   passportImage: "",
   location: "",
   hourlyPrice: "",
-  dateOfBirth: "",
+  dateOfBirth: null,
   gender: "",
   major: "",
   degree: "",
   university: "",
-  graduationDate : null,
-  degreeCertificate : ""
+  graduationDate: null,
+  degreeCertificate: "",
+  POMI: "",
+  CV : ""
 };
 
 const generateSetReducer = (property) => {
@@ -60,6 +62,9 @@ export const {
   setUniversity,
   setGraduationDate,
   setDegreeCertificate,
+  setPOMI,
+  setCV,
+  setDateOfBirth,
 } = formSlice.actions;
 
 export default formSlice.reducer;

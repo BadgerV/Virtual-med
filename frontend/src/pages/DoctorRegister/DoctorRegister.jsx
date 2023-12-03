@@ -35,11 +35,11 @@ const DoctorRegister = () => {
         return <BasicInfoForm />;
       case 2:
         return <EducationForm />;
+      // case 3:
+      //   return <WorkForm />;
       case 3:
-        return <WorkForm />;
-      case 4:
         return <CertificationForm />;
-      case 5:
+      case 4:
         return <ProfessionalReferencesForm />;
       default:
         return null;
@@ -81,7 +81,7 @@ const DoctorRegister = () => {
             </a>
           </li>
 
-          <li
+          {/* <li
             className="nav-item"
             onClick={() => setCurrentTabNumber(3)}
             style={
@@ -94,8 +94,22 @@ const DoctorRegister = () => {
               <img src="/assets/Vector (10).svg" alt="" />
               <span>Work Experience</span>
             </a>
-          </li>
+          </li> */}
 
+          <li
+            className="nav-item"
+            onClick={() => setCurrentTabNumber(3)}
+            style={
+              currentTabNumber === 3
+                ? { backgroundColor: "white", width: "120%" }
+                : {}
+            }
+          >
+            <a className={`nav-link ${currentTabNumber === 3 ? "active" : ""}`}>
+              <img src="/assets/Vector (11).svg" alt="" />
+              <span>Certification & License</span>
+            </a>
+          </li>
           <li
             className="nav-item"
             onClick={() => setCurrentTabNumber(4)}
@@ -105,22 +119,8 @@ const DoctorRegister = () => {
                 : {}
             }
           >
-            <a className={`nav-link ${currentTabNumber === 4 ? "active" : ""}`}>
-              <img src="/assets/Vector (11).svg" alt="" />
-              <span>Certification & License</span>
-            </a>
-          </li>
-          <li
-            className="nav-item"
-            onClick={() => setCurrentTabNumber(5)}
-            style={
-              currentTabNumber === 5
-                ? { backgroundColor: "white", width: "120%" }
-                : {}
-            }
-          >
             <a
-              className={`nav-link ${currentTabNumber === 5 ? "active" : ""}`}
+              className={`nav-link ${currentTabNumber === 4 ? "active" : ""}`}
             >
               <img src="/assets/Vector (10).svg" alt="" />
               <span>Professional References</span>
