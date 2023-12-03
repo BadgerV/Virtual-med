@@ -14,7 +14,12 @@ const initialState = {
   location: "",
   hourlyPrice: "",
   dateOfBirth: "",
-  gender : ""
+  gender: "",
+  major: "",
+  degree: "",
+  university: "",
+  graduationDate : null,
+  degreeCertificate : ""
 };
 
 const generateSetReducer = (property) => {
@@ -49,7 +54,12 @@ export const {
   setLocation,
   setHourlyPrice,
   setAge,
-  setGender
+  setGender,
+  setMajor,
+  setDegree,
+  setUniversity,
+  setGraduationDate,
+  setDegreeCertificate,
 } = formSlice.actions;
 
 export default formSlice.reducer;

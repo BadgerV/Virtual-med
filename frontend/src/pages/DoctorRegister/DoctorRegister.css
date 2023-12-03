@@ -226,6 +226,14 @@ body {
   font-weight: 500;
 }
 
+.custom-date-input {
+    border: 1px solid #edeaea;
+    padding: 0.6em 1em;
+    border-radius: 20px;
+    font-size: 0.93em;  
+  }
+
+
 
 /* Media Queries */
 

@@ -151,6 +151,10 @@ const StaffSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    degreeCeritificate : {
+      type : String,
+      required : true
+    },
     currentPatients: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
     allPatients: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
     pendingPatients: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],

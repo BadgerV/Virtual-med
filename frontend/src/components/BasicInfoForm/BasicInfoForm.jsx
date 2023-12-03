@@ -144,8 +144,6 @@ const BasicInfoForm = () => {
       ...prevFormData,
       dateOfBirth: dob,
     }));
-
-    console.log(formData);
   }, [selectedDay, selectedMonth, selectedYear]);
 
   const handleDayChange = (e) => {
