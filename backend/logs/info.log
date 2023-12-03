@@ -2753,3 +2753,22 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2023-12-01 17:14:34 info: GET /user/profile [33m404 2.477 ms - 61
 2023-12-01 17:17:30 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
 2023-12-01 17:17:30 info: GET /user/profile [33m404 2.188 ms - 61
+2023-12-03 07:57:06 info: POST /user/login [32m200 400.016 ms - 232
+2023-12-03 07:57:15 error: 500 - Cannot read properties of undefined (reading '_id') - /admin/get-unverified-users - GET - ::1
+2023-12-03 07:57:15 info: GET /admin/get-unverified-users [31m500 9.193 ms - 1481
+2023-12-03 07:58:22 error: 400 - Please authenticate - /admin/get-unverified-users - GET - ::1
+2023-12-03 07:58:22 info: GET /admin/get-unverified-users [33m400 24.132 ms - 1413
+2023-12-03 07:59:27 error: 404 - Please authenticate - /admin/get-unverified-users - GET - ::1
+2023-12-03 07:59:27 info: GET /admin/get-unverified-users [33m404 25.676 ms - 61
+2023-12-03 07:59:36 info: POST /user/login [32m200 434.392 ms - 232
+2023-12-03 07:59:44 error: 400 - You are not an admin - /admin/get-unverified-users - GET - ::1
+2023-12-03 07:59:44 info: GET /admin/get-unverified-users [33m400 332.029 ms - 294
+2023-12-03 08:09:56 info: POST /user/register [32m200 756.573 ms - 245
+2023-12-03 08:13:28 info: POST /user/register [32m200 671.494 ms - 260
+2023-12-03 08:13:58 error: 500 - Staff is not defined - /admin/get-unverified-users - GET - ::1
+2023-12-03 08:13:58 info: GET /admin/get-unverified-users [31m500 473.593 ms - 1430
+2023-12-03 08:14:37 info: GET /admin/get-unverified-users [32m200 9460.330 ms - 2061
+2023-12-03 08:19:17 info: GET /admin/get-unverified-users [32m200 670.922 ms - 13735
+2023-12-03 08:22:37 info: GET /admin/get-unverified-users [32m200 571.904 ms - 13735
+2023-12-03 08:23:14 error: 500 - Staff validation failed: proofOfIdentity: Path `proofOfIdentity` is required., hourlyPrice: Path `hourlyPrice` is required., location: Path `location` is required., passportImage: Path `passportImage` is required., boardCertification: Path `boardCertification` is required., medicalLisense: Path `medicalLisense` is required. - /admin/verify-user - POST - ::1
+2023-12-03 08:23:14 info: POST /admin/verify-user [31m500 738.730 ms - 1183

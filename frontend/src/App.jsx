@@ -64,7 +64,7 @@ const App = () => {
   }, []);
   return (
     <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <Suspense fallback={<LoadingComponent />}>
         <Routes>

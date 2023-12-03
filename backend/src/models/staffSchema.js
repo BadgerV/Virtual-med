@@ -73,22 +73,27 @@ const StaffSchema = new mongoose.Schema(
     },
     phoneNumber: {
       type: String,
+      required: true,
       // required: true,
     },
     medicalLisense: {
-      type: Buffer,
+      type: String,
+      required: true,
     },
     boardCertification: {
-      type: Buffer,
+      type: String,
+      required: true,
     },
     speciality: {
       type: String,
     },
     passportImage: {
-      type: Buffer,
+      type: String,
+      required: true,
     },
     location: {
       type: String,
+      required: true,
     },
     isActive: {
       type: String,
@@ -96,10 +101,7 @@ const StaffSchema = new mongoose.Schema(
     },
     hourlyPrice: {
       type: Number,
-    },
-    hasProvidedCredentials: {
-      type: Boolean,
-      default: false,
+      required: true,
     },
     accountType: {
       type: String,
@@ -107,14 +109,33 @@ const StaffSchema = new mongoose.Schema(
       immutable: true, // Make the field immutable
     },
     proofOfIdentity: {
-      type: Buffer,
+      type: String,
+      required: true,
     },
-    age: {
-      type: Number,
+    dateOfBirth: {
+      required: true,
+      type: Date,
     },
     professionalMemberShip: {
       type: String,
     },
+    major: {
+      type: String,
+      required: true,
+    },
+    degree: {
+      type: String,
+      required: true,
+    },
+    university: {
+      type: String,
+      required: true,
+    },
+    dateOfGraduation: {
+      type: Date,
+      required: true,
+    },
+
     professionalReferences: [referenceSchema],
     tokens: [tokenSchema],
 
@@ -122,10 +143,13 @@ const StaffSchema = new mongoose.Schema(
       type: String,
       default: "Nothing yet",
     },
+    CV: {
+      type: String,
+      required: true,
+    },
     isVerified: {
       type: Boolean,
       default: false,
-      required: true,
     },
     currentPatients: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
     allPatients: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],

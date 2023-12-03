@@ -10,11 +10,25 @@
   border-radius: 20px;
 }
 
+.basic-form form {
+  width: 90%;
+}
+
 .photo-form {
   margin: auto;
   display: flex;
   flex-direction: column;
   margin-bottom: 1.5em;
+  position: relative;
+}
+
+.basic-form_file {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
 }
 
 .photo-form span {
@@ -26,15 +40,15 @@
   display: flex;
   flex-direction: row;
   gap: 2em;
-  justify-content: space-between;
+
+  width: 100%;
 }
 
 .name-form_div {
   display: flex;
   flex-direction: column;
-  gap: 0.25em;
-
-  margin-bottom: 0.75em;
+  gap: 0.2em;
+  max-width: 100%;
 }
 
 .name-form_div label {
@@ -44,18 +58,43 @@
 .name-form_div input {
   border-radius: 20px;
   outline: 1px solid #d3d3d3;
+  color: #d3d3d3;
   padding: 0.8em 1em;
   font-size: 0.9em;
+
+  width: 100%;;
 }
 
+.name-form_div input::placeholder {
+  color: #d3d3d3;
+}
 .gender-form {
-  /* display: flex;
-  flex-direction: column;
-  gap: 0.25em;
-  align-items: start;
-  /* outline: 1px solid red; */
   width: 100%;
-  margin-bottom: 0.75em;
+  /* margin-bottom: 0.75em; */
+
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.basic-form-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  padding: 0.8em 2em 0.8em 1em;
+  border: 1px solid #d3d3d3;
+  border-radius: 20px;
+  font-size: 0.9em;
+  color: #d3d3d3;
+  /* font-weight: 400; */
+  cursor: pointer;
 }
 
 .gender-form label {
@@ -65,7 +104,7 @@
 }
 
 .location-form {
-  margin-bottom: 0.75em;
+  /* margin-bottom: 0.75em; */
 }
 
 .location-form label {
@@ -115,4 +154,41 @@
   font-size: 0.9em;
   border-radius: 20px;
   font-weight: 500;
+}
+
+
+.dropdown-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.location-mini_left {
+  position: relative;
+}
+
+.location-mini_right {
+  position: relative;
+}
+
+.date-of-birth-mini {
+  position: relative;
+}
+
+.custom-dropdown {
+  -webkit-appearance: none; /* Remove default arrow in WebKit browsers */
+  -moz-appearance: none; /* Remove default arrow in Firefox */
+  appearance: none; /* Remove default arrow in other browsers */
+  padding: 10px; /* Adjust padding as needed */
+  border: 1px solid #ccc; /* Add border styling */
+  background-color: #fff; /* Set background color */
+  /* color: #333; Set text color */
+  /* Add any other styles you want to customize */
+}
+
+/* Style the dropdown arrow for IE/Edge */
+.custom-dropdown::-ms-expand {
+  display: none;
 }

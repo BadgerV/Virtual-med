@@ -1,32 +1,32 @@
-import StaffSchema from "./staffSchema.js";
+import StaffSchema from "./StaffSchema.js";
 import mongoose from "mongoose";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import AppError from "../common/utils/appError.js";
 import { ENVIRONMENT } from "../common/config/environment.js";
 
-StaffSchema.methods.toJSON = function () {
-  const staff = this;
+// StaffSchema.methods.toJSON = function () {
+//   const staff = this;
 
-  const staffObject = staff.toObject();
+//   const staffObject = staff.toObject();
 
-  delete staffObject.password;
-  delete staffObject.medicalLisense;
-  delete staffObject.boardCertification;
-  // delete staffObject.passportImage;
-  delete staffObject.hasProvidedCredentials;
-  delete staffObject.accountType;
-  delete staffObject.proofOfIdentity;
-  delete staffObject.currentPatients;
-  delete staffObject.allPatients;
-  delete staffObject.tokens;
-  delete staffObject.pendingPatients;
-  delete staffObject.professionalReferences;
-  delete staffObject.isVerified;
-  delete staffObject.verificationToken;
+//   delete staffObject.password;
+//   delete staffObject.medicalLisense;
+//   delete staffObject.boardCertification;
+//   // delete staffObject.passportImage;
+//   delete staffObject.hasProvidedCredentials;
+//   delete staffObject.accountType;
+//   delete staffObject.proofOfIdentity;
+//   delete staffObject.currentPatients;
+//   delete staffObject.allPatients;
+//   delete staffObject.tokens;
+//   delete staffObject.pendingPatients;
+//   delete staffObject.professionalReferences;
+//   delete staffObject.isVerified;
+//   delete staffObject.verificationToken;
   
-  return staffObject;
-};
+//   return staffObject;
+// };
 
 //this is to compare the password with the already hashed passowrd
 StaffSchema.statics.findByCredentials = async function (password, email) {

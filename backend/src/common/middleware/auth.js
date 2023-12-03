@@ -124,7 +124,15 @@ export const isPremiumOrStaff = catchAsync(async (req, res, next) => {
 export const isPremium = catchAsync(async (req, res, next) => {
   const user = req.user;
 
+  if (!user) {
+    throw new AppError("Please authenticate", 400);
+  }
+
   const foundUser = await User.findOne({ _id: user._id });
+
+  if (!foundUser) {
+    throw new AppError("User not found");
+  }
 
   if (foundUser.isPremium === true) {
     next();
@@ -133,5 +141,21 @@ export const isPremium = catchAsync(async (req, res, next) => {
       "Become a premium subscriber to enjoy this feature",
       400
     );
+  }
+});
+
+export const isAdmin = catchAsync(async (req, res, next) => {
+  const user = req.user;
+
+  if (!user) {
+    throw new AppError("Please authenticate", 400);
+  }
+
+  const foundUser = await User.findOne({ _id: user._id });
+
+  if (foundUser.isAdmin) {
+    next();
+  } else {
+    throw new AppError("You are not an admin", 400);
   }
 });
