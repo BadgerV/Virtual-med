@@ -1,48 +1,46 @@
 .switch-btn {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+button {
+  padding: 1.2em;
+  /* margin: 5px; */
+  font-size: 13px;
+  cursor: pointer;
+  background-color: #00008b;
+  color: #fff;
+  border: 0.9px solid black;
+  border: none;
+  border-radius: 20px;
+}
+
+/* Optional: Add hover effect */
+button:hover {
+  background-color: #00008b;
+  color: white;
+  border-radius: 20px;
+}
+
+.second {
+  border-radius: 20px;
+}
+
+.first {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: black;
+}
+
+.first img {
+  margin-left: 10px;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .switch-btn button {
+    font-size: 15px;
   }
-  
-  button {
-    padding: 0.7em;
-    margin: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #00008B;
-    color: #fff;
-    border: 0.9px solid black;
-    border: none;
-    border-radius: 20px;
-  }
-  
-  /* Optional: Add hover effect */
-  button:hover {
-    background-color: #00008B;
-    color: white;
-    border-radius: 20px;
-  }
-  
-.second{
-    border-radius: 20px;
- }
-
- .first{ 
-     background-color: white;
-     color: black;
-     align-items: center;
- }
-
-
- .first img {
-   margin-left: 10px;
-   align-items: center;
-  }
-
-
-
-  @media screen and (max-width: 768px) {
-    .switch-btn button{ 
-      font-size: 15px;
-    }
-    }
-
+}

@@ -1,7 +1,13 @@
+<<<<<<< Updated upstream
 import { useState } from "react";
 import "./SignUp.css";
 import { Link } from "react-router-dom";
 import { registerUser } from "../../redux/user/UserSlice";
+=======
+import React from 'react';
+import './SignUp.css';
+import { Link, useNavigate } from "react-router-dom";
+>>>>>>> Stashed changes
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 

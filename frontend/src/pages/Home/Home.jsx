@@ -24,6 +24,7 @@ const Home = () => {
   return (
     <div className="home">
       <div className="home-container">
+        
         <div className="right">
           <h1>
             We provide digital
@@ -37,7 +38,7 @@ const Home = () => {
             top-notch medical care, regardless of their location or schedule.
           </span>
 
-          <div className="home-last">
+          <div className="right-photo">
             <div className="home-last-images">
               <img src="/assets/Ellipse 1.png" alt="small doctors.png" />
               <img src="/assets/Ellipse 2.png" alt="small doctors.png" />
@@ -45,7 +46,7 @@ const Home = () => {
               <img src="/assets/Ellipse 4.png" alt="small doctors.png" />
             </div>
 
-            <div className="home-lasts">
+            <div className="right-last">
               100 +<br />
               Competent Doctors
             </div>
@@ -79,6 +80,46 @@ const Home = () => {
         </div>
       </div>
 
+
+<div className="simple">
+<div className="simple-header">
+  <span>Simple & Fast</span>
+  <h1>4 Easy Steps to get your desired care and treatment</h1>
+
+
+{/* <div className="simple-box">
+
+<div className="simple-boxes">
+    <img src="assets/user-md_9856641 1.svg 1.svg" alt="" />
+    <h1>Check Doctor's Profile</h1>
+    <span>Browse through our extensive and experienced medical practitioners</span>
+  </div>
+
+  <div className="simple-boxes">
+  <img src="/assets/schedule_1545407 1.svg" alt="" />
+    <h1>Check Doctor's Profile</h1>
+    <span>Browse through our extensive and experienced medical practitioners</span>
+  </div>
+
+  <div className="simple-boxes">
+    <img src="assets/stethoscope_2480303 1.svg" alt="" />
+    <h1>Check Doctor's Profile</h1>
+    <span>Browse through our extensive and experienced medical practitioners</span>
+  </div>
+
+  <div className="simple-boxes">
+    <img src="assets/positive-thinking_7660512 1.svg" alt="" />
+    <h1>Check Doctor's Profile</h1>
+    <span>Browse through our extensive and experienced medical practitioners</span>
+    <span>man</span>
+    <h1>vhsbfe</h1>
+  </div>
+
+</div> */}
+</div>
+</div>
+
+{/* 
       <div className="last">
         <h1>Our Services</h1>
 
@@ -110,7 +151,7 @@ const Home = () => {
             </span>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* {doctors?.map((doctor, index) => {
         return <h1 key={index}>{doctor.email}</h1>;
@@ -120,3 +161,8 @@ const Home = () => {
 };
 
 export default Home;
+
+
+
+
+

@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import SignUp from "./pages/SignUp/SignUp";
 import { lazy, Suspense, useEffect } from "react";
 import LoadingComponent from "./components/LoadingComponent/LoadingComponent";
-import Navbar from "./components/Navbar/Navbar";
+// import Navbar from "./components/Navbar/Navbar";
 
 import { useDispatch, useSelector } from "react-redux";
 import { Navigate } from "react-router-dom";
@@ -98,3 +98,6 @@ const App = () => {
 };
 
 export default App;
+
+
+// ejhbf rnmfbrj rj

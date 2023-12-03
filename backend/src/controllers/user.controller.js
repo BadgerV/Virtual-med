@@ -36,6 +36,13 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+<<<<<<< Updated upstream
+=======
+
+
+
+
+>>>>>>> Stashed changes
 export const registerUser = catchAsync(async (req, res) => {
   const { firstName, lastName, email, password } = req.body;
 
