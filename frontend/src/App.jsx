@@ -13,7 +13,8 @@ import LoadingComponent from "./components/LoadingComponent/LoadingComponent";
 import { useDispatch, useSelector } from "react-redux";
 import { Navigate } from "react-router-dom";
 import { myProfile } from "./redux/user/UserSlice";
-import FindDoctor from "./pages/FindDoctor/FindDoctor";
+// import FindDoctor from "./pages/FindDoctor/FindDoctor";
+import FindDoctor from "./pages/FindDoctor/findDoctor"
 // import DoctorProfile from "./pages/DoctorProfile/DoctorProfile";
 //LAZY IMPORT PAGES FOR BETTER WEBSITE PERFORMANCE
 const Profile = lazy(() => import("./pages/Profile/Profile"));

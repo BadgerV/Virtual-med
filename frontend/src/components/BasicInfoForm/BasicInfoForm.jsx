@@ -157,10 +157,10 @@ const BasicInfoForm = () => {
           </div>
         </div>
 
-        <div className="buttons-container">
+        {/* <div className="buttons-container">
           <button className="button doctor-register_back-button">back</button>
           <button className="button doctor-register_next-button">next</button>
-        </div>
+        </div> */}
       </form>
     </div>
   );
