@@ -24,6 +24,7 @@ const Home = () => {
   return (
     <div className="home">
       <div className="home-container">
+        
         <div className="right">
           <h1>
             We provide digital
@@ -86,7 +87,7 @@ const Home = () => {
   <h1>4 Easy Steps to get your desired care and treatment</h1>
 
 
-<div className="simple-box">
+{/* <div className="simple-box">
 
 <div className="simple-boxes">
     <img src="assets/user-md_9856641 1.svg 1.svg" alt="" />
@@ -110,9 +111,11 @@ const Home = () => {
     <img src="assets/positive-thinking_7660512 1.svg" alt="" />
     <h1>Check Doctor's Profile</h1>
     <span>Browse through our extensive and experienced medical practitioners</span>
+    <span>man</span>
+    <h1>vhsbfe</h1>
   </div>
 
-</div>
+</div> */}
 </div>
 </div>
 
