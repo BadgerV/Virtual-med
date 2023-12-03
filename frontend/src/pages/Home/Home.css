@@ -1,4 +1,4 @@
-.home {
+/* .home {
   display: flex;
   gap: 1em;
   height: 100vh;
@@ -100,7 +100,6 @@
 }
 
 .left img {
-  /* margin-top: -150px; */
   width: 500px;
   height: 450px;
   object-fit: cover;
@@ -139,9 +138,185 @@
   text-align: center;
   box-shadow: inset 0 0 10px rgba(71, 66, 66, 0.8);
 }
-
+ */
 
  
+
+
+
+
+
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1em;
+  padding-bottom: 3em
+}
+
+.right h1{ 
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+.right span{ 
+  font-weight: 400;
+}
+
+.right,
+.left {
+  flex-basis: calc(50% - 20px);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+span {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+
+/* .home-last-images {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+} */
+
+/* .home-last-images img {
+  max-width: 100%;
+  height: auto;
+} */
+
+.right-photo {
+  display: flex;
+}
+
+
+ .home-last-images {
+  display: flex;
+  align-items: center; 
+} 
+
+.home-last-images img {
+  height: 79px; 
+  width: 79px; 
+  margin-left: -40px;  
+}
+
+.home-last-images img:first-child {
+  margin-left: 0;
+} 
+
+
+
+
+
+.right-last {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+
+
+.box {
+  gap: 1em;
+  background-color: #fff;
+  box-shadow: inset 0 0 10px rgba(107, 105, 105, 0.8);
+  display: flex;
+  flex-direction: column;
+  border-radius: 2em;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  align-items: center;
+  padding: 0.6em;
+  position: relative;
+  
+}
+
+
+
+.box:nth-child(1) {
+  padding: 1em;
+  top: -20px;
+  left: 140px;
+}
+
+.box:nth-child(2) {
+  padding: 1em;
+  left: 40px;
+}
+
+.box:nth-child(3) {
+  padding: 1em;
+  left: 150px;
+  top: 40px;
+}
+
+.box img {
+  margin-right: 10px;
+}
+
+.box span{ 
+  font-size: 13px;
+}
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .right,
+  .left {
+    flex-basis: 100%;
+  }
+
+  .box img {
+    max-width: 20px; /* Adjust as needed for smaller screen */
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -229,3 +404,9 @@
   } 
 
 } 
+
+
+
+
+
+

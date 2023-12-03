@@ -85,12 +85,18 @@ h1 span {
     font-weight: normal;
   }
   .navbar h1 {
-    font-size: 11px;
+    font-size: 10px;
+  }
+
+  .navbar span{ 
+    font-size: 10px;
   }
 
   .navbar ul li a {
     padding: 3px;
-    font-size: 10px;
+    /* width: 2em; */
+    /* display: flex; */
+    font-size: 7px;
   }
 
   .navbar-last {
