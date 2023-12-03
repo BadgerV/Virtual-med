@@ -109,6 +109,13 @@ const Home = () => {
   <div className="simple-boxes">
     <img src="assets/positive-thinking_7660512 1.svg" alt="" />
     <h1>Check Doctor's Profile</h1>
+    <h1>Check Doctor's Profile</h1>
+    <h1>Check Doctor's Profile</h1>
+    <h1>Check Doctor's Profile</h1>
+    <h1>Check Doctor's Profile</h1>
+    <h1>Check Doctor's Profile</h1>
+    <h1>Check Doctor's Profile</h1>
+
     <span>Browse through our extensive and experienced medical practitioners</span>
   </div>
 
