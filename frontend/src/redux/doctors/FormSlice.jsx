@@ -21,7 +21,8 @@ const initialState = {
   graduationDate: null,
   degreeCertificate: "",
   POMI: "",
-  CV : ""
+  CV: "",
+  proofOfIdentity : ""
 };
 
 const generateSetReducer = (property) => {
@@ -65,6 +66,7 @@ export const {
   setPOMI,
   setCV,
   setDateOfBirth,
+  setProofOfIdentity,
 } = formSlice.actions;
 
 export default formSlice.reducer;

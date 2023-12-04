@@ -5,6 +5,7 @@ import EducationForm from "../../components/EducationForm/EducationForm";
 import WorkForm from "../../components/WorkForm/WorkForm";
 import CertificationForm from "../../components/CertificateForm/CertificateForm";
 import ProfessionalReferencesForm from "../../components/ProfessionalReferencesForm/ProfessionalReferencesForm";
+import OthersForm from "../../components/OthersForm/OthersForm";
 
 const DoctorRegister = () => {
   const [currentTab, setCurrentTab] = useState("basic-info");
@@ -40,7 +41,7 @@ const DoctorRegister = () => {
       case 3:
         return <CertificationForm />;
       case 4:
-        return <ProfessionalReferencesForm />;
+        return <OthersForm />;
       default:
         return null;
     }

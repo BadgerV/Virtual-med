@@ -1,13 +1,13 @@
 import mongoose from "mongoose";
 import validator from "validator";
 
-const referenceSchema = new mongoose.Schema(
-  {
-    nameOfReference: String,
-    numberOfReference: String,
-  },
-  { _id: false } // Disable _id for the professionalReferences subdocument
-);
+// const referenceSchema = new mongoose.Schema(
+//   {
+//     nameOfReference: String,
+//     numberOfReference: String,
+//   },
+//   { _id: false } // Disable _id for the professionalReferences subdocument
+// );
 
 const tokenSchema = new mongoose.Schema(
   {
@@ -135,8 +135,6 @@ const StaffSchema = new mongoose.Schema(
       type: Date,
       required: true,
     },
-
-    professionalReferences: [referenceSchema],
     tokens: [tokenSchema],
 
     verificationToken: {
