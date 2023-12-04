@@ -250,7 +250,7 @@ const BasicInfoForm = () => {
       {month}
     </option>
   ));
-  const years = generateOptions(1960, 2005);
+  // const years = generateOptions(1960, 2005);
 
   return (
     <div className="basic-form">
