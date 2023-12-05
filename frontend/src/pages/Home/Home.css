@@ -12,11 +12,11 @@
   flex-direction: column;
   gap: 0.3em;
   width: 80%;
-  padding: 2em;
+  padding: 1em;
 }
 
 .home-big-text {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 700;
   line-height: 130%;
   color: black;
@@ -65,8 +65,9 @@
 .home-button-div {
   display: flex;
   flex-direction: row;
-  gap: 4em;
+  gap: 2.5em;
   margin-top: 1em;
+  width: 100%;
 }
 
 .home-first-button {
@@ -101,11 +102,107 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-
 }
 
 .fast-and-simple-container {
   margin-top: 5em;
   width: 85%;
+}
+
+@media (max-width: 987px) {
+  .home {
+    grid-template-columns: 1fr 0.5fr;
+  }
+}
+@media (max-width: 925px) {
+  .home {
+    grid-template-columns: 1fr 0.5fr;
+  }
+  .home-left {
+    width: 100%;
+  }
+}
+
+@media (max-width: 855px) {
+  .home {
+    padding: 2em;
+  }
+}
+
+@media (max-width: 780px) {
+  .home {
+    grid-template-columns: 1fr;
+  }
+  .home-right {
+    display: none;
+  }
+  .home-left {
+    width: 70%;
+  }
+}
+
+@media (max-width: 720px) {
+  .home-left {
+    width: 80%;
+  }
+}
+@media (max-width: 650px) {
+  .home-left {
+    width: 90%;
+  }
+}
+@media (max-width: 560px) {
+  .home-button-div {
+    gap: 0.5em;
+  }
+}
+@media (max-width: 530px) {
+  .home-first-button {
+    padding: 1.5em;
+    font-size: 0.85em;
+    width: fit-content;
+  }
+  .home-second-button {
+    padding: 1.5em;
+    font-size: 0.85em;
+    width: fit-content;
+  }
+}
+@media (max-width: 425px) {
+  .home-button-div {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .home-second-button {
+    outline: 1px sOlid #D3D3D3;
+    border-radius: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 1em;
+  }
+  .home-left {
+    width: 90%;
+  }
+
+  .home-small-text {
+    font-size: 0.85em;
+  }
+
+  .home-first-text {
+    font-size: 0.9em;
+  }
+
+  .home-second-text {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 380px) {
+  .home {
+    padding: 0.5em;
+  }
 }

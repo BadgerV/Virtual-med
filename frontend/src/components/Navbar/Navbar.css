@@ -1,115 +1,150 @@
 @import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap");
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.8em 4em;
-  border-bottom: 2px solid #edeaea;
-}
+  padding: 1em 2em;
 
-.navbar h1 {
-  font-size: 1.3em;
-  font-weight: 600;
-  color: #333;
-  font-family: "Goldman", sans-serif;
-}
-
-h1 span {
-  color: #3C84FB;
-  font-family: "Goldman", sans-serif;
-  font-weight: 400;
-}
-
-.navbar ul li {
   display: flex;
   flex-direction: row;
-  gap: 3em;
-  cursor: pointer;
-}
-
-.navbar ul li a {
-  color: #000000;
-  text-decoration: none;
-  font-weight: 500;
-
-  font-size: 0.93em;
-}
-
-.navbar-last {
-  display: flex;
   align-items: center;
+  gap: 3em;
+  justify-content: space-between;
+
+  border-bottom: 2px solid #edeaea;
+  position: relative;
+}
+
+.navbar-left {
+  font-family: "Goldman", sans-serif;
+  font-size: 1.2em;
+}
+
+.navbar-left span {
+  color: #3c84fb;
+  font-weight: 600;
+}
+
+.navbar-middle {
+  flex: 0.5;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-link {
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+.navbar-right {
+  display: flex;
+  flex-direction: row;
   gap: 2em;
 }
 
-.navbar-last span {
+.navbar-signin {
   color: black;
-  font-weight: 500;
   font-size: 0.93em;
 }
 
-.navbar-last .btn {
+.navbar-get_started {
+  color: white;
   background-color: #023382;
-  color: #fff;
-  padding: 0.8em 1.5em;
+  padding: 0.8em 2em;
   border-radius: 50px;
-  margin-left: 10px;
-  font-size: 0.93em;
-  font-weight: 600;
+  font-size: 0.9em;
+  font-weight: 500;
 }
 
-/* Media query for devices with a width between 768px and 1024px */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .navbar h1 {
-    font-size: 20px;
-  }
-
-  .navbar ul li a {
-    padding: 5px;
-    font-size: 14px;
-  }
-
-  .navbar-last .btn {
-    padding: 0.5em 0.8em;
-    font-size: 12px;
-  }
+.navbar-mobile-devices {
+  display: none;
 }
 
-/* Media query for devices with a width less than or equal to 768px */
-@media (max-width: 768px) {
+@media (max-width: 1186px) {
+  .navbar-middle {
+    flex: 0.7;
+  }
+}
+@media (max-width: 1000px) {
+  .navbar-middle {
+    flex: 0.8;
+  }
+}
+@media (max-width: 900px) {
+  .navbar-middle {
+    flex: 0.9;
+  }
+}
+@media (max-width: 830px) {
+  .navbar-middle {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
   .navbar {
-    padding: 0.5em;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    font-weight: normal;
+    padding: 1em;
   }
-  .navbar h1 {
-    font-size: 10px;
+}
+@media (max-width: 450px) {
+  .navbar-get_started {
+    display: none;
   }
 
-  .navbar span{ 
-    font-size: 10px;
+  .navbar-mobile-devices {
+    display: block;
+    z-index: 999;
+    transition: 0.2s all ease-in-out;
   }
 
-  .navbar ul li a {
-    padding: 3px;
-    /* width: 2em; */
-    /* display: flex; */
-    font-size: 7px;
+  .navbar-mobile-devices img {
+    scale: 1.5;
+    cursor: pointer;
   }
 
-  .navbar-last {
-    gap: 0.3px;
-    text-align: center;
+  .navbar {
+    padding: 1em 0;
   }
 
-  .navbar-last span {
-    font-size: 10px;
+  .navbar-left {
+    margin-left: 1em;
   }
 
-  .navbar-last .btn {
-    padding: 0.4em 0.7em;
-    font-size: 9px;
+  .navbar-right {
+    margin-right: 1em;
   }
+}
+
+.navbar-modal {
+  position: absolute;
+  width: 100vw;
+  height: 50vh;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 23;
+}
+
+.navbar-modal img {
+  scale: 1.5;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  z-index: 24;
+
+  cursor: pointer;
+}
+
+.navbar-mobile-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3em;
+}
+
+.navbar-link-mobile {
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: 500;
 }

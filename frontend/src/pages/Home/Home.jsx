@@ -1,7 +1,40 @@
 import SimpleAndFast from "../../components/SimpleAndFast/SimpleAndFast";
 import "./Home.css";
+import { useState, useEffect } from "react";
 
 const Home = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [imageSource, setImageSource] = useState("");
+
+  // Function to update the image source based on window size
+  const updateImageSource = () => {
+    const width = window.innerWidth;
+    console.log(width)
+
+    // Set different image sources based on window size
+    if (width < 987) {
+      setImageSource("/assets/hero-image-smaller.png");
+    } else if (width >= 768 && width < 1024) {
+      setImageSource("/assets/hero-image.png");
+    } else {
+      setImageSource("/assets/hero-image.png");
+    }
+  };
+
+  // Update the image source on component mount and window resize
+  useEffect(() => {
+    updateImageSource();
+
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <>
       <div className="home">
@@ -47,7 +80,7 @@ const Home = () => {
           </div>
         </div>
         <div className="home-right">
-          <img src="/assets/hero-image.png" alt="Hero Image" />
+          <img src={imageSource} alt="Hero Image" />
         </div>
       </div>
 
