@@ -17,11 +17,11 @@ button {
 }
 
 /* Optional: Add hover effect */
-button:hover {
+/* button:hover {
   background-color: #00008b;
   color: white;
   border-radius: 20px;
-}
+} */
 
 .second {
   border-radius: 20px;

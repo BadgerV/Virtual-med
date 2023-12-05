@@ -1,0 +1,59 @@
+.simple-and-fast {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  align-items: center;
+
+  width: 100%;
+  padding: 1em;
+}
+
+.simple-and-fast-header-text {
+  color: #023382;
+  font-size: 0.93em;
+  font-weight: 500;
+}
+
+.simple-and-fast-first-text {
+  display: block;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.fast-list-of-services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+  width: 100%;
+  gap: 2em;
+}
+
+.fast-list-service {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.fast-list-service img {
+    height: 3em;
+    width: 3em;
+}
+
+.services-smaller-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.services-smaller-header {
+  color: #023382;
+  font-weight: 600;
+  font-size: 0.93emm;
+}
+
+.smaller-text {
+  color: black;
+  font-size: 0.87em;
+}
