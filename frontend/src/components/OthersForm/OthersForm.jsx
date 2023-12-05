@@ -15,7 +15,6 @@ const OthersForm = () => {
   const dispatch = useDispatch();
 
   const [proof, setProof] = useState(null);
-  const [passport, setPassport] = useState(null);
 
   const [location, setLocation] = useState("");
   const [speciality, setSpeciality] = useState("");
@@ -23,7 +22,6 @@ const OthersForm = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
 
   const [proofLink, setProofLink] = useState("");
-  const [passportLink, setPassportLink] = useState("");
 
   const handleProofUpload = (file, setLinkState) => {
     const formData = new FormData();
@@ -69,11 +67,7 @@ const OthersForm = () => {
     }
   }, [proof]);
 
-  useEffect(() => {
-    if (passport !== null) {
-      handleProofUpload(passport, setPassportLink);
-    }
-  }, [passport]);
+
 
   return (
     <div className="others-form">
@@ -88,16 +82,6 @@ const OthersForm = () => {
         <span className="others-fake_container">
           {proof ? proof.name : "Proof of identity"}
         </span>
-      </div>
-      <div className="others-form_proof-div">
-        <label htmlFor="">Professional Passport *</label>
-        <input
-          type="file"
-          onChange={(e) => {
-            setPassport(e.target.files[0]);
-          }}
-        />
-        <span className="others-fake_container">Professional passport</span>
       </div>
 
       <div className="others-together_form">

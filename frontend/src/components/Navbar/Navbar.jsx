@@ -14,7 +14,7 @@ const Navbar = () => {
         <li>
           <a href="">Home</a>
           <a href="">Services</a>
-          <a href="">Doctors</a>
+          <Link to="/finddoctor">Doctors</Link>
           <a href="">Contact Us</a>
         </li>
       </ul>

@@ -1,5 +1,6 @@
 import "./basicInfoForm.css";
 // import Select from "react-select";
+import axios from "axios";
 
 import { useEffect, useState } from "react";
 import {
@@ -10,6 +11,7 @@ import {
   setLastName,
   setEmail,
   setDateOfBirth,
+  setPassportImage,
 } from "../../redux/doctors/FormSlice";
 import { useDispatch, useSelector } from "react-redux";
 import DatePicker from "react-datepicker";
@@ -136,36 +138,36 @@ const BasicInfoForm = () => {
   //   { value: "option3", label: "Option 3" },
   // ];
 
-  const [selectedDay, setSelectedDay] = useState("");
-  const [selectedMonth, setSelectedMonth] = useState("");
-  const [selectedYear, setSelectedYear] = useState("");
+  // const [selectedDay, setSelectedDay] = useState("");
+  // const [selectedMonth, setSelectedMonth] = useState("");
+  // const [selectedYear, setSelectedYear] = useState("");
 
-  useEffect(() => {
-    var dob;
-    if (selectedDay !== "" && selectedMonth !== "" && selectedYear !== "") {
-      dob = getFormattedDateOfBirth(selectedDay, selectedMonth, selectedYear);
-    }
+  // useEffect(() => {
+  //   var dob;
+  //   if (selectedDay !== "" && selectedMonth !== "" && selectedYear !== "") {
+  //     dob = getFormattedDateOfBirth(selectedDay, selectedMonth, selectedYear);
+  //   }
 
-    // Update the formData state
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      dateOfBirth: dob,
-    }));
+  //   // Update the formData state
+  //   setFormData((prevFormData) => ({
+  //     ...prevFormData,
+  //     dateOfBirth: dob,
+  //   }));
 
-    console.log(formData);
-  }, [selectedDay, selectedMonth, selectedYear]);
+  //   console.log(formData);
+  // }, [selectedDay, selectedMonth, selectedYear]);
 
-  const handleDayChange = (e) => {
-    setSelectedDay(e.target.value);
-  };
+  // const handleDayChange = (e) => {
+  //   setSelectedDay(e.target.value);
+  // };
 
-  const handleMonthChange = (e) => {
-    setSelectedMonth(e.target.value);
-  };
+  // const handleMonthChange = (e) => {
+  //   setSelectedMonth(e.target.value);
+  // };
 
-  const handleYearChange = (e) => {
-    setSelectedYear(e.target.value);
-  };
+  // const handleYearChange = (e) => {
+  //   setSelectedYear(e.target.value);
+  // };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -203,8 +205,7 @@ const BasicInfoForm = () => {
     }
   }, [formData.gender]);
   useEffect(() => {
-      dispatch(setDateOfBirth(selectedDate?.getTime()));
-    
+    dispatch(setDateOfBirth(selectedDate?.getTime()));
   }, [selectedDate]);
   // useEffect(() => {
   //   if (formData.location !== "") {
@@ -212,50 +213,66 @@ const BasicInfoForm = () => {
   //   }
   // }, [formData.location]);
 
-  const generateOptions = (start, end) => {
-    const options = [];
-    for (let i = start; i <= end; i++) {
-      options.push(
-        <option key={i} value={i}>
-          {i}
-        </option>
-      );
-    }
-    return options;
+  // const generateOptions = (start, end) => {
+  //   const options = [];
+  //   for (let i = start; i <= end; i++) {
+  //     options.push(
+  //       <option key={i} value={i}>
+  //         {i}
+  //       </option>
+  //     );
+  //   }
+  //   return options;
+  // };
+
+  const handleProofUpload = (file, setLinkState) => {
+    const formData = new FormData();
+    formData.append("file", passport);
+    formData.append("upload_preset", "zf4edni8"); // Replace with your Cloudinary upload preset
+
+    axios
+      .post("https://api.cloudinary.com/v1_1/dfn3xhl0a/upload", formData)
+      .then((response) => {
+        console.log(response.data["secure_url"]);
+        setLinkState(response.data["secure_url"]);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
-  const handleGenderChange = (e) => {
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      gender: e.target.value,
-    }));
-  };
-  const days = generateOptions(1, 31);
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ].map((month, index) => (
-    <option key={index} value={index + 1}>
-      {month}
-    </option>
-  ));
-  // const years = generateOptions(1960, 2005);
+  const [passport, setPassport] = useState(null);
+  const [passportLink, setPassportLink] = useState("");
+
+  useEffect(() => {
+    if (passport !== null) {
+      handleProofUpload(passport, setPassportLink);
+    }
+  }, [passport]);
+
+  useEffect(() => {
+    if (passportLink !== "") {
+      dispatch(setPassportImage(passportLink));
+    }
+  }, [passportLink]);
 
   return (
     <div className="basic-form">
       <div className="photo-form">
-        <img type="image" src="/assets/avatar-fake.png" />
-        <input type="file" className="basic-form_file" />
+        <img
+          type="image"
+          src={
+            passport ? URL.createObjectURL(passport) : "/assets/avatar-fake.png"
+          }
+          style={{maxHeight : "8em", maxWidth : "8em"}}
+        />
+        <input
+          type="file"
+          className="basic-form_file"
+          onChange={(e) => {
+            setPassport(e.target.files[0]);
+          }}
+        />
         <span>Upload Photo</span>
       </div>
 

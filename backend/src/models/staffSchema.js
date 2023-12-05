@@ -135,6 +135,12 @@ const StaffSchema = new mongoose.Schema(
       type: Date,
       required: true,
     },
+    rating: {
+      type: Number,
+    },
+    noOfRatings: {
+      type: Number,
+    },
     tokens: [tokenSchema],
 
     verificationToken: {

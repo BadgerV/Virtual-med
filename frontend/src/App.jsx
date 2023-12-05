@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 // import Profile from "./components/Profile/Profile";
 // import Footer from "./components/Footer/Footer";
 // import Home from "./components/Home/Home";
@@ -56,8 +56,7 @@ const App = () => {
 
   useEffect(() => {
     const verifyUser = async () => {
-      const user = await dispatch(myProfile());
-      console.log(user);
+      await dispatch(myProfile());
     };
 
     verifyUser();
@@ -82,9 +81,6 @@ const App = () => {
             path="/chat"
             element={user ? <Chat /> : <Navigate to="/signup" />}
           />
-          {/* =======
->>>>>>> e4940758ada45dde05a87fc861ec176461e13426
->>>>>>> b7a779e18afc827b7dead550dd8b8083c65b8d5e */}
 
           <Route element={<PrivateRoutes />}>
             <Route path="/chat" element={<Chat />} />

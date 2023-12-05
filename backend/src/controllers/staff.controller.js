@@ -135,9 +135,24 @@ export const getStaff = catchAsync(async (req, res) => {
 });
 
 export const getStaffs = catchAsync(async (req, res) => {
-  const staffs = await Staff.find({});
+  const staffs = await Staff.find({
+    // Add other criteria as needed
+    passportImage: { $exists: true },
+    // Add more criteria here
+  });
 
   res.status(200).send(staffs);
+});
+
+export const getOneStaff = catchAsync(async (req, res) => {
+  console.log(req.query.id)
+  const staff = await Staff.findOne({
+    _id: req.query.id,
+    // Add other criteria as needed
+    // Add more criteria here
+  });
+
+  res.status(200).send(staff);
 });
 
 export const getActiveStaffs = catchAsync(async (req, res) => {
@@ -155,65 +170,63 @@ export const getSpecialists = catchAsync(async (req, res) => {
   res.status(200).send(foundSpecialists);
 });
 
-export const approvePatient = catchAsync(
-  async (req, res) => {
-    const { userId } = req.body;
-    const staff = req.staff;
+export const approvePatient = catchAsync(async (req, res) => {
+  const { userId } = req.body;
+  const staff = req.staff;
 
-    // Check if the user is a premium user
-    const user = await User.findOne({ _id: userId, isPremium: true });
+  // Check if the user is a premium user
+  const user = await User.findOne({ _id: userId, isPremium: true });
 
-    if (!user) {
-      throw new AppError("Please subscribe to enjoy this feature", 400);
-    }
-
-    const isUserPending = staff.pendingPatients.includes(userId);
-    const isAlreadyPatient = staff.currentPatients.includes(userId);
-
-    if (!isUserPending) {
-      throw new AppError("User is not in your pending patients list");
-    }
-
-    if (isAlreadyPatient) {
-      throw new AppError("User is already your patient");
-    }
-    // Use filter to create a new array without the userId
-    const pendingPatients = staff.pendingPatients.filter(
-      (patientId) => patientId != userId
-    );
-
-    // Add the userId to the currentPatients array
-    staff.currentPatients.push(userId);
-    user.assignedDoctors.push(staff._id);
-    staff.pendingPatients = pendingPatients;
-
-    // Save the changes to the database
-    await staff.save();
-    await user.save();
-
-    var chatData = {
-      chatName: "sender",
-      isCommunity: false,
-      users: [user._id],
-      staffMembers: [staff._id],
-    };
-    try {
-      const createdChat = await Chat.create(chatData);
-
-      const FullChat = await Chat.findOne({
-        _id: createdChat._id,
-      })
-        .populate("users")
-        .populate("staffMembers");
-
-        console.log(FullChat)
-
-      res.status(200).send(FullChat);
-    } catch (error) {
-      throw new AppError(error.message, 400);
-    }
+  if (!user) {
+    throw new AppError("Please subscribe to enjoy this feature", 400);
   }
-);
+
+  const isUserPending = staff.pendingPatients.includes(userId);
+  const isAlreadyPatient = staff.currentPatients.includes(userId);
+
+  if (!isUserPending) {
+    throw new AppError("User is not in your pending patients list");
+  }
+
+  if (isAlreadyPatient) {
+    throw new AppError("User is already your patient");
+  }
+  // Use filter to create a new array without the userId
+  const pendingPatients = staff.pendingPatients.filter(
+    (patientId) => patientId != userId
+  );
+
+  // Add the userId to the currentPatients array
+  staff.currentPatients.push(userId);
+  user.assignedDoctors.push(staff._id);
+  staff.pendingPatients = pendingPatients;
+
+  // Save the changes to the database
+  await staff.save();
+  await user.save();
+
+  var chatData = {
+    chatName: "sender",
+    isCommunity: false,
+    users: [user._id],
+    staffMembers: [staff._id],
+  };
+  try {
+    const createdChat = await Chat.create(chatData);
+
+    const FullChat = await Chat.findOne({
+      _id: createdChat._id,
+    })
+      .populate("users")
+      .populate("staffMembers");
+
+    console.log(FullChat);
+
+    res.status(200).send(FullChat);
+  } catch (error) {
+    throw new AppError(error.message, 400);
+  }
+});
 
 export const viewPendingPatients = catchAsync(async (req, res) => {
   const staff = req.staff;

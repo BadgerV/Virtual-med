@@ -11,9 +11,11 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { registerStaff } from "../../redux/doctors/FormSlice";
 import AbouttMe from "../../components/AboutMe/AbouttMe";
+import { useNavigate } from "react-router-dom";
 
 const DoctorRegister = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const [currentTab, setCurrentTab] = useState("basic-info");
   const [currentTabNumber, setCurrentTabNumber] = useState(1);
@@ -61,6 +63,14 @@ const DoctorRegister = () => {
     CV,
     aboutMe,
   } = useSelector((state) => state.formSlice);
+
+  const staff = useSelector((state) => state.formSlice.staff);
+  const user = useSelector((state) => state.userSlice.user);
+  useEffect(() => {
+    if (staff !== null || user !== null) {
+      navigate("/");
+    }
+  }, [staff, user]);
 
   // Local state to track changes
   const [localFirstName, setLocalFirstName] = useState(firstName);
@@ -189,13 +199,57 @@ const DoctorRegister = () => {
   const checkFields = (e, callback) => {
     e.preventDefault();
 
-    callback(e);
+    const isAnyFieldNullOrEmpty =
+      !firstName ||
+      !lastName ||
+      !email ||
+      !password ||
+      !phoneNumber ||
+      !medicalLisense ||
+      !proofOfIdentity ||
+      !speciality ||
+      !hourlyPrice ||
+      !passportImage ||
+      !dateOfBirth ||
+      !location ||
+      !boardCertification ||
+      !major ||
+      !degree ||
+      !university ||
+      !graduationDate ||
+      !degreeCertificate ||
+      !CV ||
+      firstName.trim() === "" ||
+      lastName.trim() === "" ||
+      email.trim() === "" ||
+      password.trim() === "" ||
+      phoneNumber.trim() === "" ||
+      medicalLisense.trim() === "" ||
+      proofOfIdentity.trim() === "" ||
+      speciality.trim() === "" ||
+      hourlyPrice.trim() === "" ||
+      passportImage.trim() === "" ||
+      dateOfBirth.trim() === "" ||
+      location.trim() === "" ||
+      boardCertification.trim() === "" ||
+      major.trim() === "" ||
+      degree.trim() === "" ||
+      university.trim() === "" ||
+      graduationDate.trim() === "" ||
+      degreeCertificate.trim() === "" ||
+      CV.trim() === "";
+
+    if (isAnyFieldNullOrEmpty) {
+      setIsNullOrEmpty(true);
+    } else {
+      callback(e);
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await dispatch(
+    await dispatch(
       registerStaff({
         firstName: localFirstName,
         lastName: localLastName,
@@ -222,8 +276,6 @@ const DoctorRegister = () => {
         aboutMe: localAboutMe,
       })
     );
-
-    console.log(response);
   };
 
   const renderForm = () => {

@@ -1,8 +1,29 @@
 import DoctorCard from "../../components/DoctorCard/DoctorCard";
 import "./findDoctor.css";
+import { getDoctors } from "../../redux/doctors/DoctorsSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import LoadingComponennt from "../../components/LoadingComponent/LoadingComponent";
 
 const FindDoctor = () => {
-  const doctorsArray = [2, 3, 4, 5];
+  const dispatch = useDispatch();
+
+  const doctors = useSelector((state) => state.doctorSlice.doctors);
+  const isLoading = useSelector((state) => state.doctorSlice.loading);
+
+  const getListOfDoctors = async () => {
+    await dispatch(getDoctors());
+  };
+
+  useEffect(() => {
+    console.log("active");
+    getListOfDoctors();
+  }, []);
+
+  useEffect(() => {
+    console.log(doctors);
+  }, [doctors]);
+
   return (
     <div className="find-doctor">
       <div className="find-doctor-header">
@@ -63,7 +84,7 @@ const FindDoctor = () => {
             </div>
 
             <div className="find-doctor-check_n_option">
-              <input type="checkbox" />
+              <input type="checkbox" />w
               <span>Therapist</span>
             </div>
           </div>
@@ -82,9 +103,13 @@ const FindDoctor = () => {
           </div>
         </div>
         <div className="find-doctor-right">
-          {doctorsArray.map((doctor, index) => {
-            return <DoctorCard key={index} props={doctor} />;
-          })}
+          {!isLoading ? (
+            doctors.map((doctor, index) => {
+              return <DoctorCard key={index} {...doctor} />;
+            })
+          ) : (
+            <LoadingComponennt />
+          )}
         </div>
       </div>
     </div>

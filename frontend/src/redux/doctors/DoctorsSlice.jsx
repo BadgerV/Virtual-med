@@ -8,19 +8,35 @@ const initialState = {
   doctors: [],
   loading: false,
   error: null,
+  foundDoctor: null,
 };
-
 
 //THIS IS ESSENTIALLY THE FORMAT WE WILL USE FOR GET REQUESTS. IN THE BACKEND/SRC/ROUTES/STAFF OR USERROUTES THERE ARE LISTS OF ROUTES, THE POST ROUTES MIGHT BE TRICKY RIGHT NOW, BUT WE CAN STILL IMPLEMENT THE GET ROUTES. ESPECIALLY THE ONES WITHOUT MIDDLEWARES.
 export const getDoctors = createAsyncThunk("/doctors/get-doctors", async () => {
   try {
     const response = await axios.get(`${DEVELOPMENT}/staff/get-staffs`);
 
-    console.log(response)
+    console.log(response);
 
     return response.data;
   } catch (error) {
     return Promise.reject(error.response.data);
+  }
+});
+
+export const getDoctor = createAsyncThunk("/doctors/get-doctor", async (id) => {
+  console.log(id)
+  try {
+    const response = await axios.get(
+      `${DEVELOPMENT}/staff/get-staff/:?id=${id}`
+    );
+
+    console.log(response.data);
+
+    return response.data;
+  } catch (error) {
+    console.log(error);
+    Promise.reject(error.message);
   }
 });
 
@@ -47,6 +63,17 @@ const doctorSlice = createSlice({
       .addCase(getDoctors.rejected, (state, action) => {
         state.loading = false;
         state.error = action.payload.error;
+      })
+      .addCase(getDoctor.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(getDoctor.fulfilled, (state, action) => {
+        state.loading = false;
+        state.foundDoctor = action.payload;
+      })
+      .addCase(getDoctor.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.error.message;
       });
   },
 });

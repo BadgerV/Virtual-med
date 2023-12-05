@@ -63,13 +63,26 @@ export const loginUser = createAsyncThunk(
         }
       );
 
-      // Assuming the 'auth' cookie is set by the server
-      // console.log(response.data);
-
       return response.data;
     } catch (error) {
-      console.log(error.response.data);
-      return Promise.reject(error.response.data);
+      try {
+        const response = await axios.post(
+          `${DEVELOPMENT}/user/login`,
+          {
+            email,
+            password,
+          },
+          {
+            withCredentials: true,
+          }
+        );
+
+        console.log(response)
+
+        return response.data;
+      } catch (error) {
+        return Promise.reject(error.response.message)
+      }
     }
   }
 );
@@ -80,9 +93,17 @@ export const myProfile = createAsyncThunk("/user/profile", async () => {
       withCredentials: true,
     });
 
+    console.log(response)
     return response.data;
   } catch (error) {
-    await Promise.all(error);
+    try {
+      const response1 = await axios.get(`${DEVELOPMENT}/staff/profile`, {
+        withCredentials: true,
+      });
+      return response1.data
+    } catch (error) {
+      return Promise.reject(error.response1.data);
+    }
   }
 });
 
@@ -217,7 +238,6 @@ const userSlice = createSlice({
       })
       .addCase(myProfile.fulfilled, (state, action) => {
         state.user = action.payload;
-        console.log(state.user);
         state.loading = false;
         state.isSuccess = true;
         state.loadingUserProfile = false;

@@ -26,7 +26,11 @@ const initialState = {
   POMI: "",
   CV: "",
   proofOfIdentity: "",
-  aboutMe : ""
+  aboutMe: "",
+
+  staff: null,
+  isLoading: false,
+  error: null,
 };
 
 export const registerStaff = createAsyncThunk(
@@ -55,44 +59,43 @@ export const registerStaff = createAsyncThunk(
     aboutMe,
   }) => {
     try {
-        const response = await axios.post(
-          `${DEVELOPMENT}/staff/register`,
-          {
-            firstName,
-            lastName,
-            email,
-            password,
-            phoneNumber,
-            medicalLisense,
-            proofOfIdentity,
-            speciality,
-            hourlyPrice,
-            passportImage,
-            dateOfBirth,
-            location,
-            boardCertification,
-            major,
-            degree,
-            university,
-            graduationDate,
-            degreeCertificate,
-            POMI,
-            CV,
-            aboutMe,
-          },
-          {
-            withCredentials: true,
-          }
-        );
+      const response = await axios.post(
+        `${DEVELOPMENT}/staff/register`,
+        {
+          firstName,
+          lastName,
+          email,
+          password,
+          phoneNumber,
+          medicalLisense,
+          proofOfIdentity,
+          speciality,
+          hourlyPrice,
+          passportImage,
+          dateOfBirth,
+          location,
+          boardCertification,
+          major,
+          degree,
+          university,
+          graduationDate,
+          degreeCertificate,
+          POMI,
+          CV,
+          aboutMe,
+        },
+        {
+          withCredentials: true,
+        }
+      );
 
-        console.log(response)
+      return response.data;
     } catch (e) {
-      console.log(e.message)
-      Promise.reject(e.error.message)
+      console.log(e.message);
+      Promise.reject(e.error.message);
     }
   }
 );
-
 
 const generateSetReducer = (property) => {
   return (state, action) => {
@@ -110,6 +113,22 @@ const formSlice = createSlice({
   name: "form",
   initialState,
   reducers,
+  extraReducers: (builders) => {
+    builders
+      .addCase(registerStaff.pending, (state) => {
+        state.isLoading = true;
+        state.error = null;
+      })
+      .addCase(registerStaff.fulfilled, (state, action) => {
+        state.isLoading = false;
+        state.staff = action.payload;
+        state.error = null;
+      })
+      .addCase(registerStaff.rejected, (state, action) => {
+        state.isLoading = false;
+        state.error = action.error.message;
+      });
+  },
 });
 
 export const {
@@ -136,7 +155,7 @@ export const {
   setCV,
   setDateOfBirth,
   setProofOfIdentity,
-  setAboutMe
+  setAboutMe,
 } = formSlice.actions;
 
 export default formSlice.reducer;

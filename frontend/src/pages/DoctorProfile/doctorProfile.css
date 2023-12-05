@@ -175,6 +175,7 @@
 
 .profile-doctor-review-container {
   margin-top: 3em;
+  width: 80%;
 }
 
 .profile-doctor-review_header {
@@ -206,7 +207,10 @@
 .profile-doctor-review_header-right {
   display: flex;
   flex-direction: column;
+  font-size: 0.9em;
 }
+
+
 
 .profile-doctor-review_header-right-top span {
   font-size: 0.85em;
@@ -269,5 +273,12 @@
 
   .doctor-profile-page {
     padding: 2em 1em;
+  }
+}
+
+@media (max-width : 488px) {
+  .doctor-profile-page {
+    padding: 2em 0.3em;
+    font-size: 15px;
   }
 }
