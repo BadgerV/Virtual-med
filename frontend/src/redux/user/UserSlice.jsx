@@ -46,38 +46,8 @@ export const registerUser = createAsyncThunk(
   }
 );
 
-export const registerStaff = createAsyncThunk(
-  "/staff/resgisterStaff",
-  async ({
-    firstName,
-    lastName,
-    email,
-    password,
-    yearsOfExperience,
-    phoneNumber,
-    medicalLisense,
-    proofOfIdentity,
-    professionalMemberShip,
-    speciality,
-    hourlyPrice,
-  }) => {
-    const response = await axios.post(`${DEVELOPMENT}/staff/login`, {
-      firstName,
-      lastName,
-      email,
-      password,
-      yearsOfExperience,
-      phoneNumber,
-      medicalLisense,
-      proofOfIdentity,
-      professionalMemberShip,
-      speciality,
-      hourlyPrice,
-    });
 
-    console.log(response);
-  }
-);
+
 export const loginUser = createAsyncThunk(
   "/user/loginUser",
   async ({ email, password }) => {

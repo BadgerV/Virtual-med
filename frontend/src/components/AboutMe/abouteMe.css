@@ -1,0 +1,19 @@
+.about-me {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.about-me textarea {
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  height: 100%;
+  padding: 1em;
+}
+
+.about-me label {
+  color: white;
+  font-size: 0.9em;
+  font-weight: 500;
+}

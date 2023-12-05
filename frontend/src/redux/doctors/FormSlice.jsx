@@ -1,4 +1,7 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import axios from "axios";
+
+const DEVELOPMENT = "http://localhost:8000";
 
 const initialState = {
   firstName: "",
@@ -22,8 +25,74 @@ const initialState = {
   degreeCertificate: "",
   POMI: "",
   CV: "",
-  proofOfIdentity : ""
+  proofOfIdentity: "",
+  aboutMe : ""
 };
+
+export const registerStaff = createAsyncThunk(
+  "staff/registerStaff", // <-- Corrected thunk type
+  async ({
+    firstName,
+    lastName,
+    email,
+    password,
+    phoneNumber,
+    medicalLisense,
+    speciality,
+    hourlyPrice,
+    passportImage,
+    dateOfBirth,
+    location,
+    boardCertification,
+    major,
+    degree,
+    university,
+    graduationDate,
+    degreeCertificate,
+    POMI,
+    CV,
+    proofOfIdentity,
+    aboutMe,
+  }) => {
+    try {
+        const response = await axios.post(
+          `${DEVELOPMENT}/staff/register`,
+          {
+            firstName,
+            lastName,
+            email,
+            password,
+            phoneNumber,
+            medicalLisense,
+            proofOfIdentity,
+            speciality,
+            hourlyPrice,
+            passportImage,
+            dateOfBirth,
+            location,
+            boardCertification,
+            major,
+            degree,
+            university,
+            graduationDate,
+            degreeCertificate,
+            POMI,
+            CV,
+            aboutMe,
+          },
+          {
+            withCredentials: true,
+          }
+        );
+
+        console.log(response)
+    } catch (e) {
+      console.log(e.message)
+      Promise.reject(e.error.message)
+    }
+  }
+);
+
 
 const generateSetReducer = (property) => {
   return (state, action) => {
@@ -67,6 +136,7 @@ export const {
   setCV,
   setDateOfBirth,
   setProofOfIdentity,
+  setAboutMe
 } = formSlice.actions;
 
 export default formSlice.reducer;

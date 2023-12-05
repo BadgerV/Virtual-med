@@ -15,7 +15,7 @@ import {
 } from "../../redux/doctors/FormSlice";
 import { useDispatch } from "react-redux";
 
-const EducationForm = () => {
+const EducationForm = ({setLocalIsLoading}) => {
   const dispatch = useDispatch();
 
   const [selectedDate, setSelectedDate] = useState(null);
@@ -39,7 +39,8 @@ const EducationForm = () => {
     setSelectedFileName(event.target.files[0].name);
   };
 
-  const handleUpload = () => {
+  const handleUpload = (selectedFile, setLocalIsLoading) => {
+    setLocalIsLoading(true);
     const formData = new FormData();
     formData.append("file", selectedFile);
     formData.append("upload_preset", "zf4edni8");
@@ -49,8 +50,10 @@ const EducationForm = () => {
       .then((response) => {
         console.log(response.data["secure_url"]);
         setImageUrl(response.data["secure_url"]);
+        setLocalIsLoading(false);
       })
       .catch((error) => {
+        setLocalIsLoading(false);
         console.error(error);
       });
   };
@@ -64,7 +67,9 @@ const EducationForm = () => {
   }, [imageUrl]);
 
   useEffect(() => {
-    dispatch(setGraduationDate(selectedDate));
+    if (selectedDate) {
+      dispatch(setGraduationDate(selectedDate.getTime()));
+    }
   }, [selectedDate]);
 
   useEffect(() => {
@@ -78,6 +83,12 @@ const EducationForm = () => {
   useEffect(() => {
     dispatch(setuniversity(university));
   }, [university]);
+
+  useEffect(() => {
+    if (selectedFile !== null) {
+      handleUpload(selectedFile, setLocalIsLoading);
+    }
+  }, [selectedFile]);
 
   return (
     <div className="educational-form">
@@ -121,7 +132,7 @@ const EducationForm = () => {
           <input
             type="file"
             onChange={(e) => {
-              handleFileChange(e), handleUpload();
+              handleFileChange(e);
             }}
           />
           <img src="/assets/cloud-icon.svg" alt="" />

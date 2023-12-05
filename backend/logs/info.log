@@ -2772,3 +2772,118 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2023-12-03 08:22:37 info: GET /admin/get-unverified-users [32m200 571.904 ms - 13735
 2023-12-03 08:23:14 error: 500 - Staff validation failed: proofOfIdentity: Path `proofOfIdentity` is required., hourlyPrice: Path `hourlyPrice` is required., location: Path `location` is required., passportImage: Path `passportImage` is required., boardCertification: Path `boardCertification` is required., medicalLisense: Path `medicalLisense` is required. - /admin/verify-user - POST - ::1
 2023-12-03 08:23:14 info: POST /admin/verify-user [31m500 738.730 ms - 1183
+2023-12-05 11:11:46 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:11:46 info: POST /staff/register [33m400 18.508 ms - 1434
+2023-12-05 11:12:04 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:12:04 info: GET /user/profile [33m404 6.705 ms - 61
+2023-12-05 11:12:08 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:12:08 info: POST /staff/register [33m400 5.822 ms - 1434
+2023-12-05 11:12:54 error: 400 - Please fill all the inputs - /staff/register - POST - ::1
+2023-12-05 11:12:54 info: POST /staff/register [33m400 5.465 ms - 1434
+2023-12-05 11:14:59 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:14:59 info: GET /user/profile [33m404 5.094 ms - 61
+2023-12-05 11:15:39 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:15:39 info: GET /user/profile [33m404 43.285 ms - 61
+2023-12-05 11:15:44 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:15:44 info: POST /staff/register [33m400 5.547 ms - 1434
+2023-12-05 11:16:12 error: 400 - Unexpected end of JSON input - /staff/register - POST - ::1
+2023-12-05 11:16:19 error: 400 - Please fill all the inputs - /staff/register - POST - ::1
+2023-12-05 11:16:19 info: POST /staff/register [33m400 6.589 ms - 1434
+2023-12-05 11:19:23 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:19:23 info: POST /staff/register [33m400 6.448 ms - 1434
+2023-12-05 11:20:07 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:20:07 info: GET /user/profile [33m404 8.392 ms - 61
+2023-12-05 11:20:13 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:20:13 info: POST /staff/register [33m400 5.452 ms - 1434
+2023-12-05 11:20:43 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:20:43 info: GET /user/profile [33m404 4.012 ms - 61
+2023-12-05 11:21:23 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:21:23 info: POST /staff/register [33m400 4.236 ms - 1434
+2023-12-05 11:26:03 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:26:03 info: GET /user/profile [33m404 8.825 ms - 61
+2023-12-05 11:28:21 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:28:21 info: POST /staff/register [33m400 9.643 ms - 1434
+2023-12-05 11:29:35 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:29:35 info: GET /user/profile [33m404 69.912 ms - 61
+2023-12-05 11:29:38 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:29:38 info: GET /user/profile [33m404 4.246 ms - 61
+2023-12-05 11:30:58 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:30:58 info: GET /user/profile [33m404 3.705 ms - 61
+2023-12-05 11:31:00 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:31:00 info: GET /user/profile [33m404 5.674 ms - 61
+2023-12-05 11:31:05 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:31:05 info: POST /staff/register [33m400 5.291 ms - 1434
+2023-12-05 11:31:37 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:31:37 info: GET /user/profile [33m404 37.268 ms - 61
+2023-12-05 11:31:40 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:31:40 info: GET /user/profile [33m404 23.238 ms - 61
+2023-12-05 11:31:48 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:31:48 info: POST /staff/register [33m400 5.792 ms - 1434
+2023-12-05 11:32:03 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:32:03 info: POST /staff/register [33m400 3.426 ms - 1434
+2023-12-05 11:32:27 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:32:27 info: POST /staff/register [33m400 20.515 ms - 1434
+2023-12-05 11:33:06 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:33:06 info: GET /user/profile [33m404 64.751 ms - 61
+2023-12-05 11:33:25 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:33:25 info: GET /user/profile [33m404 13.797 ms - 61
+2023-12-05 11:33:28 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:33:28 info: GET /user/profile [33m404 65.602 ms - 61
+2023-12-05 11:33:31 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:33:31 info: GET /user/profile [33m404 20.715 ms - 61
+2023-12-05 11:33:36 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:33:36 info: GET /user/profile [33m404 17.741 ms - 61
+2023-12-05 11:33:40 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:33:40 info: GET /user/profile [33m404 44.362 ms - 61
+2023-12-05 11:33:43 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:33:43 info: GET /user/profile [33m404 41.639 ms - 61
+2023-12-05 11:33:48 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:33:48 info: GET /user/profile [33m404 15.705 ms - 61
+2023-12-05 11:33:57 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:33:57 info: GET /user/profile [33m404 4.383 ms - 61
+2023-12-05 11:34:01 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:34:01 info: GET /user/profile [33m404 39.067 ms - 61
+2023-12-05 11:34:07 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:34:07 info: GET /user/profile [33m404 7.588 ms - 61
+2023-12-05 11:34:16 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:34:16 info: POST /staff/register [33m400 5.316 ms - 1434
+2023-12-05 11:34:54 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:34:54 info: GET /user/profile [33m404 27.390 ms - 61
+2023-12-05 11:35:25 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:35:25 info: POST /staff/register [33m400 3.803 ms - 1434
+2023-12-05 11:35:30 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:35:30 info: POST /staff/register [33m400 4.959 ms - 1434
+2023-12-05 11:35:34 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:35:34 info: POST /staff/register [33m400 4.731 ms - 1434
+2023-12-05 11:36:09 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:36:09 info: GET /user/profile [33m404 31.401 ms - 61
+2023-12-05 11:36:33 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:36:33 info: GET /user/profile [33m404 19.712 ms - 61
+2023-12-05 11:36:37 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:36:37 info: POST /staff/register [33m400 4.804 ms - 1434
+2023-12-05 11:36:47 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:36:47 info: POST /staff/register [33m400 6.387 ms - 1434
+2023-12-05 11:36:47 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:36:47 info: POST /staff/register [33m400 10.093 ms - 1434
+2023-12-05 11:36:49 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:36:49 info: GET /user/profile [33m404 48.633 ms - 61
+2023-12-05 11:36:52 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:36:52 info: POST /staff/register [33m400 4.216 ms - 1434
+2023-12-05 11:37:10 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:37:10 info: GET /user/profile [33m404 23.421 ms - 61
+2023-12-05 11:37:15 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:37:15 info: POST /staff/register [33m400 4.803 ms - 1434
+2023-12-05 11:38:33 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:38:33 info: POST /staff/register [33m400 3.960 ms - 1434
+2023-12-05 11:39:04 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:39:04 info: POST /staff/register [33m400 21.093 ms - 1434
+2023-12-05 11:39:04 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:39:04 info: POST /staff/register [33m400 5.848 ms - 1434
+2023-12-05 11:39:57 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:39:57 info: GET /user/profile [33m404 5.496 ms - 61
+2023-12-05 11:40:49 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-05 11:40:49 info: GET /user/profile [33m404 41.689 ms - 61
+2023-12-05 11:42:11 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:42:11 info: POST /staff/register [33m400 25.037 ms - 1434
+2023-12-05 11:45:20 error: 400 - Please fill all the inputs - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-05 11:45:20 info: POST /staff/register [33m400 16.985 ms - 1434

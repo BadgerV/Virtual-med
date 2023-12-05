@@ -23,10 +23,15 @@ const CertificationForm = () => {
   const [POMILink, setPOMILink] = useState("");
   const [CVLink, setCVLink] = useState("");
 
-  const handleUpload = (file, setLinkState) => {
+  const handleUpload = (
+    file,
+    setLinkState,
+    maxRetries = 5,
+    currentRetry = 1
+  ) => {
     const formData = new FormData();
     formData.append("file", file);
-    formData.append("upload_preset", "zf4edni8"); // Replace with your Cloudinary upload preset
+    formData.append("upload_preset", "b79lveak"); // Replace with your Cloudinary upload preset
 
     axios
       .post("https://api.cloudinary.com/v1_1/dfn3xhl0a/upload", formData)
@@ -36,6 +41,15 @@ const CertificationForm = () => {
       })
       .catch((error) => {
         console.error(error);
+
+        if (currentRetry <= maxRetries) {
+          console.log(`Retry attempt ${currentRetry} of ${maxRetries}`);
+          // Retry with an increased attempt count
+          handleUpload(file, setLinkState, maxRetries, currentRetry + 1);
+        } else {
+          console.error(`Failed after ${maxRetries} attempts. Giving up.`);
+          // Handle the error or throw an exception as needed
+        }
       });
   };
 
@@ -58,6 +72,19 @@ const CertificationForm = () => {
   useEffect(() => {
     dispatch(setcv(CVLink));
   }, [CVLink]);
+
+  // useEffect(() => {
+  //   handleUpload(medicalLisense, setMedicalLisenseLink);
+  // }, [medicalLisense]);
+  // useEffect(() => {
+  //   boardCertification;
+  // }, [setBoardCertification]);
+  // useEffect(() => {
+  //   handleUpload(POMI, setPOMI);
+  // }, [POMI]);
+  // useEffect(() => {
+  //   handleUpload(CV, setCV)
+  // }, [CV]);
 
   return (
     <div className="certification-form">
@@ -132,7 +159,7 @@ const CertificationForm = () => {
 
       {/* Curriculum Vitae */}
       <div className="cert-label-and-input">
-        <label htmlFor="CV">Curriculum vitae</label>
+        <label htmlFor="CV">Curriculum vitae *</label>
         <div className="cert-input-file-container">
           <input
             type="file"

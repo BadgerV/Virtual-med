@@ -147,14 +147,7 @@ select {
   justify-content: space-between;
 }
 
-.buttons-container button {
-  color: white;
-  background-color: #023382;
-  padding: 0.8em 1.8em;
-  font-size: 0.9em;
-  border-radius: 20px;
-  font-weight: 500;
-}
+
 
 
 .dropdown-icon {

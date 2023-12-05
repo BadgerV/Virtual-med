@@ -55,7 +55,6 @@ const BasicInfoForm = () => {
 
   const handleDateChange = (date) => {
     setSelectedDate(date);
-    console.log(date);
   };
 
   function getFormattedDateOfBirth(day, month, year) {
@@ -204,7 +203,7 @@ const BasicInfoForm = () => {
     }
   }, [formData.gender]);
   useEffect(() => {
-      dispatch(setDateOfBirth(selectedDate));
+      dispatch(setDateOfBirth(selectedDate?.getTime()));
     
   }, [selectedDate]);
   // useEffect(() => {

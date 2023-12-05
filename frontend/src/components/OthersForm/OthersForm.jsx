@@ -1,21 +1,21 @@
 import { useEffect, useState } from "react";
 import "./othersForm.css";
 import axios from "axios";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {
   setHourlyPrice as sethourlyprice,
   setLocation as setlocation,
   setPassportImage as setpassportimage,
   setProofOfIdentity as setproofofidentity,
   setPhoneNumber as setphonenumber,
-  setSpeciality as setspeciality
+  setSpeciality as setspeciality,
 } from "../../redux/doctors/FormSlice";
 
 const OthersForm = () => {
   const dispatch = useDispatch();
 
-  const [proof, setProof] = useState("");
-  const [passport, setPassport] = useState("");
+  const [proof, setProof] = useState(null);
+  const [passport, setPassport] = useState(null);
 
   const [location, setLocation] = useState("");
   const [speciality, setSpeciality] = useState("");
@@ -63,6 +63,18 @@ const OthersForm = () => {
     dispatch(setspeciality(speciality));
   }, [speciality]);
 
+  useEffect(() => {
+    if (proof !== null) {
+      handleProofUpload(proof, setProofLink);
+    }
+  }, [proof]);
+
+  useEffect(() => {
+    if (passport !== null) {
+      handleProofUpload(passport, setPassportLink);
+    }
+  }, [passport]);
+
   return (
     <div className="others-form">
       <div className="others-form_proof-div">
@@ -70,7 +82,7 @@ const OthersForm = () => {
         <input
           type="file"
           onChange={(e) => {
-            setProof(e.target.files[0]), handleProofUpload(proof, setProofLink);
+            setProof(e.target.files[0]);
           }}
         />
         <span className="others-fake_container">
@@ -82,8 +94,7 @@ const OthersForm = () => {
         <input
           type="file"
           onChange={(e) => {
-            setPassport(e.target.files[0]),
-              handleProofUpload(passport, setPassportLink);
+            setPassport(e.target.files[0]);
           }}
         />
         <span className="others-fake_container">Professional passport</span>

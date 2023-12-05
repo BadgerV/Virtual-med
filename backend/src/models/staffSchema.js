@@ -131,7 +131,7 @@ const StaffSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    dateOfGraduation: {
+    graduationDate: {
       type: Date,
       required: true,
     },
@@ -149,13 +149,17 @@ const StaffSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
-    degreeCeritificate : {
-      type : String,
-      required : true
+    degreeCertificate: {
+      type: String,
+      required: true,
     },
-    POMI : {
-      type : String,
-      required : true
+    POMI: {
+      type: String,
+      required: true,
+    },
+    aboutMe: {
+      type: String,
+      required: true,
     },
     currentPatients: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
     allPatients: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],

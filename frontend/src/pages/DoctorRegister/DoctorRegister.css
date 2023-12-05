@@ -183,6 +183,15 @@ body {
   grid-template-columns: 1fr 3.5fr;
   gap: 2em;
   background-color: #033a95;
+
+  position: relative;
+}
+
+.doctor-container .error-message {
+  color: red;
+  position: absolute;
+  left: 4em;
+  top: 2.5em;
 }
 
 .nav-tabs {
@@ -227,23 +236,37 @@ body {
 }
 
 .custom-date-input {
-    border: 1px solid #edeaea;
-    padding: 0.6em 1em;
-    border-radius: 20px;
-    font-size: 0.93em;  
-  }
+  border: 1px solid #edeaea;
+  padding: 0.6em 1em;
+  border-radius: 20px;
+  font-size: 0.93em;
+}
+
+.work-button-cont {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.work-button-cont button {
+  color: #033a95;
+  background-color: white;
+  padding: 0.8em 1.8em;
+  font-size: 0.9em;
+  border-radius: 20px;
+  font-weight: 500;
+}
 
 
-
+.work-button-cont button:disabled {
+  cursor: not-allowed;
+}
 /* Media Queries */
 
 /* For screens with a maximum width of 1024px */
 @media screen and (max-width: 1024px) {
-
-
-
   .doctor-container {
-    
   }
 }
 
@@ -266,7 +289,7 @@ body {
     /* outline: 6px solid red; */
     /* padding: 2em; */
     border-radius: 20px;
-  
+
     /* display: grid; */
     grid-template-columns: 1fr 3.5fr;
     gap: 2em;
