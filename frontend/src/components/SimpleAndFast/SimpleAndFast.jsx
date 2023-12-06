@@ -50,7 +50,7 @@ const SimpleAndFast = () => {
               </span>
             </div>
           </div>
-          <div className="fast-list-service">
+          <div className="fast-list-service full-span-service">
             <img src="/assets/services-svg-4.svg" alt="" />
             <div className="services-smaller-div">
               <span className="services-smaller-header">
