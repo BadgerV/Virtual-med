@@ -3,8 +3,8 @@ import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import AppError from "../common/utils/appError.js";
 import { ENVIRONMENT } from "../common/config/environment.js";
+import UserSchema from "./UserSchema.js";
 import { premiumSubscribers } from "./UserSchema.js";
-import UserSchema from "/opt/render/project/src/backend/src/models/UserSchema";
 
 UserSchema.methods.toJSON = function () {
   const user = this;
