@@ -1,5 +1,193 @@
-.chat-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;align-items: center;
+.going-back {
+  width: 95vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  font-size: 0.93em;
+  cursor: pointer;
+}
+
+.chat-page {
+  display: flex;
+  flex-direction: column;
+  height: 88vh; /* Make the chat-page take the full height of the viewport */
+  padding: 1em;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.chatbox {
+  width: 80%;
+  border: 1px solid #d3d3d3;
+  margin-top: 2em;
+  border-radius: 20px;
+  padding: 0.5em;
+  flex: 1; /* Allow the chatbox to take remaining vertical space */
+  display: flex;
+  flex-direction: column;
+}
+
+.chatbox-header {
+  padding: 0.3em 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.chatbox-header_left {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: center;
+}
+
+.chatbox-header_left img {
+  height: 3.5em;
+}
+
+.chatbox-header_left span {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.chatbox-header_right {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.chatbox-header_right img {
+  cursor: pointer;
+}
+
+.chatbox-body {
+  flex: 1; /* Allow the chatbox-body to take remaining vertical space */
+  margin: 0.3em;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 1em 0;
+  overflow-y: scroll;
+  max-height: 20em;
+}
+
+.chatbox-body::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+/* Style for the scrollbar handle */
+.chatbox-body::-webkit-scrollbar-thumb {
+  background-color: #d3d3d3; /* Color of the scrollbar handle */
+  border-radius: 4px; /* Rounded corners for the scrollbar handle */
+}
+
+/* Style for the scrollbar track, behind the handle */
+.chatbox-body::-webkit-scrollbar-track {
+  background-color: transparent; /* Transparent background for the scrollbar track */
+}
+
+/* Remove background color from scrollbar track */
+.chatbox-body::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+/* Make scrollbar thumb thinner and a specific color */
+.chatbox-body::-webkit-scrollbar-thumb {
+  background-color: #d3d3d3;
+  width: 5px; /* Adjust the width as desired */
+}
+
+/* Hide scrollbar arrows */
+.chatbox-body::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Remove background color from scrollbar track */
+.chatbox-body::-moz-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Make scrollbar thumb thinner and a specific color */
+.chatbox-body::-moz-scrollbar-thumb {
+  background-color: #d3d3d3;
+  width: 5px; /* Adjust the width as desired */
+}
+
+/* Hide scrollbar arrows */
+.chatbox-body::-moz-scrollbar-button {
+  display: none;
+}
+.chatbox-lower {
+  margin-top: auto; /* Push the chatbox-lower to the bottom of the chatbox */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.chatbox-lower input {
+  border: 1px solid #d3d3d3;
+  border-radius: 20px;
+  padding: 0.5em 1em;
+  font-size: 0.9em;
+}
+
+.chatbox-lower img {
+  scale: 0.8;
+}
+
+.sent-message {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+
+  margin-left: auto;
+  margin-right: 1em;
+
+  max-width: 48%;
+}
+
+.sent-message-text {
+  font-size: 0.85em;
+  background-color: #0a84ff;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 15px;
+}
+
+.sent-message-time {
+  font-size: 0.6em;
+  color: #d3d3d3;
+  text-align: right;
+}
+
+.received-message {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+
+  margin-right: auto;
+  margin-left: 0.5em;
+
+  max-width: 48%;
+}
+
+.received-message-text {
+  font-size: 0.85em;
+  background-color: #d3d3d3;
+  padding: 0.5em 1em;
+  border-radius: 15px;
+}
+
+.received-message-time {
+  font-size: 0.6em;
+  color: #d3d3d3;
+  text-align: left;
 }

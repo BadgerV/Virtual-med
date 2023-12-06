@@ -1,9 +1,13 @@
 import { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const isUser = useSelector((state) => state.userSlice.user);
+
   return (
     <>
       {isModalOpen && (
@@ -13,7 +17,7 @@ const Navbar = () => {
             className="menu-icon"
             alt=""
             onClick={() => setIsModalOpen(!isModalOpen)}
-            style={setIsModalOpen ? {display : "none"} : ""}
+            style={setIsModalOpen ? { display: "none" } : ""}
           />
 
           <div className="navbar-mobile-links">
@@ -24,7 +28,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
-      <navbar className="navbar">
+      <nav className="navbar">
         <div className="navbar-left">
           Virtual<span>Med</span>
         </div>
@@ -36,20 +40,38 @@ const Navbar = () => {
           <Link className="navbar-link">Contact us</Link>
         </div>
 
-        <div className="navbar-right">
-          <button className="navbar-signin">Sign in</button>
-          <button className="navbar-get_started">Get Started</button>
+        {isUser ? (
+          <div className="navbar-right">
+            <button className="my-account-button">
+              <img src="/assets/avatar-mini.svg" alt="avatar mini" />
+              My Account
+            </button>
 
-          <div className="navbar-mobile-devices">
-            <img
-              src="/assets/menu-icon.svg"
-              className="menu-icon"
-              alt=""
-              onClick={() => setIsModalOpen(!isModalOpen)}
-            />
+            <div className="navbar-mobile-devices">
+              <img
+                src="/assets/menu-icon.svg"
+                className="menu-icon"
+                alt=""
+                onClick={() => setIsModalOpen(!isModalOpen)}
+              />
+            </div>
           </div>
-        </div>
-      </navbar>
+        ) : (
+          <div className="navbar-right">
+            <button className="navbar-signin">Sign in</button>
+            <button className="navbar-get_started">Get Started</button>
+
+            <div className="navbar-mobile-devices">
+              <img
+                src="/assets/menu-icon.svg"
+                className="menu-icon"
+                alt=""
+                onClick={() => setIsModalOpen(!isModalOpen)}
+              />
+            </div>
+          </div>
+        )}
+      </nav>
     </>
   );
 };

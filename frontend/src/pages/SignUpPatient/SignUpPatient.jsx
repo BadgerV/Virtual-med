@@ -1,22 +1,50 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./SignUpPatient.css";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { registerUser } from "../../redux/user/UserSlice";
 
 const SignupPage = () => {
-  // const [showDoctorSignup, setShowDoctorSignup] = useState(true);
-  // const [showPatientSignup, setShowPatientSignup] = useState(false);
+  const dispatch = useDispatch();
+
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phoneNumber: "",
+    password: "",
+    confirmPassword: "",
+  });
+
   const [isUser, setIsUser] = useState(true);
 
   const handleDoctorClick = () => {
     setIsUser(false);
-    // console.log("worig");
-    // You can also scroll to the doctor signup section here
   };
 
   const handlePatientClick = () => {
     setIsUser(true);
-    // console.log("worig");
+  };
 
-    // You can also scroll to the patient signup section here
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const navigate = useNavigate();
+  const user = useSelector((state) => state.userSlice.user);
+  const isLoading = useSelector((state) => state.userSlice.loading);
+  if (user) {
+    navigate("/");
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    await dispatch(registerUser(formData));
   };
 
   return (
@@ -61,51 +89,74 @@ const SignupPage = () => {
         <div className="form-container">
           <div className="sign-in-form">
             <form>
-              <label htmlFor="">Name</label>
+              <label htmlFor="firstName">First Name</label>
               <div className="form-input">
                 <img src="/assets/Envelope.svg" alt="" />
-                <input type="name" name="name" placeholder="First name" />
+                <input
+                  type="text"
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleInputChange}
+                  placeholder="First name"
+                />
               </div>
-              <label htmlFor="">Name</label>
+              <label htmlFor="lastName">Last Name</label>
               <div className="form-input">
                 <img src="/assets/Envelope.svg" alt="" />
-                <input type="name" name="name" placeholder="Last name" />
+                <input
+                  type="text"
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleInputChange}
+                  placeholder="Last name"
+                />
               </div>
 
-              <label htmlFor="">Email address</label>
+              <label htmlFor="email">Email address</label>
               <div className="form-input">
                 <img src="/assets/Envelope.svg" alt="" />
-                <input type="email" name="email" placeholder="Email" />
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  placeholder="Email"
+                />
               </div>
 
-              <label htmlFor="">Phone Number</label>
+              <label htmlFor="phoneNumber">Phone Number</label>
               <div className="form-input">
                 <img src="/assets/Envelope.svg" alt="" />
                 <input
                   type="text"
                   name="phoneNumber"
+                  value={formData.phoneNumber}
+                  onChange={handleInputChange}
                   placeholder="Phone number"
                 />
               </div>
 
-              <label htmlFor="">Password</label>
+              <label htmlFor="password">Password</label>
               <div className="form-input">
                 <img src="/assets/Lock.svg" alt="" />
-
                 <input
-                  type="passsword"
+                  type="password"
                   name="password"
+                  value={formData.password}
+                  onChange={handleInputChange}
                   placeholder="Password"
                 />
                 <img src="/assets/Vector (5).svg" alt="" />
               </div>
 
-              <label htmlFor="">Confirm Password</label>
+              <label htmlFor="confirmPassword">Confirm Password</label>
               <div className="form-input">
                 <img src="/assets/Lock.svg" alt="" />
                 <input
-                  type="passsword"
-                  name="password"
+                  type="password"
+                  name="confirmPassword"
+                  value={formData.confirmPassword}
+                  onChange={handleInputChange}
                   placeholder="Confirm Password"
                 />
                 <img src="/assets/Vector (5).svg" alt="" />
@@ -117,13 +168,23 @@ const SignupPage = () => {
               </div>
 
               <div className="sign-buttondiv">
-                <button className="sign-button">Sign up</button>
+                <button
+                  className="sign-button"
+                  disabled={isLoading}
+                  onClick={(e) => handleSubmit(e)}
+                >
+                  {isLoading ? (
+                    <img src="/assets/spinner.svg" alt="loading..." />
+                  ) : (
+                    "Sign up"
+                  )}
+                </button>
               </div>
             </form>
           </div>
 
           <div className="sign-in-footer">
-            <span>Already have an account?</span>{" "}
+            <span>Already have an account?</span>
             <a href="/signin" className="ball">
               Sign In
             </a>
@@ -135,5 +196,3 @@ const SignupPage = () => {
 };
 
 export default SignupPage;
-
-// mann

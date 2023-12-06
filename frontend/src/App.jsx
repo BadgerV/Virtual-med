@@ -14,7 +14,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Navigate } from "react-router-dom";
 import { myProfile } from "./redux/user/UserSlice";
 // import FindDoctor from "./pages/FindDoctor/FindDoctor";
-import FindDoctor from "./pages/FindDoctor/findDoctor"
+import FindDoctor from "./pages/FindDoctor/findDoctor";
 // import DoctorProfile from "./pages/DoctorProfile/DoctorProfile";
 //LAZY IMPORT PAGES FOR BETTER WEBSITE PERFORMANCE
 const Profile = lazy(() => import("./pages/Profile/Profile"));
@@ -38,6 +38,9 @@ const PrivateRoutes = lazy(() =>
   import("./components/PrivateRoute/PrivateRoutes")
 );
 const Chat = lazy(() => import("./pages/Chat/Chat"));
+const MakeAppointment = lazy(() =>
+  import("./pages/MakeAppointment/MakeAppointment")
+);
 
 //lets make sure everything is in em for scaling
 //let us add the assets in the public folder, that way if i want to access the react.svg in there i would say src = "/assets/react.svg" directly. no need to import anything
@@ -69,22 +72,19 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/signin" element={<SignIn />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/signupforpatient" element={<SignUpPatient />} />
+          {/* <Route path="/signup" element={<SignUp />} /> */}
+          <Route path="/signup" element={<SignUpPatient />} />
 
           <Route path="/finddoctor" element={<FindDoctor />} />
           <Route path="/doctor/:id" element={<DoctorProfile />} />
           <Route path="/registerdoctor" element={<DoctorRegister />} />
           <Route path="/doctorprofile" element={<DoctorProfile />} />
 
-          <Route
-            path="/chat"
-            element={user ? <Chat /> : <Navigate to="/signup" />}
-          />
-
           <Route element={<PrivateRoutes />}>
             <Route path="/chat" element={<Chat />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/make-appointment/:id" element={<MakeAppointment />} />
+            <Route path="/chat" element={<Chat />} />
           </Route>
         </Routes>
         {/* <Footer /> */}
@@ -94,6 +94,5 @@ const App = () => {
 };
 
 export default App;
-
 
 // ejhbf rnmfbrj rj

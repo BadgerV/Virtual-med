@@ -17,9 +17,27 @@ html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
-  display: none;
+/* General scrollbar styles */
+body::-webkit-scrollbar {
+  width: 8px;
 }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #d3d3d3;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Firefox scrollbar styles */
+body {
+  scrollbar-width: thin; /* Set the width of the scrollbar */
+  scrollbar-color: #d3d3d3 transparent; /* Color of the scrollbar handle and track */
+}
+
+/* Rest of your styles */
 
 h1,
 h1,

@@ -42,8 +42,8 @@ const DoctorProfile = () => {
 
           <div className="doctor-profile-header">
             <img src={foundDoctor?.passportImage} alt="doctor" />
-            <span className="doctor-profile-name">{}</span>
-            <span className="doctor-profile-speciality">{`${foundDoctor?.firstName} ${foundDoctor?.lastName}`}</span>
+            <span className="doctor-profile-name">{`${foundDoctor?.firstName} ${foundDoctor?.lastName}`}</span>
+            <span className="doctor-profile-speciality">{foundDoctor.speciality}</span>
             <span className="doctor-profile-course">{`${foundDoctor?.major}`}</span>
           </div>
 
@@ -168,18 +168,26 @@ const DoctorProfile = () => {
               </div>
             </div>
 
-            <div className="rating-container" style={!foundDoctor?.rating &&{display : "flex", alignItems : "center", justifyContent : "center"} }>
+            <div
+              className="rating-container"
+              style={
+                !foundDoctor?.rating && {
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }
+              }
+            >
               {foundDoctor?.rating ? (
                 Array.from({ length: foundDoctor?.rating }, (_, index) => (
                   <Rating props={foundDoctor?.rating} key={index} />
                 ))
               ) : (
-                <span style={{color : "#d3d3d3"}}>No ratings yet</span>
+                <span style={{ color: "#d3d3d3" }}>No ratings yet</span>
               )}
             </div>
           </div>
         </div>
-
       )}
     </>
   );

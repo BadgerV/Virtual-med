@@ -1,12 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-// import Cookies from "js-cookie";
-
-// Your registration request code here...
-
-// Now you can use authToken as needed in your frontend code
-
 const DEVELOPMENT = "http://localhost:8000";
 
 const initialState = {
@@ -20,6 +14,7 @@ const initialState = {
 export const registerUser = createAsyncThunk(
   "/user/registerUser",
   async ({ firstName, lastName, nickName, email, password, phoneNumber }) => {
+    // console.log("working")
     try {
       const response = await axios.post(
         `${DEVELOPMENT}/user/register`,
@@ -29,12 +24,12 @@ export const registerUser = createAsyncThunk(
           email,
           password,
           phoneNumber,
-          nickName,
         },
         {
           withCredentials: true,
         }
       );
+
 
       // Assuming the 'auth' cookie is set by the server
 
@@ -45,8 +40,6 @@ export const registerUser = createAsyncThunk(
     }
   }
 );
-
-
 
 export const loginUser = createAsyncThunk(
   "/user/loginUser",
@@ -77,11 +70,11 @@ export const loginUser = createAsyncThunk(
           }
         );
 
-        console.log(response)
+        console.log(response);
 
         return response.data;
       } catch (error) {
-        return Promise.reject(error.response.message)
+        return Promise.reject(error.response.message);
       }
     }
   }
@@ -92,15 +85,13 @@ export const myProfile = createAsyncThunk("/user/profile", async () => {
     const response = await axios.get(`${DEVELOPMENT}/user/profile`, {
       withCredentials: true,
     });
-
-    console.log(response)
     return response.data;
   } catch (error) {
     try {
       const response1 = await axios.get(`${DEVELOPMENT}/staff/profile`, {
         withCredentials: true,
       });
-      return response1.data
+      return response1.data;
     } catch (error) {
       return Promise.reject(error.response1.data);
     }
@@ -232,7 +223,7 @@ const userSlice = createSlice({
         state.error = action.error.message;
       })
       .addCase(myProfile.pending, (state) => {
-        state.isLoading = true;
+        state.loading = true;
         state.isSuccess = false;
         state.loadingUserProfile = true;
       })
@@ -243,7 +234,7 @@ const userSlice = createSlice({
         state.loadingUserProfile = false;
       })
       .addCase(myProfile.rejected, (state, action) => {
-        state.isLoading = false;
+        state.loading = false;
         state.error = action.payload;
         state.loadingUserProfile = false;
       });

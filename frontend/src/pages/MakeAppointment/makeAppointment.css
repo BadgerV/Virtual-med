@@ -1,0 +1,161 @@
+.going-back {
+  width: 95vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  font-size: 0.93em;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.doctor-profile-header {
+  margin-top: 2em;
+  /* outline: 1px solid red; */
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+  line-height: 150%;
+}
+
+.doctor-profile-header img {
+  height: 10em;
+  width: 10em;
+  border-radius: 50%;
+}
+
+.doctor-profile-name {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.doctor-profile-speciality {
+  font-weight: 400;
+
+  font-size: 0.93em;
+}
+
+.doctor-profile-course {
+  font-weight: 400;
+  font-size: 0.86em;
+}
+
+.make-appointment {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.make-appointment-head {
+  margin-bottom: 4em;
+}
+
+.appointment-text {
+  color: black;
+  font-weight: 500;
+}
+
+.make-appointment-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 80%;
+}
+
+.appointment-dates {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.appointment-date {
+  background-color: #edeaea;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 7em;
+  height: 9em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+
+  cursor: pointer;
+}
+
+.date-date-today {
+  color: black;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.date-today {
+  color: #8d8d8d;
+  font-size: 0.9em;
+}
+
+.appointment-times {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.appointment-time {
+  width: 8em;
+  height: 3.5em;
+  background-color: #edeaea;
+  columns: black;
+  border-radius: 15px;
+  flex-wrap: wrap;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.appointment-durations {
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.appointment-duration {
+  width: 8em;
+  height: 3.5em;
+  background-color: #edeaea;
+  columns: black;
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.appointment-book-appointment {
+  background-color: #023382;
+  color: white;
+  font-size: 0.9em;
+
+  padding: 1.1em 3.5em;
+  border-radius: 50px;
+  margin: 2em;
+}

@@ -6,6 +6,12 @@ import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
   const navigate = useNavigate();
+  const user = useSelector((state) => state.userSlice.user);
+
+  if (user) {
+    navigate("/");
+  }
+
   const dispatch = useDispatch();
   const [formData, setFormData] = useState({
     email: "",
@@ -24,6 +30,7 @@ const SignIn = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("working")
     const response = await dispatch(loginUser(formData));
     // console.log(response.payload._id);
 

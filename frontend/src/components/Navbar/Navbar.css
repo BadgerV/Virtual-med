@@ -11,6 +11,7 @@
 
   border-bottom: 2px solid #edeaea;
   position: relative;
+  height: 12vh;
 }
 
 .navbar-left {
@@ -89,9 +90,12 @@
   }
 
   .navbar-mobile-devices {
-    display: block;
+    display: flex;
     z-index: 999;
     transition: 0.2s all ease-in-out;
+
+    align-items: center;
+    justify-content: start;
   }
 
   .navbar-mobile-devices img {
@@ -147,4 +151,21 @@
   font-size: 1em;
   cursor: pointer;
   font-weight: 500;
+}
+
+.navbar-right {
+}
+
+.my-account-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8em;
+
+  background-color: #023382;
+  color: white;
+
+  padding: 0.8em 1.5em;
+  border-radius: 20px;
+  font-size: 0.9em;
 }

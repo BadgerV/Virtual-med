@@ -1,143 +1,88 @@
-// import { useSelector } from "react-redux";
-import { Box } from "@chakra-ui/react";
+import React from "react";
+import { Link } from "react-router-dom";
 import "./chat.css";
-import SideDrawer from "../../components/miscellaneous/SideDrawer";
-
-import { useDispatch } from "react-redux";
-import { useEffect } from "react";
-import { fetchChats } from "../../redux/chat/chatSlice";
 
 const Chat = () => {
-  // const user = useSelector((state) => state.userlice?.user);
-  // const isLoading = useSelector((state) => state.userSlice.isLoading);
-
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    const fetchUserChats = async () => {
-      const response = await dispatch(fetchChats());
-
-      console.log(response);
-    };
-
-    fetchUserChats();
-  });
+  // Sample messages array with content, time, and type (sent or received)
+  const messages = [
+    { content: "Hello, how are you?", time: "11:09pm", type: "received" },
+    { content: "I'm good, thanks, you?", time: "11:10pm", type: "sent" },
+    { content: "I'm good, thanks!", time: "11:10pm", type: "received" },
+    { content: "Are you coming to work today?", time: "11:10pm", type: "sent" },
+    {
+      content: "No, I m taking the day off",
+      time: "11:10pm",
+      type: "received",
+    },
+    {
+      content: "No, I m taking the day off",
+      time: "11:10pm",
+      type: "received",
+    },
+    {
+      content:
+        "No, I m taking the day off,No, I m taking the day offNo, I m taking the day offNo, I m taking the day offNo, I m taking the day off",
+      time: "11:10pm",
+      type: "received",
+    },
+    {
+      content:
+        "No, I m taking the day off,No, I m taking the day offNo, I m taking the day offNo, I m taking the day offNo, I m taking the day off",
+      time: "11:10pm",
+      type: "sent",
+    },
+    // Add more messages as needed
+  ];
 
   return (
     <div className="chat-page">
-      {<SideDrawer />}
+      <div className="going-back">
+        <img src="/assets/arrow-back.svg" alt="back" />
+        <Link className="link-button" to="/finddoctor">
+          back to search results
+        </Link>
+      </div>
 
-      <Box>
-        {/* {user && <MyChats />} */}
-        {/* {user && <ChatBox />} */}
-      </Box>
+      <div className="chatbox">
+        <div className="chatbox-header">
+          <div className="chatbox-header_left">
+            <img src="/assets/avatar-fake.png" alt="" />
+            <span className="chatbox-header-left">Segunmaru Faozan</span>
+          </div>
+          <div className="chatbox-header_right">
+            <img src="/assets/phone-icon.svg" alt="phone-icon" />
+            <img src="/assets/video-icon.svg" alt="video-icon" />
+          </div>
+        </div>
+        <div className="chatbox-body">
+          {messages.map((message, index) => (
+            <Message
+              key={index}
+              content={message.content}
+              time={message.time}
+              type={message.type}
+            />
+          ))}
+        </div>
+        <div className="chatbox-lower">
+          <img src="/assets/clip-icon.svg" alt="attach" />
+          <img src="/assets/mic-icon.svg" alt="voicenote" />
+
+          <input type="text" placeholder="Message...." />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const Message = ({ content, time, type }) => {
+  const messageClass = type === "sent" ? "sent-message" : "received-message";
+  return (
+    <div className={messageClass}>
+      <span className={`${messageClass}-text`}>{content}</span>
+      <span className={`${messageClass}-time`}>{time}</span>
     </div>
   );
 };
 
 export default Chat;
-
-// import { useState } from "react";
-// import {
-//   Box,
-//   Flex,
-//   ChakraProvider,
-//   extendTheme,
-//   VStack,
-//   HStack,
-//   Avatar,
-//   Text,
-  
-// } from "@chakra-ui/react";
-// import { ChatIcon } from "@chakra-ui/icons";
-
-// const theme = extendTheme({
-//   styles: {
-//     global: {
-//       "html, body": {
-//         height: "100%",
-//       },
-//     },
-//   },
-// });
-
-// const ChatApp = () => {
-//   const [selectedUser, setSelectedUser] = useState(null);
-
-//   const users = [
-//     { id: 1, name: "User 1" },
-//     { id: 2, name: "User 2" },
-//     { id: 3, name: "User 3" },
-//     // Add more users as needed
-//   ];
-
-//   const handleUserSelect = (user) => {
-//     setSelectedUser(user);
-//   };
-
-//   return (
-//     <ChakraProvider theme={theme}>
-//       <Flex h="100vh">
-//         {/* Sidebar */}
-//         <VStack bg="gray.100" w="20%" p={4} align="stretch">
-//           <Text fontSize="xl" fontWeight="bold" mb={4}>
-//             Users
-//           </Text>
-//           {users.map((user) => (
-//             <HStack
-//               key={user.id}
-//               p={2}
-//               _hover={{ bg: "gray.200", cursor: "pointer" }}
-//               onClick={() => handleUserSelect(user)}
-//             >
-//               <Avatar size="sm" name={user.name} />
-//               <Text>{user.name}</Text>
-//             </HStack>
-//           ))}
-//         </VStack>
-
-//         {/* Chat Area */}
-//         <Flex flex="1" direction="column">
-//           <Box bg="gray.200" p={4} boxShadow="lg">
-//             <Text fontSize="2xl">{selectedUser ? selectedUser.name : "Chat App"}</Text>
-//           </Box>
-
-//           <Flex flex="1" p={4} overflowY="auto">
-//             {/* Message Modal */}
-//             {selectedUser ? (
-//               <Box flex="1" bg="white" boxShadow="lg" p={4}>
-//                 {/* Messages go here */}
-//                 <Text mb={2}>Chat with {selectedUser.name}</Text>
-//                 {/* Add your message components here */}
-//               </Box>
-//             ) : (
-//               <div className="chat-info">
-//                 Select a chat to start chatting
-//               </div>
-//             )}
-//           </Flex>
-//         </Flex>
-//       </Flex>
-//     </ChakraProvider>
-//   );
-// };
-
-
-// const ChatPage = () => {
-//   return(
-//     <div className="chat-page">
-//       <div className="chat-left">
-//         <div className="chat-left_header">Chats</div>
-
-//         <div className="chat-left_chats">
-
-//         </div>
-//       </div>
-//       <div className="chat-right"></div>
-//     </div>
-//   )
-// }
-
-
-
-// export default ChatPage;

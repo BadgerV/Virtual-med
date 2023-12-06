@@ -3665,3 +3665,197 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2023-12-05 20:25:19 info: GET /user/profile [33m404 3.454 ms - 61
 2023-12-05 20:25:20 error: 404 - Please authenticate - /staff/profile - GET - ::1
 2023-12-05 20:25:20 info: GET /staff/profile [33m404 4.427 ms - 61
+2023-12-06 09:56:02 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 09:56:02 info: GET /user/profile [33m404 17.216 ms - 61
+2023-12-06 09:56:02 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 09:56:02 info: GET /staff/profile [33m404 5.419 ms - 61
+2023-12-06 09:58:20 info: POST /user/login [32m200 425.321 ms - 248
+2023-12-06 09:59:03 info: GET /user/profile [32m200 183.632 ms - 248
+2023-12-06 09:59:16 info: GET /user/profile [36m304 183.112 ms - -
+2023-12-06 09:59:28 info: GET /user/profile [36m304 195.648 ms - -
+2023-12-06 10:05:26 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-12-06 10:05:26 info: GET /user/profile [33m404 69.814 ms - 61
+2023-12-06 10:05:26 error: 404 - Please authenticate - /staff/profile - GET - ::1
+2023-12-06 10:05:26 info: GET /staff/profile [33m404 5.892 ms - 61
+2023-12-06 10:05:26 info: GET /user/profile [36m304 212.028 ms - -
+2023-12-06 10:05:38 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-12-06 10:05:38 info: GET /user/profile [33m404 2.530 ms - 61
+2023-12-06 10:05:38 error: 404 - Please authenticate - /staff/profile - GET - ::1
+2023-12-06 10:05:38 info: GET /staff/profile [33m404 1.614 ms - 61
+2023-12-06 10:06:22 info: GET /user/profile [32m200 335.432 ms - 248
+2023-12-06 10:06:23 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-12-06 10:06:23 info: GET /user/profile [33m404 1.964 ms - 61
+2023-12-06 10:06:23 error: 404 - Please authenticate - /staff/profile - GET - ::1
+2023-12-06 10:06:23 info: GET /staff/profile [33m404 1.675 ms - 61
+2023-12-06 10:13:46 info: GET /user/profile [36m304 165.101 ms - -
+2023-12-06 10:13:49 info: GET /user/profile [36m304 197.945 ms - -
+2023-12-06 10:14:28 info: GET /user/profile [36m304 189.418 ms - -
+2023-12-06 10:15:36 info: GET /user/profile [36m304 194.654 ms - -
+2023-12-06 10:16:03 info: GET /user/profile [36m304 201.713 ms - -
+2023-12-06 10:19:12 info: GET /user/profile [32m200 180.289 ms - 248
+2023-12-06 10:37:25 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-12-06 10:37:25 info: GET /user/profile [33m404 3.598 ms - 61
+2023-12-06 10:37:25 error: 404 - Please authenticate - /staff/profile - GET - ::1
+2023-12-06 10:37:25 info: GET /staff/profile [33m404 2.224 ms - 61
+2023-12-06 10:37:53 info: GET /user/profile - - ms - -
+2023-12-06 10:37:53 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 10:37:53 info: GET /staff/profile [33m401 9.023 ms - 1402
+2023-12-06 10:38:03 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 10:38:26 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 10:38:26 info: GET /user/profile [33m401 30018.502 ms - 279
+2023-12-06 10:38:26 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 10:38:26 info: GET /staff/profile [33m401 8.425 ms - 1402
+2023-12-06 10:39:16 info: GET /user/profile [32m200 1252.522 ms - 248
+2023-12-06 10:39:24 info: GET /user/profile [36m304 222.756 ms - -
+2023-12-06 11:13:28 info: GET /user/profile [36m304 199.957 ms - -
+2023-12-06 11:13:45 info: GET /user/profile [36m304 213.106 ms - -
+2023-12-06 11:13:47 info: GET /user/profile [36m304 260.118 ms - -
+2023-12-06 11:13:53 info: GET /user/profile [36m304 233.776 ms - -
+2023-12-06 11:14:12 info: GET /user/profile [36m304 234.927 ms - -
+2023-12-06 11:14:19 info: GET /user/profile [36m304 149.871 ms - -
+2023-12-06 11:14:34 info: GET /user/profile [36m304 251.611 ms - -
+2023-12-06 11:15:27 info: GET /user/profile [36m304 226.956 ms - -
+2023-12-06 11:16:39 info: GET /user/profile [36m304 517.409 ms - -
+2023-12-06 11:27:37 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-12-06 11:27:37 info: GET /user/profile [33m404 5.513 ms - 61
+2023-12-06 11:27:37 error: 404 - Please authenticate - /staff/profile - GET - ::1
+2023-12-06 11:27:37 info: GET /staff/profile [33m404 3.361 ms - 61
+2023-12-06 11:29:40 info: GET /user/profile [32m200 185.338 ms - 248
+2023-12-06 11:30:04 info: GET /user/profile [32m200 260.698 ms - 248
+2023-12-06 11:31:21 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-12-06 11:31:21 info: GET /user/profile [33m404 4.313 ms - 61
+2023-12-06 11:31:21 error: 404 - Please authenticate - /staff/profile - GET - ::1
+2023-12-06 11:31:21 info: GET /staff/profile [33m404 2.462 ms - 61
+2023-12-06 11:31:23 info: GET /user/profile [36m304 210.224 ms - -
+2023-12-06 11:36:12 info: GET /user/profile [32m200 208.812 ms - 248
+2023-12-06 11:38:08 info: GET /user/profile [36m304 189.419 ms - -
+2023-12-06 11:38:15 info: GET /user/profile [36m304 158.739 ms - -
+2023-12-06 11:38:36 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-12-06 11:38:36 info: GET /user/profile [33m404 3.005 ms - 61
+2023-12-06 11:38:36 error: 404 - Please authenticate - /staff/profile - GET - ::1
+2023-12-06 11:38:36 info: GET /staff/profile [33m404 2.442 ms - 61
+2023-12-06 11:39:22 info: POST /user/login [32m200 474.578 ms - 248
+2023-12-06 11:43:15 info: GET /user/profile [32m200 178.778 ms - 248
+2023-12-06 11:44:18 info: GET /user/profile [36m304 185.670 ms - -
+2023-12-06 11:44:45 info: GET /user/profile [36m304 234.097 ms - -
+2023-12-06 11:45:12 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:45:12 info: GET /user/profile [33m404 3.351 ms - 61
+2023-12-06 11:45:12 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:45:12 info: GET /staff/profile [33m404 1.460 ms - 61
+2023-12-06 11:45:41 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:45:41 info: GET /user/profile [33m404 4.696 ms - 61
+2023-12-06 11:45:41 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:45:41 info: GET /staff/profile [33m404 1.476 ms - 61
+2023-12-06 11:46:09 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:46:09 info: GET /user/profile [33m404 3.209 ms - 61
+2023-12-06 11:46:09 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:46:09 info: GET /staff/profile [33m404 1.733 ms - 61
+2023-12-06 11:46:14 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:46:14 info: GET /user/profile [33m404 4.712 ms - 61
+2023-12-06 11:46:14 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:46:14 info: GET /staff/profile [33m404 3.407 ms - 61
+2023-12-06 11:46:32 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:46:32 info: GET /user/profile [33m404 2.845 ms - 61
+2023-12-06 11:46:32 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:46:32 info: GET /staff/profile [33m404 7.135 ms - 61
+2023-12-06 11:49:49 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:49:49 info: GET /user/profile [33m404 3.367 ms - 61
+2023-12-06 11:49:49 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:49:49 info: GET /staff/profile [33m404 3.059 ms - 61
+2023-12-06 11:50:00 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:50:00 info: GET /user/profile [33m404 32.172 ms - 61
+2023-12-06 11:50:00 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:50:00 info: GET /staff/profile [33m404 1.375 ms - 61
+2023-12-06 11:55:28 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:55:28 info: GET /user/profile [33m404 7.391 ms - 61
+2023-12-06 11:55:28 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:55:28 info: GET /staff/profile [33m404 1.477 ms - 61
+2023-12-06 11:55:56 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:55:56 info: GET /user/profile [33m404 3.148 ms - 61
+2023-12-06 11:55:57 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:55:57 info: GET /staff/profile [33m404 1.500 ms - 61
+2023-12-06 11:57:11 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:57:11 info: GET /user/profile [33m404 22.992 ms - 61
+2023-12-06 11:57:11 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:57:11 info: GET /staff/profile [33m404 4.220 ms - 61
+2023-12-06 11:58:24 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:58:24 info: GET /user/profile [33m404 5.049 ms - 61
+2023-12-06 11:58:24 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:58:24 info: GET /staff/profile [33m404 1.646 ms - 61
+2023-12-06 11:59:01 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:59:01 info: GET /user/profile [33m404 7.928 ms - 61
+2023-12-06 11:59:02 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:59:02 info: GET /staff/profile [33m404 52.381 ms - 61
+2023-12-06 11:59:24 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:59:24 info: GET /user/profile [33m404 6.764 ms - 61
+2023-12-06 11:59:24 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 11:59:24 info: GET /staff/profile [33m404 3.433 ms - 61
+2023-12-06 12:01:04 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 12:01:04 info: GET /user/profile [33m404 19.220 ms - 61
+2023-12-06 12:01:04 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 12:01:04 info: GET /staff/profile [33m404 17.830 ms - 61
+2023-12-06 12:02:26 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 12:02:26 info: GET /user/profile [33m404 13.165 ms - 61
+2023-12-06 12:02:27 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 12:02:27 info: GET /staff/profile [33m404 20.312 ms - 61
+2023-12-06 12:02:30 info: GET /user/profile [32m200 249.618 ms - 248
+2023-12-06 12:02:33 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 12:02:33 info: GET /user/profile [33m404 22.587 ms - 61
+2023-12-06 12:02:33 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 12:02:33 info: GET /staff/profile [33m404 1.893 ms - 61
+2023-12-06 12:02:35 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 12:02:35 info: GET /user/profile [33m404 47.457 ms - 61
+2023-12-06 12:02:36 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 12:02:36 info: GET /staff/profile [33m404 34.261 ms - 61
+2023-12-06 12:02:39 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 12:02:39 info: GET /user/profile [33m404 10.086 ms - 61
+2023-12-06 12:02:40 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 12:02:40 info: GET /staff/profile [33m404 51.536 ms - 61
+2023-12-06 12:02:41 info: GET /user/profile [36m304 277.413 ms - -
+2023-12-06 12:03:35 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 12:03:35 info: GET /user/profile [33m404 12.711 ms - 61
+2023-12-06 12:03:35 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 12:03:35 info: GET /staff/profile [33m404 8.586 ms - 61
+2023-12-06 12:03:36 info: GET /user/profile [36m304 212.383 ms - -
+2023-12-06 12:03:44 info: GET /user/profile [36m304 178.895 ms - -
+2023-12-06 12:03:44 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 12:03:44 info: GET /user/profile [33m404 3.506 ms - 61
+2023-12-06 12:03:44 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 12:03:44 info: GET /staff/profile [33m404 1.916 ms - 61
+2023-12-06 12:05:29 info: GET /user/profile [36m304 213.957 ms - -
+2023-12-06 12:05:30 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 12:05:30 info: GET /user/profile [33m404 12.379 ms - 61
+2023-12-06 12:05:30 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 12:05:30 info: GET /staff/profile [33m404 3.537 ms - 61
+2023-12-06 12:07:05 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 12:07:05 info: GET /user/profile [33m404 5.038 ms - 61
+2023-12-06 12:07:05 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 12:07:05 info: GET /staff/profile [33m404 1.899 ms - 61
+2023-12-06 12:07:30 error: 400 - Please fill all the inputs - /user/register - POST - ::ffff:127.0.0.1
+2023-12-06 12:07:30 info: POST /user/register [33m400 12.348 ms - 1433
+2023-12-06 12:07:32 error: 400 - Please fill all the inputs - /user/register - POST - ::ffff:127.0.0.1
+2023-12-06 12:07:32 info: POST /user/register [33m400 9.497 ms - 1433
+2023-12-06 12:08:09 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-06 12:08:09 info: GET /user/profile [33m404 4.588 ms - 61
+2023-12-06 12:08:10 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-06 12:08:10 info: GET /staff/profile [33m404 9.759 ms - 61
+2023-12-06 12:08:11 info: GET /user/profile [36m304 333.735 ms - -
+2023-12-06 12:08:50 info: POST /user/register [32m200 733.532 ms - 276
+2023-12-06 12:09:27 info: GET /user/profile [36m304 217.296 ms - -
+2023-12-06 12:09:30 info: GET /user/profile [32m200 273.996 ms - 264
+2023-12-06 12:09:34 info: GET /user/profile [36m304 171.005 ms - -
+2023-12-06 12:09:36 info: GET /user/profile [36m304 1597.786 ms - -
+2023-12-06 12:18:28 info: GET /user/profile [32m200 1016.873 ms - 264
+2023-12-06 12:18:33 info: GET /user/profile [36m304 173.283 ms - -
+2023-12-06 12:18:40 info: GET /user/profile [36m304 159.507 ms - -
+2023-12-06 12:18:45 info: GET /user/profile [32m200 173.922 ms - 264
+2023-12-06 12:19:21 info: GET /user/profile [36m304 162.055 ms - -
+2023-12-06 12:19:36 info: GET /user/profile [36m304 164.764 ms - -
+2023-12-06 12:19:43 info: GET /user/profile [36m304 228.047 ms - -
+2023-12-06 12:21:31 info: GET /user/profile [32m200 157.200 ms - 264
+2023-12-06 12:29:13 info: GET /user/profile [36m304 162.582 ms - -
+2023-12-06 12:37:46 info: GET /user/profile [36m304 230.731 ms - -
+2023-12-06 12:39:58 info: GET /user/profile [36m304 201.277 ms - -
+2023-12-06 13:14:37 info: GET /user/profile [36m304 1028.500 ms - -
+2023-12-06 13:14:38 info: GET /user/profile [36m304 346.242 ms - -
+2023-12-06 13:47:28 info: GET /user/profile [36m304 1511.750 ms - -
