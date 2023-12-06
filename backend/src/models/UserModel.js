@@ -3,7 +3,8 @@ import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import AppError from "../common/utils/appError.js";
 import { ENVIRONMENT } from "../common/config/environment.js";
-import UserSchema, { premiumSubscribers } from "./UserSchema.js";
+import { premiumSubscribers } from "./UserSchema.js";
+import UserSchema from "/opt/render/project/src/backend/src/models/UserSchema";
 
 UserSchema.methods.toJSON = function () {
   const user = this;
@@ -19,7 +20,6 @@ UserSchema.methods.toJSON = function () {
   // delete userObject.isPremium;
   return userObject;
 };
-
 
 //this is to compare the password with the already hashed passowrd
 UserSchema.statics.findByCredentials = async function (password, email) {
@@ -91,6 +91,9 @@ UserSchema.pre("save", async function (next) {
 });
 
 const User = mongoose.model("User", UserSchema);
-export const PremiumSubscribers = mongoose.model("PremiumSubscribebrs", premiumSubscribers);
+export const PremiumSubscribers = mongoose.model(
+  "PremiumSubscribebrs",
+  premiumSubscribers
+);
 
 export default User;
