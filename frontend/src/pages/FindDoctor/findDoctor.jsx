@@ -84,7 +84,7 @@ const FindDoctor = () => {
             </div>
 
             <div className="find-doctor-check_n_option">
-              <input type="checkbox" />w
+              <input type="checkbox" />
               <span>Therapist</span>
             </div>
           </div>

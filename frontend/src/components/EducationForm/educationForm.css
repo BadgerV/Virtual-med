@@ -94,3 +94,17 @@
     padding: 0.8em 2em;
     border-radius: 20px;
 }
+
+@media (max-width: 720px) {
+  .educational-form {
+    padding: 1.5em;
+  }  
+}
+
+
+@media (max-width: 455px) {
+  .educational-form {
+    border-radius: 0;
+  }
+}
+

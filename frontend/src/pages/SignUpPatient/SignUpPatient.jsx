@@ -38,14 +38,17 @@ const SignupPage = () => {
   const navigate = useNavigate();
   const user = useSelector((state) => state.userSlice.user);
   const isLoading = useSelector((state) => state.userSlice.loading);
-  if (user) {
-    navigate("/");
-  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     await dispatch(registerUser(formData));
   };
+
+  useEffect(() => {
+    if (user !== null) {
+      navigate("/");
+    }
+  }, [user]);
 
   return (
     <div className="signs-doctors">

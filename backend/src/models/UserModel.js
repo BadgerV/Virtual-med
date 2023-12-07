@@ -6,20 +6,20 @@ import { ENVIRONMENT } from "../common/config/environment.js";
 import UserSchema from "./UserSchema.js";
 import { premiumSubscribers } from "./UserSchema.js";
 
-UserSchema.methods.toJSON = function () {
-  const user = this;
-  const userObject = user.toObject();
+// UserSchema.methods.toJSON = function () {
+//   const user = this;
+//   const userObject = user.toObject();
 
-  delete userObject.password;
-  delete userObject.tokens;
-  delete userObject.isPremium;
-  delete userObject.accountType;
-  delete userObject.verificationToken;
-  delete userObject.isVerified;
-  // delete userObject.assignedDoctors;
-  // delete userObject.isPremium;
-  return userObject;
-};
+//   delete userObject.password;
+//   delete userObject.tokens;
+//   delete userObject.isPremium;
+//   delete userObject.accountType;
+//   delete userObject.verificationToken;
+//   delete userObject.isVerified;
+//   // delete userObject.assignedDoctors;
+//   // delete userObject.isPremium;
+//   return userObject;
+// };
 
 //this is to compare the password with the already hashed passowrd
 UserSchema.statics.findByCredentials = async function (password, email) {

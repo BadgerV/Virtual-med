@@ -3859,3 +3859,1043 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2023-12-06 13:14:37 info: GET /user/profile [36m304 1028.500 ms - -
 2023-12-06 13:14:38 info: GET /user/profile [36m304 346.242 ms - -
 2023-12-06 13:47:28 info: GET /user/profile [36m304 1511.750 ms - -
+2023-12-06 16:38:02 error: 404 - Please authenticate - /user/initiatePremiumSubscription - POST - ::1
+2023-12-06 16:38:02 info: POST /user/initiatePremiumSubscription [33m404 17.659 ms - 61
+2023-12-06 16:38:13 info: POST /user/login [32m200 489.488 ms - 249
+2023-12-06 16:38:49 info: POST /user/login [32m200 3772.154 ms - 2894
+2023-12-06 16:38:58 info: POST /user/initiatePremiumSubscription [31m500 237.215 ms - 29
+2023-12-06 16:39:54 info: POST /user/register [32m200 709.725 ms - 661
+2023-12-06 16:40:02 info: POST /user/initiatePremiumSubscription [31m500 232.520 ms - 29
+2023-12-06 16:40:16 info: POST /user/login [32m200 583.003 ms - 853
+2023-12-06 16:40:24 info: POST /user/initiatePremiumSubscription [31m500 299.796 ms - 29
+2023-12-06 16:40:47 info: POST /user/register [32m200 681.928 ms - 663
+2023-12-06 16:40:56 info: POST /user/initiatePremiumSubscription [32m200 722.938 ms - 77
+2023-12-06 16:42:06 info: POST /user/initiatePremiumSubscription [32m200 954.869 ms - 190
+2023-12-06 16:43:44 info: GET /user/confirmPremiumSubscription/ssssbbdddssdg [32m200 999.764 ms - 1577
+2023-12-06 16:47:45 error: 400 - Please authenticate - /user/notifcations - GET - ::1
+2023-12-06 16:47:45 info: GET /user/notifcations [33m400 32.715 ms - 1415
+2023-12-06 16:48:21 info: POST /user/login [32m200 15600.696 ms - 1057
+2023-12-06 16:48:38 error: 400 - Please authenticate - /user/notifcations - GET - ::1
+2023-12-06 16:48:38 info: GET /user/notifcations [33m400 7.094 ms - 1415
+2023-12-06 16:50:14 info: GET /user/notifcations [32m200 2919.913 ms - 2
+2023-12-06 16:50:49 info: GET /user/notifcations [32m200 808.523 ms - 2
+2023-12-06 16:51:42 error: 401 - Invalid login credentials - /user/login - POST - ::1
+2023-12-06 16:52:22 info: POST /user/login [33m401 40092.410 ms - 453
+2023-12-06 16:52:35 error: 401 - Invalid login credentials - /user/login - POST - ::1
+2023-12-06 16:52:35 info: POST /user/login [33m401 300.817 ms - 453
+2023-12-06 16:52:57 error: 401 - Invalid login credentials - /user/login - POST - ::1
+2023-12-06 16:52:57 info: POST /user/login [33m401 206.819 ms - 453
+2023-12-06 16:53:42 info: POST /user/login [32m200 644.681 ms - 854
+2023-12-06 16:53:49 info: GET /user/notifcations [32m200 716.112 ms - 2
+2023-12-06 16:54:35 info: GET /user/notifcations [32m200 3552.427 ms - 2
+2023-12-06 16:55:13 info: POST /user/register [32m200 855.083 ms - 677
+2023-12-06 16:55:30 info: POST /user/initiatePremiumSubscription [32m200 1416.135 ms - 184
+2023-12-06 16:56:06 info: GET /user/confirmPremiumSubscription/dddmmcn [32m200 984.122 ms - 1738
+2023-12-06 16:56:58 info: GET /user/notifcations [32m200 560.443 ms - 188
+2023-12-06 17:01:50 error: 400 - Appointment time is not available - /appointment/makeAppointment - POST - ::1
+2023-12-06 17:01:50 info: POST /appointment/makeAppointment [33m400 970.653 ms - 331
+2023-12-06 17:11:29 info: POST /appointment/makeAppointment [32m200 1740.853 ms - 213
+2023-12-06 17:12:15 error: 500 - Staff validation failed: aboutMe: Path `aboutMe` is required., POMI: Path `POMI` is required., degreeCertificate: Path `degreeCertificate` is required., CV: Path `CV` is required., graduationDate: Path `graduationDate` is required., university: Path `university` is required., degree: Path `degree` is required., major: Path `major` is required., dateOfBirth: Path `dateOfBirth` is required., proofOfIdentity: Path `proofOfIdentity` is required., location: Path `location` is required., passportImage: Path `passportImage` is required., boardCertification: Path `boardCertification` is required., medicalLisense: Path `medicalLisense` is required., phoneNumber: Path `phoneNumber` is required. - /appointment/confirmAppointment - GET - ::1
+2023-12-06 17:12:15 info: GET /appointment/confirmAppointment [31m500 1502.765 ms - 1919
+2023-12-06 17:13:14 error: 500 - Staff validation failed: phoneNumber: Path `phoneNumber` is required. - /appointment/confirmAppointment - GET - ::1
+2023-12-06 17:13:14 info: GET /appointment/confirmAppointment [31m500 3549.426 ms - 671
+2023-12-06 17:13:40 error: 500 - Cannot read properties of undefined (reading 'getFullYear') - /appointment/confirmAppointment - GET - ::1
+2023-12-06 17:13:40 info: GET /appointment/confirmAppointment [31m500 4112.943 ms - 387
+2023-12-06 17:14:24 error: 500 - Apointment already verified - /appointment/confirmAppointment - GET - ::1
+2023-12-06 17:14:24 info: GET /appointment/confirmAppointment [31m500 2098.962 ms - 319
+2023-12-06 17:15:45 info: POST /appointment/makeAppointment [32m200 1374.578 ms - 213
+2023-12-06 17:16:19 error: 500 - Invalid status code: {
+  _id: new ObjectId("65709e31f64626f8c4d1cc71"),
+  doctorId: {
+    _id: new ObjectId("6569b8bac6389da19e308d83"),
+    firstName: 'David',
+    lastName: 'Johnson',
+    email: 'daviddddjoshnss3bson@gmail.com',
+    password: '$2b$08$cAedRfLnhmTLbskMKFBiJeu2rR5dduKp5aPmWhp5/nEkfig1xq5Um',
+    isActive: 'true',
+    hourlyPrice: 5000,
+    hasProvidedCredentials: false,
+    accountType: 'staff',
+    verificationToken: '701361702e1dc2cfc3d1463687c831e7',
+    isVerified: false,
+    currentPatients: [
+      new ObjectId("6569b56f65a04349e4351e3e"),
+      new ObjectId("657099607fe9593a22871016")
+    ],
+    allPatients: [],
+    pendingPatients: [],
+    professionalReferences: [],
+    tokens: [ [Object], [Object] ],
+    createdAt: 2023-12-01T10:43:07.705Z,
+    updatedAt: 2023-12-06T16:16:17.119Z,
+    __v: 1
+  },
+  patientId: {
+    _id: new ObjectId("657099607fe9593a22871016"),
+    firstName: 'Faozan',
+    lastName: 'Segunmaru',
+    email: 'Segunfnssaaddozdsssssssbbdddssdgds23ddms9@gmail.com',
+    password: '$2b$08$FDY3gyj6Dl4.Gg2D1D9fTOPzgeZq29cfbhQyyl3HnsECzmSg1WQQC',
+    isPremium: true,
+    accountType: 'user',
+    verificationToken: 'ca68ff0c3f1b1dea63ab1d5ed5105f3d',
+    isVerified: false,
+    assignedDoctors: [ new ObjectId("6569b8bac6389da19e308d83") ],
+    isAdmin: false,
+    tokens: [ [Object] ],
+    createdAt: 2023-12-06T15:55:13.515Z,
+    updatedAt: 2023-12-06T16:16:16.564Z,
+    __v: 0,
+    paystackRef: '76900b23-225b-4da1-a4a8-f127073dd78d'
+  },
+  appointmentTime: 2025-11-01T18:00:00.000Z,
+  duration: 30,
+  status: 'confirmed',
+  notes: 'My body itches after i take my bath',
+  paystackRef: '76900b23-225b-4da1-a4a8-f127073dd78d',
+  createdAt: 2023-12-06T16:15:45.250Z,
+  updatedAt: 2023-12-06T16:16:18.311Z,
+  __v: 0
+} - /appointment/confirmAppointment - GET - ::1
+2023-12-06 17:16:19 info: GET /appointment/confirmAppointment [31m500 3468.369 ms - 4702
+2023-12-06 17:17:04 info: POST /appointment/makeAppointment [32m200 3426.968 ms - 213
+2023-12-06 17:17:23 info: GET /appointment/confirmAppointment [32m200 3244.871 ms - 2419
+2023-12-06 21:09:17 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0ly1K - GET - ::ffff:127.0.0.1
+2023-12-06 21:09:17 info: GET /socket.io/?EIO=4&transport=polling&t=On0ly1K [33m404 18.817 ms - 57
+2023-12-06 21:09:18 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0lyM9 - GET - ::ffff:127.0.0.1
+2023-12-06 21:09:18 info: GET /socket.io/?EIO=4&transport=polling&t=On0lyM9 [33m404 2.414 ms - 57
+2023-12-06 21:09:21 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0lz1p - GET - ::ffff:127.0.0.1
+2023-12-06 21:09:21 info: GET /socket.io/?EIO=4&transport=polling&t=On0lz1p [33m404 2.462 ms - 57
+2023-12-06 21:09:26 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0l-AK - GET - ::ffff:127.0.0.1
+2023-12-06 21:09:26 info: GET /socket.io/?EIO=4&transport=polling&t=On0l-AK [33m404 2.837 ms - 57
+2023-12-06 21:09:32 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0l_eh - GET - ::ffff:127.0.0.1
+2023-12-06 21:09:32 info: GET /socket.io/?EIO=4&transport=polling&t=On0l_eh [33m404 2.608 ms - 57
+2023-12-06 21:09:38 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0m17Y - GET - ::ffff:127.0.0.1
+2023-12-06 21:09:38 info: GET /socket.io/?EIO=4&transport=polling&t=On0m17Y [33m404 2.131 ms - 57
+2023-12-06 21:09:43 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0m25- - GET - ::ffff:127.0.0.1
+2023-12-06 21:09:43 info: GET /socket.io/?EIO=4&transport=polling&t=On0m25- [33m404 17.790 ms - 57
+2023-12-06 21:09:44 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0m2cB - GET - ::ffff:127.0.0.1
+2023-12-06 21:09:44 info: GET /socket.io/?EIO=4&transport=polling&t=On0m2cB [33m404 2.868 ms - 57
+2023-12-06 21:09:48 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0m3bZ - GET - ::ffff:127.0.0.1
+2023-12-06 21:09:48 info: GET /socket.io/?EIO=4&transport=polling&t=On0m3bZ [33m404 2.713 ms - 57
+2023-12-06 21:09:49 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0m3qc - GET - ::ffff:127.0.0.1
+2023-12-06 21:09:49 info: GET /socket.io/?EIO=4&transport=polling&t=On0m3qc [33m404 3.246 ms - 57
+2023-12-06 21:09:53 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0m4qS - GET - ::ffff:127.0.0.1
+2023-12-06 21:09:53 info: GET /socket.io/?EIO=4&transport=polling&t=On0m4qS [33m404 3.038 ms - 57
+2023-12-06 21:09:54 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0m53D - GET - ::ffff:127.0.0.1
+2023-12-06 21:09:54 info: GET /socket.io/?EIO=4&transport=polling&t=On0m53D [33m404 2.918 ms - 57
+2023-12-06 21:09:58 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0m63D - GET - ::ffff:127.0.0.1
+2023-12-06 21:09:58 info: GET /socket.io/?EIO=4&transport=polling&t=On0m63D [33m404 2.381 ms - 57
+2023-12-06 21:09:59 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0m6Hf - GET - ::ffff:127.0.0.1
+2023-12-06 21:09:59 info: GET /socket.io/?EIO=4&transport=polling&t=On0m6Hf [33m404 2.227 ms - 57
+2023-12-06 21:11:52 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0mWgc - GET - ::ffff:127.0.0.1
+2023-12-06 21:11:52 info: GET /socket.io/?EIO=4&transport=polling&t=On0mWgc [33m404 10.296 ms - 57
+2023-12-06 21:11:52 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0mWwJ - GET - ::1
+2023-12-06 21:11:52 info: GET /socket.io/?EIO=4&transport=polling&t=On0mWwJ [33m404 3.010 ms - 57
+2023-12-06 21:11:52 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0mXf4 - GET - ::ffff:127.0.0.1
+2023-12-06 21:11:52 info: GET /socket.io/?EIO=4&transport=polling&t=On0mXf4 [33m404 2.700 ms - 57
+2023-12-06 21:11:56 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0mYiJ - GET - ::1
+2023-12-06 21:11:56 info: GET /socket.io/?EIO=4&transport=polling&t=On0mYiJ [33m404 2.257 ms - 57
+2023-12-06 21:11:58 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0mZGm - GET - ::ffff:127.0.0.1
+2023-12-06 21:11:58 info: GET /socket.io/?EIO=4&transport=polling&t=On0mZGm [33m404 3.167 ms - 57
+2023-12-06 21:11:59 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0mZW- - GET - ::1
+2023-12-06 21:11:59 info: GET /socket.io/?EIO=4&transport=polling&t=On0mZW- [33m404 2.652 ms - 57
+2023-12-06 21:11:59 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0mZX2 - GET - ::ffff:127.0.0.1
+2023-12-06 21:11:59 info: GET /socket.io/?EIO=4&transport=polling&t=On0mZX2 [33m404 2.848 ms - 57
+2023-12-06 21:12:02 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0maAb - GET - ::1
+2023-12-06 21:12:02 info: GET /socket.io/?EIO=4&transport=polling&t=On0maAb [33m404 3.034 ms - 57
+2023-12-06 21:12:05 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0ma_F - GET - ::ffff:127.0.0.1
+2023-12-06 21:12:05 info: GET /socket.io/?EIO=4&transport=polling&t=On0ma_F [33m404 2.720 ms - 57
+2023-12-06 21:12:05 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0ma_H - GET - ::1
+2023-12-06 21:12:05 info: GET /socket.io/?EIO=4&transport=polling&t=On0ma_H [33m404 1.713 ms - 57
+2023-12-06 21:12:05 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0ma_J - GET - ::ffff:127.0.0.1
+2023-12-06 21:12:05 info: GET /socket.io/?EIO=4&transport=polling&t=On0ma_J [33m404 1.795 ms - 57
+2023-12-06 21:12:08 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0mblZ - GET - ::1
+2023-12-06 21:12:08 info: GET /socket.io/?EIO=4&transport=polling&t=On0mblZ [33m404 3.194 ms - 57
+2023-12-06 21:12:11 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0mcUt - GET - ::ffff:127.0.0.1
+2023-12-06 21:12:11 info: GET /socket.io/?EIO=4&transport=polling&t=On0mcUt [33m404 2.156 ms - 57
+2023-12-06 21:12:11 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0mcUv - GET - ::1
+2023-12-06 21:12:11 info: GET /socket.io/?EIO=4&transport=polling&t=On0mcUv [33m404 1.961 ms - 57
+2023-12-06 21:12:11 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0mcUx - GET - ::ffff:127.0.0.1
+2023-12-06 21:12:11 info: GET /socket.io/?EIO=4&transport=polling&t=On0mcUx [33m404 2.344 ms - 57
+2023-12-06 21:12:14 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0mdEb - GET - ::1
+2023-12-06 21:12:14 info: GET /socket.io/?EIO=4&transport=polling&t=On0mdEb [33m404 3.545 ms - 57
+2023-12-06 21:12:17 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0me2h - GET - ::ffff:127.0.0.1
+2023-12-06 21:12:17 info: GET /socket.io/?EIO=4&transport=polling&t=On0me2h [33m404 3.220 ms - 57
+2023-12-06 21:12:17 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0me2i - GET - ::1
+2023-12-06 21:12:17 info: GET /socket.io/?EIO=4&transport=polling&t=On0me2i [33m404 1.218 ms - 57
+2023-12-06 21:12:17 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0me2k - GET - ::ffff:127.0.0.1
+2023-12-06 21:12:17 info: GET /socket.io/?EIO=4&transport=polling&t=On0me2k [33m404 1.179 ms - 57
+2023-12-06 21:15:07 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nGUj - GET - ::ffff:127.0.0.1
+2023-12-06 21:15:07 info: GET /socket.io/?EIO=4&transport=polling&t=On0nGUj [33m404 15.244 ms - 57
+2023-12-06 21:15:07 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nHH2 - GET - ::ffff:127.0.0.1
+2023-12-06 21:15:07 info: GET /socket.io/?EIO=4&transport=polling&t=On0nHH2 [33m404 3.239 ms - 57
+2023-12-06 21:15:09 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nHuM - GET - ::ffff:127.0.0.1
+2023-12-06 21:15:09 info: GET /socket.io/?EIO=4&transport=polling&t=On0nHuM [33m404 2.649 ms - 57
+2023-12-06 21:15:11 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nINp - GET - ::ffff:127.0.0.1
+2023-12-06 21:15:11 info: GET /socket.io/?EIO=4&transport=polling&t=On0nINp [33m404 4.855 ms - 57
+2023-12-06 21:15:13 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nIqj - GET - ::ffff:127.0.0.1
+2023-12-06 21:15:13 info: GET /socket.io/?EIO=4&transport=polling&t=On0nIqj [33m404 2.402 ms - 57
+2023-12-06 21:15:16 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nJgK - GET - ::ffff:127.0.0.1
+2023-12-06 21:15:16 info: GET /socket.io/?EIO=4&transport=polling&t=On0nJgK [33m404 2.029 ms - 57
+2023-12-06 21:15:18 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nK38 - GET - ::ffff:127.0.0.1
+2023-12-06 21:15:18 info: GET /socket.io/?EIO=4&transport=polling&t=On0nK38 [33m404 4.022 ms - 57
+2023-12-06 21:15:21 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nKuo - GET - ::ffff:127.0.0.1
+2023-12-06 21:15:21 info: GET /socket.io/?EIO=4&transport=polling&t=On0nKuo [33m404 4.335 ms - 57
+2023-12-06 21:15:23 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nLI3 - GET - ::ffff:127.0.0.1
+2023-12-06 21:15:24 info: GET /socket.io/?EIO=4&transport=polling&t=On0nLI3 [33m404 1600.677 ms - 57
+2023-12-06 21:15:27 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nMNM - GET - ::ffff:127.0.0.1
+2023-12-06 21:15:27 info: GET /socket.io/?EIO=4&transport=polling&t=On0nMNM [33m404 6.546 ms - 57
+2023-12-06 21:15:30 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nMxs - GET - ::ffff:127.0.0.1
+2023-12-06 21:15:30 info: GET /socket.io/?EIO=4&transport=polling&t=On0nMxs [33m404 1.874 ms - 57
+2023-12-06 21:15:34 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nNxw - GET - ::ffff:127.0.0.1
+2023-12-06 21:15:34 info: GET /socket.io/?EIO=4&transport=polling&t=On0nNxw [33m404 1.804 ms - 57
+2023-12-06 21:15:36 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nOWr - GET - ::ffff:127.0.0.1
+2023-12-06 21:15:36 info: GET /socket.io/?EIO=4&transport=polling&t=On0nOWr [33m404 4.133 ms - 57
+2023-12-06 21:15:40 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nPVL - GET - ::ffff:127.0.0.1
+2023-12-06 21:15:40 info: GET /socket.io/?EIO=4&transport=polling&t=On0nPVL [33m404 2.104 ms - 57
+2023-12-06 21:15:42 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nP_H - GET - ::ffff:127.0.0.1
+2023-12-06 21:15:42 info: GET /socket.io/?EIO=4&transport=polling&t=On0nP_H [33m404 2.422 ms - 57
+2023-12-06 21:15:46 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nQ_k - GET - ::ffff:127.0.0.1
+2023-12-06 21:15:46 info: GET /socket.io/?EIO=4&transport=polling&t=On0nQ_k [33m404 1.917 ms - 57
+2023-12-06 21:15:48 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nRVW - GET - ::ffff:127.0.0.1
+2023-12-06 21:15:48 info: GET /socket.io/?EIO=4&transport=polling&t=On0nRVW [33m404 3.015 ms - 57
+2023-12-06 21:15:52 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nSWb - GET - ::ffff:127.0.0.1
+2023-12-06 21:15:52 info: GET /socket.io/?EIO=4&transport=polling&t=On0nSWb [33m404 6.493 ms - 57
+2023-12-06 21:15:54 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nT0r - GET - ::ffff:127.0.0.1
+2023-12-06 21:15:54 info: GET /socket.io/?EIO=4&transport=polling&t=On0nT0r [33m404 3.706 ms - 57
+2023-12-06 21:15:59 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nU1C - GET - ::ffff:127.0.0.1
+2023-12-06 21:15:59 info: GET /socket.io/?EIO=4&transport=polling&t=On0nU1C [33m404 3.958 ms - 57
+2023-12-06 21:16:01 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nUXN - GET - ::ffff:127.0.0.1
+2023-12-06 21:16:01 info: GET /socket.io/?EIO=4&transport=polling&t=On0nUXN [33m404 3.421 ms - 57
+2023-12-06 21:16:05 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nVW4 - GET - ::ffff:127.0.0.1
+2023-12-06 21:16:05 info: GET /socket.io/?EIO=4&transport=polling&t=On0nVW4 [33m404 3.322 ms - 57
+2023-12-06 21:16:07 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nW09 - GET - ::ffff:127.0.0.1
+2023-12-06 21:16:07 info: GET /socket.io/?EIO=4&transport=polling&t=On0nW09 [33m404 3.948 ms - 57
+2023-12-06 21:16:11 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nW_A - GET - ::ffff:127.0.0.1
+2023-12-06 21:16:11 info: GET /socket.io/?EIO=4&transport=polling&t=On0nW_A [33m404 3.497 ms - 57
+2023-12-06 21:16:13 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nXWI - GET - ::ffff:127.0.0.1
+2023-12-06 21:16:13 info: GET /socket.io/?EIO=4&transport=polling&t=On0nXWI [33m404 2.395 ms - 57
+2023-12-06 21:16:17 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nYUk - GET - ::ffff:127.0.0.1
+2023-12-06 21:16:17 info: GET /socket.io/?EIO=4&transport=polling&t=On0nYUk [33m404 3.698 ms - 57
+2023-12-06 21:16:19 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nZ05 - GET - ::ffff:127.0.0.1
+2023-12-06 21:16:19 info: GET /socket.io/?EIO=4&transport=polling&t=On0nZ05 [33m404 3.992 ms - 57
+2023-12-06 21:16:23 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nZzW - GET - ::ffff:127.0.0.1
+2023-12-06 21:16:23 info: GET /socket.io/?EIO=4&transport=polling&t=On0nZzW [33m404 3.930 ms - 57
+2023-12-06 21:16:25 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0naV6 - GET - ::ffff:127.0.0.1
+2023-12-06 21:16:25 info: GET /socket.io/?EIO=4&transport=polling&t=On0naV6 [33m404 1.730 ms - 57
+2023-12-06 21:16:29 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nbRn - GET - ::ffff:127.0.0.1
+2023-12-06 21:16:29 info: GET /socket.io/?EIO=4&transport=polling&t=On0nbRn [33m404 6.771 ms - 57
+2023-12-06 21:16:31 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nbzC - GET - ::ffff:127.0.0.1
+2023-12-06 21:16:31 info: GET /socket.io/?EIO=4&transport=polling&t=On0nbzC [33m404 1.948 ms - 57
+2023-12-06 21:16:35 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0ncyO - GET - ::ffff:127.0.0.1
+2023-12-06 21:16:35 info: GET /socket.io/?EIO=4&transport=polling&t=On0ncyO [33m404 5.013 ms - 57
+2023-12-06 21:16:37 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0ndSQ - GET - ::ffff:127.0.0.1
+2023-12-06 21:16:37 info: GET /socket.io/?EIO=4&transport=polling&t=On0ndSQ [33m404 1.682 ms - 57
+2023-12-06 21:16:41 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0neQv - GET - ::ffff:127.0.0.1
+2023-12-06 21:16:41 info: GET /socket.io/?EIO=4&transport=polling&t=On0neQv [33m404 3.539 ms - 57
+2023-12-06 21:16:43 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nex1 - GET - ::ffff:127.0.0.1
+2023-12-06 21:16:43 info: GET /socket.io/?EIO=4&transport=polling&t=On0nex1 [33m404 4.693 ms - 57
+2023-12-06 21:16:47 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nfwO - GET - ::ffff:127.0.0.1
+2023-12-06 21:16:47 info: GET /socket.io/?EIO=4&transport=polling&t=On0nfwO [33m404 5.459 ms - 57
+2023-12-06 21:16:49 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0ngQP - GET - ::ffff:127.0.0.1
+2023-12-06 21:16:49 info: GET /socket.io/?EIO=4&transport=polling&t=On0ngQP [33m404 10.424 ms - 57
+2023-12-06 21:16:53 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nhOv - GET - ::ffff:127.0.0.1
+2023-12-06 21:16:53 info: GET /socket.io/?EIO=4&transport=polling&t=On0nhOv [33m404 4.727 ms - 57
+2023-12-06 21:16:55 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nhv1 - GET - ::ffff:127.0.0.1
+2023-12-06 21:16:55 info: GET /socket.io/?EIO=4&transport=polling&t=On0nhv1 [33m404 2.610 ms - 57
+2023-12-06 21:17:00 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nivr - GET - ::ffff:127.0.0.1
+2023-12-06 21:17:00 info: GET /socket.io/?EIO=4&transport=polling&t=On0nivr [33m404 1.790 ms - 57
+2023-12-06 21:17:02 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0njQ0 - GET - ::ffff:127.0.0.1
+2023-12-06 21:17:02 info: GET /socket.io/?EIO=4&transport=polling&t=On0njQ0 [33m404 1.859 ms - 57
+2023-12-06 21:17:06 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nkS0 - GET - ::ffff:127.0.0.1
+2023-12-06 21:17:06 info: GET /socket.io/?EIO=4&transport=polling&t=On0nkS0 [33m404 17.824 ms - 57
+2023-12-06 21:17:08 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nkya - GET - ::ffff:127.0.0.1
+2023-12-06 21:17:08 info: GET /socket.io/?EIO=4&transport=polling&t=On0nkya [33m404 3.169 ms - 57
+2023-12-06 21:17:12 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nlxB - GET - ::ffff:127.0.0.1
+2023-12-06 21:17:12 info: GET /socket.io/?EIO=4&transport=polling&t=On0nlxB [33m404 2.878 ms - 57
+2023-12-06 21:17:14 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nmQz - GET - ::ffff:127.0.0.1
+2023-12-06 21:17:14 info: GET /socket.io/?EIO=4&transport=polling&t=On0nmQz [33m404 2.982 ms - 57
+2023-12-06 21:17:18 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nnTa - GET - ::ffff:127.0.0.1
+2023-12-06 21:17:18 info: GET /socket.io/?EIO=4&transport=polling&t=On0nnTa [33m404 2.299 ms - 57
+2023-12-06 21:17:20 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nnzZ - GET - ::ffff:127.0.0.1
+2023-12-06 21:17:20 info: GET /socket.io/?EIO=4&transport=polling&t=On0nnzZ [33m404 1.906 ms - 57
+2023-12-06 21:17:24 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0no-l - GET - ::ffff:127.0.0.1
+2023-12-06 21:17:24 info: GET /socket.io/?EIO=4&transport=polling&t=On0no-l [33m404 3.626 ms - 57
+2023-12-06 21:17:27 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0npWU - GET - ::ffff:127.0.0.1
+2023-12-06 21:17:27 info: GET /socket.io/?EIO=4&transport=polling&t=On0npWU [33m404 4.333 ms - 57
+2023-12-06 21:17:31 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nqWo - GET - ::ffff:127.0.0.1
+2023-12-06 21:17:31 info: GET /socket.io/?EIO=4&transport=polling&t=On0nqWo [33m404 3.279 ms - 57
+2023-12-06 21:17:33 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nr0o - GET - ::ffff:127.0.0.1
+2023-12-06 21:17:33 info: GET /socket.io/?EIO=4&transport=polling&t=On0nr0o [33m404 5.097 ms - 57
+2023-12-06 21:17:37 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0ns1k - GET - ::ffff:127.0.0.1
+2023-12-06 21:17:37 info: GET /socket.io/?EIO=4&transport=polling&t=On0ns1k [33m404 1.938 ms - 57
+2023-12-06 21:17:43 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nsaw - GET - ::1
+2023-12-06 21:17:43 info: GET /socket.io/?EIO=4&transport=polling&t=On0nsaw [33m404 22.999 ms - 57
+2023-12-06 21:17:44 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0ntl9 - GET - ::1
+2023-12-06 21:17:44 info: GET /socket.io/?EIO=4&transport=polling&t=On0ntl9 [33m404 6.163 ms - 57
+2023-12-06 21:17:49 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nuzW - GET - ::1
+2023-12-06 21:17:49 info: GET /socket.io/?EIO=4&transport=polling&t=On0nuzW [33m404 5.488 ms - 57
+2023-12-06 21:17:50 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nvDo - GET - ::1
+2023-12-06 21:17:50 info: GET /socket.io/?EIO=4&transport=polling&t=On0nvDo [33m404 4.686 ms - 57
+2023-12-06 21:17:55 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nwR- - GET - ::1
+2023-12-06 21:17:55 info: GET /socket.io/?EIO=4&transport=polling&t=On0nwR- [33m404 6.200 ms - 57
+2023-12-06 21:17:57 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nwy4 - GET - ::1
+2023-12-06 21:17:57 info: GET /socket.io/?EIO=4&transport=polling&t=On0nwy4 [33m404 2.947 ms - 57
+2023-12-06 21:18:01 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nxzE - GET - ::1
+2023-12-06 21:18:01 info: GET /socket.io/?EIO=4&transport=polling&t=On0nxzE [33m404 5.458 ms - 57
+2023-12-06 21:18:03 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nyQf - GET - ::1
+2023-12-06 21:18:03 info: GET /socket.io/?EIO=4&transport=polling&t=On0nyQf [33m404 3.683 ms - 57
+2023-12-06 21:18:06 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0nzFb - GET - ::1
+2023-12-06 21:18:06 info: GET /socket.io/?EIO=4&transport=polling&t=On0nzFb [33m404 4.207 ms - 57
+2023-12-06 21:18:54 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0o82a - GET - ::1
+2023-12-06 21:18:54 info: GET /socket.io/?EIO=4&transport=polling&t=On0o82a [33m404 12.166 ms - 57
+2023-12-06 21:18:54 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0o7Y7 - GET - ::ffff:127.0.0.1
+2023-12-06 21:18:54 info: GET /socket.io/?EIO=4&transport=polling&t=On0o7Y7 [33m404 3.335 ms - 57
+2023-12-06 21:18:54 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0o7cL - GET - ::ffff:127.0.0.1
+2023-12-06 21:18:54 info: GET /socket.io/?EIO=4&transport=polling&t=On0o7cL [33m404 3.013 ms - 57
+2023-12-06 21:18:54 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0o8E0 - GET - ::ffff:127.0.0.1
+2023-12-06 21:18:54 info: GET /socket.io/?EIO=4&transport=polling&t=On0o8E0 [33m404 2.405 ms - 57
+2023-12-06 21:18:55 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0o9C2 - GET - ::ffff:127.0.0.1
+2023-12-06 21:18:55 info: GET /socket.io/?EIO=4&transport=polling&t=On0o9C2 [33m404 5.996 ms - 57
+2023-12-06 21:18:56 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0o9OO - GET - ::ffff:127.0.0.1
+2023-12-06 21:18:56 info: GET /socket.io/?EIO=4&transport=polling&t=On0o9OO [33m404 2.848 ms - 57
+2023-12-06 21:18:56 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0o9R8 - GET - ::ffff:127.0.0.1
+2023-12-06 21:18:56 info: GET /socket.io/?EIO=4&transport=polling&t=On0o9R8 [33m404 2.972 ms - 57
+2023-12-06 21:18:58 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0o9qs - GET - ::1
+2023-12-06 21:18:58 info: GET /socket.io/?EIO=4&transport=polling&t=On0o9qs [33m404 3.703 ms - 57
+2023-12-06 21:18:59 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0oA0r - GET - ::1
+2023-12-06 21:18:59 info: GET /socket.io/?EIO=4&transport=polling&t=On0oA0r [33m404 6.757 ms - 57
+2023-12-06 21:18:59 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0oA8r - GET - ::ffff:127.0.0.1
+2023-12-06 21:18:59 info: GET /socket.io/?EIO=4&transport=polling&t=On0oA8r [33m404 4.254 ms - 57
+2023-12-06 21:19:01 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0oAWb - GET - ::ffff:127.0.0.1
+2023-12-06 21:19:01 info: GET /socket.io/?EIO=4&transport=polling&t=On0oAWb [33m404 118.289 ms - 57
+2023-12-06 21:19:01 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0oAXa - GET - ::ffff:127.0.0.1
+2023-12-06 21:19:01 info: GET /socket.io/?EIO=4&transport=polling&t=On0oAXa [33m404 5.285 ms - 57
+2023-12-06 21:19:33 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0oHZl - GET - ::1
+2023-12-06 21:19:33 info: GET /socket.io/?EIO=4&transport=polling&t=On0oHZl [33m404 12.169 ms - 57
+2023-12-06 21:19:33 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0oHqS - GET - ::1
+2023-12-06 21:19:33 info: GET /socket.io/?EIO=4&transport=polling&t=On0oHqS [33m404 4.300 ms - 57
+2023-12-06 21:19:33 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0oHuW - GET - ::ffff:127.0.0.1
+2023-12-06 21:19:33 info: GET /socket.io/?EIO=4&transport=polling&t=On0oHuW [33m404 1.944 ms - 57
+2023-12-06 21:19:33 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0oGQ9 - GET - ::1
+2023-12-06 21:19:33 info: GET /socket.io/?EIO=4&transport=polling&t=On0oGQ9 [33m404 2.612 ms - 57
+2023-12-06 21:19:33 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0oHOK - GET - ::1
+2023-12-06 21:19:33 info: GET /socket.io/?EIO=4&transport=polling&t=On0oHOK [33m404 3.520 ms - 57
+2023-12-06 21:19:33 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0oHdk - GET - ::1
+2023-12-06 21:19:33 info: GET /socket.io/?EIO=4&transport=polling&t=On0oHdk [33m404 2.337 ms - 57
+2023-12-06 21:19:33 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0oH9b - GET - ::1
+2023-12-06 21:19:33 info: GET /socket.io/?EIO=4&transport=polling&t=On0oH9b [33m404 2.885 ms - 57
+2023-12-06 21:19:34 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0oIac - GET - ::1
+2023-12-06 21:19:34 info: GET /socket.io/?EIO=4&transport=polling&t=On0oIac [33m404 2.112 ms - 57
+2023-12-06 21:19:35 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0oIq2 - GET - ::1
+2023-12-06 21:19:35 info: GET /socket.io/?EIO=4&transport=polling&t=On0oIq2 [33m404 2.557 ms - 57
+2023-12-06 21:19:35 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0oIql - GET - ::1
+2023-12-06 21:19:35 info: GET /socket.io/?EIO=4&transport=polling&t=On0oIql [33m404 2.363 ms - 57
+2023-12-06 21:19:37 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0oJIK - GET - ::1
+2023-12-06 21:19:37 info: GET /socket.io/?EIO=4&transport=polling&t=On0oJIK [33m404 560.602 ms - 57
+2023-12-06 21:19:37 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0oJIZ - GET - ::ffff:127.0.0.1
+2023-12-06 21:19:37 info: GET /socket.io/?EIO=4&transport=polling&t=On0oJIZ [33m404 2.820 ms - 57
+2023-12-06 21:21:32 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0okih - GET - ::1
+2023-12-06 21:21:32 info: GET /socket.io/?EIO=4&transport=polling&t=On0okih [33m404 19.317 ms - 57
+2023-12-06 21:21:32 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0oje0 - GET - ::1
+2023-12-06 21:21:32 info: GET /socket.io/?EIO=4&transport=polling&t=On0oje0 [33m404 3.605 ms - 57
+2023-12-06 21:21:32 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0okku - GET - ::1
+2023-12-06 21:21:32 info: GET /socket.io/?EIO=4&transport=polling&t=On0okku [33m404 2.387 ms - 57
+2023-12-06 21:21:33 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0ol2F - GET - ::ffff:127.0.0.1
+2023-12-06 21:21:33 info: GET /socket.io/?EIO=4&transport=polling&t=On0ol2F [33m404 3.107 ms - 57
+2023-12-06 21:21:33 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0olnu - GET - ::1
+2023-12-06 21:21:33 info: GET /socket.io/?EIO=4&transport=polling&t=On0olnu [33m404 5.500 ms - 57
+2023-12-06 21:21:34 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0olrZ - GET - ::ffff:127.0.0.1
+2023-12-06 21:21:34 info: GET /socket.io/?EIO=4&transport=polling&t=On0olrZ [33m404 2.670 ms - 57
+2023-12-06 21:21:35 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0om5S - GET - ::1
+2023-12-06 21:21:35 info: GET /socket.io/?EIO=4&transport=polling&t=On0om5S [33m404 5.211 ms - 57
+2023-12-06 21:21:35 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0om82 - GET - ::ffff:127.0.0.1
+2023-12-06 21:21:35 info: GET /socket.io/?EIO=4&transport=polling&t=On0om82 [33m404 1.557 ms - 57
+2023-12-06 21:21:36 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0omLg - GET - ::1
+2023-12-06 21:21:36 info: GET /socket.io/?EIO=4&transport=polling&t=On0omLg [33m404 7.433 ms - 57
+2023-12-06 21:21:36 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0omRp - GET - ::1
+2023-12-06 21:21:36 info: GET /socket.io/?EIO=4&transport=polling&t=On0omRp [33m404 2.529 ms - 57
+2023-12-06 21:21:37 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0omap - GET - ::1
+2023-12-06 21:21:38 info: GET /socket.io/?EIO=4&transport=polling&t=On0omap [33m404 1176.971 ms - 57
+2023-12-06 21:21:38 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0omas - GET - ::ffff:127.0.0.1
+2023-12-06 21:21:38 info: GET /socket.io/?EIO=4&transport=polling&t=On0omas [33m404 5.749 ms - 57
+2023-12-06 21:21:38 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0omiz - GET - ::1
+2023-12-06 21:21:38 info: GET /socket.io/?EIO=4&transport=polling&t=On0omiz [33m404 5.307 ms - 57
+2023-12-06 21:21:38 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0ommw - GET - ::1
+2023-12-06 21:21:38 info: GET /socket.io/?EIO=4&transport=polling&t=On0ommw [33m404 7.127 ms - 57
+2023-12-06 21:21:38 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0omnP - GET - ::ffff:127.0.0.1
+2023-12-06 21:21:38 info: GET /socket.io/?EIO=4&transport=polling&t=On0omnP [33m404 5.676 ms - 57
+2023-12-06 21:29:19 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0qWmM - GET - ::1
+2023-12-06 21:29:19 info: GET /socket.io/?EIO=4&transport=polling&t=On0qWmM [33m404 34.804 ms - 57
+2023-12-06 21:29:19 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0qVbu - GET - ::1
+2023-12-06 21:29:19 info: GET /socket.io/?EIO=4&transport=polling&t=On0qVbu [33m404 6.231 ms - 57
+2023-12-06 21:29:20 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0qXmH - GET - ::ffff:127.0.0.1
+2023-12-06 21:29:20 info: GET /socket.io/?EIO=4&transport=polling&t=On0qXmH [33m404 4.822 ms - 57
+2023-12-06 21:29:21 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0qY0W - GET - ::1
+2023-12-06 21:29:21 info: GET /socket.io/?EIO=4&transport=polling&t=On0qY0W [33m404 4.311 ms - 57
+2023-12-06 21:29:21 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0qY0Z - GET - ::1
+2023-12-06 21:29:21 info: GET /socket.io/?EIO=4&transport=polling&t=On0qY0Z [33m404 4.767 ms - 57
+2023-12-06 21:29:22 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0qYGV - GET - ::1
+2023-12-06 21:29:22 info: GET /socket.io/?EIO=4&transport=polling&t=On0qYGV [33m404 5.554 ms - 57
+2023-12-06 21:29:23 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0qYWV - GET - ::1
+2023-12-06 21:29:24 info: GET /socket.io/?EIO=4&transport=polling&t=On0qYWV [33m404 168.278 ms - 57
+2023-12-06 21:29:49 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0qcRm - GET - ::ffff:127.0.0.1
+2023-12-06 21:29:49 info: GET /socket.io/?EIO=4&transport=polling&t=On0qcRm [33m404 9.905 ms - 57
+2023-12-06 21:29:49 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0qeh7 - GET - ::ffff:127.0.0.1
+2023-12-06 21:29:49 info: GET /socket.io/?EIO=4&transport=polling&t=On0qeh7 [33m404 1.936 ms - 57
+2023-12-06 21:29:49 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0qeFP - GET - ::ffff:127.0.0.1
+2023-12-06 21:29:49 info: GET /socket.io/?EIO=4&transport=polling&t=On0qeFP [33m404 3.002 ms - 57
+2023-12-06 21:29:49 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0qeh9 - GET - ::ffff:127.0.0.1
+2023-12-06 21:29:49 info: GET /socket.io/?EIO=4&transport=polling&t=On0qeh9 [33m404 2.336 ms - 57
+2023-12-06 21:29:50 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0qew- - GET - ::ffff:127.0.0.1
+2023-12-06 21:29:50 info: GET /socket.io/?EIO=4&transport=polling&t=On0qew- [33m404 3.494 ms - 57
+2023-12-06 21:29:50 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0qex0 - GET - ::ffff:127.0.0.1
+2023-12-06 21:29:50 info: GET /socket.io/?EIO=4&transport=polling&t=On0qex0 [33m404 2.880 ms - 57
+2023-12-06 21:29:52 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0qfQm - GET - ::ffff:127.0.0.1
+2023-12-06 21:29:52 info: GET /socket.io/?EIO=4&transport=polling&t=On0qfQm [33m404 4.385 ms - 57
+2023-12-06 21:29:53 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0qfgl - GET - ::ffff:127.0.0.1
+2023-12-06 21:29:53 info: GET /socket.io/?EIO=4&transport=polling&t=On0qfgl [33m404 18.677 ms - 57
+2023-12-06 21:32:02 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0r6yJ - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:02 info: GET /socket.io/?EIO=4&transport=polling&t=On0r6yJ [33m404 18.449 ms - 57
+2023-12-06 21:32:02 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0r7p7 - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:02 info: GET /socket.io/?EIO=4&transport=polling&t=On0r7p7 [33m404 2.349 ms - 57
+2023-12-06 21:32:02 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0r8Vx - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:02 info: GET /socket.io/?EIO=4&transport=polling&t=On0r8Vx [33m404 2.607 ms - 57
+2023-12-06 21:32:02 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0r9Hp - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:02 info: GET /socket.io/?EIO=4&transport=polling&t=On0r9Hp [33m404 1.983 ms - 57
+2023-12-06 21:32:02 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0r8oT - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:02 info: GET /socket.io/?EIO=4&transport=polling&t=On0r8oT [33m404 2.087 ms - 57
+2023-12-06 21:32:02 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0r9Hq - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:03 info: GET /socket.io/?EIO=4&transport=polling&t=On0r9Hq [33m404 2.336 ms - 57
+2023-12-06 21:32:03 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0r8oV - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:03 info: GET /socket.io/?EIO=4&transport=polling&t=On0r8oV [33m404 2.154 ms - 57
+2023-12-06 21:32:03 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0r92B - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:03 info: GET /socket.io/?EIO=4&transport=polling&t=On0r92B [33m404 2.611 ms - 57
+2023-12-06 21:32:04 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0r9rj - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:04 info: GET /socket.io/?EIO=4&transport=polling&t=On0r9rj [33m404 4.633 ms - 57
+2023-12-06 21:32:06 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0rA5- - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:06 info: GET /socket.io/?EIO=4&transport=polling&t=On0rA5- [33m404 3.193 ms - 57
+2023-12-06 21:32:06 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0rA60 - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:06 info: GET /socket.io/?EIO=4&transport=polling&t=On0rA60 [33m404 2.360 ms - 57
+2023-12-06 21:32:08 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0rAqK - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:08 info: GET /socket.io/?EIO=4&transport=polling&t=On0rAqK [33m404 3.719 ms - 57
+2023-12-06 21:32:08 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0rAqM - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:08 info: GET /socket.io/?EIO=4&transport=polling&t=On0rAqM [33m404 2.451 ms - 57
+2023-12-06 21:32:10 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0rB5l - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:10 info: GET /socket.io/?EIO=4&transport=polling&t=On0rB5l [33m404 2.445 ms - 57
+2023-12-06 21:32:10 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0rB5o - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:10 info: GET /socket.io/?EIO=4&transport=polling&t=On0rB5o [33m404 2.433 ms - 57
+2023-12-06 21:32:11 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0rBLc - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:11 info: GET /socket.io/?EIO=4&transport=polling&t=On0rBLc [33m404 1.795 ms - 57
+2023-12-06 21:32:11 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0rBLe - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:11 info: GET /socket.io/?EIO=4&transport=polling&t=On0rBLe [33m404 1.673 ms - 57
+2023-12-06 21:32:12 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0rBbS - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:12 info: GET /socket.io/?EIO=4&transport=polling&t=On0rBbS [33m404 2.472 ms - 57
+2023-12-06 21:32:12 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0rBbU - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:12 info: GET /socket.io/?EIO=4&transport=polling&t=On0rBbU [33m404 1.859 ms - 57
+2023-12-06 21:32:12 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0rBbV - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:12 info: GET /socket.io/?EIO=4&transport=polling&t=On0rBbV [33m404 1.729 ms - 57
+2023-12-06 21:32:13 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0rBrf - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:13 info: GET /socket.io/?EIO=4&transport=polling&t=On0rBrf [33m404 1.788 ms - 57
+2023-12-06 21:32:13 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0rBri - GET - ::ffff:127.0.0.1
+2023-12-06 21:32:13 info: GET /socket.io/?EIO=4&transport=polling&t=On0rBri [33m404 2.369 ms - 57
+2023-12-06 21:35:42 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0ry2z - GET - ::1
+2023-12-06 21:35:42 info: GET /socket.io/?EIO=4&transport=polling&t=On0ry2z [33m404 17.352 ms - 57
+2023-12-06 21:35:42 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0rzId - GET - ::ffff:127.0.0.1
+2023-12-06 21:35:42 info: GET /socket.io/?EIO=4&transport=polling&t=On0rzId [33m404 2.762 ms - 57
+2023-12-06 21:35:42 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0r-h5 - GET - ::1
+2023-12-06 21:35:42 info: GET /socket.io/?EIO=4&transport=polling&t=On0r-h5 [33m404 2.062 ms - 57
+2023-12-06 21:35:42 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0rzIb - GET - ::ffff:127.0.0.1
+2023-12-06 21:35:42 info: GET /socket.io/?EIO=4&transport=polling&t=On0rzIb [33m404 2.405 ms - 57
+2023-12-06 21:35:42 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0r-B1 - GET - ::ffff:127.0.0.1
+2023-12-06 21:35:42 info: GET /socket.io/?EIO=4&transport=polling&t=On0r-B1 [33m404 3.828 ms - 57
+2023-12-06 21:39:22 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0sns0 - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:22 info: GET /socket.io/?EIO=4&transport=polling&t=On0sns0 [33m404 23.069 ms - 57
+2023-12-06 21:39:29 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0ssRQ - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:29 info: GET /socket.io/?EIO=4&transport=polling&t=On0ssRQ [33m404 2.585 ms - 57
+2023-12-06 21:39:30 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0sshO - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:30 info: GET /socket.io/?EIO=4&transport=polling&t=On0sshO [33m404 3.136 ms - 57
+2023-12-06 21:39:35 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0stub - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:40 info: GET /socket.io/?EIO=4&transport=polling&t=On0stub [33m404 4520.682 ms - 57
+2023-12-06 21:39:40 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0su8K - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:40 info: GET /socket.io/?EIO=4&transport=polling&t=On0su8K [33m404 1.680 ms - 57
+2023-12-06 21:39:40 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0su8O - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:40 info: GET /socket.io/?EIO=4&transport=polling&t=On0su8O [33m404 4.002 ms - 57
+2023-12-06 21:39:40 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0suOD - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:40 info: GET /socket.io/?EIO=4&transport=polling&t=On0suOD [33m404 2.256 ms - 57
+2023-12-06 21:39:40 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0suOG - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:40 info: GET /socket.io/?EIO=4&transport=polling&t=On0suOG [33m404 2.158 ms - 57
+2023-12-06 21:39:40 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0sue5 - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:40 info: GET /socket.io/?EIO=4&transport=polling&t=On0sue5 [33m404 3.454 ms - 57
+2023-12-06 21:39:40 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0sue9 - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:40 info: GET /socket.io/?EIO=4&transport=polling&t=On0sue9 [33m404 1.927 ms - 57
+2023-12-06 21:39:40 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0suu3 - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:40 info: GET /socket.io/?EIO=4&transport=polling&t=On0suu3 [33m404 1.575 ms - 57
+2023-12-06 21:39:40 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0suu6 - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:40 info: GET /socket.io/?EIO=4&transport=polling&t=On0suu6 [33m404 2.588 ms - 57
+2023-12-06 21:39:40 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0sv7x - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:40 info: GET /socket.io/?EIO=4&transport=polling&t=On0sv7x [33m404 2.223 ms - 57
+2023-12-06 21:39:40 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0sv7- - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:40 info: GET /socket.io/?EIO=4&transport=polling&t=On0sv7- [33m404 1.969 ms - 57
+2023-12-06 21:39:47 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0swfE - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:47 info: GET /socket.io/?EIO=4&transport=polling&t=On0swfE [33m404 2.512 ms - 57
+2023-12-06 21:39:48 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0swvE - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:48 info: GET /socket.io/?EIO=4&transport=polling&t=On0swvE [33m404 2.215 ms - 57
+2023-12-06 21:39:48 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0swvH - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:48 info: GET /socket.io/?EIO=4&transport=polling&t=On0swvH [33m404 2.083 ms - 57
+2023-12-06 21:39:49 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0sx91 - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:49 info: GET /socket.io/?EIO=4&transport=polling&t=On0sx91 [33m404 3.303 ms - 57
+2023-12-06 21:39:49 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0sx95 - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:49 info: GET /socket.io/?EIO=4&transport=polling&t=On0sx95 [33m404 3.310 ms - 57
+2023-12-06 21:39:50 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0sxPy - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:50 info: GET /socket.io/?EIO=4&transport=polling&t=On0sxPy [33m404 2.763 ms - 57
+2023-12-06 21:39:51 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0sxfk - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:51 info: GET /socket.io/?EIO=4&transport=polling&t=On0sxfk [33m404 2.282 ms - 57
+2023-12-06 21:39:51 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0sxfm - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:51 info: GET /socket.io/?EIO=4&transport=polling&t=On0sxfm [33m404 2.389 ms - 57
+2023-12-06 21:39:52 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0sxw4 - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:52 info: GET /socket.io/?EIO=4&transport=polling&t=On0sxw4 [33m404 2.155 ms - 57
+2023-12-06 21:39:54 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0syQo - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:54 info: GET /socket.io/?EIO=4&transport=polling&t=On0syQo [33m404 1.766 ms - 57
+2023-12-06 21:39:54 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0syQq - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:54 info: GET /socket.io/?EIO=4&transport=polling&t=On0syQq [33m404 8.156 ms - 57
+2023-12-06 21:39:59 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0szf9 - GET - ::ffff:127.0.0.1
+2023-12-06 21:39:59 info: GET /socket.io/?EIO=4&transport=polling&t=On0szf9 [33m404 1.696 ms - 57
+2023-12-06 21:40:00 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0szu_ - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:00 info: GET /socket.io/?EIO=4&transport=polling&t=On0szu_ [33m404 1.841 ms - 57
+2023-12-06 21:40:01 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0s-8r - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:01 info: GET /socket.io/?EIO=4&transport=polling&t=On0s-8r [33m404 2.173 ms - 57
+2023-12-06 21:40:01 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0s-8t - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:01 info: GET /socket.io/?EIO=4&transport=polling&t=On0s-8t [33m404 1.704 ms - 57
+2023-12-06 21:40:02 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0s-PN - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:02 info: GET /socket.io/?EIO=4&transport=polling&t=On0s-PN [33m404 1.508 ms - 57
+2023-12-06 21:40:03 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0s-fM - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:03 info: GET /socket.io/?EIO=4&transport=polling&t=On0s-fM [33m404 1.933 ms - 57
+2023-12-06 21:40:03 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0s-fO - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:03 info: GET /socket.io/?EIO=4&transport=polling&t=On0s-fO [33m404 2.183 ms - 57
+2023-12-06 21:40:04 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0s-vM - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:04 info: GET /socket.io/?EIO=4&transport=polling&t=On0s-vM [33m404 1.844 ms - 57
+2023-12-06 21:40:04 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0s-vP - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:04 info: GET /socket.io/?EIO=4&transport=polling&t=On0s-vP [33m404 1.139 ms - 57
+2023-12-06 21:40:05 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0s_9H - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:05 info: GET /socket.io/?EIO=4&transport=polling&t=On0s_9H [33m404 1.923 ms - 57
+2023-12-06 21:40:05 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0s_9K - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:05 info: GET /socket.io/?EIO=4&transport=polling&t=On0s_9K [33m404 1.861 ms - 57
+2023-12-06 21:40:06 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0s_PQ - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:06 info: GET /socket.io/?EIO=4&transport=polling&t=On0s_PQ [33m404 1.762 ms - 57
+2023-12-06 21:40:11 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t0hH - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:11 info: GET /socket.io/?EIO=4&transport=polling&t=On0t0hH [33m404 1.561 ms - 57
+2023-12-06 21:40:11 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t0hJ - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:11 info: GET /socket.io/?EIO=4&transport=polling&t=On0t0hJ [33m404 2.927 ms - 57
+2023-12-06 21:40:12 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t0hL - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:12 info: GET /socket.io/?EIO=4&transport=polling&t=On0t0hL [33m404 9.094 ms - 57
+2023-12-06 21:40:12 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t0yb - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:12 info: GET /socket.io/?EIO=4&transport=polling&t=On0t0yb [33m404 2.280 ms - 57
+2023-12-06 21:40:12 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t0yd - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:12 info: GET /socket.io/?EIO=4&transport=polling&t=On0t0yd [33m404 2.240 ms - 57
+2023-12-06 21:40:12 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t0yf - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:12 info: GET /socket.io/?EIO=4&transport=polling&t=On0t0yf [33m404 1.292 ms - 57
+2023-12-06 21:40:13 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t1Ci - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:13 info: GET /socket.io/?EIO=4&transport=polling&t=On0t1Ci [33m404 1.893 ms - 57
+2023-12-06 21:40:15 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t1Vp - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:15 info: GET /socket.io/?EIO=4&transport=polling&t=On0t1Vp [33m404 1.945 ms - 57
+2023-12-06 21:40:15 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t1Vs - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:15 info: GET /socket.io/?EIO=4&transport=polling&t=On0t1Vs [33m404 2.628 ms - 57
+2023-12-06 21:40:16 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t1la - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:16 info: GET /socket.io/?EIO=4&transport=polling&t=On0t1la [33m404 1.880 ms - 57
+2023-12-06 21:40:16 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t1lc - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:16 info: GET /socket.io/?EIO=4&transport=polling&t=On0t1lc [33m404 1.715 ms - 57
+2023-12-06 21:40:21 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t2zt - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:21 info: GET /socket.io/?EIO=4&transport=polling&t=On0t2zt [33m404 3.269 ms - 57
+2023-12-06 21:40:21 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t2zx - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:21 info: GET /socket.io/?EIO=4&transport=polling&t=On0t2zx [33m404 2.329 ms - 57
+2023-12-06 21:40:22 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t3FD - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:22 info: GET /socket.io/?EIO=4&transport=polling&t=On0t3FD [33m404 2.756 ms - 57
+2023-12-06 21:40:22 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t3FG - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:22 info: GET /socket.io/?EIO=4&transport=polling&t=On0t3FG [33m404 4.239 ms - 57
+2023-12-06 21:40:23 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t3VF - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:23 info: GET /socket.io/?EIO=4&transport=polling&t=On0t3VF [33m404 2.195 ms - 57
+2023-12-06 21:40:23 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t3VI - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:23 info: GET /socket.io/?EIO=4&transport=polling&t=On0t3VI [33m404 2.072 ms - 57
+2023-12-06 21:40:24 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t3l8 - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:24 info: GET /socket.io/?EIO=4&transport=polling&t=On0t3l8 [33m404 2.589 ms - 57
+2023-12-06 21:40:24 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t3lA - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:24 info: GET /socket.io/?EIO=4&transport=polling&t=On0t3lA [33m404 2.808 ms - 57
+2023-12-06 21:40:25 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t3_G - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:25 info: GET /socket.io/?EIO=4&transport=polling&t=On0t3_G [33m404 2.035 ms - 57
+2023-12-06 21:40:26 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t4FI - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:26 info: GET /socket.io/?EIO=4&transport=polling&t=On0t4FI [33m404 1.584 ms - 57
+2023-12-06 21:40:26 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t4FK - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:26 info: GET /socket.io/?EIO=4&transport=polling&t=On0t4FK [33m404 2.612 ms - 57
+2023-12-06 21:40:27 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t4VH - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:27 info: GET /socket.io/?EIO=4&transport=polling&t=On0t4VH [33m404 2.220 ms - 57
+2023-12-06 21:40:28 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t4lJ - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:28 info: GET /socket.io/?EIO=4&transport=polling&t=On0t4lJ [33m404 1.675 ms - 57
+2023-12-06 21:40:29 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t4_6 - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:29 info: GET /socket.io/?EIO=4&transport=polling&t=On0t4_6 [33m404 1.619 ms - 57
+2023-12-06 21:40:29 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t4_8 - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:29 info: GET /socket.io/?EIO=4&transport=polling&t=On0t4_8 [33m404 1.622 ms - 57
+2023-12-06 21:40:32 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t5jf - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:32 info: GET /socket.io/?EIO=4&transport=polling&t=On0t5jf [33m404 2.367 ms - 57
+2023-12-06 21:40:32 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t5ji - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:32 info: GET /socket.io/?EIO=4&transport=polling&t=On0t5ji [33m404 2.749 ms - 57
+2023-12-06 21:40:33 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t5_X - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:33 info: GET /socket.io/?EIO=4&transport=polling&t=On0t5_X [33m404 1.804 ms - 57
+2023-12-06 21:40:33 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t5_Z - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:33 info: GET /socket.io/?EIO=4&transport=polling&t=On0t5_Z [33m404 1.556 ms - 57
+2023-12-06 21:40:34 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t6FX - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:34 info: GET /socket.io/?EIO=4&transport=polling&t=On0t6FX [33m404 1.711 ms - 57
+2023-12-06 21:40:34 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t6Fa - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:34 info: GET /socket.io/?EIO=4&transport=polling&t=On0t6Fa [33m404 2.369 ms - 57
+2023-12-06 21:40:35 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t6VR - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:35 info: GET /socket.io/?EIO=4&transport=polling&t=On0t6VR [33m404 1.856 ms - 57
+2023-12-06 21:40:36 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t6ld - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:36 info: GET /socket.io/?EIO=4&transport=polling&t=On0t6ld [33m404 2.295 ms - 57
+2023-12-06 21:40:37 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t6_X - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:37 info: GET /socket.io/?EIO=4&transport=polling&t=On0t6_X [33m404 1.659 ms - 57
+2023-12-06 21:40:38 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t7FN - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:38 info: GET /socket.io/?EIO=4&transport=polling&t=On0t7FN [33m404 1.785 ms - 57
+2023-12-06 21:40:38 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t7FQ - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:38 info: GET /socket.io/?EIO=4&transport=polling&t=On0t7FQ [33m404 1.564 ms - 57
+2023-12-06 21:40:41 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t7_- - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:41 info: GET /socket.io/?EIO=4&transport=polling&t=On0t7_- [33m404 2.407 ms - 57
+2023-12-06 21:40:42 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t8Fv - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:42 info: GET /socket.io/?EIO=4&transport=polling&t=On0t8Fv [33m404 1.516 ms - 57
+2023-12-06 21:40:42 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t8Fx - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:42 info: GET /socket.io/?EIO=4&transport=polling&t=On0t8Fx [33m404 1.724 ms - 57
+2023-12-06 21:40:43 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t8W3 - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:43 info: GET /socket.io/?EIO=4&transport=polling&t=On0t8W3 [33m404 3.181 ms - 57
+2023-12-06 21:40:44 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t8lt - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:44 info: GET /socket.io/?EIO=4&transport=polling&t=On0t8lt [33m404 2.458 ms - 57
+2023-12-06 21:40:44 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t8lw - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:44 info: GET /socket.io/?EIO=4&transport=polling&t=On0t8lw [33m404 1.710 ms - 57
+2023-12-06 21:40:45 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t8_e - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:45 info: GET /socket.io/?EIO=4&transport=polling&t=On0t8_e [33m404 2.431 ms - 57
+2023-12-06 21:40:45 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t8_h - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:45 info: GET /socket.io/?EIO=4&transport=polling&t=On0t8_h [33m404 40.109 ms - 57
+2023-12-06 21:40:46 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t9FN - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:46 info: GET /socket.io/?EIO=4&transport=polling&t=On0t9FN [33m404 1.634 ms - 57
+2023-12-06 21:40:46 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t9FQ - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:46 info: GET /socket.io/?EIO=4&transport=polling&t=On0t9FQ [33m404 1.525 ms - 57
+2023-12-06 21:40:47 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t9VV - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:47 info: GET /socket.io/?EIO=4&transport=polling&t=On0t9VV [33m404 1.463 ms - 57
+2023-12-06 21:40:49 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0t9_S - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:49 info: GET /socket.io/?EIO=4&transport=polling&t=On0t9_S [33m404 2.692 ms - 57
+2023-12-06 21:40:50 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tAFZ - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:50 info: GET /socket.io/?EIO=4&transport=polling&t=On0tAFZ [33m404 1.593 ms - 57
+2023-12-06 21:40:51 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tAV- - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:51 info: GET /socket.io/?EIO=4&transport=polling&t=On0tAV- [33m404 2.729 ms - 57
+2023-12-06 21:40:52 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tAlv - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:52 info: GET /socket.io/?EIO=4&transport=polling&t=On0tAlv [33m404 1.835 ms - 57
+2023-12-06 21:40:54 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tA_n - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:54 info: GET /socket.io/?EIO=4&transport=polling&t=On0tA_n [33m404 1.844 ms - 57
+2023-12-06 21:40:55 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tBGl - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:55 info: GET /socket.io/?EIO=4&transport=polling&t=On0tBGl [33m404 1.761 ms - 57
+2023-12-06 21:40:55 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tBGn - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:55 info: GET /socket.io/?EIO=4&transport=polling&t=On0tBGn [33m404 1.546 ms - 57
+2023-12-06 21:40:55 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tBGq - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:55 info: GET /socket.io/?EIO=4&transport=polling&t=On0tBGq [33m404 1.710 ms - 57
+2023-12-06 21:40:56 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tBWd - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:56 info: GET /socket.io/?EIO=4&transport=polling&t=On0tBWd [33m404 2.575 ms - 57
+2023-12-06 21:40:57 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tBme - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:57 info: GET /socket.io/?EIO=4&transport=polling&t=On0tBme [33m404 1.587 ms - 57
+2023-12-06 21:40:57 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tBmi - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:57 info: GET /socket.io/?EIO=4&transport=polling&t=On0tBmi [33m404 1.395 ms - 57
+2023-12-06 21:40:58 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tC0a - GET - ::ffff:127.0.0.1
+2023-12-06 21:40:58 info: GET /socket.io/?EIO=4&transport=polling&t=On0tC0a [33m404 1.596 ms - 57
+2023-12-06 21:41:00 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tCY9 - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:00 info: GET /socket.io/?EIO=4&transport=polling&t=On0tCY9 [33m404 3.002 ms - 57
+2023-12-06 21:41:00 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tCYE - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:00 info: GET /socket.io/?EIO=4&transport=polling&t=On0tCYE [33m404 3.062 ms - 57
+2023-12-06 21:41:01 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tCnz - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:01 info: GET /socket.io/?EIO=4&transport=polling&t=On0tCnz [33m404 1.607 ms - 57
+2023-12-06 21:41:03 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tDI7 - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:03 info: GET /socket.io/?EIO=4&transport=polling&t=On0tDI7 [33m404 1.850 ms - 57
+2023-12-06 21:41:04 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tDY0 - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:04 info: GET /socket.io/?EIO=4&transport=polling&t=On0tDY0 [33m404 1.818 ms - 57
+2023-12-06 21:41:05 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tDqM - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:05 info: GET /socket.io/?EIO=4&transport=polling&t=On0tDqM [33m404 2.305 ms - 57
+2023-12-06 21:41:06 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tE4c - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:06 info: GET /socket.io/?EIO=4&transport=polling&t=On0tE4c [33m404 5.092 ms - 57
+2023-12-06 21:41:07 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tEKT - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:07 info: GET /socket.io/?EIO=4&transport=polling&t=On0tEKT [33m404 2.813 ms - 57
+2023-12-06 21:41:08 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tEcY - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:08 info: GET /socket.io/?EIO=4&transport=polling&t=On0tEcY [33m404 3.615 ms - 57
+2023-12-06 21:41:09 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tEsM - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:09 info: GET /socket.io/?EIO=4&transport=polling&t=On0tEsM [33m404 1.249 ms - 57
+2023-12-06 21:41:09 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tEsP - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:09 info: GET /socket.io/?EIO=4&transport=polling&t=On0tEsP [33m404 2.253 ms - 57
+2023-12-06 21:41:10 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tF66 - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:10 info: GET /socket.io/?EIO=4&transport=polling&t=On0tF66 [33m404 7.638 ms - 57
+2023-12-06 21:41:11 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tFMh - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:11 info: GET /socket.io/?EIO=4&transport=polling&t=On0tFMh [33m404 1.433 ms - 57
+2023-12-06 21:41:11 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tFMj - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:11 info: GET /socket.io/?EIO=4&transport=polling&t=On0tFMj [33m404 1.716 ms - 57
+2023-12-06 21:41:15 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tG9J - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:15 info: GET /socket.io/?EIO=4&transport=polling&t=On0tG9J [33m404 1.945 ms - 57
+2023-12-06 21:41:16 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tGQQ - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:16 info: GET /socket.io/?EIO=4&transport=polling&t=On0tGQQ [33m404 1.685 ms - 57
+2023-12-06 21:41:16 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tGQT - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:16 info: GET /socket.io/?EIO=4&transport=polling&t=On0tGQT [33m404 2.224 ms - 57
+2023-12-06 21:41:17 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tGjX - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:17 info: GET /socket.io/?EIO=4&transport=polling&t=On0tGjX [33m404 3.912 ms - 57
+2023-12-06 21:41:18 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tGzz - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:18 info: GET /socket.io/?EIO=4&transport=polling&t=On0tGzz [33m404 1.922 ms - 57
+2023-12-06 21:41:19 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tHGZ - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:19 info: GET /socket.io/?EIO=4&transport=polling&t=On0tHGZ [33m404 4.067 ms - 57
+2023-12-06 21:41:20 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tHWU - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:20 info: GET /socket.io/?EIO=4&transport=polling&t=On0tHWU [33m404 2.320 ms - 57
+2023-12-06 21:41:21 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tHmP - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:21 info: GET /socket.io/?EIO=4&transport=polling&t=On0tHmP [33m404 2.241 ms - 57
+2023-12-06 21:41:21 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tHmU - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:21 info: GET /socket.io/?EIO=4&transport=polling&t=On0tHmU [33m404 2.706 ms - 57
+2023-12-06 21:41:22 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tI0A - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:22 info: GET /socket.io/?EIO=4&transport=polling&t=On0tI0A [33m404 2.149 ms - 57
+2023-12-06 21:41:22 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tI0D - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:22 info: GET /socket.io/?EIO=4&transport=polling&t=On0tI0D [33m404 1.569 ms - 57
+2023-12-06 21:41:24 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tIXY - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:24 info: GET /socket.io/?EIO=4&transport=polling&t=On0tIXY [33m404 3.673 ms - 57
+2023-12-06 21:41:25 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tInT - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:25 info: GET /socket.io/?EIO=4&transport=polling&t=On0tInT [33m404 3.908 ms - 57
+2023-12-06 21:41:26 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tJ1T - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:26 info: GET /socket.io/?EIO=4&transport=polling&t=On0tJ1T [33m404 2.925 ms - 57
+2023-12-06 21:41:28 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tJYU - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:28 info: GET /socket.io/?EIO=4&transport=polling&t=On0tJYU [33m404 1.552 ms - 57
+2023-12-06 21:41:29 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tJYV - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:29 info: GET /socket.io/?EIO=4&transport=polling&t=On0tJYV [33m404 2.314 ms - 57
+2023-12-06 21:41:30 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tJo_ - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:30 info: GET /socket.io/?EIO=4&transport=polling&t=On0tJo_ [33m404 3.041 ms - 57
+2023-12-06 21:41:31 error: 404 - route not found - /socket.io/?EIO=4&transport=polling&t=On0tK2l - GET - ::ffff:127.0.0.1
+2023-12-06 21:41:31 info: GET /socket.io/?EIO=4&transport=polling&t=On0tK2l [33m404 1.334 ms - 57
+2023-12-07 10:25:34 error: 400 - User does not exist - /user/set-nickname - POST - ::ffff:127.0.0.1
+2023-12-07 10:25:34 info: POST /user/set-nickname [33m400 433.092 ms - 297
+2023-12-07 10:26:55 info: POST /user/set-nickname [32m200 917.997 ms - 665
+2023-12-07 10:29:00 info: POST /user/set-nickname [32m200 650.617 ms - 665
+2023-12-07 10:30:13 info: POST /user/set-nickname [32m200 874.854 ms - 665
+2023-12-07 10:31:57 info: POST /user/set-nickname [32m200 519.564 ms - 665
+2023-12-07 10:35:29 info: POST /user/set-nickname [32m200 587.608 ms - 762
+2023-12-07 10:36:13 info: POST /user/set-nickname [32m200 489.704 ms - 665
+2023-12-07 10:38:13 info: POST /user/set-nickname [32m200 479.728 ms - 686
+2023-12-07 10:38:26 info: POST /user/set-nickname [32m200 557.168 ms - 688
+2023-12-07 10:44:20 info: POST /user/set-nickname [32m200 405.242 ms - 686
+2023-12-07 10:45:33 info: GET /user/profile [32m200 212.471 ms - 686
+2023-12-07 10:45:37 info: GET /user/profile [36m304 194.515 ms - -
+2023-12-07 10:54:19 info: GET /user/profile [32m200 231.844 ms - 686
+2023-12-07 10:54:41 info: GET /user/profile [36m304 183.053 ms - -
+2023-12-07 10:54:53 info: GET /user/profile [36m304 184.717 ms - -
+2023-12-07 10:54:56 info: GET /user/profile [36m304 169.073 ms - -
+2023-12-07 10:55:02 info: GET /user/profile [36m304 169.072 ms - -
+2023-12-07 10:55:07 info: GET /user/profile [36m304 173.006 ms - -
+2023-12-07 10:55:11 info: GET /user/profile [36m304 194.092 ms - -
+2023-12-07 10:55:13 info: GET /user/profile [36m304 164.534 ms - -
+2023-12-07 10:55:16 info: GET /user/profile [36m304 179.653 ms - -
+2023-12-07 10:55:19 info: GET /user/profile [36m304 307.823 ms - -
+2023-12-07 10:55:26 info: GET /user/profile [36m304 163.413 ms - -
+2023-12-07 10:55:33 info: GET /user/profile [36m304 198.445 ms - -
+2023-12-07 10:55:36 info: GET /user/profile [36m304 289.126 ms - -
+2023-12-07 10:55:52 info: GET /user/profile [32m200 168.911 ms - 686
+2023-12-07 10:55:54 info: GET /user/profile [36m304 210.174 ms - -
+2023-12-07 10:56:06 info: GET /user/profile [36m304 150.905 ms - -
+2023-12-07 10:56:11 info: GET /user/profile [36m304 158.431 ms - -
+2023-12-07 10:56:14 info: GET /user/profile [36m304 199.595 ms - -
+2023-12-07 10:56:20 info: GET /user/profile [36m304 172.206 ms - -
+2023-12-07 10:56:26 info: GET /user/profile [36m304 166.828 ms - -
+2023-12-07 10:56:29 info: GET /user/profile [36m304 166.105 ms - -
+2023-12-07 10:56:38 info: GET /user/profile [36m304 173.236 ms - -
+2023-12-07 10:56:44 info: GET /user/profile [36m304 167.478 ms - -
+2023-12-07 10:56:48 info: GET /user/profile [36m304 160.651 ms - -
+2023-12-07 11:05:48 info: GET /user/profile [32m200 143.010 ms - 686
+2023-12-07 11:05:59 info: GET /user/profile [36m304 191.356 ms - -
+2023-12-07 11:07:31 info: GET /user/profile [36m304 171.555 ms - -
+2023-12-07 11:07:35 info: GET /user/profile [36m304 197.372 ms - -
+2023-12-07 11:07:51 info: GET /user/profile [36m304 162.509 ms - -
+2023-12-07 11:08:43 info: GET /user/profile [36m304 202.302 ms - -
+2023-12-07 11:09:41 info: GET /user/profile [36m304 163.167 ms - -
+2023-12-07 11:09:43 info: GET /user/profile [36m304 199.001 ms - -
+2023-12-07 11:09:54 info: GET /user/profile [36m304 165.148 ms - -
+2023-12-07 11:09:58 info: GET /user/profile [36m304 199.416 ms - -
+2023-12-07 11:10:14 info: GET /user/profile [36m304 194.892 ms - -
+2023-12-07 11:16:32 error: 401 - Invalid token - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 11:16:32 info: POST /staff/set-available-date [33m401 48.172 ms - 1402
+2023-12-07 11:16:50 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:16:50 info: GET /user/profile [33m404 4.713 ms - 61
+2023-12-07 11:16:50 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:16:50 info: GET /staff/profile [33m404 3.122 ms - 61
+2023-12-07 11:16:55 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:16:55 info: GET /user/profile [33m404 2.986 ms - 61
+2023-12-07 11:16:55 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:16:55 info: GET /staff/profile [33m404 9.791 ms - 61
+2023-12-07 11:17:29 error: 401 - Invalid login credentials - /user/login - POST - ::ffff:127.0.0.1
+2023-12-07 11:17:29 info: POST /user/login [33m401 198.332 ms - 453
+2023-12-07 11:17:29 error: 401 - Invalid login credentials - /user/login - POST - ::ffff:127.0.0.1
+2023-12-07 11:17:29 info: POST /user/login [33m401 180.582 ms - 453
+2023-12-07 11:18:23 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:18:23 info: GET /user/profile [33m404 2.566 ms - 61
+2023-12-07 11:18:23 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:18:23 info: GET /staff/profile [33m404 3.932 ms - 61
+2023-12-07 11:18:32 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:18:32 info: GET /user/profile [33m404 3.506 ms - 61
+2023-12-07 11:18:32 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:18:32 info: GET /staff/profile [33m404 7.836 ms - 61
+2023-12-07 11:18:41 error: 401 - Invalid login credentials - /user/login - POST - ::ffff:127.0.0.1
+2023-12-07 11:18:41 info: POST /user/login [33m401 172.759 ms - 453
+2023-12-07 11:18:41 error: 401 - Invalid login credentials - /user/login - POST - ::ffff:127.0.0.1
+2023-12-07 11:18:41 info: POST /user/login [33m401 187.642 ms - 453
+2023-12-07 11:19:28 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:19:28 info: GET /user/profile [33m404 9.557 ms - 61
+2023-12-07 11:19:28 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:19:28 info: GET /staff/profile [33m404 3.430 ms - 61
+2023-12-07 11:19:30 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:19:30 info: GET /user/profile [33m404 11.523 ms - 61
+2023-12-07 11:19:30 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:19:30 info: GET /staff/profile [33m404 1.241 ms - 61
+2023-12-07 11:19:35 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:19:35 info: GET /user/profile [33m404 3.092 ms - 61
+2023-12-07 11:19:35 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:19:35 info: GET /staff/profile [33m404 26.043 ms - 61
+2023-12-07 11:19:37 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:19:37 info: GET /user/profile [33m404 27.561 ms - 61
+2023-12-07 11:19:37 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:19:37 info: GET /staff/profile [33m404 3.400 ms - 61
+2023-12-07 11:19:42 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:19:42 info: GET /user/profile [33m404 2.900 ms - 61
+2023-12-07 11:19:42 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:19:43 info: GET /staff/profile [33m404 39.304 ms - 61
+2023-12-07 11:19:49 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:19:49 info: GET /user/profile [33m404 2.476 ms - 61
+2023-12-07 11:19:49 error: 404 - Please authenticate - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:19:49 info: GET /staff/profile [33m404 20.499 ms - 61
+2023-12-07 11:19:59 error: 401 - Invalid login credentials - /user/login - POST - ::ffff:127.0.0.1
+2023-12-07 11:19:59 info: POST /user/login [33m401 194.405 ms - 453
+2023-12-07 11:19:59 info: POST /staff/login [32m200 446.087 ms - 8207
+2023-12-07 11:21:41 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:21:41 info: GET /user/profile [33m401 156.093 ms - 279
+2023-12-07 11:21:41 info: GET /staff/profile [32m200 173.469 ms - 8207
+2023-12-07 11:22:03 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:22:03 info: GET /user/profile [33m401 187.855 ms - 279
+2023-12-07 11:22:03 info: GET /staff/profile [36m304 170.415 ms - -
+2023-12-07 11:22:16 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:22:16 info: GET /user/profile [33m401 205.536 ms - 279
+2023-12-07 11:22:16 info: GET /staff/profile [36m304 181.342 ms - -
+2023-12-07 11:22:37 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:22:37 info: GET /user/profile [33m401 175.933 ms - 279
+2023-12-07 11:22:38 info: GET /staff/profile [36m304 187.521 ms - -
+2023-12-07 11:22:42 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:22:42 info: GET /user/profile [33m401 194.767 ms - 279
+2023-12-07 11:22:42 info: GET /staff/profile [36m304 196.362 ms - -
+2023-12-07 11:24:06 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:24:06 info: GET /user/profile [33m401 153.972 ms - 279
+2023-12-07 11:24:06 info: GET /staff/profile [36m304 158.469 ms - -
+2023-12-07 11:24:09 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:24:09 info: GET /user/profile [33m401 164.445 ms - 279
+2023-12-07 11:24:09 info: GET /staff/profile [36m304 183.109 ms - -
+2023-12-07 11:24:34 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:24:34 info: GET /user/profile [33m401 256.308 ms - 279
+2023-12-07 11:24:34 info: GET /staff/profile [36m304 187.580 ms - -
+2023-12-07 11:25:53 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:25:53 info: GET /user/profile [33m401 169.430 ms - 279
+2023-12-07 11:25:53 info: GET /staff/profile [36m304 181.958 ms - -
+2023-12-07 11:26:13 error: 500 - availability is not iterable - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 11:26:13 info: POST /staff/set-available-date [31m500 371.725 ms - 320
+2023-12-07 11:26:42 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:26:42 info: GET /user/profile [33m401 192.697 ms - 279
+2023-12-07 11:26:42 info: GET /staff/profile [36m304 212.538 ms - -
+2023-12-07 11:27:36 error: 500 - availability is not iterable - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 11:27:36 info: POST /staff/set-available-date [31m500 381.868 ms - 320
+2023-12-07 11:28:17 error: 500 - availability is not iterable - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 11:28:17 info: POST /staff/set-available-date [31m500 386.131 ms - 320
+2023-12-07 11:28:57 error: 500 - availability is not iterable - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 11:28:57 info: POST /staff/set-available-date [31m500 388.963 ms - 320
+2023-12-07 11:29:18 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:29:18 info: GET /user/profile [33m401 269.643 ms - 279
+2023-12-07 11:29:18 info: GET /staff/profile [32m200 173.814 ms - 8207
+2023-12-07 11:29:36 error: 500 - availability is not iterable - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 11:29:36 info: POST /staff/set-available-date [31m500 595.231 ms - 320
+2023-12-07 11:30:18 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:30:18 info: GET /user/profile [33m401 169.702 ms - 279
+2023-12-07 11:30:19 info: GET /staff/profile [36m304 191.898 ms - -
+2023-12-07 11:30:20 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:30:20 info: GET /user/profile [33m401 341.001 ms - 279
+2023-12-07 11:30:21 info: GET /staff/profile [36m304 310.923 ms - -
+2023-12-07 11:30:23 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:30:23 info: GET /user/profile [33m401 212.645 ms - 279
+2023-12-07 11:30:24 info: GET /staff/profile [36m304 182.491 ms - -
+2023-12-07 11:30:38 error: 500 - availability is not iterable - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 11:30:38 info: POST /staff/set-available-date [31m500 373.511 ms - 320
+2023-12-07 11:31:49 error: 500 - availabilityArray is not iterable - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 11:31:49 info: POST /staff/set-available-date [31m500 419.556 ms - 330
+2023-12-07 11:41:31 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:41:31 info: GET /user/profile [33m401 190.288 ms - 279
+2023-12-07 11:41:31 info: GET /staff/profile [36m304 193.278 ms - -
+2023-12-07 11:42:47 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:42:47 info: GET /user/profile [33m401 225.907 ms - 279
+2023-12-07 11:42:47 info: GET /staff/profile [36m304 173.523 ms - -
+2023-12-07 11:43:10 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:43:10 info: GET /user/profile [33m401 365.606 ms - 279
+2023-12-07 11:43:10 info: GET /staff/profile [36m304 154.109 ms - -
+2023-12-07 11:45:12 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:45:12 info: GET /user/profile [33m401 214.508 ms - 279
+2023-12-07 11:45:13 info: GET /staff/profile [36m304 194.103 ms - -
+2023-12-07 11:45:48 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 11:45:48 info: GET /user/profile [33m401 205.158 ms - 279
+2023-12-07 11:45:48 info: GET /staff/profile [36m304 173.117 ms - -
+2023-12-07 11:45:59 info: POST /staff/set-available-date [32m200 807.000 ms - 8351
+2023-12-07 11:47:31 info: POST /staff/set-available-date [32m200 1415.934 ms - 8457
+2023-12-07 11:49:43 error: 500 - (intermediate value).compare is not a function - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 11:49:44 info: POST /staff/set-available-date [31m500 633.494 ms - 501
+2023-12-07 11:51:34 info: POST /staff/set-available-date [32m200 945.308 ms - 8563
+2023-12-07 11:51:42 info: POST /staff/set-available-date [32m200 822.577 ms - 8669
+2023-12-07 11:55:15 info: POST /staff/set-available-date [32m200 864.683 ms - 8775
+2023-12-07 11:55:15 info: POST /staff/set-available-date [32m200 886.355 ms - 8775
+2023-12-07 11:55:15 info: POST /staff/set-available-date [32m200 939.519 ms - 8775
+2023-12-07 11:56:01 info: POST /staff/set-available-date [32m200 4744.556 ms - 9093
+2023-12-07 11:56:02 info: POST /staff/set-available-date [32m200 5863.055 ms - 9199
+2023-12-07 11:56:02 info: POST /staff/set-available-date [32m200 6111.804 ms - 9305
+2023-12-07 12:05:27 info: POST /staff/login [32m200 495.827 ms - 9471
+2023-12-07 12:06:04 info: POST /user/login [32m200 598.316 ms - 3098
+2023-12-07 12:06:56 error: 500 - Invalid input parameters. Please provide valid numbers. - /appointment/makeAppointment - POST - ::1
+2023-12-07 12:06:56 info: POST /appointment/makeAppointment [31m500 457.124 ms - 498
+2023-12-07 12:08:12 error: 500 - doctorAvailability is not iterable - /appointment/makeAppointment - POST - ::1
+2023-12-07 12:08:12 info: POST /appointment/makeAppointment [31m500 712.631 ms - 615
+2023-12-07 12:08:58 info: POST /appointment/makeAppointment [32m200 1722.850 ms - 77
+2023-12-07 12:09:49 error: 400 - Appointment time is not available - /appointment/makeAppointment - POST - ::1
+2023-12-07 12:09:49 info: POST /appointment/makeAppointment [33m400 852.781 ms - 331
+2023-12-07 12:10:49 info: POST /appointment/makeAppointment [32m200 1709.166 ms - 213
+2023-12-07 12:11:01 info: POST /appointment/makeAppointment [32m200 1600.325 ms - 213
+2023-12-07 12:11:13 info: POST /appointment/makeAppointment [32m200 2061.055 ms - 213
+2023-12-07 12:11:22 error: 500 - Appointment validation failed: appointmentTime: Cast to date failed for value "Invalid Date" (type Date) at path "appointmentTime" - /appointment/makeAppointment - POST - ::1
+2023-12-07 12:11:22 info: POST /appointment/makeAppointment [31m500 1762.401 ms - 1328
+2023-12-07 12:22:55 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 12:22:55 info: GET /user/profile [33m401 1728.777 ms - 279
+2023-12-07 12:22:56 info: GET /staff/profile [32m200 209.861 ms - 9471
+2023-12-07 12:23:05 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 12:23:05 info: GET /user/profile [33m401 2635.656 ms - 279
+2023-12-07 12:23:06 info: GET /staff/profile [36m304 1204.613 ms - -
+2023-12-07 12:32:10 error: 500 - Staff validation failed: availability.0.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.0.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.1.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.1.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.2.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.2.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.3.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.3.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.4.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.4.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.5.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.5.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.6.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.6.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.7.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.7.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.8.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.8.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.9.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.9.endTime: Cast to date failed for value "12:00" (type string) at path "endTime" - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 12:32:10 info: POST /staff/set-available-date [31m500 419.796 ms - 5523
+2023-12-07 12:32:10 error: 500 - Staff validation failed: availability.0.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.0.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.1.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.1.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.2.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.2.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.3.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.3.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.4.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.4.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.5.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.5.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.6.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.6.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.7.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.7.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.8.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.8.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.9.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.9.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.10.startTime: Cast to date failed for value "11:00" (type string) at path "startTime", availability.10.endTime: Cast to date failed for value "22:00" (type string) at path "endTime" - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 12:32:10 info: POST /staff/set-available-date [31m500 495.980 ms - 5931
+2023-12-07 12:32:10 error: 500 - Staff validation failed: availability.0.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.0.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.1.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.1.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.2.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.2.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.3.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.3.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.4.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.4.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.5.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.5.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.6.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.6.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.7.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.7.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.8.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.8.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.9.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.9.endTime: Cast to date failed for value "12:00" (type string) at path "endTime" - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 12:32:10 info: POST /staff/set-available-date [31m500 480.982 ms - 5523
+2023-12-07 12:32:35 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 12:32:35 info: GET /user/profile [33m401 190.966 ms - 279
+2023-12-07 12:32:35 info: GET /staff/profile [32m200 226.991 ms - 9091
+2023-12-07 12:32:54 error: 500 - Staff validation failed: availability.0.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.0.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.1.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.1.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.2.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.2.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.3.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.3.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.4.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.4.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.5.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.5.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.6.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.6.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.7.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.7.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.8.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.8.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.9.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.9.endTime: Cast to date failed for value "12:00" (type string) at path "endTime" - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 12:38:15 info: POST /staff/set-available-date [31m500 321770.154 ms - 5523
+2023-12-07 12:38:15 info: GET /user/profile - - ms - -
+2023-12-07 12:38:15 info: GET /staff/profile - - ms - -
+2023-12-07 12:38:15 info: GET /user/profile - - ms - -
+2023-12-07 12:38:15 info: GET /staff/profile - - ms - -
+2023-12-07 12:38:15 info: GET /user/profile - - ms - -
+2023-12-07 12:38:15 info: GET /staff/profile - - ms - -
+2023-12-07 12:38:15 info: GET /user/profile - - ms - -
+2023-12-07 12:38:15 info: GET /staff/profile - - ms - -
+2023-12-07 12:38:15 info: GET /user/profile - - ms - -
+2023-12-07 12:38:15 info: GET /staff/profile - - ms - -
+2023-12-07 12:38:15 info: GET /user/profile - - ms - -
+2023-12-07 12:38:15 info: GET /staff/profile - - ms - -
+2023-12-07 12:38:15 info: GET /user/profile - - ms - -
+2023-12-07 12:38:15 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 12:38:16 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 12:38:16 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 12:38:16 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 12:38:16 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 12:38:16 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 12:38:16 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 12:38:16 info: GET /user/profile [33m401 401.897 ms - 279
+2023-12-07 12:38:16 info: GET /staff/profile [36m304 157.761 ms - -
+2023-12-07 12:38:16 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 12:38:32 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 12:38:40 info: GET /staff/profile [36m304 2728.027 ms - -
+2023-12-07 12:38:57 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 12:38:57 info: GET /user/profile [33m401 176.528 ms - 279
+2023-12-07 12:39:02 info: GET /staff/profile [36m304 4862.957 ms - -
+2023-12-07 12:40:14 error: 500 - Staff validation failed: availability.0.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.0.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.1.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.1.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.2.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.2.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.3.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.3.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.4.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.4.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.5.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.5.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.6.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.6.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.7.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.7.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.8.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.8.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.9.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.9.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.10.startTime: Path `startTime` is required., availability.10.endTime: Path `endTime` is required. - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 12:40:14 info: POST /staff/set-available-date [31m500 675.520 ms - 5747
+2023-12-07 12:41:45 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 12:41:45 info: GET /user/profile [33m401 175.672 ms - 279
+2023-12-07 12:41:45 info: GET /staff/profile [32m200 362.526 ms - 9091
+2023-12-07 12:42:05 error: 500 - Staff validation failed: availability.0.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.0.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.1.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.1.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.2.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.2.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.3.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.3.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.4.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.4.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.5.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.5.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.6.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.6.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.7.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.7.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.8.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.8.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.9.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.9.endTime: Cast to date failed for value "12:00" (type string) at path "endTime" - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 12:42:05 info: POST /staff/set-available-date [31m500 694.106 ms - 5523
+2023-12-07 12:44:02 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 12:44:02 info: GET /user/profile [33m401 163.960 ms - 279
+2023-12-07 12:44:03 info: GET /staff/profile [32m200 374.655 ms - 9091
+2023-12-07 12:44:27 error: 500 - Staff validation failed: availability.0.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.0.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.1.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.1.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.2.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.2.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.3.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.3.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.4.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.4.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.5.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.5.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.6.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.6.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.7.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.7.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.8.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.8.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.9.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.9.endTime: Cast to date failed for value "12:00" (type string) at path "endTime" - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 12:44:27 info: POST /staff/set-available-date [31m500 401.112 ms - 5523
+2023-12-07 12:44:54 error: 500 - Staff validation failed: availability.0.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.0.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.1.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.1.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.2.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.2.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.3.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.3.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.4.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.4.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.5.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.5.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.6.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.6.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.7.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.7.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.8.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.8.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.9.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.9.endTime: Cast to date failed for value "12:00" (type string) at path "endTime" - /staff/login - POST - ::1
+2023-12-07 12:44:54 info: POST /staff/login [31m500 198.767 ms - 5523
+2023-12-07 12:45:07 error: 500 - Staff validation failed: availability.0.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.0.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.1.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.1.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.2.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.2.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.3.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.3.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.4.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.4.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.5.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.5.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.6.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.6.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.7.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.7.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.8.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.8.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.9.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.9.endTime: Cast to date failed for value "12:00" (type string) at path "endTime" - /staff/login - POST - ::1
+2023-12-07 12:45:07 info: POST /staff/login [31m500 228.622 ms - 5523
+2023-12-07 12:45:46 error: 500 - Staff validation failed: availability.0.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.0.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.1.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.1.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.2.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.2.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.3.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.3.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.4.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.4.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.5.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.5.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.6.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.6.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.7.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.7.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.8.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.8.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.9.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.9.endTime: Cast to date failed for value "12:00" (type string) at path "endTime" - /staff/login - POST - ::1
+2023-12-07 12:45:46 info: POST /staff/login [31m500 257.405 ms - 5523
+2023-12-07 12:46:41 error: 500 - Staff validation failed: availability.0.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.0.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.1.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.1.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.2.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.2.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.3.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.3.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.4.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.4.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.5.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.5.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.6.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.6.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.7.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.7.endTime: Cast to date failed for value "12:00" (type string) at path "endTime", availability.8.startTime: Cast to date failed for value "22:00" (type string) at path "startTime", availability.8.endTime: Cast to date failed for value "23:00" (type string) at path "endTime", availability.9.startTime: Cast to date failed for value "10:00" (type string) at path "startTime", availability.9.endTime: Cast to date failed for value "12:00" (type string) at path "endTime" - /staff/login - POST - ::1
+2023-12-07 12:46:41 info: POST /staff/login [31m500 270.795 ms - 5523
+2023-12-07 12:47:22 info: POST /staff/login [32m200 2600.858 ms - 9676
+2023-12-07 12:47:36 info: POST /staff/set-available-date [32m200 853.026 ms - 9816
+2023-12-07 12:49:18 info: POST /staff/set-available-date [32m200 7557.366 ms - 9917
+2023-12-07 12:49:47 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 12:49:47 info: GET /user/profile [33m401 154.789 ms - 279
+2023-12-07 12:49:47 info: GET /staff/profile [32m200 170.561 ms - 9878
+2023-12-07 12:49:52 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 12:49:52 info: GET /user/profile [33m401 208.354 ms - 279
+2023-12-07 12:49:52 info: GET /staff/profile [36m304 166.040 ms - -
+2023-12-07 12:49:56 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 12:49:56 info: GET /user/profile [33m401 161.868 ms - 279
+2023-12-07 12:49:57 info: GET /staff/profile [36m304 165.042 ms - -
+2023-12-07 12:50:12 info: POST /staff/set-available-date [32m200 694.803 ms - 10028
+2023-12-07 12:52:01 info: POST /staff/set-available-date [32m200 74885.133 ms - 10139
+2023-12-07 12:52:02 info: POST /staff/set-available-date [32m200 631.154 ms - 10250
+2023-12-07 12:54:57 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 12:54:57 info: GET /user/profile [33m401 165.448 ms - 279
+2023-12-07 12:54:57 info: GET /staff/profile [32m200 175.922 ms - 10211
+2023-12-07 12:55:08 info: POST /staff/set-available-date [32m200 526.664 ms - 10359
+2023-12-07 12:55:17 info: POST /staff/set-available-date [32m200 578.110 ms - 10468
+2023-12-07 12:59:48 error: 400 - Clash detected with existing availability slots - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 12:59:48 info: POST /staff/set-available-date [33m400 411.685 ms - 354
+2023-12-07 13:00:12 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 13:00:12 info: GET /user/profile [33m401 205.127 ms - 279
+2023-12-07 13:00:12 info: GET /staff/profile [32m200 162.056 ms - 10429
+2023-12-07 13:00:27 error: 400 - Clash detected with existing availability slots - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 13:00:27 info: POST /staff/set-available-date [33m400 365.779 ms - 354
+2023-12-07 13:02:18 error: 400 - Clash detected with existing availability slots - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 13:02:18 info: POST /staff/set-available-date [33m400 988.724 ms - 354
+2023-12-07 13:05:13 error: 400 - Date is required - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 13:05:13 info: POST /staff/set-available-date [33m400 364.209 ms - 292
+2023-12-07 13:07:41 error: 400 - Clash detected with existing availability slots - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 13:07:41 info: POST /staff/set-available-date [33m400 455.490 ms - 354
+2023-12-07 13:07:52 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 13:07:52 info: GET /user/profile [33m401 203.396 ms - 279
+2023-12-07 13:07:52 info: GET /staff/profile [32m200 194.443 ms - 10429
+2023-12-07 13:08:08 error: 400 - Clash detected with existing availability slots - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 13:08:08 info: POST /staff/set-available-date [33m400 359.795 ms - 354
+2023-12-07 13:09:36 error: 400 - Clash detected with existing availability slots - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 13:09:36 info: POST /staff/set-available-date [33m400 358.664 ms - 354
+2023-12-07 13:09:49 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 13:09:49 info: GET /user/profile [33m401 164.059 ms - 279
+2023-12-07 13:09:49 info: GET /staff/profile [36m304 209.514 ms - -
+2023-12-07 13:10:00 error: 400 - Clash detected with existing availability slots - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 13:10:00 info: POST /staff/set-available-date [33m400 357.816 ms - 354
+2023-12-07 13:14:58 info: POST /staff/set-available-date [32m200 593.971 ms - 10653
+2023-12-07 13:15:01 error: 400 - Clash detected with existing availability slots - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 13:15:02 info: POST /staff/set-available-date [33m400 469.198 ms - 354
+2023-12-07 13:15:10 error: 400 - Clash detected with existing availability slots - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 13:15:10 info: POST /staff/set-available-date [33m400 331.054 ms - 354
+2023-12-07 13:15:14 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-07 13:15:14 info: GET /user/profile [33m401 155.942 ms - 279
+2023-12-07 13:15:15 info: GET /staff/profile [32m200 192.567 ms - 10614
+2023-12-07 13:15:24 info: POST /staff/set-available-date [32m200 536.870 ms - 10838
+2023-12-07 13:15:27 error: 400 - Clash detected with existing availability slots - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-07 13:15:27 info: POST /staff/set-available-date [33m400 317.623 ms - 354
+2023-12-07 13:20:50 error: 400 - You are a staff, you cannot make an appointment - /appointment/makeAppointment - POST - ::1
+2023-12-07 13:20:50 info: POST /appointment/makeAppointment [33m400 190.442 ms - 1482
+2023-12-07 13:20:59 info: POST /user/login [32m200 386.073 ms - 3355
+2023-12-07 13:21:02 error: 500 - Appointment validation failed: appointmentTime: Cast to date failed for value "Invalid Date" (type Date) at path "appointmentTime" - /appointment/makeAppointment - POST - ::1
+2023-12-07 13:21:02 info: POST /appointment/makeAppointment [31m500 875.640 ms - 1328
+2023-12-07 13:23:33 info: POST /appointment/makeAppointment [32m200 2911.502 ms - 213
+2023-12-07 13:23:48 info: POST /appointment/makeAppointment [32m200 1608.393 ms - 213
+2023-12-07 13:24:30 info: POST /appointment/makeAppointment [32m200 1499.195 ms - 213
+2023-12-07 13:27:16 error: 500 - Clash detected with existing availability slots - /appointment/makeAppointment - POST - ::1
+2023-12-07 13:27:16 info: POST /appointment/makeAppointment [31m500 631.814 ms - 636
+2023-12-07 13:27:30 error: 500 - Clash detected with existing availability slots - /appointment/makeAppointment - POST - ::1
+2023-12-07 13:27:30 info: POST /appointment/makeAppointment [31m500 474.383 ms - 636

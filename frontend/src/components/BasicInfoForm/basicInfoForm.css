@@ -160,9 +160,6 @@ select {
   justify-content: space-between;
 }
 
-
-
-
 .dropdown-icon {
   position: absolute;
   top: 50%;
@@ -198,3 +195,33 @@ select {
 .custom-dropdown::-ms-expand {
   display: none;
 }
+
+@media (max-width: 720px) {
+  .basic-form {
+    padding: 1em;
+  }
+}
+
+@media (max-width: 645px) {
+  .name-form {
+    grid-template-columns: 1fr;
+    gap: 0em;
+  }
+}
+@media (max-width: 575px) {
+  .basic-form {
+    padding: 1em 0em;
+    width: 100%;
+  }
+
+  body {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 455px) {
+  .basic-form {
+    border-radius: 0;
+  }
+}
+

@@ -8,6 +8,10 @@ const Navbar = () => {
 
   const isUser = useSelector((state) => state.userSlice.user);
 
+  const handleCloseModal = () => {
+    setIsModalOpen(false)
+  }
+
   return (
     <>
       {isModalOpen && (
@@ -21,10 +25,34 @@ const Navbar = () => {
           />
 
           <div className="navbar-mobile-links">
-            <Link className="navbar-link-mobile">Home</Link>
-            <Link className="navbar-link-mobile">Services</Link>
-            <Link className="navbar-link-mobile">Doctors</Link>
-            <Link className="navbar-link-mobile">Contact us</Link>
+            <Link
+              className="navbar-link-mobile"
+              to="/"
+              onClick={handleCloseModal}
+            >
+              Home
+            </Link>
+            <Link
+              className="navbar-link-mobile"
+              to="/services"
+              onClick={handleCloseModal}
+            >
+              Services
+            </Link>
+            <Link
+              className="navbar-link-mobile"
+              to="/finddoctor"
+              onClick={handleCloseModal}
+            >
+              Doctors
+            </Link>
+            <Link
+              className="navbar-link-mobile"
+              to="/contact-us"
+              onClick={handleCloseModal}
+            >
+              Contact us
+            </Link>
           </div>
         </div>
       )}
@@ -34,10 +62,18 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-middle">
-          <Link className="navbar-link">Home</Link>
-          <Link className="navbar-link">Services</Link>
-          <Link className="navbar-link">Doctors</Link>
-          <Link className="navbar-link">Contact us</Link>
+          <Link className="navbar-link" to="/">
+            Home
+          </Link>
+          <Link className="navbar-link" to="/services">
+            Services
+          </Link>
+          <Link className="navbar-link" to="/finddoctor">
+            Doctors
+          </Link>
+          <Link className="navbar-link" to="/contact-us">
+            Contact us
+          </Link>
         </div>
 
         {isUser ? (

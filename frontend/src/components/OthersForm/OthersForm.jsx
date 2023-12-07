@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import "./othersForm.css";
 import axios from "axios";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import {
   setHourlyPrice as sethourlyprice,
   setLocation as setlocation,
-  setPassportImage as setpassportimage,
   setProofOfIdentity as setproofofidentity,
   setPhoneNumber as setphonenumber,
   setSpeciality as setspeciality,
@@ -43,9 +42,6 @@ const OthersForm = () => {
     dispatch(setproofofidentity(proofLink));
   }, [proofLink]);
 
-  useEffect(() => {
-    dispatch(setpassportimage(passportLink));
-  }, [passportLink]);
 
   useEffect(() => {
     dispatch(setphonenumber(phoneNumber));

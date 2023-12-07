@@ -16,6 +16,18 @@ const tokenSchema = new mongoose.Schema(
   { _id: false }
 );
 
+const availabilitySchema = new mongoose.Schema({
+  startTime: {
+    type: String, // You may want to use a specific type for time, depending on your requirements
+    required: true,
+  },
+  endTime: {
+    type: String, // You may want to use a specific type for time, depending on your requirements
+    required: true,
+  },
+});
+
+
 const StaffSchema = new mongoose.Schema(
   {
     firstName: {
@@ -73,27 +85,27 @@ const StaffSchema = new mongoose.Schema(
     },
     phoneNumber: {
       type: String,
-      required: true,
+      // required: true,
       // required: true,
     },
     medicalLisense: {
       type: String,
-      required: true,
+      // required: true,
     },
     boardCertification: {
       type: String,
-      required: true,
+      // required: true,
     },
     speciality: {
       type: String,
     },
     passportImage: {
       type: String,
-      required: true,
+      // required: true,
     },
     location: {
       type: String,
-      required: true,
+      // required: true,
     },
     isActive: {
       type: String,
@@ -101,7 +113,7 @@ const StaffSchema = new mongoose.Schema(
     },
     hourlyPrice: {
       type: Number,
-      required: true,
+      // required: true,
     },
     accountType: {
       type: String,
@@ -110,10 +122,10 @@ const StaffSchema = new mongoose.Schema(
     },
     proofOfIdentity: {
       type: String,
-      required: true,
+      // required: true,
     },
     dateOfBirth: {
-      required: true,
+      // required: true,
       type: Date,
     },
     professionalMemberShip: {
@@ -121,19 +133,19 @@ const StaffSchema = new mongoose.Schema(
     },
     major: {
       type: String,
-      required: true,
+      // required: true,
     },
     degree: {
       type: String,
-      required: true,
+      // required: true,
     },
     university: {
       type: String,
-      required: true,
+      // required: true,
     },
     graduationDate: {
       type: Date,
-      required: true,
+      // required: true,
     },
     rating: {
       type: Number,
@@ -149,7 +161,7 @@ const StaffSchema = new mongoose.Schema(
     },
     CV: {
       type: String,
-      required: true,
+      // required: true,
     },
     isVerified: {
       type: Boolean,
@@ -157,19 +169,21 @@ const StaffSchema = new mongoose.Schema(
     },
     degreeCertificate: {
       type: String,
-      required: true,
+      // required: true,
     },
     POMI: {
       type: String,
-      required: true,
+      // required: true,
     },
     aboutMe: {
       type: String,
-      required: true,
+      // required: true,
     },
     currentPatients: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
     allPatients: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
     pendingPatients: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
+    // Availability as a subdocument
+    availability: [availabilitySchema],
   },
   { timestamps: true }
 );

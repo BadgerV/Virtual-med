@@ -9,6 +9,8 @@ import { ENVIRONMENT } from "../common/config/environment.js";
 import https from "https";
 import { calculateTotalCost } from "../common/utils/helper.js";
 import Chat from "../models/ChatModel.js";
+import Notification from "../models/NotificationSchema.js";
+import moment from "moment";
 
 export const fetchAppointments = catchAsync(async (req, res) => {
   const isUser = req.user ? true : false;
@@ -54,12 +56,43 @@ export const fetchAppointments = catchAsync(async (req, res) => {
   }
 });
 
+const isDoctorAvailable = (doctorAvailability, appointmentTime) => {
+  const requestedTime = new Date(appointmentTime);
+
+  for (const slot of doctorAvailability) {
+    console.log(slot);
+
+    const slotStart = new Date(`${slot.startTime} UTC`);
+    const slotEnd = new Date(`${slot.endTime} UTC`);
+
+    if (requestedTime >= slotStart && requestedTime <= slotEnd) {
+      // Clash detected with existing availability slots
+      return true;
+    }
+  }
+
+  // No overlapping slot found, appointment time is available
+  throw new Error("Clash detected with existing availability slots");
+};
+
 const checkAvailability = async (doctorId, appointmentTime, duration) => {
   if (duration < 30 || duration > 180) {
     throw new Error(
       "Appointment cannot be greater then 3 hours or less than 30 minutes"
     );
   }
+
+  const foundDoctor = await Staff.findOne({ _id: doctorId });
+
+  const doctorAvail = isDoctorAvailable(
+    foundDoctor.availability,
+    appointmentTime
+  );
+
+  if (!doctorAvail) {
+    throw new Error("Doctor not availanle", 400);
+  }
+
   const existingAppointments = await Appointment.find({ doctorId });
 
   const appointmentEndTime = new Date(
@@ -202,7 +235,7 @@ export const makeAppointment = catchAsync(async (req, res) => {
 
   const foundDoctor = await Staff.findOne({ _id: doctorId });
 
-  const totalCost = calculateTotalCost(foundDoctor.hourlyPrice, duration);
+  const totalCost = calculateTotalCost(5000, duration);
 
   if (!doctorId || !appointmentTime || !notes || !duration) {
     throw new AppError("Please fill out all the fields");
@@ -310,11 +343,32 @@ export const confirmAppointment = catchAsync(async (req, res) => {
     .populate("users")
     .populate("staffMembers");
 
+  await createdChat.save();
+
   const updatedAppointment = await Appointment.findOneAndUpdate(
     { paystackRef },
     { $set: { status: "confirmed" } },
     { new: true }
   ).populate("doctorId patientId");
 
-  res.status(200).send(updatedAppointment);
+  // Get individual components
+  const year = appointment.appointmentTime.getFullYear();
+  const month = appointment.appointmentTime.getMonth() + 1; // Months are 0-indexed
+  const day = appointment.appointmentTime.getDate();
+  const hour = appointment.appointmentTime.getHours();
+  const minutes = appointment.appointmentTime.getMinutes();
+  const seconds = appointment.appointmentTime.getSeconds();
+
+  const humanReadableDate = `${year}-${month}-${day} ${hour}:${minutes}:${seconds}`;
+
+  const newNotifcation = new Notification({
+    user: req.user._id,
+    type: "appointment",
+    recipients: [appointment.doctorId],
+    content: `Appointment set sccessfully. Time of appointment is ${humanReadableDate}, please be punctual`,
+  });
+
+  await newNotifcation.save();
+
+  res.status(200).send({ first: updatedAppointment, second: newNotifcation });
 });

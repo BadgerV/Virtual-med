@@ -71,7 +71,7 @@ const UserSchema = new mongoose.Schema(
     },
     isPremium: {
       type: Boolean,
-      default: true,
+      default: false,
     },
     tokens: [tokenSchema],
     accountType: {

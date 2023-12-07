@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
+const PRODUCTION = "https://virtual-med-backend.onrender.com";
 const DEVELOPMENT = "http://localhost:8000";
 
 const initialState = {
@@ -13,7 +14,7 @@ const initialState = {
 
 export const registerUser = createAsyncThunk(
   "/user/registerUser",
-  async ({ firstName, lastName, nickName, email, password, phoneNumber }) => {
+  async ({ firstName, lastName, email, password, phoneNumber }) => {
     // console.log("working")
     try {
       const response = await axios.post(
@@ -29,7 +30,6 @@ export const registerUser = createAsyncThunk(
           withCredentials: true,
         }
       );
-
 
       // Assuming the 'auth' cookie is set by the server
 
@@ -55,12 +55,13 @@ export const loginUser = createAsyncThunk(
           withCredentials: true,
         }
       );
+      console.log(response.data);
 
       return response.data;
     } catch (error) {
       try {
         const response = await axios.post(
-          `${DEVELOPMENT}/user/login`,
+          `${DEVELOPMENT}/staff/login`,
           {
             email,
             password,
@@ -70,10 +71,11 @@ export const loginUser = createAsyncThunk(
           }
         );
 
-        console.log(response);
+        console.log(response.data);
 
         return response.data;
       } catch (error) {
+        console.log(error);
         return Promise.reject(error.response.message);
       }
     }
@@ -91,6 +93,8 @@ export const myProfile = createAsyncThunk("/user/profile", async () => {
       const response1 = await axios.get(`${DEVELOPMENT}/staff/profile`, {
         withCredentials: true,
       });
+
+      console.log(response1.data);
       return response1.data;
     } catch (error) {
       return Promise.reject(error.response1.data);
@@ -135,48 +139,89 @@ export const ApproveUserByDoctor = createAsyncThunk(
     }
   }
 );
+
+export const setUserNickname = createAsyncThunk(
+  "/user/setUserNickname",
+  async (nickname) => {
+    try {
+      const response = await axios.post(
+        `${DEVELOPMENT}/user/set-nickname`,
+        { nickname },
+        {
+          withCredentials: true,
+        }
+      );
+
+      console.log(response.data);
+      return response.data;
+    } catch (e) {
+      return Promise.reject(e);
+    }
+  }
+);
+
+export const setStaffAvailability = createAsyncThunk(
+  "/staff/setAvailability",
+  async (availability, thunkAPI) => {
+    try {
+      // Loop through each availability slot and make individual API calls
+      const responses = await Promise.all(
+        availability.map(async (slot) => {
+          // Convert the date and time to a single string in the required format
+          const startDateTimeString = new Date(
+            slot.day + "T" + slot.startTime + ":00"
+          ).toLocaleString("en-US", {
+            timeZone: "Africa/Lagos", // Adjust this based on the actual time zone in Nigeria
+            year: "numeric",
+            month: "2-digit",
+            day: "2-digit",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit",
+          });
+
+          const endDateTimeString = new Date(
+            slot.day + "T" + slot.endTime + ":00"
+          ).toLocaleString("en-US", {
+            timeZone: "Africa/Lagos", // Adjust this based on the actual time zone in Nigeria
+            year: "numeric",
+            month: "2-digit",
+            day: "2-digit",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit",
+          });
+
+          const response = await axios.post(
+            `${DEVELOPMENT}/staff/set-available-date`,
+            {
+              startTime: startDateTimeString,
+              endTime: endDateTimeString,
+            },
+            { withCredentials: true }
+          );
+
+          return response.data;
+        })
+      );
+
+      console.log(responses);
+
+      // Return the array of responses
+      return responses;
+    } catch (error) {
+      // If any individual API call fails, reject the entire operation
+      return thunkAPI.rejectWithValue(error.response.data);
+    }
+  }
+);
+
 const deleteUser = createAsyncThunk("/user/deleteUser", async () => {});
 
 const userSlice = createSlice({
   name: "user",
   initialState,
   reducers: {
-    // signInStart: (state) => {
-    //   state.loading = true;
-    // },
-    // signInSuccess: (state, action) => {
-    //   state.user = action.payload;
-    //   state.loading = false;
-    //   state.error = false;
-    // },
-    // signInFailure: (state, action) => {
-    //   state.loading = false;
-    //   state.error = action.payload;
-    // },
-    // updateUserStart: (state) => {
-    //   state.loading = true;
-    // },
-    // updateUserSuccess: (state, action) => {
-    //   state.user = action.payload;
-    //   state.loading = false;
-    //   state.error = false;
-    // },
-    // updateUserFailure: (state, action) => {
-    //   state.loading = false;
-    //   state.error = action.payload;
-    // },
-    // deleteUserStart: (state) => {
-    //   state.loading = true;
-    // },
-    // deleteUserSuccess: (state) => {
-    //   state.user = null;
-    //   state.loading = false;
-    //   state.error = false;
-    // },
-    // deleteUserFailure: (state, action) => {
-    //   state.loading = false;
-    //   state.error = action.payload;
-    // },
     signOut: (state) => {
       state.user = null;
       state.loading = false;
@@ -204,6 +249,8 @@ const userSlice = createSlice({
       .addCase(loginUser.fulfilled, (state, action) => {
         state.loading = false;
         state.user = action.payload;
+
+        console.log(state.user);
       })
       .addCase(loginUser.rejected, (state, action) => {
         state.loading = false;
@@ -237,21 +284,28 @@ const userSlice = createSlice({
         state.loading = false;
         state.error = action.payload;
         state.loadingUserProfile = false;
+      })
+      .addCase(setUserNickname.pending, (state) => {
+        state.loading = true;
+        state.isSuccess = false;
+        state.loadingUserProfile = true;
+      })
+      .addCase(setUserNickname.fulfilled, (state, action) => {
+        state.loading = false;
+        state.isSuccess = true;
+        state.loadingUserProfile = false;
+        state.user = action.payload;
+
+        console.log(state.user);
+      })
+      .addCase(setUserNickname.rejected, (state, action) => {
+        state.error = action.error;
+        state.loading = false;
+        state.loadingUserProfile = false;
       });
   },
 });
 
-export const {
-  // signInStart,
-  // signinSuccess,
-  // signInFailure,
-  // updateUserFailure,
-  // updateUserStart,
-  // updateUserSuccess,
-  // deleteUserFailure,
-  // deleteUserStart,
-  // deleteUserSuccess,
-  signOut,
-} = userSlice.actions;
+export const { signOut } = userSlice.actions;
 
 export default userSlice.reducer;

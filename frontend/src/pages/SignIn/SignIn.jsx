@@ -1,5 +1,5 @@
 import "./SignIn.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { loginUser } from "../../redux/user/UserSlice";
 import { useNavigate } from "react-router-dom";
@@ -19,7 +19,6 @@ const SignIn = () => {
   });
 
   const isLoading = useSelector((state) => state.userSlice.loading);
-  // const user = useSelector((state) => state.userSlice.user);
 
   const handleChange = (e) => {
     setFormData({
@@ -30,14 +29,14 @@ const SignIn = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("working")
-    const response = await dispatch(loginUser(formData));
-    // console.log(response.payload._id);
+    await dispatch(loginUser(formData));
+  };
 
-    if (response.payload._id) {
+  useEffect(() => {
+    if (user !== null) {
       navigate("/");
     }
-  };
+  }, [user]);
 
   return (
     <div className="sign-in">

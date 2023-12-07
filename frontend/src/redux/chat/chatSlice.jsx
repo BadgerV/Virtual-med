@@ -4,7 +4,7 @@ import axios from "axios";
 
 // import axios from "axios";
 
-const DEVELOPMENT = "http://localhost:8000";
+const DEVELOPMENT = "https://virtual-med-backend.onrender.com";
 // var socket, selectedChatCompared;
 
 const initialState = {

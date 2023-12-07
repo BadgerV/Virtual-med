@@ -56,3 +56,16 @@
   font-size: 0.9em;
   cursor: pointer;
 }
+
+@media (max-width: 720px) {
+  .certification-form {
+    padding: 1.5em;
+  }  
+}
+
+@media (max-width: 455px) {
+  .certification-form {
+    border-radius: 0;
+  }
+}
+

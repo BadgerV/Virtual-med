@@ -178,6 +178,10 @@
     font-size: 0.85em;
     width: fit-content;
   }
+
+  .fast-and-simple-container {
+    margin-top: 2em;
+  }
 }
 @media (max-width: 425px) {
   .home-button-div {

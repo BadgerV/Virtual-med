@@ -4,6 +4,7 @@ import { catchAsync } from "../common/utils/errorHandler.js";
 import { generateToken, isNullOrEmpty } from "../common/utils/helper.js";
 import AppError from "../common/utils/appError.js";
 import Chat from "../models/ChatModel.js";
+import moment from "moment";
 
 export const registerStaff = catchAsync(async (req, res) => {
   const { firstName, lastName, email, password } = req.body;
@@ -145,7 +146,7 @@ export const getStaffs = catchAsync(async (req, res) => {
 });
 
 export const getOneStaff = catchAsync(async (req, res) => {
-  console.log(req.query.id)
+  console.log(req.query.id);
   const staff = await Staff.findOne({
     _id: req.query.id,
     // Add other criteria as needed
@@ -240,3 +241,47 @@ export const viewPendingPatients = catchAsync(async (req, res) => {
 
   res.send(pendingPatients);
 });
+
+export const setAvailability = catchAsync(async (req, res) => {
+  const doctorId = req.staff._id;
+  const { startTime, endTime } = req.body;
+
+  const doctor = await Staff.findById(doctorId);
+
+  if (!doctor) {
+    throw new AppError("Doctor not found", 404);
+  }
+
+  const clashDetected = doctor.availability.some((existingSlot) => {
+    const existingSlotStart = new Date(existingSlot.startTime);
+    const existingSlotEnd = new Date(existingSlot.endTime);
+
+    const newSlotStart = new Date(startTime);
+    const newSlotEnd = new Date(endTime);
+
+    return (
+      (newSlotStart >= existingSlotStart && newSlotStart < existingSlotEnd) ||
+      (newSlotEnd > existingSlotStart && newSlotEnd <= existingSlotEnd) ||
+      (newSlotStart <= existingSlotStart && newSlotEnd >= existingSlotEnd)
+    );
+  });
+
+  if (clashDetected) {
+    throw new AppError("Clash detected with existing availability slots", 400);
+  }
+
+  doctor.availability.push({
+    startTime: new Date(startTime),
+    endTime: new Date(endTime),
+  });
+
+  await doctor.save();
+
+  res.status(200).json({
+    status: "success",
+    data: {
+      doctor,
+    },
+  });
+});
+

@@ -9,6 +9,7 @@ import {
   loginStaff,
   provideCredentials,
   registerStaff,
+  setAvailability,
   verifyAccount,
   viewPendingPatients,
 } from "../controllers/staff.controller.js";
@@ -48,6 +49,7 @@ const staffRoutes = () => {
   router.get("/get-specialists/:speciality", getSpecialists);
   router.get("/view-pending-patients", staffAuth, viewPendingPatients);
   router.post("/apporve-pending-patients", staffAuth, approvePatient);
+  router.post("/set-available-date", staffAuth, setAvailability);
 
   return router;
 };

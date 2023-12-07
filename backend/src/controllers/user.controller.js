@@ -7,11 +7,8 @@ import https from "https";
 import { ENVIRONMENT } from "../common/config/environment.js";
 import { generateToken } from "../common/utils/helper.js";
 import nodemailer from "nodemailer";
-import { log } from "console";
 import Chat from "../models/ChatModel.js";
-
-// const Paystack = import("paystack");
-// const sdk = await Paystack(process.env.PAYSTACK_PUBLIC_KEY);
+import Notification from "../models/NotificationSchema.js";
 
 // //GET USER
 // export const getUser = catchAsync(async (req, res) => {
@@ -171,6 +168,10 @@ const payStack = {
         amount: amount * 100,
         reference: reference,
       });
+
+      if (req.user.isPremium) {
+        throw new AppError("You are already a premium subscriber");
+      }
       // options
       const options = {
         hostname: "api.paystack.co",
@@ -241,9 +242,19 @@ const payStack = {
             req.user.isPremium = true;
             await req.user.save();
             // Payment verification successful
+
+            const newNotifcation = new Notification({
+              user: req.user._id,
+              type: "payment",
+              isRead: false,
+            });
+
+            await newNotifcation.save();
+
             return res.status(200).json({
               message: "Payment verification successful",
               data: responseData.data,
+              notif: newNotifcation,
             });
           } else {
             // Payment verification failed
@@ -328,16 +339,39 @@ export const allUsers = catchAsync(async (req, res) => {
   res.send(users);
 });
 
-export const joinCommunity = catchAsync(async (req,res) => {
+export const joinCommunity = catchAsync(async (req, res) => {
   const { communityId } = req.body;
   const user = req.user;
 
+  const foundChat = await Chat.findOne({ _id: communityId });
 
-  const foundChat = await Chat.findOne({_id : communityId});
-
-  if(!foundChat) {
+  if (!foundChat) {
     throw new AppError("Community not found", 400);
   }
+});
 
-  
-})
+export const getAllNotifications = catchAsync(async (req, res) => {
+  console.log(req.user._id);
+  const foundNotifs = await Notification.find({ user: req.user._id });
+
+  res.send(foundNotifs);
+});
+
+export const setNickname = catchAsync(async (req, res) => {
+  const user = req.user;
+  const nickname = req.body.nickname;
+
+  // console.log(nickname)
+
+  const updatedUser = await User.findOneAndUpdate(
+    { _id: user._id },
+    { $set: { nickName: nickname } },
+    { new: true } // This option returns the modified document instead of the original
+  );
+
+  if (!updatedUser) {
+    throw new AppError("User does not exist", 400);
+  }
+
+  res.send(updatedUser);
+});

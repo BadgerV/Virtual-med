@@ -28,6 +28,7 @@ const AboutMe = () => {
         rows={20}
         onChange={(e) => setAboutMeValue(e.target.value)}
         value={aboutMe}
+        placeholder="About me"
       ></textarea>
     </div>
   );
