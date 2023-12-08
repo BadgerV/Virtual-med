@@ -8,7 +8,7 @@ import {
 } from "../../redux/user/UserSlice";
 import LoadingComponent from "../../components/LoadingComponent/LoadingComponent";
 import {
-  convertDateStringToISOString,
+  parseDateWithMoment,
   formatCustomDate,
   generateTimeSlots,
   organizeByDayAndDate,
@@ -68,12 +68,16 @@ const MakeAppointment = () => {
 
   useEffect(() => {
     if (selectedDate && selectedTime) {
-      const pDate = convertDateStringToISOString(
-        selectedDate,
-        selectedTime,
-        result[selectedDate].year // Use the year from doctorAvail
+      console.log(
+        `${selectedDate} ${selectedTime} ${result[selectedDate].year}`
+      );
+
+      const pDate = parseDateWithMoment(
+        `${selectedDate} ${selectedTime} ${result[selectedDate].year}`
       );
       setParsedDate(pDate);
+
+      console.log(pDate)
     } else {
       return;
     }
@@ -118,16 +122,7 @@ const MakeAppointment = () => {
 
   useEffect(() => {
     if (url !== "") {
-      const paymentWindow = window.open(url);
-
-      if (paymentWindow.closed) {
-        const dispatchFunction = async () => {
-          console.log("letting me  know");
-          await dispatch(confirmAppointment());
-        };
-
-        dispatchFunction();
-      }
+      window.open(url, "_self");
     }
   }, [url]);
   return (

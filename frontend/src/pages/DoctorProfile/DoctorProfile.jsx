@@ -7,10 +7,12 @@ import { useEffect } from "react";
 import { getDoctor } from "../../redux/doctors/DoctorsSlice";
 import LoadingComponennt from "../../components/LoadingComponent/LoadingComponent";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const DoctorProfile = () => {
   const params = useParams();
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const isLoading = useSelector((state) => state.doctorSlice.loading);
   const foundDoctor = useSelector((state) => state.doctorSlice.foundDoctor);
@@ -23,9 +25,13 @@ const DoctorProfile = () => {
     await dispatch(getDoctor(id));
   };
   useEffect(() => {
-    console.log(id)
+    console.log(id);
     fetchDoctorData();
   }, [id]);
+
+  const handleSubmit = () => {
+    navigate(`/make-appointment/${id}`);
+  };
 
   return (
     <>
@@ -43,7 +49,9 @@ const DoctorProfile = () => {
           <div className="doctor-profile-header">
             <img src={foundDoctor?.passportImage} alt="doctor" />
             <span className="doctor-profile-name">{`${foundDoctor?.firstName} ${foundDoctor?.lastName}`}</span>
-            <span className="doctor-profile-speciality">{foundDoctor.speciality}</span>
+            <span className="doctor-profile-speciality">
+              {foundDoctor?.speciality}
+            </span>
             <span className="doctor-profile-course">{`${foundDoctor?.major}`}</span>
           </div>
 
@@ -78,7 +86,10 @@ const DoctorProfile = () => {
           </div>
 
           <div className="profile-doctor-button-container">
-            <button className="profile-doctor-book-appointment">
+            <button
+              className="profile-doctor-book-appointment"
+              onClick={handleSubmit}
+            >
               Book Appointment
             </button>
           </div>

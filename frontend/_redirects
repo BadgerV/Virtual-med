@@ -1,0 +1,2 @@
+# _redirects
+/api/* ${NGROK_URL}/api/:splat 200

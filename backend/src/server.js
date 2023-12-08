@@ -21,10 +21,18 @@ import http from "http";
  */
 
 const app = express();
+
+
+
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "https://1cc2-105-113-72-220.ngrok-free.app",
+      "http://localhost:5173",
+    ],
+    // origin: "https://6572dd9f62d11566266a7fb4--teal-caramel-97d899.netlify.app",
     credentials: true,
+    methods: "GET,PUT,POST,DELETE",
   })
 );
 
@@ -32,7 +40,12 @@ const server = http.createServer(app); // Use the same server for Express and So
 const io = new SocketIOServer(server, {
   pingTimeout: 60000,
   cors: {
-    origin: "http://localhost:5173",
+    // origin: "https://6572dd9f62d11566266a7fb4--teal-caramel-97d899.netlify.app",
+    origin: [
+      "https://6a76-105-113-87-154.ngrok-free.app",
+      "http://localhost:5173",
+    ],
+    methods: "GET,PUT,POST,DELETE",
   },
 });
 // io.on("connection", (socket) => {
@@ -55,6 +68,7 @@ app.use(helmet());
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.disable("x-powered-by");
+
 app.use(
   cookieParser({
     secret: ENVIRONMENT.APP.SECRET,

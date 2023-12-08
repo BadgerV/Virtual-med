@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./SignUpPatient.css";
 import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { registerUser } from "../../redux/user/UserSlice";
 
@@ -188,9 +188,9 @@ const SignupPage = () => {
 
           <div className="sign-in-footer">
             <span>Already have an account?</span>
-            <a href="/signin" className="ball">
+            <Link to="/signin" className="ball">
               Sign In
-            </a>
+            </Link>
           </div>
         </div>
       </div>

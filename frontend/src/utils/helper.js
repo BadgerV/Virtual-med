@@ -110,36 +110,79 @@ export function organizeByDayAndDate(dateStringArray) {
   return resultObject;
 }
 
-export function convertDateStringToISOString(dayAndDate, time, year) {
-  // Combine day, date, time, and year to create a new date string
-  const dateString = `${dayAndDate} ${year} ${time}`;
+export function convertDateStringToISOString(inputDate) {
+  // Extract date and time components
+  const [dayOfWeek, dayNumber, month, time, year] = inputDate.split(" ");
 
-  function convertDateFormat(inputDate) {
-    // Define the input format
-    const inputFormat =
-      /^([A-Za-z]+), (\d+)(st|nd|rd|th) ([A-Za-z]+) (\d{4}) (\d+:\d{2}[ap]m)$/;
+  // Convert day of week to number (0-6)
+  const dayNumberIndex = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ].indexOf(dayOfWeek);
 
-    // Extract components from the input date string
-    const [, day, dayNumber, suffix, month, year, time] =
-      inputDate.match(inputFormat);
+  // Convert month to numerical format
+  const monthNumber = {
+    January: "01",
+    February: "02",
+    March: "03",
+    April: "04",
+    May: "05",
+    June: "06",
+    July: "07",
+    August: "08",
+    September: "09",
+    October: "10",
+    November: "11",
+    December: "12",
+  }[month];
 
-    // Create a new Date object with the extracted components
-    const parsedDate = new Date(`${month} ${dayNumber}, ${year} ${time}`);
+  // Convert time to 24-hour format
+  let hour, minute;
 
-    // Adjust the time to Nigeria timezone (UTC+1)
-    parsedDate.setHours(parsedDate.getHours() + 1);
-
-    // Format the date to the ISO format
-    const outputDate = parsedDate.toISOString();
-
-    return outputDate;
+  if (time.endsWith("pm")) {
+    [hour, minute] = time.slice(0, -2).split(":");
+    hour = parseInt(hour) + 12;
+  } else {
+    [hour, minute] = time.slice(0, -2).split(":");
   }
 
-  const result = convertDateFormat(dateString);
+  // Combine date and time components
+  const momentJSFormatDate = `${year}-${monthNumber}-${dayNumber}T${hour}:${minute}:00Z`;
 
-  console.log(result)
+  const parsedDate = moment(momentJSFormatDate);
 
-  return result;
+  // Check if the parsed date is valid
+  if (!parsedDate.isValid()) {
+    console.error(`Invalid date format: ${inputDate}`);
+    return null;
+  }
+
+  // Format the date to ISO format
+  const outputDate = parsedDate.toISOString();
+
+  return outputDate;
 }
 
-// Example usage
+
+export function parseDateWithMoment(dateString) {
+  // Define the moment format
+  const momentFormat = 'dddd, Do MMMM h:mma YYYY';
+
+  // Parse the date string using moment
+  const momentObject = moment(dateString, momentFormat);
+
+  // Check if parsing was successful
+  if (!momentObject.isValid()) {
+    throw new Error("Invalid date format");
+  }
+
+  // Extract and convert date parts from the moment object
+  const dateObject = new Date(momentObject.year(), momentObject.month(), momentObject.date(), momentObject.hour(), momentObject.minute());
+
+  return dateObject;
+}

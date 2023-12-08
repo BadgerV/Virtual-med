@@ -13,6 +13,8 @@ const initialState = {
   doctorAvailableTime: null,
   loadingDoctorAvailableTime: false,
   url: "",
+  doctorPaymentStatus: "",
+  loadingDoctorPayment : false
 };
 
 export const registerUser = createAsyncThunk(
@@ -28,15 +30,17 @@ export const registerUser = createAsyncThunk(
           email,
           password,
           phoneNumber,
-        },
-        {
-          withCredentials: true,
         }
+        // {
+        //   withCredentials: true,
+        // }
       );
 
-      // Assuming the 'auth' cookie is set by the server
+      const token =
+        response.data.tokens[response.data.newUser.tokens.length - 1].token;
+      console.log(token);
 
-      console.log(response.data.newUser);
+      localStorage.setItem("token", token);
 
       return response.data.newUser;
     } catch (error) {
@@ -60,7 +64,9 @@ export const loginUser = createAsyncThunk(
           withCredentials: true,
         }
       );
-      console.log(response.data);
+      const token = response.data.tokens[response.data.tokens.length - 1].token;
+
+      localStorage.setItem("token", token);
 
       return response.data;
     } catch (error) {
@@ -76,6 +82,11 @@ export const loginUser = createAsyncThunk(
           }
         );
 
+        const token =
+          response.data.tokens[response.data.tokens.length - 1].token;
+
+        localStorage.setItem("token", token);
+
         console.log(response.data);
 
         return response.data;
@@ -87,25 +98,40 @@ export const loginUser = createAsyncThunk(
   }
 );
 
-export const myProfile = createAsyncThunk("/user/profile", async () => {
-  try {
-    const response = await axios.get(`${DEVELOPMENT}/user/profile`, {
-      withCredentials: true,
-    });
-    return response.data;
-  } catch (error) {
+export const myProfile = createAsyncThunk(
+  "/user/profile",
+  async () => {
+    const token = localStorage.getItem("token");
     try {
-      const response1 = await axios.get(`${DEVELOPMENT}/staff/profile`, {
-        withCredentials: true,
+      console.log(token);
+      const response = await axios.get(`${DEVELOPMENT}/user/profile`, {
+        // withCredentials: true,
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
       });
 
-      console.log(response1.data);
-      return response1.data;
+      return response.data;
     } catch (error) {
-      return Promise.reject(error.response1.data);
+      try {
+        // const token = getState().auth.token; // Assuming you store the token in your Redux state
+        const response1 = await axios.get(`${DEVELOPMENT}/staff/profile`, {
+          withCredentials: true,
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+
+        console.log(response1);
+        console.log(response1.data);
+        return response1.data;
+      } catch (error) {
+        console.log(error);
+        return Promise.reject(error.response1.data);
+      }
     }
   }
-});
+);
 
 export const ConnectUserWithDoctor = createAsyncThunk(
   "/user/connectUserWithDoctor",
@@ -148,12 +174,17 @@ export const ApproveUserByDoctor = createAsyncThunk(
 export const setUserNickname = createAsyncThunk(
   "/user/setUserNickname",
   async (nickname) => {
+    const token = localStorage.getItem("token");
+
     try {
       const response = await axios.post(
         `${DEVELOPMENT}/user/set-nickname`,
         { nickname },
         {
           withCredentials: true,
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
         }
       );
 
@@ -224,11 +255,18 @@ export const setStaffAvailability = createAsyncThunk(
 export const getAvailableTimeForDoctor = createAsyncThunk(
   "/getAvailableTimeForDoctor",
   async (doctorId, thunkAPI) => {
+    const token = localStorage.getItem("token");
+
     try {
       const response = await axios.post(
         `${DEVELOPMENT}/user/get-doctor-availability`,
         { doctorId },
-        { withCredentials: true }
+        {
+          withCredentials: true,
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
       );
       return response.data;
     } catch (error) {
@@ -240,8 +278,9 @@ export const getAvailableTimeForDoctor = createAsyncThunk(
 export const makeAppointment = createAsyncThunk(
   "/makeappointment",
   async ({ doctorId, duration, appointmentTime, notes }, thunkAPI) => {
+    const token = localStorage.getItem("token");
+
     try {
-      console.log(appointmentTime);
       const response = await axios.post(
         `${DEVELOPMENT}/appointment/makeAppointment`,
         {
@@ -251,14 +290,18 @@ export const makeAppointment = createAsyncThunk(
           notes,
         },
         {
-          withCredentials: true,
+          // withCredentials: true,
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
         }
       );
+      console.log(response);
 
       console.log(response.data.data.authorization_url);
       return response.data.data.authorization_url;
     } catch (error) {
-      console.log(error.response);
+      console.log(error);
       return thunkAPI.rejectWithValue(error.response.data);
     }
   }
@@ -266,13 +309,21 @@ export const makeAppointment = createAsyncThunk(
 
 export const confirmAppointment = createAsyncThunk(
   "/confirmappointment",
-  async (thunkAPI) => {
+  async (reference, thunkAPI) => {
+    console.log(reference);
+    const token = localStorage.getItem("token");
+
     try {
       const response = await axios.get(
-        `${DEVELOPMENT}/appointment/confirmAppointment`
+        `${DEVELOPMENT}/appointment/confirmAppointment/${reference}`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
       );
-
-      console.log(response.data)
+      // console.log(response.data.status);
+      return response.data.status;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.response.data);
     }
@@ -382,7 +433,18 @@ const userSlice = createSlice({
       })
       .addCase(makeAppointment.fulfilled, (state, action) => {
         state.url = action.payload;
-        console.log(state.url);
+      })
+      .addCase(confirmAppointment.pending, (state) => {
+        state.loadingDoctorPayment = true;
+      })
+      .addCase(confirmAppointment.fulfilled, (state, action) => {
+        state.loadingDoctorPayment = false;
+        state.doctorPaymentStatus = action.payload;
+        console.log(state.doctorPaymentStatus)
+      })
+      .addCase(confirmAppointment.rejected, (state, action) => {
+        state.loadingDoctorPayment = false;
+        state.error = action.error.message;
       });
   },
 });

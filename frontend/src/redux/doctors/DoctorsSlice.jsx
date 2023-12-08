@@ -2,7 +2,8 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const DEVELOPMENT = "https://virtual-med-backend.onrender.com";
+const DEVELOPMENT = "http://localhost:8000";
+const PRODUCTION = "https://virtual-med-backend.onrender.com";
 
 const initialState = {
   doctors: [],
@@ -28,7 +29,7 @@ export const getDoctor = createAsyncThunk("/doctors/get-doctor", async (id) => {
   console.log(id)
   try {
     const response = await axios.get(
-      `${DEVELOPMENT}/staff/get-staff/:?id=${id}`
+      `${DEVELOPMENT}/staff/get-staff/${id}`
     );
 
     console.log(response.data);

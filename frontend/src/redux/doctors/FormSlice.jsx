@@ -87,8 +87,16 @@ export const registerStaff = createAsyncThunk(
         },
         {
           withCredentials: true,
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
         }
       );
+
+      const token = response.data.tokens[response.data.tokens.length - 1].token;
+      console.log(token);
+
+      localStorage.setItem("token", token);
 
       return response.data;
     } catch (e) {

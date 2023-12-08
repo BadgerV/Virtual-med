@@ -10,7 +10,7 @@ const router = Router();
 const appointmentRoute = () => {
   router.get("/fetchAppointments", fetchAppointments);
   router.post("/makeAppointment", makeAppointment);
-  router.get("/confirmAppointment", confirmAppointment);
+  router.get("/confirmAppointment/:paystackRef", confirmAppointment);
   return router;
 };
 

@@ -40,6 +40,7 @@ import io from "socket.io-client";
 import AvailabilityForm, {
   SetNickName,
 } from "./pages/CollectAvailableTImeAndNickkname/CollectAvailableTimeAndNickname";
+import VerifyPage from "./pages/VerifyPage/VerifyPage";
 
 var socket;
 const ENDPOINT = "http://localhost:8000";
@@ -92,6 +93,8 @@ const App = () => {
                 path="/get-available-dates/"
                 element={<AvailabilityForm />}
               />
+
+              <Route path="/verify" element={<VerifyPage />} />
               <Route element={<PrivateRoutes />}>
                 <Route path="/chat" element={<Chat />} />
                 <Route path="/profile" element={<Profile />} />
