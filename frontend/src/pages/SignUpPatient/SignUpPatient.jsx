@@ -45,8 +45,8 @@ const SignupPage = () => {
   };
 
   useEffect(() => {
-    if (user !== null) {
-      navigate("/");
+    if (user !== null && !user?.nickname) {
+      navigate("/set-nickname");
     }
   }, [user]);
 

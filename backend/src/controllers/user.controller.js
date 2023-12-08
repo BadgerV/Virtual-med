@@ -375,3 +375,16 @@ export const setNickname = catchAsync(async (req, res) => {
 
   res.send(updatedUser);
 });
+
+
+export const getAvailabilityForUsers = catchAsync(async (req, res) => {
+  const {doctorId} = req.body;
+
+  const foundStaff = await Staff.findOne({ _id: doctorId });
+
+  if (!foundStaff) {
+    throw new AppError("Staff not found", 400);
+  }
+
+  res.status(200).send(foundStaff.availability);
+});

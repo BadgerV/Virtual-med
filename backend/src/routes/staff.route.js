@@ -2,6 +2,7 @@ import { Router } from "express";
 import {
   approvePatient,
   getActiveStaffs,
+  getAvailability,
   getOneStaff,
   getSpecialists,
   getStaff,
@@ -50,6 +51,8 @@ const staffRoutes = () => {
   router.get("/view-pending-patients", staffAuth, viewPendingPatients);
   router.post("/apporve-pending-patients", staffAuth, approvePatient);
   router.post("/set-available-date", staffAuth, setAvailability);
+  router.get("/get-availability", staffAuth, getAvailability)
+
 
   return router;
 };

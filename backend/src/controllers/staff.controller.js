@@ -1,3 +1,4 @@
+import cron from "node-cron";
 import Staff from "../models/StaffModel.js";
 import User from "../models/UserModel.js";
 import { catchAsync } from "../common/utils/errorHandler.js";
@@ -146,9 +147,8 @@ export const getStaffs = catchAsync(async (req, res) => {
 });
 
 export const getOneStaff = catchAsync(async (req, res) => {
-  console.log(req.query.id);
   const staff = await Staff.findOne({
-    _id: req.query.id,
+    _id: req.params.id,
     // Add other criteria as needed
     // Add more criteria here
   });
@@ -285,3 +285,39 @@ export const setAvailability = catchAsync(async (req, res) => {
   });
 });
 
+export const getAvailability = catchAsync(async (req, res) => {
+  const staff = req.staff;
+
+  const foundStaff = await Staff.findOne({ _id: staff._id });
+
+  if (!foundStaff) {
+    throw new AppError("Staff not found", 400);
+  }
+
+  res.status(200).send(foundStaff.availability);
+});
+
+// ... (your other imports and setup)
+
+// Schedule the cron job to run every minute
+cron.schedule("* * * * *", async () => {
+  try {
+    // Find all staff members
+    const allStaff = await Staff.find({});
+
+    // Iterate over each staff member and update availability
+    for (const staff of allStaff) {
+      staff.availability = staff.availability.filter((slot) => {
+        // Check if the end time of the slot is in the future
+        return new Date(slot.endTime) > new Date();
+      });
+
+      // Save the updated staff member
+      await staff.save();
+    }
+
+    console.log("Cron job executed successfully.");
+  } catch (error) {
+    console.error("Cron job failed:", error);
+  }
+});

@@ -1,7 +1,8 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const DEVELOPMENT = "https://virtual-med-backend.onrender.com";
+const PRODUCTION = "https://virtual-med-backend.onrender.com";
+const DEVELOPMENT = "http://localhost:8000";
 
 const initialState = {
   firstName: "",
@@ -122,6 +123,8 @@ const formSlice = createSlice({
       .addCase(registerStaff.fulfilled, (state, action) => {
         state.isLoading = false;
         state.staff = action.payload;
+
+        console.log(state.staff);
         state.error = null;
       })
       .addCase(registerStaff.rejected, (state, action) => {

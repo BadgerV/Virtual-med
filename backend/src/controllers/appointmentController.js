@@ -60,19 +60,17 @@ const isDoctorAvailable = (doctorAvailability, appointmentTime) => {
   const requestedTime = new Date(appointmentTime);
 
   for (const slot of doctorAvailability) {
-    console.log(slot);
-
-    const slotStart = new Date(`${slot.startTime} UTC`);
-    const slotEnd = new Date(`${slot.endTime} UTC`);
+    const slotStart = new Date(slot.startTime);
+    const slotEnd = new Date(slot.endTime);
 
     if (requestedTime >= slotStart && requestedTime <= slotEnd) {
-      // Clash detected with existing availability slots
+      // Appointment time overlaps with an existing slot
       return true;
     }
   }
 
-  // No overlapping slot found, appointment time is available
-  throw new Error("Clash detected with existing availability slots");
+  // No overlapping slot found, doctor is available
+  return false;
 };
 
 const checkAvailability = async (doctorId, appointmentTime, duration) => {
@@ -90,7 +88,7 @@ const checkAvailability = async (doctorId, appointmentTime, duration) => {
   );
 
   if (!doctorAvail) {
-    throw new Error("Doctor not availanle", 400);
+    throw new Error("Doctor not available", 400);
   }
 
   const existingAppointments = await Appointment.find({ doctorId });
@@ -129,6 +127,8 @@ const payStack = {
         email: email,
         amount: price * 100,
         reference: reference,
+        callback_url:
+          "http://localhost:5173/payment/verify",
       });
       // options
       const options = {
@@ -235,13 +235,14 @@ export const makeAppointment = catchAsync(async (req, res) => {
 
   const foundDoctor = await Staff.findOne({ _id: doctorId });
 
-  const totalCost = calculateTotalCost(5000, duration);
+  const totalCost = calculateTotalCost(foundDoctor.hourlyPrice, duration);
+  console.log(totalCost)
 
   if (!doctorId || !appointmentTime || !notes || !duration) {
     throw new AppError("Please fill out all the fields");
   }
   const realAppointmentTime = new Date(appointmentTime);
-  console.log(realAppointmentTime);
+  // console.log(realAppointmentTime);
 
   const availability = await checkAvailability(
     doctorId,

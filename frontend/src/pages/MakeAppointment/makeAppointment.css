@@ -110,7 +110,7 @@
 }
 
 .appointment-time {
-  width: 8em;
+  width: 10em;
   height: 3.5em;
   background-color: #edeaea;
   columns: black;
@@ -158,4 +158,56 @@
   padding: 1.1em 3.5em;
   border-radius: 50px;
   margin: 2em;
+}
+
+.make-appointment-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.appointment-dates {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.appointment-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1em;
+}
+.appointment-times {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.selected {
+  background-color: #023382;
+  color: white;
+}
+
+.date-today {
+  color: inherit;
+}
+
+.make-notes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.make-notes-container label {
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.make-notes-container textarea {
+  outline: 1px solid #8d8d8d;
+  border-radius: 20px;
+  padding: 1em;
+  font-size: 0.9em;
 }

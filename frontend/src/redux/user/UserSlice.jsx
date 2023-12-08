@@ -10,6 +10,9 @@ const initialState = {
   isSuccess: false,
   error: false,
   loadingUserProfile: true,
+  doctorAvailableTime: null,
+  loadingDoctorAvailableTime: false,
+  url: "",
 };
 
 export const registerUser = createAsyncThunk(
@@ -32,6 +35,8 @@ export const registerUser = createAsyncThunk(
       );
 
       // Assuming the 'auth' cookie is set by the server
+
+      console.log(response.data.newUser);
 
       return response.data.newUser;
     } catch (error) {
@@ -216,6 +221,64 @@ export const setStaffAvailability = createAsyncThunk(
   }
 );
 
+export const getAvailableTimeForDoctor = createAsyncThunk(
+  "/getAvailableTimeForDoctor",
+  async (doctorId, thunkAPI) => {
+    try {
+      const response = await axios.post(
+        `${DEVELOPMENT}/user/get-doctor-availability`,
+        { doctorId },
+        { withCredentials: true }
+      );
+      return response.data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.response.data);
+    }
+  }
+);
+
+export const makeAppointment = createAsyncThunk(
+  "/makeappointment",
+  async ({ doctorId, duration, appointmentTime, notes }, thunkAPI) => {
+    try {
+      console.log(appointmentTime);
+      const response = await axios.post(
+        `${DEVELOPMENT}/appointment/makeAppointment`,
+        {
+          doctorId,
+          duration: duration * 60,
+          appointmentTime,
+          notes,
+        },
+        {
+          withCredentials: true,
+        }
+      );
+
+      console.log(response.data.data.authorization_url);
+      return response.data.data.authorization_url;
+    } catch (error) {
+      console.log(error.response);
+      return thunkAPI.rejectWithValue(error.response.data);
+    }
+  }
+);
+
+export const confirmAppointment = createAsyncThunk(
+  "/confirmappointment",
+  async (thunkAPI) => {
+    try {
+      const response = await axios.get(
+        `${DEVELOPMENT}/appointment/confirmAppointment`
+      );
+
+      console.log(response.data)
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.response.data);
+    }
+  }
+);
+
 const deleteUser = createAsyncThunk("/user/deleteUser", async () => {});
 
 const userSlice = createSlice({
@@ -302,6 +365,24 @@ const userSlice = createSlice({
         state.error = action.error;
         state.loading = false;
         state.loadingUserProfile = false;
+      })
+      .addCase(getAvailableTimeForDoctor.pending, (state) => {
+        state.loadingDoctorAvailableTime = true;
+        // state.isSuccess = false;
+      })
+      .addCase(getAvailableTimeForDoctor.fulfilled, (state, action) => {
+        state.loadingDoctorAvailableTime = false;
+        state.isSuccess = true;
+        state.doctorAvailableTime = action.payload;
+      })
+      .addCase(getAvailableTimeForDoctor.rejected, (state, action) => {
+        state.loadingDoctorAvailableTime = false;
+        state.isSuccess = false;
+        state.error = action.error.message;
+      })
+      .addCase(makeAppointment.fulfilled, (state, action) => {
+        state.url = action.payload;
+        console.log(state.url);
       });
   },
 });

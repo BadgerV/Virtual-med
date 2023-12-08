@@ -68,7 +68,7 @@ const DoctorRegister = () => {
   const user = useSelector((state) => state.userSlice.user);
   useEffect(() => {
     if (staff !== null || user !== null) {
-      navigate("/");
+      navigate("/get-available-dates");
     }
   }, [staff, user]);
 
@@ -229,13 +229,11 @@ const DoctorRegister = () => {
       speciality.trim() === "" ||
       hourlyPrice.trim() === "" ||
       passportImage.trim() === "" ||
-      dateOfBirth.trim() === "" ||
       location.trim() === "" ||
       boardCertification.trim() === "" ||
       major.trim() === "" ||
       degree.trim() === "" ||
       university.trim() === "" ||
-      graduationDate.trim() === "" ||
       degreeCertificate.trim() === "" ||
       CV.trim() === "";
 
@@ -247,6 +245,7 @@ const DoctorRegister = () => {
   };
 
   const handleSubmit = async (e) => {
+    console.log("working");
     e.preventDefault();
 
     await dispatch(

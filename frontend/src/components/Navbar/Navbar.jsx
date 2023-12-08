@@ -7,6 +7,7 @@ const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const isUser = useSelector((state) => state.userSlice.user);
+  const isStaff = useSelector((state) => state.formSlice.staff);
 
   const handleCloseModal = () => {
     setIsModalOpen(false)
@@ -76,7 +77,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {isUser ? (
+        {isUser || isStaff ? (
           <div className="navbar-right">
             <button className="my-account-button">
               <img src="/assets/avatar-mini.svg" alt="avatar mini" />

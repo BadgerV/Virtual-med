@@ -88,7 +88,10 @@ const App = () => {
               <Route path="/doctorprofile" element={<DoctorProfile />} />
               <Route path="/services" element={<Services />} />
               <Route path="/contact-us" element={<ContactUs />} />
-
+              <Route
+                path="/get-available-dates/"
+                element={<AvailabilityForm />}
+              />
               <Route element={<PrivateRoutes />}>
                 <Route path="/chat" element={<Chat />} />
                 <Route path="/profile" element={<Profile />} />
@@ -97,10 +100,7 @@ const App = () => {
                   element={<MakeAppointment />}
                 />
                 <Route path="/chat" element={<Chat />} />
-                <Route
-                  path="/get-available-dates/"
-                  element={<AvailabilityForm />}
-                />
+
                 <Route path="/set-nickname" element={<SetNickName />} />
               </Route>
             </Routes>

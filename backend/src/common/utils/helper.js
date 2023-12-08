@@ -43,5 +43,8 @@ export function calculateTotalCost(hourlyPrice, durationInMinutes) {
   const hourlyRateInHours = hourlyPrice / 60; // Convert hourly rate to per-minute rate
   const totalCost = hourlyRateInHours * durationInMinutes;
 
-  return totalCost;
+  // Round the total cost to the nearest integer
+  const roundedTotalCost = Math.round(totalCost);
+
+  return roundedTotalCost;
 }

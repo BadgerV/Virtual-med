@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { setStaffAvailability } from "../../redux/user/UserSlice";
 
 const AvailabilityForm = () => {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const [availability, setAvailability] = useState([]);
   const [selectedDate, setSelectedDate] = useState("");
@@ -35,8 +36,8 @@ const AvailabilityForm = () => {
 
   const handleSetAvailability = async () => {
     if (availability.length > 0) {
-        console.log("working here")
       await dispatch(setStaffAvailability(availability));
+      navigate("/");
     } else {
       return;
     }

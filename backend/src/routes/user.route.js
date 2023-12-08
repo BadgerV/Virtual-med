@@ -4,6 +4,7 @@ import {
   ConnectUserWithDoctor,
   allUsers,
   getAllNotifications,
+  getAvailabilityForUsers,
   getUser,
   initializePayment,
   // initiatePremiumSubscription,
@@ -43,6 +44,8 @@ export const userRoutes = () => {
   router.post("/connectUserWithDoctor", auth, isPremium, ConnectUserWithDoctor);
 
   router.get("/notifcations", auth, isPremium, getAllNotifications);
+
+  router.post("/get-doctor-availability", getAvailabilityForUsers);
 
   return router;
 };
