@@ -27,7 +27,7 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://1cc2-105-113-72-220.ngrok-free.app",
+      "https://ad22-105-113-87-68.ngrok-free.app",
       "http://localhost:5173",
     ],
     // origin: "https://6572dd9f62d11566266a7fb4--teal-caramel-97d899.netlify.app",
@@ -42,7 +42,7 @@ const io = new SocketIOServer(server, {
   cors: {
     // origin: "https://6572dd9f62d11566266a7fb4--teal-caramel-97d899.netlify.app",
     origin: [
-      "https://6a76-105-113-87-154.ngrok-free.app",
+      "https://ad22-105-113-87-68.ngrok-free.app",
       "http://localhost:5173",
     ],
     methods: "GET,PUT,POST,DELETE",

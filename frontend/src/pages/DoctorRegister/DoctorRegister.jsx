@@ -65,13 +65,20 @@ const DoctorRegister = () => {
   } = useSelector((state) => state.formSlice);
 
   const staff = useSelector((state) => state.formSlice.staff);
-  const user = useSelector((state) => state.userSlice.user);
+  // const user = useSelector((state) => state.userSlice.user);
+
+  // useEffect(() => {
+  //   if (staff !== null || user !== null) {
+  //     navigate("/get-available-dates");
+  //   }
+  // }, [staff, user]);
+
   useEffect(() => {
-    if (staff !== null || user !== null) {
+    if (staff !== null) {
       navigate("/get-available-dates");
     }
-  }, [staff, user]);
-
+  }, [staff]);
+  
   // Local state to track changes
   const [localFirstName, setLocalFirstName] = useState(firstName);
   const [localLastName, setLocalLastName] = useState(lastName);

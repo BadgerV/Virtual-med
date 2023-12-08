@@ -7,8 +7,8 @@ import Staff from "../../models/StaffModel.js";
 
 export const auth = catchAsync(async (req, res, next) => {
   // Retrieve the token from the cookie instead of the Authorization header
-  // const token = req.cookies.auth;
-  const token = req.header("Authorization").replace("Bearer ", "");
+  const token = req.cookies.auth;
+  // const token = req.header("Authorization").replace("Bearer ", "");
 
   console.log(req.cookies.auth);
 
@@ -63,8 +63,8 @@ export const auth = catchAsync(async (req, res, next) => {
 
 export const staffAuth = catchAsync(async (req, res, next) => {
   // const token = req.cookies.auth;
-  const token = req.header("Authorization").replace("Bearer ", "");
-  // const token = req.cookies.auth;
+  // const token = req.header("Authorization").replace("Bearer ", "");
+  const token = req.cookies.auth;
 
   if (!token) {
     throw new AppError("Please authenticate", 404);
@@ -96,8 +96,8 @@ export const staffAuth = catchAsync(async (req, res, next) => {
 
 export const isPremiumOrStaff = catchAsync(async (req, res, next) => {
   // const token = req.cookies.auth;
-  const token = req.header("Authorization").replace("Bearer ", "");
-  // const token = req.cookies.auth;
+  // const token = req.header("Authorization").replace("Bearer ", "");
+  const token = req.cookies.auth;
 
   if (!token) {
     throw new AppError("Please authenticate", 404);

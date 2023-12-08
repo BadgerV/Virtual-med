@@ -9475,3 +9475,304 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2023-12-08 20:24:45 info: GET /staff/get-staffs [32m200 233.925 ms - 10695
 2023-12-08 20:24:49 info: GET /staff/get-staff/6571da552e0c331306f1348a [32m200 240.008 ms - 1762
 2023-12-08 20:24:52 info: POST /user/get-doctor-availability [32m200 169.656 ms - 2
+2023-12-08 20:32:09 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:32:09 info: GET /user/profile [33m401 40.687 ms - 1402
+2023-12-08 20:32:33 info: GET /user/profile [32m200 212.606 ms - 7888
+2023-12-08 20:32:34 info: POST /user/get-doctor-availability [32m200 169.690 ms - 2
+2023-12-08 20:32:51 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:32:51 info: GET /user/profile [33m401 10.040 ms - 1402
+2023-12-08 20:32:51 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:32:51 info: GET /staff/profile [33m401 31.711 ms - 1402
+2023-12-08 20:32:53 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:32:53 info: GET /user/profile [33m401 10.899 ms - 1402
+2023-12-08 20:32:54 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:32:54 info: GET /staff/profile [33m401 17.837 ms - 1402
+2023-12-08 20:32:56 info: GET /user/profile [36m304 271.889 ms - -
+2023-12-08 20:32:57 info: POST /user/get-doctor-availability [32m200 163.875 ms - 2
+2023-12-08 20:33:08 info: GET /staff/get-staffs [32m200 1097.756 ms - 10695
+2023-12-08 20:33:15 info: GET /staff/get-staff/6571da552e0c331306f1348a [32m200 318.476 ms - 1762
+2023-12-08 20:33:56 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:33:56 info: GET /user/profile [33m401 7.232 ms - 1402
+2023-12-08 20:33:57 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:33:57 info: GET /staff/profile [33m401 6.215 ms - 1402
+2023-12-08 20:39:28 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:39:28 info: GET /user/profile [33m401 9.774 ms - 1402
+2023-12-08 20:39:28 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:39:28 info: GET /staff/profile [33m401 7.470 ms - 1402
+2023-12-08 20:39:36 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:39:36 info: GET /user/profile [33m401 37.003 ms - 1402
+2023-12-08 20:39:36 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:39:36 info: GET /staff/profile [33m401 6.882 ms - 1402
+2023-12-08 20:40:00 info: GET /staff/get-staffs [36m304 201.215 ms - -
+2023-12-08 20:40:09 info: GET /staff/get-staff/6571da552e0c331306f1348a [36m304 224.260 ms - -
+2023-12-08 20:44:36 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:44:36 info: GET /user/profile [33m401 20.765 ms - 1402
+2023-12-08 20:44:36 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:44:36 info: GET /staff/profile [33m401 5.866 ms - 1402
+2023-12-08 20:45:27 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:45:27 info: GET /user/profile [33m401 6.712 ms - 1402
+2023-12-08 20:45:27 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:45:27 info: GET /staff/profile [33m401 5.910 ms - 1402
+2023-12-08 20:45:52 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:45:52 info: GET /user/profile [33m401 5.163 ms - 1402
+2023-12-08 20:45:53 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:45:53 info: GET /staff/profile [33m401 4.818 ms - 1402
+2023-12-08 20:49:26 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:49:26 info: GET /user/profile [33m401 6.800 ms - 1402
+2023-12-08 20:49:26 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:49:26 info: GET /staff/profile [33m401 7.267 ms - 1402
+2023-12-08 20:52:14 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:52:14 info: GET /user/profile [33m401 44.378 ms - 1402
+2023-12-08 20:52:14 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:52:14 info: GET /staff/profile [33m401 4.566 ms - 1402
+2023-12-08 20:52:18 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:52:18 info: GET /user/profile [33m401 12.831 ms - 1402
+2023-12-08 20:52:18 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 20:52:18 info: GET /staff/profile [33m401 7.533 ms - 1402
+2023-12-08 20:55:13 error: 500 - Staff validation failed: firstName: Name can only contain letters - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-08 20:55:13 info: POST /staff/register [31m500 823.872 ms - 663
+2023-12-08 21:39:38 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 21:39:38 info: GET /user/profile [33m401 5.971 ms - 1402
+2023-12-08 21:39:38 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 21:39:38 info: GET /staff/profile [33m401 3.602 ms - 1402
+2023-12-08 21:42:41 info: POST /staff/register [32m200 971.538 ms - 1737
+2023-12-08 21:43:13 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 21:43:13 info: GET /user/profile [33m401 7.398 ms - 1402
+2023-12-08 21:43:13 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 21:43:13 info: GET /staff/profile [33m401 5.245 ms - 1402
+2023-12-08 21:43:20 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 21:43:20 info: GET /user/profile [33m401 6.201 ms - 1402
+2023-12-08 21:43:20 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 21:43:20 info: GET /staff/profile [33m401 5.374 ms - 1402
+2023-12-08 21:43:25 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 21:43:25 info: GET /user/profile [33m401 6.426 ms - 1402
+2023-12-08 21:43:26 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 21:43:26 info: GET /staff/profile [33m401 6.312 ms - 1402
+2023-12-08 21:44:25 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 21:44:25 info: GET /user/profile [33m401 4.598 ms - 1402
+2023-12-08 21:44:26 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 21:44:26 info: GET /staff/profile [33m401 5.775 ms - 1402
+2023-12-08 21:44:29 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 21:44:29 info: GET /user/profile [33m401 10.391 ms - 1402
+2023-12-08 21:44:30 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 21:44:30 info: GET /staff/profile [33m401 9.375 ms - 1402
+2023-12-08 21:46:03 info: POST /staff/register [32m200 2509.794 ms - 1680
+2023-12-08 21:49:48 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 21:49:48 info: GET /user/profile [33m401 6.019 ms - 1402
+2023-12-08 21:49:49 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 21:49:49 info: GET /staff/profile [33m401 4.476 ms - 1402
+2023-12-08 21:51:47 error: 500 - Staff validation failed: password: Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers - /staff/register - POST - ::ffff:127.0.0.1
+2023-12-08 21:51:47 info: POST /staff/register [31m500 355.993 ms - 793
+2023-12-08 21:53:06 info: POST /staff/register [32m200 577.142 ms - 1672
+2023-12-08 21:53:31 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 21:53:31 info: GET /user/profile [33m401 6.878 ms - 1402
+2023-12-08 21:53:31 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 21:53:31 info: GET /staff/profile [33m401 5.518 ms - 1402
+2023-12-08 21:56:14 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 21:56:14 info: GET /user/profile [33m401 5.668 ms - 1402
+2023-12-08 21:56:15 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 21:56:15 info: GET /staff/profile [33m401 6.289 ms - 1402
+2023-12-08 21:57:32 info: POST /staff/register [32m200 1028.355 ms - 1649
+2023-12-08 21:59:51 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 21:59:51 info: GET /user/profile [33m401 279.178 ms - 279
+2023-12-08 21:59:51 info: GET /staff/profile [32m200 317.666 ms - 1636
+2023-12-08 22:00:38 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 22:00:38 info: GET /user/profile [33m401 228.135 ms - 279
+2023-12-08 22:00:39 info: GET /staff/profile [36m304 191.493 ms - -
+2023-12-08 22:02:00 error: 500 - Cannot read properties of undefined (reading 'replace') - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-08 22:02:00 info: POST /staff/set-available-date [31m500 5.081 ms - 1490
+2023-12-08 22:02:00 error: 500 - Cannot read properties of undefined (reading 'replace') - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-08 22:02:00 info: POST /staff/set-available-date [31m500 6.578 ms - 1490
+2023-12-08 22:02:00 error: 500 - Cannot read properties of undefined (reading 'replace') - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-08 22:02:00 info: POST /staff/set-available-date [31m500 3.449 ms - 1490
+2023-12-08 22:02:00 error: 500 - Cannot read properties of undefined (reading 'replace') - /staff/set-available-date - POST - ::ffff:127.0.0.1
+2023-12-08 22:02:00 info: POST /staff/set-available-date [31m500 3.346 ms - 1490
+2023-12-08 22:03:17 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 22:03:17 info: GET /user/profile [33m401 225.456 ms - 279
+2023-12-08 22:03:18 info: GET /staff/profile [36m304 234.299 ms - -
+2023-12-08 22:03:46 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 22:03:46 info: GET /user/profile [33m401 166.538 ms - 279
+2023-12-08 22:03:46 info: GET /staff/profile [36m304 254.381 ms - -
+2023-12-08 22:03:50 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 22:03:50 info: GET /user/profile [33m401 354.190 ms - 279
+2023-12-08 22:03:51 info: GET /staff/profile [36m304 298.222 ms - -
+2023-12-08 22:04:02 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 22:04:02 info: GET /user/profile [33m401 203.470 ms - 279
+2023-12-08 22:04:03 info: GET /staff/profile [36m304 170.103 ms - -
+2023-12-08 22:04:49 info: POST /staff/set-available-date [32m200 642.280 ms - 1859
+2023-12-08 22:04:49 info: POST /staff/set-available-date [32m200 728.316 ms - 1859
+2023-12-08 22:04:50 info: POST /staff/set-available-date [32m200 1757.690 ms - 2229
+2023-12-08 22:04:50 info: POST /staff/set-available-date [32m200 1763.287 ms - 2229
+2023-12-08 22:11:40 info: GET /staff/get-staffs [32m200 363.049 ms - 18124
+2023-12-08 22:12:36 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-08 22:12:36 info: GET /user/profile [33m401 37.713 ms - 1402
+2023-12-08 22:12:36 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-08 22:12:36 info: GET /staff/profile [33m401 13.149 ms - 1402
+2023-12-08 22:12:37 info: GET /staff/get-staffs [32m200 359.215 ms - 18124
+2023-12-08 22:12:45 info: GET /staff/get-staff/6573833ba7b0ffce13f5a1c0 [32m200 175.940 ms - 2375
+2023-12-08 22:13:25 info: POST /user/login [32m200 573.112 ms - 8092
+2023-12-08 22:13:29 info: GET /staff/get-staffs [36m304 353.277 ms - -
+2023-12-08 22:13:33 info: GET /staff/get-staff/6573833ba7b0ffce13f5a1c0 [36m304 304.683 ms - -
+2023-12-08 22:13:37 info: POST /user/get-doctor-availability [32m200 174.045 ms - 741
+2023-12-08 22:14:18 info: POST /appointment/makeAppointment [32m200 1199.006 ms - 77
+2023-12-08 22:14:29 error: 400 - Appointment time is not available - /appointment/makeAppointment - POST - ::1
+2023-12-08 22:14:29 info: POST /appointment/makeAppointment [33m400 812.410 ms - 331
+2023-12-08 22:15:33 info: POST /appointment/makeAppointment [32m200 1123.749 ms - 213
+2023-12-08 22:15:47 info: GET /user/profile [32m200 259.898 ms - 8092
+2023-12-08 22:15:49 error: 500 - doctorId is not defined - /appointment/confirmAppointment/25565b29-7269-452d-ac3d-e10c8fe7cb0c - GET - ::1
+2023-12-08 22:15:49 info: GET /appointment/confirmAppointment/25565b29-7269-452d-ac3d-e10c8fe7cb0c [31m500 1772.378 ms - 320
+2023-12-08 22:16:55 info: GET /staff/get-staffs [32m200 698.791 ms - 18150
+2023-12-08 22:16:59 info: GET /staff/get-staff/6573833ba7b0ffce13f5a1c0 [32m200 354.769 ms - 2401
+2023-12-08 22:17:03 info: POST /user/get-doctor-availability [32m200 264.618 ms - 741
+2023-12-08 22:17:14 info: POST /appointment/makeAppointment [32m200 1555.704 ms - 213
+2023-12-08 22:17:29 info: GET /user/profile [32m200 256.757 ms - 8119
+2023-12-08 22:17:34 info: GET /appointment/confirmAppointment/649bdbf1-d9cb-4aa8-9a5b-76b1bea5e8c4 [32m200 4127.771 ms - 10816
+2023-12-08 22:17:42 info: GET /staff/get-staffs [32m200 523.966 ms - 18150
+2023-12-08 22:17:47 info: GET /staff/get-staff/6573833ba7b0ffce13f5a1c0 [32m200 274.539 ms - 2401
+2023-12-08 22:17:50 info: POST /user/get-doctor-availability [32m200 177.054 ms - 741
+2023-12-08 22:20:09 info: POST /appointment/makeAppointment [32m200 1436.167 ms - 213
+2023-12-08 22:20:24 info: GET /user/profile [32m200 210.731 ms - 8119
+2023-12-08 22:20:28 info: GET /appointment/confirmAppointment/74a84c48-4e0f-41a4-a9f7-da7dcbc2dbe7 [32m200 4304.562 ms - 10633
+2023-12-08 22:20:31 info: GET /staff/get-staffs [32m200 360.137 ms - 17965
+2023-12-08 22:20:36 info: GET /staff/get-staff/6573833ba7b0ffce13f5a1c0 [32m200 231.548 ms - 2216
+2023-12-08 22:20:40 info: POST /user/get-doctor-availability [32m200 175.346 ms - 556
+2023-12-08 22:21:49 info: POST /staff/set-available-date [32m200 641.238 ms - 2440
+2023-12-08 22:21:49 info: POST /staff/set-available-date [32m200 646.124 ms - 2440
+2023-12-08 22:21:49 info: POST /staff/set-available-date [32m200 672.377 ms - 2440
+2023-12-08 22:21:49 info: POST /staff/set-available-date [32m200 670.979 ms - 2440
+2023-12-08 22:21:59 info: GET /user/profile [32m200 206.110 ms - 8119
+2023-12-08 22:22:01 info: POST /user/get-doctor-availability [32m200 167.934 ms - 1296
+2023-12-08 22:22:18 info: POST /appointment/makeAppointment [32m200 1404.422 ms - 213
+2023-12-08 22:22:32 info: GET /user/profile [36m304 175.644 ms - -
+2023-12-08 22:22:36 info: GET /appointment/confirmAppointment/b5a22940-af55-418c-bcf3-9a1ef2507291 [32m200 4483.303 ms - 11374
+2023-12-08 22:22:38 info: GET /staff/get-staffs [32m200 460.170 ms - 18705
+2023-12-08 22:22:45 info: GET /staff/get-staff/6573833ba7b0ffce13f5a1c0 [32m200 158.257 ms - 2956
+2023-12-08 22:22:51 info: POST /user/get-doctor-availability [32m200 236.681 ms - 1296
+2023-12-08 22:23:21 error: 400 - Appointment time is not available - /appointment/makeAppointment - POST - ::1
+2023-12-08 22:23:21 info: POST /appointment/makeAppointment [33m400 972.284 ms - 331
+2023-12-08 22:23:30 error: 400 - Appointment time is not available - /appointment/makeAppointment - POST - ::1
+2023-12-08 22:23:30 info: POST /appointment/makeAppointment [33m400 790.154 ms - 331
+2023-12-08 22:24:42 info: POST /appointment/makeAppointment [32m200 2980.164 ms - 213
+2023-12-08 22:24:55 info: GET /user/profile [32m200 168.197 ms - 8119
+2023-12-08 22:24:59 info: GET /appointment/confirmAppointment/9af52d39-7ae4-45db-b899-ef1ee33264db [32m200 3440.033 ms - 11184
+2023-12-08 22:25:04 info: GET /staff/get-staffs [32m200 507.105 ms - 18520
+2023-12-08 22:25:08 info: GET /staff/get-staff/6573833ba7b0ffce13f5a1c0 [32m200 164.118 ms - 2771
+2023-12-08 22:25:11 info: POST /user/get-doctor-availability [32m200 226.880 ms - 1111
+2023-12-08 22:26:23 info: POST /user/get-doctor-availability [32m200 256.169 ms - 1111
+2023-12-08 22:27:02 info: GET /user/profile [32m200 191.469 ms - 8119
+2023-12-08 22:27:04 info: POST /user/get-doctor-availability [32m200 173.586 ms - 1111
+2023-12-08 22:58:51 info: GET /user/profile [36m304 1017.335 ms - -
+2023-12-08 22:58:53 info: POST /user/get-doctor-availability [32m200 151.896 ms - 1111
+2023-12-08 23:10:49 info: POST /user/get-doctor-availability [32m200 1503.023 ms - 1111
+2023-12-08 23:11:01 info: POST /appointment/makeAppointment [32m200 1520.229 ms - 213
+2023-12-08 23:11:14 info: GET /user/profile [36m304 196.563 ms - -
+2023-12-08 23:11:17 info: GET /appointment/confirmAppointment/c4d8afa2-c8c6-438e-8cdb-8c56587c9989 [32m200 3107.388 ms - 11000
+2023-12-08 23:12:05 info: GET /staff/get-staffs [32m200 287.711 ms - 18335
+2023-12-08 23:12:09 info: GET /staff/get-staff/6573833ba7b0ffce13f5a1c0 [32m200 148.044 ms - 2586
+2023-12-08 23:12:13 info: POST /user/get-doctor-availability [32m200 192.982 ms - 926
+2023-12-08 23:12:24 info: POST /appointment/makeAppointment [32m200 1187.043 ms - 213
+2023-12-08 23:12:34 info: GET /user/profile [32m200 258.874 ms - 8119
+2023-12-08 23:12:37 info: GET /appointment/confirmAppointment/5f6bb731-b623-40d9-bdb3-306bc491af63 [32m200 3070.214 ms - 11002
+2023-12-08 23:18:27 info: POST /user/get-doctor-availability [32m200 163.679 ms - 926
+2023-12-08 23:18:41 info: POST /appointment/makeAppointment [32m200 1219.660 ms - 213
+2023-12-08 23:18:52 info: GET /user/profile [32m200 207.590 ms - 8119
+2023-12-08 23:18:53 error: 500 - doctorId is not defined - /appointment/confirmAppointment/dffb8e6d-6883-4171-a99f-208698bd4492 - GET - ::1
+2023-12-08 23:18:53 info: GET /appointment/confirmAppointment/dffb8e6d-6883-4171-a99f-208698bd4492 [31m500 1491.880 ms - 320
+2023-12-08 23:19:28 info: POST /user/get-doctor-availability [32m200 188.114 ms - 926
+2023-12-08 23:20:26 info: GET /user/profile [32m200 236.577 ms - 8119
+2023-12-08 23:20:28 info: POST /user/get-doctor-availability [32m200 263.314 ms - 926
+2023-12-08 23:20:37 info: POST /appointment/makeAppointment [32m200 1201.274 ms - 213
+2023-12-08 23:20:50 info: GET /user/profile [36m304 209.751 ms - -
+2023-12-08 23:20:52 error: 500 - appointments is not defined - /appointment/confirmAppointment/577dd9de-6cfb-4ea7-b633-f472b8550c58 - GET - ::1
+2023-12-08 23:20:52 info: GET /appointment/confirmAppointment/577dd9de-6cfb-4ea7-b633-f472b8550c58 [31m500 1508.176 ms - 328
+2023-12-08 23:22:15 info: POST /staff/set-available-date [32m200 580.603 ms - 2810
+2023-12-08 23:22:15 info: POST /staff/set-available-date [32m200 580.945 ms - 2810
+2023-12-08 23:22:23 info: POST /user/get-doctor-availability [32m200 151.472 ms - 1296
+2023-12-08 23:22:33 info: POST /appointment/makeAppointment [32m200 1236.918 ms - 213
+2023-12-08 23:22:45 info: GET /user/profile [32m200 195.160 ms - 8119
+2023-12-08 23:22:47 error: 500 - availability is not defined - /appointment/confirmAppointment/217f54b6-b895-48af-8ecf-27022d13157e - GET - ::1
+2023-12-08 23:22:47 info: GET /appointment/confirmAppointment/217f54b6-b895-48af-8ecf-27022d13157e [31m500 1475.148 ms - 328
+2023-12-08 23:34:37 error: 401 - TokenExpiredError: jwt expired - /appointment/fetchAppointments - GET - ::1
+2023-12-08 23:34:37 info: GET /appointment/fetchAppointments [33m401 23.911 ms - 1435
+2023-12-08 23:34:48 info: POST /user/login [32m200 568.785 ms - 8323
+2023-12-08 23:34:58 info: GET /appointment/fetchAppointments [32m200 596.730 ms - 35
+2023-12-08 23:37:23 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-12-08 23:37:23 info: GET /user/profile [33m404 23.098 ms - 61
+2023-12-08 23:37:24 error: 404 - Please authenticate - /staff/profile - GET - ::1
+2023-12-08 23:37:24 info: GET /staff/profile [33m404 5.928 ms - 61
+2023-12-08 23:37:24 error: 404 - Please authenticate - /appointment/confirmAppointment/217f54b6-b895-48af-8ecf-27022d13157e - GET - ::1
+2023-12-08 23:37:24 info: GET /appointment/confirmAppointment/217f54b6-b895-48af-8ecf-27022d13157e [33m404 23.958 ms - 61
+2023-12-08 23:37:29 error: 404 - Please authenticate - /staff/profile - GET - ::1
+2023-12-08 23:37:29 info: GET /staff/profile [33m404 4.460 ms - 61
+2023-12-08 23:38:05 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-12-08 23:38:05 info: GET /user/profile [33m404 45.515 ms - 61
+2023-12-08 23:38:05 error: 404 - Please authenticate - /staff/profile - GET - ::1
+2023-12-08 23:38:05 info: GET /staff/profile [33m404 2.266 ms - 61
+2023-12-08 23:38:44 info: POST /user/login [32m200 398.019 ms - 8527
+2023-12-08 23:38:54 info: GET /appointment/fetchAppointments [32m200 547.737 ms - 35
+2023-12-08 23:39:04 info: POST /user/login [32m200 3135.486 ms - 8731
+2023-12-08 23:39:19 info: GET /staff/get-staffs [32m200 340.561 ms - 18706
+2023-12-08 23:39:22 info: GET /staff/get-staff/6573833ba7b0ffce13f5a1c0 [32m200 159.093 ms - 2957
+2023-12-08 23:39:25 info: POST /user/get-doctor-availability [32m200 174.249 ms - 1296
+2023-12-08 23:39:36 error: 404 - Please authenticate - /appointment/makeAppointment - POST - ::1
+2023-12-08 23:39:36 info: POST /appointment/makeAppointment [33m404 1.169 ms - 61
+2023-12-08 23:39:42 error: 404 - Please authenticate - /appointment/makeAppointment - POST - ::1
+2023-12-08 23:39:42 info: POST /appointment/makeAppointment [33m404 1.074 ms - 61
+2023-12-08 23:39:59 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-12-08 23:39:59 info: GET /user/profile [33m404 1.936 ms - 61
+2023-12-08 23:39:59 error: 404 - Please authenticate - /staff/profile - GET - ::1
+2023-12-08 23:39:59 info: GET /staff/profile [33m404 3.451 ms - 61
+2023-12-08 23:40:25 info: POST /user/login [32m200 416.105 ms - 8935
+2023-12-08 23:40:30 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-12-08 23:40:30 info: GET /user/profile [33m404 23.952 ms - 61
+2023-12-08 23:40:30 error: 404 - Please authenticate - /staff/profile - GET - ::1
+2023-12-08 23:40:30 info: GET /staff/profile [33m404 11.440 ms - 61
+2023-12-08 23:40:44 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 23:40:44 info: GET /user/profile [33m404 3.337 ms - 61
+2023-12-08 23:40:45 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 23:40:45 info: GET /staff/profile [33m401 7.433 ms - 1402
+2023-12-08 23:41:17 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 23:41:17 info: GET /user/profile [33m404 3.070 ms - 61
+2023-12-08 23:41:17 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 23:41:17 info: GET /staff/profile [33m401 5.285 ms - 1402
+2023-12-08 23:41:52 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 23:41:52 info: GET /user/profile [33m404 11.640 ms - 61
+2023-12-08 23:41:52 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 23:41:52 info: GET /staff/profile [33m401 69.133 ms - 1402
+2023-12-08 23:41:58 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-12-08 23:41:58 info: GET /user/profile [33m404 3.059 ms - 61
+2023-12-08 23:41:58 error: 404 - Please authenticate - /staff/profile - GET - ::1
+2023-12-08 23:41:58 info: GET /staff/profile [33m404 3.975 ms - 61
+2023-12-08 23:42:03 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 23:42:03 info: GET /user/profile [33m404 4.768 ms - 61
+2023-12-08 23:42:03 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 23:42:03 info: GET /staff/profile [33m401 8.039 ms - 1402
+2023-12-08 23:42:31 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 23:42:31 info: GET /user/profile [33m404 2.706 ms - 61
+2023-12-08 23:42:31 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-08 23:42:31 info: GET /staff/profile [33m401 4.139 ms - 1402
+2023-12-08 23:42:34 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-12-08 23:42:34 info: GET /user/profile [33m404 71.678 ms - 61
+2023-12-08 23:42:34 error: 404 - Please authenticate - /staff/profile - GET - ::1
+2023-12-08 23:42:34 info: GET /staff/profile [33m404 1.610 ms - 61
+2023-12-08 23:42:57 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 23:42:57 info: GET /user/profile [33m401 194.275 ms - 279
+2023-12-08 23:42:57 info: GET /staff/profile [32m200 264.827 ms - 2957
+2023-12-08 23:43:16 info: GET /user/profile [32m200 179.137 ms - 8935
+2023-12-08 23:43:22 info: POST /user/get-doctor-availability [32m200 181.171 ms - 1296
+2023-12-08 23:43:31 info: POST /appointment/makeAppointment [32m200 1245.956 ms - 213
+2023-12-08 23:43:41 info: GET /user/profile [36m304 182.557 ms - -
+2023-12-08 23:43:44 info: GET /appointment/confirmAppointment/5f3d2977-40ad-464d-9e83-5b8c63b0e293 [32m200 3067.000 ms - 12003
+2023-12-08 23:44:54 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-08 23:44:54 info: GET /user/profile [33m401 165.349 ms - 279
+2023-12-08 23:44:54 info: GET /staff/profile [32m200 168.320 ms - 2772
+2023-12-08 23:44:54 info: GET /user/profile [32m200 214.046 ms - 8935
+2023-12-08 23:44:55 error: 500 - Apointment already verified - /appointment/confirmAppointment/5f3d2977-40ad-464d-9e83-5b8c63b0e293 - GET - ::1
+2023-12-08 23:44:55 info: GET /appointment/confirmAppointment/5f3d2977-40ad-464d-9e83-5b8c63b0e293 [31m500 751.520 ms - 319
+2023-12-08 23:44:59 info: POST /user/get-doctor-availability [32m200 180.659 ms - 1111
+2023-12-08 23:45:15 info: POST /appointment/makeAppointment [32m200 1095.912 ms - 213
+2023-12-08 23:45:26 info: GET /user/profile [36m304 177.155 ms - -
+2023-12-08 23:45:30 info: GET /appointment/confirmAppointment/db5f4052-69b4-4f7e-a0f1-e1d93548beae [32m200 3996.350 ms - 11822
+2023-12-08 23:47:55 error: 500 - Cannot read properties of undefined (reading 'replace') - /appointment/fetchAppointments - GET - ::1
+2023-12-08 23:47:55 info: GET /appointment/fetchAppointments [31m500 11.638 ms - 1488
+2023-12-08 23:48:14 info: GET /appointment/fetchAppointments [32m200 734.051 ms - 5825

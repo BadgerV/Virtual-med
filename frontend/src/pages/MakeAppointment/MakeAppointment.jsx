@@ -191,7 +191,7 @@ const MakeAppointment = () => {
 
             <div className="appointment-text">Duration</div>
             <div className="appointment-durations">
-              {["1 hour", "2 hours"].map((duration) => (
+              {["1 hour"].map((duration) => (
                 <div
                   key={duration}
                   className={`appointment-duration ${

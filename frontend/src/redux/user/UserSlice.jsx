@@ -103,7 +103,6 @@ export const myProfile = createAsyncThunk(
   async () => {
     const token = localStorage.getItem("token");
     try {
-      console.log(token);
       const response = await axios.get(`${DEVELOPMENT}/user/profile`, {
         // withCredentials: true,
         headers: {
@@ -199,6 +198,8 @@ export const setUserNickname = createAsyncThunk(
 export const setStaffAvailability = createAsyncThunk(
   "/staff/setAvailability",
   async (availability, thunkAPI) => {
+    const token = localStorage.getItem("token");
+
     try {
       // Loop through each availability slot and make individual API calls
       const responses = await Promise.all(
@@ -234,7 +235,11 @@ export const setStaffAvailability = createAsyncThunk(
               startTime: startDateTimeString,
               endTime: endDateTimeString,
             },
-            { withCredentials: true }
+            {
+              headers: {
+                Authorization: `Bearer ${token}`,
+              },
+            }
           );
 
           return response.data;
@@ -322,7 +327,7 @@ export const confirmAppointment = createAsyncThunk(
           },
         }
       );
-      // console.log(response.data.status);
+      console.log(response.data);
       return response.data.status;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.response.data);

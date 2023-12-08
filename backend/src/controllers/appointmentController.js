@@ -127,7 +127,7 @@ const payStack = {
         email: email,
         amount: price * 100,
         reference: reference,
-        callback_url: "https://1cc2-105-113-72-220.ngrok-free.app/verify",
+        callback_url: "https://ad22-105-113-87-68.ngrok-free.app/verify",
       });
       // options
       const options = {
@@ -319,39 +319,24 @@ export const confirmAppointment = catchAsync(async (req, res) => {
     { new: true }
   );
 
-  const formattedAppointmentTime = appointment.appointmentTime.toISOString();
-
   const foundStaff1 = await Staff.findOneAndUpdate(
-    { _id: doctorId },
+    { _id: appointment.doctorId },
     {
       $pull: {
         availability: {
-          $or: [
-            {
-              startTime: { $lte: formattedAppointmentTime },
-              endTime: { $gte: formattedAppointmentTime },
-            },
-            {
-              startTime: {
-                $lte:
-                  new Date(formattedAppointmentTime).getTime() +
-                  appointment.duration * 60000,
-              },
-              endTime: { $gte: formattedAppointmentTime },
-            },
-            {
-              startTime: { $lte: formattedAppointmentTime },
-              endTime: { $gte: formattedAppointmentTime },
-            },
-          ],
+          startTime: { $lte: appointment.appointmentTime },
+          endTime: {
+            $gte: new Date(
+              appointment.appointmentTime.getTime() +
+                appointment.duration * 60000
+            ),
+          },
         },
       },
     },
-    { new: true }
+    { new: true } // This option returns the modified document
   );
 
-  console.log(foundStaff1, "working 1");
-  console.log(foundStaff, "working 2");
 
   await foundStaff.save();
 

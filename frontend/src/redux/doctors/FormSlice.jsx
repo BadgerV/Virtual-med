@@ -60,6 +60,7 @@ export const registerStaff = createAsyncThunk(
     aboutMe,
   }) => {
     try {
+      console.log("ppppp")
       const response = await axios.post(
         `${DEVELOPMENT}/staff/register`,
         {
@@ -85,16 +86,12 @@ export const registerStaff = createAsyncThunk(
           CV,
           aboutMe,
         },
-        {
-          withCredentials: true,
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        }
       );
 
-      const token = response.data.tokens[response.data.tokens.length - 1].token;
-      console.log(token);
+      const token = await response.data.newStaff.tokens[
+        response.data.newStaff.tokens.length - 1
+      ].token;
+      console.log(response.data);
 
       localStorage.setItem("token", token);
 
@@ -130,7 +127,7 @@ const formSlice = createSlice({
       })
       .addCase(registerStaff.fulfilled, (state, action) => {
         state.isLoading = false;
-        state.staff = action.payload;
+        state.staff = action.payload.newStaff;
 
         console.log(state.staff);
         state.error = null;

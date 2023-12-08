@@ -21,6 +21,7 @@ const SignupPage = () => {
 
   const handleDoctorClick = () => {
     setIsUser(false);
+    navigate("/registerdoctor");
   };
 
   const handlePatientClick = () => {

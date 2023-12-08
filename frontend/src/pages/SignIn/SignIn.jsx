@@ -93,7 +93,7 @@ const SignIn = () => {
         <div className="sign-in-footer">
           <span>
             Don't have an account?{" "}
-            <a href="/signupforpatient" className="ball">
+            <a href="/signup" className="ball">
               Sign Up
             </a>
           </span>

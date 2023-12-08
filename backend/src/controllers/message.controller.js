@@ -37,6 +37,9 @@ export const sendMessage = catchAsync(async (req, res) => {
 
   res.status(200).send(message);
 });
+
+
+
 export const allMessages = catchAsync(async (req, res) => {
   // const isUser = req.user ? true : false;
   const messages = await Message.find({ chat: req.params.chatId })
