@@ -1,6 +1,9 @@
+import ConsultationSplash from "../../components/ConsultationSplash/ConsultationSplash";
+import Services from "../../components/Services/Services";
 import SimpleAndFast from "../../components/SimpleAndFast/SimpleAndFast";
 import "./Home.css";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -9,7 +12,6 @@ const Home = () => {
   // Function to update the image source based on window size
   const updateImageSource = () => {
     const width = window.innerWidth;
-    console.log(width)
 
     // Set different image sources based on window size
     if (width < 987) {
@@ -44,7 +46,7 @@ const Home = () => {
           </span>
 
           <span className="home-small-text">
-            At VirtualMed, we strongly believe that everyone deserves access to
+            At MedCon, we strongly believe that everyone deserves access to
             top-notch medical care, regardless of their location or schedule.
           </span>
 
@@ -73,10 +75,12 @@ const Home = () => {
           </div>
 
           <div className="home-button-div">
-            <button className="home-first-button">Book appointment</button>
-            <button className="home-second-button">
+            <Link className="home-first-button" to="/finddoctor">
+              Book appointment
+            </Link>
+            <Link to="/signup" className="home-second-button">
               Get Started <img src="/assets/right-arrow.png" alt="" />
-            </button>
+            </Link>
           </div>
         </div>
         <div className="home-right">
@@ -87,6 +91,18 @@ const Home = () => {
       <div className="fast-and-simple-outer-container">
         <div className="fast-and-simple-container">
           <SimpleAndFast />
+        </div>
+      </div>
+
+      <div className="consultation-outer-container">
+        <div className="consultation-container">
+          <ConsultationSplash />
+        </div>
+      </div>
+
+      <div className="services-outer-container">
+        <div className="services-container">
+          <Services />
         </div>
       </div>
     </>

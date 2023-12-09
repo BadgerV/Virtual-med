@@ -8,6 +8,9 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { myProfile } from "./redux/user/UserSlice";
 import FindDoctor from "./pages/FindDoctor/findDoctor";
+
+import { PremiumUsersOnly } from "./components/PrivateRoute/PrivateRoutes";
+const MyAppointments = lazy(() => import("./pages/MyAppointments/MyAppointments"));
 const Profile = lazy(() => import("./pages/Profile/Profile"));
 // const Footer = lazy(() => import("./components/Footer/Footer"));
 const SignIn = lazy(() => import("./pages/SignIn/SignIn"));
@@ -36,27 +39,14 @@ const ContactUs = lazy(() => import("./pages/ContactUs/ContactUs"));
 
 //i was thinking we should start with the redux store and the asynchronous detchings from the backend pending the time we will get a designer.
 
-import io from "socket.io-client";
 import AvailabilityForm, {
   SetNickName,
 } from "./pages/CollectAvailableTImeAndNickkname/CollectAvailableTimeAndNickname";
 import VerifyPage from "./pages/VerifyPage/VerifyPage";
 
-var socket;
-const ENDPOINT = "http://localhost:8000";
-
 const App = () => {
   const dispatch = useDispatch();
-  const user = useSelector((state) => state.userSlice.useSelector);
-  const loadingUserProfile = useSelector(
-    (state) => state.userSlice.loadingUserProfile
-  );
 
-  useEffect(() => {
-    socket = io(ENDPOINT);
-    socket.emit("setup", user);
-    socket.on("cone");
-  }, []);
   useEffect(() => {
     const verifyUser = async () => {
       await dispatch(myProfile());
@@ -106,7 +96,12 @@ const App = () => {
 
                 <Route path="/set-nickname" element={<SetNickName />} />
               </Route>
+
+              <Route element={<PremiumUsersOnly />}>
+                <Route element={<MyAppointments />} path="/my-appointments" />
+              </Route>
             </Routes>
+
             {/* <Footer /> */}
           </Suspense>
         </>

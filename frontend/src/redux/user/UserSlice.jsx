@@ -63,7 +63,7 @@ export const loginUser = createAsyncThunk(
           password,
         },
         {
-          withCredentials: true,
+          // withCredentials: true,
         }
       );
       const token = response.data.tokens[response.data.tokens.length - 1].token;
@@ -80,7 +80,7 @@ export const loginUser = createAsyncThunk(
             password,
           },
           {
-            withCredentials: true,
+            // withCredentials: true,
           }
         );
 

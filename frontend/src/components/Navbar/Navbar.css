@@ -15,19 +15,31 @@
 }
 
 .navbar-left {
-  font-family: "Goldman", sans-serif;
   font-size: 1.2em;
+
+  display: flex;
+  flex-direction: row;
+  /* gap: 0.2em; */
+  align-items: center;
+}
+
+.medcon-logo {
+  /* height: 4em; */
+  width: 4.5em;
+  margin: -0.5em;
 }
 
 .navbar-left span {
-  color: #3c84fb;
-  font-weight: 600;
-}
-
+    font-size: 1em;
+    font-weight: 700;
+    color: black;
+  }
 .navbar-middle {
   flex: 0.5;
   display: flex;
   justify-content: space-between;
+
+  /* outline: 1px solid red; */
 }
 
 .navbar-link {
@@ -39,11 +51,13 @@
   display: flex;
   flex-direction: row;
   gap: 2em;
+  align-items: center;
 }
 
 .navbar-signin {
   color: black;
   font-size: 0.93em;
+  font-weight: 400;
 }
 
 .navbar-get_started {
@@ -97,6 +111,10 @@
     align-items: center;
     justify-content: start;
   }
+  
+  .medcon-logo {
+    margin-left: -1em;
+  }
 
   .navbar-mobile-devices img {
     scale: 1.5;
@@ -111,11 +129,30 @@
     margin-left: 1em;
   }
 
+  
+
   .navbar-right {
     margin-right: 1em;
   }
 }
 
+@media (max-width : 420px) {
+  .nav-avatar-mini {
+    display: none;
+  }
+}
+
+@media (max-width : 385px) {
+
+  .navbar-left {
+    /* outline: 1px solid red; */
+  }
+
+  .navbar-right{
+    /* outline: 1px solid red; */
+    gap: 0.5em;
+  }
+}
 .navbar-modal {
   position: absolute;
   width: 100vw;

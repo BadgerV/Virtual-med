@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -6,12 +6,16 @@ import { useSelector } from "react-redux";
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const isUser = useSelector((state) => state.userSlice.user);
-  const isStaff = useSelector((state) => state.formSlice.staff);
+  const isUser = useSelector((state) => state?.userSlice.user);
+  const isStaff = useSelector((state) => state?.formSlice.staff);
+
+  useEffect(() => {
+    console.log(isUser?.isPremium);
+  }, [isUser]);
 
   const handleCloseModal = () => {
-    setIsModalOpen(false)
-  }
+    setIsModalOpen(false);
+  };
 
   return (
     <>
@@ -47,6 +51,17 @@ const Navbar = () => {
             >
               Doctors
             </Link>
+            {isUser?.isPremium ? (
+              <Link
+                className="navbar-link-mobile"
+                to="/my-appointments"
+                onClick={handleCloseModal}
+              >
+                My appointments
+              </Link>
+            ) : (
+              <></>
+            )}
             <Link
               className="navbar-link-mobile"
               to="/contact-us"
@@ -59,10 +74,20 @@ const Navbar = () => {
       )}
       <nav className="navbar">
         <div className="navbar-left">
-          Virtual<span>Med</span>
+          <img
+            src="/assets/medcon-logo.svg"
+            className="medcon-logo"
+            alt="logo"
+          />
+          <span>
+            MedCon
+          </span>
         </div>
 
-        <div className="navbar-middle">
+        <div
+          className="navbar-middle"
+          style={isUser.isPremium ? { flex: 0.6 } : {}}
+        >
           <Link className="navbar-link" to="/">
             Home
           </Link>
@@ -72,6 +97,17 @@ const Navbar = () => {
           <Link className="navbar-link" to="/finddoctor">
             Doctors
           </Link>
+          {isUser?.isPremium ? (
+            <Link
+              className="navbar-link"
+              to="/my-appointments"
+              onClick={handleCloseModal}
+            >
+              My appointments
+            </Link>
+          ) : (
+            <></>
+          )}
           <Link className="navbar-link" to="/contact-us">
             Contact us
           </Link>
@@ -80,7 +116,7 @@ const Navbar = () => {
         {isUser || isStaff ? (
           <div className="navbar-right">
             <button className="my-account-button">
-              <img src="/assets/avatar-mini.svg" alt="avatar mini" />
+              <img src="/assets/avatar-mini.svg" alt="avatar mini" className="nav-avatar-mini" />
               My Account
             </button>
 
@@ -95,8 +131,12 @@ const Navbar = () => {
           </div>
         ) : (
           <div className="navbar-right">
-            <button className="navbar-signin">Sign in</button>
-            <button className="navbar-get_started">Get Started</button>
+            <Link className="navbar-signin" to="/signin">
+              Sign in
+            </Link>
+            <Link className="navbar-get_started" to="/signup">
+              Get Started
+            </Link>
 
             <div className="navbar-mobile-devices">
               <img
