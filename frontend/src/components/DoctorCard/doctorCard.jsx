@@ -32,11 +32,9 @@ const DoctorCard = ({
         </div>
       </div>
       <div className="doctor-card-right">
-        <button className="doctor-card_view-button">
           <Link to={`/doctor/${_id}`} className="link-button">
             View
           </Link>
-        </button>
       </div>
     </div>
   );

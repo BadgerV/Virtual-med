@@ -9776,3 +9776,215 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2023-12-08 23:47:55 error: 500 - Cannot read properties of undefined (reading 'replace') - /appointment/fetchAppointments - GET - ::1
 2023-12-08 23:47:55 info: GET /appointment/fetchAppointments [31m500 11.638 ms - 1488
 2023-12-08 23:48:14 info: GET /appointment/fetchAppointments [32m200 734.051 ms - 5825
+2023-12-08 23:50:08 info: GET /appointment/fetchAppointments [32m200 799.822 ms - 5825
+2023-12-08 23:50:16 info: GET /appointment/fetchAppointments [32m200 677.428 ms - 5825
+2023-12-08 23:51:37 info: GET /appointment/fetchAppointments [32m200 682.883 ms - 5825
+2023-12-09 09:21:30 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 09:21:30 info: GET /user/profile [33m404 6.340 ms - 61
+2023-12-09 09:21:31 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 09:21:31 info: GET /staff/profile [33m401 9.391 ms - 1402
+2023-12-09 09:23:38 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-12-09 09:23:38 info: GET /user/profile [33m404 3.099 ms - 61
+2023-12-09 09:23:38 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-09 09:23:38 info: GET /staff/profile [33m401 11.524 ms - 1402
+2023-12-09 09:23:43 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-12-09 09:23:43 info: GET /user/profile [33m404 6.319 ms - 61
+2023-12-09 09:23:43 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-09 09:23:43 info: GET /staff/profile [33m401 10.237 ms - 1402
+2023-12-09 09:23:43 error: 404 - Please authenticate - /appointment/confirmAppointment/null - GET - ::1
+2023-12-09 09:23:43 info: GET /appointment/confirmAppointment/null [33m404 2.387 ms - 61
+2023-12-09 09:27:27 error: 404 - Please authenticate - /appointment/confirmAppointment/null - GET - ::1
+2023-12-09 09:27:27 info: GET /appointment/confirmAppointment/null [33m404 4.016 ms - 61
+2023-12-09 09:52:21 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 09:52:21 info: GET /user/profile [33m404 8.714 ms - 61
+2023-12-09 09:52:21 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 09:52:22 info: GET /staff/profile [33m401 14.170 ms - 1402
+2023-12-09 09:52:22 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 09:52:22 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 1.489 ms - 61
+2023-12-09 10:16:51 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-09 10:16:51 info: GET /staff/profile [33m401 59.230 ms - 1402
+2023-12-09 10:16:51 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::1
+2023-12-09 10:16:51 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 4.032 ms - 61
+2023-12-09 10:16:56 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-12-09 10:16:56 info: GET /user/profile [33m404 6.901 ms - 61
+2023-12-09 10:16:56 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-09 10:16:56 info: GET /staff/profile [33m401 9.134 ms - 1402
+2023-12-09 10:16:56 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::1
+2023-12-09 10:16:56 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 3.591 ms - 61
+2023-12-09 10:17:34 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:17:34 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 2.940 ms - 61
+2023-12-09 10:17:36 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:17:36 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 2.452 ms - 61
+2023-12-09 10:17:41 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:17:41 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 3.434 ms - 61
+2023-12-09 10:17:45 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:17:45 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 5.191 ms - 61
+2023-12-09 10:18:00 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:18:00 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 2.466 ms - 61
+2023-12-09 10:18:03 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:18:03 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 8.649 ms - 61
+2023-12-09 10:19:03 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:19:03 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 7.805 ms - 61
+2023-12-09 10:19:12 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:19:12 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 5.137 ms - 61
+2023-12-09 10:19:23 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:19:23 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 2.831 ms - 61
+2023-12-09 10:20:10 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:20:10 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 1.569 ms - 61
+2023-12-09 10:20:12 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:20:12 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 1.970 ms - 61
+2023-12-09 10:20:16 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:20:16 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 2.011 ms - 61
+2023-12-09 10:20:20 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:20:20 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 3.545 ms - 61
+2023-12-09 10:20:23 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:20:23 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 3.151 ms - 61
+2023-12-09 10:21:00 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:21:00 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 1.336 ms - 61
+2023-12-09 10:21:56 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:21:56 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 2.953 ms - 61
+2023-12-09 10:22:59 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:22:59 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 3.193 ms - 61
+2023-12-09 10:23:09 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:23:09 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 4.437 ms - 61
+2023-12-09 10:23:10 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:23:10 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 3.446 ms - 61
+2023-12-09 10:23:26 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:23:26 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 4.063 ms - 61
+2023-12-09 10:23:31 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:23:31 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 1.972 ms - 61
+2023-12-09 10:23:38 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:23:38 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 3.079 ms - 61
+2023-12-09 10:23:48 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:23:48 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 3.502 ms - 61
+2023-12-09 10:24:40 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:24:40 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 6.733 ms - 61
+2023-12-09 10:24:44 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:24:44 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 2.964 ms - 61
+2023-12-09 10:25:01 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:25:01 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 3.237 ms - 61
+2023-12-09 10:25:14 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:25:14 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 1.392 ms - 61
+2023-12-09 10:25:16 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:25:16 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 4.530 ms - 61
+2023-12-09 10:25:27 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:25:27 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 1.290 ms - 61
+2023-12-09 10:25:29 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:25:29 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 3.753 ms - 61
+2023-12-09 10:25:32 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:25:32 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 3.453 ms - 61
+2023-12-09 10:25:42 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:25:42 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 3.354 ms - 61
+2023-12-09 10:25:46 error: 404 - Please authenticate - /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f - GET - ::ffff:127.0.0.1
+2023-12-09 10:25:46 info: GET /appointment/confirmAppointment/e7c4347b-82ab-4046-ae79-886c2a51443f [33m404 2.473 ms - 61
+2023-12-09 10:29:21 info: GET /staff/get-staffs [32m200 300.795 ms - 18336
+2023-12-09 10:32:06 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:32:06 info: GET /user/profile [33m404 9.587 ms - 61
+2023-12-09 10:32:07 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:32:07 info: GET /staff/profile [33m401 9.566 ms - 1402
+2023-12-09 10:32:09 info: GET /staff/get-staff/6573833ba7b0ffce13f5a1c0 [32m200 241.002 ms - 2587
+2023-12-09 10:32:51 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:32:51 info: GET /user/profile [33m404 2.375 ms - 61
+2023-12-09 10:32:51 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:32:51 info: GET /staff/profile [33m401 6.897 ms - 1402
+2023-12-09 10:32:51 info: GET /staff/get-staff/6573833ba7b0ffce13f5a1c0 [36m304 239.983 ms - -
+2023-12-09 10:34:14 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:34:14 info: GET /user/profile [33m404 20.250 ms - 61
+2023-12-09 10:34:15 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:34:15 info: GET /staff/profile [33m401 13.006 ms - 1402
+2023-12-09 10:34:15 info: GET /staff/get-staff/6573833ba7b0ffce13f5a1c0 [36m304 204.570 ms - -
+2023-12-09 10:35:24 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:35:24 info: GET /user/profile [33m404 2.624 ms - 61
+2023-12-09 10:35:25 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:35:25 info: GET /staff/profile [33m401 10.566 ms - 1402
+2023-12-09 10:35:49 info: POST /user/register [32m200 884.702 ms - 680
+2023-12-09 10:36:17 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:36:17 info: GET /user/profile [33m404 7.141 ms - 61
+2023-12-09 10:36:17 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:36:17 info: GET /staff/profile [33m401 73.821 ms - 1402
+2023-12-09 10:36:21 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:36:21 info: GET /user/profile [33m404 12.626 ms - 61
+2023-12-09 10:36:21 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:36:21 info: GET /staff/profile [33m401 14.847 ms - 1402
+2023-12-09 10:36:22 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:36:22 info: GET /user/profile [33m404 9.058 ms - 61
+2023-12-09 10:36:22 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:36:22 info: GET /staff/profile [33m401 13.129 ms - 1402
+2023-12-09 10:37:10 info: POST /user/register [32m200 818.094 ms - 676
+2023-12-09 10:37:36 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:37:36 info: GET /user/profile [33m404 34.005 ms - 61
+2023-12-09 10:37:36 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:37:36 info: GET /staff/profile [33m401 16.260 ms - 1402
+2023-12-09 10:37:37 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:37:37 info: GET /user/profile [33m404 3.894 ms - 61
+2023-12-09 10:37:38 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:37:38 info: GET /staff/profile [33m401 10.961 ms - 1402
+2023-12-09 10:37:53 info: POST /user/register [32m200 762.898 ms - 668
+2023-12-09 10:48:46 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:48:46 info: GET /user/profile [33m404 4.275 ms - 61
+2023-12-09 10:48:46 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:48:46 info: GET /staff/profile [33m401 6.737 ms - 1402
+2023-12-09 10:48:47 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:48:47 info: GET /user/profile [33m404 3.081 ms - 61
+2023-12-09 10:48:47 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:48:47 info: GET /staff/profile [33m401 7.384 ms - 1402
+2023-12-09 10:49:35 info: POST /user/register [32m200 27631.485 ms - 675
+2023-12-09 10:49:54 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:49:54 info: GET /user/profile [33m404 3.629 ms - 61
+2023-12-09 10:49:54 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:49:54 info: GET /staff/profile [33m401 8.275 ms - 1402
+2023-12-09 10:49:55 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:49:55 info: GET /user/profile [33m404 3.741 ms - 61
+2023-12-09 10:49:55 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:49:55 info: GET /staff/profile [33m401 8.404 ms - 1402
+2023-12-09 10:50:00 error: 400 - Please fill all the inputs - /user/register - POST - ::ffff:127.0.0.1
+2023-12-09 10:50:00 info: POST /user/register [33m400 2.488 ms - 1433
+2023-12-09 10:50:22 info: POST /user/register [32m200 638.013 ms - 681
+2023-12-09 10:50:40 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:50:40 info: GET /user/profile [33m404 2.990 ms - 61
+2023-12-09 10:50:40 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:50:40 info: GET /staff/profile [33m401 26.873 ms - 1402
+2023-12-09 10:50:42 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:50:42 info: GET /user/profile [33m404 2.666 ms - 61
+2023-12-09 10:50:42 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:50:42 info: GET /staff/profile [33m401 25.250 ms - 1402
+2023-12-09 10:50:46 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:50:46 info: GET /user/profile [33m404 2.747 ms - 61
+2023-12-09 10:50:46 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:50:46 info: GET /staff/profile [33m401 6.595 ms - 1402
+2023-12-09 10:50:48 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:50:48 info: GET /user/profile [33m404 9.363 ms - 61
+2023-12-09 10:50:48 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:50:48 info: GET /staff/profile [33m401 38.927 ms - 1402
+2023-12-09 10:50:50 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:50:50 info: GET /user/profile [33m404 9.999 ms - 61
+2023-12-09 10:50:50 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:50:50 info: GET /staff/profile [33m401 5.855 ms - 1402
+2023-12-09 10:50:51 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:50:51 info: GET /user/profile [33m404 2.419 ms - 61
+2023-12-09 10:50:51 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:50:51 info: GET /staff/profile [33m401 5.785 ms - 1402
+2023-12-09 10:51:20 info: POST /user/register [32m200 712.999 ms - 679
+2023-12-09 10:51:29 error: 401 - Invalid token - /user/set-nickname - POST - ::ffff:127.0.0.1
+2023-12-09 10:51:29 info: POST /user/set-nickname [33m401 6.457 ms - 1402
+2023-12-09 10:51:52 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:51:52 info: GET /user/profile [33m404 6.698 ms - 61
+2023-12-09 10:51:52 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:51:52 info: GET /staff/profile [33m401 7.159 ms - 1402
+2023-12-09 10:51:52 error: 404 - Please authenticate - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:51:52 info: GET /user/profile [33m404 4.288 ms - 61
+2023-12-09 10:51:53 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:51:53 info: GET /staff/profile [33m401 6.432 ms - 1402
+2023-12-09 10:52:15 info: POST /user/register [32m200 799.488 ms - 688
+2023-12-09 10:52:19 error: 404 - Please authenticate - /user/set-nickname - POST - ::ffff:127.0.0.1
+2023-12-09 10:52:19 info: POST /user/set-nickname [33m404 1.860 ms - 61
+2023-12-09 10:55:08 info: POST /user/set-nickname [32m200 448.375 ms - 695
+2023-12-09 10:55:20 info: GET /staff/get-staffs [36m304 657.263 ms - -
+2023-12-09 10:55:25 info: GET /staff/get-staff/6573833ba7b0ffce13f5a1c0 [36m304 184.588 ms - -
+2023-12-09 10:56:29 info: GET /staff/get-staffs [36m304 464.956 ms - -
+2023-12-09 10:56:32 info: GET /staff/get-staff/6573833ba7b0ffce13f5a1c0 [36m304 263.453 ms - -
+2023-12-09 10:57:19 info: GET /staff/get-staff/6573833ba7b0ffce13f5a1c0 [36m304 218.267 ms - -
+2023-12-09 10:58:32 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:58:32 info: GET /user/profile [33m401 8.081 ms - 1402
+2023-12-09 10:58:32 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-09 10:58:32 info: GET /staff/profile [33m401 4.540 ms - 1402

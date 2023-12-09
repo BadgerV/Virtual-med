@@ -41,7 +41,7 @@ const DoctorProfile = () => {
         <div className="doctor-profile-page">
           <div className="going-back">
             <img src="/assets/arrow-back.svg" alt="back" />
-            <Link className="link-button" to="/finddoctor">
+            <Link className="link-button-going-back" to="/finddoctor">
               back to search results
             </Link>
           </div>

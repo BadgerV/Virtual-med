@@ -28,6 +28,11 @@
   line-height: 150%;
 }
 
+.link-button-going-back {
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
 .doctor-profile-header img {
   height: 10em;
   width: 10em;

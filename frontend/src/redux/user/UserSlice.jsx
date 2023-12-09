@@ -14,7 +14,7 @@ const initialState = {
   loadingDoctorAvailableTime: false,
   url: "",
   doctorPaymentStatus: "",
-  loadingDoctorPayment : false
+  loadingDoctorPayment: false,
 };
 
 export const registerUser = createAsyncThunk(
@@ -36,9 +36,11 @@ export const registerUser = createAsyncThunk(
         // }
       );
 
-      const token =
-        response.data.tokens[response.data.newUser.tokens.length - 1].token;
-      console.log(token);
+      // const token =
+      //   response.data.tokens[response.data.newUser.tokens.length - 1].token;
+      // console.log(token);
+
+      const token = response.data.newUser.tokens[0].token;
 
       localStorage.setItem("token", token);
 
@@ -98,39 +100,36 @@ export const loginUser = createAsyncThunk(
   }
 );
 
-export const myProfile = createAsyncThunk(
-  "/user/profile",
-  async () => {
-    const token = localStorage.getItem("token");
+export const myProfile = createAsyncThunk("/user/profile", async () => {
+  const token = localStorage.getItem("token");
+  try {
+    const response = await axios.get(`${DEVELOPMENT}/user/profile`, {
+      // withCredentials: true,
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+    return response.data;
+  } catch (error) {
     try {
-      const response = await axios.get(`${DEVELOPMENT}/user/profile`, {
-        // withCredentials: true,
+      // const token = getState().auth.token; // Assuming you store the token in your Redux state
+      const response1 = await axios.get(`${DEVELOPMENT}/staff/profile`, {
+        withCredentials: true,
         headers: {
           Authorization: `Bearer ${token}`,
         },
       });
 
-      return response.data;
+      console.log(response1);
+      console.log(response1.data);
+      return response1.data;
     } catch (error) {
-      try {
-        // const token = getState().auth.token; // Assuming you store the token in your Redux state
-        const response1 = await axios.get(`${DEVELOPMENT}/staff/profile`, {
-          withCredentials: true,
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
-
-        console.log(response1);
-        console.log(response1.data);
-        return response1.data;
-      } catch (error) {
-        console.log(error);
-        return Promise.reject(error.response1.data);
-      }
+      console.log(error);
+      return Promise.reject(error.response1.data);
     }
   }
-);
+});
 
 export const ConnectUserWithDoctor = createAsyncThunk(
   "/user/connectUserWithDoctor",
@@ -180,7 +179,7 @@ export const setUserNickname = createAsyncThunk(
         `${DEVELOPMENT}/user/set-nickname`,
         { nickname },
         {
-          withCredentials: true,
+          // withCredentials: true,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -445,7 +444,7 @@ const userSlice = createSlice({
       .addCase(confirmAppointment.fulfilled, (state, action) => {
         state.loadingDoctorPayment = false;
         state.doctorPaymentStatus = action.payload;
-        console.log(state.doctorPaymentStatus)
+        console.log(state.doctorPaymentStatus);
       })
       .addCase(confirmAppointment.rejected, (state, action) => {
         state.loadingDoctorPayment = false;
