@@ -1,4 +1,5 @@
 import ConsultationSplash from "../../components/ConsultationSplash/ConsultationSplash";
+import Reviews from "../../components/Reviews/Reviews";
 import Services from "../../components/Services/Services";
 import SimpleAndFast from "../../components/SimpleAndFast/SimpleAndFast";
 import "./Home.css";
@@ -104,6 +105,10 @@ const Home = () => {
         <div className="services-container">
           <Services />
         </div>
+      </div>
+
+      <div className="reviews-outer-container">
+        <Reviews />
       </div>
     </>
   );

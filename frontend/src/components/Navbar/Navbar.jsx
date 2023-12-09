@@ -86,7 +86,7 @@ const Navbar = () => {
 
         <div
           className="navbar-middle"
-          style={isUser.isPremium ? { flex: 0.6 } : {}}
+          style={isUser?.isPremium ? { flex: 0.6 } : {}}
         >
           <Link className="navbar-link" to="/">
             Home

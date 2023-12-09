@@ -1,3 +1,4 @@
+import cron from "node-cron";
 import AppError from "../common/utils/appError.js";
 import { catchAsync } from "../common/utils/errorHandler.js";
 import User from "../models/UserModel.js";
@@ -11,6 +12,7 @@ import { calculateTotalCost } from "../common/utils/helper.js";
 import Chat from "../models/ChatModel.js";
 import Notification from "../models/NotificationSchema.js";
 import moment from "moment";
+import { io } from "../server.js";
 
 export const fetchAppointments = catchAsync(async (req, res) => {
   const isUser = req.user ? true : false;
@@ -337,7 +339,6 @@ export const confirmAppointment = catchAsync(async (req, res) => {
     { new: true } // This option returns the modified document
   );
 
-
   await foundStaff.save();
 
   if (!foundStaff) {
@@ -383,9 +384,64 @@ export const confirmAppointment = catchAsync(async (req, res) => {
     type: "appointment",
     recipients: [appointment.doctorId],
     content: `Appointment set sccessfully. Time of appointment is ${humanReadableDate}, please be punctual`,
+    chatId: FullChat._id,
   });
 
   await newNotifcation.save();
 
+  io.emit("notifcation-success", {
+    userId: appointment.patientId,
+    notifcationId: newNotifcation._id,
+  });
+
   res.status(200).send(updatedAppointment);
+});
+
+// Schedule the task to run every minute (adjust as needed)
+cron.schedule("* * * * *", async () => {
+  console.log("Running appointment check task...");
+
+  try {
+    // Find all appointments
+    const appointments = await Appointment.find();
+
+    console.log(appointments);
+
+    // Check each appointment
+    appointments.forEach(async (appointment) => {
+      const { appointmentTime, duration, status } = appointment;
+
+      if (status !== "active" && status !== "expired") {
+        // Calculate the end time of the appointment
+        const endTime = moment(appointmentTime).add(duration, "minutes");
+
+        // Get the current date and time
+        const now = moment();
+
+        // Check if the appointment has started
+        if (now.isAfter(appointmentTime) && now.isBefore(endTime)) {
+          // Update status to 'active'
+          await Appointment.findByIdAndUpdate(appointment._id, {
+            status: "active",
+          });
+          console.log(`Appointment ${appointment._id} is now active.`);
+        } else if (now.isAfter(endTime)) {
+          // Update status to 'expired'
+          await Appointment.findByIdAndUpdate(appointment._id, {
+            status: "expired",
+          });
+          console.log(`Appointment ${appointment._id} has expired.`);
+        }
+      }
+    });
+  } catch (error) {
+    console.error("Error checking appointments:", error);
+  }
+});
+
+cron.schedule("* * * * *", async () => {
+  console.log("Hi, i am running every minute");
+  io.emit("isWorking", {
+    useid: "Not exists",
+  });
 });

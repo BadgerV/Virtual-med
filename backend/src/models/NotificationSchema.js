@@ -24,6 +24,10 @@ const notificationSchema = new mongoose.Schema(
       type: String,
       enum: ["User", "Staff"],
     },
+    chatId : {
+      type : mongoose.Schema.Types.ObjectId,
+      ref : "Chat"
+    },
     content: {
       type: String,
     },

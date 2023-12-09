@@ -37,7 +37,8 @@ app.use(
 );
 
 const server = http.createServer(app); // Use the same server for Express and Socket.IO
-const io = new SocketIOServer(server, {
+
+export const io = new SocketIOServer(server, {
   pingTimeout: 60000,
   cors: {
     // origin: "https://6572dd9f62d11566266a7fb4--teal-caramel-97d899.netlify.app",
@@ -45,17 +46,13 @@ const io = new SocketIOServer(server, {
       "https://ad22-105-113-87-68.ngrok-free.app",
       "http://localhost:5173",
     ],
-    methods: "GET,PUT,POST,DELETE",
   },
 });
-// io.on("connection", (socket) => {
-//   console.log("a reply detected!");
 
-//   socket.on("setup", (userData) => {
-//     socket.join(userData._id)
-//     socket.emit("connectetd")
-//   })
-// });
+io.on("connection", (socket) => {
+  console.log("a reply detected!");
+});
+
 
 const port = ENVIRONMENT.APP.PORT;
 const appName = ENVIRONMENT.APP.NAME;

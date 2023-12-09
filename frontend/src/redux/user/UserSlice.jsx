@@ -115,7 +115,7 @@ export const myProfile = createAsyncThunk("/user/profile", async () => {
     try {
       // const token = getState().auth.token; // Assuming you store the token in your Redux state
       const response1 = await axios.get(`${DEVELOPMENT}/staff/profile`, {
-        withCredentials: true,
+        // withCredentials: true,
         headers: {
           Authorization: `Bearer ${token}`,
         },

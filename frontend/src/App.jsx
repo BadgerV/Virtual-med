@@ -9,8 +9,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { myProfile } from "./redux/user/UserSlice";
 import FindDoctor from "./pages/FindDoctor/findDoctor";
 
-import { PremiumUsersOnly } from "./components/PrivateRoute/PrivateRoutes";
-const MyAppointments = lazy(() => import("./pages/MyAppointments/MyAppointments"));
+import {
+  PremiumUsersOnly,
+  StaffOnly,
+} from "./components/PrivateRoute/PrivateRoutes";
+const MyAppointments = lazy(() =>
+  import("./pages/MyAppointments/MyAppointments")
+);
 const Profile = lazy(() => import("./pages/Profile/Profile"));
 // const Footer = lazy(() => import("./components/Footer/Footer"));
 const SignIn = lazy(() => import("./pages/SignIn/SignIn"));
@@ -43,6 +48,7 @@ import AvailabilityForm, {
   SetNickName,
 } from "./pages/CollectAvailableTImeAndNickkname/CollectAvailableTimeAndNickname";
 import VerifyPage from "./pages/VerifyPage/VerifyPage";
+import NotificationPage from "./pages/Notificationpage/NotificationPage";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -79,12 +85,16 @@ const App = () => {
               <Route path="/doctorprofile" element={<DoctorProfile />} />
               <Route path="/services" element={<Services />} />
               <Route path="/contact-us" element={<ContactUs />} />
-              <Route
-                path="/get-available-dates/"
-                element={<AvailabilityForm />}
-              />
+
+              <Route element={<StaffOnly />}>
+                <Route
+                  path="/get-available-dates/"
+                  element={<AvailabilityForm />}
+                />
+              </Route>
 
               <Route path="/verify" element={<VerifyPage />} />
+
               <Route element={<PrivateRoutes />}>
                 <Route path="/chat" element={<Chat />} />
                 <Route path="/profile" element={<Profile />} />
@@ -95,6 +105,7 @@ const App = () => {
                 <Route path="/chat" element={<Chat />} />
 
                 <Route path="/set-nickname" element={<SetNickName />} />
+                <Route path="/notifications" element={<NotificationPage />} />
               </Route>
 
               <Route element={<PremiumUsersOnly />}>
