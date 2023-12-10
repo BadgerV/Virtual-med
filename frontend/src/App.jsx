@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import { lazy, Suspense, useEffect } from "react";
 import LoadingComponent from "./components/LoadingComponent/LoadingComponent";
 import { useState } from "react";
+import io from "socket.io-client";
 
 import { useDispatch, useSelector } from "react-redux";
 import { myProfile } from "./redux/user/UserSlice";
@@ -53,6 +54,8 @@ import NotificationPage from "./pages/Notificationpage/NotificationPage";
 const App = () => {
   const dispatch = useDispatch();
 
+  const user = useSelector((state) => state.userSlice?.user);
+
   useEffect(() => {
     const verifyUser = async () => {
       await dispatch(myProfile());
@@ -65,6 +68,33 @@ const App = () => {
   const otherLoading = useSelector(
     (state) => state.userSlice.loadingUserProfile
   );
+
+  const [notificationID, setNotificationID] = useState("");
+
+  const socket = io("http://localhost:8000"); // Replace with the actual server URL
+  useEffect(() => {
+    // Listen for appointment status changes
+
+    socket.on("isWorking", (data) => {
+      console.log(data);
+    });
+
+    socket.on("notifcation-success", (data) => {
+      if (data.userId === user._id) {
+        setNotificationID(data.notifcationId);
+      } else {
+        return;
+      }
+    });
+    return () => {
+      // Clean up the socket connection when the component unmounts
+      socket.disconnect();
+    };
+  }, [user]);
+
+  useEffect(() => {
+    console.log(notificationID);
+  }, [notificationID]);
 
   return (
     <BrowserRouter>
@@ -102,13 +132,13 @@ const App = () => {
                   path="/make-appointment/:id"
                   element={<MakeAppointment />}
                 />
-                <Route path="/chat" element={<Chat />} />
 
                 <Route path="/set-nickname" element={<SetNickName />} />
                 <Route path="/notifications" element={<NotificationPage />} />
               </Route>
 
               <Route element={<PremiumUsersOnly />}>
+                <Route path="/chat" element={<Chat />} />
                 <Route element={<MyAppointments />} path="/my-appointments" />
               </Route>
             </Routes>

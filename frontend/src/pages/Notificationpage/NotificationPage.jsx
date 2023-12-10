@@ -8,10 +8,12 @@ const NotificationPage = () => {
   const [notificationID, setNotificationID] = useState("");
 
   const socket = io("http://localhost:8000"); // Replace with the actual server URL
+
   useEffect(() => {
     // Listen for appointment status changes
+
     socket.on("isWorking", (data) => {
-      console.log(data.useid);
+      console.log(data);
     });
 
     socket.on("notifcation-success", (data) => {

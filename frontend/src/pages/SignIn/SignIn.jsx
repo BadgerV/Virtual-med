@@ -3,12 +3,18 @@ import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { loginUser } from "../../redux/user/UserSlice";
 import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const SignIn = () => {
   const navigate = useNavigate();
   const user = useSelector((state) => state.userSlice.user);
 
+  const isError = useSelector((state) => state.userSlice.isError);
+  const error = useSelector((state) => state.userSlice.error);
+
   if (user) {
+    console.log(user)
     navigate("/");
   }
 
@@ -37,6 +43,19 @@ const SignIn = () => {
       navigate("/");
     }
   }, [user]);
+
+  useEffect(() => {
+    if (isError) {
+      throwToastifyError();
+    }
+  }, [isError]);
+
+  const throwToastifyError = () => {
+    notify();
+    return;
+  };
+
+  const notify = () => toast.error(error);
 
   return (
     <div className="sign-in">
@@ -100,6 +119,7 @@ const SignIn = () => {
           <a href="#">Forgot Password</a>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

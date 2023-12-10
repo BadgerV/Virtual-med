@@ -8,7 +8,8 @@ const initialState = {
   user: null,
   loading: false,
   isSuccess: false,
-  error: false,
+  error: "",
+  isError: false,
   loadingUserProfile: true,
   doctorAvailableTime: null,
   loadingDoctorAvailableTime: false,
@@ -54,7 +55,7 @@ export const registerUser = createAsyncThunk(
 
 export const loginUser = createAsyncThunk(
   "/user/loginUser",
-  async ({ email, password }) => {
+  async ({ email, password }, thunkAPI) => {
     try {
       const response = await axios.post(
         `${DEVELOPMENT}/user/login`,
@@ -91,10 +92,10 @@ export const loginUser = createAsyncThunk(
 
         console.log(response.data);
 
-        return response.data;
+
       } catch (error) {
         console.log(error);
-        return Promise.reject(error.response.message);
+        return thunkAPI.rejectWithValue(error.response.data);
       }
     }
   }
@@ -351,6 +352,7 @@ const userSlice = createSlice({
     builder
       .addCase(registerUser.pending, (state) => {
         state.loading = true;
+        state.isError = false;
       })
       .addCase(registerUser.fulfilled, (state, action) => {
         state.loading = false;
@@ -360,9 +362,11 @@ const userSlice = createSlice({
         state.loading = false;
         state.error = action.error.message;
         state.isSuccess = false;
+        state.isError = true;
       })
       .addCase(loginUser.pending, (state) => {
         state.loading = true;
+        state.isError = true;
       })
       .addCase(loginUser.fulfilled, (state, action) => {
         state.loading = false;
@@ -372,8 +376,9 @@ const userSlice = createSlice({
       })
       .addCase(loginUser.rejected, (state, action) => {
         state.loading = false;
-        state.user = action.error.message;
+        state.error = action.payload.message;
         state.isSuccess = false;
+        state.isError = true;
       })
       .addCase(deleteUser.pending, (state) => {
         state.loading = true;
@@ -391,6 +396,7 @@ const userSlice = createSlice({
         state.loading = true;
         state.isSuccess = false;
         state.loadingUserProfile = true;
+        state.isError = false;
       })
       .addCase(myProfile.fulfilled, (state, action) => {
         state.user = action.payload;
@@ -402,27 +408,30 @@ const userSlice = createSlice({
         state.loading = false;
         state.error = action.payload;
         state.loadingUserProfile = false;
+        state.isError = true;
       })
       .addCase(setUserNickname.pending, (state) => {
         state.loading = true;
         state.isSuccess = false;
         state.loadingUserProfile = true;
+        state.isError = false;
       })
       .addCase(setUserNickname.fulfilled, (state, action) => {
         state.loading = false;
         state.isSuccess = true;
         state.loadingUserProfile = false;
         state.user = action.payload;
-
-        console.log(state.user);
       })
       .addCase(setUserNickname.rejected, (state, action) => {
         state.error = action.error;
         state.loading = false;
         state.loadingUserProfile = false;
+        state.isError = true;
       })
       .addCase(getAvailableTimeForDoctor.pending, (state) => {
         state.loadingDoctorAvailableTime = true;
+        state.isError = false;
+
         // state.isSuccess = false;
       })
       .addCase(getAvailableTimeForDoctor.fulfilled, (state, action) => {
@@ -434,21 +443,30 @@ const userSlice = createSlice({
         state.loadingDoctorAvailableTime = false;
         state.isSuccess = false;
         state.error = action.error.message;
+        state.isError = true;
+      })
+      .addCase(makeAppointment.pending, (state) => {
+        state.isError = false;
       })
       .addCase(makeAppointment.fulfilled, (state, action) => {
         state.url = action.payload;
       })
+      .addCase(makeAppointment.rejected, (state, action) => {
+        state.isError = true;
+        state.error = action.error.message;
+      })
       .addCase(confirmAppointment.pending, (state) => {
         state.loadingDoctorPayment = true;
+        state.isError = false;
       })
       .addCase(confirmAppointment.fulfilled, (state, action) => {
         state.loadingDoctorPayment = false;
         state.doctorPaymentStatus = action.payload;
-        console.log(state.doctorPaymentStatus);
       })
       .addCase(confirmAppointment.rejected, (state, action) => {
         state.loadingDoctorPayment = false;
         state.error = action.error.message;
+        state.isError = true;
       });
   },
 });

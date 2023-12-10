@@ -14,6 +14,7 @@ import messageRoute from "./messageRoute.js";
 import appointmentRoute from "./appointmentRoute.js";
 import adminRoute from "./adminRoute.js";
 import { auth } from "../common/middleware/auth.js";
+import NotificationRouter from "./notificationRoute.js";
 
 export const setRoutes = () => {
   router.use("/user", userRoutes());
@@ -22,5 +23,6 @@ export const setRoutes = () => {
   router.use("/message", isPremiumOrStaff, messageRoute);
   router.use("/appointment", isPremiumOrStaff, appointmentRoute());
   router.use("/admin", auth, isAdmin, adminRoute());
+  router.use("/notification", isPremiumOrStaff, NotificationRouter());
   return router;
 };

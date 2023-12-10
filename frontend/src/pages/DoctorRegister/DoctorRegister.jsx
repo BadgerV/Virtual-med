@@ -12,10 +12,28 @@ import { useDispatch } from "react-redux";
 import { registerStaff } from "../../redux/doctors/FormSlice";
 import AbouttMe from "../../components/AboutMe/AbouttMe";
 import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const DoctorRegister = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
+  const isError = useSelector((state) => state.userSlice.isError);
+  const error = useSelector((state) => state.userSlice.error);
+
+  useEffect(() => {
+    if (isError) {
+      throwToastifyError();
+    }
+  }, [isError]);
+
+  const throwToastifyError = () => {
+    notify();
+    return;
+  };
+
+  const notify = () => toast.error(error);
 
   const [currentTab, setCurrentTab] = useState("basic-info");
   const [currentTabNumber, setCurrentTabNumber] = useState(1);
@@ -78,7 +96,7 @@ const DoctorRegister = () => {
       navigate("/get-available-dates");
     }
   }, [staff]);
-  
+
   // Local state to track changes
   const [localFirstName, setLocalFirstName] = useState(firstName);
   const [localLastName, setLocalLastName] = useState(lastName);
@@ -306,9 +324,6 @@ const DoctorRegister = () => {
   return (
     <div className="doctor-register">
       <div className="doctor-container">
-        {isNullOrEmpty && (
-          <span className="error-message">Please complete all the fields</span>
-        )}
         {/* <span>Please complete the form</span> */}
         <ul className="nav-tabs">
           <li
@@ -437,6 +452,7 @@ const DoctorRegister = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

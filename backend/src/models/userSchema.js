@@ -1,3 +1,4 @@
+import { strictTransportSecurity } from "helmet";
 import mongoose from "mongoose";
 import validator from "validator";
 
@@ -71,7 +72,7 @@ const UserSchema = new mongoose.Schema(
     },
     isPremium: {
       type: Boolean,
-      default: false,
+      default: true,
     },
     tokens: [tokenSchema],
     accountType: {

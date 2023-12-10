@@ -123,7 +123,7 @@ export const SetNickName = () => {
 
   useEffect(() => {
     console.log(user);
-    if (user.nickName) {
+    if (user.nickName || user.accountType === "staff") {
       navigate("/");
     }
   }, [user]);

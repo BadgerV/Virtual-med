@@ -22,13 +22,12 @@ import http from "http";
 
 const app = express();
 
-
-
 app.use(
   cors({
     origin: [
       "https://ad22-105-113-87-68.ngrok-free.app",
       "http://localhost:5173",
+      "https://dd22-105-113-96-194.ngrok-free.app",
     ],
     // origin: "https://6572dd9f62d11566266a7fb4--teal-caramel-97d899.netlify.app",
     credentials: true,
@@ -45,6 +44,7 @@ export const io = new SocketIOServer(server, {
     origin: [
       "https://ad22-105-113-87-68.ngrok-free.app",
       "http://localhost:5173",
+      "https://dd22-105-113-96-194.ngrok-free.app",
     ],
   },
 });
@@ -52,7 +52,6 @@ export const io = new SocketIOServer(server, {
 io.on("connection", (socket) => {
   console.log("a reply detected!");
 });
-
 
 const port = ENVIRONMENT.APP.PORT;
 const appName = ENVIRONMENT.APP.NAME;

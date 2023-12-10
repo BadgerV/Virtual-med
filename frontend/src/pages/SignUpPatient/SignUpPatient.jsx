@@ -4,9 +4,14 @@ import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { registerUser } from "../../redux/user/UserSlice";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const SignupPage = () => {
   const dispatch = useDispatch();
+
+  const isError = useSelector((state) => state.userSlice.isError);
+  const error = useSelector(state => state.userSlice.error)
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -50,6 +55,19 @@ const SignupPage = () => {
       navigate("/set-nickname");
     }
   }, [user]);
+
+  useEffect(() => {
+    if (isError) {
+      throwToastifyError();
+    }
+  }, [isError]);
+
+  const throwToastifyError = () => {
+    notify();
+    return;
+  };
+
+  const notify = () => toast.error(error);
 
   return (
     <div className="signs-doctors">
@@ -195,6 +213,7 @@ const SignupPage = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

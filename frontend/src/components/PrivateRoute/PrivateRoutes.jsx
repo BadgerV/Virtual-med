@@ -69,9 +69,8 @@ export const StaffOnly = () => {
   if (!loading) {
     return isPermittedToMakeDates ? <Outlet /> : <Navigate to="/" />;
   } else {
-    return <LoadingComponent />;
+    return <LoadingComponennt />;
   }
 };
-
 
 export default PrivateRoutes;

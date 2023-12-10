@@ -129,9 +129,10 @@ const payStack = {
         email: email,
         amount: price * 100,
         reference: reference,
-        callback_url: "https://ad22-105-113-87-68.ngrok-free.app/verify",
+        callback_url: "https://dd22-105-113-96-194.ngrok-free.app/verify",
       });
       // options
+
       const options = {
         hostname: "api.paystack.co",
         port: 443,
@@ -439,9 +440,9 @@ cron.schedule("* * * * *", async () => {
   }
 });
 
-cron.schedule("* * * * *", async () => {
-  console.log("Hi, i am running every minute");
-  io.emit("isWorking", {
-    useid: "Not exists",
-  });
-});
+// cron.schedule("* * * * *", async () => {
+//   console.log("Hi, i am running every minute");
+//   io.emit("isWorking", {
+//     useid: "Not exists",
+//   });
+// });
