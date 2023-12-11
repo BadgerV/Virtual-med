@@ -12,6 +12,9 @@ const appointmentSchema = new mongoose.Schema(
       ref: "User",
       required: true,
     },
+    chatId: {
+      type: mongoose.Schema.Types.ObjectId,
+    },
     appointmentTime: {
       type: Date,
       required: true,
@@ -22,7 +25,7 @@ const appointmentSchema = new mongoose.Schema(
     },
     status: {
       type: String,
-      enum: ["pending", "confirmend", "cancelled", "completed"],
+      enum: ["pending", "confirmed", "started", "cancelled", "completed"],
       default: "pending",
     },
     notes: {

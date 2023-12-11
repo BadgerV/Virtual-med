@@ -1,24 +1,26 @@
 import { useEffect, useState } from "react";
 import { setAboutMe as setaboutme } from "../../redux/doctors/FormSlice";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import "./abouteMe.css";
 
 const AboutMe = () => {
   const dispatch = useDispatch();
 
-  const aboutMe = useSelector((state) => state.formSlice.aboutMe);
+  const aboutMe =
+    localStorage.getItem("aboutMe") !== null
+      ? localStorage.getItem("aboutMe")
+      : "";
 
   const [aboutMeValue, setAboutMeValue] = useState(aboutMe);
 
   useEffect(() => {
+    localStorage.setItem("aboutMe", aboutMeValue);
     dispatch(setaboutme(aboutMeValue));
   }, [aboutMeValue]);
 
-
-
   useEffect(() => {
-    console.log(aboutMe)
-  }, [aboutMe])
+    console.log(aboutMe);
+  }, [aboutMe]);
 
   return (
     <div className="about-me">

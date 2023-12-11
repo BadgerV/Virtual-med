@@ -18,10 +18,26 @@ const CertificationForm = () => {
   const [POMI, setPOMI] = useState(null);
   const [CV, setCV] = useState(null);
 
-  const [medicalLisenseLink, setMedicalLisenseLink] = useState("");
-  const [boardCertificationLink, setBoardCertificationLink] = useState("");
-  const [POMILink, setPOMILink] = useState("");
-  const [CVLink, setCVLink] = useState("");
+  const [medicalLisenseLink, setMedicalLisenseLink] = useState(
+    localStorage.getItem("medicalLisenseLink") !== null
+      ? localStorage.getItem("medicalLisenseLink")
+      : ""
+  );
+  const [boardCertificationLink, setBoardCertificationLink] = useState(
+    localStorage.getItem("boardCertificationLink") !== null
+      ? localStorage.getItem("boardCertificationLink")
+      : ""
+  );
+  const [POMILink, setPOMILink] = useState(
+    localStorage.getItem("POMILink") !== null
+      ? localStorage.getItem("POMILink")
+      : ""
+  );
+  const [CVLink, setCVLink] = useState(
+    localStorage.getItem("CVLink") !== null
+      ? localStorage.getItem("CVLink")
+      : ""
+  );
 
   const handleUpload = (
     file,
@@ -61,15 +77,19 @@ const CertificationForm = () => {
   };
 
   useEffect(() => {
+    localStorage.setItem("medicalLisenseLink", medicalLisenseLink);
     dispatch(setmedicallisense(medicalLisenseLink));
   }, [medicalLisenseLink]);
   useEffect(() => {
+    localStorage.setItem("boardCertificationLink", boardCertificationLink);
     dispatch(setboardcertification(boardCertificationLink));
   }, [boardCertificationLink]);
   useEffect(() => {
+    localStorage.setItem("POMILink", POMILink);
     dispatch(setpomi(POMILink));
   }, [POMILink]);
   useEffect(() => {
+    localStorage.setItem("CVLink", CVLink);
     dispatch(setcv(CVLink));
   }, [CVLink]);
 
@@ -106,9 +126,13 @@ const CertificationForm = () => {
           />
           <img src="/assets/cloud-icon.svg" alt="" />
           <div className="cert-input-chaarde">
-            {medicalLisense
-              ? medicalLisense.name
-              : "Upload File (max file size 2mb)"}
+            {medicalLisense ? (
+              medicalLisense.name
+            ) : medicalLisenseLink ? (
+              <span className="small-comp">File Uploaded</span>
+            ) : (
+              "Upload File (max file size 2mb)"
+            )}
           </div>
         </div>
       </div>
@@ -131,9 +155,13 @@ const CertificationForm = () => {
           />
           <img src="/assets/cloud-icon.svg" alt="" />
           <div className="cert-input-chaarde">
-            {boardCertification
-              ? boardCertification.name
-              : "Upload File (max file size 2mb)"}
+            {boardCertification ? (
+              boardCertification.name
+            ) : boardCertificationLink ? (
+              <span className="small-comp">File Uploaded</span>
+            ) : (
+              "Upload File (max file size 2mb)"
+            )}
           </div>
         </div>
       </div>
@@ -152,7 +180,13 @@ const CertificationForm = () => {
           />
           <img src="/assets/cloud-icon.svg" alt="" />
           <div className="cert-input-chaarde">
-            {POMI ? POMI.name : "Upload File (max file size 2mb)"}
+            {POMI ? (
+              POMI.name
+            ) : POMILink ? (
+              <span className="small-comp">File Uploaded</span>
+            ) : (
+              "Upload File (max file size 2mb)"
+            )}
           </div>
         </div>
       </div>
@@ -171,7 +205,13 @@ const CertificationForm = () => {
           />
           <img src="/assets/cloud-icon.svg" alt="" />
           <div className="cert-input-chaarde">
-            {CV ? CV.name : "Upload File (max file size 2mb)"}
+            {CV ? (
+              CV.name
+            ) : CVLink ? (
+              <span className="small-comp">File Uploaded</span>
+            ) : (
+              "Upload File (max file size 2mb)"
+            )}
           </div>
         </div>
       </div>

@@ -272,32 +272,31 @@ const DoctorRegister = () => {
   const handleSubmit = async (e) => {
     console.log("working");
     e.preventDefault();
-
     await dispatch(
       registerStaff({
-        firstName: localFirstName,
-        lastName: localLastName,
-        email: localEmail,
-        password: localPassword,
-        yearsOfExperience: localYearsOfExperience,
-        phoneNumber: localPhoneNumber,
-        medicalLisense: localMedicalLisense,
-        proofOfIdentity: localProofOfIdentity,
-        speciality: localSpeciality,
-        hourlyPrice: localHourlyPrice,
-        passportImage: localPassportImage,
+        firstName: localStorage.getItem("firstName"),
+        lastName: localStorage.getItem("lastName"),
+        email: localStorage.getItem("email"),
+        password: localStorage.getItem("password"),
+        yearsOfExperience: localStorage.getItem("yearsOfExperience"),
+        phoneNumber: localStorage.getItem("phoneNumber"),
+        medicalLisense: localStorage.getItem("medicalLisenseLink"),
+        proofOfIdentity: localStorage.getItem("proofLink"),
+        speciality: localStorage.getItem("speciality"),
+        hourlyPrice: localStorage.getItem("hourlyPrice"),
+        passportImage: localStorage.getItem("passportLink"),
         dateOfBirth: new Date(localDateOfBirth),
-        location: localLocation,
-        boardCertification: localBoardCertification,
+        location: localStorage.getItem("location"),
+        boardCertification: localStorage.getItem("firstName"),
         gender: localGender,
-        major: localMajor,
-        degree: localDegree,
-        university: localUniversity,
+        major: localStorage.getItem("major"),
+        degree: localStorage.getItem("degree"),
+        university: localStorage.getItem("university"),
         graduationDate: new Date(localGraduationDate),
-        degreeCertificate: localDegreeCertificate,
-        POMI: localPOMI,
-        CV: localCV,
-        aboutMe: localAboutMe,
+        degreeCertificate: localStorage.getItem("degreeUrl"),
+        POMI: localStorage.getItem("POMILink"),
+        CV: localStorage.getItem("CVLink"),
+        aboutMe: localStorage.getItem("aboutMe"),
       })
     );
   };

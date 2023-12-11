@@ -30,10 +30,10 @@
 }
 
 .navbar-left span {
-    font-size: 1em;
-    font-weight: 700;
-    color: black;
-  }
+  font-size: 1em;
+  font-weight: 700;
+  color: black;
+}
 .navbar-middle {
   flex: 0.5;
   display: flex;
@@ -71,6 +71,41 @@
 
 .navbar-mobile-devices {
   display: none;
+}
+
+.my-account-button {
+  position: relative;
+}
+
+.buttonModal {
+  position: absolute;
+  top: 100%;
+  background-color: #023382;
+  width: 100%;
+  left: 0;
+
+  border-radius: 20px;
+  padding: 1em;
+
+  display: flex;
+  gap: 0.5em;
+  flex-direction: column;
+
+  display: none;
+
+  transition: 0.5s all ease-in-out
+}
+
+.buttonModal-button {
+  background-color: white;
+  color: #023382;
+  width: 100%;
+  padding: 0.5em 0.2em;
+  font-size: 0.8em;
+  font-weight: 400;
+  display: block;
+  align-items: center;
+  border-radius: 10px;
 }
 
 @media (max-width: 1186px) {
@@ -111,7 +146,7 @@
     align-items: center;
     justify-content: start;
   }
-  
+
   .medcon-logo {
     margin-left: -1em;
   }
@@ -129,26 +164,23 @@
     margin-left: 1em;
   }
 
-  
-
   .navbar-right {
     margin-right: 1em;
   }
 }
 
-@media (max-width : 420px) {
+@media (max-width: 420px) {
   .nav-avatar-mini {
     display: none;
   }
 }
 
-@media (max-width : 385px) {
-
+@media (max-width: 385px) {
   .navbar-left {
     /* outline: 1px solid red; */
   }
 
-  .navbar-right{
+  .navbar-right {
     /* outline: 1px solid red; */
     gap: 0.5em;
   }

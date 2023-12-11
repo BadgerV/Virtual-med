@@ -10766,3 +10766,1316 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2023-12-10 05:58:43 info: GET /staff/get-staffs [32m200 394.213 ms - 18178
 2023-12-10 05:58:47 info: GET /staff/get-staff/6573833ba7b0ffce13f5a1c0 [32m200 136.146 ms - 2429
 2023-12-10 05:58:50 info: POST /user/get-doctor-availability [32m200 139.941 ms - 741
+2023-12-10 14:27:09 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-10 14:27:09 info: GET /user/profile [33m401 21.783 ms - 1402
+2023-12-10 14:27:09 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-10 14:27:09 info: GET /staff/profile [33m401 9.413 ms - 1402
+2023-12-10 14:27:22 info: GET /user/profile [36m304 196.620 ms - -
+2023-12-10 14:27:32 info: GET /staff/get-staffs [32m200 503.911 ms - 17993
+2023-12-10 14:27:36 info: GET /staff/get-staff/6573833ba7b0ffce13f5a1c0 [32m200 179.890 ms - 2244
+2023-12-10 14:27:40 info: POST /user/get-doctor-availability [32m200 227.209 ms - 556
+2023-12-10 14:28:39 error: 400 - Appointment time is not available - /appointment/makeAppointment - POST - ::ffff:127.0.0.1
+2023-12-10 14:28:39 info: POST /appointment/makeAppointment [33m400 708.155 ms - 331
+2023-12-10 14:28:45 error: 400 - Appointment time is not available - /appointment/makeAppointment - POST - ::ffff:127.0.0.1
+2023-12-10 14:28:45 info: POST /appointment/makeAppointment [33m400 1031.893 ms - 331
+2023-12-10 14:28:49 error: 400 - Appointment time is not available - /appointment/makeAppointment - POST - ::ffff:127.0.0.1
+2023-12-10 14:28:49 info: POST /appointment/makeAppointment [33m400 954.908 ms - 331
+2023-12-10 14:28:58 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-10 14:28:58 info: GET /user/profile [33m401 289.778 ms - 279
+2023-12-10 14:28:58 info: GET /staff/profile [36m304 177.708 ms - -
+2023-12-10 14:29:07 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-10 14:29:07 info: GET /user/profile [33m401 172.823 ms - 279
+2023-12-10 14:29:07 info: GET /staff/profile [36m304 161.694 ms - -
+2023-12-10 14:29:20 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-10 14:29:20 info: GET /user/profile [33m401 4.667 ms - 1402
+2023-12-10 14:29:20 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-10 14:29:20 info: GET /staff/profile [33m401 11.410 ms - 1402
+2023-12-10 14:30:32 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-10 14:30:32 info: GET /user/profile [33m401 4.609 ms - 1402
+2023-12-10 14:30:33 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-10 14:30:33 info: GET /staff/profile [33m401 2.709 ms - 1402
+2023-12-10 14:31:41 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-10 14:31:41 info: GET /user/profile [33m401 33.980 ms - 1402
+2023-12-10 14:31:41 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-10 14:31:41 info: GET /staff/profile [33m401 3.466 ms - 1402
+2023-12-10 14:31:51 error: 401 - Invalid login credentials - /user/login - POST - ::1
+2023-12-10 14:31:51 info: POST /user/login [33m401 187.728 ms - 453
+2023-12-10 14:31:51 info: POST /staff/login [32m200 496.310 ms - 10354
+2023-12-10 14:32:19 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-10 14:32:19 info: GET /user/profile [33m401 218.715 ms - 279
+2023-12-10 14:32:19 info: GET /staff/profile [32m200 304.258 ms - 10354
+2023-12-10 14:33:57 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-10 14:33:57 info: GET /user/profile [33m401 4.139 ms - 1402
+2023-12-10 14:33:57 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-10 14:33:57 info: GET /staff/profile [33m401 2.433 ms - 1402
+2023-12-10 14:34:22 error: 401 - Invalid login credentials - /user/login - POST - ::ffff:127.0.0.1
+2023-12-10 14:34:22 info: POST /user/login [33m401 185.728 ms - 453
+2023-12-10 14:34:22 info: POST /staff/login [32m200 657.478 ms - 10559
+2023-12-10 14:34:43 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-10 14:34:43 info: GET /user/profile [33m401 269.304 ms - 279
+2023-12-10 14:34:43 info: GET /staff/profile [32m200 184.383 ms - 10559
+2023-12-10 14:34:47 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-10 14:34:47 info: GET /user/profile [33m401 151.917 ms - 279
+2023-12-10 14:34:47 info: GET /staff/profile [32m200 182.731 ms - 10559
+2023-12-10 14:34:50 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-10 14:34:50 info: GET /user/profile [33m401 169.360 ms - 279
+2023-12-10 14:34:50 info: GET /staff/profile [36m304 189.040 ms - -
+2023-12-10 14:34:51 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-10 14:34:51 info: GET /user/profile [33m401 167.397 ms - 279
+2023-12-10 14:34:52 info: GET /staff/profile [36m304 172.820 ms - -
+2023-12-10 14:34:52 info: GET /user/profile [36m304 174.867 ms - -
+2023-12-10 14:34:56 info: POST /user/get-doctor-availability [32m200 164.237 ms - 556
+2023-12-10 15:02:43 info: GET /user/profile [36m304 1051.960 ms - -
+2023-12-10 15:02:44 info: POST /user/get-doctor-availability [32m200 153.233 ms - 556
+2023-12-10 15:02:56 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-10 15:02:56 info: GET /user/profile [33m401 2.399 ms - 1402
+2023-12-10 15:02:56 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-10 15:02:56 info: GET /staff/profile [33m401 1.719 ms - 1402
+2023-12-10 15:03:12 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-10 15:03:12 info: GET /user/profile [33m401 191.846 ms - 279
+2023-12-10 15:03:12 info: GET /staff/profile [36m304 202.748 ms - -
+2023-12-10 15:03:27 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-10 15:03:27 info: GET /user/profile [33m401 11.867 ms - 1402
+2023-12-10 15:03:27 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-10 15:03:27 info: GET /staff/profile [33m401 2.272 ms - 1402
+2023-12-10 15:03:52 error: 401 - Invalid login credentials - /user/login - POST - ::ffff:127.0.0.1
+2023-12-10 15:03:52 info: POST /user/login [33m401 241.649 ms - 453
+2023-12-10 15:03:53 info: POST /staff/login [32m200 380.393 ms - 10764
+2023-12-10 15:05:53 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-10 15:05:53 info: GET /user/profile [33m401 170.545 ms - 279
+2023-12-10 15:05:54 info: GET /staff/profile [32m200 220.544 ms - 10764
+2023-12-10 15:05:54 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-10 15:05:54 info: GET /user/profile [33m401 203.233 ms - 279
+2023-12-10 15:05:55 info: GET /staff/profile [32m200 189.287 ms - 10764
+2023-12-10 15:05:58 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-10 15:05:58 info: GET /user/profile [33m401 284.802 ms - 279
+2023-12-10 15:05:58 info: GET /staff/profile [36m304 199.930 ms - -
+2023-12-10 15:06:02 info: GET /user/profile [36m304 174.527 ms - -
+2023-12-10 15:06:04 info: POST /user/get-doctor-availability [32m200 171.284 ms - 556
+2023-12-10 15:06:11 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-10 15:06:11 info: GET /user/profile [33m401 5.326 ms - 1402
+2023-12-10 15:06:12 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-10 15:06:12 info: GET /staff/profile [33m401 2.225 ms - 1402
+2023-12-10 15:06:30 error: 401 - Invalid login credentials - /user/login - POST - ::ffff:127.0.0.1
+2023-12-10 15:06:30 info: POST /user/login [33m401 187.012 ms - 453
+2023-12-10 15:06:31 info: POST /staff/login [32m200 618.735 ms - 10969
+2023-12-10 15:07:14 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-10 15:07:14 info: GET /user/profile [33m401 183.288 ms - 279
+2023-12-10 15:07:14 info: GET /staff/profile [32m200 185.654 ms - 10969
+2023-12-10 15:08:00 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-10 15:08:00 info: GET /user/profile [33m401 180.581 ms - 279
+2023-12-10 15:08:00 info: GET /staff/profile [36m304 198.642 ms - -
+2023-12-10 15:08:44 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-10 15:08:44 info: GET /user/profile [33m401 174.675 ms - 279
+2023-12-10 15:08:45 info: GET /staff/profile [36m304 309.385 ms - -
+2023-12-11 10:26:57 info: GET /staff/profile [36m304 377.126 ms - -
+2023-12-11 10:27:18 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:27:18 info: GET /user/profile [33m401 480.699 ms - 279
+2023-12-11 10:27:18 info: GET /staff/profile [32m200 340.018 ms - 10969
+2023-12-11 10:27:59 info: GET /staff/profile - - ms - -
+2023-12-11 10:28:38 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:28:58 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:28:58 info: GET /user/profile [33m401 30019.272 ms - 279
+2023-12-11 10:29:28 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:29:28 info: GET /staff/profile [33m401 30008.817 ms - 279
+2023-12-11 10:30:54 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:30:54 info: GET /user/profile [33m401 154.666 ms - 279
+2023-12-11 10:30:54 info: GET /staff/profile [32m200 153.197 ms - 10969
+2023-12-11 10:31:20 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:31:20 info: GET /user/profile [33m401 201.527 ms - 279
+2023-12-11 10:31:21 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:31:21 info: GET /user/profile [33m401 151.364 ms - 279
+2023-12-11 10:31:21 info: GET /staff/profile [36m304 204.176 ms - -
+2023-12-11 10:31:21 info: GET /staff/profile [36m304 222.427 ms - -
+2023-12-11 10:31:22 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:31:22 info: GET /user/profile [33m401 206.761 ms - 279
+2023-12-11 10:31:22 info: GET /staff/profile [36m304 166.759 ms - -
+2023-12-11 10:31:23 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:31:23 info: GET /user/profile [33m401 154.876 ms - 279
+2023-12-11 10:31:23 info: GET /staff/profile [36m304 199.622 ms - -
+2023-12-11 10:31:24 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:31:24 info: GET /user/profile [33m401 174.117 ms - 279
+2023-12-11 10:31:24 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:31:24 info: GET /user/profile [33m401 137.392 ms - 279
+2023-12-11 10:31:24 info: GET /staff/profile [36m304 174.679 ms - -
+2023-12-11 10:31:24 info: GET /staff/profile [32m200 185.951 ms - 10969
+2023-12-11 10:31:43 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:31:43 info: GET /user/profile [33m401 151.773 ms - 279
+2023-12-11 10:31:43 info: GET /staff/profile [36m304 155.938 ms - -
+2023-12-11 10:31:44 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:31:44 info: GET /user/profile [33m401 202.557 ms - 279
+2023-12-11 10:31:44 info: GET /staff/profile [36m304 175.954 ms - -
+2023-12-11 10:31:44 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:31:44 info: GET /user/profile [33m401 173.205 ms - 279
+2023-12-11 10:31:44 info: GET /staff/profile [36m304 238.824 ms - -
+2023-12-11 10:31:45 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:31:45 info: GET /user/profile [33m401 167.769 ms - 279
+2023-12-11 10:31:45 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:31:45 info: GET /user/profile [33m401 150.473 ms - 279
+2023-12-11 10:31:45 info: GET /staff/profile [36m304 173.851 ms - -
+2023-12-11 10:31:45 info: GET /staff/profile [36m304 195.513 ms - -
+2023-12-11 10:31:46 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:31:46 info: GET /user/profile [33m401 956.571 ms - 279
+2023-12-11 10:31:46 info: GET /staff/profile [36m304 152.940 ms - -
+2023-12-11 10:33:37 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:33:37 info: GET /user/profile [33m401 204.534 ms - 279
+2023-12-11 10:33:37 info: GET /staff/profile [36m304 180.270 ms - -
+2023-12-11 10:34:35 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:34:35 info: GET /user/profile [33m401 176.561 ms - 279
+2023-12-11 10:34:35 info: GET /staff/profile [36m304 164.505 ms - -
+2023-12-11 10:34:40 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:34:40 info: GET /user/profile [33m401 195.707 ms - 279
+2023-12-11 10:34:40 info: GET /staff/profile [36m304 191.132 ms - -
+2023-12-11 10:34:55 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:34:55 info: GET /user/profile [33m401 166.096 ms - 279
+2023-12-11 10:34:55 info: GET /staff/profile [36m304 166.463 ms - -
+2023-12-11 10:35:38 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:35:38 info: GET /user/profile [33m401 189.365 ms - 279
+2023-12-11 10:35:38 info: GET /staff/profile [36m304 199.452 ms - -
+2023-12-11 10:36:46 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:36:46 info: GET /user/profile [33m401 160.374 ms - 279
+2023-12-11 10:36:46 info: GET /staff/profile [36m304 164.537 ms - -
+2023-12-11 10:36:47 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:36:47 info: GET /user/profile [33m401 154.866 ms - 279
+2023-12-11 10:36:47 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:36:47 info: GET /user/profile [33m401 155.130 ms - 279
+2023-12-11 10:36:47 info: GET /staff/profile [36m304 156.490 ms - -
+2023-12-11 10:36:47 info: GET /staff/profile [36m304 156.078 ms - -
+2023-12-11 10:37:09 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:37:09 info: GET /user/profile [33m401 169.289 ms - 279
+2023-12-11 10:37:09 info: GET /staff/profile [36m304 168.084 ms - -
+2023-12-11 10:37:33 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:37:33 info: GET /user/profile [33m401 163.830 ms - 279
+2023-12-11 10:37:34 info: GET /staff/profile [36m304 177.751 ms - -
+2023-12-11 10:38:36 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:38:36 info: GET /user/profile [33m401 196.126 ms - 279
+2023-12-11 10:38:36 info: GET /staff/profile [36m304 185.817 ms - -
+2023-12-11 10:38:44 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:38:44 info: GET /user/profile [33m401 147.133 ms - 279
+2023-12-11 10:38:45 info: GET /staff/profile [36m304 145.633 ms - -
+2023-12-11 10:49:22 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:49:22 info: GET /user/profile [33m401 184.408 ms - 279
+2023-12-11 10:49:22 info: GET /staff/profile [36m304 158.752 ms - -
+2023-12-11 10:49:23 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:49:23 info: GET /user/profile [33m401 190.684 ms - 279
+2023-12-11 10:49:23 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:49:23 info: GET /user/profile [33m401 161.435 ms - 279
+2023-12-11 10:49:23 info: GET /staff/profile [36m304 172.698 ms - -
+2023-12-11 10:49:23 info: GET /staff/profile [32m200 172.349 ms - 10969
+2023-12-11 10:51:11 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:51:11 info: GET /user/profile [33m401 194.914 ms - 279
+2023-12-11 10:51:11 info: GET /staff/profile [36m304 197.596 ms - -
+2023-12-11 10:51:12 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:51:12 info: GET /user/profile [33m401 144.549 ms - 279
+2023-12-11 10:51:12 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:51:12 info: GET /user/profile [33m401 148.866 ms - 279
+2023-12-11 10:51:12 info: GET /staff/profile [32m200 196.866 ms - 10969
+2023-12-11 10:51:12 info: GET /staff/profile [36m304 217.564 ms - -
+2023-12-11 10:53:07 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:53:07 info: GET /user/profile [33m401 173.316 ms - 279
+2023-12-11 10:53:07 info: GET /staff/profile [36m304 226.031 ms - -
+2023-12-11 10:53:08 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:53:08 info: GET /user/profile [33m401 169.055 ms - 279
+2023-12-11 10:53:08 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:53:08 info: GET /user/profile [33m401 156.457 ms - 279
+2023-12-11 10:53:08 info: GET /staff/profile [32m200 158.319 ms - 10969
+2023-12-11 10:53:08 info: GET /staff/profile [36m304 167.070 ms - -
+2023-12-11 10:55:45 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:55:45 info: GET /user/profile [33m401 185.950 ms - 279
+2023-12-11 10:55:45 info: GET /staff/profile [36m304 156.999 ms - -
+2023-12-11 10:55:46 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:55:46 info: GET /user/profile [33m401 237.766 ms - 279
+2023-12-11 10:55:46 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:55:46 info: GET /user/profile [33m401 194.161 ms - 279
+2023-12-11 10:55:46 info: GET /staff/profile [36m304 191.061 ms - -
+2023-12-11 10:55:46 info: GET /staff/profile [32m200 191.363 ms - 10969
+2023-12-11 10:55:52 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:55:52 info: GET /user/profile [33m401 159.188 ms - 279
+2023-12-11 10:55:52 info: GET /staff/profile [36m304 167.846 ms - -
+2023-12-11 10:55:53 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:55:53 info: GET /user/profile [33m401 183.580 ms - 279
+2023-12-11 10:55:53 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:55:53 info: GET /user/profile [33m401 191.493 ms - 279
+2023-12-11 10:55:53 info: GET /staff/profile [36m304 176.975 ms - -
+2023-12-11 10:55:53 info: GET /staff/profile [32m200 205.636 ms - 10969
+2023-12-11 10:56:56 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:56:56 info: GET /user/profile [33m401 172.562 ms - 279
+2023-12-11 10:56:57 info: GET /staff/profile [36m304 179.181 ms - -
+2023-12-11 10:56:57 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:56:57 info: GET /user/profile [33m401 157.225 ms - 279
+2023-12-11 10:56:57 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:56:57 info: GET /user/profile [33m401 154.433 ms - 279
+2023-12-11 10:56:57 info: GET /staff/profile [32m200 167.152 ms - 10969
+2023-12-11 10:56:57 info: GET /staff/profile [36m304 181.094 ms - -
+2023-12-11 10:57:00 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:57:00 info: GET /user/profile [33m401 157.875 ms - 279
+2023-12-11 10:57:00 info: GET /staff/profile [36m304 194.828 ms - -
+2023-12-11 10:57:00 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:57:00 info: GET /user/profile [33m401 170.606 ms - 279
+2023-12-11 10:57:00 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:57:00 info: GET /user/profile [33m401 162.451 ms - 279
+2023-12-11 10:57:01 info: GET /staff/profile [36m304 197.906 ms - -
+2023-12-11 10:57:01 info: GET /staff/profile [32m200 198.993 ms - 10969
+2023-12-11 10:57:03 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 10:57:03 info: GET /user/profile [33m401 180.343 ms - 279
+2023-12-11 10:57:03 info: GET /staff/profile [36m304 171.637 ms - -
+2023-12-11 10:57:03 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:57:03 info: GET /user/profile [33m401 266.755 ms - 279
+2023-12-11 10:57:04 info: GET /staff/profile [36m304 247.906 ms - -
+2023-12-11 10:57:04 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:57:04 info: GET /user/profile [33m401 1135.188 ms - 279
+2023-12-11 10:57:04 info: GET /staff/profile [36m304 176.029 ms - -
+2023-12-11 10:59:53 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:59:53 info: GET /user/profile [33m401 4.411 ms - 1402
+2023-12-11 10:59:54 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:59:54 info: GET /staff/profile [33m401 8.330 ms - 1402
+2023-12-11 10:59:58 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-11 10:59:58 info: GET /staff/profile [33m401 1.967 ms - 1402
+2023-12-11 11:00:36 info: POST /user/login [32m200 409.417 ms - 9139
+2023-12-11 11:02:50 info: GET /staff/get-staffs [32m200 279.088 ms - 17993
+2023-12-11 11:05:53 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:05:53 info: GET /user/profile [33m401 180.342 ms - 279
+2023-12-11 11:05:54 info: GET /staff/profile [36m304 192.417 ms - -
+2023-12-11 11:05:54 info: GET /user/profile [32m200 193.201 ms - 9139
+2023-12-11 11:05:54 info: GET /user/profile [32m200 157.642 ms - 9139
+2023-12-11 11:06:57 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:06:57 info: GET /user/profile [33m401 202.400 ms - 279
+2023-12-11 11:06:57 info: GET /staff/profile [36m304 149.235 ms - -
+2023-12-11 11:06:58 info: GET /user/profile [36m304 248.279 ms - -
+2023-12-11 11:06:58 info: GET /user/profile [32m200 157.034 ms - 9139
+2023-12-11 11:07:01 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:07:01 info: GET /user/profile [33m401 148.097 ms - 279
+2023-12-11 11:07:02 info: GET /staff/profile [36m304 165.202 ms - -
+2023-12-11 11:07:03 info: GET /user/profile [36m304 249.268 ms - -
+2023-12-11 11:07:03 info: GET /user/profile [32m200 230.398 ms - 9139
+2023-12-11 11:07:07 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:07:07 info: GET /user/profile [33m401 165.947 ms - 279
+2023-12-11 11:07:07 info: GET /staff/profile [36m304 194.080 ms - -
+2023-12-11 11:07:08 info: GET /user/profile [36m304 195.162 ms - -
+2023-12-11 11:07:23 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:07:23 info: GET /user/profile [33m401 185.548 ms - 279
+2023-12-11 11:07:23 info: GET /staff/profile [36m304 160.444 ms - -
+2023-12-11 11:07:24 info: GET /user/profile [36m304 201.567 ms - -
+2023-12-11 11:07:25 info: GET /user/profile [36m304 184.679 ms - -
+2023-12-11 11:07:25 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:07:25 info: GET /user/profile [33m401 194.954 ms - 279
+2023-12-11 11:07:25 info: GET /staff/profile [36m304 165.992 ms - -
+2023-12-11 11:07:29 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:07:29 info: GET /user/profile [33m401 181.007 ms - 279
+2023-12-11 11:07:29 info: GET /staff/profile [36m304 146.819 ms - -
+2023-12-11 11:07:29 info: GET /user/profile [36m304 170.133 ms - -
+2023-12-11 11:07:29 info: GET /user/profile [32m200 141.922 ms - 9139
+2023-12-11 11:07:57 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:07:57 info: GET /user/profile [33m401 156.596 ms - 279
+2023-12-11 11:07:57 info: GET /staff/profile [36m304 171.896 ms - -
+2023-12-11 11:07:58 info: GET /user/profile [36m304 185.538 ms - -
+2023-12-11 11:07:58 info: GET /user/profile [32m200 162.425 ms - 9139
+2023-12-11 11:08:03 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:08:03 info: GET /user/profile [33m401 139.505 ms - 279
+2023-12-11 11:08:03 info: GET /staff/profile [36m304 189.768 ms - -
+2023-12-11 11:08:04 info: GET /user/profile [36m304 172.757 ms - -
+2023-12-11 11:08:05 info: GET /user/profile [32m200 189.255 ms - 9139
+2023-12-11 11:10:27 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:10:27 info: GET /user/profile [33m401 209.370 ms - 279
+2023-12-11 11:10:28 info: GET /staff/profile [36m304 199.002 ms - -
+2023-12-11 11:11:03 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:11:03 info: GET /user/profile [33m401 174.556 ms - 279
+2023-12-11 11:11:03 info: GET /staff/profile [36m304 150.299 ms - -
+2023-12-11 11:11:04 info: GET /user/profile [36m304 142.978 ms - -
+2023-12-11 11:11:04 info: GET /user/profile [32m200 151.902 ms - 9139
+2023-12-11 11:11:58 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:11:58 info: GET /user/profile [33m401 182.426 ms - 279
+2023-12-11 11:11:58 info: GET /staff/profile [36m304 169.761 ms - -
+2023-12-11 11:11:59 info: GET /user/profile [36m304 155.555 ms - -
+2023-12-11 11:11:59 info: GET /user/profile [32m200 159.908 ms - 9139
+2023-12-11 11:12:03 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:12:03 info: GET /user/profile [33m401 141.735 ms - 279
+2023-12-11 11:12:03 info: GET /staff/profile [36m304 169.336 ms - -
+2023-12-11 11:12:04 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:12:04 info: GET /user/profile [33m401 206.231 ms - 279
+2023-12-11 11:12:04 info: GET /staff/profile [36m304 181.752 ms - -
+2023-12-11 11:12:05 info: GET /user/profile [36m304 166.016 ms - -
+2023-12-11 11:12:05 info: GET /user/profile [32m200 154.296 ms - 9139
+2023-12-11 11:12:08 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:12:08 info: GET /user/profile [33m401 179.224 ms - 279
+2023-12-11 11:12:08 info: GET /staff/profile [36m304 167.349 ms - -
+2023-12-11 11:12:08 info: GET /user/profile [36m304 164.037 ms - -
+2023-12-11 11:12:08 info: GET /user/profile [32m200 170.140 ms - 9139
+2023-12-11 11:12:11 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:12:11 info: GET /user/profile [33m401 160.423 ms - 279
+2023-12-11 11:12:11 info: GET /staff/profile [36m304 221.601 ms - -
+2023-12-11 11:12:11 info: GET /user/profile [36m304 189.910 ms - -
+2023-12-11 11:12:11 info: GET /user/profile [32m200 155.416 ms - 9139
+2023-12-11 11:12:18 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:12:18 info: GET /user/profile [33m401 194.562 ms - 279
+2023-12-11 11:12:18 info: GET /staff/profile [36m304 177.723 ms - -
+2023-12-11 11:12:18 info: GET /user/profile [36m304 183.326 ms - -
+2023-12-11 11:12:18 info: GET /user/profile [32m200 182.745 ms - 9139
+2023-12-11 11:16:04 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:16:04 info: GET /user/profile [33m401 170.854 ms - 279
+2023-12-11 11:16:04 info: GET /staff/profile [36m304 199.603 ms - -
+2023-12-11 11:16:18 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:16:18 info: GET /user/profile [33m401 180.808 ms - 279
+2023-12-11 11:16:19 info: GET /staff/profile [36m304 164.805 ms - -
+2023-12-11 11:16:24 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:16:24 info: GET /user/profile [33m401 146.757 ms - 279
+2023-12-11 11:16:24 info: GET /staff/profile [36m304 161.197 ms - -
+2023-12-11 11:20:20 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:20:20 info: GET /user/profile [33m401 189.162 ms - 279
+2023-12-11 11:20:21 info: GET /staff/profile [36m304 164.655 ms - -
+2023-12-11 11:20:22 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:20:22 info: GET /user/profile [33m401 167.258 ms - 279
+2023-12-11 11:20:22 info: GET /staff/profile [36m304 183.625 ms - -
+2023-12-11 11:20:25 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:20:25 info: GET /user/profile [33m401 163.209 ms - 279
+2023-12-11 11:20:26 info: GET /staff/profile [36m304 164.875 ms - -
+2023-12-11 11:20:34 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:20:34 info: GET /user/profile [33m401 203.129 ms - 279
+2023-12-11 11:20:35 info: GET /staff/profile [36m304 194.341 ms - -
+2023-12-11 11:21:00 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:21:00 info: GET /user/profile [33m401 154.404 ms - 279
+2023-12-11 11:21:00 info: GET /staff/profile [36m304 158.227 ms - -
+2023-12-11 11:21:15 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:21:15 info: GET /user/profile [33m401 155.184 ms - 279
+2023-12-11 11:21:15 info: GET /staff/profile [36m304 196.002 ms - -
+2023-12-11 11:21:19 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:21:19 info: GET /user/profile [33m401 160.327 ms - 279
+2023-12-11 11:21:19 info: GET /staff/profile [36m304 182.888 ms - -
+2023-12-11 11:21:22 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:21:22 info: GET /user/profile [33m401 175.688 ms - 279
+2023-12-11 11:21:22 info: GET /staff/profile [36m304 188.226 ms - -
+2023-12-11 11:21:24 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:21:24 info: GET /user/profile [33m401 152.299 ms - 279
+2023-12-11 11:21:24 info: GET /staff/profile [36m304 187.742 ms - -
+2023-12-11 11:23:15 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:23:15 info: GET /user/profile [33m401 184.428 ms - 279
+2023-12-11 11:23:15 info: GET /staff/profile [36m304 198.941 ms - -
+2023-12-11 11:23:25 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:23:25 info: GET /user/profile [33m401 167.674 ms - 279
+2023-12-11 11:23:25 info: GET /staff/profile [36m304 191.037 ms - -
+2023-12-11 11:23:33 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:23:33 info: GET /user/profile [33m401 146.765 ms - 279
+2023-12-11 11:23:33 info: GET /staff/profile [36m304 168.349 ms - -
+2023-12-11 11:23:34 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:23:34 info: GET /user/profile [33m401 164.857 ms - 279
+2023-12-11 11:23:34 info: GET /staff/profile [36m304 171.903 ms - -
+2023-12-11 11:23:39 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:23:39 info: GET /user/profile [33m401 165.534 ms - 279
+2023-12-11 11:23:39 info: GET /staff/profile [36m304 185.026 ms - -
+2023-12-11 11:23:40 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:23:40 info: GET /user/profile [33m401 209.033 ms - 279
+2023-12-11 11:23:40 info: GET /staff/profile [36m304 160.633 ms - -
+2023-12-11 11:23:49 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:23:49 info: GET /user/profile [33m401 176.277 ms - 279
+2023-12-11 11:23:49 info: GET /staff/profile [36m304 165.895 ms - -
+2023-12-11 11:23:52 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:23:52 info: GET /user/profile [33m401 171.482 ms - 279
+2023-12-11 11:23:52 info: GET /staff/profile [36m304 165.996 ms - -
+2023-12-11 11:24:08 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:24:08 info: GET /user/profile [33m401 161.376 ms - 279
+2023-12-11 11:24:08 info: GET /staff/profile [36m304 158.305 ms - -
+2023-12-11 11:24:11 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:24:11 info: GET /user/profile [33m401 197.751 ms - 279
+2023-12-11 11:24:11 info: GET /staff/profile [36m304 162.312 ms - -
+2023-12-11 11:24:20 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:24:20 info: GET /user/profile [33m401 165.104 ms - 279
+2023-12-11 11:24:20 info: GET /staff/profile [36m304 186.474 ms - -
+2023-12-11 11:24:26 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:24:26 info: GET /user/profile [33m401 155.536 ms - 279
+2023-12-11 11:24:26 info: GET /staff/profile [36m304 191.495 ms - -
+2023-12-11 11:24:28 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:24:28 info: GET /user/profile [33m401 164.611 ms - 279
+2023-12-11 11:24:28 info: GET /staff/profile [36m304 206.350 ms - -
+2023-12-11 11:25:28 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:25:28 info: GET /user/profile [33m401 269.527 ms - 279
+2023-12-11 11:25:28 info: GET /staff/profile [36m304 177.669 ms - -
+2023-12-11 11:25:29 info: GET /user/profile [36m304 189.573 ms - -
+2023-12-11 11:25:48 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:25:48 info: GET /user/profile [33m401 194.761 ms - 279
+2023-12-11 11:25:49 info: GET /staff/profile [36m304 183.593 ms - -
+2023-12-11 11:25:56 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:25:56 info: GET /user/profile [33m401 178.584 ms - 279
+2023-12-11 11:25:56 info: GET /staff/profile [36m304 175.622 ms - -
+2023-12-11 11:26:06 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:26:06 info: GET /user/profile [33m401 162.337 ms - 279
+2023-12-11 11:26:07 info: GET /staff/profile [36m304 162.081 ms - -
+2023-12-11 11:26:14 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:26:14 info: GET /user/profile [33m401 164.212 ms - 279
+2023-12-11 11:26:15 info: GET /staff/profile [36m304 198.626 ms - -
+2023-12-11 11:26:24 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:26:24 info: GET /user/profile [33m401 165.020 ms - 279
+2023-12-11 11:26:24 info: GET /staff/profile [36m304 194.556 ms - -
+2023-12-11 11:26:58 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:26:58 info: GET /user/profile [33m401 189.931 ms - 279
+2023-12-11 11:26:58 info: GET /staff/profile [36m304 184.958 ms - -
+2023-12-11 11:27:49 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:27:49 info: GET /user/profile [33m401 227.887 ms - 279
+2023-12-11 11:27:50 info: GET /staff/profile [36m304 165.054 ms - -
+2023-12-11 11:27:56 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:27:56 info: GET /user/profile [33m401 201.334 ms - 279
+2023-12-11 11:27:56 info: GET /staff/profile [36m304 567.491 ms - -
+2023-12-11 11:28:05 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:28:05 info: GET /user/profile [33m401 157.584 ms - 279
+2023-12-11 11:28:05 info: GET /staff/profile [36m304 160.208 ms - -
+2023-12-11 11:28:10 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:28:10 info: GET /user/profile [33m401 159.712 ms - 279
+2023-12-11 11:28:11 info: GET /staff/profile [36m304 405.770 ms - -
+2023-12-11 11:28:13 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:28:13 info: GET /user/profile [33m401 179.392 ms - 279
+2023-12-11 11:28:14 info: GET /staff/profile [36m304 183.812 ms - -
+2023-12-11 11:28:17 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:28:17 info: GET /user/profile [33m401 189.095 ms - 279
+2023-12-11 11:28:17 info: GET /staff/profile [36m304 179.396 ms - -
+2023-12-11 11:28:30 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 11:28:30 info: GET /user/profile [33m401 236.482 ms - 279
+2023-12-11 11:28:30 info: GET /staff/profile [36m304 184.283 ms - -
+2023-12-11 11:28:41 info: GET /user/profile [36m304 168.236 ms - -
+2023-12-11 11:37:27 info: GET /user/profile [36m304 186.417 ms - -
+2023-12-11 11:40:03 info: GET /user/profile [36m304 175.241 ms - -
+2023-12-11 11:41:19 info: GET /user/profile [36m304 155.568 ms - -
+2023-12-11 11:41:27 info: GET /user/profile [36m304 185.681 ms - -
+2023-12-11 11:41:40 info: GET /user/profile [36m304 149.058 ms - -
+2023-12-11 11:41:58 info: GET /user/profile [36m304 182.957 ms - -
+2023-12-11 11:42:01 info: GET /user/profile [36m304 181.193 ms - -
+2023-12-11 11:42:02 info: GET /user/profile [36m304 167.602 ms - -
+2023-12-11 11:42:07 info: GET /user/profile [36m304 191.332 ms - -
+2023-12-11 11:48:53 info: GET /user/profile [36m304 232.351 ms - -
+2023-12-11 11:49:01 info: GET /user/profile [36m304 296.481 ms - -
+2023-12-11 11:49:05 info: GET /user/profile [36m304 247.469 ms - -
+2023-12-11 11:49:07 info: GET /user/profile [36m304 163.543 ms - -
+2023-12-11 11:49:09 info: GET /user/profile [36m304 169.602 ms - -
+2023-12-11 11:49:25 info: GET /user/profile [36m304 199.370 ms - -
+2023-12-11 11:49:38 info: GET /user/profile [36m304 212.198 ms - -
+2023-12-11 11:49:49 info: GET /user/profile [36m304 233.045 ms - -
+2023-12-11 11:49:57 info: GET /user/profile [36m304 173.668 ms - -
+2023-12-11 11:50:02 info: GET /user/profile [36m304 177.527 ms - -
+2023-12-11 11:50:10 info: GET /user/profile [36m304 292.618 ms - -
+2023-12-11 11:50:18 info: GET /user/profile [36m304 287.795 ms - -
+2023-12-11 11:50:19 info: GET /user/profile [36m304 265.227 ms - -
+2023-12-11 11:50:26 info: GET /user/profile [36m304 246.042 ms - -
+2023-12-11 11:50:29 info: GET /user/profile [36m304 285.853 ms - -
+2023-12-11 11:50:32 info: GET /user/profile [36m304 199.608 ms - -
+2023-12-11 11:56:03 info: GET /user/profile [36m304 268.400 ms - -
+2023-12-11 12:17:45 info: GET /staff/get-staffs [32m200 498.248 ms - 17993
+2023-12-11 12:38:28 error: 500 - Cannot read properties of undefined (reading 'replace') - /appointment/get-upcoming-appointments - GET - ::1
+2023-12-11 12:38:28 info: GET /appointment/get-upcoming-appointments [31m500 10.954 ms - 1488
+2023-12-11 12:39:08 error: 401 - TokenExpiredError: jwt expired - /appointment/get-upcoming-appointments - GET - ::1
+2023-12-11 12:39:08 info: GET /appointment/get-upcoming-appointments [33m401 23.348 ms - 1435
+2023-12-11 12:39:39 info: POST /staff/login [32m200 369.055 ms - 10841
+2023-12-11 12:39:47 info: GET /appointment/get-upcoming-appointments [32m200 1621.466 ms - 35
+2023-12-11 12:39:58 info: GET /appointment//get-upcoming-appointments [32m200 470.265 ms - 35
+2023-12-11 12:40:05 info: GET /appointment/get-upcoming-appointments [32m200 475.583 ms - 35
+2023-12-11 12:40:15 info: GET /appointment/get-completed-appointments [32m200 479.422 ms - 35
+2023-12-11 12:40:43 error: 404 - Please authenticate - /user/profile - GET - ::1
+2023-12-11 12:40:43 info: GET /user/profile [33m404 4.235 ms - 61
+2023-12-11 12:40:43 error: 404 - Please authenticate - /staff/profile - GET - ::1
+2023-12-11 12:40:43 info: GET /staff/profile [33m404 2.723 ms - 61
+2023-12-11 12:41:06 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 12:41:06 info: GET /user/profile [33m401 2999.982 ms - 279
+2023-12-11 12:41:06 info: GET /staff/profile [32m200 204.353 ms - 10841
+2023-12-11 12:41:48 info: POST /staff/login [32m200 395.311 ms - 11046
+2023-12-11 12:44:41 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 12:44:41 info: GET /user/profile [33m401 174.534 ms - 279
+2023-12-11 12:44:41 info: GET /staff/profile [32m200 206.385 ms - 11046
+2023-12-11 12:44:50 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 12:44:50 info: GET /user/profile [33m401 155.139 ms - 279
+2023-12-11 12:44:51 info: GET /staff/profile [36m304 175.646 ms - -
+2023-12-11 12:44:58 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 12:44:58 info: GET /user/profile [33m401 141.893 ms - 279
+2023-12-11 12:44:58 info: GET /staff/profile [36m304 145.218 ms - -
+2023-12-11 13:02:27 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 13:02:27 info: GET /user/profile [33m401 164.704 ms - 279
+2023-12-11 13:02:28 info: GET /staff/profile [36m304 401.023 ms - -
+2023-12-11 13:05:34 info: GET /user/profile [36m304 264.393 ms - -
+2023-12-11 13:05:35 info: GET /appointment/get-upcoming-appointments [32m200 686.646 ms - 35
+2023-12-11 13:05:58 info: GET /appointment/get-upcoming-appointments [36m304 494.298 ms - -
+2023-12-11 13:06:49 info: GET /appointment/get-upcoming-appointments [36m304 423.541 ms - -
+2023-12-11 13:07:14 info: GET /appointment/get-upcoming-appointments [36m304 749.433 ms - -
+2023-12-11 13:07:15 info: GET /appointment/get-upcoming-appointments [36m304 537.443 ms - -
+2023-12-11 13:08:28 info: GET /appointment/get-upcoming-appointments [36m304 1153.153 ms - -
+2023-12-11 13:12:44 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 13:12:44 info: GET /user/profile [33m401 163.733 ms - 279
+2023-12-11 13:12:45 info: GET /staff/profile [36m304 436.960 ms - -
+2023-12-11 13:12:47 info: GET /user/profile [36m304 191.050 ms - -
+2023-12-11 13:12:51 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 13:12:51 info: GET /user/profile [33m401 258.436 ms - 279
+2023-12-11 13:12:51 info: GET /staff/profile [36m304 391.692 ms - -
+2023-12-11 13:12:53 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 13:12:53 info: GET /user/profile [33m401 530.953 ms - 279
+2023-12-11 13:12:54 info: GET /staff/profile [36m304 264.661 ms - -
+2023-12-11 13:12:54 info: GET /user/profile [36m304 391.388 ms - -
+2023-12-11 13:13:38 info: GET /user/profile [36m304 293.032 ms - -
+2023-12-11 13:13:45 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 13:13:45 info: GET /user/profile [33m401 187.699 ms - 279
+2023-12-11 13:13:45 info: GET /staff/profile [36m304 268.804 ms - -
+2023-12-11 13:13:50 info: GET /appointment/get-upcoming-appointments [32m200 818.167 ms - 35
+2023-12-11 13:13:54 info: GET /appointment/get-ongoing-appointments [32m200 902.921 ms - 35
+2023-12-11 13:13:56 info: GET /appointment/get-completed-appointments [32m200 558.727 ms - 35
+2023-12-11 13:13:58 info: GET /appointment/get-upcoming-appointments [36m304 768.799 ms - -
+2023-12-11 13:14:15 info: GET /appointment/get-ongoing-appointments [36m304 839.507 ms - -
+2023-12-11 13:14:33 info: GET /appointment/get-completed-appointments [36m304 646.407 ms - -
+2023-12-11 13:22:27 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 13:22:27 info: GET /user/profile [33m401 7.038 ms - 1402
+2023-12-11 13:22:27 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 13:22:27 info: GET /staff/profile [33m401 3.660 ms - 1402
+2023-12-11 13:23:39 info: GET /user/profile [36m304 185.619 ms - -
+2023-12-11 13:23:48 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 13:23:48 info: GET /user/profile [33m401 26.665 ms - 1402
+2023-12-11 13:23:48 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 13:23:48 info: GET /staff/profile [33m401 34.519 ms - 1402
+2023-12-11 13:23:50 info: GET /user/profile [36m304 208.378 ms - -
+2023-12-11 13:23:55 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 13:23:55 info: GET /user/profile [33m401 4.429 ms - 1402
+2023-12-11 13:23:55 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 13:23:55 info: GET /staff/profile [33m401 6.970 ms - 1402
+2023-12-11 13:24:08 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 13:24:08 info: GET /user/profile [33m401 8.804 ms - 1402
+2023-12-11 13:24:08 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 13:24:08 info: GET /staff/profile [33m401 14.612 ms - 1402
+2023-12-11 13:24:11 info: GET /user/profile [36m304 144.775 ms - -
+2023-12-11 13:24:14 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 13:24:14 info: GET /user/profile [33m401 3.938 ms - 1402
+2023-12-11 13:24:14 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 13:24:14 info: GET /staff/profile [33m401 4.304 ms - 1402
+2023-12-11 13:40:55 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 13:40:55 info: GET /user/profile [33m401 5.482 ms - 1402
+2023-12-11 13:40:55 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 13:40:55 info: GET /staff/profile [33m401 2.240 ms - 1402
+2023-12-11 13:41:06 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 13:41:06 info: GET /user/profile [33m401 3.768 ms - 1402
+2023-12-11 13:41:06 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 13:41:06 info: GET /staff/profile [33m401 5.151 ms - 1402
+2023-12-11 13:50:08 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 13:50:08 info: GET /user/profile [33m401 4.063 ms - 1402
+2023-12-11 13:50:08 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 13:50:08 info: GET /staff/profile [33m401 4.126 ms - 1402
+2023-12-11 13:51:37 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 13:51:37 info: GET /user/profile [33m401 4.370 ms - 1402
+2023-12-11 13:51:37 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 13:51:37 info: GET /staff/profile [33m401 5.781 ms - 1402
+2023-12-11 14:13:13 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:13:13 info: GET /user/profile [33m401 3.986 ms - 1402
+2023-12-11 14:13:13 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:13:13 info: GET /staff/profile [33m401 2.799 ms - 1402
+2023-12-11 14:15:44 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:15:44 info: GET /user/profile [33m401 3.882 ms - 1402
+2023-12-11 14:15:44 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:15:44 info: GET /staff/profile [33m401 5.279 ms - 1402
+2023-12-11 14:16:30 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:16:30 info: GET /user/profile [33m401 8.448 ms - 1402
+2023-12-11 14:16:30 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:16:30 info: GET /staff/profile [33m401 5.735 ms - 1402
+2023-12-11 14:16:53 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:16:53 info: GET /user/profile [33m401 3.992 ms - 1402
+2023-12-11 14:16:53 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:16:53 info: GET /staff/profile [33m401 48.381 ms - 1402
+2023-12-11 14:17:01 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:17:01 info: GET /user/profile [33m401 4.247 ms - 1402
+2023-12-11 14:17:01 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:17:01 info: GET /staff/profile [33m401 2.640 ms - 1402
+2023-12-11 14:17:31 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:17:31 info: GET /user/profile [33m401 56.626 ms - 1402
+2023-12-11 14:17:31 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:17:31 info: GET /staff/profile [33m401 5.687 ms - 1402
+2023-12-11 14:18:32 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:18:32 info: GET /user/profile [33m401 4.024 ms - 1402
+2023-12-11 14:18:32 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:18:32 info: GET /staff/profile [33m401 3.561 ms - 1402
+2023-12-11 14:19:04 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:19:04 info: GET /user/profile [33m401 4.216 ms - 1402
+2023-12-11 14:19:04 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:19:04 info: GET /staff/profile [33m401 3.436 ms - 1402
+2023-12-11 14:19:16 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:19:16 info: GET /user/profile [33m401 79.314 ms - 1402
+2023-12-11 14:19:16 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:19:16 info: GET /staff/profile [33m401 6.818 ms - 1402
+2023-12-11 14:19:19 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:19:19 info: GET /user/profile [33m401 29.402 ms - 1402
+2023-12-11 14:19:19 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:19:19 info: GET /staff/profile [33m401 2.772 ms - 1402
+2023-12-11 14:19:27 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:19:27 info: GET /user/profile [33m401 10.464 ms - 1402
+2023-12-11 14:19:27 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:19:27 info: GET /staff/profile [33m401 6.203 ms - 1402
+2023-12-11 14:21:45 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:21:45 info: GET /user/profile [33m401 3.566 ms - 1402
+2023-12-11 14:21:45 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:21:45 info: GET /staff/profile [33m401 23.101 ms - 1402
+2023-12-11 14:23:41 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:23:41 info: GET /user/profile [33m401 3.620 ms - 1402
+2023-12-11 14:23:41 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:23:41 info: GET /staff/profile [33m401 2.605 ms - 1402
+2023-12-11 14:27:32 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:27:32 info: GET /user/profile [33m401 64.127 ms - 1402
+2023-12-11 14:27:32 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:27:32 info: GET /staff/profile [33m401 31.285 ms - 1402
+2023-12-11 14:28:15 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:28:15 info: GET /user/profile [33m401 14.100 ms - 1402
+2023-12-11 14:28:16 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:28:16 info: GET /staff/profile [33m401 16.249 ms - 1402
+2023-12-11 14:29:51 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:29:52 info: GET /user/profile [33m401 42.883 ms - 1402
+2023-12-11 14:29:52 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:29:52 info: GET /staff/profile [33m401 9.345 ms - 1402
+2023-12-11 14:30:13 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:30:13 info: GET /user/profile [33m401 73.886 ms - 1402
+2023-12-11 14:30:14 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:30:14 info: GET /staff/profile [33m401 14.454 ms - 1402
+2023-12-11 14:30:24 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:30:24 info: GET /user/profile [33m401 4.287 ms - 1402
+2023-12-11 14:30:24 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:30:24 info: GET /staff/profile [33m401 23.632 ms - 1402
+2023-12-11 14:30:48 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:30:48 info: GET /user/profile [33m401 3.219 ms - 1402
+2023-12-11 14:30:48 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:30:48 info: GET /staff/profile [33m401 3.710 ms - 1402
+2023-12-11 14:31:37 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:31:37 info: GET /user/profile [33m401 3.324 ms - 1402
+2023-12-11 14:31:37 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:31:37 info: GET /staff/profile [33m401 2.534 ms - 1402
+2023-12-11 14:32:03 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:32:03 info: GET /user/profile [33m401 3.119 ms - 1402
+2023-12-11 14:32:03 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:32:03 info: GET /staff/profile [33m401 3.188 ms - 1402
+2023-12-11 14:33:29 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:33:29 info: GET /user/profile [33m401 20.702 ms - 1402
+2023-12-11 14:33:29 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:33:29 info: GET /staff/profile [33m401 42.441 ms - 1402
+2023-12-11 14:33:34 info: GET /user/profile [36m304 213.199 ms - -
+2023-12-11 14:33:35 info: GET /appointment/get-upcoming-appointments [36m304 550.279 ms - -
+2023-12-11 14:33:57 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:33:57 info: GET /user/profile [33m401 5.169 ms - 1402
+2023-12-11 14:33:57 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:33:57 info: GET /staff/profile [33m401 2.695 ms - 1402
+2023-12-11 14:34:12 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:34:12 info: GET /user/profile [33m401 3.200 ms - 1402
+2023-12-11 14:34:12 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:34:12 info: GET /staff/profile [33m401 2.826 ms - 1402
+2023-12-11 14:34:42 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:34:42 info: GET /user/profile [33m401 4.009 ms - 1402
+2023-12-11 14:34:42 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:34:42 info: GET /staff/profile [33m401 4.246 ms - 1402
+2023-12-11 14:35:18 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:35:18 info: GET /user/profile [33m401 5.672 ms - 1402
+2023-12-11 14:35:18 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:35:18 info: GET /staff/profile [33m401 13.037 ms - 1402
+2023-12-11 14:36:11 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:36:11 info: GET /user/profile [33m401 85.541 ms - 1402
+2023-12-11 14:36:11 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:36:11 info: GET /staff/profile [33m401 6.137 ms - 1402
+2023-12-11 14:37:06 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:37:06 info: GET /user/profile [33m401 3.455 ms - 1402
+2023-12-11 14:37:06 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:37:06 info: GET /staff/profile [33m401 4.228 ms - 1402
+2023-12-11 14:42:06 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:42:06 info: GET /user/profile [33m401 3.805 ms - 1402
+2023-12-11 14:42:06 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:42:06 info: GET /staff/profile [33m401 4.317 ms - 1402
+2023-12-11 14:50:42 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:50:42 info: GET /user/profile [33m401 3.807 ms - 1402
+2023-12-11 14:50:42 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:50:42 info: GET /staff/profile [33m401 2.806 ms - 1402
+2023-12-11 14:53:02 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:53:02 info: GET /user/profile [33m401 3.649 ms - 1402
+2023-12-11 14:53:02 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:53:02 info: GET /staff/profile [33m401 3.678 ms - 1402
+2023-12-11 14:54:00 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 14:54:00 info: GET /user/profile [33m401 4.857 ms - 1402
+2023-12-11 14:54:01 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 14:54:01 info: GET /staff/profile [33m401 3.608 ms - 1402
+2023-12-11 15:02:34 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 15:02:34 info: GET /user/profile [33m401 4.476 ms - 1402
+2023-12-11 15:02:35 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 15:02:35 info: GET /staff/profile [33m401 17.507 ms - 1402
+2023-12-11 15:14:39 info: POST /staff/register [32m200 542.596 ms - 1669
+2023-12-11 15:15:14 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 15:15:14 info: GET /user/profile [33m401 181.635 ms - 279
+2023-12-11 15:15:14 info: GET /staff/profile [32m200 190.843 ms - 1656
+2023-12-11 15:16:14 info: POST /staff/set-available-date [32m200 523.413 ms - 1879
+2023-12-11 15:16:14 info: POST /staff/set-available-date [32m200 533.314 ms - 1879
+2023-12-11 15:16:16 info: POST /staff/set-available-date [32m200 2348.510 ms - 2249
+2023-12-11 15:16:16 info: POST /staff/set-available-date [32m200 2377.464 ms - 2249
+2023-12-11 15:17:21 info: GET /staff/get-staffs [32m200 335.701 ms - 20204
+2023-12-11 15:17:25 info: GET /staff/get-staff/6577194f0529a2c62f98a49e [32m200 174.611 ms - 2395
+2023-12-11 15:17:28 info: POST /user/get-doctor-availability [32m200 196.645 ms - 741
+2023-12-11 15:18:36 info: POST /staff/set-available-date [32m200 669.221 ms - 2619
+2023-12-11 15:18:36 info: POST /staff/set-available-date [32m200 667.413 ms - 2619
+2023-12-11 15:18:43 info: GET /user/profile [36m304 146.251 ms - -
+2023-12-11 15:18:43 info: POST /user/get-doctor-availability [32m200 144.871 ms - 1111
+2023-12-11 15:19:50 info: POST /staff/set-available-date [32m200 525.683 ms - 2989
+2023-12-11 15:19:50 info: POST /staff/set-available-date [32m200 525.071 ms - 2989
+2023-12-11 15:19:56 info: GET /user/profile [36m304 242.928 ms - -
+2023-12-11 15:19:56 info: POST /user/get-doctor-availability [32m200 146.440 ms - 1481
+2023-12-11 15:21:16 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 15:21:16 info: GET /user/profile [33m401 2.591 ms - 1402
+2023-12-11 15:21:16 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-11 15:21:16 info: GET /staff/profile [33m401 1.446 ms - 1402
+2023-12-11 15:21:46 info: POST /user/login [32m200 753.808 ms - 9343
+2023-12-11 15:22:08 info: POST /user/login [32m200 348.863 ms - 9547
+2023-12-11 15:22:14 info: GET /appointment/get-upcoming-appointments [32m200 467.503 ms - 35
+2023-12-11 15:22:22 info: GET /staff/get-staffs [32m200 286.932 ms - 20944
+2023-12-11 15:22:27 info: GET /staff/get-staff/6577194f0529a2c62f98a49e [32m200 144.802 ms - 3135
+2023-12-11 15:22:32 info: POST /user/get-doctor-availability [32m200 148.615 ms - 1481
+2023-12-11 15:23:21 error: 400 - Appointment time is not available - /appointment/makeAppointment - POST - ::ffff:127.0.0.1
+2023-12-11 15:23:21 info: POST /appointment/makeAppointment [33m400 550.915 ms - 331
+2023-12-11 15:25:37 info: POST /appointment/makeAppointment [32m200 1014.179 ms - 213
+2023-12-11 15:25:37 info: POST /appointment/makeAppointment - - ms - -
+2023-12-11 15:25:49 info: GET /user/profile [32m200 167.891 ms - 9547
+2023-12-11 15:25:52 info: GET /appointment/confirmAppointment/7f2fd4fd-bee1-4282-b4ac-2c9e138b468a [32m200 2865.495 ms - 12854
+2023-12-11 15:26:02 info: GET /appointment/get-upcoming-appointments [32m200 646.374 ms - 3308
+2023-12-11 15:26:07 info: GET /appointment/get-ongoing-appointments [32m200 535.958 ms - 35
+2023-12-11 15:26:09 info: GET /appointment/get-completed-appointments [32m200 484.632 ms - 35
+2023-12-11 15:26:11 info: GET /appointment/get-upcoming-appointments [36m304 565.115 ms - -
+2023-12-11 15:34:22 info: GET /user/profile [32m200 184.363 ms - 9574
+2023-12-11 15:34:24 info: GET /appointment/get-upcoming-appointments [36m304 734.517 ms - -
+2023-12-11 15:35:02 info: GET /appointment/get-upcoming-appointments [32m200 654.294 ms - 3308
+2023-12-11 15:36:02 info: GET /appointment/get-upcoming-appointments [36m304 764.209 ms - -
+2023-12-11 15:36:03 info: GET /appointment/get-upcoming-appointments [36m304 689.916 ms - -
+2023-12-11 15:36:05 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 15:36:05 info: GET /user/profile [33m401 144.721 ms - 279
+2023-12-11 15:36:05 info: GET /staff/profile [32m200 160.515 ms - 2976
+2023-12-11 15:36:06 info: GET /appointment/get-upcoming-appointments [36m304 614.989 ms - -
+2023-12-11 15:36:09 info: GET /appointment/get-upcoming-appointments [36m304 919.090 ms - -
+2023-12-11 15:36:09 info: GET /user/profile [36m304 198.423 ms - -
+2023-12-11 15:36:10 info: GET /appointment/get-upcoming-appointments [36m304 774.595 ms - -
+2023-12-11 15:36:10 info: GET /appointment/get-upcoming-appointments [36m304 740.249 ms - -
+2023-12-11 15:36:12 info: GET /appointment/get-upcoming-appointments [36m304 790.829 ms - -
+2023-12-11 15:36:13 info: GET /appointment/get-ongoing-appointments [36m304 638.919 ms - -
+2023-12-11 15:36:15 info: GET /appointment/get-upcoming-appointments [36m304 863.768 ms - -
+2023-12-11 15:36:38 info: GET /appointment/get-upcoming-appointments [36m304 660.327 ms - -
+2023-12-11 15:36:40 info: GET /appointment/get-upcoming-appointments [36m304 811.324 ms - -
+2023-12-11 15:36:43 info: GET /appointment/get-upcoming-appointments [36m304 786.218 ms - -
+2023-12-11 15:36:44 info: GET /appointment/get-upcoming-appointments [36m304 821.031 ms - -
+2023-12-11 15:36:48 info: GET /appointment/get-upcoming-appointments [36m304 816.579 ms - -
+2023-12-11 15:36:49 info: GET /appointment/get-upcoming-appointments [36m304 812.502 ms - -
+2023-12-11 15:38:37 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 15:38:37 info: GET /user/profile [33m401 6981.943 ms - 279
+2023-12-11 15:38:37 info: GET /staff/profile [36m304 298.073 ms - -
+2023-12-11 15:38:38 info: GET /appointment/get-upcoming-appointments [32m200 1043.023 ms - 12856
+2023-12-11 15:39:17 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 15:39:17 info: GET /user/profile [33m401 215.863 ms - 279
+2023-12-11 15:39:17 info: GET /staff/profile [36m304 308.938 ms - -
+2023-12-11 15:39:19 info: GET /user/profile [36m304 290.599 ms - -
+2023-12-11 15:39:19 info: GET /appointment/get-upcoming-appointments [36m304 994.840 ms - -
+2023-12-11 15:39:20 info: GET /appointment/get-upcoming-appointments [36m304 823.654 ms - -
+2023-12-11 15:40:24 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 15:40:24 info: GET /user/profile [33m401 221.638 ms - 279
+2023-12-11 15:40:24 info: GET /staff/profile [36m304 192.618 ms - -
+2023-12-11 15:40:25 info: GET /appointment/get-upcoming-appointments [36m304 681.681 ms - -
+2023-12-11 15:43:33 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 15:43:33 info: GET /user/profile [33m401 186.832 ms - 279
+2023-12-11 15:43:34 info: GET /staff/profile [36m304 274.287 ms - -
+2023-12-11 15:43:34 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 15:43:34 info: GET /user/profile [33m401 183.756 ms - 279
+2023-12-11 15:43:34 info: GET /staff/profile [36m304 222.487 ms - -
+2023-12-11 15:43:35 info: GET /appointment/get-upcoming-appointments [36m304 912.443 ms - -
+2023-12-11 15:43:36 info: GET /appointment/get-upcoming-appointments [36m304 1013.024 ms - -
+2023-12-11 15:43:43 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 15:43:43 info: GET /user/profile [33m401 163.008 ms - 279
+2023-12-11 15:43:43 info: GET /staff/profile [36m304 193.752 ms - -
+2023-12-11 15:43:45 info: GET /user/profile [36m304 238.317 ms - -
+2023-12-11 15:43:45 info: GET /appointment/get-upcoming-appointments [36m304 1532.502 ms - -
+2023-12-11 15:43:46 info: GET /appointment/get-upcoming-appointments [36m304 748.477 ms - -
+2023-12-11 15:44:12 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 15:44:13 info: GET /user/profile [33m401 192.538 ms - 279
+2023-12-11 15:44:13 info: GET /staff/profile [36m304 156.160 ms - -
+2023-12-11 15:44:14 info: GET /appointment/get-upcoming-appointments [36m304 790.363 ms - -
+2023-12-11 15:44:15 info: GET /user/profile [36m304 226.387 ms - -
+2023-12-11 15:44:16 info: GET /appointment/get-upcoming-appointments [36m304 964.663 ms - -
+2023-12-11 15:45:24 info: GET /appointment/get-upcoming-appointments [36m304 822.292 ms - -
+2023-12-11 15:45:24 info: GET /user/profile [36m304 220.983 ms - -
+2023-12-11 15:45:25 info: GET /appointment/get-upcoming-appointments [36m304 578.969 ms - -
+2023-12-11 15:45:25 info: GET /user/profile [36m304 157.688 ms - -
+2023-12-11 15:45:26 info: GET /appointment/get-upcoming-appointments [36m304 817.686 ms - -
+2023-12-11 15:45:26 info: GET /appointment/get-upcoming-appointments [36m304 828.641 ms - -
+2023-12-11 15:46:28 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 15:46:28 info: GET /user/profile [33m401 203.017 ms - 279
+2023-12-11 15:46:28 info: GET /staff/profile [36m304 191.857 ms - -
+2023-12-11 15:46:44 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 15:46:44 info: GET /user/profile [33m401 248.754 ms - 279
+2023-12-11 15:46:44 info: GET /staff/profile [36m304 153.787 ms - -
+2023-12-11 15:48:44 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 15:48:44 info: GET /user/profile [33m401 151.718 ms - 279
+2023-12-11 15:48:44 info: GET /staff/profile [36m304 145.178 ms - -
+2023-12-11 15:48:45 info: GET /user/profile [36m304 166.077 ms - -
+2023-12-11 15:48:45 info: GET /appointment/get-upcoming-appointments [36m304 639.153 ms - -
+2023-12-11 15:48:45 info: GET /appointment/get-upcoming-appointments [36m304 649.316 ms - -
+2023-12-11 15:49:10 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 15:49:10 info: GET /user/profile [33m401 158.093 ms - 279
+2023-12-11 15:49:11 info: GET /staff/profile [36m304 152.582 ms - -
+2023-12-11 15:49:11 info: GET /appointment/get-upcoming-appointments [36m304 665.021 ms - -
+2023-12-11 15:49:12 info: GET /user/profile [36m304 169.301 ms - -
+2023-12-11 15:49:13 info: GET /appointment/get-upcoming-appointments [36m304 676.627 ms - -
+2023-12-11 15:49:25 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 15:49:25 info: GET /user/profile [33m401 197.561 ms - 279
+2023-12-11 15:49:25 info: GET /staff/profile [36m304 153.873 ms - -
+2023-12-11 15:49:26 info: GET /appointment/get-upcoming-appointments [36m304 623.851 ms - -
+2023-12-11 15:49:27 info: GET /user/profile [36m304 176.842 ms - -
+2023-12-11 15:49:27 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 15:49:27 info: GET /user/profile [33m401 243.891 ms - 279
+2023-12-11 15:49:27 info: GET /staff/profile [36m304 186.891 ms - -
+2023-12-11 15:49:28 info: GET /appointment/get-upcoming-appointments [36m304 749.198 ms - -
+2023-12-11 15:49:28 info: GET /user/profile [36m304 193.699 ms - -
+2023-12-11 15:49:28 info: GET /appointment/get-upcoming-appointments [36m304 728.440 ms - -
+2023-12-11 15:49:29 info: GET /appointment/get-upcoming-appointments [36m304 679.398 ms - -
+2023-12-11 15:49:31 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 15:49:31 info: GET /user/profile [33m401 160.194 ms - 279
+2023-12-11 15:49:31 info: GET /staff/profile [36m304 149.208 ms - -
+2023-12-11 15:49:32 info: GET /appointment/get-upcoming-appointments [36m304 587.292 ms - -
+2023-12-11 15:49:35 info: GET /user/profile [36m304 209.947 ms - -
+2023-12-11 15:49:36 info: GET /appointment/get-upcoming-appointments [36m304 703.892 ms - -
+2023-12-11 15:50:08 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 15:50:08 info: GET /user/profile [33m401 178.276 ms - 279
+2023-12-11 15:50:08 info: GET /staff/profile [36m304 175.117 ms - -
+2023-12-11 15:50:09 info: GET /appointment/get-upcoming-appointments [36m304 641.626 ms - -
+2023-12-11 15:50:59 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 15:50:59 info: GET /user/profile [33m401 138.406 ms - 279
+2023-12-11 15:50:59 info: GET /staff/profile [36m304 151.796 ms - -
+2023-12-11 15:51:00 info: GET /appointment/get-upcoming-appointments [36m304 704.186 ms - -
+2023-12-11 15:51:00 info: GET /user/profile [36m304 150.099 ms - -
+2023-12-11 15:51:01 info: GET /appointment/get-upcoming-appointments [36m304 606.671 ms - -
+2023-12-11 15:56:29 info: POST /user/get-doctor-availability [32m200 194.096 ms - 1296
+2023-12-11 15:57:06 info: POST /user/get-doctor-availability [32m200 147.534 ms - 1296
+2023-12-11 15:57:41 info: POST /user/get-doctor-availability [32m200 139.262 ms - 1296
+2023-12-11 15:58:00 info: GET /user/profile [36m304 201.505 ms - -
+2023-12-11 15:58:01 info: GET /appointment/get-upcoming-appointments [36m304 659.343 ms - -
+2023-12-11 16:09:54 info: GET /user/profile [36m304 894.433 ms - -
+2023-12-11 16:09:56 info: GET /appointment/get-upcoming-appointments [36m304 620.380 ms - -
+2023-12-11 16:09:57 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:09:57 info: GET /user/profile [33m401 1111.300 ms - 279
+2023-12-11 16:09:58 info: GET /staff/profile [36m304 169.216 ms - -
+2023-12-11 16:09:58 info: GET /appointment/get-upcoming-appointments [36m304 655.212 ms - -
+2023-12-11 16:13:06 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:13:06 info: GET /user/profile [33m401 147.725 ms - 279
+2023-12-11 16:13:06 info: GET /staff/profile [36m304 362.192 ms - -
+2023-12-11 16:13:08 info: GET /appointment/get-upcoming-appointments [36m304 1673.752 ms - -
+2023-12-11 16:13:09 info: GET /appointment/get-upcoming-appointments [36m304 640.285 ms - -
+2023-12-11 16:13:42 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:13:42 info: GET /user/profile [33m401 215.670 ms - 279
+2023-12-11 16:13:42 info: GET /staff/profile [36m304 310.190 ms - -
+2023-12-11 16:13:43 info: GET /appointment/get-upcoming-appointments [36m304 811.983 ms - -
+2023-12-11 16:16:26 info: POST /user/get-doctor-availability [32m200 203.320 ms - 1296
+2023-12-11 16:16:30 info: POST /user/get-doctor-availability [32m200 181.436 ms - 1296
+2023-12-11 16:16:31 info: POST /user/get-doctor-availability [32m200 171.148 ms - 1296
+2023-12-11 16:16:44 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:16:44 info: GET /user/profile [33m401 159.622 ms - 279
+2023-12-11 16:16:44 info: GET /staff/profile [36m304 210.851 ms - -
+2023-12-11 16:16:45 info: GET /appointment/get-upcoming-appointments [36m304 861.280 ms - -
+2023-12-11 16:17:08 info: GET /appointment/get-upcoming-appointments [36m304 801.810 ms - -
+2023-12-11 16:17:09 info: GET /appointment/get-upcoming-appointments [36m304 704.005 ms - -
+2023-12-11 16:17:26 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:17:26 info: GET /user/profile [33m401 145.006 ms - 279
+2023-12-11 16:17:27 info: GET /staff/profile [36m304 154.186 ms - -
+2023-12-11 16:17:28 info: GET /appointment/get-upcoming-appointments [36m304 694.262 ms - -
+2023-12-11 16:17:28 info: GET /user/profile [36m304 168.123 ms - -
+2023-12-11 16:17:30 info: GET /user/profile [32m200 300.582 ms - 9574
+2023-12-11 16:17:31 info: POST /user/get-doctor-availability [32m200 197.588 ms - 1296
+2023-12-11 16:17:31 info: GET /appointment/get-upcoming-appointments [36m304 907.418 ms - -
+2023-12-11 16:17:34 info: GET /appointment/get-ongoing-appointments [36m304 678.252 ms - -
+2023-12-11 16:17:58 info: GET /user/profile [36m304 222.617 ms - -
+2023-12-11 16:17:59 info: GET /appointment/get-upcoming-appointments [36m304 805.454 ms - -
+2023-12-11 16:18:13 info: GET /appointment/get-ongoing-appointments [36m304 676.836 ms - -
+2023-12-11 16:18:41 info: GET /user/profile [36m304 212.638 ms - -
+2023-12-11 16:18:42 info: GET /appointment/get-upcoming-appointments [36m304 918.946 ms - -
+2023-12-11 16:19:43 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:19:43 info: GET /user/profile [33m401 184.237 ms - 279
+2023-12-11 16:19:43 info: GET /staff/profile [36m304 189.720 ms - -
+2023-12-11 16:19:44 info: GET /user/profile [36m304 226.452 ms - -
+2023-12-11 16:19:45 info: GET /appointment/get-upcoming-appointments [36m304 965.266 ms - -
+2023-12-11 16:19:45 info: GET /appointment/get-upcoming-appointments [36m304 804.287 ms - -
+2023-12-11 16:19:47 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:19:47 info: GET /user/profile [33m401 160.264 ms - 279
+2023-12-11 16:19:47 info: GET /staff/profile [36m304 220.012 ms - -
+2023-12-11 16:19:48 info: GET /appointment/get-upcoming-appointments [36m304 884.969 ms - -
+2023-12-11 16:19:49 info: GET /user/profile [36m304 202.047 ms - -
+2023-12-11 16:19:50 info: GET /appointment/get-upcoming-appointments [36m304 807.468 ms - -
+2023-12-11 16:19:57 info: GET /user/profile [36m304 204.207 ms - -
+2023-12-11 16:19:58 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:19:58 info: GET /user/profile [33m401 279.987 ms - 279
+2023-12-11 16:19:58 info: GET /staff/profile [36m304 185.503 ms - -
+2023-12-11 16:20:00 info: GET /appointment/get-upcoming-appointments [36m304 705.175 ms - -
+2023-12-11 16:20:00 info: GET /appointment/get-upcoming-appointments [36m304 617.885 ms - -
+2023-12-11 16:20:01 info: GET /user/profile [36m304 157.465 ms - -
+2023-12-11 16:20:01 info: POST /user/get-doctor-availability [32m200 144.304 ms - 1296
+2023-12-11 16:23:36 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:23:36 info: GET /user/profile [33m401 217.549 ms - 279
+2023-12-11 16:23:37 info: GET /staff/profile [36m304 182.341 ms - -
+2023-12-11 16:23:38 info: GET /appointment/get-upcoming-appointments [36m304 803.376 ms - -
+2023-12-11 16:25:01 info: GET /user/profile [36m304 162.355 ms - -
+2023-12-11 16:25:04 info: GET /appointment/get-upcoming-appointments [36m304 820.259 ms - -
+2023-12-11 16:26:02 info: POST /staff/set-available-date [32m200 579.977 ms - 3200
+2023-12-11 16:26:14 info: GET /staff/get-staffs [32m200 294.774 ms - 20970
+2023-12-11 16:26:19 info: GET /staff/get-staff/6577194f0529a2c62f98a49e [32m200 147.776 ms - 3161
+2023-12-11 16:26:47 info: GET /appointment/get-upcoming-appointments [32m200 619.485 ms - 13041
+2023-12-11 16:26:52 info: GET /appointment/get-upcoming-appointments [32m200 856.616 ms - 3493
+2023-12-11 16:27:18 info: GET /staff/get-staffs [36m304 438.316 ms - -
+2023-12-11 16:27:20 info: GET /staff/get-staff/6577194f0529a2c62f98a49e [36m304 158.752 ms - -
+2023-12-11 16:27:22 info: POST /user/get-doctor-availability [32m200 163.562 ms - 1481
+2023-12-11 16:28:01 info: POST /appointment/makeAppointment [32m200 1300.221 ms - 213
+2023-12-11 16:28:12 info: GET /user/profile [36m304 153.683 ms - -
+2023-12-11 16:28:15 info: GET /appointment/confirmAppointment/b75a88b6-b980-4b4d-be94-10a80e96837d [32m200 3437.198 ms - 12974
+2023-12-11 16:28:26 info: GET /appointment/get-upcoming-appointments [32m200 974.757 ms - 6735
+2023-12-11 16:28:34 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:28:34 info: GET /user/profile [33m401 194.299 ms - 279
+2023-12-11 16:28:35 info: GET /staff/profile [32m200 449.793 ms - 2976
+2023-12-11 16:28:36 info: GET /appointment/get-upcoming-appointments [32m200 981.660 ms - 25831
+2023-12-11 16:29:34 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:29:34 info: GET /user/profile [33m401 248.490 ms - 279
+2023-12-11 16:29:34 info: GET /staff/profile [36m304 227.917 ms - -
+2023-12-11 16:29:36 info: GET /appointment/get-upcoming-appointments [36m304 877.433 ms - -
+2023-12-11 16:30:32 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:30:32 info: GET /user/profile [33m401 327.118 ms - 279
+2023-12-11 16:30:32 info: GET /staff/profile [36m304 490.329 ms - -
+2023-12-11 16:30:33 info: GET /appointment/get-upcoming-appointments [32m200 906.941 ms - 12856
+2023-12-11 16:30:36 info: GET /appointment/get-ongoing-appointments [32m200 822.935 ms - 3426
+2023-12-11 16:31:24 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:31:24 info: GET /user/profile [33m401 218.736 ms - 279
+2023-12-11 16:31:24 info: GET /staff/profile [36m304 227.972 ms - -
+2023-12-11 16:31:26 info: GET /appointment/get-upcoming-appointments [36m304 670.195 ms - -
+2023-12-11 16:31:27 info: GET /appointment/get-upcoming-appointments [36m304 852.308 ms - -
+2023-12-11 16:31:28 info: GET /appointment/get-upcoming-appointments [32m200 1217.430 ms - 3308
+2023-12-11 16:31:37 info: GET /appointment/get-upcoming-appointments [36m304 904.596 ms - -
+2023-12-11 16:31:39 info: GET /appointment/get-upcoming-appointments [36m304 764.069 ms - -
+2023-12-11 16:31:41 info: GET /appointment/get-upcoming-appointments [36m304 783.289 ms - -
+2023-12-11 16:31:42 info: GET /appointment/get-upcoming-appointments [36m304 746.412 ms - -
+2023-12-11 16:31:43 info: GET /appointment/get-upcoming-appointments [36m304 830.826 ms - -
+2023-12-11 16:31:45 info: GET /appointment/get-ongoing-appointments [36m304 723.640 ms - -
+2023-12-11 16:31:45 info: GET /appointment/get-upcoming-appointments [36m304 749.217 ms - -
+2023-12-11 16:31:52 info: GET /appointment/get-ongoing-appointments [32m200 815.714 ms - 3426
+2023-12-11 16:34:10 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:34:10 info: GET /user/profile [33m401 203.816 ms - 279
+2023-12-11 16:34:10 info: GET /staff/profile [36m304 254.377 ms - -
+2023-12-11 16:34:12 info: GET /appointment/get-upcoming-appointments [36m304 1331.975 ms - -
+2023-12-11 16:34:12 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:34:12 info: GET /user/profile [33m401 308.958 ms - 279
+2023-12-11 16:34:13 info: GET /staff/profile [36m304 216.259 ms - -
+2023-12-11 16:34:14 info: GET /appointment/get-upcoming-appointments [36m304 981.375 ms - -
+2023-12-11 16:34:30 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:34:30 info: GET /user/profile [33m401 299.622 ms - 279
+2023-12-11 16:34:30 info: GET /staff/profile [36m304 287.058 ms - -
+2023-12-11 16:34:31 info: GET /appointment/get-upcoming-appointments [36m304 840.199 ms - -
+2023-12-11 16:34:33 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:34:33 info: GET /user/profile [33m401 184.020 ms - 279
+2023-12-11 16:34:33 info: GET /staff/profile [36m304 192.338 ms - -
+2023-12-11 16:34:34 info: GET /appointment/get-upcoming-appointments [36m304 862.875 ms - -
+2023-12-11 16:35:00 info: GET /appointment/get-upcoming-appointments [36m304 747.303 ms - -
+2023-12-11 16:35:31 info: GET /appointment/get-ongoing-appointments [36m304 915.808 ms - -
+2023-12-11 16:35:34 info: GET /appointment/get-upcoming-appointments [36m304 718.950 ms - -
+2023-12-11 16:35:50 info: GET /appointment/get-ongoing-appointments [36m304 673.861 ms - -
+2023-12-11 16:36:11 info: GET /appointment/get-ongoing-appointments [36m304 866.861 ms - -
+2023-12-11 16:36:14 info: GET /appointment/get-upcoming-appointments [36m304 719.737 ms - -
+2023-12-11 16:36:40 info: GET /appointment/get-upcoming-appointments [36m304 837.269 ms - -
+2023-12-11 16:36:41 info: GET /appointment/get-ongoing-appointments [36m304 858.608 ms - -
+2023-12-11 16:37:24 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:37:24 info: GET /user/profile [33m401 458.007 ms - 279
+2023-12-11 16:37:24 info: GET /staff/profile [36m304 199.044 ms - -
+2023-12-11 16:37:25 info: GET /appointment/get-upcoming-appointments [36m304 1072.871 ms - -
+2023-12-11 16:37:28 info: GET /appointment/get-ongoing-appointments [36m304 741.202 ms - -
+2023-12-11 16:38:07 info: GET /appointment/get-ongoing-appointments [36m304 1276.347 ms - -
+2023-12-11 16:39:30 info: GET /appointment/get-upcoming-appointments [36m304 888.047 ms - -
+2023-12-11 16:39:32 info: GET /appointment/get-ongoing-appointments [36m304 733.049 ms - -
+2023-12-11 16:39:34 info: GET /appointment/get-upcoming-appointments [36m304 851.650 ms - -
+2023-12-11 16:39:36 info: GET /appointment/get-ongoing-appointments [36m304 889.689 ms - -
+2023-12-11 16:39:58 info: GET /appointment/get-upcoming-appointments [36m304 955.240 ms - -
+2023-12-11 16:39:59 info: GET /appointment/get-ongoing-appointments [36m304 841.655 ms - -
+2023-12-11 16:40:03 info: GET /appointment/get-upcoming-appointments [36m304 850.491 ms - -
+2023-12-11 16:40:13 info: GET /user/profile [32m200 216.971 ms - 9574
+2023-12-11 16:40:15 info: GET /appointment/get-upcoming-appointments [36m304 936.245 ms - -
+2023-12-11 16:40:16 info: GET /appointment/get-ongoing-appointments [36m304 932.670 ms - -
+2023-12-11 16:40:19 info: GET /appointment/get-ongoing-appointments [36m304 785.918 ms - -
+2023-12-11 16:40:39 info: GET /appointment/get-upcoming-appointments [36m304 837.768 ms - -
+2023-12-11 16:40:41 info: GET /appointment/get-ongoing-appointments [36m304 1020.811 ms - -
+2023-12-11 16:43:44 info: GET /user/profile [36m304 390.806 ms - -
+2023-12-11 16:43:46 info: GET /appointment/get-upcoming-appointments [36m304 839.353 ms - -
+2023-12-11 16:43:51 info: GET /appointment/get-ongoing-appointments [36m304 847.019 ms - -
+2023-12-11 16:44:17 info: POST /staff/set-available-date [32m200 573.636 ms - 3201
+2023-12-11 16:44:22 info: GET /staff/get-staffs [32m200 344.514 ms - 20971
+2023-12-11 16:44:25 info: GET /staff/get-staff/6577194f0529a2c62f98a49e [32m200 145.025 ms - 3162
+2023-12-11 16:44:28 info: POST /user/get-doctor-availability [32m200 175.100 ms - 1481
+2023-12-11 16:44:44 error: 400 - Appointment time is not available - /appointment/makeAppointment - POST - ::ffff:127.0.0.1
+2023-12-11 16:44:44 info: POST /appointment/makeAppointment [33m400 775.332 ms - 331
+2023-12-11 16:47:44 error: 400 - Clash detected with existing availability slots - /staff/set-available-date - POST - ::1
+2023-12-11 16:47:44 info: POST /staff/set-available-date [33m400 375.120 ms - 354
+2023-12-11 16:55:46 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:55:46 info: GET /user/profile [33m401 274.030 ms - 279
+2023-12-11 16:55:46 info: GET /staff/profile [32m200 275.493 ms - 3162
+2023-12-11 16:56:29 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:56:29 info: GET /user/profile [33m401 189.286 ms - 279
+2023-12-11 16:56:29 info: GET /staff/profile [36m304 215.713 ms - -
+2023-12-11 16:56:43 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:56:43 info: GET /user/profile [33m401 196.888 ms - 279
+2023-12-11 16:56:43 info: GET /staff/profile [36m304 168.552 ms - -
+2023-12-11 16:57:05 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 16:57:05 info: GET /user/profile [33m401 4.782 ms - 1402
+2023-12-11 16:57:05 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 16:57:05 info: GET /staff/profile [33m401 8.741 ms - 1402
+2023-12-11 16:57:30 info: GET /user/profile [36m304 171.473 ms - -
+2023-12-11 16:57:51 info: GET /appointment/get-upcoming-appointments [32m200 610.111 ms - 35
+2023-12-11 16:58:37 info: GET /user/profile [36m304 223.989 ms - -
+2023-12-11 16:58:38 info: GET /appointment/get-upcoming-appointments [36m304 575.279 ms - -
+2023-12-11 16:59:02 info: GET /user/profile [36m304 157.845 ms - -
+2023-12-11 16:59:02 info: GET /appointment/get-upcoming-appointments [36m304 448.884 ms - -
+2023-12-11 16:59:10 info: GET /user/profile [36m304 191.195 ms - -
+2023-12-11 16:59:11 info: GET /appointment/get-upcoming-appointments [36m304 440.355 ms - -
+2023-12-11 16:59:18 info: GET /user/profile [36m304 173.549 ms - -
+2023-12-11 16:59:20 info: GET /appointment/get-upcoming-appointments [36m304 626.832 ms - -
+2023-12-11 16:59:40 info: GET /user/profile [36m304 268.180 ms - -
+2023-12-11 16:59:41 info: GET /appointment/get-upcoming-appointments [36m304 715.800 ms - -
+2023-12-11 16:59:45 info: GET /user/profile [36m304 181.599 ms - -
+2023-12-11 16:59:46 info: GET /appointment/get-upcoming-appointments [36m304 598.096 ms - -
+2023-12-11 17:00:44 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 17:00:44 info: GET /user/profile [33m401 3.494 ms - 1402
+2023-12-11 17:00:44 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 17:00:44 info: GET /staff/profile [33m401 5.206 ms - 1402
+2023-12-11 17:00:46 info: GET /user/profile [36m304 168.199 ms - -
+2023-12-11 17:00:46 info: GET /user/profile [32m200 172.554 ms - 9574
+2023-12-11 17:00:48 info: GET /appointment/get-upcoming-appointments [36m304 553.167 ms - -
+2023-12-11 17:01:20 info: GET /user/profile [36m304 232.855 ms - -
+2023-12-11 17:01:27 info: GET /appointment/get-upcoming-appointments [36m304 525.638 ms - -
+2023-12-11 17:01:49 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 17:01:49 info: GET /user/profile [33m401 5.310 ms - 1402
+2023-12-11 17:01:49 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 17:01:49 info: GET /staff/profile [33m401 2.197 ms - 1402
+2023-12-11 17:01:53 info: GET /user/profile [36m304 164.921 ms - -
+2023-12-11 17:01:53 info: GET /user/profile [36m304 163.907 ms - -
+2023-12-11 17:01:55 info: GET /appointment/get-upcoming-appointments [36m304 636.078 ms - -
+2023-12-11 17:02:46 info: GET /user/profile [36m304 168.823 ms - -
+2023-12-11 17:02:46 info: GET /appointment/get-upcoming-appointments [36m304 540.924 ms - -
+2023-12-11 17:02:51 info: GET /user/profile [36m304 180.508 ms - -
+2023-12-11 17:02:51 info: GET /appointment/get-upcoming-appointments [36m304 465.563 ms - -
+2023-12-11 17:03:06 info: GET /user/profile [36m304 163.717 ms - -
+2023-12-11 17:03:07 info: GET /appointment/get-upcoming-appointments [36m304 478.960 ms - -
+2023-12-11 17:03:29 info: GET /user/profile [36m304 234.346 ms - -
+2023-12-11 17:03:31 info: GET /appointment/get-upcoming-appointments [36m304 670.642 ms - -
+2023-12-11 17:04:43 info: GET /user/profile [36m304 165.815 ms - -
+2023-12-11 17:04:44 info: GET /appointment/get-upcoming-appointments [36m304 529.037 ms - -
+2023-12-11 17:05:32 info: GET /user/profile [36m304 164.632 ms - -
+2023-12-11 17:05:36 info: GET /user/profile [36m304 161.855 ms - -
+2023-12-11 17:05:38 info: GET /user/profile [36m304 164.971 ms - -
+2023-12-11 17:05:38 info: GET /appointment/get-upcoming-appointments [36m304 664.010 ms - -
+2023-12-11 17:05:48 info: GET /user/profile [36m304 163.650 ms - -
+2023-12-11 17:05:51 info: GET /appointment/get-upcoming-appointments [36m304 636.638 ms - -
+2023-12-11 17:06:30 info: GET /user/profile [36m304 283.339 ms - -
+2023-12-11 17:06:31 info: GET /appointment/get-upcoming-appointments [36m304 814.654 ms - -
+2023-12-11 17:06:37 info: GET /user/profile [36m304 262.436 ms - -
+2023-12-11 17:06:38 info: GET /appointment/get-upcoming-appointments [36m304 438.176 ms - -
+2023-12-11 17:07:18 info: GET /user/profile [36m304 255.284 ms - -
+2023-12-11 17:07:19 info: GET /appointment/get-upcoming-appointments [36m304 575.494 ms - -
+2023-12-11 17:07:44 info: GET /user/profile [36m304 185.487 ms - -
+2023-12-11 17:07:45 info: GET /user/profile [36m304 173.187 ms - -
+2023-12-11 17:07:48 info: GET /user/profile [36m304 287.175 ms - -
+2023-12-11 17:07:49 info: GET /appointment/get-upcoming-appointments [36m304 655.500 ms - -
+2023-12-11 17:07:58 info: GET /user/profile [36m304 283.655 ms - -
+2023-12-11 17:08:00 info: GET /appointment/get-upcoming-appointments [36m304 670.409 ms - -
+2023-12-11 17:08:25 info: GET /user/profile [36m304 213.268 ms - -
+2023-12-11 17:08:25 info: GET /appointment/get-upcoming-appointments [36m304 441.292 ms - -
+2023-12-11 17:08:29 info: GET /user/profile [36m304 214.374 ms - -
+2023-12-11 17:08:30 info: GET /appointment/get-upcoming-appointments [36m304 466.685 ms - -
+2023-12-11 17:08:31 info: GET /user/profile [36m304 191.412 ms - -
+2023-12-11 17:08:31 info: GET /appointment/get-upcoming-appointments [36m304 607.652 ms - -
+2023-12-11 17:08:45 info: GET /user/profile [36m304 155.715 ms - -
+2023-12-11 17:08:49 info: GET /appointment/get-upcoming-appointments [36m304 646.676 ms - -
+2023-12-11 17:09:10 info: GET /user/profile [36m304 263.623 ms - -
+2023-12-11 17:09:10 info: GET /appointment/get-upcoming-appointments [36m304 457.685 ms - -
+2023-12-11 17:13:30 info: GET /user/profile [36m304 184.459 ms - -
+2023-12-11 17:13:31 info: GET /appointment/get-upcoming-appointments [36m304 602.194 ms - -
+2023-12-11 17:14:15 info: GET /appointment/get-upcoming-appointments [36m304 422.251 ms - -
+2023-12-11 17:14:21 info: GET /appointment/get-upcoming-appointments [36m304 434.043 ms - -
+2023-12-11 17:14:23 info: GET /appointment/get-upcoming-appointments [36m304 429.727 ms - -
+2023-12-11 17:14:45 info: GET /user/profile [36m304 180.071 ms - -
+2023-12-11 17:14:46 info: GET /user/profile [36m304 184.510 ms - -
+2023-12-11 17:14:46 info: GET /appointment/get-upcoming-appointments [36m304 447.099 ms - -
+2023-12-11 17:14:47 info: GET /appointment/get-upcoming-appointments [36m304 449.199 ms - -
+2023-12-11 17:14:57 info: GET /user/profile [36m304 154.930 ms - -
+2023-12-11 17:14:58 info: GET /appointment/get-upcoming-appointments [36m304 533.214 ms - -
+2023-12-11 17:15:11 info: GET /user/profile [36m304 231.380 ms - -
+2023-12-11 17:15:12 info: GET /appointment/get-upcoming-appointments [36m304 501.253 ms - -
+2023-12-11 17:15:14 info: GET /appointment/get-upcoming-appointments [36m304 685.950 ms - -
+2023-12-11 17:15:43 info: GET /appointment/get-upcoming-appointments [36m304 559.172 ms - -
+2023-12-11 17:15:44 info: GET /appointment/get-upcoming-appointments [36m304 573.361 ms - -
+2023-12-11 17:15:56 info: GET /appointment/get-upcoming-appointments [36m304 575.680 ms - -
+2023-12-11 17:16:49 info: GET /appointment/get-upcoming-appointments [36m304 524.260 ms - -
+2023-12-11 17:16:55 info: GET /user/profile [36m304 162.316 ms - -
+2023-12-11 17:16:57 info: GET /appointment/get-upcoming-appointments [36m304 707.702 ms - -
+2023-12-11 17:16:58 info: GET /appointment/get-ongoing-appointments [32m200 507.157 ms - 35
+2023-12-11 17:17:43 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 17:17:43 info: GET /user/profile [33m401 8.974 ms - 1402
+2023-12-11 17:17:43 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 17:17:43 info: GET /staff/profile [33m401 5.289 ms - 1402
+2023-12-11 17:17:45 info: GET /user/profile [36m304 194.274 ms - -
+2023-12-11 17:17:45 info: GET /user/profile [36m304 196.962 ms - -
+2023-12-11 17:17:47 info: GET /appointment/get-upcoming-appointments [36m304 543.627 ms - -
+2023-12-11 17:18:30 info: GET /appointment/get-ongoing-appointments [36m304 565.288 ms - -
+2023-12-11 17:18:35 info: GET /user/profile [36m304 162.090 ms - -
+2023-12-11 17:18:37 info: GET /appointment/get-upcoming-appointments [36m304 509.228 ms - -
+2023-12-11 17:19:21 info: GET /appointment/get-upcoming-appointments [36m304 674.300 ms - -
+2023-12-11 17:19:37 info: GET /appointment/get-ongoing-appointments [36m304 5895.115 ms - -
+2023-12-11 17:19:38 info: GET /appointment/get-ongoing-appointments [32m200 4164.632 ms - 35
+2023-12-11 17:19:41 info: GET /appointment/get-upcoming-appointments [36m304 605.198 ms - -
+2023-12-11 17:19:42 info: GET /appointment/get-ongoing-appointments [36m304 672.141 ms - -
+2023-12-11 17:20:10 info: GET /staff/get-staffs [36m304 232.471 ms - -
+2023-12-11 17:20:14 info: GET /staff/get-staff/6577194f0529a2c62f98a49e [36m304 146.934 ms - -
+2023-12-11 17:20:18 info: POST /user/get-doctor-availability [32m200 137.071 ms - 1481
+2023-12-11 17:20:40 info: POST /appointment/makeAppointment [32m200 1301.897 ms - 213
+2023-12-11 17:20:52 info: GET /user/profile [36m304 159.142 ms - -
+2023-12-11 17:20:55 info: GET /appointment/confirmAppointment/5cf6bae1-e0e0-4cca-8bbc-a2e451fb3d52 [32m200 3337.542 ms - 12915
+2023-12-11 17:21:04 info: GET /appointment/get-upcoming-appointments [32m200 888.100 ms - 3369
+2023-12-11 17:21:07 info: GET /appointment/get-ongoing-appointments [36m304 764.044 ms - -
+2023-12-11 17:21:16 info: GET /appointment/get-upcoming-appointments [36m304 771.388 ms - -
+2023-12-11 17:22:10 error: 401 - Invalid login credentials - /user/login - POST - ::1
+2023-12-11 17:22:10 info: POST /user/login [33m401 150.593 ms - 453
+2023-12-11 17:22:10 error: 401 - Incorrect password - /staff/login - POST - ::1
+2023-12-11 17:22:10 info: POST /staff/login [33m401 247.616 ms - 358
+2023-12-11 17:22:16 error: 401 - Invalid login credentials - /user/login - POST - ::1
+2023-12-11 17:22:16 info: POST /user/login [33m401 183.630 ms - 453
+2023-12-11 17:22:16 error: 401 - Incorrect password - /staff/login - POST - ::1
+2023-12-11 17:22:16 info: POST /staff/login [33m401 202.744 ms - 358
+2023-12-11 17:22:23 error: 401 - Invalid login credentials - /user/login - POST - ::1
+2023-12-11 17:22:23 info: POST /user/login [33m401 217.823 ms - 453
+2023-12-11 17:22:23 info: POST /staff/login [32m200 503.807 ms - 3182
+2023-12-11 17:22:28 info: GET /appointment/get-upcoming-appointments [32m200 894.660 ms - 13122
+2023-12-11 17:22:33 info: GET /appointment/get-ongoing-appointments [32m200 481.794 ms - 35
+2023-12-11 17:23:01 info: GET /appointment/get-ongoing-appointments [36m304 574.388 ms - -
+2023-12-11 17:23:04 info: GET /appointment/get-upcoming-appointments [32m200 630.454 ms - 3574
+2023-12-11 17:23:06 info: GET /appointment/get-ongoing-appointments [36m304 431.209 ms - -
+2023-12-11 17:23:08 info: GET /appointment/get-upcoming-appointments [36m304 734.962 ms - -
+2023-12-11 17:23:09 info: GET /appointment/get-ongoing-appointments [36m304 434.594 ms - -
+2023-12-11 17:23:14 info: GET /appointment/get-upcoming-appointments [36m304 3040.517 ms - -
+2023-12-11 17:23:14 info: GET /appointment/get-ongoing-appointments [36m304 2893.519 ms - -
+2023-12-11 17:23:19 info: GET /appointment/get-ongoing-appointments [36m304 537.136 ms - -
+2023-12-11 17:23:21 info: GET /appointment/get-upcoming-appointments [36m304 647.128 ms - -
+2023-12-11 17:23:22 info: GET /appointment/get-ongoing-appointments [36m304 622.752 ms - -
+2023-12-11 17:23:23 info: GET /appointment/get-upcoming-appointments [36m304 758.838 ms - -
+2023-12-11 17:23:25 info: GET /appointment/get-ongoing-appointments [36m304 605.753 ms - -
+2023-12-11 17:23:27 info: GET /appointment/get-upcoming-appointments [36m304 675.125 ms - -
+2023-12-11 17:23:42 info: GET /appointment/get-ongoing-appointments [36m304 572.814 ms - -
+2023-12-11 17:23:44 info: GET /appointment/get-upcoming-appointments [36m304 685.984 ms - -
+2023-12-11 17:23:49 info: GET /appointment/get-ongoing-appointments [36m304 497.025 ms - -
+2023-12-11 17:23:51 info: GET /appointment/get-upcoming-appointments [36m304 797.242 ms - -
+2023-12-11 17:23:53 info: GET /appointment/get-completed-appointments [36m304 612.661 ms - -
+2023-12-11 17:24:06 info: GET /appointment/get-completed-appointments [36m304 479.540 ms - -
+2023-12-11 17:24:08 info: GET /appointment/get-ongoing-appointments [36m304 483.904 ms - -
+2023-12-11 17:24:10 info: GET /appointment/get-upcoming-appointments [36m304 985.215 ms - -
+2023-12-11 17:24:56 info: GET /appointment/get-completed-appointments [32m200 3321.593 ms - 3574
+2023-12-11 17:24:56 info: GET /appointment/get-completed-appointments [36m304 443.553 ms - -
+2023-12-11 17:24:56 info: GET /appointment/get-ongoing-appointments [36m304 1351.410 ms - -
+2023-12-11 17:25:00 info: GET /user/profile [32m200 253.095 ms - 9574
+2023-12-11 17:25:03 info: GET /appointment/get-upcoming-appointments [36m304 697.564 ms - -
+2023-12-11 17:25:04 info: GET /appointment/get-completed-appointments [36m304 424.902 ms - -
+2023-12-11 17:25:06 info: GET /appointment/get-ongoing-appointments [36m304 469.133 ms - -
+2023-12-11 17:25:11 info: GET /appointment/get-ongoing-appointments [36m304 595.467 ms - -
+2023-12-11 17:25:12 info: GET /appointment/get-upcoming-appointments [36m304 845.792 ms - -
+2023-12-11 17:25:14 info: GET /appointment/get-completed-appointments [36m304 726.956 ms - -
+2023-12-11 17:31:15 info: GET /appointment/get-completed-appointments [36m304 772.658 ms - -
+2023-12-11 17:31:17 info: GET /appointment/get-ongoing-appointments [36m304 536.331 ms - -
+2023-12-11 17:31:17 info: GET /appointment/get-ongoing-appointments [36m304 479.888 ms - -
+2023-12-11 17:31:19 info: GET /appointment/get-upcoming-appointments [36m304 837.599 ms - -
+2023-12-11 17:31:50 info: GET /appointment/get-upcoming-appointments [36m304 831.397 ms - -
+2023-12-11 17:32:13 info: GET /appointment/get-ongoing-appointments [36m304 501.821 ms - -
+2023-12-11 17:32:56 info: GET /appointment/get-upcoming-appointments [36m304 693.241 ms - -
+2023-12-11 17:32:57 info: GET /appointment/get-ongoing-appointments [36m304 627.118 ms - -
+2023-12-11 17:33:10 info: GET /appointment/get-upcoming-appointments [36m304 1880.768 ms - -
+2023-12-11 17:33:11 info: GET /appointment/get-ongoing-appointments [36m304 686.186 ms - -
+2023-12-11 17:33:12 info: GET /appointment/get-upcoming-appointments [36m304 731.515 ms - -
+2023-12-11 17:33:13 info: GET /appointment/get-ongoing-appointments [36m304 892.813 ms - -
+2023-12-11 17:33:21 info: GET /appointment/get-upcoming-appointments [36m304 887.472 ms - -
+2023-12-11 17:33:22 info: GET /appointment/get-ongoing-appointments [36m304 809.673 ms - -
+2023-12-11 17:33:35 info: GET /appointment/get-upcoming-appointments [36m304 1115.930 ms - -
+2023-12-11 17:33:36 info: GET /appointment/get-ongoing-appointments [36m304 842.342 ms - -
+2023-12-11 17:33:39 info: GET /appointment/get-upcoming-appointments [36m304 1139.159 ms - -
+2023-12-11 17:33:40 info: GET /appointment/get-ongoing-appointments [36m304 759.393 ms - -
+2023-12-11 17:33:42 info: GET /appointment/get-upcoming-appointments [36m304 1650.298 ms - -
+2023-12-11 17:33:43 info: GET /appointment/get-ongoing-appointments [36m304 760.221 ms - -
+2023-12-11 17:33:55 info: GET /appointment/get-upcoming-appointments [36m304 758.246 ms - -
+2023-12-11 17:33:56 info: GET /appointment/get-ongoing-appointments [36m304 912.485 ms - -
+2023-12-11 17:34:03 info: GET /appointment/get-upcoming-appointments [36m304 779.053 ms - -
+2023-12-11 17:34:04 info: GET /appointment/get-ongoing-appointments [36m304 466.643 ms - -
+2023-12-11 17:34:05 info: GET /appointment/get-upcoming-appointments [36m304 809.366 ms - -
+2023-12-11 17:34:05 info: GET /appointment/get-ongoing-appointments [36m304 671.683 ms - -
+2023-12-11 17:34:14 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 17:34:14 info: GET /user/profile [33m401 234.737 ms - 279
+2023-12-11 17:34:14 info: GET /staff/profile [32m200 164.487 ms - 3182
+2023-12-11 17:34:15 info: GET /appointment/get-upcoming-appointments [36m304 795.288 ms - -
+2023-12-11 17:34:17 info: GET /user/profile [32m200 192.031 ms - 9574
+2023-12-11 17:34:17 info: GET /user/profile [36m304 242.930 ms - -
+2023-12-11 17:34:18 info: GET /appointment/get-upcoming-appointments [36m304 731.600 ms - -
+2023-12-11 17:34:24 info: GET /appointment/get-upcoming-appointments [36m304 787.949 ms - -
+2023-12-11 17:34:25 info: GET /appointment/get-upcoming-appointments [36m304 791.541 ms - -
+2023-12-11 17:34:33 info: GET /appointment/get-upcoming-appointments [36m304 841.450 ms - -
+2023-12-11 17:34:34 info: GET /appointment/get-upcoming-appointments [36m304 808.686 ms - -
+2023-12-11 17:34:40 info: GET /appointment/get-upcoming-appointments [36m304 832.544 ms - -
+2023-12-11 17:34:41 info: GET /appointment/get-upcoming-appointments [36m304 789.638 ms - -
+2023-12-11 17:34:52 info: GET /appointment/get-upcoming-appointments [36m304 668.781 ms - -
+2023-12-11 17:34:54 info: GET /appointment/get-upcoming-appointments [36m304 896.009 ms - -
+2023-12-11 17:35:44 error: 400 - Clash detected with existing availability slots - /staff/set-available-date - POST - ::1
+2023-12-11 17:35:44 info: POST /staff/set-available-date [33m400 351.032 ms - 354
+2023-12-11 17:35:49 info: GET /staff/get-staffs [32m200 337.746 ms - 20991
+2023-12-11 17:35:52 info: GET /staff/get-staff/6577194f0529a2c62f98a49e [32m200 224.006 ms - 3182
+2023-12-11 17:35:57 info: POST /user/get-doctor-availability [32m200 151.228 ms - 1296
+2023-12-11 17:36:27 info: GET /user/profile [36m304 224.655 ms - -
+2023-12-11 17:36:29 info: POST /user/get-doctor-availability [32m200 231.287 ms - 1296
+2023-12-11 17:36:43 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 17:36:43 info: GET /user/profile [33m401 171.422 ms - 279
+2023-12-11 17:36:43 info: GET /staff/profile [36m304 263.632 ms - -
+2023-12-11 17:37:05 error: 401 - Invalid login credentials - /user/login - POST - ::ffff:127.0.0.1
+2023-12-11 17:37:05 info: POST /user/login [33m401 138.186 ms - 453
+2023-12-11 17:37:05 error: 401 - Incorrect password - /staff/login - POST - ::ffff:127.0.0.1
+2023-12-11 17:37:05 info: POST /staff/login [33m401 206.181 ms - 358
+2023-12-11 17:37:10 error: 401 - Invalid login credentials - /user/login - POST - ::ffff:127.0.0.1
+2023-12-11 17:37:10 info: POST /user/login [33m401 265.446 ms - 453
+2023-12-11 17:37:10 error: 401 - Incorrect password - /staff/login - POST - ::ffff:127.0.0.1
+2023-12-11 17:37:10 info: POST /staff/login [33m401 235.061 ms - 358
+2023-12-11 17:37:42 info: POST /user/login [32m200 575.829 ms - 7810
+2023-12-11 17:37:53 info: POST /user/login [32m200 499.392 ms - 9778
+2023-12-11 17:37:57 info: GET /appointment/get-upcoming-appointments [36m304 1144.433 ms - -
+2023-12-11 17:38:02 info: GET /appointment/get-ongoing-appointments [36m304 536.540 ms - -
+2023-12-11 17:38:03 info: GET /appointment/get-completed-appointments [36m304 874.186 ms - -
+2023-12-11 17:38:05 info: GET /appointment/get-upcoming-appointments [36m304 766.258 ms - -
+2023-12-11 17:38:44 info: GET /appointment/get-upcoming-appointments [32m200 823.285 ms - 13326
+2023-12-11 17:38:51 info: GET /staff/get-staffs [36m304 277.486 ms - -
+2023-12-11 17:38:54 info: GET /staff/get-staff/6573833ba7b0ffce13f5a1c0 [32m200 147.679 ms - 2059
+2023-12-11 17:38:56 info: POST /user/get-doctor-availability [32m200 162.101 ms - 371
+2023-12-11 17:39:00 info: GET /staff/get-staff/6573833ba7b0ffce13f5a1c0 [36m304 222.314 ms - -
+2023-12-11 17:39:03 info: GET /staff/get-staffs [36m304 425.905 ms - -
+2023-12-11 17:39:05 info: GET /staff/get-staff/65738231a7b0ffce13f5a119 [32m200 209.008 ms - 1659
+2023-12-11 17:39:09 info: GET /staff/get-staffs [36m304 395.169 ms - -
+2023-12-11 17:39:14 info: GET /staff/get-staff/65737fc0a7b0ffce13f59f86 [32m200 301.941 ms - 1724
+2023-12-11 17:39:23 info: GET /staff/get-staffs [36m304 426.590 ms - -
+2023-12-11 17:39:26 info: GET /staff/get-staff/6577194f0529a2c62f98a49e [36m304 227.070 ms - -
+2023-12-11 17:39:29 info: POST /user/get-doctor-availability [32m200 232.689 ms - 1296
+2023-12-11 17:39:59 error: 400 - Clash detected with existing availability slots - /staff/set-available-date - POST - ::1
+2023-12-11 17:39:59 info: POST /staff/set-available-date [33m400 686.891 ms - 354
+2023-12-11 17:45:33 info: GET /user/profile [32m200 195.428 ms - 9778
+2023-12-11 17:45:35 info: POST /user/get-doctor-availability [32m200 268.924 ms - 1296
+2023-12-11 17:50:27 info: GET /user/profile [36m304 274.154 ms - -
+2023-12-11 17:50:29 info: POST /user/get-doctor-availability [32m200 185.309 ms - 1111
+2023-12-11 17:51:37 info: POST /staff/register [32m200 825.907 ms - 1667
+2023-12-11 17:52:12 info: POST /staff/set-available-date [32m200 520.564 ms - 1877
+2023-12-11 17:52:19 info: GET /staff/get-staffs [32m200 307.252 ms - 22645
+2023-12-11 17:52:23 info: GET /staff/get-staff/65773e18e0193148e7af4666 [32m200 167.916 ms - 1838
+2023-12-11 17:52:24 info: POST /user/get-doctor-availability [32m200 214.581 ms - 186
+2023-12-11 17:52:35 info: POST /appointment/makeAppointment [32m200 1395.567 ms - 213
+2023-12-11 17:52:52 info: GET /user/profile [36m304 170.633 ms - -
+2023-12-11 17:52:56 info: GET /appointment/confirmAppointment/d6655057-46e4-4c39-a77b-4d3b5dd34a87 [32m200 3508.859 ms - 12009
+2023-12-11 17:53:07 info: GET /appointment/get-upcoming-appointments [32m200 843.288 ms - 5620
+2023-12-11 17:55:38 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 17:55:38 info: GET /user/profile [33m401 221.482 ms - 279
+2023-12-11 17:55:39 info: GET /staff/profile [32m200 281.019 ms - 1864
+2023-12-11 17:55:43 info: GET /appointment/get-upcoming-appointments [32m200 869.260 ms - 12011
+2023-12-11 17:56:07 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 17:56:07 info: GET /user/profile [33m401 251.710 ms - 279
+2023-12-11 17:56:07 info: GET /staff/profile [32m200 167.031 ms - 1864
+2023-12-11 17:56:08 info: GET /appointment/get-upcoming-appointments [32m200 469.934 ms - 35
+2023-12-11 17:56:10 info: GET /appointment/get-ongoing-appointments [32m200 927.622 ms - 2230
+2023-12-11 17:56:35 info: GET /appointment/get-ongoing-appointments [36m304 568.489 ms - -
+2023-12-11 17:56:38 info: GET /appointment/get-upcoming-appointments [32m200 770.636 ms - 3389
+2023-12-11 17:56:42 info: GET /appointment/get-ongoing-appointments [36m304 741.138 ms - -
+2023-12-11 17:56:43 info: GET /appointment/get-upcoming-appointments [36m304 647.205 ms - -
+2023-12-11 17:56:50 info: GET /appointment/get-ongoing-appointments [36m304 867.686 ms - -
+2023-12-11 17:56:51 info: GET /appointment/get-upcoming-appointments [36m304 665.881 ms - -
+2023-12-11 17:56:53 info: GET /appointment/get-ongoing-appointments [36m304 763.261 ms - -
+2023-12-11 17:56:55 info: GET /appointment/get-upcoming-appointments [36m304 821.810 ms - -
+2023-12-11 17:57:04 info: GET /appointment/get-ongoing-appointments [32m200 639.496 ms - 2230
+2023-12-11 17:57:06 info: GET /appointment/get-upcoming-appointments [32m200 665.833 ms - 3389
+2023-12-11 17:57:07 info: GET /appointment/get-ongoing-appointments [36m304 757.141 ms - -
+2023-12-11 17:57:08 info: GET /appointment/get-upcoming-appointments [36m304 744.262 ms - -

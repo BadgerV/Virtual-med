@@ -9,6 +9,7 @@ import io from "socket.io-client";
 import { useDispatch, useSelector } from "react-redux";
 import { myProfile } from "./redux/user/UserSlice";
 import FindDoctor from "./pages/FindDoctor/findDoctor";
+import { setNotification } from "./redux/notification/NotifcationSlice";
 
 import {
   PremiumUsersOnly,
@@ -93,7 +94,9 @@ const App = () => {
   }, [user]);
 
   useEffect(() => {
-    console.log(notificationID);
+    if (notificationID !== "") {
+      dispatch(setNotification(notificationID));
+    }
   }, [notificationID]);
 
   return (
@@ -126,7 +129,8 @@ const App = () => {
               <Route path="/verify" element={<VerifyPage />} />
 
               <Route element={<PrivateRoutes />}>
-                <Route path="/chat" element={<Chat />} />
+                <Route path="/chat/:id" element={<Chat />} />
+                <Route path="/my-appointments" element={<MyAppointments />} />
                 <Route path="/profile" element={<Profile />} />
                 <Route
                   path="/make-appointment/:id"
@@ -137,10 +141,7 @@ const App = () => {
                 <Route path="/notifications" element={<NotificationPage />} />
               </Route>
 
-              <Route element={<PremiumUsersOnly />}>
-                <Route path="/chat" element={<Chat />} />
-                <Route element={<MyAppointments />} path="/my-appointments" />
-              </Route>
+              <Route element={<PremiumUsersOnly />}></Route>
             </Routes>
 
             {/* <Footer /> */}

@@ -1,0 +1,78 @@
+.appointment-card {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+  width: 100%;
+
+  gap: 2em;
+  box-shadow: 4px 8px 24px 0px #15151533;
+  border-radius: 20px;
+
+  cursor: pointer;
+}
+
+.apapointment-card-middle {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1em;
+
+  justify-content: space-between;
+}
+
+.appointment-name {
+  font-size: 0.95em;
+
+  font-weight: 500;
+}
+
+.appointment-profession,
+.appointment-date-card {
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.appointment-card__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.appointment-card__button {
+  font-size: 0.9em;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+}
+
+.appointment-card__button2 {
+  color: white;
+  background-color: #023382;
+}
+
+.appointment-card__button1 {
+  background-color: #0233821a;
+  outline: 1px solid #023382;
+  border: 1px solid #0233821a;
+}
+
+.apapointment-card-right img {
+  background-color: #02338233;
+  border-radius: 50%;
+  padding: 0.8em;
+}
+
+.appointment-left-img {
+  height: 100%;
+  min-height: 6em;
+  max-height: 6em;
+}
+
+.notes-container span {
+  font-size: 0.9em;
+}
+
+.inbold {
+  font-weight: 600;
+}

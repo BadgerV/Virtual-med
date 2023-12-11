@@ -90,8 +90,7 @@ export const loginUser = createAsyncThunk(
 
         localStorage.setItem("token", token);
 
-        console.log(response.data);
-
+        return response.data;
 
       } catch (error) {
         console.log(error);
@@ -403,6 +402,8 @@ const userSlice = createSlice({
         state.loading = false;
         state.isSuccess = true;
         state.loadingUserProfile = false;
+
+        console.log(state.user)
       })
       .addCase(myProfile.rejected, (state, action) => {
         state.loading = false;

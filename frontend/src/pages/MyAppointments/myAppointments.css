@@ -1,0 +1,53 @@
+.appointment-page {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.appointment-page__header {
+  font-weight: 600;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+.appointment-headers {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  margin-top: 3em;
+}
+
+.appointment-headers span {
+  cursor: pointer;
+  font-weight: 500;
+  border: 2px solid white;
+  padding: 0.2em 0.5em;
+}
+
+.appointment-page-main {
+  display: flex;
+
+
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  width: 100%;
+}
+
+.app-doctor-card-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.appointment-span {
+    font-weight: bold;
+    margin: 1em;
+}

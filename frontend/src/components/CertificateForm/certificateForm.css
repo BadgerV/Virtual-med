@@ -57,6 +57,10 @@
   cursor: pointer;
 }
 
+.small-comp {
+  font-size: 0.93em;
+}
+
 @media (max-width: 720px) {
   .certification-form {
     padding: 1.5em;

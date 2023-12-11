@@ -14,14 +14,17 @@ import {
   setDegreeCertificate,
 } from "../../redux/doctors/FormSlice";
 import { useDispatch } from "react-redux";
+import { parseISO } from "date-fns/esm";
 
-const EducationForm = ({setLocalIsLoading}) => {
+const EducationForm = ({ setLocalIsLoading }) => {
   const dispatch = useDispatch();
 
-  const [selectedDate, setSelectedDate] = useState(null);
-  const [major, setMajor] = useState("");
-  const [university, setUniversity] = useState("");
-  const [degree, setDegree] = useState("");
+  const [selectedDate, setSelectedDate] = useState();
+  const [major, setMajor] = useState(localStorage.getItem("major") || "");
+  const [university, setUniversity] = useState(
+    localStorage.getItem("university")
+  );
+  const [degree, setDegree] = useState(localStorage.getItem("degree") || "");
 
   //SEND IMAGE TO CLOUDINARY
   // const cloudinary = new Cloudinary({
@@ -32,7 +35,7 @@ const EducationForm = ({setLocalIsLoading}) => {
 
   const [selectedFile, setSelectedFile] = useState(null);
   const [selectedFileName, setSelectedFileName] = useState("");
-  const [imageUrl, setImageUrl] = useState("");
+  const [degreeUrl, setDegreeUrl] = useState(localStorage.getItem("degreeUrl"));
 
   const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
@@ -49,7 +52,7 @@ const EducationForm = ({setLocalIsLoading}) => {
       .post("https://api.cloudinary.com/v1_1/dfn3xhl0a/upload", formData)
       .then((response) => {
         console.log(response.data["secure_url"]);
-        setImageUrl(response.data["secure_url"]);
+        setDegreeUrl(response.data["secure_url"]);
         setLocalIsLoading(false);
       })
       .catch((error) => {
@@ -63,24 +66,28 @@ const EducationForm = ({setLocalIsLoading}) => {
   };
 
   useEffect(() => {
-    dispatch(setDegreeCertificate(imageUrl));
-  }, [imageUrl]);
+    localStorage.setItem("degreeUrl", degreeUrl);
+    dispatch(setDegreeCertificate(degreeUrl));
+  }, [degreeUrl]);
 
   useEffect(() => {
     if (selectedDate) {
-      dispatch(setGraduationDate(selectedDate.getTime()));
+      dispatch(setGraduationDate(selectedDate));
     }
   }, [selectedDate]);
 
   useEffect(() => {
+    localStorage.setItem("degree", degree);
     dispatch(setdegree(degree));
   }, [degree]);
 
   useEffect(() => {
+    localStorage.setItem("major", major);
     dispatch(setmajor(major));
   }, [major]);
 
   useEffect(() => {
+    localStorage.setItem("university", university);
     dispatch(setuniversity(university));
   }, [university]);
 
@@ -94,17 +101,29 @@ const EducationForm = ({setLocalIsLoading}) => {
     <div className="educational-form">
       <div className="education-label_and_input">
         <label>Degree *</label>
-        <input type="text" onChange={(e) => setDegree(e.target.value)} />
+        <input
+          type="text"
+          value={degree}
+          onChange={(e) => setDegree(e.target.value)}
+        />
       </div>
 
       <div className="education-label_and_input">
         <label>Major *</label>
-        <input type="text" onChange={(e) => setMajor(e.target.value)} />
+        <input
+          type="text"
+          value={major}
+          onChange={(e) => setMajor(e.target.value)}
+        />
       </div>
 
       <div className="education-label_and_input">
         <label>University *</label>
-        <input type="text" onChange={(e) => setUniversity(e.target.value)} />
+        <input
+          type="text"
+          value={university}
+          onChange={(e) => setUniversity(e.target.value)}
+        />
       </div>
 
       <div className="education-duo-inputs-container">
@@ -130,6 +149,7 @@ const EducationForm = ({setLocalIsLoading}) => {
         <label htmlFor="">Degree Certificate *</label>
         <div className="input-file-container">
           <input
+            placeholder={degreeUrl}
             type="file"
             onChange={(e) => {
               handleFileChange(e);
@@ -137,9 +157,15 @@ const EducationForm = ({setLocalIsLoading}) => {
           />
           <img src="/assets/cloud-icon.svg" alt="" />
           <div className="input-chaarde">
-            {selectedFile
-              ? selectedFileName
-              : "Upload File (max file size 10mb)"}
+            {selectedFile ? (
+              selectedFileName
+            ) : degreeUrl ? (
+              <>
+                <span>File Uploaded</span>
+              </>
+            ) : (
+              "Upload File (max file size 10mb)"
+            )}
           </div>
         </div>
       </div>

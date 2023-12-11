@@ -25,7 +25,6 @@ const PrivateRoutes = () => {
 export const PremiumUsersOnly = () => {
   const user = useSelector((state) => state.userSlice?.user);
   const staff = useSelector((state) => state.formSlice?.staff);
-
   const loadingUserProfile = useSelector(
     (state) => state.userSlice.loadingUserProfile
   );
@@ -37,13 +36,13 @@ export const PremiumUsersOnly = () => {
   }, [loadingUserProfile]);
 
   if (!loading) {
-    if (user?.isPremium === true || staff) {
+    if (user?.isPremium === true || staff || user?.accountType === "staff") {
       return <Outlet />;
     } else {
-      <Navigate to="/" />;
+      return <Navigate to="/" />;
     }
-    return <LoadingComponennt />;
   }
+
   return <LoadingComponennt />;
 };
 

@@ -186,3 +186,33 @@ export function parseDateWithMoment(dateString) {
 
   return dateObject;
 }
+
+export function formatDate(dateString) {
+  const options = { day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: 'numeric' };
+  const formattedDate = new Intl.DateTimeFormat('en-NG', options).format(new Date(dateString));
+
+  const day = new Intl.DateTimeFormat('en-NG', { day: 'numeric' }).format(new Date(dateString));
+  const month = new Intl.DateTimeFormat('en-NG', { month: 'long' }).format(new Date(dateString));
+  const year = new Intl.DateTimeFormat('en-NG', { year: 'numeric' }).format(new Date(dateString));
+  const time = new Intl.DateTimeFormat('en-NG', { hour: 'numeric', minute: 'numeric' }).format(new Date(dateString));
+
+  const formattedString = `${day}th ${month} ${year} | ${time}`;
+  return formattedString;
+}
+
+
+export function truncateString(inputString, maxLength) {
+  if (
+    typeof inputString !== "string" ||
+    typeof maxLength !== "number" ||
+    maxLength <= 0
+  ) {
+    return "Invalid input";
+  }
+
+  if (inputString.length <= maxLength) {
+    return inputString;
+  } else {
+    return inputString.substring(0, maxLength) + "...";
+  }
+}

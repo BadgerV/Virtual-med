@@ -20,7 +20,11 @@ const OthersForm = () => {
   const [hourlyPrice, setHourlyPrice] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
 
-  const [proofLink, setProofLink] = useState("");
+  const [proofLink, setProofLink] = useState(
+    localStorage.getItem("proofLink") !== null
+      ? localStorage.getItem("proofLink")
+      : ""
+  );
 
   const handleProofUpload = (file, setLinkState) => {
     const formData = new FormData();
@@ -39,21 +43,25 @@ const OthersForm = () => {
   };
 
   useEffect(() => {
+    localStorage.setItem("proofLink", proofLink);
     dispatch(setproofofidentity(proofLink));
   }, [proofLink]);
 
-
   useEffect(() => {
+    localStorage.setItem("phoneNumber", phoneNumber);
     dispatch(setphonenumber(phoneNumber));
   }, [phoneNumber]);
   useEffect(() => {
+    localStorage.setItem("location", location);
     dispatch(setlocation(location));
   }, [location]);
   useEffect(() => {
+    localStorage.setItem("hourlyPrice", hourlyPrice);
     dispatch(sethourlyprice(hourlyPrice));
   }, [hourlyPrice]);
 
   useEffect(() => {
+    localStorage.setItem("speciality", speciality);
     dispatch(setspeciality(speciality));
   }, [speciality]);
 
@@ -62,8 +70,6 @@ const OthersForm = () => {
       handleProofUpload(proof, setProofLink);
     }
   }, [proof]);
-
-
 
   return (
     <div className="others-form">
@@ -76,7 +82,13 @@ const OthersForm = () => {
           }}
         />
         <span className="others-fake_container">
-          {proof ? proof.name : "Proof of identity"}
+          {proof ? (
+            proof.name
+          ) : proofLink ? (
+            <span className="small-comp">File Uploaded</span>
+          ) : (
+            "Proof of identity"
+          )}
         </span>
       </div>
 

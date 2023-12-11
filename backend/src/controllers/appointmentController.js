@@ -58,6 +58,140 @@ export const fetchAppointments = catchAsync(async (req, res) => {
   }
 });
 
+export const fetchCompletedAppointments = catchAsync(async (req, res) => {
+  const isUser = req.user ? true : false;
+  console.log(isUser);
+
+  if (isUser) {
+    const foundUser = await User.findOne({ _id: req.user._id });
+
+    if (!foundUser) {
+      throw new AppError("User does not exist", 400);
+    }
+
+    if (foundUser.isPremium == false) {
+      throw new AppError("Become a premium user to enjoy this feature", 400);
+    }
+
+    const appointments = await Appointment.find({
+      patientId: req.user._id,
+      status: "completed", // Assuming the status property is named 'status' in your model
+    }).populate("doctorId");
+
+    if (appointments.length < 1) {
+      res.send("You don't have any appointments yet");
+    } else {
+      res.status(200).send(appointments);
+    }
+  } else {
+    const foundStaff = await Staff.findOne({ _id: req.staff._id });
+
+    if (!foundStaff) {
+      throw new AppError("User does not exist", 400);
+    }
+
+    const appointments = await Appointment.find({
+      doctorId: req.staff._id,
+    }).populate("doctorId");
+
+    if (appointments.length < 1) {
+      res.send("You don't have any appointments yet");
+    } else {
+      res.status(200).send(appointments);
+    }
+  }
+});
+
+export const fetchUpcomingAppointments = catchAsync(async (req, res) => {
+  const isUser = req.user ? true : false;
+  console.log(isUser);
+
+  if (isUser) {
+    const foundUser = await User.findOne({ _id: req.user._id });
+
+    if (!foundUser) {
+      throw new AppError("User does not exist", 400);
+    }
+
+    if (foundUser.isPremium == false) {
+      throw new AppError("Become a premium user to enjoy this feature", 400);
+    }
+
+    const appointments = await Appointment.find({
+      patientId: req.user._id,
+      status: "confirmed", // Assuming the status property is named 'status' in your model
+    }).populate("doctorId");
+
+    if (appointments.length < 1) {
+      res.send("You don't have any appointments yet");
+    } else {
+      res.status(200).send(appointments);
+    }
+  } else {
+    const foundStaff = await Staff.findOne({ _id: req.staff._id });
+
+    if (!foundStaff) {
+      throw new AppError("User does not exist", 400);
+    }
+
+    const appointments = await Appointment.find({
+      doctorId: req.staff._id,
+      status: "confirmed",
+    }).populate("doctorId patientId");
+
+    if (appointments.length < 1) {
+      res.send("You don't have any appointments yet");
+    } else {
+      res.status(200).send(appointments);
+    }
+  }
+});
+
+export const fetchOngoingAppointments = catchAsync(async (req, res) => {
+  const isUser = req.user ? true : false;
+  console.log(isUser);
+
+  if (isUser) {
+    const foundUser = await User.findOne({ _id: req.user._id });
+
+    if (!foundUser) {
+      throw new AppError("User does not exist", 400);
+    }
+
+    if (foundUser.isPremium == false) {
+      throw new AppError("Become a premium user to enjoy this feature", 400);
+    }
+
+    const appointments = await Appointment.find({
+      patientId: req.user._id,
+      status: "started", // Assuming the status property is named 'status' in your model
+    }).populate("doctorId");
+
+    if (appointments.length < 1) {
+      res.send("You don't have any appointments yet");
+    } else {
+      res.status(200).send(appointments);
+    }
+  } else {
+    const foundStaff = await Staff.findOne({ _id: req.staff._id });
+
+    if (!foundStaff) {
+      throw new AppError("User does not exist", 400);
+    }
+
+    const appointments = await Appointment.find({
+      doctorId: req.staff._id,
+      status: "started",
+    }).populate("doctorId");
+
+    if (appointments.length < 1) {
+      res.send("You don't have any appointments yet");
+    } else {
+      res.status(200).send(appointments);
+    }
+  }
+});
+
 const isDoctorAvailable = (doctorAvailability, appointmentTime) => {
   const requestedTime = new Date(appointmentTime);
 
@@ -129,7 +263,7 @@ const payStack = {
         email: email,
         amount: price * 100,
         reference: reference,
-        callback_url: "https://dd22-105-113-96-194.ngrok-free.app/verify",
+        callback_url: "https://e9d4-105-112-26-10.ngrok-free.app/verify",
       });
       // options
 
@@ -366,7 +500,7 @@ export const confirmAppointment = catchAsync(async (req, res) => {
 
   const updatedAppointment = await Appointment.findOneAndUpdate(
     { paystackRef },
-    { $set: { status: "confirmed" } },
+    { $set: { status: "confirmed", chatId: FullChat._id } },
     { new: true }
   ).populate("doctorId patientId");
 
@@ -412,7 +546,7 @@ cron.schedule("* * * * *", async () => {
     appointments.forEach(async (appointment) => {
       const { appointmentTime, duration, status } = appointment;
 
-      if (status !== "active" && status !== "expired") {
+      if (status !== "started" && status !== "completed") {
         // Calculate the end time of the appointment
         const endTime = moment(appointmentTime).add(duration, "minutes");
 
@@ -423,13 +557,13 @@ cron.schedule("* * * * *", async () => {
         if (now.isAfter(appointmentTime) && now.isBefore(endTime)) {
           // Update status to 'active'
           await Appointment.findByIdAndUpdate(appointment._id, {
-            status: "active",
+            status: "started",
           });
           console.log(`Appointment ${appointment._id} is now active.`);
         } else if (now.isAfter(endTime)) {
           // Update status to 'expired'
           await Appointment.findByIdAndUpdate(appointment._id, {
-            status: "expired",
+            status: "completed",
           });
           console.log(`Appointment ${appointment._id} has expired.`);
         }
@@ -438,6 +572,43 @@ cron.schedule("* * * * *", async () => {
   } catch (error) {
     console.error("Error checking appointments:", error);
   }
+});
+
+const checkAndRemoveAvailabilityOfStaffs = async () => {
+  try {
+    // Find all staff
+    const staffList = await Staff.find();
+
+    // Loop through each staff
+    staffList.forEach(async (staff) => {
+      const { availability } = staff;
+
+      // Filter availability array to keep only future availability
+      const updatedAvailability = availability.filter((slot) => {
+        const { endTime } = slot;
+
+        // Compare endTime with the current time
+        return moment(endTime).isAfter(moment());
+      });
+
+      // Update staff's availability with the filtered array
+      await Staff.findByIdAndUpdate(staff._id, {
+        availability: updatedAvailability,
+      });
+
+      console.log(`Updated availability for staff ${staff._id}`);
+    });
+
+    console.log("Availability check completed.");
+  } catch (error) {
+    console.error("Error checking availability:", error);
+  }
+};
+
+// Schedule the function to run every minute
+cron.schedule("* * * * *", () => {
+  console.log("Running availability check task...");
+  checkAndRemoveAvailabilityOfStaffs();
 });
 
 // cron.schedule("* * * * *", async () => {

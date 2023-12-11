@@ -2,19 +2,47 @@ import { useEffect, useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { signOut } from "../../redux/user/UserSlice";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const isUser = useSelector((state) => state?.userSlice.user);
   const isStaff = useSelector((state) => state?.formSlice.staff);
 
-  useEffect(() => {
-    console.log(isUser?.isPremium);
-  }, [isUser]);
-
   const handleCloseModal = () => {
     setIsModalOpen(false);
+  };
+
+  const [hovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const [canSetAvilableDates, setCanSetAvailableDates] = useState(false);
+
+  useEffect(() => {
+    const isTrue = isStaff !== null || isUser?.accountType === "staff";
+
+    setCanSetAvailableDates(isTrue);
+  }, [isUser, isStaff]);
+
+  const handleSignOut = () => {
+    dispatch(signOut());
+
+    localStorage.removeItem("token");
+
+    navigate("/signin");
   };
 
   return (
@@ -79,14 +107,16 @@ const Navbar = () => {
             className="medcon-logo"
             alt="logo"
           />
-          <span>
-            MedCon
-          </span>
+          <span>MedCon</span>
         </div>
 
         <div
           className="navbar-middle"
-          style={isUser?.isPremium ? { flex: 0.6 } : {}}
+          style={
+            isUser?.isPremium || isUser?.accountType === "staff" || isStaff
+              ? { flex: 0.6 }
+              : {}
+          }
         >
           <Link className="navbar-link" to="/">
             Home
@@ -97,7 +127,7 @@ const Navbar = () => {
           <Link className="navbar-link" to="/finddoctor">
             Doctors
           </Link>
-          {isUser?.isPremium ? (
+          {isUser?.isPremium || isUser?.accountType === "staff" || isStaff ? (
             <Link
               className="navbar-link"
               to="/my-appointments"
@@ -115,11 +145,43 @@ const Navbar = () => {
 
         {isUser || isStaff ? (
           <div className="navbar-right">
-            <button className="my-account-button">
-              <img src="/assets/avatar-mini.svg" alt="avatar mini" className="nav-avatar-mini" />
+            <button
+              className="my-account-button"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <img
+                src="/assets/avatar-mini.svg"
+                alt="avatar mini"
+                className="nav-avatar-mini"
+              />
               My Account
+              <div
+                className="buttonModal"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                style={hovered ? { display: "flex" } : {}}
+              >
+                <Link
+                  to="/get-available-dates"
+                  className="buttonModal-button"
+                  style={
+                    canSetAvilableDates
+                      ? { display: "block" }
+                      : { display: "none" }
+                  }
+                >
+                  Set available dates
+                </Link>
+                <Link
+                  to="/signin"
+                  className="buttonModal-button"
+                  onClick={handleSignOut}
+                >
+                  Logout
+                </Link>
+              </div>
             </button>
-
             <div className="navbar-mobile-devices">
               <img
                 src="/assets/menu-icon.svg"

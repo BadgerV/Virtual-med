@@ -7,7 +7,6 @@ import {
   setFirstName,
   setPassword,
   setGender,
-  setLocation,
   setLastName,
   setEmail,
   setDateOfBirth,
@@ -17,13 +16,26 @@ import { useDispatch, useSelector } from "react-redux";
 import DatePicker from "react-datepicker";
 
 const BasicInfoForm = () => {
-  const firstName = useSelector((state) => state.formSlice.firstName);
-  const lastName = useSelector((state) => state.formSlice.lastName);
-  const email = useSelector((state) => state.formSlice.email);
-  const password = useSelector((state) => state.formSlice.password);
-  const gender = useSelector((state) => state.formSlice.gender);
-  const location = useSelector((state) => state.formSlice.location);
-  const dateOfBirth = useSelector((state) => state.formSlice.dateOfBirth);
+  const firstName =
+    localStorage.getItem("firstName") !== null
+      ? localStorage.getItem("firstName")
+      : "";
+  const lastName =
+    localStorage.getItem("lastName") !== null
+      ? localStorage.getItem("lastName")
+      : "";
+  const email =
+    localStorage.getItem("email") !== null ? localStorage.getItem("email") : "";
+  const password =
+    localStorage.getItem("password") !== null
+      ? localStorage.getItem("password")
+      : "";
+  const gender =
+    localStorage.getItem("gender") !== null
+      ? localStorage.getItem("gender")
+      : "";
+  const location = localStorage.getItem("location");
+  const dateOfBirth = localStorage.getItem("dateOfBirth");
 
   const [formData, setFormData] = useState({
     firstName: firstName,
@@ -59,115 +71,36 @@ const BasicInfoForm = () => {
     setSelectedDate(date);
   };
 
-  function getFormattedDateOfBirth(day, month, year) {
-    // Ensure the input values are valid numbers
-    const parsedDay = parseInt(day, 10);
-    const parsedMonth = parseInt(month, 10);
-    const parsedYear = parseInt(year, 10);
+  // function getFormattedDateOfBirth(day, month, year) {
+  //   // Ensure the input values are valid numbers
+  //   const parsedDay = parseInt(day, 10);
+  //   const parsedMonth = parseInt(month, 10);
+  //   const parsedYear = parseInt(year, 10);
 
-    // Check if the parsed values are valid numbers and within reasonable ranges
-    if (
-      isNaN(parsedDay) ||
-      isNaN(parsedMonth) ||
-      isNaN(parsedYear) ||
-      parsedDay < 1 ||
-      parsedDay > 31 ||
-      parsedMonth < 1 ||
-      parsedMonth > 12 ||
-      parsedYear < 1900 ||
-      parsedYear > new Date().getFullYear()
-    ) {
-      // Return an error message or handle invalid input as needed
-      return "Invalid date of birth";
-    }
-
-    // Create a Date object using the provided values
-    const dob = new Date(parsedYear, parsedMonth - 1, parsedDay);
-
-    // Format the date as "YYYY-MM-DD"
-    const formattedDate = dob.toISOString().split("T")[0];
-
-    return formattedDate;
-  }
-
-  // Example usage:
-  // const formattedDateOfBirth = getFormattedDateOfBirth("15", "6", "1990");
-  // console.log(formattedDateOfBirth); // Output: "1990-06-15"
-
-  // const []
-  // const customStyles = {
-  //   control: (provided) => ({
-  //     ...provided,
-  //     borderRadius: "20px",
-  //     borderColor: "#D3D3D3",
-  //     padding: "0.4em 1em",
-  //     // fontSize: "0.9em", // Font size for the container
-  //     width: "100%",
-  //     // maxWidth: '1000px',
-  //     // margin: '0 auto',
-  //     color: "#D3D3D3", // Text color for the container
-  //     fontSize: "0.9em",
-  //     fontWeight: "400",
-  //   }),
-  //   indicatorSeparator: () => ({
-  //     display: "none",
-  //   }),
-  //   dropdownIndicator: (provided) => ({
-  //     ...provided,
-  //     color: "#D3D3D3",
-  //   }),
-  //   menu: (provided) => ({
-  //     color: "#d3d3d3",
-  //     ...provided,
-  //     fontSize: "0.9em", // Font size for the dropdown menu
-  //   }),
-  //   option: (provided) => ({
-  //     ...provided,
-  //     fontSize: "0.9em", // Font size for individual options in the dropdown
-  //     color: "black",
-  //   }),
-  //   placeholder: (provided) => ({
-  //     ...provided,
-  //     fontSize: "1em", // Font size for the placeholder
-  //     color: "#D3D3D3",
-  //   }),
-  // };
-  // const options = [
-  //   { value: "option1", label: "Option 1" },
-  //   { value: "option2", label: "Option 2" },
-  //   { value: "option3", label: "Option 3" },
-  // ];
-
-  // const [selectedDay, setSelectedDay] = useState("");
-  // const [selectedMonth, setSelectedMonth] = useState("");
-  // const [selectedYear, setSelectedYear] = useState("");
-
-  // useEffect(() => {
-  //   var dob;
-  //   if (selectedDay !== "" && selectedMonth !== "" && selectedYear !== "") {
-  //     dob = getFormattedDateOfBirth(selectedDay, selectedMonth, selectedYear);
+  //   // Check if the parsed values are valid numbers and within reasonable ranges
+  //   if (
+  //     isNaN(parsedDay) ||
+  //     isNaN(parsedMonth) ||
+  //     isNaN(parsedYear) ||
+  //     parsedDay < 1 ||
+  //     parsedDay > 31 ||
+  //     parsedMonth < 1 ||
+  //     parsedMonth > 12 ||
+  //     parsedYear < 1900 ||
+  //     parsedYear > new Date().getFullYear()
+  //   ) {
+  //     // Return an error message or handle invalid input as needed
+  //     return "Invalid date of birth";
   //   }
 
-  //   // Update the formData state
-  //   setFormData((prevFormData) => ({
-  //     ...prevFormData,
-  //     dateOfBirth: dob,
-  //   }));
+  //   // Create a Date object using the provided values
+  //   const dob = new Date(parsedYear, parsedMonth - 1, parsedDay);
 
-  //   console.log(formData);
-  // }, [selectedDay, selectedMonth, selectedYear]);
+  //   // Format the date as "YYYY-MM-DD"
+  //   const formattedDate = dob.toISOString().split("T")[0];
 
-  // const handleDayChange = (e) => {
-  //   setSelectedDay(e.target.value);
-  // };
-
-  // const handleMonthChange = (e) => {
-  //   setSelectedMonth(e.target.value);
-  // };
-
-  // const handleYearChange = (e) => {
-  //   setSelectedYear(e.target.value);
-  // };
+  //   return formattedDate;
+  // }
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -180,23 +113,27 @@ const BasicInfoForm = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    localStorage.setItem("email", formData.email);
+
     dispatch(setEmail(formData.email));
   }, [formData.email]);
 
   useEffect(() => {
     dispatch(setFirstName(formData.firstName));
+    localStorage.setItem("firstName", formData.firstName);
   }, [formData.firstName]);
 
   useEffect(() => {
     if (formData.lastName !== "") {
+      localStorage.setItem("lastName", formData.lastName);
+
       dispatch(setLastName(formData.lastName));
     }
   }, [formData.lastName]);
 
   useEffect(() => {
-    if (formData.password !== "") {
+      localStorage.setItem("password", formData.password);
       dispatch(setPassword(formData.password));
-    }
   }, [formData.password]);
 
   useEffect(() => {
@@ -205,6 +142,8 @@ const BasicInfoForm = () => {
     }
   }, [formData.gender]);
   useEffect(() => {
+    localStorage.setItem("dateOfBirth", selectedDate?.getTime());
+
     dispatch(setDateOfBirth(selectedDate?.getTime()));
   }, [selectedDate]);
   // useEffect(() => {
@@ -242,7 +181,11 @@ const BasicInfoForm = () => {
   };
 
   const [passport, setPassport] = useState(null);
-  const [passportLink, setPassportLink] = useState("");
+  const [passportLink, setPassportLink] = useState(
+    localStorage.getItem("passportLink")
+      ? localStorage.getItem("passportLink")
+      : ""
+  );
 
   useEffect(() => {
     if (passport !== null) {
@@ -252,6 +195,8 @@ const BasicInfoForm = () => {
 
   useEffect(() => {
     if (passportLink !== "") {
+      localStorage.setItem("passportLink", passportLink);
+
       dispatch(setPassportImage(passportLink));
     }
   }, [passportLink]);
@@ -262,9 +207,13 @@ const BasicInfoForm = () => {
         <img
           type="image"
           src={
-            passport ? URL.createObjectURL(passport) : "/assets/avatar-fake.png"
+            passportLink
+              ? passportLink
+              : passport
+              ? URL.createObjectURL(passport)
+              : "/assets/avatar-fake.png"
           }
-          style={{maxHeight : "8em", maxWidth : "8em"}}
+          style={{ maxHeight: "8em", maxWidth: "8em" }}
         />
         <input
           type="file"

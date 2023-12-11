@@ -94,6 +94,10 @@
     padding: 0.8em 2em;
     border-radius: 20px;
 }
+.input-chaarde {
+  max-width: 340px;
+  overflow-x: hidden;
+}
 
 @media (max-width: 720px) {
   .educational-form {
