@@ -72,7 +72,7 @@ const App = () => {
 
   const [notificationID, setNotificationID] = useState("");
 
-  const socket = io("http://localhost:8000"); // Replace with the actual server URL
+  const socket = io("https://medconnig.netlify.app"); // Replace with the actual server URL
   useEffect(() => {
     // Listen for appointment status changes
 

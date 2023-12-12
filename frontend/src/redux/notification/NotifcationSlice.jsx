@@ -2,6 +2,8 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 const DEVELOPMENT = "http://localhost:8000";
+const PROD = "https://virtual-med-backend.onrender.com";
+
 
 const initialState = {
   notification: null,
@@ -17,7 +19,7 @@ export const getNotificationFromId = createAsyncThunk(
     try {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        `${DEVELOPMENT}/notification/get-notification-byID?id=${id}`, // Corrected the URL and added the correct parameter format
+        `${PROD}/notification/get-notification-byID?id=${id}`, // Corrected the URL and added the correct parameter format
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -39,7 +41,7 @@ export const getAllNotifications = createAsyncThunk(
     const token = localStorage.getItem("token");
 
     try {
-      const response = await axios.get(`${DEVELOPMENT}/user/notifcations`, {
+      const response = await axios.get(`${PROD}/user/notifcations`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

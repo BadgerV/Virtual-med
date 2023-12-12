@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const PRODUCTION = "https://virtual-med-backend.onrender.com";
+const PROD = "https://virtual-med-backend.onrender.com";
 const DEVELOPMENT = "http://localhost:8000";
 
 const initialState = {
@@ -24,7 +24,7 @@ export const registerUser = createAsyncThunk(
     // console.log("working")
     try {
       const response = await axios.post(
-        `${DEVELOPMENT}/user/register`,
+        `${PROD}/user/register`,
         {
           firstName,
           lastName,
@@ -58,7 +58,7 @@ export const loginUser = createAsyncThunk(
   async ({ email, password }, thunkAPI) => {
     try {
       const response = await axios.post(
-        `${DEVELOPMENT}/user/login`,
+        `${PROD}/user/login`,
         {
           email,
           password,
@@ -75,7 +75,7 @@ export const loginUser = createAsyncThunk(
     } catch (error) {
       try {
         const response = await axios.post(
-          `${DEVELOPMENT}/staff/login`,
+          `${PROD}/staff/login`,
           {
             email,
             password,
@@ -103,7 +103,7 @@ export const loginUser = createAsyncThunk(
 export const myProfile = createAsyncThunk("/user/profile", async () => {
   const token = localStorage.getItem("token");
   try {
-    const response = await axios.get(`${DEVELOPMENT}/user/profile`, {
+    const response = await axios.get(`${PROD}/user/profile`, {
       // withCredentials: true,
       headers: {
         Authorization: `Bearer ${token}`,
@@ -114,7 +114,7 @@ export const myProfile = createAsyncThunk("/user/profile", async () => {
   } catch (error) {
     try {
       // const token = getState().auth.token; // Assuming you store the token in your Redux state
-      const response1 = await axios.get(`${DEVELOPMENT}/staff/profile`, {
+      const response1 = await axios.get(`${PROD}/staff/profile`, {
         // withCredentials: true,
         headers: {
           Authorization: `Bearer ${token}`,
@@ -136,10 +136,10 @@ export const ConnectUserWithDoctor = createAsyncThunk(
   async (staffId) => {
     try {
       const response = await axios.post(
-        `${DEVELOPMENT}/user/connectUserWithDoctor`,
+        `${PROD}/user/connectUserWithDoctor`,
         staffId,
         {
-          withCredentials: true,
+          // withCredentials: true,
         }
       );
 
@@ -155,10 +155,10 @@ export const ApproveUserByDoctor = createAsyncThunk(
   async (userId) => {
     try {
       const response = await axios.post(
-        `${DEVELOPMENT}/staff/apporve-pending-patients`,
+        `${PROD}/staff/apporve-pending-patients`,
         userId,
         {
-          withCredentials: true,
+          // withCredentials: true,
         }
       );
 
@@ -176,7 +176,7 @@ export const setUserNickname = createAsyncThunk(
 
     try {
       const response = await axios.post(
-        `${DEVELOPMENT}/user/set-nickname`,
+        `${PROD}/user/set-nickname`,
         { nickname },
         {
           // withCredentials: true,
@@ -229,7 +229,7 @@ export const setStaffAvailability = createAsyncThunk(
           });
 
           const response = await axios.post(
-            `${DEVELOPMENT}/staff/set-available-date`,
+            `${PROD}/staff/set-available-date`,
             {
               startTime: startDateTimeString,
               endTime: endDateTimeString,
@@ -263,10 +263,9 @@ export const getAvailableTimeForDoctor = createAsyncThunk(
 
     try {
       const response = await axios.post(
-        `${DEVELOPMENT}/user/get-doctor-availability`,
+        `${PROD}/user/get-doctor-availability`,
         { doctorId },
         {
-          withCredentials: true,
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -286,7 +285,7 @@ export const makeAppointment = createAsyncThunk(
 
     try {
       const response = await axios.post(
-        `${DEVELOPMENT}/appointment/makeAppointment`,
+        `${PROD}/appointment/makeAppointment`,
         {
           doctorId,
           duration: duration * 60,
@@ -319,7 +318,7 @@ export const confirmAppointment = createAsyncThunk(
 
     try {
       const response = await axios.get(
-        `${DEVELOPMENT}/appointment/confirmAppointment/${reference}`,
+        `${PROD}/appointment/confirmAppointment/${reference}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

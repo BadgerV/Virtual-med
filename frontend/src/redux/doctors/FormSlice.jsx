@@ -62,7 +62,7 @@ export const registerStaff = createAsyncThunk(
     try {
       console.log("ppppp")
       const response = await axios.post(
-        `${DEVELOPMENT}/staff/register`,
+        `${PRODUCTION}/staff/register`,
         {
           firstName,
           lastName,

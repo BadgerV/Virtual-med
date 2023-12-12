@@ -15,7 +15,7 @@ const initialState = {
 //THIS IS ESSENTIALLY THE FORMAT WE WILL USE FOR GET REQUESTS. IN THE BACKEND/SRC/ROUTES/STAFF OR USERROUTES THERE ARE LISTS OF ROUTES, THE POST ROUTES MIGHT BE TRICKY RIGHT NOW, BUT WE CAN STILL IMPLEMENT THE GET ROUTES. ESPECIALLY THE ONES WITHOUT MIDDLEWARES.
 export const getDoctors = createAsyncThunk("/doctors/get-doctors", async () => {
   try {
-    const response = await axios.get(`${DEVELOPMENT}/staff/get-staffs`);
+    const response = await axios.get(`${PRODUCTION}/staff/get-staffs`);
 
     console.log(response);
 
@@ -29,7 +29,7 @@ export const getDoctor = createAsyncThunk("/doctors/get-doctor", async (id) => {
   console.log(id)
   try {
     const response = await axios.get(
-      `${DEVELOPMENT}/staff/get-staff/${id}`
+      `${PRODUCTION}/staff/get-staff/${id}`
     );
 
     console.log(response.data);

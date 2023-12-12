@@ -5,6 +5,8 @@ import axios from "axios";
 // import axios from "axios";
 
 const DEVELOPMENT = "http://localhost:8000";
+const PROD = "https://virtual-med-backend.onrender.com";
+
 // var socket, selectedChatCompared;
 
 const initialState = {
@@ -31,7 +33,7 @@ const initialState = {
 
 // export const getChats = createAsyncThunk("/chat/getChats", async (userId) => {
 //   const { data } = await axios.post(
-//     `${DEVELOPMENT}/chat/`,
+//     `${PROD}/chat/`,
 //     { userId },
 //     {
 //       withCredentials: true,
@@ -43,8 +45,8 @@ const initialState = {
 
 export const fetchChats = createAsyncThunk("/chat/fetchChats", async () => {
   try {
-    const response = await axios.get(`${DEVELOPMENT}/chat/fetchChats`, {
-      withCredentials: true,
+    const response = await axios.get(`${PROD}/chat/fetchChats`, {
+      // withCredentials: true,
     });
 
     console.log(response);
@@ -58,10 +60,10 @@ export const createCommunity = createAsyncThunk(
   async (name) => {
     try {
       const response = axios.post(
-        `${DEVELOPMENT}/chat/community/create`,
+        `${PROD}/chat/community/create`,
         name,
         {
-          withCredentials: true,
+          // withCredentials: true,
         }
       );
 
@@ -77,12 +79,12 @@ export const addUsersToCommunity = createAsyncThunk(
   async ({ chatId }) => {
     try {
       const response = await axios.put(
-        `${DEVELOPMENT}/chat/communityAdd`,
+        `${PROD}/chat/communityAdd`,
         {
           chatId: chatId,
         },
         {
-          withCredentials: true,
+          // withCredentials: true,
         }
       );
 
@@ -99,13 +101,13 @@ export const removeUserFromCOmmunity = createAsyncThunk(
   async ({ chatId, userId }) => {
     try {
       const response = await axios.put(
-        `${DEVELOPMENT}/chat/communityRemove`,
+        `${PROD}/chat/communityRemove`,
         {
           chatId: chatId,
           userId: userId,
         },
         {
-          withCredentials: true,
+          // withCredentials: true,
         }
       );
 
@@ -124,7 +126,7 @@ export const sendMessage = createAsyncThunk(
 
     try {
       const response = await axios.post(
-        `${DEVELOPMENT}/message/sendMessage`,
+        `${PROD}/message/sendMessage`,
         { chatId: chatId, content: content },
         {
           headers: {
@@ -146,7 +148,7 @@ export const getAllMessages = createAsyncThunk(
   async (id, thunkAPI) => {
     const token = localStorage.getItem("token");
     try {
-      const response = await axios.get(`${DEVELOPMENT}/message/${id}`, {
+      const response = await axios.get(`${PROD}/message/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

@@ -89,7 +89,7 @@ const Chat = () => {
     if (chat !== null) {
       const chatID = chat[0].chat._id;
 
-      const newSocket = io("http://localhost:8000");
+      const newSocket = io("https://medconnig.netlify.app");
 
       newSocket.emit("setup", chatID);
 

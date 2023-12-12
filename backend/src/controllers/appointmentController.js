@@ -263,7 +263,7 @@ const payStack = {
         email: email,
         amount: price * 100,
         reference: reference,
-        callback_url: "https://e9d4-105-112-26-10.ngrok-free.app/verify",
+        callback_url: "https://medconnig.netlify.app/verify",
       });
       // options
 
@@ -565,7 +565,7 @@ cron.schedule("* * * * *", async () => {
           await Appointment.findByIdAndUpdate(appointment._id, {
             status: "completed",
           });
-          // console.log(`Appointment ${appointment._id} has expired.`);
+          console.log(`Appointment ${appointment._id} has expired.`);
         }
       }
     });
@@ -606,9 +606,38 @@ const checkAndRemoveAvailabilityOfStaffs = async () => {
 };
 
 // Schedule the function to run every minute
-cron.schedule("* * * * *", () => {
-  // console.log("Running availability check task...");
-  checkAndRemoveAvailabilityOfStaffs();
+cron.schedule("* * * * *", async () => {
+  try {
+    console.log("trying to clean this mess")
+    const allAppointments = await Appointment.find();
+
+    // Filter appointments with status 'pending'
+    const pendingAppointments = allAppointments.filter(
+      (appointment) =>
+        appointment.status !== "completed"
+    );
+
+    // Get the current date and time
+    const now = moment();
+
+    // Update appointments based on end time
+    pendingAppointments.forEach(async (appointment) => {
+      const { appointmentTime, duration } = appointment;
+
+      // Calculate the end time of the appointment
+      const endTime = moment(appointmentTime).add(duration, "minutes");
+
+      // Check if the end time has passed
+      if (now.isAfter(endTime)) {
+        await Appointment.findByIdAndUpdate(appointment._id, {
+          status: "completed",
+        });
+        console.log(`Appointment ${appointment._id} has expired.`);
+      }
+    });
+  } catch (error) {
+    console.error("Error checking appointments:", error);
+  }
 });
 
 // cron.schedule("* * * * *", async () => {
