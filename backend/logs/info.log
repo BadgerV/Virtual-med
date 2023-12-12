@@ -12079,3 +12079,1391 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2023-12-11 17:57:06 info: GET /appointment/get-upcoming-appointments [32m200 665.833 ms - 3389
 2023-12-11 17:57:07 info: GET /appointment/get-ongoing-appointments [36m304 757.141 ms - -
 2023-12-11 17:57:08 info: GET /appointment/get-upcoming-appointments [36m304 744.262 ms - -
+2023-12-11 18:12:08 info: GET /user/profile [32m200 155.100 ms - 9805
+2023-12-11 18:12:08 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:12:08 info: GET /user/profile [33m401 176.656 ms - 279
+2023-12-11 18:12:08 info: GET /staff/profile [32m200 149.257 ms - 1680
+2023-12-11 18:12:10 info: GET /appointment/get-upcoming-appointments [32m200 755.747 ms - 3389
+2023-12-11 18:13:14 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:13:14 info: GET /user/profile [33m401 290.978 ms - 279
+2023-12-11 18:13:14 info: GET /staff/profile [32m200 290.494 ms - 1680
+2023-12-11 18:13:33 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:13:33 info: GET /user/profile [33m401 142.394 ms - 279
+2023-12-11 18:13:33 info: GET /staff/profile [36m304 148.106 ms - -
+2023-12-11 18:13:37 info: GET /user/profile [36m304 454.527 ms - -
+2023-12-11 18:13:40 info: GET /appointment/get-upcoming-appointments [32m200 1518.236 ms - 3389
+2023-12-11 18:13:44 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:13:44 info: GET /user/profile [33m401 188.647 ms - 279
+2023-12-11 18:13:44 info: GET /staff/profile [36m304 183.690 ms - -
+2023-12-11 18:13:48 info: GET /user/profile [36m304 205.053 ms - -
+2023-12-11 18:13:52 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:13:52 info: GET /user/profile [33m401 173.957 ms - 279
+2023-12-11 18:13:52 info: GET /staff/profile [36m304 164.300 ms - -
+2023-12-11 18:13:58 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:13:58 info: GET /user/profile [33m401 202.653 ms - 279
+2023-12-11 18:13:59 info: GET /staff/profile [36m304 145.924 ms - -
+2023-12-11 18:13:59 info: GET /user/profile [36m304 201.390 ms - -
+2023-12-11 18:14:03 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:14:03 info: GET /user/profile [33m401 158.395 ms - 279
+2023-12-11 18:14:03 info: GET /staff/profile [32m200 150.904 ms - 1680
+2023-12-11 18:14:06 info: GET /user/profile [36m304 195.580 ms - -
+2023-12-11 18:14:08 info: GET /appointment/get-upcoming-appointments [32m200 797.660 ms - 3389
+2023-12-11 18:14:18 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:14:18 info: GET /user/profile [33m401 279.784 ms - 279
+2023-12-11 18:14:18 info: GET /staff/profile [36m304 203.173 ms - -
+2023-12-11 18:14:23 info: GET /user/profile [36m304 175.853 ms - -
+2023-12-11 18:14:26 info: GET /appointment/get-upcoming-appointments - - ms - -
+2023-12-11 18:14:31 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:14:31 info: GET /user/profile [33m401 139.817 ms - 279
+2023-12-11 18:14:31 info: GET /staff/profile [36m304 232.989 ms - -
+2023-12-11 18:14:32 info: GET /user/profile [36m304 174.565 ms - -
+2023-12-11 18:14:35 info: GET /appointment/get-upcoming-appointments [36m304 1041.893 ms - -
+2023-12-11 18:14:50 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:14:50 info: GET /user/profile [33m401 183.782 ms - 279
+2023-12-11 18:14:50 info: GET /staff/profile [36m304 161.672 ms - -
+2023-12-11 18:14:50 error: 404 - route not found - /messages/65773e67e0193148e7af4708 - GET - ::1
+2023-12-11 18:14:50 info: GET /messages/65773e67e0193148e7af4708 [33m404 2.938 ms - 57
+2023-12-11 18:14:52 info: GET /user/profile [36m304 192.604 ms - -
+2023-12-11 18:14:54 info: GET /appointment/get-upcoming-appointments [36m304 622.139 ms - -
+2023-12-11 18:15:07 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:15:07 info: GET /user/profile [33m401 206.199 ms - 279
+2023-12-11 18:15:07 info: GET /staff/profile [32m200 156.931 ms - 1680
+2023-12-11 18:15:08 info: GET /message/65773e67e0193148e7af4708 [32m200 443.910 ms - 2
+2023-12-11 18:15:10 info: GET /user/profile [36m304 154.497 ms - -
+2023-12-11 18:15:13 info: GET /appointment/get-upcoming-appointments [32m200 842.962 ms - 3389
+2023-12-11 18:15:40 info: GET /user/profile - - ms - -
+2023-12-11 18:15:40 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:15:42 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:15:42 info: GET /user/profile [33m401 149.524 ms - 279
+2023-12-11 18:15:42 info: GET /staff/profile [36m304 160.434 ms - -
+2023-12-11 18:15:43 info: GET /user/profile [36m304 168.339 ms - -
+2023-12-11 18:15:43 info: GET /message/65773e67e0193148e7af4708 [36m304 298.732 ms - -
+2023-12-11 18:15:45 info: GET /appointment/get-upcoming-appointments [36m304 1025.472 ms - -
+2023-12-11 18:25:48 info: GET /user/profile [36m304 2422.800 ms - -
+2023-12-11 18:25:49 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:25:49 info: GET /user/profile [33m401 147.006 ms - 279
+2023-12-11 18:25:50 info: GET /staff/profile [36m304 150.736 ms - -
+2023-12-11 18:25:50 info: GET /message/65773e67e0193148e7af4708 [36m304 292.658 ms - -
+2023-12-11 18:25:51 info: GET /appointment/get-upcoming-appointments [36m304 1404.290 ms - -
+2023-12-11 18:29:32 info: GET /message/65773e67e0193148e7af4708 [36m304 286.383 ms - -
+2023-12-11 18:29:45 info: GET /message/65773e67e0193148e7af4708 [36m304 313.832 ms - -
+2023-12-11 18:29:52 info: GET /message/65773e67e0193148e7af4708 [36m304 564.575 ms - -
+2023-12-11 18:31:08 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:31:08 info: GET /user/profile [33m401 192.084 ms - 279
+2023-12-11 18:31:08 info: GET /staff/profile [32m200 200.221 ms - 1680
+2023-12-11 18:31:23 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:31:23 info: GET /user/profile [33m401 181.572 ms - 279
+2023-12-11 18:31:23 info: GET /staff/profile [36m304 169.431 ms - -
+2023-12-11 18:31:24 info: GET /message/65773e67e0193148e7af4708 [36m304 374.779 ms - -
+2023-12-11 18:31:25 info: GET /message/65773e67e0193148e7af4708 [36m304 372.443 ms - -
+2023-12-11 18:31:43 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:31:43 info: GET /user/profile [33m401 200.121 ms - 279
+2023-12-11 18:31:44 info: GET /staff/profile [36m304 159.035 ms - -
+2023-12-11 18:31:44 info: GET /message/65773e67e0193148e7af4708 [36m304 293.657 ms - -
+2023-12-11 18:31:46 info: GET /user/profile [36m304 200.143 ms - -
+2023-12-11 18:31:47 info: GET /appointment/get-upcoming-appointments [32m200 661.078 ms - 3389
+2023-12-11 18:32:42 info: GET /message/65773e67e0193148e7af4708 [36m304 284.498 ms - -
+2023-12-11 18:32:43 info: GET /message/65773e67e0193148e7af4708 [36m304 297.615 ms - -
+2023-12-11 18:33:06 info: GET /message/65773e67e0193148e7af4708 [36m304 297.786 ms - -
+2023-12-11 18:33:15 info: GET /message/65773e67e0193148e7af4708 [36m304 314.143 ms - -
+2023-12-11 18:33:54 info: GET /message/65773e67e0193148e7af4708 [36m304 314.031 ms - -
+2023-12-11 18:34:00 info: GET /message/65773e67e0193148e7af4708 [36m304 289.104 ms - -
+2023-12-11 18:34:44 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:34:44 info: GET /user/profile [33m401 9877.030 ms - 279
+2023-12-11 18:34:44 info: GET /staff/profile [32m200 197.506 ms - 1680
+2023-12-11 18:34:45 info: GET /message/65773e67e0193148e7af4708 [36m304 343.505 ms - -
+2023-12-11 18:34:55 info: GET /user/profile [36m304 160.807 ms - -
+2023-12-11 18:34:57 info: GET /appointment/get-upcoming-appointments [32m200 705.746 ms - 3389
+2023-12-11 18:36:34 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:36:34 info: GET /user/profile [33m401 143.717 ms - 279
+2023-12-11 18:36:34 info: GET /staff/profile [32m200 142.276 ms - 1680
+2023-12-11 18:36:34 info: GET /message/65773e67e0193148e7af4708 [36m304 298.920 ms - -
+2023-12-11 18:36:37 info: GET /user/profile [36m304 161.260 ms - -
+2023-12-11 18:36:39 info: GET /appointment/get-upcoming-appointments [32m200 615.145 ms - 3389
+2023-12-11 18:37:07 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:37:07 info: GET /user/profile [33m401 143.747 ms - 279
+2023-12-11 18:37:07 info: GET /staff/profile [32m200 150.365 ms - 1680
+2023-12-11 18:37:09 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:37:09 info: GET /user/profile [33m401 156.249 ms - 279
+2023-12-11 18:37:09 info: GET /staff/profile [36m304 157.650 ms - -
+2023-12-11 18:37:09 info: GET /message/65773e67e0193148e7af4708 [36m304 307.386 ms - -
+2023-12-11 18:37:09 info: GET /user/profile [36m304 161.553 ms - -
+2023-12-11 18:37:11 info: GET /appointment/get-upcoming-appointments [32m200 685.029 ms - 3389
+2023-12-11 18:37:35 info: GET /message/65773e67e0193148e7af4708 [36m304 317.828 ms - -
+2023-12-11 18:37:40 info: GET /message/65773e67e0193148e7af4708 [36m304 297.700 ms - -
+2023-12-11 18:51:19 info: GET /message/65773e67e0193148e7af4708 [36m304 304.885 ms - -
+2023-12-11 18:51:26 info: GET /message/65773e67e0193148e7af4708 [36m304 345.250 ms - -
+2023-12-11 18:51:27 info: GET /message/65773e67e0193148e7af4708 [36m304 308.322 ms - -
+2023-12-11 18:51:32 info: GET /message/65773e67e0193148e7af4708 [36m304 320.276 ms - -
+2023-12-11 18:51:45 info: GET /message/65773e67e0193148e7af4708 [36m304 352.946 ms - -
+2023-12-11 18:51:52 info: GET /message/65773e67e0193148e7af4708 [36m304 287.993 ms - -
+2023-12-11 18:53:20 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:53:20 info: GET /user/profile [33m401 161.309 ms - 279
+2023-12-11 18:53:20 info: GET /staff/profile [32m200 161.706 ms - 1680
+2023-12-11 18:53:21 info: GET /message/65773e67e0193148e7af4708 [36m304 280.450 ms - -
+2023-12-11 18:53:33 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:53:33 info: GET /user/profile [33m401 209.310 ms - 279
+2023-12-11 18:53:33 info: GET /staff/profile [36m304 165.004 ms - -
+2023-12-11 18:53:34 info: GET /message/65773e67e0193148e7af4708 [36m304 293.712 ms - -
+2023-12-11 18:53:35 info: GET /message/65773e67e0193148e7af4708 [36m304 346.179 ms - -
+2023-12-11 18:53:41 info: GET /message/65773e67e0193148e7af4708 [36m304 356.769 ms - -
+2023-12-11 18:53:43 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 18:53:43 info: GET /user/profile [33m401 174.668 ms - 279
+2023-12-11 18:53:43 info: GET /staff/profile [36m304 184.137 ms - -
+2023-12-11 18:53:44 info: GET /message/65773e67e0193148e7af4708 [36m304 332.450 ms - -
+2023-12-11 18:53:47 info: GET /message/65773e67e0193148e7af4708 [36m304 329.334 ms - -
+2023-12-11 18:53:52 info: GET /message/65773e67e0193148e7af4708 [36m304 352.181 ms - -
+2023-12-11 18:53:53 info: GET /message/65773e67e0193148e7af4708 [36m304 365.103 ms - -
+2023-12-11 18:54:00 info: GET /message/65773e67e0193148e7af4708 [36m304 299.176 ms - -
+2023-12-11 18:54:04 info: GET /message/65773e67e0193148e7af4708 [36m304 333.457 ms - -
+2023-12-11 18:54:10 info: GET /message/65773e67e0193148e7af4708 [36m304 298.466 ms - -
+2023-12-11 18:54:32 info: GET /message/65773e67e0193148e7af4708 [36m304 385.292 ms - -
+2023-12-11 18:54:37 info: GET /message/65773e67e0193148e7af4708 [36m304 343.873 ms - -
+2023-12-11 18:54:43 info: GET /message/65773e67e0193148e7af4708 [36m304 321.278 ms - -
+2023-12-11 18:54:44 info: GET /message/65773e67e0193148e7af4708 [36m304 325.873 ms - -
+2023-12-11 18:54:44 info: GET /message/65773e67e0193148e7af4708 [36m304 292.676 ms - -
+2023-12-11 18:54:44 info: GET /message/65773e67e0193148e7af4708 [36m304 318.361 ms - -
+2023-12-11 18:54:45 info: GET /message/65773e67e0193148e7af4708 [36m304 333.028 ms - -
+2023-12-11 18:54:45 info: GET /message/65773e67e0193148e7af4708 [36m304 317.405 ms - -
+2023-12-11 18:54:45 info: GET /message/65773e67e0193148e7af4708 [36m304 318.181 ms - -
+2023-12-11 18:54:45 info: GET /message/65773e67e0193148e7af4708 [36m304 324.459 ms - -
+2023-12-11 18:54:46 info: GET /message/65773e67e0193148e7af4708 [36m304 309.696 ms - -
+2023-12-11 18:54:46 info: GET /message/65773e67e0193148e7af4708 [36m304 317.457 ms - -
+2023-12-11 18:54:46 info: GET /message/65773e67e0193148e7af4708 [36m304 291.399 ms - -
+2023-12-11 18:54:47 info: GET /message/65773e67e0193148e7af4708 [36m304 302.645 ms - -
+2023-12-11 18:54:47 info: GET /message/65773e67e0193148e7af4708 [36m304 318.460 ms - -
+2023-12-11 18:54:50 info: GET /message/65773e67e0193148e7af4708 [36m304 325.408 ms - -
+2023-12-11 18:55:08 info: GET /message/65773e67e0193148e7af4708 [36m304 395.615 ms - -
+2023-12-11 18:55:11 info: GET /message/65773e67e0193148e7af4708 [36m304 337.103 ms - -
+2023-12-11 18:55:13 info: GET /message/65773e67e0193148e7af4708 [36m304 290.985 ms - -
+2023-12-11 18:55:13 info: GET /message/65773e67e0193148e7af4708 [36m304 351.461 ms - -
+2023-12-11 18:55:14 info: GET /message/65773e67e0193148e7af4708 [36m304 304.571 ms - -
+2023-12-11 18:55:14 info: GET /message/65773e67e0193148e7af4708 [36m304 286.474 ms - -
+2023-12-11 18:55:14 info: GET /message/65773e67e0193148e7af4708 [36m304 305.960 ms - -
+2023-12-11 18:55:15 info: GET /message/65773e67e0193148e7af4708 [36m304 363.794 ms - -
+2023-12-11 18:55:15 info: GET /message/65773e67e0193148e7af4708 [36m304 318.903 ms - -
+2023-12-11 18:55:15 info: GET /message/65773e67e0193148e7af4708 [36m304 321.200 ms - -
+2023-12-11 18:55:16 info: GET /message/65773e67e0193148e7af4708 [36m304 309.055 ms - -
+2023-12-11 18:55:16 info: GET /message/65773e67e0193148e7af4708 [36m304 319.574 ms - -
+2023-12-11 18:55:16 info: GET /message/65773e67e0193148e7af4708 [36m304 278.010 ms - -
+2023-12-11 18:55:16 info: GET /message/65773e67e0193148e7af4708 [36m304 314.191 ms - -
+2023-12-11 18:55:17 info: GET /message/65773e67e0193148e7af4708 [36m304 318.535 ms - -
+2023-12-11 18:55:17 info: GET /message/65773e67e0193148e7af4708 [36m304 316.319 ms - -
+2023-12-11 18:55:17 info: GET /message/65773e67e0193148e7af4708 [36m304 375.207 ms - -
+2023-12-11 18:55:18 info: GET /message/65773e67e0193148e7af4708 [36m304 277.398 ms - -
+2023-12-11 18:55:18 info: GET /message/65773e67e0193148e7af4708 [36m304 299.522 ms - -
+2023-12-11 18:55:19 info: GET /message/65773e67e0193148e7af4708 [36m304 286.124 ms - -
+2023-12-11 18:56:02 info: GET /message/65773e67e0193148e7af4708 [36m304 300.340 ms - -
+2023-12-11 18:58:27 info: GET /message/65773e67e0193148e7af4708 [36m304 351.500 ms - -
+2023-12-11 18:58:52 info: GET /message/65773e67e0193148e7af4708 [36m304 293.865 ms - -
+2023-12-11 18:58:53 info: GET /message/65773e67e0193148e7af4708 [36m304 357.454 ms - -
+2023-12-11 18:58:58 info: GET /message/65773e67e0193148e7af4708 [36m304 324.665 ms - -
+2023-12-11 18:59:00 info: GET /message/65773e67e0193148e7af4708 [36m304 324.236 ms - -
+2023-12-11 18:59:02 info: GET /message/65773e67e0193148e7af4708 [36m304 295.034 ms - -
+2023-12-11 18:59:06 info: GET /message/65773e67e0193148e7af4708 [36m304 328.241 ms - -
+2023-12-11 18:59:06 info: GET /message/65773e67e0193148e7af4708 [36m304 303.535 ms - -
+2023-12-11 18:59:07 info: GET /message/65773e67e0193148e7af4708 [36m304 309.481 ms - -
+2023-12-11 18:59:07 info: GET /message/65773e67e0193148e7af4708 [36m304 317.693 ms - -
+2023-12-11 18:59:07 info: GET /message/65773e67e0193148e7af4708 [36m304 317.663 ms - -
+2023-12-11 18:59:08 info: GET /message/65773e67e0193148e7af4708 [36m304 356.133 ms - -
+2023-12-11 18:59:08 info: GET /message/65773e67e0193148e7af4708 [36m304 303.792 ms - -
+2023-12-11 18:59:08 info: GET /message/65773e67e0193148e7af4708 [36m304 340.502 ms - -
+2023-12-11 18:59:09 info: GET /message/65773e67e0193148e7af4708 [36m304 357.617 ms - -
+2023-12-11 18:59:09 info: GET /message/65773e67e0193148e7af4708 [36m304 302.816 ms - -
+2023-12-11 18:59:09 info: GET /message/65773e67e0193148e7af4708 [36m304 323.562 ms - -
+2023-12-11 18:59:10 info: GET /message/65773e67e0193148e7af4708 [36m304 314.377 ms - -
+2023-12-11 18:59:10 info: GET /message/65773e67e0193148e7af4708 [36m304 295.693 ms - -
+2023-12-11 18:59:10 info: GET /message/65773e67e0193148e7af4708 [36m304 282.771 ms - -
+2023-12-11 19:01:03 info: GET /message/65773e67e0193148e7af4708 [36m304 355.744 ms - -
+2023-12-11 19:01:07 info: GET /message/65773e67e0193148e7af4708 [36m304 337.068 ms - -
+2023-12-11 19:01:09 info: GET /message/65773e67e0193148e7af4708 [36m304 347.694 ms - -
+2023-12-11 19:01:11 info: GET /message/65773e67e0193148e7af4708 [36m304 345.686 ms - -
+2023-12-11 19:01:13 info: GET /message/65773e67e0193148e7af4708 [36m304 365.409 ms - -
+2023-12-11 19:01:24 info: GET /message/65773e67e0193148e7af4708 [36m304 298.006 ms - -
+2023-12-11 19:01:25 info: GET /message/65773e67e0193148e7af4708 [36m304 361.087 ms - -
+2023-12-11 19:01:32 info: GET /message/65773e67e0193148e7af4708 [36m304 385.697 ms - -
+2023-12-11 19:01:39 info: GET /message/65773e67e0193148e7af4708 [36m304 338.083 ms - -
+2023-12-11 19:01:40 info: GET /message/65773e67e0193148e7af4708 [36m304 321.572 ms - -
+2023-12-11 19:01:56 info: GET /message/65773e67e0193148e7af4708 [36m304 321.347 ms - -
+2023-12-11 19:01:58 info: GET /message/65773e67e0193148e7af4708 [36m304 351.708 ms - -
+2023-12-11 19:02:02 info: GET /message/65773e67e0193148e7af4708 [36m304 352.329 ms - -
+2023-12-11 19:02:05 info: GET /message/65773e67e0193148e7af4708 [36m304 311.758 ms - -
+2023-12-11 19:02:06 info: GET /message/65773e67e0193148e7af4708 [36m304 307.375 ms - -
+2023-12-11 19:02:06 info: GET /message/65773e67e0193148e7af4708 [36m304 297.380 ms - -
+2023-12-11 19:02:06 info: GET /message/65773e67e0193148e7af4708 [36m304 301.443 ms - -
+2023-12-11 19:02:06 info: GET /message/65773e67e0193148e7af4708 [36m304 329.137 ms - -
+2023-12-11 19:02:07 info: GET /message/65773e67e0193148e7af4708 [36m304 318.516 ms - -
+2023-12-11 19:02:07 info: GET /message/65773e67e0193148e7af4708 [36m304 316.364 ms - -
+2023-12-11 19:02:07 info: GET /message/65773e67e0193148e7af4708 [36m304 319.455 ms - -
+2023-12-11 19:02:08 info: GET /message/65773e67e0193148e7af4708 [36m304 315.522 ms - -
+2023-12-11 19:02:08 info: GET /message/65773e67e0193148e7af4708 [36m304 309.735 ms - -
+2023-12-11 19:02:08 info: GET /message/65773e67e0193148e7af4708 [36m304 325.882 ms - -
+2023-12-11 19:02:09 info: GET /message/65773e67e0193148e7af4708 [36m304 357.458 ms - -
+2023-12-11 19:02:09 info: GET /message/65773e67e0193148e7af4708 [36m304 356.952 ms - -
+2023-12-11 19:02:09 info: GET /message/65773e67e0193148e7af4708 [36m304 318.176 ms - -
+2023-12-11 19:02:32 info: GET /message/65773e67e0193148e7af4708 [36m304 305.808 ms - -
+2023-12-11 19:02:56 info: GET /message/65773e67e0193148e7af4708 [36m304 339.349 ms - -
+2023-12-11 19:02:56 info: GET /message/65773e67e0193148e7af4708 [36m304 356.482 ms - -
+2023-12-11 19:02:56 info: GET /message/65773e67e0193148e7af4708 [36m304 318.523 ms - -
+2023-12-11 19:02:57 info: GET /message/65773e67e0193148e7af4708 [36m304 315.800 ms - -
+2023-12-11 19:02:57 info: GET /message/65773e67e0193148e7af4708 [36m304 302.032 ms - -
+2023-12-11 19:02:57 info: GET /message/65773e67e0193148e7af4708 [36m304 334.298 ms - -
+2023-12-11 19:02:58 info: GET /message/65773e67e0193148e7af4708 [36m304 288.506 ms - -
+2023-12-11 19:02:58 info: GET /message/65773e67e0193148e7af4708 [36m304 347.532 ms - -
+2023-12-11 19:02:58 info: GET /message/65773e67e0193148e7af4708 [36m304 316.142 ms - -
+2023-12-11 19:02:59 info: GET /message/65773e67e0193148e7af4708 [36m304 358.086 ms - -
+2023-12-11 19:02:59 info: GET /message/65773e67e0193148e7af4708 [36m304 356.758 ms - -
+2023-12-11 19:02:59 info: GET /message/65773e67e0193148e7af4708 [36m304 358.245 ms - -
+2023-12-11 19:03:00 info: GET /message/65773e67e0193148e7af4708 [36m304 298.071 ms - -
+2023-12-11 19:03:00 info: GET /message/65773e67e0193148e7af4708 [36m304 299.342 ms - -
+2023-12-11 19:03:00 info: GET /message/65773e67e0193148e7af4708 [36m304 269.122 ms - -
+2023-12-11 19:03:01 info: GET /message/65773e67e0193148e7af4708 [36m304 286.795 ms - -
+2023-12-11 19:03:01 info: GET /message/65773e67e0193148e7af4708 [36m304 368.471 ms - -
+2023-12-11 19:03:01 info: GET /message/65773e67e0193148e7af4708 [36m304 277.642 ms - -
+2023-12-11 19:03:02 info: GET /message/65773e67e0193148e7af4708 [36m304 296.337 ms - -
+2023-12-11 19:03:02 info: GET /message/65773e67e0193148e7af4708 [36m304 285.042 ms - -
+2023-12-11 19:04:23 error: 401 - Invalid token - /staff/profile - GET - ::ffff:127.0.0.1
+2023-12-11 19:04:23 info: GET /staff/profile [33m401 18.252 ms - 1402
+2023-12-11 19:04:38 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:04:38 info: GET /user/profile [33m401 10072.159 ms - 279
+2023-12-11 19:05:03 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 19:05:03 info: GET /user/profile [33m401 1411.188 ms - 279
+2023-12-11 19:05:04 info: GET /staff/profile [32m200 263.107 ms - 1680
+2023-12-11 19:05:09 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 19:05:09 info: GET /user/profile [33m401 165.203 ms - 279
+2023-12-11 19:05:09 info: GET /staff/profile [32m200 150.104 ms - 1680
+2023-12-11 19:05:09 error: 500 - Cast to ObjectId failed for value ":65773e67e0193148e7af4708" (type string) at path "chat" for model "Message" - /message/:65773e67e0193148e7af4708 - GET - ::ffff:127.0.0.1
+2023-12-11 19:05:09 info: GET /message/:65773e67e0193148e7af4708 [31m500 158.731 ms - 1583
+2023-12-11 19:05:19 error: 500 - Cast to ObjectId failed for value ":65773e67e0193148e7af4708" (type string) at path "chat" for model "Message" - /message/:65773e67e0193148e7af4708 - GET - ::1
+2023-12-11 19:05:19 info: GET /message/:65773e67e0193148e7af4708 [31m500 161.659 ms - 1583
+2023-12-11 19:05:19 error: 500 - Cast to ObjectId failed for value ":65773e67e0193148e7af4708" (type string) at path "chat" for model "Message" - /message/:65773e67e0193148e7af4708 - GET - ::1
+2023-12-11 19:05:19 info: GET /message/:65773e67e0193148e7af4708 [31m500 192.386 ms - 1583
+2023-12-11 19:05:19 error: 500 - Cast to ObjectId failed for value ":65773e67e0193148e7af4708" (type string) at path "chat" for model "Message" - /message/:65773e67e0193148e7af4708 - GET - ::1
+2023-12-11 19:05:19 info: GET /message/:65773e67e0193148e7af4708 [31m500 237.154 ms - 1583
+2023-12-11 19:05:19 error: 500 - Cast to ObjectId failed for value ":65773e67e0193148e7af4708" (type string) at path "chat" for model "Message" - /message/:65773e67e0193148e7af4708 - GET - ::1
+2023-12-11 19:05:19 info: GET /message/:65773e67e0193148e7af4708 [31m500 204.037 ms - 1583
+2023-12-11 19:05:20 error: 500 - Cast to ObjectId failed for value ":65773e67e0193148e7af4708" (type string) at path "chat" for model "Message" - /message/:65773e67e0193148e7af4708 - GET - ::1
+2023-12-11 19:05:20 info: GET /message/:65773e67e0193148e7af4708 [31m500 150.043 ms - 1583
+2023-12-11 19:05:20 error: 500 - Cast to ObjectId failed for value ":65773e67e0193148e7af4708" (type string) at path "chat" for model "Message" - /message/:65773e67e0193148e7af4708 - GET - ::1
+2023-12-11 19:05:20 info: GET /message/:65773e67e0193148e7af4708 [31m500 153.584 ms - 1583
+2023-12-11 19:05:20 error: 500 - Cast to ObjectId failed for value ":65773e67e0193148e7af4708" (type string) at path "chat" for model "Message" - /message/:65773e67e0193148e7af4708 - GET - ::1
+2023-12-11 19:05:20 info: GET /message/:65773e67e0193148e7af4708 [31m500 158.668 ms - 1583
+2023-12-11 19:05:20 error: 500 - Cast to ObjectId failed for value ":65773e67e0193148e7af4708" (type string) at path "chat" for model "Message" - /message/:65773e67e0193148e7af4708 - GET - ::1
+2023-12-11 19:05:20 info: GET /message/:65773e67e0193148e7af4708 [31m500 155.465 ms - 1583
+2023-12-11 19:05:20 error: 500 - Cast to ObjectId failed for value ":65773e67e0193148e7af4708" (type string) at path "chat" for model "Message" - /message/:65773e67e0193148e7af4708 - GET - ::1
+2023-12-11 19:05:20 info: GET /message/:65773e67e0193148e7af4708 [31m500 158.315 ms - 1583
+2023-12-11 19:05:20 error: 500 - Cast to ObjectId failed for value ":65773e67e0193148e7af4708" (type string) at path "chat" for model "Message" - /message/:65773e67e0193148e7af4708 - GET - ::1
+2023-12-11 19:05:20 info: GET /message/:65773e67e0193148e7af4708 [31m500 154.987 ms - 1583
+2023-12-11 19:05:20 error: 500 - Cast to ObjectId failed for value ":65773e67e0193148e7af4708" (type string) at path "chat" for model "Message" - /message/:65773e67e0193148e7af4708 - GET - ::1
+2023-12-11 19:05:20 info: GET /message/:65773e67e0193148e7af4708 [31m500 158.349 ms - 1583
+2023-12-11 19:05:21 error: 500 - Cast to ObjectId failed for value ":65773e67e0193148e7af4708" (type string) at path "chat" for model "Message" - /message/:65773e67e0193148e7af4708 - GET - ::1
+2023-12-11 19:05:21 info: GET /message/:65773e67e0193148e7af4708 [31m500 154.460 ms - 1583
+2023-12-11 19:05:21 error: 500 - Cast to ObjectId failed for value ":65773e67e0193148e7af4708" (type string) at path "chat" for model "Message" - /message/:65773e67e0193148e7af4708 - GET - ::1
+2023-12-11 19:05:21 info: GET /message/:65773e67e0193148e7af4708 [31m500 157.133 ms - 1583
+2023-12-11 19:05:21 error: 500 - Cast to ObjectId failed for value ":65773e67e0193148e7af4708" (type string) at path "chat" for model "Message" - /message/:65773e67e0193148e7af4708 - GET - ::1
+2023-12-11 19:05:21 info: GET /message/:65773e67e0193148e7af4708 [31m500 166.644 ms - 1583
+2023-12-11 19:05:56 info: GET /user/profile - - ms - -
+2023-12-11 19:05:56 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:05:56 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:05:56 info: GET /user/profile [33m401 169.392 ms - 279
+2023-12-11 19:05:56 info: GET /staff/profile [36m304 160.219 ms - -
+2023-12-11 19:05:57 info: GET /message/65773e67e0193148e7af4708 [36m304 479.144 ms - -
+2023-12-11 19:06:07 info: GET /message/65773e67e0193148e7af4708 [36m304 338.391 ms - -
+2023-12-11 19:06:08 info: GET /message/65773e67e0193148e7af4708 [36m304 284.019 ms - -
+2023-12-11 19:06:08 info: GET /message/65773e67e0193148e7af4708 [36m304 296.515 ms - -
+2023-12-11 19:06:08 info: GET /message/65773e67e0193148e7af4708 [36m304 297.778 ms - -
+2023-12-11 19:06:09 info: GET /message/65773e67e0193148e7af4708 [36m304 360.576 ms - -
+2023-12-11 19:06:09 info: GET /message/65773e67e0193148e7af4708 [36m304 434.681 ms - -
+2023-12-11 19:06:09 info: GET /message/65773e67e0193148e7af4708 [36m304 352.100 ms - -
+2023-12-11 19:06:10 error: 404 - route not found - /message/sendMessage - PUT - ::1
+2023-12-11 19:06:10 info: PUT /message/sendMessage [33m404 168.180 ms - 57
+2023-12-11 19:06:10 info: GET /message/65773e67e0193148e7af4708 [36m304 626.974 ms - -
+2023-12-11 19:06:10 info: GET /message/65773e67e0193148e7af4708 [36m304 403.493 ms - -
+2023-12-11 19:06:11 info: GET /message/65773e67e0193148e7af4708 [36m304 314.352 ms - -
+2023-12-11 19:06:11 info: GET /message/65773e67e0193148e7af4708 [36m304 362.071 ms - -
+2023-12-11 19:06:12 info: GET /message/65773e67e0193148e7af4708 [36m304 471.194 ms - -
+2023-12-11 19:06:12 info: GET /message/65773e67e0193148e7af4708 [36m304 297.313 ms - -
+2023-12-11 19:06:32 info: GET /message/65773e67e0193148e7af4708 [36m304 336.336 ms - -
+2023-12-11 19:06:36 info: GET /message/65773e67e0193148e7af4708 [36m304 330.809 ms - -
+2023-12-11 19:06:44 info: GET /message/65773e67e0193148e7af4708 [36m304 296.867 ms - -
+2023-12-11 19:06:44 info: GET /message/65773e67e0193148e7af4708 [36m304 328.598 ms - -
+2023-12-11 19:06:44 info: GET /message/65773e67e0193148e7af4708 [36m304 314.259 ms - -
+2023-12-11 19:06:45 info: GET /message/65773e67e0193148e7af4708 [36m304 318.140 ms - -
+2023-12-11 19:06:45 info: GET /message/65773e67e0193148e7af4708 [36m304 316.888 ms - -
+2023-12-11 19:06:45 info: GET /message/65773e67e0193148e7af4708 [36m304 317.123 ms - -
+2023-12-11 19:06:46 info: GET /message/65773e67e0193148e7af4708 [36m304 318.564 ms - -
+2023-12-11 19:06:46 info: GET /message/65773e67e0193148e7af4708 [36m304 383.855 ms - -
+2023-12-11 19:06:47 info: GET /message/65773e67e0193148e7af4708 [36m304 365.541 ms - -
+2023-12-11 19:06:47 info: GET /message/65773e67e0193148e7af4708 [36m304 437.353 ms - -
+2023-12-11 19:06:47 info: GET /message/65773e67e0193148e7af4708 [36m304 475.084 ms - -
+2023-12-11 19:06:48 info: GET /message/65773e67e0193148e7af4708 [36m304 397.093 ms - -
+2023-12-11 19:06:48 info: GET /message/65773e67e0193148e7af4708 [36m304 325.864 ms - -
+2023-12-11 19:06:48 info: GET /message/65773e67e0193148e7af4708 [36m304 316.645 ms - -
+2023-12-11 19:06:49 info: GET /message/65773e67e0193148e7af4708 [36m304 350.064 ms - -
+2023-12-11 19:06:49 info: GET /message/65773e67e0193148e7af4708 [36m304 316.842 ms - -
+2023-12-11 19:06:52 error: 404 - route not found - /message/sendMessage - PUT - ::1
+2023-12-11 19:06:52 info: PUT /message/sendMessage [33m404 160.716 ms - 57
+2023-12-11 19:06:52 info: GET /message/65773e67e0193148e7af4708 [36m304 309.868 ms - -
+2023-12-11 19:07:59 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:07:59 info: GET /user/profile [33m401 146.236 ms - 279
+2023-12-11 19:07:59 info: GET /staff/profile [32m200 178.782 ms - 1680
+2023-12-11 19:08:00 info: GET /message/65773e67e0193148e7af4708 [36m304 327.498 ms - -
+2023-12-11 19:08:01 info: GET /user/profile [36m304 161.364 ms - -
+2023-12-11 19:08:21 info: GET /user/profile - - ms - -
+2023-12-11 19:08:32 info: GET /user/profile - - ms - -
+2023-12-11 19:08:39 info: GET /user/profile - - ms - -
+2023-12-11 19:08:56 info: GET /user/profile - - ms - -
+2023-12-11 19:08:59 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:08:59 info: GET /user/profile - - ms - -
+2023-12-11 19:09:08 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:09:09 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:09:17 info: GET /user/profile - - ms - -
+2023-12-11 19:09:24 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:09:28 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:09:30 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:09:33 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:09:33 info: GET /user/profile [33m401 15370.505 ms - 279
+2023-12-11 19:09:33 info: GET /staff/profile [32m200 166.407 ms - 1680
+2023-12-11 19:09:34 info: GET /message/65773e67e0193148e7af4708 [36m304 557.756 ms - -
+2023-12-11 19:09:43 info: GET /message/65773e67e0193148e7af4708 [36m304 294.732 ms - -
+2023-12-11 19:09:44 info: GET /message/65773e67e0193148e7af4708 [36m304 320.616 ms - -
+2023-12-11 19:09:44 info: GET /message/65773e67e0193148e7af4708 [36m304 311.271 ms - -
+2023-12-11 19:09:44 info: GET /message/65773e67e0193148e7af4708 [36m304 330.497 ms - -
+2023-12-11 19:09:45 info: GET /message/65773e67e0193148e7af4708 [36m304 482.444 ms - -
+2023-12-11 19:09:45 info: GET /message/65773e67e0193148e7af4708 [36m304 305.141 ms - -
+2023-12-11 19:09:46 info: GET /message/65773e67e0193148e7af4708 [36m304 355.367 ms - -
+2023-12-11 19:09:46 info: GET /message/65773e67e0193148e7af4708 [36m304 309.187 ms - -
+2023-12-11 19:09:46 info: GET /message/65773e67e0193148e7af4708 [36m304 305.534 ms - -
+2023-12-11 19:09:47 info: GET /message/65773e67e0193148e7af4708 [36m304 335.498 ms - -
+2023-12-11 19:09:47 info: GET /message/65773e67e0193148e7af4708 [36m304 318.377 ms - -
+2023-12-11 19:09:47 info: GET /message/65773e67e0193148e7af4708 [36m304 318.009 ms - -
+2023-12-11 19:09:48 info: GET /message/65773e67e0193148e7af4708 [36m304 324.435 ms - -
+2023-12-11 19:09:48 info: GET /message/65773e67e0193148e7af4708 [36m304 308.505 ms - -
+2023-12-11 19:09:48 info: GET /message/65773e67e0193148e7af4708 [36m304 396.356 ms - -
+2023-12-11 19:09:49 info: GET /message/65773e67e0193148e7af4708 [36m304 521.298 ms - -
+2023-12-11 19:09:49 info: GET /message/65773e67e0193148e7af4708 [36m304 354.014 ms - -
+2023-12-11 19:09:50 info: GET /message/65773e67e0193148e7af4708 [36m304 395.808 ms - -
+2023-12-11 19:09:50 info: GET /message/65773e67e0193148e7af4708 [36m304 324.010 ms - -
+2023-12-11 19:09:50 error: 404 - route not found - /message/sendMessage - PUT - ::1
+2023-12-11 19:09:50 info: PUT /message/sendMessage [33m404 992.291 ms - 57
+2023-12-11 19:09:50 info: GET /message/65773e67e0193148e7af4708 [36m304 296.293 ms - -
+2023-12-11 19:09:51 info: GET /message/65773e67e0193148e7af4708 [36m304 333.450 ms - -
+2023-12-11 19:09:51 info: GET /message/65773e67e0193148e7af4708 [36m304 347.105 ms - -
+2023-12-11 19:09:51 info: GET /message/65773e67e0193148e7af4708 [36m304 533.910 ms - -
+2023-12-11 19:09:52 info: GET /message/65773e67e0193148e7af4708 [36m304 290.454 ms - -
+2023-12-11 19:09:52 info: GET /message/65773e67e0193148e7af4708 [36m304 287.864 ms - -
+2023-12-11 19:09:52 info: GET /message/65773e67e0193148e7af4708 [36m304 286.104 ms - -
+2023-12-11 19:09:53 info: GET /message/65773e67e0193148e7af4708 [36m304 302.651 ms - -
+2023-12-11 19:10:38 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:10:38 info: GET /user/profile [33m401 173.558 ms - 279
+2023-12-11 19:10:38 info: GET /staff/profile [32m200 191.391 ms - 1680
+2023-12-11 19:10:38 info: GET /message/65773e67e0193148e7af4708 [36m304 324.483 ms - -
+2023-12-11 19:11:41 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:11:41 info: GET /user/profile [33m401 243.822 ms - 279
+2023-12-11 19:11:42 info: GET /staff/profile [32m200 148.496 ms - 1680
+2023-12-11 19:11:42 info: GET /message/65773e67e0193148e7af4708 [36m304 333.893 ms - -
+2023-12-11 19:11:45 info: GET /message/65773e67e0193148e7af4708 [36m304 323.414 ms - -
+2023-12-11 19:11:45 info: GET /message/65773e67e0193148e7af4708 [36m304 335.136 ms - -
+2023-12-11 19:11:45 info: GET /message/65773e67e0193148e7af4708 [36m304 276.065 ms - -
+2023-12-11 19:11:46 info: GET /message/65773e67e0193148e7af4708 [36m304 317.982 ms - -
+2023-12-11 19:11:46 info: GET /message/65773e67e0193148e7af4708 [36m304 317.272 ms - -
+2023-12-11 19:11:46 info: GET /message/65773e67e0193148e7af4708 [36m304 317.387 ms - -
+2023-12-11 19:11:46 info: GET /message/65773e67e0193148e7af4708 [36m304 278.242 ms - -
+2023-12-11 19:11:47 info: GET /message/65773e67e0193148e7af4708 [36m304 314.881 ms - -
+2023-12-11 19:11:47 info: GET /message/65773e67e0193148e7af4708 [36m304 317.699 ms - -
+2023-12-11 19:11:47 info: GET /message/65773e67e0193148e7af4708 [36m304 288.756 ms - -
+2023-12-11 19:11:48 info: GET /message/65773e67e0193148e7af4708 [36m304 578.904 ms - -
+2023-12-11 19:11:48 info: GET /message/65773e67e0193148e7af4708 [36m304 331.743 ms - -
+2023-12-11 19:11:49 info: GET /message/65773e67e0193148e7af4708 [36m304 348.201 ms - -
+2023-12-11 19:11:49 info: GET /message/65773e67e0193148e7af4708 [36m304 570.533 ms - -
+2023-12-11 19:11:50 info: GET /message/65773e67e0193148e7af4708 [36m304 303.979 ms - -
+2023-12-11 19:11:50 info: GET /message/65773e67e0193148e7af4708 [36m304 316.242 ms - -
+2023-12-11 19:11:50 info: GET /message/65773e67e0193148e7af4708 [36m304 317.498 ms - -
+2023-12-11 19:11:50 info: GET /message/65773e67e0193148e7af4708 [36m304 298.667 ms - -
+2023-12-11 19:11:51 info: GET /message/65773e67e0193148e7af4708 [36m304 296.453 ms - -
+2023-12-11 19:11:51 info: GET /message/65773e67e0193148e7af4708 [36m304 277.173 ms - -
+2023-12-11 19:11:51 info: GET /message/65773e67e0193148e7af4708 [36m304 324.215 ms - -
+2023-12-11 19:11:52 info: GET /message/65773e67e0193148e7af4708 [36m304 429.080 ms - -
+2023-12-11 19:11:54 error: 400 - Please provide the content and the chatID - /message/sendMessage - POST - ::1
+2023-12-11 19:11:54 info: POST /message/sendMessage [33m400 168.808 ms - 1466
+2023-12-11 19:11:54 info: GET /message/65773e67e0193148e7af4708 [36m304 306.568 ms - -
+2023-12-11 19:12:28 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:12:28 info: GET /user/profile [33m401 187.574 ms - 279
+2023-12-11 19:12:28 info: GET /staff/profile [32m200 151.811 ms - 1680
+2023-12-11 19:12:29 info: GET /message/65773e67e0193148e7af4708 [36m304 294.107 ms - -
+2023-12-11 19:12:30 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:12:30 info: GET /user/profile [33m401 164.934 ms - 279
+2023-12-11 19:12:30 info: GET /staff/profile [36m304 154.101 ms - -
+2023-12-11 19:12:31 info: GET /message/65773e67e0193148e7af4708 [36m304 471.174 ms - -
+2023-12-11 19:12:33 info: GET /message/65773e67e0193148e7af4708 [36m304 323.389 ms - -
+2023-12-11 19:12:33 info: GET /message/65773e67e0193148e7af4708 [36m304 316.640 ms - -
+2023-12-11 19:12:33 info: GET /message/65773e67e0193148e7af4708 [36m304 310.031 ms - -
+2023-12-11 19:12:33 info: GET /message/65773e67e0193148e7af4708 [36m304 305.440 ms - -
+2023-12-11 19:12:34 info: GET /message/65773e67e0193148e7af4708 [36m304 329.284 ms - -
+2023-12-11 19:12:34 info: GET /message/65773e67e0193148e7af4708 [36m304 324.269 ms - -
+2023-12-11 19:12:34 info: GET /message/65773e67e0193148e7af4708 [36m304 309.472 ms - -
+2023-12-11 19:12:35 info: GET /message/65773e67e0193148e7af4708 [36m304 363.659 ms - -
+2023-12-11 19:12:35 info: GET /message/65773e67e0193148e7af4708 [36m304 309.476 ms - -
+2023-12-11 19:12:35 info: GET /message/65773e67e0193148e7af4708 [36m304 325.446 ms - -
+2023-12-11 19:12:36 info: GET /message/65773e67e0193148e7af4708 [36m304 347.886 ms - -
+2023-12-11 19:12:37 info: GET /message/65773e67e0193148e7af4708 [36m304 703.107 ms - -
+2023-12-11 19:12:37 error: 400 - Please provide the content and the chatID - /message/sendMessage - POST - ::1
+2023-12-11 19:12:37 info: POST /message/sendMessage [33m400 194.206 ms - 1466
+2023-12-11 19:12:37 info: GET /message/65773e67e0193148e7af4708 [36m304 329.791 ms - -
+2023-12-11 19:12:37 info: GET /message/65773e67e0193148e7af4708 [36m304 316.340 ms - -
+2023-12-11 19:12:37 info: GET /message/65773e67e0193148e7af4708 [36m304 277.331 ms - -
+2023-12-11 19:12:38 info: GET /message/65773e67e0193148e7af4708 [36m304 317.392 ms - -
+2023-12-11 19:12:38 info: GET /message/65773e67e0193148e7af4708 [36m304 324.994 ms - -
+2023-12-11 19:12:38 info: GET /message/65773e67e0193148e7af4708 [36m304 293.552 ms - -
+2023-12-11 19:12:39 info: GET /message/65773e67e0193148e7af4708 [36m304 333.059 ms - -
+2023-12-11 19:14:27 info: GET /message/65773e67e0193148e7af4708 [36m304 326.208 ms - -
+2023-12-11 19:14:41 info: GET /message/65773e67e0193148e7af4708 [36m304 355.058 ms - -
+2023-12-11 19:14:41 info: GET /message/65773e67e0193148e7af4708 [36m304 279.761 ms - -
+2023-12-11 19:14:42 info: GET /message/65773e67e0193148e7af4708 [36m304 313.635 ms - -
+2023-12-11 19:14:42 info: GET /message/65773e67e0193148e7af4708 [36m304 306.141 ms - -
+2023-12-11 19:14:42 info: GET /message/65773e67e0193148e7af4708 [36m304 328.150 ms - -
+2023-12-11 19:14:43 info: GET /message/65773e67e0193148e7af4708 [36m304 327.384 ms - -
+2023-12-11 19:14:45 error: 400 - Please provide the content and the chatID - /message/sendMessage - POST - ::1
+2023-12-11 19:14:45 info: POST /message/sendMessage [33m400 245.081 ms - 1466
+2023-12-11 19:14:45 info: GET /message/65773e67e0193148e7af4708 [36m304 345.879 ms - -
+2023-12-11 19:15:56 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:15:56 info: GET /user/profile [33m401 170.669 ms - 279
+2023-12-11 19:15:56 info: GET /staff/profile [32m200 159.214 ms - 1680
+2023-12-11 19:15:57 info: GET /message/65773e67e0193148e7af4708 [36m304 375.190 ms - -
+2023-12-11 19:16:10 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:16:10 info: GET /user/profile [33m401 161.651 ms - 279
+2023-12-11 19:16:10 info: GET /staff/profile [32m200 157.336 ms - 1680
+2023-12-11 19:16:11 info: GET /message/65773e67e0193148e7af4708 [36m304 300.987 ms - -
+2023-12-11 19:16:14 info: GET /message/65773e67e0193148e7af4708 [36m304 356.986 ms - -
+2023-12-11 19:16:14 info: GET /message/65773e67e0193148e7af4708 [36m304 477.606 ms - -
+2023-12-11 19:16:15 info: GET /message/65773e67e0193148e7af4708 [36m304 386.028 ms - -
+2023-12-11 19:16:15 info: GET /message/65773e67e0193148e7af4708 [36m304 580.201 ms - -
+2023-12-11 19:16:17 info: POST /message/sendMessage [32m200 1255.766 ms - 684
+2023-12-11 19:16:18 info: GET /message/65773e67e0193148e7af4708 [32m200 551.192 ms - 578
+2023-12-11 19:16:55 info: GET /message/65773e67e0193148e7af4708 [36m304 458.631 ms - -
+2023-12-11 19:17:06 info: GET /message/65773e67e0193148e7af4708 [36m304 520.117 ms - -
+2023-12-11 19:17:13 info: GET /message/65773e67e0193148e7af4708 [36m304 494.864 ms - -
+2023-12-11 19:17:32 info: GET /message/65773e67e0193148e7af4708 [36m304 457.945 ms - -
+2023-12-11 19:17:56 info: GET /message/65773e67e0193148e7af4708 [36m304 494.885 ms - -
+2023-12-11 19:17:58 info: GET /message/65773e67e0193148e7af4708 [36m304 807.729 ms - -
+2023-12-11 19:18:03 info: GET /message/65773e67e0193148e7af4708 [36m304 565.892 ms - -
+2023-12-11 19:18:05 info: GET /message/65773e67e0193148e7af4708 [36m304 488.208 ms - -
+2023-12-11 19:18:06 info: GET /message/65773e67e0193148e7af4708 [36m304 455.801 ms - -
+2023-12-11 19:18:15 info: GET /message/65773e67e0193148e7af4708 [36m304 773.351 ms - -
+2023-12-11 19:18:22 info: GET /message/65773e67e0193148e7af4708 [36m304 480.465 ms - -
+2023-12-11 19:18:27 info: GET /message/65773e67e0193148e7af4708 [36m304 542.643 ms - -
+2023-12-11 19:18:38 info: GET /message/65773e67e0193148e7af4708 [36m304 705.675 ms - -
+2023-12-11 19:18:39 info: GET /message/65773e67e0193148e7af4708 [36m304 782.630 ms - -
+2023-12-11 19:18:44 info: GET /message/65773e67e0193148e7af4708 [36m304 489.480 ms - -
+2023-12-11 19:18:57 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:18:57 info: GET /user/profile [33m401 167.068 ms - 279
+2023-12-11 19:18:57 info: GET /staff/profile [32m200 189.589 ms - 1680
+2023-12-11 19:18:58 info: GET /message/65773e67e0193148e7af4708 [36m304 517.200 ms - -
+2023-12-11 19:19:05 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:19:05 info: GET /user/profile [33m401 158.040 ms - 279
+2023-12-11 19:19:05 info: GET /staff/profile [32m200 164.072 ms - 1680
+2023-12-11 19:19:13 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:19:13 info: GET /user/profile [33m401 165.200 ms - 279
+2023-12-11 19:19:13 info: GET /staff/profile [36m304 186.196 ms - -
+2023-12-11 19:19:14 info: GET /message/65773e67e0193148e7af4708 [36m304 534.396 ms - -
+2023-12-11 19:19:18 info: GET /message/65773e67e0193148e7af4708 [36m304 576.719 ms - -
+2023-12-11 19:19:28 info: GET /message/65773e67e0193148e7af4708 [36m304 529.385 ms - -
+2023-12-11 19:21:41 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:21:41 info: GET /user/profile [33m401 157.753 ms - 279
+2023-12-11 19:21:41 info: GET /staff/profile [32m200 186.099 ms - 1680
+2023-12-11 19:21:42 info: GET /message/65773e67e0193148e7af4708 [36m304 648.844 ms - -
+2023-12-11 19:21:43 info: GET /message/65773e67e0193148e7af4708 [36m304 482.302 ms - -
+2023-12-11 19:21:55 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:21:55 info: GET /user/profile [33m401 156.378 ms - 279
+2023-12-11 19:21:55 info: GET /staff/profile [36m304 160.852 ms - -
+2023-12-11 19:21:56 info: GET /message/65773e67e0193148e7af4708 [36m304 537.152 ms - -
+2023-12-11 19:23:23 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:23:23 info: GET /user/profile [33m401 166.577 ms - 279
+2023-12-11 19:23:23 info: GET /staff/profile [32m200 182.305 ms - 1680
+2023-12-11 19:23:27 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:23:27 info: GET /user/profile [33m401 188.252 ms - 279
+2023-12-11 19:23:27 info: GET /staff/profile [36m304 153.961 ms - -
+2023-12-11 19:23:36 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:23:36 info: GET /user/profile [33m401 192.812 ms - 279
+2023-12-11 19:23:36 info: GET /staff/profile [36m304 159.770 ms - -
+2023-12-11 19:23:37 info: GET /message/65773e67e0193148e7af4708 [36m304 515.354 ms - -
+2023-12-11 19:23:39 info: GET /message/65773e67e0193148e7af4708 [36m304 498.119 ms - -
+2023-12-11 19:23:49 info: GET /message/65773e67e0193148e7af4708 [36m304 482.256 ms - -
+2023-12-11 19:24:08 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:24:08 info: GET /user/profile [33m401 203.612 ms - 279
+2023-12-11 19:24:09 info: GET /staff/profile [32m200 188.178 ms - 1680
+2023-12-11 19:24:11 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:24:11 info: GET /user/profile [33m401 190.105 ms - 279
+2023-12-11 19:24:11 info: GET /staff/profile [36m304 153.736 ms - -
+2023-12-11 19:24:19 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:24:19 info: GET /user/profile [33m401 162.334 ms - 279
+2023-12-11 19:24:19 info: GET /staff/profile [36m304 180.902 ms - -
+2023-12-11 19:24:20 info: GET /message/65773e67e0193148e7af4708 [36m304 480.539 ms - -
+2023-12-11 19:24:23 info: GET /message/65773e67e0193148e7af4708 [36m304 545.862 ms - -
+2023-12-11 19:24:25 info: GET /message/65773e67e0193148e7af4708 [36m304 518.945 ms - -
+2023-12-11 19:24:27 info: GET /message/65773e67e0193148e7af4708 [36m304 532.403 ms - -
+2023-12-11 19:24:29 info: GET /message/65773e67e0193148e7af4708 [36m304 521.810 ms - -
+2023-12-11 19:24:42 info: GET /message/65773e67e0193148e7af4708 [36m304 512.711 ms - -
+2023-12-11 19:24:46 info: GET /message/65773e67e0193148e7af4708 [36m304 521.938 ms - -
+2023-12-11 19:24:53 info: GET /message/65773e67e0193148e7af4708 [36m304 507.214 ms - -
+2023-12-11 19:25:03 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:25:03 info: GET /user/profile [33m401 153.177 ms - 279
+2023-12-11 19:25:04 info: GET /staff/profile [32m200 165.808 ms - 1680
+2023-12-11 19:25:04 info: GET /message/65773e67e0193148e7af4708 [36m304 510.080 ms - -
+2023-12-11 19:25:23 info: GET /message/65773e67e0193148e7af4708 [36m304 520.510 ms - -
+2023-12-11 19:25:30 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:25:30 info: GET /user/profile [33m401 162.961 ms - 279
+2023-12-11 19:25:30 info: GET /staff/profile [36m304 171.105 ms - -
+2023-12-11 19:25:31 info: GET /message/65773e67e0193148e7af4708 [36m304 552.394 ms - -
+2023-12-11 19:25:59 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:25:59 info: GET /user/profile [33m401 201.174 ms - 279
+2023-12-11 19:26:00 info: GET /staff/profile [36m304 152.529 ms - -
+2023-12-11 19:26:00 info: GET /message/65773e67e0193148e7af4708 [36m304 468.929 ms - -
+2023-12-11 19:26:09 info: GET /message/65773e67e0193148e7af4708 [36m304 500.045 ms - -
+2023-12-11 19:26:14 info: GET /message/65773e67e0193148e7af4708 [36m304 462.873 ms - -
+2023-12-11 19:26:24 info: GET /message/65773e67e0193148e7af4708 [36m304 478.434 ms - -
+2023-12-11 19:27:08 info: GET /message/65773e67e0193148e7af4708 [36m304 522.536 ms - -
+2023-12-11 19:27:11 info: GET /message/65773e67e0193148e7af4708 [36m304 493.337 ms - -
+2023-12-11 19:27:32 info: GET /message/65773e67e0193148e7af4708 [36m304 538.704 ms - -
+2023-12-11 19:27:34 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:27:34 info: GET /user/profile [33m401 196.717 ms - 279
+2023-12-11 19:27:35 info: GET /staff/profile [32m200 186.126 ms - 1680
+2023-12-11 19:27:35 info: GET /message/65773e67e0193148e7af4708 [36m304 513.405 ms - -
+2023-12-11 19:27:50 info: GET /message/65773e67e0193148e7af4708 [36m304 538.431 ms - -
+2023-12-11 19:28:11 info: GET /message/65773e67e0193148e7af4708 [36m304 487.341 ms - -
+2023-12-11 19:28:17 info: GET /message/65773e67e0193148e7af4708 [36m304 476.048 ms - -
+2023-12-11 19:28:21 info: GET /message/65773e67e0193148e7af4708 [36m304 485.468 ms - -
+2023-12-11 19:28:36 info: GET /message/65773e67e0193148e7af4708 [36m304 505.704 ms - -
+2023-12-11 19:29:25 info: GET /message/65773e67e0193148e7af4708 [36m304 482.478 ms - -
+2023-12-11 19:30:47 info: GET /message/65773e67e0193148e7af4708 [36m304 520.085 ms - -
+2023-12-11 19:30:50 info: GET /message/65773e67e0193148e7af4708 [36m304 644.137 ms - -
+2023-12-11 19:30:54 info: GET /message/65773e67e0193148e7af4708 [36m304 478.817 ms - -
+2023-12-11 19:30:59 info: GET /message/65773e67e0193148e7af4708 [36m304 456.269 ms - -
+2023-12-11 19:31:04 info: GET /message/65773e67e0193148e7af4708 [36m304 488.069 ms - -
+2023-12-11 19:31:21 info: GET /message/65773e67e0193148e7af4708 [36m304 567.257 ms - -
+2023-12-11 19:31:44 info: POST /message/sendMessage [32m200 996.209 ms - 740
+2023-12-11 19:31:49 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:31:49 info: GET /user/profile [33m401 152.480 ms - 279
+2023-12-11 19:31:49 info: GET /staff/profile [32m200 149.895 ms - 1680
+2023-12-11 19:31:49 info: GET /message/65773e67e0193148e7af4708 [32m200 454.228 ms - 1168
+2023-12-11 19:31:55 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:31:55 info: GET /user/profile [33m401 166.069 ms - 279
+2023-12-11 19:31:55 info: GET /staff/profile [36m304 196.699 ms - -
+2023-12-11 19:31:56 info: GET /message/65773e67e0193148e7af4708 [36m304 548.781 ms - -
+2023-12-11 19:32:10 info: GET /message/65773e67e0193148e7af4708 [36m304 451.045 ms - -
+2023-12-11 19:32:32 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:32:32 info: GET /user/profile [33m401 298.503 ms - 279
+2023-12-11 19:32:33 info: GET /staff/profile [32m200 194.165 ms - 1680
+2023-12-11 19:32:33 info: GET /message/65773e67e0193148e7af4708 [36m304 617.307 ms - -
+2023-12-11 19:32:56 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:32:56 info: GET /user/profile [33m401 207.955 ms - 279
+2023-12-11 19:32:56 info: GET /staff/profile [36m304 175.097 ms - -
+2023-12-11 19:32:57 info: GET /message/65773e67e0193148e7af4708 [36m304 443.585 ms - -
+2023-12-11 19:33:05 info: GET /message/65773e67e0193148e7af4708 [36m304 496.128 ms - -
+2023-12-11 19:33:21 info: GET /message/65773e67e0193148e7af4708 [36m304 447.697 ms - -
+2023-12-11 19:33:23 info: GET /message/65773e67e0193148e7af4708 [36m304 518.620 ms - -
+2023-12-11 19:33:25 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:33:25 info: GET /user/profile [33m401 165.331 ms - 279
+2023-12-11 19:33:25 info: GET /staff/profile [32m200 192.207 ms - 1680
+2023-12-11 19:33:25 info: GET /message/65773e67e0193148e7af4708 [36m304 526.236 ms - -
+2023-12-11 19:33:37 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:33:37 info: GET /user/profile [33m401 148.708 ms - 279
+2023-12-11 19:33:37 info: GET /staff/profile [36m304 179.370 ms - -
+2023-12-11 19:33:38 info: GET /message/65773e67e0193148e7af4708 [36m304 490.418 ms - -
+2023-12-11 19:34:06 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:34:06 info: GET /user/profile [33m401 232.978 ms - 279
+2023-12-11 19:34:06 info: GET /staff/profile [32m200 144.702 ms - 1680
+2023-12-11 19:34:07 info: GET /message/65773e67e0193148e7af4708 [36m304 490.348 ms - -
+2023-12-11 19:35:04 info: GET /message/65773e67e0193148e7af4708 [36m304 478.793 ms - -
+2023-12-11 19:35:08 info: GET /message/65773e67e0193148e7af4708 [36m304 481.748 ms - -
+2023-12-11 19:35:13 info: GET /message/65773e67e0193148e7af4708 [36m304 588.681 ms - -
+2023-12-11 19:35:18 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:35:18 info: GET /user/profile [33m401 333.471 ms - 279
+2023-12-11 19:35:19 info: GET /staff/profile [32m200 199.197 ms - 1680
+2023-12-11 19:35:19 info: GET /message/65773e67e0193148e7af4708 [36m304 589.704 ms - -
+2023-12-11 19:36:45 info: GET /message/65773e67e0193148e7af4708 [36m304 2517.624 ms - -
+2023-12-11 19:36:47 info: GET /message/65773e67e0193148e7af4708 [36m304 655.538 ms - -
+2023-12-11 19:36:57 info: GET /message/65773e67e0193148e7af4708 [36m304 8480.539 ms - -
+2023-12-11 19:36:57 info: GET /message/65773e67e0193148e7af4708 [36m304 526.108 ms - -
+2023-12-11 19:36:59 info: GET /message/65773e67e0193148e7af4708 [36m304 509.592 ms - -
+2023-12-11 19:37:04 info: GET /message/65773e67e0193148e7af4708 [36m304 417.142 ms - -
+2023-12-11 19:37:13 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:37:13 info: GET /user/profile [33m401 195.783 ms - 279
+2023-12-11 19:37:13 info: GET /staff/profile [32m200 168.554 ms - 1680
+2023-12-11 19:37:14 info: GET /message/65773e67e0193148e7af4708 [36m304 604.813 ms - -
+2023-12-11 19:37:18 info: GET /message/65773e67e0193148e7af4708 [36m304 2901.604 ms - -
+2023-12-11 19:38:00 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:38:00 info: GET /user/profile [33m401 2571.847 ms - 279
+2023-12-11 19:38:00 info: GET /staff/profile [36m304 136.709 ms - -
+2023-12-11 19:38:01 info: GET /message/65773e67e0193148e7af4708 [36m304 463.561 ms - -
+2023-12-11 19:38:03 info: GET /message/65773e67e0193148e7af4708 [36m304 465.043 ms - -
+2023-12-11 19:38:07 info: GET /message/65773e67e0193148e7af4708 [36m304 438.617 ms - -
+2023-12-11 19:42:57 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:42:57 info: GET /user/profile [33m401 10344.546 ms - 279
+2023-12-11 19:43:07 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 19:43:07 info: GET /staff/profile [33m401 10022.939 ms - 279
+2023-12-11 19:43:35 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:43:35 info: GET /user/profile [33m401 15294.452 ms - 279
+2023-12-11 19:43:35 info: GET /staff/profile [32m200 161.790 ms - 1680
+2023-12-11 19:43:55 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:43:55 info: GET /user/profile [33m401 168.524 ms - 279
+2023-12-11 19:43:56 info: GET /staff/profile [36m304 162.548 ms - -
+2023-12-11 19:43:56 info: GET /message/65773e67e0193148e7af4708 [36m304 488.377 ms - -
+2023-12-11 19:47:44 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:47:44 info: GET /user/profile [33m401 10041.090 ms - 279
+2023-12-11 19:47:50 info: GET /staff/profile - - ms - -
+2023-12-11 19:47:54 error: 401 - Invalid token - /staff/profile - GET - ::1
+2023-12-11 19:48:01 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 19:48:01 info: GET /user/profile [33m401 10012.419 ms - 279
+2023-12-11 19:48:29 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:48:29 info: GET /user/profile [33m401 234.333 ms - 279
+2023-12-11 19:48:29 info: GET /staff/profile [32m200 196.750 ms - 1680
+2023-12-11 19:48:34 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 19:48:34 info: GET /user/profile [33m401 155.907 ms - 279
+2023-12-11 19:48:34 info: GET /staff/profile [36m304 152.489 ms - -
+2023-12-11 19:48:35 info: GET /message/65773e67e0193148e7af4708 [36m304 531.497 ms - -
+2023-12-11 20:27:31 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 20:27:31 info: GET /user/profile [33m401 213.911 ms - 279
+2023-12-11 20:27:31 info: GET /staff/profile [32m200 164.293 ms - 1680
+2023-12-11 20:27:32 info: GET /message/65773e67e0193148e7af4708 [36m304 462.980 ms - -
+2023-12-11 20:28:10 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 20:28:10 info: GET /user/profile [33m401 165.995 ms - 279
+2023-12-11 20:28:10 info: GET /staff/profile [32m200 144.303 ms - 1680
+2023-12-11 20:28:11 info: GET /message/65773e67e0193148e7af4708 [36m304 438.223 ms - -
+2023-12-11 20:33:21 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 20:33:21 info: GET /user/profile [33m401 4125.036 ms - 279
+2023-12-11 20:33:21 info: GET /staff/profile [32m200 175.435 ms - 1680
+2023-12-11 20:33:22 info: GET /message/65773e67e0193148e7af4708 [36m304 458.996 ms - -
+2023-12-11 20:40:08 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 20:40:08 info: GET /user/profile [33m401 220.107 ms - 279
+2023-12-11 20:40:08 info: GET /staff/profile [32m200 159.070 ms - 1680
+2023-12-11 20:40:08 info: GET /message/65773e67e0193148e7af4708 [36m304 464.993 ms - -
+2023-12-11 20:40:43 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 20:40:43 info: GET /user/profile [33m401 1621.278 ms - 279
+2023-12-11 20:40:43 info: GET /staff/profile [36m304 188.043 ms - -
+2023-12-11 20:40:44 info: GET /message/65773e67e0193148e7af4708 [36m304 476.991 ms - -
+2023-12-11 20:41:36 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 20:41:36 info: GET /user/profile [33m401 207.955 ms - 279
+2023-12-11 20:41:36 info: GET /staff/profile [32m200 151.795 ms - 1680
+2023-12-11 20:41:36 info: GET /message/65773e67e0193148e7af4708 [36m304 457.664 ms - -
+2023-12-11 20:44:16 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 20:44:16 info: GET /user/profile [33m401 197.296 ms - 279
+2023-12-11 20:44:16 info: GET /staff/profile [32m200 167.512 ms - 1680
+2023-12-11 20:44:17 info: GET /message/65773e67e0193148e7af4708 [36m304 451.366 ms - -
+2023-12-11 20:48:34 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 20:48:34 info: GET /user/profile [33m401 339.203 ms - 279
+2023-12-11 20:48:34 info: GET /staff/profile [32m200 185.564 ms - 1680
+2023-12-11 20:48:35 info: GET /message/65773e67e0193148e7af4708 [36m304 552.575 ms - -
+2023-12-11 20:49:11 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 20:49:11 info: GET /user/profile [33m401 2614.075 ms - 279
+2023-12-11 20:49:11 info: GET /staff/profile [36m304 171.288 ms - -
+2023-12-11 20:49:12 info: GET /message/65773e67e0193148e7af4708 [36m304 623.139 ms - -
+2023-12-11 20:51:11 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 20:51:11 info: GET /user/profile [33m401 273.294 ms - 279
+2023-12-11 20:51:11 info: GET /staff/profile [32m200 160.799 ms - 1680
+2023-12-11 20:51:13 info: GET /message/65773e67e0193148e7af4708 [32m200 1085.251 ms - 1544
+2023-12-11 20:52:44 info: GET /message/65773e67e0193148e7af4708 [36m304 1116.918 ms - -
+2023-12-11 20:52:46 info: GET /message/65773e67e0193148e7af4708 [36m304 1165.640 ms - -
+2023-12-11 20:52:58 info: GET /message/65773e67e0193148e7af4708 [36m304 960.007 ms - -
+2023-12-11 20:52:59 info: GET /message/65773e67e0193148e7af4708 [36m304 1120.992 ms - -
+2023-12-11 20:53:03 info: GET /message/65773e67e0193148e7af4708 [36m304 1067.055 ms - -
+2023-12-11 20:53:19 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 20:53:19 info: GET /user/profile [33m401 193.353 ms - 279
+2023-12-11 20:53:20 info: GET /staff/profile [32m200 272.106 ms - 1680
+2023-12-11 20:53:21 info: GET /message/65773e67e0193148e7af4708 [36m304 1108.327 ms - -
+2023-12-11 20:53:28 info: GET /message/65773e67e0193148e7af4708 [36m304 1039.286 ms - -
+2023-12-11 20:54:09 info: GET /message/65773e67e0193148e7af4708 [36m304 1102.255 ms - -
+2023-12-11 20:54:26 info: GET /message/65773e67e0193148e7af4708 [36m304 981.285 ms - -
+2023-12-11 20:54:28 info: GET /message/65773e67e0193148e7af4708 [36m304 974.091 ms - -
+2023-12-11 20:54:30 info: GET /message/65773e67e0193148e7af4708 [36m304 1103.146 ms - -
+2023-12-11 20:54:35 info: GET /message/65773e67e0193148e7af4708 [36m304 1139.179 ms - -
+2023-12-11 20:54:44 info: GET /message/65773e67e0193148e7af4708 [36m304 1126.485 ms - -
+2023-12-11 20:54:52 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 20:54:52 info: GET /user/profile [33m401 229.248 ms - 279
+2023-12-11 20:54:52 info: GET /staff/profile [32m200 191.471 ms - 1680
+2023-12-11 20:54:53 info: GET /message/65773e67e0193148e7af4708 [36m304 1091.970 ms - -
+2023-12-11 20:55:05 info: GET /message/65773e67e0193148e7af4708 [36m304 1200.030 ms - -
+2023-12-11 20:55:28 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 20:55:28 info: GET /user/profile [33m401 227.224 ms - 279
+2023-12-11 20:55:29 info: GET /staff/profile [32m200 191.868 ms - 1680
+2023-12-11 20:55:30 info: GET /message/65773e67e0193148e7af4708 [36m304 1320.386 ms - -
+2023-12-11 20:55:31 info: GET /message/65773e67e0193148e7af4708 [36m304 1122.078 ms - -
+2023-12-11 20:55:38 info: GET /message/65773e67e0193148e7af4708 [36m304 1022.369 ms - -
+2023-12-11 20:55:40 info: GET /message/65773e67e0193148e7af4708 [36m304 1083.794 ms - -
+2023-12-11 20:55:43 info: GET /message/65773e67e0193148e7af4708 [36m304 1114.778 ms - -
+2023-12-11 20:55:44 info: GET /message/65773e67e0193148e7af4708 [36m304 1020.204 ms - -
+2023-12-11 20:56:00 info: GET /message/65773e67e0193148e7af4708 [36m304 1045.260 ms - -
+2023-12-11 20:56:03 info: GET /message/65773e67e0193148e7af4708 [36m304 1063.507 ms - -
+2023-12-11 20:56:07 info: GET /message/65773e67e0193148e7af4708 [36m304 1177.654 ms - -
+2023-12-11 20:56:13 info: GET /message/65773e67e0193148e7af4708 [36m304 1119.587 ms - -
+2023-12-11 20:56:15 info: GET /message/65773e67e0193148e7af4708 [36m304 967.351 ms - -
+2023-12-11 20:56:44 info: GET /message/65773e67e0193148e7af4708 [36m304 1051.136 ms - -
+2023-12-11 20:56:47 info: GET /message/65773e67e0193148e7af4708 [36m304 1093.237 ms - -
+2023-12-11 20:56:48 info: GET /message/65773e67e0193148e7af4708 [36m304 944.433 ms - -
+2023-12-11 20:56:51 info: GET /message/65773e67e0193148e7af4708 [36m304 1685.952 ms - -
+2023-12-11 20:56:58 info: GET /message/65773e67e0193148e7af4708 [36m304 962.017 ms - -
+2023-12-11 20:57:00 info: GET /message/65773e67e0193148e7af4708 [36m304 1061.691 ms - -
+2023-12-11 20:57:03 info: GET /message/65773e67e0193148e7af4708 [36m304 999.972 ms - -
+2023-12-11 20:58:20 info: GET /message/65773e67e0193148e7af4708 [36m304 1100.274 ms - -
+2023-12-11 20:58:24 info: GET /message/65773e67e0193148e7af4708 [36m304 1091.947 ms - -
+2023-12-11 20:59:12 info: GET /message/65773e67e0193148e7af4708 [36m304 1111.874 ms - -
+2023-12-11 20:59:21 info: GET /message/65773e67e0193148e7af4708 [36m304 1161.748 ms - -
+2023-12-11 20:59:26 info: GET /message/65773e67e0193148e7af4708 [36m304 1828.079 ms - -
+2023-12-11 20:59:57 info: GET /message/65773e67e0193148e7af4708 [36m304 1110.698 ms - -
+2023-12-11 20:59:59 info: GET /message/65773e67e0193148e7af4708 [36m304 997.450 ms - -
+2023-12-11 21:00:04 info: GET /message/65773e67e0193148e7af4708 [36m304 977.315 ms - -
+2023-12-11 21:00:06 info: GET /message/65773e67e0193148e7af4708 [36m304 1079.282 ms - -
+2023-12-11 21:00:12 info: GET /message/65773e67e0193148e7af4708 [36m304 1123.994 ms - -
+2023-12-11 21:00:13 info: GET /message/65773e67e0193148e7af4708 [36m304 1089.013 ms - -
+2023-12-11 21:00:16 info: GET /message/65773e67e0193148e7af4708 [36m304 1253.512 ms - -
+2023-12-11 21:00:20 info: GET /message/65773e67e0193148e7af4708 [36m304 1017.649 ms - -
+2023-12-11 21:00:21 info: GET /message/65773e67e0193148e7af4708 [36m304 903.361 ms - -
+2023-12-11 21:00:26 info: GET /message/65773e67e0193148e7af4708 [36m304 1227.632 ms - -
+2023-12-11 21:01:02 info: GET /message/65773e67e0193148e7af4708 [36m304 1515.156 ms - -
+2023-12-11 21:01:08 info: GET /message/65773e67e0193148e7af4708 [36m304 1011.078 ms - -
+2023-12-11 21:01:15 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 21:01:15 info: GET /user/profile [33m401 233.239 ms - 279
+2023-12-11 21:01:16 info: GET /staff/profile [32m200 147.788 ms - 1680
+2023-12-11 21:01:17 info: GET /message/65773e67e0193148e7af4708 [36m304 1006.807 ms - -
+2023-12-11 21:01:19 info: GET /message/65773e67e0193148e7af4708 [36m304 947.205 ms - -
+2023-12-11 21:01:22 info: GET /message/65773e67e0193148e7af4708 [36m304 977.787 ms - -
+2023-12-11 21:01:30 info: GET /message/65773e67e0193148e7af4708 [36m304 1028.135 ms - -
+2023-12-11 21:01:32 info: GET /message/65773e67e0193148e7af4708 [36m304 1044.434 ms - -
+2023-12-11 21:01:41 info: GET /message/65773e67e0193148e7af4708 [36m304 1060.493 ms - -
+2023-12-11 21:01:49 info: GET /message/65773e67e0193148e7af4708 [36m304 1181.157 ms - -
+2023-12-11 21:01:52 info: GET /message/65773e67e0193148e7af4708 [36m304 1245.414 ms - -
+2023-12-11 21:01:56 info: GET /message/65773e67e0193148e7af4708 [36m304 918.196 ms - -
+2023-12-11 21:02:00 info: GET /message/65773e67e0193148e7af4708 [36m304 1026.288 ms - -
+2023-12-11 21:02:30 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 21:02:30 info: GET /user/profile [33m401 1742.512 ms - 279
+2023-12-11 21:02:30 info: GET /staff/profile [32m200 162.639 ms - 1680
+2023-12-11 21:02:31 info: GET /message/65773e67e0193148e7af4708 [32m200 1115.594 ms - 1582
+2023-12-11 21:02:47 info: GET /message/65773e67e0193148e7af4708 [36m304 1226.732 ms - -
+2023-12-11 21:03:05 info: GET /message/65773e67e0193148e7af4708 [36m304 1091.982 ms - -
+2023-12-11 21:03:20 info: GET /user/profile [36m304 156.250 ms - -
+2023-12-11 21:03:36 info: GET /user/profile [36m304 181.311 ms - -
+2023-12-11 21:03:39 info: GET /message/65773e67e0193148e7af4708 [32m200 893.089 ms - 1582
+2023-12-11 21:04:10 info: GET /message/65773e67e0193148e7af4708 [36m304 1163.164 ms - -
+2023-12-11 21:04:11 info: GET /message/65773e67e0193148e7af4708 [36m304 1086.884 ms - -
+2023-12-11 21:04:23 info: GET /message/65773e67e0193148e7af4708 [36m304 1095.512 ms - -
+2023-12-11 21:04:25 info: GET /message/65773e67e0193148e7af4708 [36m304 1005.225 ms - -
+2023-12-11 21:06:58 info: GET /message/65773e67e0193148e7af4708 [36m304 898.903 ms - -
+2023-12-11 21:06:58 info: GET /message/65773e67e0193148e7af4708 [36m304 907.545 ms - -
+2023-12-11 21:06:59 info: GET /message/65773e67e0193148e7af4708 [36m304 886.402 ms - -
+2023-12-11 21:07:00 info: GET /message/65773e67e0193148e7af4708 [36m304 975.133 ms - -
+2023-12-11 21:07:19 info: GET /message/65773e67e0193148e7af4708 [36m304 999.471 ms - -
+2023-12-11 21:07:20 info: GET /message/65773e67e0193148e7af4708 [36m304 972.923 ms - -
+2023-12-11 21:07:52 info: GET /message/65773e67e0193148e7af4708 [36m304 1105.275 ms - -
+2023-12-11 21:07:54 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 21:07:54 info: GET /user/profile [33m401 149.509 ms - 279
+2023-12-11 21:07:54 info: GET /staff/profile [32m200 159.472 ms - 1680
+2023-12-11 21:07:55 info: GET /message/65773e67e0193148e7af4708 [36m304 948.576 ms - -
+2023-12-11 21:07:55 info: GET /message/65773e67e0193148e7af4708 [36m304 980.950 ms - -
+2023-12-11 21:07:59 info: GET /message/65773e67e0193148e7af4708 [36m304 1072.419 ms - -
+2023-12-11 21:08:00 info: GET /message/65773e67e0193148e7af4708 [36m304 896.987 ms - -
+2023-12-11 21:08:01 info: GET /message/65773e67e0193148e7af4708 [36m304 996.285 ms - -
+2023-12-11 21:08:03 info: GET /message/65773e67e0193148e7af4708 [36m304 1280.757 ms - -
+2023-12-11 21:08:18 info: GET /message/65773e67e0193148e7af4708 [36m304 886.439 ms - -
+2023-12-11 21:08:19 info: GET /message/65773e67e0193148e7af4708 [36m304 1105.577 ms - -
+2023-12-11 21:08:22 info: GET /message/65773e67e0193148e7af4708 [36m304 988.693 ms - -
+2023-12-11 21:08:23 info: GET /message/65773e67e0193148e7af4708 [36m304 872.243 ms - -
+2023-12-11 21:08:26 info: GET /message/65773e67e0193148e7af4708 [36m304 1142.188 ms - -
+2023-12-11 21:08:27 info: GET /message/65773e67e0193148e7af4708 [36m304 1010.419 ms - -
+2023-12-11 21:08:27 info: GET /message/65773e67e0193148e7af4708 [36m304 1090.357 ms - -
+2023-12-11 21:08:29 info: GET /message/65773e67e0193148e7af4708 [36m304 963.005 ms - -
+2023-12-11 21:08:30 info: GET /message/65773e67e0193148e7af4708 [36m304 1091.622 ms - -
+2023-12-11 21:08:31 info: GET /message/65773e67e0193148e7af4708 [36m304 925.453 ms - -
+2023-12-11 21:08:32 info: GET /message/65773e67e0193148e7af4708 [36m304 1068.495 ms - -
+2023-12-11 21:08:33 info: GET /message/65773e67e0193148e7af4708 [36m304 1051.062 ms - -
+2023-12-11 21:09:04 info: GET /message/65773e67e0193148e7af4708 [32m200 1168.184 ms - 1778
+2023-12-11 21:09:04 info: GET /message/65773e67e0193148e7af4708 [32m200 1214.495 ms - 1778
+2023-12-11 21:09:13 info: GET /user/profile [36m304 166.706 ms - -
+2023-12-11 21:09:15 info: GET /message/65773e67e0193148e7af4708 [36m304 1116.159 ms - -
+2023-12-11 21:10:57 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 21:10:57 info: GET /user/profile [33m401 151.457 ms - 279
+2023-12-11 21:10:58 info: GET /user/profile [36m304 228.794 ms - -
+2023-12-11 21:10:59 info: GET /staff/profile [32m200 145.405 ms - 1680
+2023-12-11 21:10:59 info: GET /message/65773e67e0193148e7af4708 [36m304 998.108 ms - -
+2023-12-11 21:11:00 info: GET /message/65773e67e0193148e7af4708 [36m304 880.449 ms - -
+2023-12-11 21:11:02 info: GET /user/profile [36m304 858.675 ms - -
+2023-12-11 21:11:02 info: GET /message/65773e67e0193148e7af4708 [36m304 1757.710 ms - -
+2023-12-11 21:11:03 info: GET /message/65773e67e0193148e7af4708 [36m304 961.239 ms - -
+2023-12-11 21:11:49 error: 500 - staff is not defined - /message/sendMessage - POST - ::1
+2023-12-11 21:11:49 info: POST /message/sendMessage [31m500 1156.309 ms - 310
+2023-12-11 21:12:29 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 21:12:29 info: GET /user/profile [33m401 3154.890 ms - 279
+2023-12-11 21:12:29 info: GET /staff/profile [32m200 297.465 ms - 1680
+2023-12-11 21:12:30 info: GET /message/65773e67e0193148e7af4708 [32m200 1110.335 ms - 2667
+2023-12-11 21:12:38 info: GET /user/profile [36m304 182.127 ms - -
+2023-12-11 21:12:40 info: GET /message/65773e67e0193148e7af4708 [32m200 967.926 ms - 2667
+2023-12-11 21:12:51 info: POST /message/sendMessage [32m200 1142.287 ms - 659
+2023-12-11 21:12:58 info: GET /user/profile [36m304 174.002 ms - -
+2023-12-11 21:13:00 info: GET /message/65773e67e0193148e7af4708 [32m200 1007.744 ms - 3570
+2023-12-11 21:13:53 info: POST /message/sendMessage [32m200 1304.614 ms - 657
+2023-12-11 21:14:03 info: GET /user/profile [36m304 1242.350 ms - -
+2023-12-11 21:14:04 info: GET /message/65773e67e0193148e7af4708 [32m200 958.878 ms - 4471
+2023-12-11 21:14:25 info: POST /message/sendMessage [32m200 1116.577 ms - 684
+2023-12-11 21:14:30 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 21:14:30 info: GET /user/profile [33m401 212.409 ms - 279
+2023-12-11 21:14:30 info: GET /staff/profile [32m200 148.644 ms - 1680
+2023-12-11 21:14:31 info: GET /message/65773e67e0193148e7af4708 [32m200 1074.249 ms - 5409
+2023-12-11 21:26:54 info: GET /message/65773e67e0193148e7af4708 [36m304 1326.244 ms - -
+2023-12-11 21:26:55 info: GET /message/65773e67e0193148e7af4708 [32m200 1238.274 ms - 5409
+2023-12-11 21:27:00 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 21:27:00 info: GET /user/profile [33m401 150.528 ms - 279
+2023-12-11 21:27:01 info: GET /staff/profile [32m200 145.774 ms - 1680
+2023-12-11 21:27:03 error: 401 - Invalid token - /user/profile - GET - ::ffff:127.0.0.1
+2023-12-11 21:27:03 info: GET /user/profile [33m401 854.518 ms - 279
+2023-12-11 21:27:03 info: GET /user/profile [36m304 438.706 ms - -
+2023-12-11 21:27:03 info: GET /staff/profile [32m200 201.814 ms - 1680
+2023-12-11 21:27:05 info: GET /user/profile [36m304 255.770 ms - -
+2023-12-11 21:27:45 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 21:27:45 info: GET /user/profile [33m401 196.055 ms - 279
+2023-12-11 21:27:47 info: GET /staff/profile [36m304 163.145 ms - -
+2023-12-11 21:27:47 info: GET /user/profile [36m304 255.883 ms - -
+2023-12-11 21:29:00 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 21:29:00 info: GET /user/profile [33m401 144.659 ms - 279
+2023-12-11 21:29:00 info: GET /staff/profile [32m200 144.615 ms - 1680
+2023-12-11 21:29:02 info: GET /user/profile [36m304 192.785 ms - -
+2023-12-11 21:29:02 info: GET /message/65773e67e0193148e7af4708 [36m304 1643.681 ms - -
+2023-12-11 21:29:03 info: GET /message/65773e67e0193148e7af4708 [36m304 983.641 ms - -
+2023-12-11 21:29:04 info: GET /message/65773e67e0193148e7af4708 [36m304 1048.534 ms - -
+2023-12-11 21:29:44 info: POST /message/sendMessage [32m200 907.842 ms - 638
+2023-12-11 21:30:10 info: GET /message/65773e67e0193148e7af4708 [32m200 1003.263 ms - 6291
+2023-12-11 21:30:11 info: GET /message/65773e67e0193148e7af4708 [32m200 898.186 ms - 6291
+2023-12-11 21:30:25 info: POST /message/sendMessage [32m200 968.082 ms - 639
+2023-12-11 21:30:39 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 21:30:39 info: GET /user/profile [33m401 151.513 ms - 279
+2023-12-11 21:30:39 info: GET /staff/profile [32m200 235.081 ms - 1680
+2023-12-11 21:30:40 info: GET /message/65773e67e0193148e7af4708 [32m200 1092.389 ms - 7184
+2023-12-11 21:39:54 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 21:39:54 info: GET /user/profile [33m401 275.434 ms - 279
+2023-12-11 21:39:54 info: GET /staff/profile [32m200 172.141 ms - 1680
+2023-12-11 21:39:56 info: GET /message/65773e67e0193148e7af4708 [36m304 1371.930 ms - -
+2023-12-11 21:41:14 info: POST /message/sendMessage [32m200 907.462 ms - 638
+2023-12-11 21:41:14 info: POST /message/sendMessage [32m200 946.443 ms - 638
+2023-12-11 21:45:02 info: GET /message/65773e67e0193148e7af4708 [32m200 6097.596 ms - 8968
+2023-12-11 21:45:10 info: POST /message/sendMessage [32m200 1162.293 ms - 638
+2023-12-11 21:45:27 info: GET /user/profile [36m304 298.755 ms - -
+2023-12-11 21:45:28 info: GET /message/65773e67e0193148e7af4708 [32m200 888.726 ms - 9850
+2023-12-11 21:45:34 info: POST /message/sendMessage [32m200 940.698 ms - 636
+2023-12-11 21:47:31 info: GET /message/65773e67e0193148e7af4708 [32m200 1826.175 ms - 10740
+2023-12-11 21:48:03 info: GET /message/65773e67e0193148e7af4708 [36m304 2825.439 ms - -
+2023-12-11 21:48:04 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 21:48:04 info: GET /user/profile [33m401 221.992 ms - 279
+2023-12-11 21:48:05 info: GET /staff/profile [32m200 181.910 ms - 1680
+2023-12-11 21:48:06 info: GET /message/65773e67e0193148e7af4708 [36m304 928.297 ms - -
+2023-12-11 21:48:08 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 21:48:08 info: GET /user/profile [33m401 178.595 ms - 279
+2023-12-11 21:48:09 info: GET /staff/profile [36m304 141.209 ms - -
+2023-12-11 21:48:10 info: GET /message/65773e67e0193148e7af4708 [36m304 1085.134 ms - -
+2023-12-11 21:48:11 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 21:48:11 info: GET /user/profile [33m401 988.022 ms - 279
+2023-12-11 21:48:14 info: GET /staff/profile [36m304 216.284 ms - -
+2023-12-11 21:48:15 info: GET /message/65773e67e0193148e7af4708 [36m304 992.344 ms - -
+2023-12-11 21:48:19 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 21:48:19 info: GET /user/profile [33m401 173.716 ms - 279
+2023-12-11 21:48:19 info: GET /staff/profile [36m304 167.415 ms - -
+2023-12-11 21:48:21 info: GET /message/65773e67e0193148e7af4708 [36m304 1184.903 ms - -
+2023-12-11 21:48:44 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 21:48:44 info: GET /user/profile [33m401 221.847 ms - 279
+2023-12-11 21:48:45 info: GET /staff/profile [36m304 188.510 ms - -
+2023-12-11 21:48:46 info: GET /message/65773e67e0193148e7af4708 [36m304 1088.372 ms - -
+2023-12-11 21:49:31 info: GET /message/65773e67e0193148e7af4708 [36m304 1034.178 ms - -
+2023-12-11 21:49:32 info: GET /message/65773e67e0193148e7af4708 [36m304 934.055 ms - -
+2023-12-11 21:49:44 info: GET /message/65773e67e0193148e7af4708 [36m304 971.794 ms - -
+2023-12-11 21:49:53 info: POST /message/sendMessage [32m200 1333.860 ms - 641
+2023-12-11 22:02:08 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 22:02:08 info: GET /user/profile [33m401 160.949 ms - 279
+2023-12-11 22:02:08 info: GET /staff/profile [32m200 166.161 ms - 1680
+2023-12-11 22:02:09 info: GET /message/65773e67e0193148e7af4708 [32m200 897.641 ms - 11625
+2023-12-11 22:02:16 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 22:02:16 info: GET /user/profile [33m401 143.254 ms - 279
+2023-12-11 22:02:16 info: GET /staff/profile [36m304 148.487 ms - -
+2023-12-11 22:02:20 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 22:02:20 info: GET /user/profile [33m401 158.914 ms - 279
+2023-12-11 22:02:20 info: GET /staff/profile [36m304 138.492 ms - -
+2023-12-11 22:02:35 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 22:02:35 info: GET /user/profile [33m401 150.547 ms - 279
+2023-12-11 22:02:35 info: GET /staff/profile [36m304 149.748 ms - -
+2023-12-11 22:02:39 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 22:02:39 info: GET /user/profile [33m401 152.197 ms - 279
+2023-12-11 22:02:39 info: GET /staff/profile [36m304 145.063 ms - -
+2023-12-11 22:03:05 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 22:03:05 info: GET /user/profile [33m401 170.600 ms - 279
+2023-12-11 22:03:05 info: GET /staff/profile [32m200 144.636 ms - 1680
+2023-12-11 22:03:06 info: GET /message/65773e67e0193148e7af4708 [36m304 866.627 ms - -
+2023-12-11 22:03:31 info: POST /message/sendMessage [32m200 870.768 ms - 641
+2023-12-11 22:03:37 info: GET /user/profile [32m200 145.645 ms - 9805
+2023-12-11 22:10:10 info: GET /message/65773e67e0193148e7af4708 [32m200 914.914 ms - 12510
+2023-12-11 22:10:23 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 22:10:23 info: GET /user/profile [33m401 156.655 ms - 279
+2023-12-11 22:10:23 info: GET /staff/profile [32m200 146.165 ms - 1680
+2023-12-11 22:10:24 info: GET /message/65773e67e0193148e7af4708 [36m304 892.530 ms - -
+2023-12-11 22:10:29 info: GET /message/65773e67e0193148e7af4708 [36m304 885.582 ms - -
+2023-12-11 22:10:30 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-11 22:10:30 info: GET /user/profile [33m401 146.140 ms - 279
+2023-12-11 22:10:30 info: GET /staff/profile [36m304 151.980 ms - -
+2023-12-11 22:10:31 info: GET /message/65773e67e0193148e7af4708 [36m304 884.235 ms - -
+2023-12-12 06:34:33 info: GET /user/profile [36m304 179.099 ms - -
+2023-12-12 06:34:33 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 06:34:33 info: GET /user/profile [33m401 240.575 ms - 279
+2023-12-12 06:34:33 info: GET /user/profile [36m304 226.275 ms - -
+2023-12-12 06:34:33 info: GET /staff/profile [32m200 179.778 ms - 1680
+2023-12-12 06:34:35 info: GET /message/65773e67e0193148e7af4708 [36m304 1117.772 ms - -
+2023-12-12 06:34:36 info: GET /message/65773e67e0193148e7af4708 [32m200 1084.809 ms - 12510
+2023-12-12 06:34:59 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 06:34:59 info: GET /user/profile [33m401 173.513 ms - 279
+2023-12-12 06:34:59 info: GET /staff/profile [36m304 155.120 ms - -
+2023-12-12 06:35:01 info: GET /message/65773e67e0193148e7af4708 [36m304 1195.989 ms - -
+2023-12-12 06:35:10 info: GET /message/65773e67e0193148e7af4708 [36m304 1180.543 ms - -
+2023-12-12 06:35:16 info: GET /user/profile [36m304 207.307 ms - -
+2023-12-12 06:35:18 info: GET /message/65773e67e0193148e7af4708 [36m304 1176.583 ms - -
+2023-12-12 06:36:03 info: GET /message/65773e67e0193148e7af4708 [36m304 2491.334 ms - -
+2023-12-12 06:36:03 info: GET /message/65773e67e0193148e7af4708 [36m304 1315.968 ms - -
+2023-12-12 06:36:04 info: GET /user/profile [36m304 220.026 ms - -
+2023-12-12 06:36:05 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 06:36:05 info: GET /user/profile [33m401 163.387 ms - 279
+2023-12-12 06:36:05 info: GET /staff/profile [32m200 158.895 ms - 1680
+2023-12-12 06:36:05 info: GET /message/65773e67e0193148e7af4708 [36m304 1159.992 ms - -
+2023-12-12 06:36:06 info: GET /message/65773e67e0193148e7af4708 [36m304 1173.955 ms - -
+2023-12-12 06:36:17 info: GET /message/65773e67e0193148e7af4708 [36m304 1082.665 ms - -
+2023-12-12 06:36:18 info: GET /message/65773e67e0193148e7af4708 [36m304 1180.087 ms - -
+2023-12-12 06:38:53 info: GET /message/65773e67e0193148e7af4708 [36m304 1216.045 ms - -
+2023-12-12 06:38:53 info: GET /message/65773e67e0193148e7af4708 [36m304 1100.969 ms - -
+2023-12-12 06:39:17 info: GET /message/65773e67e0193148e7af4708 [36m304 1350.630 ms - -
+2023-12-12 06:39:18 info: GET /message/65773e67e0193148e7af4708 [36m304 1255.495 ms - -
+2023-12-12 06:39:47 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 06:39:47 info: GET /user/profile [33m401 257.527 ms - 279
+2023-12-12 06:39:48 info: GET /staff/profile [32m200 192.760 ms - 1680
+2023-12-12 06:39:49 info: GET /message/65773e67e0193148e7af4708 [36m304 1169.503 ms - -
+2023-12-12 06:40:29 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 06:40:29 info: GET /user/profile [33m401 305.463 ms - 279
+2023-12-12 06:40:30 info: GET /staff/profile [32m200 210.636 ms - 1680
+2023-12-12 06:40:31 info: GET /message/65773e67e0193148e7af4708 [36m304 1255.258 ms - -
+2023-12-12 06:43:04 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 06:43:04 info: GET /user/profile [33m401 471.177 ms - 279
+2023-12-12 06:43:05 info: GET /staff/profile [32m200 277.395 ms - 1680
+2023-12-12 06:43:06 info: GET /message/65773e67e0193148e7af4708 [36m304 1130.188 ms - -
+2023-12-12 06:43:26 info: GET /user/profile [36m304 168.798 ms - -
+2023-12-12 06:43:28 info: GET /message/65773e67e0193148e7af4708 [36m304 1226.380 ms - -
+2023-12-12 06:44:22 info: GET /user/profile [36m304 170.345 ms - -
+2023-12-12 06:44:23 info: GET /message/65773e67e0193148e7af4708 [36m304 1081.531 ms - -
+2023-12-12 06:44:24 info: GET /message/65773e67e0193148e7af4708 [36m304 1290.467 ms - -
+2023-12-12 06:44:38 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 06:44:38 info: GET /user/profile [33m401 209.685 ms - 279
+2023-12-12 06:44:39 info: GET /staff/profile [36m304 182.421 ms - -
+2023-12-12 06:44:40 info: GET /message/65773e67e0193148e7af4708 [36m304 1434.257 ms - -
+2023-12-12 06:47:23 info: GET /message/65773e67e0193148e7af4708 [36m304 1277.958 ms - -
+2023-12-12 06:47:24 info: GET /message/65773e67e0193148e7af4708 [36m304 1199.022 ms - -
+2023-12-12 06:47:33 info: GET /message/65773e67e0193148e7af4708 [36m304 1195.853 ms - -
+2023-12-12 06:47:34 info: GET /message/65773e67e0193148e7af4708 [36m304 1215.547 ms - -
+2023-12-12 06:47:37 info: GET /message/65773e67e0193148e7af4708 [36m304 1172.683 ms - -
+2023-12-12 06:47:43 info: GET /message/65773e67e0193148e7af4708 [36m304 1247.255 ms - -
+2023-12-12 06:47:49 info: GET /message/65773e67e0193148e7af4708 [36m304 1304.453 ms - -
+2023-12-12 06:47:50 info: GET /message/65773e67e0193148e7af4708 [36m304 1385.054 ms - -
+2023-12-12 06:49:11 info: GET /message/65773e67e0193148e7af4708 [36m304 1207.758 ms - -
+2023-12-12 06:49:12 info: GET /message/65773e67e0193148e7af4708 [36m304 1091.298 ms - -
+2023-12-12 06:49:16 info: GET /message/65773e67e0193148e7af4708 [36m304 1148.435 ms - -
+2023-12-12 06:49:17 info: GET /message/65773e67e0193148e7af4708 [36m304 1130.759 ms - -
+2023-12-12 06:49:19 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 06:49:19 info: GET /user/profile [33m401 169.931 ms - 279
+2023-12-12 06:49:19 info: GET /staff/profile [32m200 157.872 ms - 1680
+2023-12-12 06:49:20 info: GET /user/profile [36m304 211.022 ms - -
+2023-12-12 06:49:20 info: GET /message/65773e67e0193148e7af4708 [36m304 1206.494 ms - -
+2023-12-12 06:49:21 info: GET /message/65773e67e0193148e7af4708 [36m304 1012.293 ms - -
+2023-12-12 06:49:23 info: GET /user/profile [36m304 451.640 ms - -
+2023-12-12 06:49:25 info: GET /message/65773e67e0193148e7af4708 [36m304 1357.146 ms - -
+2023-12-12 06:49:31 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 06:49:31 info: GET /user/profile [33m401 239.869 ms - 279
+2023-12-12 06:49:32 info: GET /staff/profile [36m304 254.809 ms - -
+2023-12-12 06:56:49 info: GET /message/65773e67e0193148e7af4708 [36m304 1436.515 ms - -
+2023-12-12 06:56:51 info: GET /message/65773e67e0193148e7af4708 [36m304 1396.455 ms - -
+2023-12-12 06:56:54 info: GET /message/65773e67e0193148e7af4708 [36m304 1483.265 ms - -
+2023-12-12 06:56:55 info: GET /message/65773e67e0193148e7af4708 [36m304 1109.723 ms - -
+2023-12-12 06:56:58 info: GET /message/65773e67e0193148e7af4708 [36m304 1314.938 ms - -
+2023-12-12 06:57:04 info: GET /message/65773e67e0193148e7af4708 [36m304 4088.165 ms - -
+2023-12-12 06:57:08 info: GET /message/65773e67e0193148e7af4708 [36m304 1075.384 ms - -
+2023-12-12 06:57:10 info: GET /message/65773e67e0193148e7af4708 [36m304 1232.846 ms - -
+2023-12-12 06:57:29 info: GET /message/65773e67e0193148e7af4708 [36m304 1177.641 ms - -
+2023-12-12 06:57:29 info: GET /message/65773e67e0193148e7af4708 [36m304 1125.597 ms - -
+2023-12-12 06:57:32 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 06:57:32 info: GET /user/profile [33m401 229.462 ms - 279
+2023-12-12 06:57:32 info: GET /staff/profile [32m200 286.180 ms - 1680
+2023-12-12 06:57:33 info: GET /user/profile [36m304 167.860 ms - -
+2023-12-12 06:57:33 info: GET /message/65773e67e0193148e7af4708 [36m304 1063.306 ms - -
+2023-12-12 06:57:34 info: GET /message/65773e67e0193148e7af4708 [36m304 1082.558 ms - -
+2023-12-12 06:57:39 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 06:57:39 info: GET /user/profile [33m401 177.633 ms - 279
+2023-12-12 06:57:39 info: GET /staff/profile [36m304 162.641 ms - -
+2023-12-12 06:57:40 info: GET /user/profile [36m304 248.483 ms - -
+2023-12-12 06:57:41 info: GET /message/65773e67e0193148e7af4708 [36m304 1308.822 ms - -
+2023-12-12 06:57:42 info: GET /message/65773e67e0193148e7af4708 [36m304 1131.327 ms - -
+2023-12-12 06:57:44 info: GET /user/profile [36m304 196.013 ms - -
+2023-12-12 06:57:45 info: GET /message/65773e67e0193148e7af4708 [36m304 1253.178 ms - -
+2023-12-12 06:57:46 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 06:57:46 info: GET /user/profile [33m401 155.442 ms - 279
+2023-12-12 06:57:46 info: GET /staff/profile [36m304 274.425 ms - -
+2023-12-12 06:57:46 info: GET /user/profile [36m304 215.726 ms - -
+2023-12-12 06:57:49 info: GET /message/65773e67e0193148e7af4708 [36m304 1141.212 ms - -
+2023-12-12 06:57:50 info: GET /message/65773e67e0193148e7af4708 [36m304 1014.869 ms - -
+2023-12-12 06:57:50 info: GET /message/65773e67e0193148e7af4708 [36m304 1128.815 ms - -
+2023-12-12 06:58:05 info: GET /message/65773e67e0193148e7af4708 [36m304 1184.417 ms - -
+2023-12-12 06:58:12 info: GET /message/65773e67e0193148e7af4708 [36m304 1206.444 ms - -
+2023-12-12 06:58:13 info: GET /message/65773e67e0193148e7af4708 [36m304 1196.328 ms - -
+2023-12-12 06:58:23 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 06:58:23 info: GET /user/profile [33m401 225.403 ms - 279
+2023-12-12 06:58:23 info: GET /staff/profile [32m200 188.827 ms - 1680
+2023-12-12 06:58:24 info: GET /user/profile [36m304 179.032 ms - -
+2023-12-12 06:58:24 info: GET /message/65773e67e0193148e7af4708 [36m304 1272.291 ms - -
+2023-12-12 06:58:26 info: GET /message/65773e67e0193148e7af4708 [36m304 1265.721 ms - -
+2023-12-12 06:58:29 info: GET /message/65773e67e0193148e7af4708 [36m304 1146.153 ms - -
+2023-12-12 06:58:29 info: GET /message/65773e67e0193148e7af4708 [36m304 1238.336 ms - -
+2023-12-12 06:58:57 info: GET /message/65773e67e0193148e7af4708 [36m304 1235.372 ms - -
+2023-12-12 06:58:58 info: GET /message/65773e67e0193148e7af4708 [36m304 1172.210 ms - -
+2023-12-12 06:59:06 info: GET /message/65773e67e0193148e7af4708 [36m304 975.663 ms - -
+2023-12-12 06:59:08 info: GET /message/65773e67e0193148e7af4708 [36m304 1054.909 ms - -
+2023-12-12 06:59:14 info: GET /message/65773e67e0193148e7af4708 [36m304 1301.919 ms - -
+2023-12-12 06:59:15 info: GET /message/65773e67e0193148e7af4708 [36m304 1237.223 ms - -
+2023-12-12 06:59:56 info: GET /message/65773e67e0193148e7af4708 [36m304 1367.960 ms - -
+2023-12-12 06:59:57 info: GET /message/65773e67e0193148e7af4708 [36m304 1181.028 ms - -
+2023-12-12 07:00:46 info: GET /message/65773e67e0193148e7af4708 [36m304 1172.099 ms - -
+2023-12-12 07:00:46 info: GET /message/65773e67e0193148e7af4708 [36m304 1170.375 ms - -
+2023-12-12 07:00:53 info: GET /message/65773e67e0193148e7af4708 [36m304 1182.770 ms - -
+2023-12-12 07:01:08 info: GET /message/65773e67e0193148e7af4708 [36m304 1028.726 ms - -
+2023-12-12 07:01:12 info: GET /message/65773e67e0193148e7af4708 [36m304 1078.471 ms - -
+2023-12-12 07:01:27 info: GET /message/65773e67e0193148e7af4708 [36m304 1241.453 ms - -
+2023-12-12 07:01:28 info: GET /message/65773e67e0193148e7af4708 [36m304 1013.583 ms - -
+2023-12-12 07:02:38 info: POST /message/sendMessage [32m200 1748.582 ms - 638
+2023-12-12 07:04:56 info: POST /message/sendMessage [32m200 1243.427 ms - 644
+2023-12-12 07:39:18 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 07:39:18 info: GET /user/profile [33m401 264.814 ms - 279
+2023-12-12 07:39:18 info: GET /staff/profile [32m200 200.459 ms - 1680
+2023-12-12 07:39:24 info: GET /user/profile [36m304 191.308 ms - -
+2023-12-12 07:39:35 info: GET /user/profile [36m304 234.853 ms - -
+2023-12-12 07:39:48 info: GET /user/profile [36m304 190.927 ms - -
+2023-12-12 07:39:50 info: GET /message/65773e67e0193148e7af4708 [32m200 1131.308 ms - 14300
+2023-12-12 07:39:56 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 07:39:56 info: GET /user/profile [33m401 203.300 ms - 279
+2023-12-12 07:39:56 info: GET /staff/profile [36m304 177.817 ms - -
+2023-12-12 07:39:57 info: GET /message/65773e67e0193148e7af4708 [32m200 1124.277 ms - 14300
+2023-12-12 07:40:04 info: POST /message/sendMessage [32m200 1900.326 ms - 639
+2023-12-12 07:40:50 info: GET /message/65773e67e0193148e7af4708 [32m200 1121.662 ms - 15183
+2023-12-12 07:40:51 info: GET /message/65773e67e0193148e7af4708 [32m200 1054.034 ms - 15183
+2023-12-12 07:41:57 info: POST /message/sendMessage [32m200 1153.569 ms - 647
+2023-12-12 07:42:22 info: GET /message/65773e67e0193148e7af4708 [32m200 1006.970 ms - 16074
+2023-12-12 07:42:23 info: GET /message/65773e67e0193148e7af4708 [32m200 1062.226 ms - 16074
+2023-12-12 07:42:37 info: GET /message/65773e67e0193148e7af4708 [36m304 1062.397 ms - -
+2023-12-12 07:42:37 info: GET /message/65773e67e0193148e7af4708 [36m304 984.916 ms - -
+2023-12-12 07:42:43 info: POST /message/sendMessage [32m200 1149.389 ms - 638
+2023-12-12 07:42:54 info: POST /message/sendMessage [32m200 1082.022 ms - 645
+2023-12-12 07:43:55 info: POST /message/sendMessage [32m200 3113.659 ms - 646
+2023-12-12 07:45:41 info: POST /message/sendMessage [32m200 1013.158 ms - 644
+2023-12-12 07:45:58 info: POST /message/sendMessage [32m200 1029.880 ms - 661
+2023-12-12 07:47:45 info: GET /message/65773e67e0193148e7af4708 [32m200 1054.465 ms - 22358
+2023-12-12 07:48:24 info: GET /user/profile [36m304 171.707 ms - -
+2023-12-12 07:48:26 info: GET /message/65773e67e0193148e7af4708 [32m200 1073.503 ms - 22358
+2023-12-12 07:48:38 info: POST /message/sendMessage [32m200 1125.290 ms - 643
+2023-12-12 07:48:52 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 07:48:52 info: GET /user/profile [33m401 229.609 ms - 279
+2023-12-12 07:48:52 info: GET /staff/profile [32m200 175.562 ms - 1680
+2023-12-12 07:48:53 info: GET /message/65773e67e0193148e7af4708 [32m200 1090.706 ms - 23255
+2023-12-12 07:50:35 info: POST /message/sendMessage - - ms - -
+2023-12-12 07:50:37 info: GET /user/profile [36m304 195.534 ms - -
+2023-12-12 07:50:39 info: GET /message/65773e67e0193148e7af4708 [32m200 1068.440 ms - 24146
+2023-12-12 07:50:57 info: GET /message/65773e67e0193148e7af4708 [32m200 1325.689 ms - 24146
+2023-12-12 07:51:04 info: GET /message/65773e67e0193148e7af4708 [36m304 2697.247 ms - -
+2023-12-12 07:51:04 info: POST /message/sendMessage [32m200 1419.925 ms - 636
+2023-12-12 07:51:04 info: POST /message/sendMessage [32m200 1506.396 ms - 636
+2023-12-12 07:51:04 info: POST /message/sendMessage [32m200 1541.582 ms - 636
+2023-12-12 07:51:04 info: POST /message/sendMessage [32m200 1538.233 ms - 636
+2023-12-12 07:51:04 info: GET /message/65773e67e0193148e7af4708 [32m200 1546.425 ms - 29486
+2023-12-12 07:51:04 info: POST /message/sendMessage [32m200 1588.907 ms - 636
+2023-12-12 07:51:04 info: POST /message/sendMessage [32m200 1605.778 ms - 636
+2023-12-12 07:51:05 info: POST /message/sendMessage [32m200 2540.077 ms - 636
+2023-12-12 07:51:05 info: GET /message/65773e67e0193148e7af4708 [32m200 1071.510 ms - 31266
+2023-12-12 07:51:05 info: POST /message/sendMessage [32m200 2658.366 ms - 636
+2023-12-12 07:51:06 info: GET /message/65773e67e0193148e7af4708 [32m200 1042.561 ms - 31266
+2023-12-12 07:51:06 info: GET /message/65773e67e0193148e7af4708 [32m200 1007.420 ms - 31266
+2023-12-12 07:51:57 info: POST /message/sendMessage [32m200 1044.819 ms - 638
+2023-12-12 07:52:23 info: POST /message/sendMessage [32m200 1259.183 ms - 638
+2023-12-12 07:52:23 info: POST /message/sendMessage [32m200 1284.891 ms - 638
+2023-12-12 07:52:23 info: POST /message/sendMessage [32m200 1295.521 ms - 638
+2023-12-12 07:52:23 info: POST /message/sendMessage [32m200 1343.727 ms - 638
+2023-12-12 07:52:23 info: POST /message/sendMessage [32m200 1394.617 ms - 638
+2023-12-12 07:52:23 info: POST /message/sendMessage [32m200 1377.968 ms - 638
+2023-12-12 07:52:23 info: POST /message/sendMessage [32m200 1387.825 ms - 638
+2023-12-12 07:52:23 info: POST /message/sendMessage [32m200 1396.446 ms - 638
+2023-12-12 07:52:23 info: POST /message/sendMessage [32m200 1389.312 ms - 638
+2023-12-12 07:52:23 info: POST /message/sendMessage [32m200 1414.034 ms - 638
+2023-12-12 07:52:23 info: POST /message/sendMessage [32m200 1835.648 ms - 638
+2023-12-12 07:52:23 info: POST /message/sendMessage [32m200 1980.425 ms - 638
+2023-12-12 07:52:23 info: POST /message/sendMessage [32m200 2138.727 ms - 638
+2023-12-12 07:52:24 info: POST /message/sendMessage [32m200 2328.568 ms - 638
+2023-12-12 07:53:28 info: POST /message/sendMessage [32m200 1026.063 ms - 636
+2023-12-12 07:53:41 info: POST /message/sendMessage [32m200 986.304 ms - 645
+2023-12-12 07:53:41 info: POST /message/sendMessage [32m200 1005.880 ms - 645
+2023-12-12 07:54:10 info: POST /message/sendMessage [32m200 983.338 ms - 641
+2023-12-12 07:54:56 info: POST /message/sendMessage [32m200 1036.367 ms - 637
+2023-12-12 07:55:55 info: GET /user/profile [36m304 200.884 ms - -
+2023-12-12 07:55:57 info: GET /message/65773e67e0193148e7af4708 [32m200 1096.508 ms - 49090
+2023-12-12 07:57:47 info: GET /user/profile [36m304 242.584 ms - -
+2023-12-12 07:57:48 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 07:57:48 info: GET /user/profile [33m401 216.216 ms - 279
+2023-12-12 07:57:48 info: GET /staff/profile [32m200 186.207 ms - 1680
+2023-12-12 07:57:50 info: GET /message/65773e67e0193148e7af4708 [36m304 1131.523 ms - -
+2023-12-12 07:57:50 info: GET /message/65773e67e0193148e7af4708 [32m200 2265.086 ms - 49090
+2023-12-12 07:58:36 info: POST /message/sendMessage [32m200 998.586 ms - 638
+2023-12-12 07:59:19 info: POST /message/sendMessage [32m200 1065.852 ms - 646
+2023-12-12 07:59:37 info: GET /message/65773e67e0193148e7af4708 [32m200 1204.660 ms - 50862
+2023-12-12 07:59:38 info: GET /message/65773e67e0193148e7af4708 [36m304 1138.713 ms - -
+2023-12-12 07:59:39 info: GET /message/65773e67e0193148e7af4708 [36m304 1016.987 ms - -
+2023-12-12 07:59:40 info: GET /message/65773e67e0193148e7af4708 [32m200 2877.817 ms - 50862
+2023-12-12 07:59:41 info: GET /message/65773e67e0193148e7af4708 [36m304 1138.727 ms - -
+2023-12-12 07:59:41 info: GET /message/65773e67e0193148e7af4708 [36m304 1050.405 ms - -
+2023-12-12 07:59:42 info: GET /message/65773e67e0193148e7af4708 [36m304 1094.405 ms - -
+2023-12-12 07:59:44 info: GET /message/65773e67e0193148e7af4708 [36m304 1137.729 ms - -
+2023-12-12 07:59:45 info: GET /message/65773e67e0193148e7af4708 [36m304 1796.111 ms - -
+2023-12-12 07:59:48 info: GET /message/65773e67e0193148e7af4708 [36m304 1058.194 ms - -
+2023-12-12 07:59:48 info: GET /message/65773e67e0193148e7af4708 [36m304 1007.824 ms - -
+2023-12-12 07:59:57 info: POST /message/sendMessage [32m200 1116.224 ms - 641
+2023-12-12 08:00:20 info: POST /message/sendMessage [32m200 1109.614 ms - 637
+2023-12-12 08:00:42 info: GET /message/65773e67e0193148e7af4708 [32m200 1164.838 ms - 52638
+2023-12-12 08:00:44 info: GET /message/65773e67e0193148e7af4708 [32m200 1270.106 ms - 52638
+2023-12-12 08:00:49 info: POST /message/sendMessage [32m200 976.621 ms - 637
+2023-12-12 08:02:17 info: GET /message/65773e67e0193148e7af4708 [32m200 989.617 ms - 53519
+2023-12-12 08:02:17 info: GET /message/65773e67e0193148e7af4708 [32m200 976.199 ms - 53519
+2023-12-12 08:03:21 info: GET /message/65773e67e0193148e7af4708 [36m304 1174.489 ms - -
+2023-12-12 08:03:35 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:03:35 info: GET /user/profile [33m401 252.914 ms - 279
+2023-12-12 08:03:36 info: GET /staff/profile [32m200 219.505 ms - 1680
+2023-12-12 08:03:37 info: GET /user/profile [36m304 154.127 ms - -
+2023-12-12 08:03:37 info: GET /message/65773e67e0193148e7af4708 [36m304 1139.108 ms - -
+2023-12-12 08:03:39 info: GET /message/65773e67e0193148e7af4708 [36m304 1121.303 ms - -
+2023-12-12 08:21:22 info: POST /message/sendMessage [32m200 1098.006 ms - 649
+2023-12-12 08:21:35 info: GET /user/profile [36m304 193.976 ms - -
+2023-12-12 08:21:37 info: GET /message/65773e67e0193148e7af4708 [32m200 1171.307 ms - 54412
+2023-12-12 08:21:43 info: POST /message/sendMessage [32m200 1131.657 ms - 638
+2023-12-12 08:22:24 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:22:24 info: GET /user/profile [33m401 267.081 ms - 279
+2023-12-12 08:22:24 info: GET /user/profile [36m304 222.244 ms - -
+2023-12-12 08:22:24 info: GET /staff/profile [32m200 184.661 ms - 1680
+2023-12-12 08:22:26 info: GET /message/65773e67e0193148e7af4708 [32m200 1183.864 ms - 55304
+2023-12-12 08:22:27 info: GET /message/65773e67e0193148e7af4708 [32m200 2015.735 ms - 55304
+2023-12-12 08:22:34 info: POST /message/sendMessage [32m200 1114.817 ms - 639
+2023-12-12 08:26:49 info: POST /message/sendMessage [32m200 1133.640 ms - 637
+2023-12-12 08:27:00 info: GET /user/profile [36m304 179.107 ms - -
+2023-12-12 08:27:01 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:27:01 info: GET /user/profile [33m401 184.344 ms - 279
+2023-12-12 08:27:02 info: GET /staff/profile [32m200 977.325 ms - 1680
+2023-12-12 08:27:03 info: GET /message/65773e67e0193148e7af4708 [32m200 1699.641 ms - 57068
+2023-12-12 08:27:03 info: GET /message/65773e67e0193148e7af4708 [32m200 1113.238 ms - 57068
+2023-12-12 08:27:11 info: POST /message/sendMessage [32m200 1112.684 ms - 638
+2023-12-12 08:28:42 info: GET /message/65773e67e0193148e7af4708 [32m200 1127.988 ms - 57950
+2023-12-12 08:28:44 info: GET /message/65773e67e0193148e7af4708 [32m200 1178.417 ms - 57950
+2023-12-12 08:29:48 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:29:48 info: GET /user/profile [33m401 185.612 ms - 279
+2023-12-12 08:29:48 info: GET /staff/profile [32m200 179.098 ms - 1680
+2023-12-12 08:29:49 info: GET /user/profile [36m304 201.965 ms - -
+2023-12-12 08:29:57 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:29:57 info: GET /user/profile [33m401 191.532 ms - 279
+2023-12-12 08:29:57 info: GET /staff/profile [36m304 200.404 ms - -
+2023-12-12 08:29:59 info: GET /user/profile [36m304 208.308 ms - -
+2023-12-12 08:30:24 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:30:24 info: GET /user/profile [33m401 181.350 ms - 279
+2023-12-12 08:30:25 info: GET /staff/profile [32m200 171.302 ms - 1680
+2023-12-12 08:30:25 info: GET /user/profile [36m304 181.927 ms - -
+2023-12-12 08:30:25 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:30:25 info: GET /user/profile [33m401 186.953 ms - 279
+2023-12-12 08:30:25 info: GET /staff/profile [36m304 174.904 ms - -
+2023-12-12 08:30:27 info: GET /user/profile [36m304 216.479 ms - -
+2023-12-12 08:30:30 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:30:30 info: GET /user/profile [33m401 199.316 ms - 279
+2023-12-12 08:30:30 info: GET /staff/profile [36m304 176.792 ms - -
+2023-12-12 08:30:32 info: GET /user/profile [36m304 198.296 ms - -
+2023-12-12 08:31:04 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:31:04 info: GET /user/profile [33m401 176.291 ms - 279
+2023-12-12 08:31:04 info: GET /staff/profile [32m200 178.494 ms - 1680
+2023-12-12 08:31:05 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:31:05 info: GET /user/profile [33m401 200.606 ms - 279
+2023-12-12 08:31:05 info: GET /staff/profile [36m304 191.112 ms - -
+2023-12-12 08:31:06 info: GET /user/profile [36m304 184.986 ms - -
+2023-12-12 08:31:07 info: GET /user/profile [36m304 177.239 ms - -
+2023-12-12 08:31:17 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:31:17 info: GET /user/profile [33m401 200.633 ms - 279
+2023-12-12 08:31:17 info: GET /staff/profile [36m304 174.763 ms - -
+2023-12-12 08:31:19 info: GET /user/profile [36m304 185.473 ms - -
+2023-12-12 08:31:28 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:31:28 info: GET /user/profile [33m401 173.540 ms - 279
+2023-12-12 08:31:28 info: GET /staff/profile [36m304 173.555 ms - -
+2023-12-12 08:31:30 info: GET /user/profile [36m304 187.437 ms - -
+2023-12-12 08:32:23 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:32:23 info: GET /user/profile [33m401 189.991 ms - 279
+2023-12-12 08:32:24 info: GET /staff/profile [32m200 177.497 ms - 1680
+2023-12-12 08:32:25 info: GET /user/profile [36m304 182.269 ms - -
+2023-12-12 08:32:25 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:32:25 info: GET /user/profile [33m401 180.066 ms - 279
+2023-12-12 08:32:25 info: GET /staff/profile [36m304 184.588 ms - -
+2023-12-12 08:32:26 info: GET /user/profile [36m304 195.596 ms - -
+2023-12-12 08:32:33 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:32:33 info: GET /user/profile [33m401 189.519 ms - 279
+2023-12-12 08:32:33 info: GET /staff/profile [36m304 178.395 ms - -
+2023-12-12 08:32:34 info: GET /user/profile [36m304 180.397 ms - -
+2023-12-12 08:32:46 info: GET /user/profile [36m304 226.157 ms - -
+2023-12-12 08:33:40 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:33:40 info: GET /user/profile [33m401 188.029 ms - 279
+2023-12-12 08:33:40 info: GET /staff/profile [32m200 170.545 ms - 1680
+2023-12-12 08:33:41 info: GET /message/65773e67e0193148e7af4708 [36m304 1162.151 ms - -
+2023-12-12 08:33:42 info: GET /user/profile [36m304 219.944 ms - -
+2023-12-12 08:33:43 info: GET /message/65773e67e0193148e7af4708 [36m304 1253.039 ms - -
+2023-12-12 08:34:01 info: GET /user/profile [36m304 191.478 ms - -
+2023-12-12 08:34:02 info: GET /message/65773e67e0193148e7af4708 [36m304 1422.392 ms - -
+2023-12-12 08:34:03 info: GET /message/65773e67e0193148e7af4708 [36m304 1459.179 ms - -
+2023-12-12 08:34:03 info: GET /message/65773e67e0193148e7af4708 [32m200 1125.356 ms - 57950
+2023-12-12 08:34:04 info: GET /message/65773e67e0193148e7af4708 [36m304 1142.081 ms - -
+2023-12-12 08:34:47 info: GET /user/profile [36m304 229.492 ms - -
+2023-12-12 08:34:49 info: GET /message/65773e67e0193148e7af4708 [36m304 1176.857 ms - -
+2023-12-12 08:35:09 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:35:09 info: GET /user/profile [33m401 227.936 ms - 279
+2023-12-12 08:35:10 info: GET /staff/profile [32m200 191.959 ms - 1680
+2023-12-12 08:35:11 info: GET /message/65773e67e0193148e7af4708 [36m304 1176.071 ms - -
+2023-12-12 08:35:26 info: POST /message/sendMessage [32m200 1549.551 ms - 645
+2023-12-12 08:36:06 info: GET /message/65773e67e0193148e7af4708 [32m200 1105.650 ms - 58839
+2023-12-12 08:36:07 info: GET /message/65773e67e0193148e7af4708 [32m200 1124.245 ms - 58839
+2023-12-12 08:36:11 info: GET /message/65773e67e0193148e7af4708 [36m304 1122.552 ms - -
+2023-12-12 08:36:13 info: GET /message/65773e67e0193148e7af4708 [36m304 1079.979 ms - -
+2023-12-12 08:36:21 info: POST /message/sendMessage [32m200 1082.157 ms - 640
+2023-12-12 08:36:35 info: POST /message/sendMessage [32m200 1063.421 ms - 640
+2023-12-12 08:39:58 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:39:58 info: GET /user/profile [33m401 217.423 ms - 279
+2023-12-12 08:39:58 info: GET /staff/profile [32m200 196.779 ms - 1680
+2023-12-12 08:39:59 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:39:59 info: GET /user/profile [33m401 191.593 ms - 279
+2023-12-12 08:39:59 info: GET /message/65773e67e0193148e7af4708 [32m200 1248.625 ms - 60617
+2023-12-12 08:40:00 info: GET /staff/profile [36m304 175.533 ms - -
+2023-12-12 08:40:00 info: GET /user/profile [36m304 209.105 ms - -
+2023-12-12 08:40:01 info: GET /message/65773e67e0193148e7af4708 [36m304 1175.004 ms - -
+2023-12-12 08:40:02 info: GET /user/profile [36m304 211.030 ms - -
+2023-12-12 08:40:03 info: GET /message/65773e67e0193148e7af4708 [32m200 2053.908 ms - 60617
+2023-12-12 08:40:03 info: GET /message/65773e67e0193148e7af4708 [32m200 1192.420 ms - 60617
+2023-12-12 08:40:09 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:40:09 info: GET /user/profile [33m401 198.159 ms - 279
+2023-12-12 08:40:09 info: GET /staff/profile [32m200 189.142 ms - 1680
+2023-12-12 08:40:10 info: GET /user/profile [36m304 234.983 ms - -
+2023-12-12 08:40:11 info: GET /message/65773e67e0193148e7af4708 [36m304 1138.110 ms - -
+2023-12-12 08:40:12 info: GET /message/65773e67e0193148e7af4708 [36m304 1166.584 ms - -
+2023-12-12 08:40:13 info: GET /message/65773e67e0193148e7af4708 [36m304 1167.160 ms - -
+2023-12-12 08:40:14 info: GET /message/65773e67e0193148e7af4708 [36m304 1191.683 ms - -
+2023-12-12 08:40:16 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:40:16 info: GET /user/profile [33m401 193.352 ms - 279
+2023-12-12 08:40:16 info: GET /staff/profile [36m304 177.696 ms - -
+2023-12-12 08:40:17 info: GET /user/profile [36m304 206.896 ms - -
+2023-12-12 08:40:18 info: GET /message/65773e67e0193148e7af4708 [36m304 1179.871 ms - -
+2023-12-12 08:40:18 info: GET /message/65773e67e0193148e7af4708 [36m304 1133.033 ms - -
+2023-12-12 08:40:21 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:40:21 info: GET /user/profile [33m401 212.710 ms - 279
+2023-12-12 08:40:21 info: GET /staff/profile [36m304 180.855 ms - -
+2023-12-12 08:40:22 info: GET /user/profile [36m304 183.792 ms - -
+2023-12-12 08:40:23 info: GET /message/65773e67e0193148e7af4708 [36m304 1183.584 ms - -
+2023-12-12 08:40:24 info: GET /message/65773e67e0193148e7af4708 [36m304 1156.264 ms - -
+2023-12-12 08:40:28 info: GET /message/65773e67e0193148e7af4708 [36m304 1223.966 ms - -
+2023-12-12 08:40:29 info: GET /message/65773e67e0193148e7af4708 [36m304 1168.360 ms - -
+2023-12-12 08:40:37 info: GET /message/65773e67e0193148e7af4708 [36m304 1198.138 ms - -
+2023-12-12 08:40:39 info: GET /message/65773e67e0193148e7af4708 [36m304 1212.001 ms - -
+2023-12-12 08:40:42 info: GET /message/65773e67e0193148e7af4708 [36m304 1162.668 ms - -
+2023-12-12 08:40:43 info: GET /message/65773e67e0193148e7af4708 [36m304 1202.479 ms - -
+2023-12-12 08:40:54 info: POST /message/sendMessage [32m200 1199.121 ms - 647
+2023-12-12 08:41:23 info: GET /message/65773e67e0193148e7af4708 [32m200 1159.699 ms - 61508
+2023-12-12 08:41:24 info: GET /message/65773e67e0193148e7af4708 [32m200 1166.138 ms - 61508
+2023-12-12 08:41:27 info: GET /message/65773e67e0193148e7af4708 [36m304 1225.790 ms - -
+2023-12-12 08:41:29 info: GET /message/65773e67e0193148e7af4708 [36m304 1202.866 ms - -
+2023-12-12 08:41:37 info: POST /message/sendMessage [32m200 1226.226 ms - 638
+2023-12-12 08:51:22 info: GET /message/65773e67e0193148e7af4708 [32m200 1248.735 ms - 62400
+2023-12-12 08:51:24 info: GET /message/65773e67e0193148e7af4708 [32m200 1171.967 ms - 62400
+2023-12-12 08:52:36 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:52:36 info: GET /user/profile [33m401 206.720 ms - 279
+2023-12-12 08:52:37 info: GET /staff/profile [32m200 204.236 ms - 1680
+2023-12-12 08:52:39 info: GET /message/65773e67e0193148e7af4708 [36m304 1389.240 ms - -
+2023-12-12 08:52:39 info: GET /user/profile [36m304 246.939 ms - -
+2023-12-12 08:52:40 info: GET /message/65773e67e0193148e7af4708 [36m304 1438.252 ms - -
+2023-12-12 08:52:41 info: GET /message/65773e67e0193148e7af4708 [36m304 1430.195 ms - -
+2023-12-12 08:52:44 info: GET /message/65773e67e0193148e7af4708 [36m304 1405.963 ms - -
+2023-12-12 08:52:45 info: GET /message/65773e67e0193148e7af4708 [36m304 1192.000 ms - -
+2023-12-12 08:52:47 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:52:47 info: GET /user/profile [33m401 191.728 ms - 279
+2023-12-12 08:52:47 info: GET /staff/profile [36m304 175.836 ms - -
+2023-12-12 08:52:48 info: GET /user/profile [36m304 202.768 ms - -
+2023-12-12 08:52:51 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:52:51 info: GET /user/profile [33m401 202.377 ms - 279
+2023-12-12 08:52:51 info: GET /staff/profile [36m304 201.744 ms - -
+2023-12-12 08:52:52 info: GET /user/profile [36m304 194.514 ms - -
+2023-12-12 08:52:57 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:52:57 info: GET /user/profile [33m401 230.354 ms - 279
+2023-12-12 08:52:58 info: GET /staff/profile [36m304 186.907 ms - -
+2023-12-12 08:52:59 info: GET /user/profile [36m304 201.223 ms - -
+2023-12-12 08:52:59 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:52:59 info: GET /user/profile [33m401 175.190 ms - 279
+2023-12-12 08:52:59 info: GET /staff/profile [36m304 176.892 ms - -
+2023-12-12 08:53:00 info: GET /user/profile [36m304 190.423 ms - -
+2023-12-12 08:53:01 info: GET /message/65773e67e0193148e7af4708 [36m304 1104.870 ms - -
+2023-12-12 08:53:02 info: GET /message/65773e67e0193148e7af4708 [36m304 1797.807 ms - -
+2023-12-12 08:53:40 info: GET /message/65773e67e0193148e7af4708 [36m304 1094.771 ms - -
+2023-12-12 08:53:42 info: GET /message/65773e67e0193148e7af4708 [36m304 1292.735 ms - -
+2023-12-12 08:54:10 info: GET /message/65773e67e0193148e7af4708 [36m304 1109.204 ms - -
+2023-12-12 08:54:12 info: GET /message/65773e67e0193148e7af4708 [36m304 1140.693 ms - -
+2023-12-12 08:55:18 info: GET /message/65773e67e0193148e7af4708 [36m304 1101.984 ms - -
+2023-12-12 08:55:20 info: GET /message/65773e67e0193148e7af4708 [36m304 1092.742 ms - -
+2023-12-12 08:55:43 info: POST /message/sendMessage [32m200 1092.249 ms - 645
+2023-12-12 08:56:19 info: GET /message/65773e67e0193148e7af4708 [32m200 1206.546 ms - 63289
+2023-12-12 08:56:21 info: GET /message/65773e67e0193148e7af4708 [36m304 1111.732 ms - -
+2023-12-12 08:56:29 info: POST /message/sendMessage [32m200 1084.210 ms - 643
+2023-12-12 08:56:31 info: GET /message/65773e67e0193148e7af4708 [32m200 1173.792 ms - 64176
+2023-12-12 08:56:32 info: GET /message/65773e67e0193148e7af4708 [32m200 2000.567 ms - 64176
+2023-12-12 08:56:41 info: GET /user/profile [36m304 182.425 ms - -
+2023-12-12 08:56:43 info: GET /message/65773e67e0193148e7af4708 [36m304 1302.997 ms - -
+2023-12-12 08:56:43 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:56:43 info: GET /user/profile [33m401 214.308 ms - 279
+2023-12-12 08:56:43 info: GET /staff/profile [32m200 184.576 ms - 1680
+2023-12-12 08:56:45 info: GET /message/65773e67e0193148e7af4708 [32m200 1126.142 ms - 64176
+2023-12-12 08:56:50 info: POST /message/sendMessage [32m200 1075.704 ms - 639
+2023-12-12 08:57:41 info: GET /message/65773e67e0193148e7af4708 [32m200 1139.043 ms - 65059
+2023-12-12 08:57:43 info: GET /message/65773e67e0193148e7af4708 [32m200 1106.181 ms - 65059
+2023-12-12 08:57:43 info: GET /message/65773e67e0193148e7af4708 [36m304 1081.187 ms - -
+2023-12-12 08:57:44 info: GET /message/65773e67e0193148e7af4708 [36m304 1086.151 ms - -
+2023-12-12 08:57:53 info: POST /message/sendMessage [32m200 1067.304 ms - 638
+2023-12-12 08:58:59 info: GET /user/profile [36m304 203.560 ms - -
+2023-12-12 08:58:59 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 08:58:59 info: GET /user/profile [33m401 168.959 ms - 279
+2023-12-12 08:58:59 info: GET /staff/profile [32m200 175.380 ms - 1680
+2023-12-12 08:59:00 info: GET /message/65773e67e0193148e7af4708 [32m200 1078.064 ms - 65941
+2023-12-12 08:59:00 info: GET /message/65773e67e0193148e7af4708 [32m200 1059.391 ms - 65941
+2023-12-12 08:59:11 info: POST /message/sendMessage [32m200 1013.963 ms - 639
+2023-12-12 09:00:08 info: GET /message/65773e67e0193148e7af4708 [32m200 1161.430 ms - 66834
+2023-12-12 09:00:09 info: GET /message/65773e67e0193148e7af4708 [32m200 1308.072 ms - 66834
+2023-12-12 09:00:19 info: GET /message/65773e67e0193148e7af4708 [36m304 1158.655 ms - -
+2023-12-12 09:00:20 info: GET /message/65773e67e0193148e7af4708 [36m304 1158.829 ms - -
+2023-12-12 09:00:24 info: GET /message/65773e67e0193148e7af4708 [36m304 1143.775 ms - -
+2023-12-12 09:00:25 info: GET /message/65773e67e0193148e7af4708 [36m304 1138.572 ms - -
+2023-12-12 09:00:26 info: GET /message/65773e67e0193148e7af4708 [36m304 1379.061 ms - -
+2023-12-12 09:00:28 info: GET /message/65773e67e0193148e7af4708 [36m304 1546.551 ms - -
+2023-12-12 09:00:30 info: GET /message/65773e67e0193148e7af4708 [36m304 1135.284 ms - -
+2023-12-12 09:00:31 info: GET /message/65773e67e0193148e7af4708 [36m304 1146.729 ms - -
+2023-12-12 09:00:43 info: GET /message/65773e67e0193148e7af4708 [36m304 1148.719 ms - -
+2023-12-12 09:00:44 info: GET /message/65773e67e0193148e7af4708 [36m304 1439.756 ms - -
+2023-12-12 09:00:49 info: GET /message/65773e67e0193148e7af4708 [36m304 1126.607 ms - -
+2023-12-12 09:00:50 info: GET /message/65773e67e0193148e7af4708 [36m304 1131.640 ms - -
+2023-12-12 09:01:00 info: GET /message/65773e67e0193148e7af4708 [36m304 1065.829 ms - -
+2023-12-12 09:01:01 info: GET /message/65773e67e0193148e7af4708 [36m304 1117.553 ms - -
+2023-12-12 09:01:36 info: POST /message/sendMessage [32m200 1059.151 ms - 637
+2023-12-12 09:03:04 info: POST /message/sendMessage [32m200 1807.629 ms - 638
+2023-12-12 09:04:37 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 09:04:37 info: GET /user/profile [33m401 195.445 ms - 279
+2023-12-12 09:04:38 info: GET /staff/profile [32m200 183.220 ms - 1680
+2023-12-12 09:04:40 info: GET /user/profile [36m304 187.092 ms - -
+2023-12-12 09:04:52 info: GET /user/profile [36m304 172.367 ms - -
+2023-12-12 09:04:55 info: GET /message/65773e67e0193148e7af4708 [32m200 1290.371 ms - 68607
+2023-12-12 09:04:55 error: 401 - Invalid token - /user/profile - GET - ::1
+2023-12-12 09:04:55 info: GET /user/profile [33m401 233.123 ms - 279
+2023-12-12 09:04:55 info: GET /staff/profile [36m304 173.288 ms - -
+2023-12-12 09:04:57 info: GET /message/65773e67e0193148e7af4708 [32m200 1134.550 ms - 68607
+2023-12-12 09:05:05 info: POST /message/sendMessage [32m200 1132.001 ms - 639

@@ -23,6 +23,10 @@ const chatSchema = new mongoose.Schema(
         ref: "Staff", // Reference to 'Staff' model
       },
     ],
+    senderModel: {
+      type: String,
+      enum: ["User", "Staff"], // Add other possible values if needed
+    },
     latestMessage: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Message",

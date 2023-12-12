@@ -49,8 +49,19 @@ export const io = new SocketIOServer(server, {
   },
 });
 
+// io.on("connection", (socket) => {
+//   console.log("a reply detected!");
+// });
 io.on("connection", (socket) => {
-  console.log("a reply detected!");
+  socket.on("setup", (chatID) => {
+    socket.join(chatID);
+    socket.emit("connected");
+  });
+
+  socket.on("new message", (newMessageRecieved, chatID) => {
+    console.log(newMessageRecieved);
+    socket.to(chatID).emit("message recieved", newMessageRecieved);
+  });
 });
 
 const port = ENVIRONMENT.APP.PORT;

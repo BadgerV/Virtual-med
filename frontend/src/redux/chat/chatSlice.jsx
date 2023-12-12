@@ -1,11 +1,10 @@
 // doctorSlice.js
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-import 
 
 // import axios from "axios";
 
-const DEVELOPMENT = "https://virtual-med-backend.onrender.com";
+const DEVELOPMENT = "http://localhost:8000";
 // var socket, selectedChatCompared;
 
 const initialState = {
@@ -13,15 +12,10 @@ const initialState = {
   searchResult: [],
   loading: false,
   loadingChat: false,
+  error: null,
 };
 
 //THIS IS ESSENTIALLY THE FORMAT WE WILL USE FOR GET REQUESTS. IN THE BACKEND/SRC/ROUTES/STAFF OR USERROUTES THERE ARE LISTS OF ROUTES, THE POST ROUTES MIGHT BE TRICKY RIGHT NOW, BUT WE CAN STILL IMPLEMENT THE GET ROUTES. ESPECIALLY THE ONES WITHOUT MIDDLEWARES.
-
-const chatSlice = createSlice({
-  name: "chat",
-  initialState,
-  reducers: {},
-});
 
 // const { data } = await axios.get(`/api/user?search=${search}`, config);
 // export const searchChats = createAsyncThunk(
@@ -126,12 +120,16 @@ export const removeUserFromCOmmunity = createAsyncThunk(
 export const sendMessage = createAsyncThunk(
   "/chat/message/sendMessage",
   async ({ chatId, content }) => {
+    const token = localStorage.getItem("token");
+
     try {
-      const response = await axios.put(
-        `${DEVELOPMENT}/chat/communityRemove`,
+      const response = await axios.post(
+        `${DEVELOPMENT}/message/sendMessage`,
         { chatId: chatId, content: content },
         {
-          withCredentials: true,
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
         }
       );
 
@@ -142,6 +140,56 @@ export const sendMessage = createAsyncThunk(
     }
   }
 );
+
+export const getAllMessages = createAsyncThunk(
+  "get-all-messages",
+  async (id, thunkAPI) => {
+    const token = localStorage.getItem("token");
+    try {
+      const response = await axios.get(`${DEVELOPMENT}/message/${id}`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      // console.log(response);
+
+      return response.data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.response.data);
+    }
+  }
+);
+
+const chatSlice = createSlice({
+  name: "chat",
+  initialState,
+  reducers: {},
+  extraReducers: (builder) => {
+    builder
+      .addCase(getAllMessages.pending, (state) => {
+        state.loadingChat = true;
+      })
+      .addCase(getAllMessages.fulfilled, (state, action) => {
+        state.chat = action.payload;
+        state.loadingChat = false;
+      })
+      .addCase(getAllMessages.rejected, (state, action) => {
+        state.loadingChat = true;
+        state.error = action.payload;
+      })
+      .addCase(sendMessage.pending, (state) => {
+        state.loading = true;
+      })
+      .addCase(sendMessage.fulfilled, (state, action) => {
+        state.loading = false;
+      })
+      .addCase(sendMessage.rejected, (state, action) => {
+        state.loading = false;
+        console.log(action.payload);
+      });
+  },
+});
 
 // Export reducer
 export default chatSlice.reducer;

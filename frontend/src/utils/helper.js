@@ -216,3 +216,15 @@ export function truncateString(inputString, maxLength) {
     return inputString.substring(0, maxLength) + "...";
   }
 }
+
+export function formatTime(inputDateString) {
+  const inputDate = new Date(inputDateString);
+
+  const options = {
+    hour: "numeric",
+    minute: "numeric",
+    hour12: true,
+  };
+
+  return inputDate.toLocaleTimeString("en-US", options);
+}

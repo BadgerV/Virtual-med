@@ -16,7 +16,7 @@ import { io } from "../server.js";
 
 export const fetchAppointments = catchAsync(async (req, res) => {
   const isUser = req.user ? true : false;
-  console.log(isUser);
+  // console.log(isUser);
 
   if (isUser) {
     const foundUser = await User.findOne({ _id: req.user._id });
@@ -60,7 +60,7 @@ export const fetchAppointments = catchAsync(async (req, res) => {
 
 export const fetchCompletedAppointments = catchAsync(async (req, res) => {
   const isUser = req.user ? true : false;
-  console.log(isUser);
+  // console.log(isUser);
 
   if (isUser) {
     const foundUser = await User.findOne({ _id: req.user._id });
@@ -104,7 +104,7 @@ export const fetchCompletedAppointments = catchAsync(async (req, res) => {
 
 export const fetchUpcomingAppointments = catchAsync(async (req, res) => {
   const isUser = req.user ? true : false;
-  console.log(isUser);
+  // console.log(isUser);
 
   if (isUser) {
     const foundUser = await User.findOne({ _id: req.user._id });
@@ -149,7 +149,7 @@ export const fetchUpcomingAppointments = catchAsync(async (req, res) => {
 
 export const fetchOngoingAppointments = catchAsync(async (req, res) => {
   const isUser = req.user ? true : false;
-  console.log(isUser);
+  // console.log(isUser);
 
   if (isUser) {
     const foundUser = await User.findOne({ _id: req.user._id });
@@ -431,7 +431,7 @@ export const confirmAppointment = catchAsync(async (req, res) => {
   // Find the appointment using paymentReference and update the property
   const appointment = await Appointment.findOne({ paystackRef });
 
-  console.log(appointment);
+  // console.log(appointment);
 
   if (!appointment) {
     throw new AppError("Appointment not found", 404);
@@ -534,13 +534,13 @@ export const confirmAppointment = catchAsync(async (req, res) => {
 
 // Schedule the task to run every minute (adjust as needed)
 cron.schedule("* * * * *", async () => {
-  console.log("Running appointment check task...");
+  // console.log("Running appointment check task...");
 
   try {
     // Find all appointments
     const appointments = await Appointment.find();
 
-    console.log(appointments);
+    // console.log(appointments);
 
     // Check each appointment
     appointments.forEach(async (appointment) => {
@@ -559,13 +559,13 @@ cron.schedule("* * * * *", async () => {
           await Appointment.findByIdAndUpdate(appointment._id, {
             status: "started",
           });
-          console.log(`Appointment ${appointment._id} is now active.`);
+          // console.log(`Appointment ${appointment._id} is now active.`);
         } else if (now.isAfter(endTime)) {
           // Update status to 'expired'
           await Appointment.findByIdAndUpdate(appointment._id, {
             status: "completed",
           });
-          console.log(`Appointment ${appointment._id} has expired.`);
+          // console.log(`Appointment ${appointment._id} has expired.`);
         }
       }
     });
@@ -596,10 +596,10 @@ const checkAndRemoveAvailabilityOfStaffs = async () => {
         availability: updatedAvailability,
       });
 
-      console.log(`Updated availability for staff ${staff._id}`);
+      // console.log(`Updated availability for staff ${staff._id}`);
     });
 
-    console.log("Availability check completed.");
+    // console.log("Availability check completed.");
   } catch (error) {
     console.error("Error checking availability:", error);
   }
@@ -607,7 +607,7 @@ const checkAndRemoveAvailabilityOfStaffs = async () => {
 
 // Schedule the function to run every minute
 cron.schedule("* * * * *", () => {
-  console.log("Running availability check task...");
+  // console.log("Running availability check task...");
   checkAndRemoveAvailabilityOfStaffs();
 });
 
