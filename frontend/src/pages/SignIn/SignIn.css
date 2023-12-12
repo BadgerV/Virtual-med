@@ -137,22 +137,18 @@ label {
 }
 
 @media (max-width: 691px) {
-  .sign-in_container {
+  .newsletter {
     width: 25em;
   }
 }
 @media (max-width: 471px) {
-  .sign-in_container {
+  .newsletter {
 
     width: 23em;
   }
-  .twobtn {
-    grid-template-columns: 1fr;
-    gap: 0.5em;
-  }
 }
 @media (max-width: 417px) {
-  .sign-in_container {
+  .newsletter {
 
     width: 90vw;
   }

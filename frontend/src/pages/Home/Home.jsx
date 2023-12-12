@@ -1,10 +1,12 @@
 import ConsultationSplash from "../../components/ConsultationSplash/ConsultationSplash";
 import Reviews from "../../components/Reviews/Reviews";
+import Articles from "../../components/Articles/Articles";
 import Services from "../../components/Services/Services";
 import SimpleAndFast from "../../components/SimpleAndFast/SimpleAndFast";
 import "./Home.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import NewsLetter from "../../components/NewsLetter/NewsLetter";
 
 const Home = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -108,7 +110,19 @@ const Home = () => {
       </div>
 
       <div className="reviews-outer-container">
-        <Reviews />
+        {/* <Reviews /> */}
+      </div>
+
+      <div className="articles-outer-container">
+        <div className="articles-container">
+          <Articles />
+        </div>
+      </div>
+
+      <div className="newsletter-outer-container">
+        <div className="newsletter-container">
+          {/* <NewsLetter/> */}
+        </div>
       </div>
     </>
   );

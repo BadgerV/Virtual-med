@@ -4,7 +4,6 @@
   gap: 0.2em;
   align-items: center;
   justify-content: center;
-
   width: 100%;
   padding: 1em;
 }
@@ -13,7 +12,6 @@
   color: #023382;
   font-size: 0.9em;
   font-weight: 500;
-  
 }
 
 .simple-and-fast-first-text {
@@ -81,11 +79,9 @@
   .fast-list-of-service {
     max-width: fit-content;
   }
-
 }
 
-
-@media (max-width : 500px) {
+@media (max-width: 500px) {
   .fast-list-of-services {
     display: flex;
     flex-direction: column;

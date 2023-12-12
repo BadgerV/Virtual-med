@@ -18,7 +18,7 @@ const MyAppointments = lazy(() =>
   import("./pages/MyAppointments/MyAppointments")
 );
 const Profile = lazy(() => import("./pages/Profile/Profile"));
-// const Footer = lazy(() => import("./components/Footer/Footer"));
+const Footer = lazy(() => import("./components/Footer/Footer"));
 const SignIn = lazy(() => import("./pages/SignIn/SignIn"));
 const Home = lazy(() => import("./pages/Home/Home.jsx"));
 const SignUpPatient = lazy(() =>
@@ -143,7 +143,7 @@ const App = () => {
               </Route>
             </Routes>
 
-            {/* <Footer /> */}
+            <Footer />
           </Suspense>
         </>
       ) : (
