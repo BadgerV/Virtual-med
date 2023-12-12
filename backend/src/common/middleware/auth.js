@@ -94,6 +94,52 @@ export const staffAuth = catchAsync(async (req, res, next) => {
   }
 });
 
+export const isUserOrStaff = catchAsync(async (req, res, next) => {
+  // const token = req.cookies.auth;
+  const token = req.header("Authorization").replace("Bearer ", "");
+  // const token = req.cookies.auth;
+
+  if (!token) {
+    throw new AppError("Please authenticate", 404);
+  }
+  try {
+    const decoded = jwt.verify(token, ENVIRONMENT.APP.SECRET);
+
+    if (decoded.type === "staff") {
+      const staff = await Staff.findOne({
+        _id: decoded._id,
+        "tokens.token": token,
+      });
+
+      if (!staff) {
+        throw new AppError("Staff not found", 404);
+      }
+
+      req.token = token;
+      req.staff = staff;
+      next();
+    } else if (decoded.type === "user") {
+      const decoded = jwt.verify(token, ENVIRONMENT.APP.SECRET);
+
+      // Find the user based on the decoded token
+      const user = await User.findOne({
+        _id: decoded._id,
+        "tokens.token": token,
+      });
+      if (!user) {
+        throw new AppError("User not found", 404);
+      }
+      // Attach token and user to the request
+      req.token = token;
+      req.user = user;
+
+      next();
+    }
+  } catch (error) {
+    throw new AppError(error, 401);
+  }
+});
+
 export const isPremiumOrStaff = catchAsync(async (req, res, next) => {
   // const token = req.cookies.auth;
   const token = req.header("Authorization").replace("Bearer ", "");

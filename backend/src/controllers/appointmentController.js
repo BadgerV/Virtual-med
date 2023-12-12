@@ -5,7 +5,6 @@ import User from "../models/UserModel.js";
 import Appointment from "../models/AppointmentModel.js";
 import Staff from "../models/StaffModel.js";
 import { v4 as uuidv4 } from "uuid";
-import axios from "axios";
 import { ENVIRONMENT } from "../common/config/environment.js";
 import https from "https";
 import { calculateTotalCost } from "../common/utils/helper.js";
@@ -69,9 +68,9 @@ export const fetchCompletedAppointments = catchAsync(async (req, res) => {
       throw new AppError("User does not exist", 400);
     }
 
-    if (foundUser.isPremium == false) {
-      throw new AppError("Become a premium user to enjoy this feature", 400);
-    }
+    // if (foundUser.isPremium == false) {
+    //   throw new AppError("Become a premium user to enjoy this feature", 400);
+    // }
 
     const appointments = await Appointment.find({
       patientId: req.user._id,
@@ -113,9 +112,9 @@ export const fetchUpcomingAppointments = catchAsync(async (req, res) => {
       throw new AppError("User does not exist", 400);
     }
 
-    if (foundUser.isPremium == false) {
-      throw new AppError("Become a premium user to enjoy this feature", 400);
-    }
+    // if (foundUser.isPremium == false) {
+    //   throw new AppError("Become a premium user to enjoy this feature", 400);
+    // }
 
     const appointments = await Appointment.find({
       patientId: req.user._id,
@@ -158,9 +157,9 @@ export const fetchOngoingAppointments = catchAsync(async (req, res) => {
       throw new AppError("User does not exist", 400);
     }
 
-    if (foundUser.isPremium == false) {
-      throw new AppError("Become a premium user to enjoy this feature", 400);
-    }
+    // if (foundUser.isPremium == false) {
+    //   throw new AppError("Become a premium user to enjoy this feature", 400);
+    // }
 
     const appointments = await Appointment.find({
       patientId: req.user._id,
@@ -263,7 +262,8 @@ const payStack = {
         email: email,
         amount: price * 100,
         reference: reference,
-        callback_url: "https://medconnig.netlify.app/verify",
+        // callback_url: "https://medconnig.netlify.app/verify",
+        callback_url: "https://2acf-105-113-59-29.ngrok-free.app/verify",
       });
       // options
 
@@ -574,47 +574,46 @@ cron.schedule("* * * * *", async () => {
   }
 });
 
-const checkAndRemoveAvailabilityOfStaffs = async () => {
-  try {
-    // Find all staff
-    const staffList = await Staff.find();
+// const checkAndRemoveAvailabilityOfStaffs = async () => {
+//   try {
+//     // Find all staff
+//     const staffList = await Staff.find();
 
-    // Loop through each staff
-    staffList.forEach(async (staff) => {
-      const { availability } = staff;
+//     // Loop through each staff
+//     staffList.forEach(async (staff) => {
+//       const { availability } = staff;
 
-      // Filter availability array to keep only future availability
-      const updatedAvailability = availability.filter((slot) => {
-        const { endTime } = slot;
+//       // Filter availability array to keep only future availability
+//       const updatedAvailability = availability.filter((slot) => {
+//         const { endTime } = slot;
 
-        // Compare endTime with the current time
-        return moment(endTime).isAfter(moment());
-      });
+//         // Compare endTime with the current time
+//         return moment(endTime).isAfter(moment());
+//       });
 
-      // Update staff's availability with the filtered array
-      await Staff.findByIdAndUpdate(staff._id, {
-        availability: updatedAvailability,
-      });
+//       // Update staff's availability with the filtered array
+//       await Staff.findByIdAndUpdate(staff._id, {
+//         availability: updatedAvailability,
+//       });
 
-      // console.log(`Updated availability for staff ${staff._id}`);
-    });
+//       // console.log(`Updated availability for staff ${staff._id}`);
+//     });
 
-    // console.log("Availability check completed.");
-  } catch (error) {
-    console.error("Error checking availability:", error);
-  }
-};
+//     // console.log("Availability check completed.");
+//   } catch (error) {
+//     console.error("Error checking availability:", error);
+//   }
+// };
 
 // Schedule the function to run every minute
 cron.schedule("* * * * *", async () => {
   try {
-    console.log("trying to clean this mess")
+    console.log("trying to clean this mess");
     const allAppointments = await Appointment.find();
 
     // Filter appointments with status 'pending'
     const pendingAppointments = allAppointments.filter(
-      (appointment) =>
-        appointment.status !== "completed"
+      (appointment) => appointment.status !== "completed"
     );
 
     // Get the current date and time

@@ -1,4 +1,5 @@
 import moment from "moment";
+import { useNavigate } from "react-router-dom";
 
 export function generateTimeSlots(
   startTime,
@@ -168,10 +169,9 @@ export function convertDateStringToISOString(inputDate) {
   return outputDate;
 }
 
-
 export function parseDateWithMoment(dateString) {
   // Define the moment format
-  const momentFormat = 'dddd, Do MMMM h:mma YYYY';
+  const momentFormat = "dddd, Do MMMM h:mma YYYY";
 
   // Parse the date string using moment
   const momentObject = moment(dateString, momentFormat);
@@ -182,24 +182,46 @@ export function parseDateWithMoment(dateString) {
   }
 
   // Extract and convert date parts from the moment object
-  const dateObject = new Date(momentObject.year(), momentObject.month(), momentObject.date(), momentObject.hour(), momentObject.minute());
+  const dateObject = new Date(
+    momentObject.year(),
+    momentObject.month(),
+    momentObject.date(),
+    momentObject.hour(),
+    momentObject.minute()
+  );
 
   return dateObject;
 }
 
 export function formatDate(dateString) {
-  const options = { day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: 'numeric' };
-  const formattedDate = new Intl.DateTimeFormat('en-NG', options).format(new Date(dateString));
+  const options = {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+  };
+  const formattedDate = new Intl.DateTimeFormat("en-NG", options).format(
+    new Date(dateString)
+  );
 
-  const day = new Intl.DateTimeFormat('en-NG', { day: 'numeric' }).format(new Date(dateString));
-  const month = new Intl.DateTimeFormat('en-NG', { month: 'long' }).format(new Date(dateString));
-  const year = new Intl.DateTimeFormat('en-NG', { year: 'numeric' }).format(new Date(dateString));
-  const time = new Intl.DateTimeFormat('en-NG', { hour: 'numeric', minute: 'numeric' }).format(new Date(dateString));
+  const day = new Intl.DateTimeFormat("en-NG", { day: "numeric" }).format(
+    new Date(dateString)
+  );
+  const month = new Intl.DateTimeFormat("en-NG", { month: "long" }).format(
+    new Date(dateString)
+  );
+  const year = new Intl.DateTimeFormat("en-NG", { year: "numeric" }).format(
+    new Date(dateString)
+  );
+  const time = new Intl.DateTimeFormat("en-NG", {
+    hour: "numeric",
+    minute: "numeric",
+  }).format(new Date(dateString));
 
   const formattedString = `${day}th ${month} ${year} | ${time}`;
   return formattedString;
 }
-
 
 export function truncateString(inputString, maxLength) {
   if (
@@ -228,3 +250,34 @@ export function formatTime(inputDateString) {
 
   return inputDate.toLocaleTimeString("en-US", options);
 }
+
+
+export function formatDateAndTime(inputDate) {
+  // Parse the input string into a Date object
+  const dateObject = new Date(inputDate);
+
+  // Format the date
+  const formattedDate = dateObject.toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+
+  // Format the time
+  const formattedTime = dateObject.toLocaleTimeString("en-US", {
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+    timeZone: "UTC",
+  });
+
+  return { formattedDate, formattedTime };
+}
+
+// // Example usage
+// const inputDate = "2023-12-04T11:00:00Z";
+// const { formattedDate, formattedTime } = formatDateAndTime(inputDate);
+
+// console.log("Formatted Date:", formattedDate);
+// console.log("Formatted Time:", formattedTime);

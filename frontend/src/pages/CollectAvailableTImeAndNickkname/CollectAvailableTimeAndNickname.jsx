@@ -12,6 +12,7 @@ const AvailabilityForm = () => {
   const [selectedDate, setSelectedDate] = useState("");
   const [startTime, setStartTime] = useState("");
   const [endTime, setEndTime] = useState("");
+  const [isLoading, setIsloading] = useState(false);
 
   const addAvailability = () => {
     if (selectedDate && startTime && endTime) {
@@ -36,6 +37,7 @@ const AvailabilityForm = () => {
 
   const handleSetAvailability = async () => {
     if (availability.length > 0) {
+      setIsloading(true);
       await dispatch(setStaffAvailability(availability));
       navigate("/");
     } else {
@@ -47,8 +49,16 @@ const AvailabilityForm = () => {
     <div className="container">
       <div className="available-time">
         <h2>Set Your Availability</h2>
-        <div>
-          <label>Date:</label>
+        <span className="collected-dates-span">
+          Please make sure to add available dates in one-hour intervals. For
+          example, if you choose December 12, 2023, with a start time of 10:00
+          AM, set the end time as 11:00 AM. You can add availability first using
+          the "Add Availability" button and then submit the dates using the
+          "Submit" button. Ensure that you have added dates before proceeding
+          with the submission.
+        </span>
+        <div className="collect-container">
+          <label className="bold-collect-label">Date:</label>
           <input
             type="date"
             value={selectedDate}
@@ -56,7 +66,7 @@ const AvailabilityForm = () => {
           />
         </div>
         <div>
-          <label>Start Time:</label>
+          <label className="bold-collect-label">Start Time:</label>
           <input
             type="time"
             value={startTime}
@@ -64,23 +74,26 @@ const AvailabilityForm = () => {
           />
         </div>
         <div>
-          <label>End Time:</label>
+          <label className="bold-collect-label">End Time:</label>
           <input
             type="time"
             value={endTime}
             onChange={(e) => setEndTime(e.target.value)}
           />
         </div>
-        <button className="custom-button" onClick={addAvailability}>
-          Add Availability
-        </button>
-        <button className="custom-button" onClick={handleSetAvailability}>
-          Set Availability (API)
-        </button>
+
+        <div className="collect-button__container">
+          <button className="custom-button" onClick={addAvailability}>
+            Add Availability
+          </button>
+          <button className="custom-button" onClick={handleSetAvailability}>
+            {isLoading ? <img src="/assets/spinner.svg" /> : "Submit"}
+          </button>
+        </div>
 
         {/* Display the collected availability */}
         <div>
-          <h3>Your Available Slots:</h3>
+          <h3>Your Selected Slots:</h3>
           {availability.map((slot, index) => (
             <div key={index}>
               {`${new Date(slot.day).toLocaleDateString()} | ${

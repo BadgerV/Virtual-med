@@ -30,8 +30,9 @@
   border: none;
   border-radius: 20px;
   outline: none;
-  padding: 0.8em 2em;
   cursor: pointer;
+  height: 3.5em;
+  padding: 0 4em;
 
   margin-bottom: 1.5em;
 }
@@ -108,4 +109,31 @@
   padding: 1em 2em;
   border-radius: 15px;
   background-color: #023382;
+}
+
+.collected-dates-span {
+  font-size: 0.85em;
+  font-weight: 400;
+  margin-bottom: 2em;
+  display: block;
+}
+.bold-collect-label {
+  font-weight: 500;
+  font-size: 0.95em;
+}
+
+.collect-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.collect-button__container {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
 }

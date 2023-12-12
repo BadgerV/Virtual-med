@@ -2,8 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 const DEVELOPMENT = "http://localhost:8000";
-const PROD = "https://virtual-med-backend.onrender.com"
-
+// const PROD = "https://virtual-med-backend.onrender.com"
 
 const initialState = {
   upcomingAppointments: null,
@@ -20,7 +19,7 @@ export const getUpcomingAppointment = createAsyncThunk(
 
     try {
       const response = await axios.get(
-        `${PROD}/appointment/get-upcoming-appointments`,
+        `${DEVELOPMENT}/appointment/get-upcoming-appointments`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -42,7 +41,7 @@ export const getOngoingAppointment = createAsyncThunk(
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        `${PROD}/appointment/get-ongoing-appointments`,
+        `${DEVELOPMENT}/appointment/get-ongoing-appointments`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -65,7 +64,7 @@ export const getCompletedAppointments = createAsyncThunk(
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        `${PROD}/appointment/get-completed-appointments`,
+        `${DEVELOPMENT}/appointment/get-completed-appointments`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

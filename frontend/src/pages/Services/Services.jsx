@@ -1,9 +1,11 @@
-import './services.css';
+import "./services.css";
 
 const Services = () => {
   return (
-    <div>Coming soon</div>
-  )
-}
+    <div className="services-coming-soon">
+      <span>Coming Soon!!</span>
+    </div>
+  );
+};
 
-export default Services
+export default Services;

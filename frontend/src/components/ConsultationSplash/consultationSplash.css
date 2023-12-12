@@ -31,6 +31,7 @@
   display: flex;
   flex-direction: row;
   gap: 0.5em;
+  align-items: center;
 }
 .ex-mt {
   margin-top: 1em;
@@ -47,7 +48,7 @@
   margin-top: 1em;
 }
 .consultation-together span {
-  font-size: 0.9em;
+  font-size: 0.85em;
 }
 
 .consultation-right {

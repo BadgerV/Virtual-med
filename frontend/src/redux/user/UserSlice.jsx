@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const PROD = "https://virtual-med-backend.onrender.com";
+// const DEVELOPMENT = "https://virtual-med-backend.onrender.com";
 const DEVELOPMENT = "http://localhost:8000";
 
 const initialState = {
@@ -24,7 +24,7 @@ export const registerUser = createAsyncThunk(
     // console.log("working")
     try {
       const response = await axios.post(
-        `${PROD}/user/register`,
+        `${DEVELOPMENT}/user/register`,
         {
           firstName,
           lastName,
@@ -58,7 +58,7 @@ export const loginUser = createAsyncThunk(
   async ({ email, password }, thunkAPI) => {
     try {
       const response = await axios.post(
-        `${PROD}/user/login`,
+        `${DEVELOPMENT}/user/login`,
         {
           email,
           password,
@@ -75,7 +75,7 @@ export const loginUser = createAsyncThunk(
     } catch (error) {
       try {
         const response = await axios.post(
-          `${PROD}/staff/login`,
+          `${DEVELOPMENT}/staff/login`,
           {
             email,
             password,
@@ -91,7 +91,6 @@ export const loginUser = createAsyncThunk(
         localStorage.setItem("token", token);
 
         return response.data;
-
       } catch (error) {
         console.log(error);
         return thunkAPI.rejectWithValue(error.response.data);
@@ -103,7 +102,7 @@ export const loginUser = createAsyncThunk(
 export const myProfile = createAsyncThunk("/user/profile", async () => {
   const token = localStorage.getItem("token");
   try {
-    const response = await axios.get(`${PROD}/user/profile`, {
+    const response = await axios.get(`${DEVELOPMENT}/user/profile`, {
       // withCredentials: true,
       headers: {
         Authorization: `Bearer ${token}`,
@@ -114,7 +113,7 @@ export const myProfile = createAsyncThunk("/user/profile", async () => {
   } catch (error) {
     try {
       // const token = getState().auth.token; // Assuming you store the token in your Redux state
-      const response1 = await axios.get(`${PROD}/staff/profile`, {
+      const response1 = await axios.get(`${DEVELOPMENT}/staff/profile`, {
         // withCredentials: true,
         headers: {
           Authorization: `Bearer ${token}`,
@@ -136,7 +135,7 @@ export const ConnectUserWithDoctor = createAsyncThunk(
   async (staffId) => {
     try {
       const response = await axios.post(
-        `${PROD}/user/connectUserWithDoctor`,
+        `${DEVELOPMENT}/user/connectUserWithDoctor`,
         staffId,
         {
           // withCredentials: true,
@@ -155,7 +154,7 @@ export const ApproveUserByDoctor = createAsyncThunk(
   async (userId) => {
     try {
       const response = await axios.post(
-        `${PROD}/staff/apporve-pending-patients`,
+        `${DEVELOPMENT}/staff/apporve-pending-patients`,
         userId,
         {
           // withCredentials: true,
@@ -176,7 +175,7 @@ export const setUserNickname = createAsyncThunk(
 
     try {
       const response = await axios.post(
-        `${PROD}/user/set-nickname`,
+        `${DEVELOPMENT}/user/set-nickname`,
         { nickname },
         {
           // withCredentials: true,
@@ -229,7 +228,7 @@ export const setStaffAvailability = createAsyncThunk(
           });
 
           const response = await axios.post(
-            `${PROD}/staff/set-available-date`,
+            `${DEVELOPMENT}/staff/set-available-date`,
             {
               startTime: startDateTimeString,
               endTime: endDateTimeString,
@@ -263,7 +262,7 @@ export const getAvailableTimeForDoctor = createAsyncThunk(
 
     try {
       const response = await axios.post(
-        `${PROD}/user/get-doctor-availability`,
+        `${DEVELOPMENT}/user/get-doctor-availability`,
         { doctorId },
         {
           headers: {
@@ -285,7 +284,7 @@ export const makeAppointment = createAsyncThunk(
 
     try {
       const response = await axios.post(
-        `${PROD}/appointment/makeAppointment`,
+        `${DEVELOPMENT}/appointment/makeAppointment`,
         {
           doctorId,
           duration: duration * 60,
@@ -313,12 +312,11 @@ export const makeAppointment = createAsyncThunk(
 export const confirmAppointment = createAsyncThunk(
   "/confirmappointment",
   async (reference, thunkAPI) => {
-    console.log(reference);
     const token = localStorage.getItem("token");
 
     try {
       const response = await axios.get(
-        `${PROD}/appointment/confirmAppointment/${reference}`,
+        `${DEVELOPMENT}/appointment/confirmAppointment/${reference}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -326,7 +324,7 @@ export const confirmAppointment = createAsyncThunk(
         }
       );
       console.log(response.data);
-      return response.data.status;
+      return response.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.response.data);
     }
@@ -402,7 +400,7 @@ const userSlice = createSlice({
         state.isSuccess = true;
         state.loadingUserProfile = false;
 
-        console.log(state.user)
+        console.log(state.user);
       })
       .addCase(myProfile.rejected, (state, action) => {
         state.loading = false;

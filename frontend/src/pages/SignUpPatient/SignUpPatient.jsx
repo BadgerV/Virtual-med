@@ -11,7 +11,7 @@ const SignupPage = () => {
   const dispatch = useDispatch();
 
   const isError = useSelector((state) => state.userSlice.isError);
-  const error = useSelector(state => state.userSlice.error)
+  const error = useSelector((state) => state.userSlice.error);
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -24,6 +24,11 @@ const SignupPage = () => {
 
   const [isUser, setIsUser] = useState(true);
 
+  const [canSeePassword, setCanSeePassword] = useState(false);
+
+  const setIfCanSeePassword = () => {
+    setCanSeePassword(!canSeePassword);
+  };
   const handleDoctorClick = () => {
     setIsUser(false);
     navigate("/registerdoctor");
@@ -162,32 +167,40 @@ const SignupPage = () => {
               <div className="form-input">
                 <img src="/assets/Lock.svg" alt="" />
                 <input
-                  type="password"
+                  type={canSeePassword ? "text" : "password"}
                   name="password"
                   value={formData.password}
                   onChange={handleInputChange}
                   placeholder="Password"
                 />
-                <img src="/assets/Vector (5).svg" alt="" />
+                <img
+                  src="/assets/Vector (5).svg"
+                  alt=""
+                  onClick={setIfCanSeePassword}
+                />
               </div>
 
               <label htmlFor="confirmPassword">Confirm Password</label>
               <div className="form-input">
                 <img src="/assets/Lock.svg" alt="" />
                 <input
-                  type="password"
+                  type={canSeePassword ? "text" : "password"}
                   name="confirmPassword"
                   value={formData.confirmPassword}
                   onChange={handleInputChange}
                   placeholder="Confirm Password"
                 />
-                <img src="/assets/Vector (5).svg" alt="" />
+                <img
+                  src="/assets/Vector (5).svg"
+                  alt=""
+                  onClick={setIfCanSeePassword}
+                />
               </div>
 
-              <div className="terms">
+              {/* <div className="terms">
                 <input type="checkbox" />
                 <span>I agree to the Terms & Privacy</span>
-              </div>
+              </div> */}
 
               <div className="sign-buttondiv">
                 <button

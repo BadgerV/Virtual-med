@@ -15,6 +15,10 @@ const Navbar = () => {
   const isUser = useSelector((state) => state?.userSlice.user);
   const isStaff = useSelector((state) => state?.formSlice.staff);
 
+  const navigateToComingSoonPage = () => {
+    navigate("/coming-soon");
+  };
+
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
@@ -54,7 +58,7 @@ const Navbar = () => {
             className="menu-icon"
             alt=""
             onClick={() => setIsModalOpen(!isModalOpen)}
-            style={setIsModalOpen ? { display: "none" } : ""}
+            style={setIsModalOpen ? { display: "none" } : { display: "block" }}
           />
 
           <div className="navbar-mobile-links">
@@ -72,6 +76,17 @@ const Navbar = () => {
             >
               Services
             </Link>
+            {isUser || isStaff ? (
+              <Link
+                className="navbar-link-mobile"
+                to="/my-appointments"
+                onClick={handleCloseModal}
+              >
+                My appointments
+              </Link>
+            ) : (
+              <></>
+            )}
             <Link
               className="navbar-link-mobile"
               to="/finddoctor"
@@ -92,7 +107,7 @@ const Navbar = () => {
             )}
             <Link
               className="navbar-link-mobile"
-              to="/contact-us"
+              to="/coming-soon"
               onClick={handleCloseModal}
             >
               Contact us
@@ -110,24 +125,17 @@ const Navbar = () => {
           <span>MedCon</span>
         </div>
 
-        <div
-          className="navbar-middle"
-          style={
-            isUser?.isPremium || isUser?.accountType === "staff" || isStaff
-              ? { flex: 0.6 }
-              : {}
-          }
-        >
-          <Link className="navbar-link" to="/">
-            Home
-          </Link>
-          <Link className="navbar-link" to="/services">
-            Services
-          </Link>
-          <Link className="navbar-link" to="/finddoctor">
-            Doctors
-          </Link>
-          {isUser?.isPremium || isUser?.accountType === "staff" || isStaff ? (
+        {isUser || isStaff ? (
+          <div className="navbar-middle-with-appoint">
+            <Link className="navbar-link" to="/">
+              Home
+            </Link>
+            <Link className="navbar-link" to="/services">
+              Services
+            </Link>
+            <Link className="navbar-link" to="/finddoctor">
+              Doctors
+            </Link>
             <Link
               className="navbar-link"
               to="/my-appointments"
@@ -135,13 +143,26 @@ const Navbar = () => {
             >
               My appointments
             </Link>
-          ) : (
-            <></>
-          )}
-          <Link className="navbar-link" to="/contact-us">
-            Contact us
-          </Link>
-        </div>
+            <Link className="navbar-link" to="/coming-soon">
+              Contact us
+            </Link>
+          </div>
+        ) : (
+          <div className="navbar-middle">
+            <Link className="navbar-link" to="/">
+              Home
+            </Link>
+            <Link className="navbar-link" to="/services">
+              Services
+            </Link>
+            <Link className="navbar-link" to="/finddoctor">
+              Doctors
+            </Link>
+            <Link className="navbar-link" to="/coming-soon">
+              Contact us
+            </Link>
+          </div>
+        )}
 
         {isUser || isStaff ? (
           <div className="navbar-right">
@@ -162,6 +183,9 @@ const Navbar = () => {
                 onMouseLeave={handleMouseLeave}
                 style={hovered ? { display: "flex" } : {}}
               >
+                <Link to="/coming-soon" className="buttonModal-button">
+                  My Profile
+                </Link>
                 <Link
                   to="/get-available-dates"
                   className="buttonModal-button"

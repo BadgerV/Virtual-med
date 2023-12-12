@@ -25,7 +25,7 @@
 
 .medcon-logo {
   /* height: 4em; */
-  width: 4.5em;
+  width: 4em;
   margin: -0.5em;
 }
 
@@ -58,6 +58,7 @@
   color: black;
   font-size: 0.93em;
   font-weight: 400;
+  margin-right: 1em;
 }
 
 .navbar-get_started {
@@ -84,7 +85,7 @@
   width: 100%;
   left: 0;
 
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 1em;
 
   display: flex;
@@ -93,7 +94,7 @@
 
   display: none;
 
-  transition: 0.5s all ease-in-out
+  transition: 0.5s all ease-in-out;
 }
 
 .buttonModal-button {
@@ -105,7 +106,16 @@
   font-weight: 400;
   display: block;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+
+  transition: 0.2s all ease-in-out;
+}
+
+.buttonModal-button:hover {
+  background-color: #023382;
+  color: white;
+  border: 1px solid white;
 }
 
 @media (max-width: 1186px) {
@@ -187,9 +197,9 @@
 }
 .navbar-modal {
   position: absolute;
-  width: 100vw;
-  height: 50vh;
+  width: 95vw;
   background-color: white;
+  padding: 1em;
 
   display: flex;
   align-items: center;
@@ -214,6 +224,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 3em;
+  padding-top: 3em;
 }
 
 .navbar-link-mobile {
@@ -237,4 +248,39 @@
   padding: 0.8em 1.5em;
   border-radius: 20px;
   font-size: 0.9em;
+}
+
+.navbar-middle-with-appoint {
+  flex: 0.7;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1182px) {
+  .navbar-middle-with-appoint {
+    flex: 0.8;
+  }
+}
+@media (max-width: 1085px) {
+  .navbar-middle-with-appoint {
+    flex: 0.9;
+  }
+}
+@media (max-width: 990px) {
+  .navbar-middle-with-appoint {
+    flex: 1;
+  }
+}
+@media (max-width: 890px) {
+  .navbar-middle-with-appoint {
+    display: none;
+  }
+
+  .navbar-mobile-devices {
+    display: block;
+    transition: 0.2s all ease-in-out;
+  }
+  .menu-icon {
+    scale: 1.3;
+  }
 }

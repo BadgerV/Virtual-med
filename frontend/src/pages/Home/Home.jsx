@@ -1,4 +1,6 @@
+import Articles from "../../components/Articles/Articles";
 import ConsultationSplash from "../../components/ConsultationSplash/ConsultationSplash";
+import NewsLetter from "../../components/Newsletter/Newsletter";
 import Reviews from "../../components/Reviews/Reviews";
 import Services from "../../components/Services/Services";
 import SimpleAndFast from "../../components/SimpleAndFast/SimpleAndFast";
@@ -107,8 +109,16 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="reviews-outer-container">
+      {/* <div className="reviews-outer-container">
         <Reviews />
+      </div> */}
+
+      <div className="articles-container">
+        <Articles />
+      </div>
+
+      <div className="newsletter-cont">
+        <NewsLetter />
       </div>
     </>
   );

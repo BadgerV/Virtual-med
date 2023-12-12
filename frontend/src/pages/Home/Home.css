@@ -16,7 +16,7 @@
 }
 
 .home-big-text {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 700;
   line-height: 130%;
   color: black;
@@ -59,12 +59,12 @@
 }
 
 .home-first-text {
-  font-size: 1.1em;
+  font-size: 0.9em;
   font-weight: 600;
 }
 
 .home-second-text {
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 .home-button-div {
@@ -149,6 +149,13 @@
 .services-container {
   width: 90%;
 }
+.articles-container {
+  max-width: 100%;
+  overflow: hidden;
+
+  margin-top: 4em;
+}
+
 
 @media (max-width: 1200px) {
   .consultation-container {

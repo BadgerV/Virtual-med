@@ -13,8 +13,9 @@ const SignIn = () => {
   const isError = useSelector((state) => state.userSlice.isError);
   const error = useSelector((state) => state.userSlice.error);
 
+  const [canSeePassword, setCanSeePassword] = useState(false);
   if (user) {
-    console.log(user)
+    console.log(user);
     navigate("/");
   }
 
@@ -57,6 +58,9 @@ const SignIn = () => {
 
   const notify = () => toast.error(error);
 
+  const setIfCanSeePassword = () => {
+    setCanSeePassword(!canSeePassword);
+  };
   return (
     <div className="sign-in">
       <div className="sign-in_container">
@@ -77,14 +81,23 @@ const SignIn = () => {
             <label htmlFor="">Password</label>
             <div className="form-input">
               <img src="/assets/Lock.svg" alt="" />
-              <input type="passsword" name="password" onChange={handleChange} />
-              <img src="/assets/Vector (5).svg" alt="" />
+              <input
+                type={canSeePassword ? "text" : "password"}
+                name="password"
+                onChange={handleChange}
+              />
+              <img
+                src="/assets/Vector (5).svg"
+                alt=""
+                onClick={setIfCanSeePassword}
+                style={{ cursor: "pointer" }}
+              />
             </div>
 
-            <div className="terms">
+            {/* <div className="terms">
               <input type="checkbox" />
               <span>I agree to the Terms & Privacy</span>
-            </div>
+            </div> */}
 
             <div className="sign-buttondiv">
               <button className="sign-button" disabled={isLoading}>

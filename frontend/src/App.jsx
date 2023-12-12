@@ -10,6 +10,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { myProfile } from "./redux/user/UserSlice";
 import FindDoctor from "./pages/FindDoctor/findDoctor";
 import { setNotification } from "./redux/notification/NotifcationSlice";
+import Footer from "./components/Footer/Footer";
 
 import {
   PremiumUsersOnly,
@@ -51,6 +52,7 @@ import AvailabilityForm, {
 } from "./pages/CollectAvailableTImeAndNickkname/CollectAvailableTimeAndNickname";
 import VerifyPage from "./pages/VerifyPage/VerifyPage";
 import NotificationPage from "./pages/Notificationpage/NotificationPage";
+import PremiumSubscribe from "./pages/PremiumSubscribe/PremiumSubscribe";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -126,7 +128,10 @@ const App = () => {
                 />
               </Route>
 
+              <Route path="/coming-soon" element={<Services />} />
+
               <Route path="/verify" element={<VerifyPage />} />
+              <Route path="/premium-plans" element={<PremiumSubscribe />} />
 
               <Route element={<PrivateRoutes />}>
                 <Route path="/chat/:id" element={<Chat />} />
@@ -144,7 +149,7 @@ const App = () => {
               <Route element={<PremiumUsersOnly />}></Route>
             </Routes>
 
-            {/* <Footer /> */}
+            <Footer />
           </Suspense>
         </>
       ) : (

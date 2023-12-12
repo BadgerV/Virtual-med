@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./SignUp.css";
 import { registerUser } from "../../redux/user/UserSlice";
-import './SignUp.css';
+import "./SignUp.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -18,6 +18,8 @@ const SignUp = () => {
   const dispatch = useDispatch();
   // const user = useSelector((state) => state.userSlice.user);
   const isLoading = useSelector((state) => state.userSlice.loading);
+
+ 
 
   //SELF EXPLANATORY
   const handleSubmit = async (e) => {

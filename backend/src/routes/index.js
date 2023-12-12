@@ -8,6 +8,7 @@ import {
   isAdmin,
   isPremium,
   isPremiumOrStaff,
+  isUserOrStaff,
   staffAuth,
 } from "../common/middleware/auth.js";
 import messageRoute from "./messageRoute.js";
@@ -19,10 +20,10 @@ import NotificationRouter from "./notificationRoute.js";
 export const setRoutes = () => {
   router.use("/user", userRoutes());
   router.use("/staff", staffRoutes());
-  router.use("/chat", isPremiumOrStaff, chatRoute());
-  router.use("/message", isPremiumOrStaff, messageRoute);
-  router.use("/appointment", isPremiumOrStaff, appointmentRoute());
+  router.use("/chat", isUserOrStaff, chatRoute());
+  router.use("/message", isUserOrStaff, messageRoute);
+  router.use("/appointment", isUserOrStaff, appointmentRoute());
   router.use("/admin", auth, isAdmin, adminRoute());
-  router.use("/notification", isPremiumOrStaff, NotificationRouter());
+  router.use("/notification", isUserOrStaff, NotificationRouter());
   return router;
 };

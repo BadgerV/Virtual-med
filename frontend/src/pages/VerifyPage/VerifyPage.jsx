@@ -1,6 +1,7 @@
 import "./verifyPage.css";
 import { useDispatch, useSelector } from "react-redux";
 import LoadingComponent from "../../components/LoadingComponent/LoadingComponent";
+import { formatDateAndTime } from "../../utils/helper";
 
 const VerifyPage = () => {
   useEffect(() => {
@@ -17,11 +18,20 @@ const VerifyPage = () => {
   const loading = useSelector((state) => state.userSlice.loadingDoctorPayment);
 
   const [isSuccess, setIsSuccess] = useState(false);
+  const [date, setDate] = useState("");
+  const [time, setTime] = useState("");
 
   useEffect(() => {
-    console.log(doctorPaymentStatus);
-    if (doctorPaymentStatus == "confirmed") {
+    console.log(doctorPaymentStatus.status);
+    if (doctorPaymentStatus.status == "confirmed") {
       setIsSuccess(true);
+
+      const { formattedDate, formattedTime } = formatDateAndTime(
+        doctorPaymentStatus.appointmentTime
+      );
+
+      setDate(formattedDate);
+      setTime(formattedTime);
     } else {
       setIsSuccess(false);
     }
@@ -49,9 +59,7 @@ const VerifyPage = () => {
                       <img src="/assets/clock-icon.svg" alt="clock" />
                       <span className="verify-regular-te">Date</span>
                     </div>
-                    <div className="verirfy-page-app-right">
-                      December 4th, 2023
-                    </div>
+                    <div className="verirfy-page-app-right">{date}</div>
                   </div>
                   <hr className="gray-line-verify" />
 
@@ -60,7 +68,7 @@ const VerifyPage = () => {
                       <img src="/assets/duration-icon.svg" alt="duration" />
                       <span className="verify-regular-te">Time</span>
                     </div>
-                    <div className="verirfy-page-app-right">11:00am</div>
+                    <div className="verirfy-page-app-right">{time}</div>
                   </div>
                   <hr className="gray-line-verify" />
 
@@ -84,12 +92,13 @@ const VerifyPage = () => {
             <>
               <div className="verify-page">
                 <div className="verify-page-inner-container">
-                  <span className="verify-page_header-failed">Booking failed</span>
+                  <span className="verify-page_header-failed">
+                    Booking failed
+                  </span>
                   <span className="verify-page_smaller-text-failed">
                     Your booking failed. Please try again
                   </span>
 
-                  
                   <div className="button-container-verify">
                     <Link to="/" className="verify-button-failed">
                       Go back

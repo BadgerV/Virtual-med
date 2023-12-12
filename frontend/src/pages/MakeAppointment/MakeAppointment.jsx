@@ -14,6 +14,8 @@ import {
   organizeByDayAndDate,
 } from "../../utils/helper";
 import "./makeAppointment.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const MakeAppointment = () => {
   const dispatch = useDispatch();
@@ -34,6 +36,8 @@ const MakeAppointment = () => {
   const doctorAvail = useSelector(
     (state) => state?.userSlice?.doctorAvailableTime
   );
+
+  const isError = useSelector((state) => state?.userSlice?.isError);
 
   const timesArray = [];
   doctorAvail?.map((doctorTime) => {
@@ -63,6 +67,7 @@ const MakeAppointment = () => {
   const [selectedDuration, setSelectedDuration] = useState(null);
   const [duration, setDuration] = useState(null);
   const [parsedDate, setParsedDate] = useState(null);
+  const [isLoading, setIsloading] = useState(false);
 
   const [notes, setNotes] = useState("");
 
@@ -77,7 +82,7 @@ const MakeAppointment = () => {
       );
       setParsedDate(pDate);
 
-      console.log(pDate)
+      console.log(pDate);
     } else {
       return;
     }
@@ -112,6 +117,7 @@ const MakeAppointment = () => {
     if (!id || !duration || !parsedDate || !notes || notes.length === 0) {
       return;
     } else {
+      setIsloading(true);
       await dispatch(
         makeAppointment({ doctorId, duration, appointmentTime, notes })
       );
@@ -125,6 +131,19 @@ const MakeAppointment = () => {
       window.open(url, "_self");
     }
   }, [url]);
+
+  useEffect(() => {
+    if (isError) {
+      throwToastifyError();
+    }
+  }, [isError]);
+
+  const throwToastifyError = () => {
+    notify();
+    return;
+  };
+
+  const notify = () => toast.error("Something went wrong");
   return (
     <>
       {loading ? (
@@ -224,7 +243,7 @@ const MakeAppointment = () => {
               className="appointment-book-appointment"
               onClick={(e) => handleSubmit(e, id, +duration, parsedDate, notes)}
             >
-              Book appointment
+              {isLoading ? "Loading ..." : "Book appointment"}
             </button>
           </div>
         </div>
