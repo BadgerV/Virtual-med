@@ -85,11 +85,13 @@ const Chat = () => {
     }
   }, [messages, incomingMessage]);
 
+
+  //JUST ANOTHER COMMENT
   useEffect(() => {
     if (chat !== null) {
       const chatID = chat[0].chat._id;
 
-      const newSocket = io("https://medconnig.netlify.app");
+      const newSocket = io("https://virtual-med-backend.onrender.com");
 
       newSocket.emit("setup", chatID);
 

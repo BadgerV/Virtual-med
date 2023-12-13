@@ -16,10 +16,6 @@ import cookieParser from "cookie-parser";
 import { Server as SocketIOServer } from "socket.io";
 import http from "http";
 
-/**
- * Default app configurations
- */
-
 const app = express();
 
 app.use(cors());

@@ -263,7 +263,7 @@ const payStack = {
         amount: price * 100,
         reference: reference,
         // callback_url: "https://medconnig.netlify.app/verify",
-        callback_url: "https://2acf-105-113-59-29.ngrok-free.app/verify",
+        callback_url: "https://medconnig.netlify.app/verify",
       });
       // options
 

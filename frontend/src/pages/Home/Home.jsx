@@ -85,6 +85,10 @@ const Home = () => {
               Get Started <img src="/assets/right-arrow.png" alt="" />
             </Link>
           </div>
+
+          <Link to="/premium-plans" className="premium-plans">
+            Premium plans
+          </Link>
         </div>
         <div className="home-right">
           <img src={imageSource} alt="Hero Image" />

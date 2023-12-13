@@ -92,7 +92,6 @@
 @media (max-width: 965px) {
   .plans-sub__container {
     grid-template-columns: 1fr 1fr;
-
   }
   .advantage-sub {
     font-size: 0.95em;
@@ -101,11 +100,19 @@
 @media (max-width: 720px) {
   .plans-sub__container {
     grid-template-columns: 1fr;
-
   }
   .advantage-sub {
     font-size: 0.95em;
   }
 }
 
-
+.premium-plans {
+  background-color: #023382;
+  color: white;
+  text-align: center;
+  border-radius: 50px;
+  padding: 1.2em;
+  margin-top: 1em;
+  font-weight: 400;
+  font-size: 0.9em;
+}
