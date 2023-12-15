@@ -297,6 +297,8 @@ export const getAvailability = catchAsync(async (req, res) => {
   res.status(200).send(foundStaff.availability);
 });
 
+export cos ty 
+
 // ... (your other imports and setup)
 
 // Schedule the cron job to run every minute
