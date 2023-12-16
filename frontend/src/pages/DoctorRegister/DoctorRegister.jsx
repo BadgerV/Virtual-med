@@ -93,6 +93,16 @@ const DoctorRegister = () => {
 
   useEffect(() => {
     if (staff !== null) {
+      const keyToKeep = "token";
+
+      // Iterate through localStorage keys
+      Object.keys(localStorage).forEach((key) => {
+        // Check if the key is not the one you want to keep
+        if (key !== keyToKeep) {
+          // Remove the item
+          localStorage.removeItem(key);
+        }
+      });
       navigate("/get-available-dates");
     }
   }, [staff]);

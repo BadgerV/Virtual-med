@@ -105,7 +105,7 @@ const FindDoctor = () => {
         <div className="find-doctor-right">
           {!isLoading ? (
             doctors.map((doctor, index) => {
-              return <DoctorCard key={index} {...doctor} />;
+              return <DoctorCard key={index} {...doctor}/>;
             })
           ) : (
             <LoadingComponennt />

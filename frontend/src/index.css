@@ -54,3 +54,9 @@ h1 {
 input {
   color: black !important;
 }
+
+@media (max-width: 450px) {
+  * {
+    font-size: 15px;
+  }
+}

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  confirmAppointment,
   getAvailableTimeForDoctor,
   makeAppointment,
 } from "../../redux/user/UserSlice";
@@ -13,8 +12,10 @@ import {
   generateTimeSlots,
   organizeByDayAndDate,
 } from "../../utils/helper";
+import { getDoctor } from "../../redux/doctors/DoctorsSlice";
+
 import "./makeAppointment.css";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const MakeAppointment = () => {
@@ -36,6 +37,16 @@ const MakeAppointment = () => {
   const doctorAvail = useSelector(
     (state) => state?.userSlice?.doctorAvailableTime
   );
+
+  const foundDoctor = useSelector((state) => state?.doctorSlice?.foundDoctor);
+
+  const fetchDoctorData = async () => {
+    await dispatch(getDoctor(id));
+  };
+  useEffect(() => {
+    console.log(id);
+    fetchDoctorData();
+  }, [id]);
 
   const isError = useSelector((state) => state?.userSlice?.isError);
 
@@ -146,7 +157,7 @@ const MakeAppointment = () => {
   const notify = () => toast.error("Something went wrong");
   return (
     <>
-      {loading ? (
+      {loading || loading ? (
         <LoadingComponent />
       ) : (
         <div className="make-appointment">
@@ -159,10 +170,12 @@ const MakeAppointment = () => {
             </div>
 
             <div className="doctor-profile-header">
-              <img src="/assets/dummyAvatar.png" alt="doctor" />
-              <span className="doctor-profile-name">Segunmaru Faozan</span>
-              <span className="doctor-profile-speciality">Pediatrician</span>
-              <span className="doctor-profile-course">Chemistry Education</span>
+              <img src={foundDoctor?.passportImage} alt="doctor" />
+              <span className="doctor-profile-name">{`${foundDoctor?.firstName} ${foundDoctor?.lastName}`}</span>
+              <span className="doctor-profile-speciality">
+                {foundDoctor?.speciality}
+              </span>
+              <span className="doctor-profile-course">{`${foundDoctor?.major}`}</span>
             </div>
           </div>
 

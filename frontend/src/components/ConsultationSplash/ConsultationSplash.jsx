@@ -1,6 +1,8 @@
 import "./consultationSplash.css";
+import { useNavigate } from "react-router-dom";
 
 const ConsultationSplash = () => {
+  const navigate = useNavigate();
   return (
     <div className="consultation">
       <div className="consultation-left">
@@ -26,7 +28,12 @@ const ConsultationSplash = () => {
           <span>Instant appoitnments</span>
         </div>
 
-        <button className="find-doctor_consultation">Find Doctor</button>
+        <button
+          className="find-doctor_consultation"
+          onClick={() => navigate(`/finddoctor`)}
+        >
+          Find Doctor
+        </button>
       </div>
       <div className="consultation-right">
         <img src="/assets/doctor-image-2.png" alt="" />
@@ -36,3 +43,5 @@ const ConsultationSplash = () => {
 };
 
 export default ConsultationSplash;
+
+//107

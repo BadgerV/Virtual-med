@@ -51,20 +51,6 @@ const UserSchema = new mongoose.Schema(
     password: {
       type: String,
       required: true,
-      validate: {
-        validator: (value) => {
-          // Use the validator library to check if the password is strong enough
-          // You can customize the strength criteria based on your requirements
-          return validator.isStrongPassword(value, {
-            minLength: 8,
-            minUppercase: 1,
-            minLowercase: 1,
-            minNumbers: 1,
-          });
-        },
-        message:
-          "Password must be strong with at least 8 characters, including uppercase, lowercase, and numbers",
-      },
     },
     phoneNumber: {
       type: String,

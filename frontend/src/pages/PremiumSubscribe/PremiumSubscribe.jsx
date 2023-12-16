@@ -16,7 +16,7 @@ const PremiumSubscribe = () => {
       <div className="plans-sub__container">
         <div className="plan-container">
           <span className="plan-header__text">Basic plan</span>
-          <span className="plan-header__price">₦1,500/month</span>
+          <span className="plan-header__price">₦1,000/month</span>
 
           <ul className="advantages-sub-list">
             <div className="sub-together">
@@ -47,7 +47,7 @@ const PremiumSubscribe = () => {
         </div>
         <div className="plan-container">
           <span className="plan-header__text">Individual Plan</span>
-          <span className="plan-header__price">₦3,500/month</span>
+          <span className="plan-header__price">₦3,000/month</span>
 
           <ul className="advantages-sub-list">
             <div className="sub-together">

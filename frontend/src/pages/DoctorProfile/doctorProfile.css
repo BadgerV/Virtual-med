@@ -109,6 +109,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+  padding: 0.5em;
 }
 
 .profile-doctor-sub-header {
@@ -126,29 +127,32 @@
   padding: 0.8em 0.5em;
   cursor: pointer;
 }
-.profile-doctor_about-text, .profile-doctor_location-text, .profile-doctor_education-text {
-    font-weight: 600;
-    font-size: 1.1em;
-    margin-bottom: 0.5em;
+.profile-doctor_about-text,
+.profile-doctor_location-text,
+.profile-doctor_education-text {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
 }
 
-.profile-doctor_about-body, .profile-doctor_location {
-    font-size: 0.93em;
+.profile-doctor_about-body,
+.profile-doctor_location {
+  font-size: 0.93em;
 }
 
 .profile-doctor_together {
-    display: flex;
-    flex-direction: column;
-    line-height: 140%;
-    margin-bottom: 0.5em;
+  display: flex;
+  flex-direction: column;
+  line-height: 140%;
+  margin-bottom: 0.5em;
 }
 
 .profile-doctor-attribute-big-text {
-    font-weight: 500;
-    font-size: 0.93em;
+  font-weight: 500;
+  font-size: 0.93em;
 }
 .profile-doctor-attribute-small-text {
-    font-size: 0.93em;
+  font-size: 0.93em;
 }
 .profile-doctor_about-text,
 .profile-doctor_location-text,
@@ -215,8 +219,6 @@
   font-size: 0.9em;
 }
 
-
-
 .profile-doctor-review_header-right-top span {
   font-size: 0.85em;
   font-weight: 500;
@@ -238,8 +240,19 @@
 }
 
 @media (max-width: 680px) {
+  .doctor-profile-page {
+    padding: 1em;
+  }
   .profile-doctor-attribute {
     padding: 0.5em 2em;
+  }
+
+  .profile-doctor-main {
+    width: 100%;
+  }
+
+  * {
+    font-size: 14px;
   }
 }
 @media (max-width: 540px) {
@@ -254,9 +267,12 @@
   .profile-doctor-attribute {
     padding: 0.5em 0;
   }
- 
+
   .special-attribute {
     border: none;
+  }
+  .profile-doctor-review-container {
+    width: 100%;
   }
 }
 @media (max-width: 455px) {
@@ -271,17 +287,17 @@
   .profile-doctor-attribute {
     padding: 0.5em 0;
   }
- 
+
   .special-attribute {
     border: none;
   }
 
   .doctor-profile-page {
-    padding: 2em 1em;
+    padding: 2em 0.5em;
   }
 }
 
-@media (max-width : 488px) {
+@media (max-width: 488px) {
   .doctor-profile-page {
     padding: 2em 0.3em;
     font-size: 15px;

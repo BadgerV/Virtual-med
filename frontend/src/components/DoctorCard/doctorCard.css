@@ -6,14 +6,18 @@
   outline: 1px solid hsl(0, 0%, 83%);
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+
+  cursor: pointer;
 }
 .doctor-card-left {
 }
 
 .doctor-card-left img {
-  height: 7em;
-  width: 6em;
-  object-fit: contain;
+  aspect-ratio: 1 / 1; /* Set the aspect ratio to 1:1 for a perfect circle */
+  object-fit: cover;
+  border-radius: 50%;
+  max-height: 7em !important;
+  margin: 0.1em 0;
 }
 .doctor-card-middle {
   flex: 1;

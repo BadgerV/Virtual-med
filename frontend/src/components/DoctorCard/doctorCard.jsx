@@ -1,5 +1,6 @@
 import "./doctorCard.css";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const DoctorCard = ({
   _id,
@@ -12,8 +13,12 @@ const DoctorCard = ({
   speciality,
   passportImage,
 }) => {
+  const navigate = useNavigate();
   return (
-    <div className="doctor-card-container">
+    <div
+      className="doctor-card-container"
+      onClick={() => navigate(`/doctor/${_id}`)}
+    >
       <div className="doctor-card-left">
         <img
           src={passportImage ? passportImage : "/assets/doctorImage.png"}
@@ -32,9 +37,9 @@ const DoctorCard = ({
         </div>
       </div>
       <div className="doctor-card-right">
-          <Link to={`/doctor/${_id}`} className="link-button">
-            View
-          </Link>
+        <Link to={`/doctor/${_id}`} className="link-button">
+          View
+        </Link>
       </div>
     </div>
   );

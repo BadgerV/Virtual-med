@@ -140,6 +140,7 @@ export const getStaffs = catchAsync(async (req, res) => {
   const staffs = await Staff.find({
     // Add other criteria as needed
     passportImage: { $exists: true },
+    isVerified: true,
     // Add more criteria here
   });
 
@@ -297,7 +298,13 @@ export const getAvailability = catchAsync(async (req, res) => {
   res.status(200).send(foundStaff.availability);
 });
 
-export cos ty 
+export const getParticularUser = catchAsync(async (req, res) => {
+  const { query } = req.body;
+
+  const result = await Staff.find({ $or: [query] }).exec();
+
+  res.status(200).send(result);
+});
 
 // ... (your other imports and setup)
 

@@ -15,10 +15,6 @@ const Navbar = () => {
   const isUser = useSelector((state) => state?.userSlice.user);
   const isStaff = useSelector((state) => state?.formSlice.staff);
 
-  const navigateToComingSoonPage = () => {
-    navigate("/coming-soon");
-  };
-
   const handleCloseModal = () => {
     setIsModalOpen(false);
   };
@@ -94,17 +90,6 @@ const Navbar = () => {
             >
               Doctors
             </Link>
-            {isUser?.isPremium ? (
-              <Link
-                className="navbar-link-mobile"
-                to="/my-appointments"
-                onClick={handleCloseModal}
-              >
-                My appointments
-              </Link>
-            ) : (
-              <></>
-            )}
             <Link
               className="navbar-link-mobile"
               to="/coming-soon"
