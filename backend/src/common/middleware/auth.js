@@ -10,6 +10,8 @@ export const auth = catchAsync(async (req, res, next) => {
   // const token = req.cookies.auth;
   const token = req.header("Authorization").replace("Bearer ", "");
 
+  //just another useless comment, I may need to rewrite all these code to make it scallable and possible for larger integration and maybe use another DB
+
   console.log(req.cookies.auth);
 
   if (!token) {
