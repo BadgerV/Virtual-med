@@ -32,7 +32,34 @@ cd Virtual-med
 ## Install frontend dependencies
 cd frontend
 npm install
+
+##.env file
+cd backend
 ```
+
+## Configuration
+
+### Environment Variables
+
+This project relies on certain environment variables for configuration. To set up your environment, follow these steps:
+
+1. Locate the `.env.example` file in the root directory of the project.
+2. Create a new file named `.env` in the same directory.
+3. Open the `.env.example` file and find the necessary keys and their corresponding values.
+
+   ```dotenv
+   # Example .env.example file
+
+   DB_URL = URL_MONGODB_RL
+   PORT = YOUR_PORT
+   APP_NAME = "MedCon"
+   APP_ENV = "local"
+   APP_SECRET = YOUR-SECRET_AUTH_KEY
+   PAYSTACK_PUBLIC_KEY = YOUR_PASTACK_KEY
+   SUB_PRICE = 1500
+   EMAIL = EMAIL_FOR_NODEMAILER
+   PASSWORD = PASSWORD_FOR_NODEMAILER
+   ```
 
 ## Usage
 
@@ -54,7 +81,7 @@ cd ..
 ## Install backend dependencies
 cd backend
 npm install
-```
+````
 
 ## Contribution Guidelines
 
