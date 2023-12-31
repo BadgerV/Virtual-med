@@ -6,6 +6,8 @@ MedCon is your on-demand healthcare companion, offering seamless online consulta
 
 MedCon provides a platform for users to schedule virtual appointments with healthcare professionals, allowing for personalized advice, treatment plans, and secure communication. With a user-friendly interface, the app aims to bridge the gap between patients and medical experts, making healthcare accessible from the comfort of your own space.
 
+
+
 ### Key Features
 
 - **Virtual Consultations:**
@@ -91,6 +93,10 @@ We welcome contributions to enhance MedCon! If you'd like to contribute, please 
 2. Create a new branch for your feature or bug fix.
 3. Ensure your code adheres to the existing coding standards.
 4. Submit a pull request with a clear description of your changes.
+
+## Live Website
+
+Visit the live MedCon website: https://medconnig.netlify.app/
 
 ## License
 
