@@ -98,4 +98,4 @@ This project is licensed under the MIT License.
 
 ## Contact and Support
 
-For any inquiries or support, please contact: segunfaozan112@gmail.com
+For any inquiries or support, please contact: segunfaozan112@gmail.com, virtualmed2023@gmail.com
