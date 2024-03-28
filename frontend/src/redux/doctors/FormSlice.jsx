@@ -60,33 +60,29 @@ export const registerStaff = createAsyncThunk(
     aboutMe,
   }) => {
     try {
-      console.log("ppppp")
-      const response = await axios.post(
-        `${PRODUCTION}/staff/register`,
-        {
-          firstName,
-          lastName,
-          email,
-          password,
-          phoneNumber,
-          medicalLisense,
-          proofOfIdentity,
-          speciality,
-          hourlyPrice,
-          passportImage,
-          dateOfBirth,
-          location,
-          boardCertification,
-          major,
-          degree,
-          university,
-          graduationDate,
-          degreeCertificate,
-          POMI,
-          CV,
-          aboutMe,
-        },
-      );
+      const response = await axios.post(`${PRODUCTION}/staff/register`, {
+        firstName,
+        lastName,
+        email,
+        password,
+        phoneNumber,
+        medicalLisense,
+        proofOfIdentity,
+        speciality,
+        hourlyPrice,
+        passportImage,
+        dateOfBirth,
+        location,
+        boardCertification,
+        major,
+        degree,
+        university,
+        graduationDate,
+        degreeCertificate,
+        POMI,
+        CV,
+        aboutMe,
+      });
 
       const token = await response.data.newStaff.tokens[
         response.data.newStaff.tokens.length - 1
@@ -97,7 +93,7 @@ export const registerStaff = createAsyncThunk(
 
       return response.data;
     } catch (e) {
-      console.log(e.message);
+      console.log(e);
       Promise.reject(e.error.message);
     }
   }

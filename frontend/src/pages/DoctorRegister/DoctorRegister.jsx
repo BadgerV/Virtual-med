@@ -234,50 +234,42 @@ const DoctorRegister = () => {
   const checkFields = (e, callback) => {
     e.preventDefault();
 
-    const isAnyFieldNullOrEmpty =
-      !firstName ||
-      !lastName ||
-      !email ||
-      !password ||
-      !phoneNumber ||
-      !medicalLisense ||
-      !proofOfIdentity ||
-      !speciality ||
-      !hourlyPrice ||
-      !passportImage ||
-      !dateOfBirth ||
-      !location ||
-      !boardCertification ||
-      !major ||
-      !degree ||
-      !university ||
-      !graduationDate ||
-      !degreeCertificate ||
-      !CV ||
-      firstName.trim() === "" ||
-      lastName.trim() === "" ||
-      email.trim() === "" ||
-      password.trim() === "" ||
-      phoneNumber.trim() === "" ||
-      medicalLisense.trim() === "" ||
-      proofOfIdentity.trim() === "" ||
-      speciality.trim() === "" ||
-      hourlyPrice.trim() === "" ||
-      passportImage.trim() === "" ||
-      location.trim() === "" ||
-      boardCertification.trim() === "" ||
-      major.trim() === "" ||
-      degree.trim() === "" ||
-      university.trim() === "" ||
-      degreeCertificate.trim() === "" ||
-      CV.trim() === "";
+    // Define an array of fields to check
+    const fieldsToCheck = [
+      firstName,
+      lastName,
+      email,
+      password,
+      phoneNumber,
+      // medicalLisense,
+      // proofOfIdentity,
+      speciality,
+      hourlyPrice,
+      passportImage,
+      // dateOfBirth,
+      location,
+      // boardCertification,
+      major,
+      degree,
+      university,
+      // graduationDate,
+      // degreeCertificate,
+      // CV,
+      aboutMe,
+    ];
+
+    // Check if any field is null or empty after trimming
+    const isAnyFieldNullOrEmpty = fieldsToCheck.some(
+      (field) => !field || field.trim() === ""
+    );
 
     if (isAnyFieldNullOrEmpty) {
-      setIsNullOrEmpty(true);
+      setIsNullOrEmpty(true); // Assuming setIsNullOrEmpty is defined and works as expected
     } else {
       callback(e);
     }
   };
+
 
   const handleSubmit = async (e) => {
     console.log("working");

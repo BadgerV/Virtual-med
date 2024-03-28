@@ -20,9 +20,14 @@ const app = express();
 
 app.use(cors());
 
-const server = http.createServer(app); // Use the same server for Express and Socket.IO
+const server = http.createServer(app); 
 
-export const io = new SocketIOServer(server);
+export const io = new SocketIOServer(server, {
+  cors: {
+    origin: ["http://localhost:5173", "https://medconnig.netlify.app/"],
+    methods: ["GET", "POST"],
+  },
+});
 
 // io.on("connection", (socket) => {
 //   console.log("a reply detected!");

@@ -23,9 +23,9 @@ const Chat = () => {
   const [socket, setSocket] = useState(null);
   const [incomingMessage, setIncomingMessage] = useState(null);
 
-  useEffect(() => {
-    console.log(chat);
-  }, [chat]);
+  // useEffect(() => {
+  //   console.log(chat);
+  // }, [chat]);
 
   useEffect(() => {
     if (chat !== null) {
