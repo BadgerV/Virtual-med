@@ -1,0 +1,67 @@
+/* Styles for screens less than 768px */
+.newsign {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsign h1 {
+  text-align: center;
+  color: #333;
+}
+
+.newsign form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsign input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.newsign .down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.newsign p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.newsign .enter {
+  color: #007bff;
+  cursor: pointer;
+  margin: 0;
+  font-size: 16px;
+}
+
+.newsign .enter:hover {
+  text-decoration: underline;
+}
+
+/* Media query for screens with a width of 768px or more */
+@media only screen and (min-width: 768px) {
+  .newsign {
+    max-width: 600px;
+    margin: 50px auto;
+  }
+
+  .newsign h1 {
+    font-size: 24px;
+  }
+
+  .newsign input {
+    font-size: 18px;
+  }
+}

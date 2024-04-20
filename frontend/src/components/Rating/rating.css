@@ -1,0 +1,44 @@
+ .rating {
+    /* outline: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 1em;
+}
+
+.rating-header {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.rating-header_left img {
+    height: 4em;
+}
+
+.rating-header_right {
+    display: flex;
+    flex-direction: column;
+    line-height: 110%;
+}
+
+.rating-name {
+    font-size: 0.93em;
+    font-weight: 600;
+}
+
+.rating-time {
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.rating-middle {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    margin-top: 0.5em;
+}
+
+.rating-lower {
+    font-size: 0.9em;
+}

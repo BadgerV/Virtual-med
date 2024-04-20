@@ -1,0 +1,77 @@
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.newletter-text {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  gap: 1em;
+  outline: 1px solid #d3d3d3;
+  border-radius: 20px;
+  padding: 0.2em;
+}
+
+.newletter-second {
+  width: 60%;
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.newsletter form input {
+  flex: 1;
+  padding: 0.5em 1em;
+  font-size: 0.9em;
+}
+.hidden-newsletter-button {
+  display: none;
+}
+
+.newsletter form button {
+  background-color: #023382;
+  color: white;
+  padding: 0.6em 2em;
+  font-size: 0.9em;
+  border-radius: 20px;
+}
+
+@media (max-width: 666px) {
+  .newletter-second {
+    width: 90%;
+  }
+  .newsletter form {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .newletter-second {
+    width: 100%;
+  }
+  .newsletter form {
+    flex-direction: column;
+  }
+  .newsletter form button {
+    display: none;
+  }
+
+  .hidden-newsletter-button {
+    display: block;
+    background-color: #023382;
+    color: white;
+    padding: 0.6em 2em;
+    font-size: 0.9em;
+    border-radius: 20px;
+  }
+}

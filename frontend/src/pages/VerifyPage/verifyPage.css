@@ -1,0 +1,102 @@
+.verify-page {
+  background-color: #f2f2f2;
+  height: 88vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verify-page-inner-container {
+  padding: 2em 0;
+  outline: 1px solid white;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.verify-page_header {
+  font-weight: 600;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.verify-page_smaller-text {
+  margin-top: 2em;
+  width: 80%;
+  text-align: center;
+}
+
+.verify-page_app-container {
+  margin-top: 4em;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+  gap: 0.5em;
+}
+
+.verify-page_app_together {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1em;
+}
+.verirfy-page-app-left {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: center;
+}
+
+.gray-line-verify {
+  width: 100%;
+  color: 2px solid #d3d3d3;
+}
+
+.button-container-verify {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2em;
+}
+
+.verify-button {
+  padding: 1em 3em;
+  background-color: #023382;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.verify-page_header-failed {
+  font-weight: 600;
+  font-size: 1.3em;
+  text-align: center;
+  color: red;
+}
+
+.verify-page_smaller-text-failed {
+  margin-top: 2em;
+  width: 80%;
+  text-align: center;
+  color: red;
+}
+
+.verify-button-failed {
+  padding: 1em 3em;
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 500;
+}

@@ -1,0 +1,166 @@
+.signs-doctors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1em;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  max-height: fit-content;
+  width: 40em;
+  /* outline: 1px solid red; */
+}
+
+.sign-in-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0 0.5em 0;
+  width: 100%;
+}
+
+.sign-in-header h1 {
+  font-size: 1.9em;
+}
+
+.sign-in-header span {
+  font-size: 0.93em;
+}
+
+.form-container {
+  width: 80%;
+  /* outline: 1px solid green; */
+  padding: 1em;
+}
+
+.sign-in-form {
+  width: 100%;
+}
+
+.form-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d3d3d3;
+  padding: 0.8em;
+  border-radius: 15px;
+  width: 550px;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+label {
+  font-size: 0.93em;
+  font-weight: 400;
+  margin-bottom: 0.2em;
+  display: block;
+}
+
+.form-input img {
+  margin-right: 8px;
+  scale: 0.8;
+}
+
+.form-input input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 0.93em;
+}
+
+.terms {
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 1.5em;
+  font-size: 0.93em;
+}
+
+.sign-buttondiv {
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  margin-bottom: 0.6em;
+}
+
+.sign-button {
+  border: 1px solid white;
+  background-color: #023382;
+  padding: 0.7em;
+  border-radius: 50px;
+  color: white;
+  outline: none;
+  border: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signs-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.93em;
+  gap: 5em;
+}
+
+/* .signs-button button {
+  border: 1.5px solid blue;
+  padding: 0.5em;
+} */
+
+.signs-button button {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 0.5em;
+  transition: 0.2s all ease-in-out;
+  backface-visibility: hidden;
+  transform-origin: bottom left;
+}
+
+.ball {
+  color: #023382;
+}
+
+.sign-in-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  justify-content: center;
+}
+
+.sign-in-footer a {
+  color: #023382;
+  font-weight: 400;
+  font-size: 0.93em;
+  font-weight: 300;
+}
+
+.sign-in-footer span {
+  font-size: 0.93em;
+}
+
+@media (max-width: 500px) {
+  .form-container {
+    width: 90%;
+    /* outline: 1px solid green; */
+    padding: 0.5em;
+  }
+}
+@media (max-width: 393px) {
+  .form-container {
+    width: 90%;
+    /* outline: 1px solid green; */
+    /* padding: 0.5em; */
+  }
+}

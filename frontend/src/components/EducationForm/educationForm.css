@@ -1,0 +1,114 @@
+.educational-form {
+  /* border: 1px solid yellow; */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  border-radius: 20px;
+  padding: 3em;
+  transition: 0.2s all ease-in-out;
+}
+
+.education-label_and_input {
+  /* outline: 2px solid red; */
+}
+
+.education-label_and_input {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-label_and_input label {
+  font-weight: 500;
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+}
+
+.education-label_and_input input {
+  border-radius: 20px;
+  outline: 1px solid #d3d3d3;
+  padding: 0.8em 1em;
+  font-size: 0.9em;
+}
+
+.education-duo-inputs-container label {
+  font-weight: 500;
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+.education-duo-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr;
+  gap: 3em;
+}
+
+.upload-image-div label {
+  font-weight: 500;
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+.input-file-container {
+  /* outline: 1px solid red; */
+  padding: 0.8em 2em;
+  position: relative;
+  width: max-content;
+  outline: 1px solid #d3d3d3;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: center;
+}
+.input-file-container div {
+  font-size: 0.85em;
+}
+
+.upload-image-div input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+.education-button-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 0.5em;
+}
+
+.education-button-cont button {
+    color: white;
+    background-color: #023382;
+    font-size: 0.93em;
+    padding: 0.8em 2em;
+    border-radius: 20px;
+}
+.input-chaarde {
+  max-width: 340px;
+  overflow-x: hidden;
+}
+
+@media (max-width: 720px) {
+  .educational-form {
+    padding: 1.5em;
+  }  
+}
+
+
+@media (max-width: 455px) {
+  .educational-form {
+    border-radius: 0;
+  }
+}
+

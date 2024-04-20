@@ -1,0 +1,89 @@
+.consultation {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5.5em;
+}
+
+.consultation-left {
+  flex: 0.5;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.consultation-header {
+  color: #023382;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.consultation-big-text {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.consultation-together {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  align-items: center;
+}
+.ex-mt {
+  margin-top: 1em;
+}
+
+.find-doctor_consultation {
+  background-color: #023382;
+  color: white;
+  font-size: 0.9em;
+  padding: 1em 2em;
+  border-radius: 50px;
+  max-width: fit-content;
+
+  margin-top: 1em;
+}
+.consultation-together span {
+  font-size: 0.85em;
+}
+
+.consultation-right {
+  flex: 0.5;
+}
+
+.consultation-right img {
+  scale: 0.9;
+}
+
+.consultation-small-text {
+  font-size: 0.9em;
+  font: 400px;
+}
+
+@media (max-width: 800px) {
+  .consultation {
+    gap: 1em;
+    padding-left: 2em;
+  }
+
+  .consultation-right img {
+    scale: 0.8;
+  }
+}
+
+@media (max-width: 720px) {
+  .consultation {
+    padding-left: 0;
+  }
+  .consultation-right {
+    display: none;
+  }
+
+  .consultation-left {
+    flex: 1;
+  }
+}

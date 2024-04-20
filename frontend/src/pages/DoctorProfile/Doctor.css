@@ -1,0 +1,44 @@
+.profile-signup {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .nav-tabs {
+    margin-bottom: 20px;
+  }
+  
+  .nav-link {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+  }
+  
+  .nav-link.active {
+    background-color: #eee;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+  }
