@@ -61,6 +61,9 @@ const UserSchema = new mongoose.Schema(
       default: true,
     },
     tokens: [tokenSchema],
+    token : {
+      type : String,
+    },
     accountType: {
       type: String,
       default: "user",

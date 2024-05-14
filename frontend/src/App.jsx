@@ -45,7 +45,7 @@ const ContactUs = lazy(() => import("./pages/ContactUs/ContactUs"));
 //let us add the assets in the public folder, that way if i want to access the react.svg in there i would say src = "/assets/react.svg" directly. no need to import anything
 //links sould be ul li then a tags, for upscaling and for ease in considering screen readers
 
-//i was thinking we should start with the redux store and the asynchronous detchings from the backend pending the time we will get a designer.
+//i was thinking we should start with the redux store and the  asynchronous detchings from the backend pending the time we will get a designer.
 
 import AvailabilityForm, {
   SetNickName,

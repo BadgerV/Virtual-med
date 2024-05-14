@@ -29,7 +29,7 @@ import { useSelector } from "react-redux";
 
 function SideDrawer() {
   const [search, setSearch] = useState("");
-  const user = useSelector((state) => state.userSlice?.user);
+  // const user = useSelector((state) => state.userSlice?.user);
   const searchResult = useSelector((state) => state.chatSlice?.searchResult);
   const loading = useSelector((state) => state.chatSlice?.loading);
   const loadingChat = useSelector((state) => state.chatSlice?.loadingChat);

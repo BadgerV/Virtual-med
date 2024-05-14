@@ -98,7 +98,12 @@ export const staffAuth = catchAsync(async (req, res, next) => {
 
 export const isUserOrStaff = catchAsync(async (req, res, next) => {
   // const token = req.cookies.auth;
-  const token = req.header("Authorization").replace("Bearer ", "");
+  let token;
+  try {
+    token = req.header("Authorization").replace("Bearer ", "");
+  } catch (error) {
+    throw new AppError("Please login to continue")
+  }
   // const token = req.cookies.auth;
 
   if (!token) {
@@ -135,9 +140,12 @@ export const isUserOrStaff = catchAsync(async (req, res, next) => {
       req.token = token;
       req.user = user;
 
+      console.log(req.user)
+
       next();
     }
   } catch (error) {
+    console.log(error)
     throw new AppError(error, 401);
   }
 });

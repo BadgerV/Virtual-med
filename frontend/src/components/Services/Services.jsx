@@ -3,7 +3,7 @@ import "./services.css";
 const Services = () => {
   return (
     <div className="services">
-      <div className="services-header">Our Servcies</div>
+      <div className="services-header">Our Services</div>
 
       <div className="services-big-text">
         You can get the highest quality service here

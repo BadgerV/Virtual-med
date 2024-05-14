@@ -16,6 +16,7 @@ import appointmentRoute from "./appointmentRoute.js";
 import adminRoute from "./adminRoute.js";
 import { auth } from "../common/middleware/auth.js";
 import NotificationRouter from "./notificationRoute.js";
+import blogRoute from "./blog.route.js";
 
 export const setRoutes = () => {
   router.use("/user", userRoutes());
@@ -25,5 +26,6 @@ export const setRoutes = () => {
   router.use("/appointment", isUserOrStaff, appointmentRoute());
   router.use("/admin", auth, isAdmin, adminRoute());
   router.use("/notification", isUserOrStaff, NotificationRouter());
+  router.use("/blog", isUserOrStaff, blogRoute);
   return router;
 };

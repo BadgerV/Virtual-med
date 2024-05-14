@@ -69,6 +69,8 @@ export const loginStaff = catchAsync(async (req, res) => {
   await res.cookie("auth", token, { httpOnly: true });
   await staff.save();
 
+  console.log(token)
+
   res.status(200).send(staff);
 });
 

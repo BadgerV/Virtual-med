@@ -123,6 +123,8 @@ export const loginUser = catchAsync(async (req, res) => {
   await res.cookie("auth", token, { httpOnly: true });
   await user.save();
 
+  user.token = token;
+
   res.status(200).send(user);
 });
 
@@ -375,7 +377,6 @@ export const setNickname = catchAsync(async (req, res) => {
 
   res.send(updatedUser);
 });
-
 
 export const getAvailabilityForUsers = catchAsync(async (req, res) => {
   const {doctorId} = req.body;

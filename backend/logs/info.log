@@ -13837,3 +13837,57 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2023-12-12 17:07:59 info: POST /appointment/makeAppointment [32m200 1413.738 ms - 213
 2023-12-12 17:08:11 info: GET /user/profile [36m304 224.331 ms - -
 2023-12-12 17:08:15 info: GET /appointment/confirmAppointment/e8d244ef-ae62-4e2c-ac54-11b57fce3a3d [32m200 3238.369 ms - 13229
+2024-05-14 15:58:37 error: 500 - Cannot read properties of undefined (reading 'replace') - /blog/create-post - GET - ::1
+2024-05-14 15:58:37 info: GET /blog/create-post [31m500 9.748 ms - 1519
+2024-05-14 16:00:48 error: 500 - Please login to continue - /blog/create-post - GET - ::1
+2024-05-14 16:00:48 info: GET /blog/create-post [31m500 9.761 ms - 1453
+2024-05-14 16:00:55 error: 500 - Please login to continue - /blog/create-post - GET - ::1
+2024-05-14 16:00:55 info: GET /blog/create-post [31m500 2.284 ms - 1453
+2024-05-14 16:00:58 error: 500 - Please login to continue - /blog/create-post - GET - ::1
+2024-05-14 16:00:58 info: GET /blog/create-post [31m500 2.620 ms - 1453
+2024-05-14 16:01:20 info: POST /user/login [32m200 529.248 ms - 11029
+2024-05-14 16:02:29 error: 500 - Please login to continue - /blog/create-post - GET - ::1
+2024-05-14 16:02:29 info: GET /blog/create-post [31m500 1.825 ms - 1453
+2024-05-14 16:03:23 error: 500 - token is not defined - /blog/create-post - GET - ::1
+2024-05-14 16:03:23 info: GET /blog/create-post [31m500 2.891 ms - 1453
+2024-05-14 16:03:38 error: 500 - token is not defined - /blog/create-post - GET - ::1
+2024-05-14 16:03:38 info: GET /blog/create-post [31m500 1.361 ms - 1453
+2024-05-14 16:05:03 error: 401 - TokenExpiredError: jwt expired - /blog/create-post - GET - ::1
+2024-05-14 16:05:03 info: GET /blog/create-post [33m401 12.418 ms - 1465
+2024-05-14 16:05:31 error: 401 - TokenExpiredError: jwt expired - /blog/create-post - GET - ::1
+2024-05-14 16:05:31 info: GET /blog/create-post [33m401 16.042 ms - 1465
+2024-05-14 16:06:23 info: POST /user/login [32m200 395.125 ms - 11233
+2024-05-14 16:07:12 error: 401 - TokenExpiredError: jwt expired - /blog/create-post - GET - ::1
+2024-05-14 16:07:12 info: GET /blog/create-post [33m401 2.870 ms - 1465
+2024-05-14 16:08:39 info: POST /user/login [32m200 497.952 ms - 11437
+2024-05-14 16:10:01 info: POST /user/login [32m200 512.736 ms - 11843
+2024-05-14 16:10:28 error: 401 - TokenExpiredError: jwt expired - /blog/create-post - GET - ::1
+2024-05-14 16:10:28 info: GET /blog/create-post [33m401 6.221 ms - 1465
+2024-05-14 19:29:27 error: 404 - route not found - /blog/create-post - GET - ::1
+2024-05-14 19:29:27 info: GET /blog/create-post [33m404 8.170 ms - 57
+2024-05-14 19:29:57 error: 404 - route not found - /blog/create-post - GET - ::1
+2024-05-14 19:29:57 info: GET /blog/create-post [33m404 198.301 ms - 57
+2024-05-14 19:31:07 error: 404 - route not found - /blog/create-post - GET - ::1
+2024-05-14 19:31:07 info: GET /blog/create-post [33m404 148.396 ms - 57
+2024-05-14 19:32:42 error: 404 - route not found - /blog/create-pos - GET - ::1
+2024-05-14 19:32:42 info: GET /blog/create-pos [33m404 163.729 ms - 57
+2024-05-14 19:32:48 error: 404 - route not found - /blog/create-post - GET - ::1
+2024-05-14 19:32:48 info: GET /blog/create-post [33m404 248.656 ms - 57
+2024-05-14 19:33:13 error: 404 - route not found - /blog/create-post - GET - ::1
+2024-05-14 19:33:13 info: GET /blog/create-post [33m404 211.606 ms - 57
+2024-05-14 19:33:55 error: 404 - route not found - /blog/post/create - GET - ::1
+2024-05-14 19:33:55 info: GET /blog/post/create [33m404 312.561 ms - 57
+2024-05-14 19:35:20 error: 404 - route not found - /blog/post/create - GET - ::1
+2024-05-14 19:35:20 info: GET /blog/post/create [33m404 270.699 ms - 57
+2024-05-14 19:36:42 error: 404 - route not found - /blog/post/create - GET - ::1
+2024-05-14 19:36:42 info: GET /blog/post/create [33m404 256.967 ms - 57
+2024-05-14 19:37:26 error: 404 - route not found - /blog/post/create - GET - ::1
+2024-05-14 19:37:26 info: GET /blog/post/create [33m404 317.109 ms - 57
+2024-05-14 19:39:29 error: 404 - route not found - /blog/post/create - GET - ::1
+2024-05-14 19:39:29 info: GET /blog/post/create [33m404 197.649 ms - 57
+2024-05-14 19:40:09 info: POST /user/register [32m200 579.919 ms - 662
+2024-05-14 19:42:33 info: POST /staff/login [32m200 536.420 ms - 10462
+2024-05-14 19:43:21 info: POST /staff/login [32m200 8931.761 ms - 10667
+2024-05-14 19:44:35 info: POST /staff/login [32m200 494.588 ms - 10872
+2024-05-14 19:46:03 info: POST /blog/post/create - - ms - -
+2024-05-14 19:47:54 info: POST /blog/post/create [32m201 396.281 ms - 11137

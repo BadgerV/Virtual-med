@@ -1,20 +1,20 @@
 /* everything should be in em, except maybe border radius and thickness of border or outline */
 
-.container{ 
+.container {
   max-width: 1250px;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 10px;
   display: flex;
   justify-content: space-between;
 }
 
 
-.second{
+.second {
   display: flex;
   gap: 2rem;
- }
+}
 
-a{ 
+a {
   color: rgb(192, 120, 69);
   text-decoration: none;
   font-size: 1rem;
