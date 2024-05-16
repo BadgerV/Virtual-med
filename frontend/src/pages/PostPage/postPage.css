@@ -1,0 +1,77 @@
+.post-page {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.post-page-inner {
+    width: min(95%, 800px);
+}
+
+.post-page-top {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-top: 2rem;
+}
+
+.post-page-title-and-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-page-title-and-button button {
+    padding: 0.5rem 2rem;
+    border: 1px solid #e3e3e3;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 0.9rem;
+
+    cursor: pointer;
+}
+
+.post-page-post-header {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.post-page-by-author, .post-page-date, .post-page-in-healthcare {
+    font-size: 0.85rem;
+    color: #b1a9a9;
+    font-weight: 300;
+}
+
+.post-page-post-detail {
+    font-size: 0.9rem;
+    display: block;
+    margin: 1rem 0;
+}
+
+.post-page-reactions-container {
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 3rem;
+
+    border: 1px solid #e3e3e3;
+
+    padding: 1rem;
+    border-radius: 3rem;
+}
+
+.post-page-reaction-and-number {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+
+    cursor: pointer;
+}
+
+
+.post-page-reaction-and-number img {
+    height: 1rem;
+}

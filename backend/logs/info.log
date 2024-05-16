@@ -13891,3 +13891,200 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2024-05-14 19:44:35 info: POST /staff/login [32m200 494.588 ms - 10872
 2024-05-14 19:46:03 info: POST /blog/post/create - - ms - -
 2024-05-14 19:47:54 info: POST /blog/post/create [32m201 396.281 ms - 11137
+2024-05-15 11:40:26 error: 500 - Please login to continue - /blog//post/get-3-posts - GET - ::1
+2024-05-15 11:40:26 info: GET /blog//post/get-3-posts [31m500 12.450 ms - 1453
+2024-05-15 11:54:59 info: GET /blog/post/get-3-posts [32m200 164.459 ms - 2
+2024-05-15 11:55:34 info: GET /blog/post/get-3-posts [32m200 3514.483 ms - 293
+2024-05-15 12:05:14 error: 500 - Failed to fetch post - /blog/post/get-post-by-id/6643b1da603183076cf4bff1 - GET - ::1
+2024-05-15 12:05:14 info: GET /blog/post/get-post-by-id/6643b1da603183076cf4bff1 [31m500 10.778 ms - 1441
+2024-05-15 12:06:38 error: 500 - Failed to fetch post - /blog/post/get-post-by-id/6643b1da603183076cf4bff1 - GET - ::1
+2024-05-15 12:06:38 info: GET /blog/post/get-post-by-id/6643b1da603183076cf4bff1 [31m500 10.383 ms - 1441
+2024-05-15 12:07:03 error: 500 - Failed to fetch post - /blog/post/get-post-by-id/6643b1da603183076cf4bff1 - GET - ::1
+2024-05-15 12:07:03 info: GET /blog/post/get-post-by-id/6643b1da603183076cf4bff1 [31m500 13.970 ms - 1441
+2024-05-15 12:07:58 info: GET /blog/post/get-post-by-id/6643b1da603183076cf4bff1 [32m200 2355.472 ms - 291
+2024-05-15 12:08:38 info: GET /blog/post/get-post-by-id/6643b1da603183076cf4bff1 [32m200 1102.900 ms - 291
+2024-05-15 12:08:41 error: 500 - Failed to fetch post - /blog/post/get-post-by-id/6643b1da603183076cf4bff - GET - ::1
+2024-05-15 12:08:41 info: GET /blog/post/get-post-by-id/6643b1da603183076cf4bff [31m500 6.293 ms - 300
+2024-05-15 12:37:09 error: 404 - route not found - /blog/post/delete-post/6643b1da603183076cf4bff1 - DELETE - ::ffff:127.0.0.1
+2024-05-15 12:37:09 info: DELETE /blog/post/delete-post/6643b1da603183076cf4bff1 [33m404 11.162 ms - 57
+2024-05-15 12:39:08 error: 500 - Only staffs are allowed to delete posts - /blog/post/delete-post/6643b1da603183076cf4bff1 - DELETE - ::ffff:127.0.0.1
+2024-05-15 12:39:08 info: DELETE /blog/post/delete-post/6643b1da603183076cf4bff1 [31m500 19.170 ms - 1479
+2024-05-15 12:39:33 error: 500 - Please login to continue - /blog/post/delete-post/6643b1da603183076cf4bff1 - DELETE - ::ffff:127.0.0.1
+2024-05-15 12:39:33 info: DELETE /blog/post/delete-post/6643b1da603183076cf4bff1 [31m500 12.012 ms - 1446
+2024-05-15 13:18:26 error: 500 - Please login to continue - /blog/post/delete-post/6643b1da603183076cf4bff - DELETE - ::1
+2024-05-15 13:18:26 info: DELETE /blog/post/delete-post/6643b1da603183076cf4bff [31m500 11.835 ms - 1446
+2024-05-15 13:19:00 error: 500 - Unable to delete post - /blog/post/delete-post/6643b1da603183076cf4bff - DELETE - ::1
+2024-05-15 13:19:00 info: DELETE /blog/post/delete-post/6643b1da603183076cf4bff [31m500 175.536 ms - 302
+2024-05-15 13:23:51 error: 500 - Unable to delete post - /blog/post/delete-post/6643b1da603183076cf4bff - DELETE - ::1
+2024-05-15 13:23:51 info: DELETE /blog/post/delete-post/6643b1da603183076cf4bff [31m500 232.902 ms - 302
+2024-05-15 13:24:17 error: 500 - Unable to delete post - /blog/post/delete-post/6643b1da603183076cf4bff - DELETE - ::1
+2024-05-15 13:24:17 info: DELETE /blog/post/delete-post/6643b1da603183076cf4bff [31m500 3712.574 ms - 302
+2024-05-15 13:25:22 error: 500 - Unable to delete post - /blog/post/delete-post/6643b1da603183076cf4bff1 - DELETE - ::1
+2024-05-15 13:25:22 info: DELETE /blog/post/delete-post/6643b1da603183076cf4bff1 [31m500 4539.715 ms - 302
+2024-05-15 13:27:38 error: 500 - Unable to delete post - /blog/post/delete-post/6643b1da603183076cf4bff1 - DELETE - ::1
+2024-05-15 13:27:38 info: DELETE /blog/post/delete-post/6643b1da603183076cf4bff1 [31m500 403.678 ms - 302
+2024-05-15 13:31:09 error: 500 - Unable to delete post - /blog/post/delete-post/6643b1da603183076cf4bff1 - DELETE - ::1
+2024-05-15 13:31:09 info: DELETE /blog/post/delete-post/6643b1da603183076cf4bff1 [31m500 538.135 ms - 302
+2024-05-15 13:31:34 error: 500 - Unable to delete post - /blog/post/delete-post/6643b1da603183076cf4bff1 - DELETE - ::1
+2024-05-15 13:31:34 info: DELETE /blog/post/delete-post/6643b1da603183076cf4bff1 [31m500 3856.091 ms - 302
+2024-05-15 13:34:04 error: 500 - Unable to delete post - /blog/post/delete-post/6643b1da603183076cf4bff1 - DELETE - ::1
+2024-05-15 13:34:04 info: DELETE /blog/post/delete-post/6643b1da603183076cf4bff1 [31m500 401.710 ms - 302
+2024-05-15 13:34:42 error: 500 - Unable to delete post - /blog/post/delete-post/6643b1da603183076cf4bff1 - DELETE - ::1
+2024-05-15 13:34:42 info: DELETE /blog/post/delete-post/6643b1da603183076cf4bff1 [31m500 2996.714 ms - 302
+2024-05-15 13:35:18 error: 500 - Unable to delete post - /blog/post/delete-post/6643b1da603183076cf4bff1 - DELETE - ::1
+2024-05-15 13:35:18 info: DELETE /blog/post/delete-post/6643b1da603183076cf4bff1 [31m500 386.366 ms - 302
+2024-05-15 13:37:46 info: DELETE /blog/post/delete-post/6643b1da603183076cf4bff1 [32m200 468.252 ms - 58
+2024-05-15 13:37:49 info: DELETE /blog/post/delete-post/6643b1da603183076cf4bff1 - - ms - -
+2024-05-15 13:37:49 error: 500 - Unable to delete post - /blog/post/delete-post/6643b1da603183076cf4bff1 - DELETE - ::1
+2024-05-15 13:37:51 error: 500 - Unable to delete post - /blog/post/delete-post/6643b1da603183076cf4bff1 - DELETE - ::1
+2024-05-15 13:37:51 info: DELETE /blog/post/delete-post/6643b1da603183076cf4bff1 [31m500 289.487 ms - 302
+2024-05-15 13:38:13 error: 500 - Unable to delete post - /blog/post/delete-post/6643b1da603183076cf4bff1 - DELETE - ::1
+2024-05-15 13:38:13 info: DELETE /blog/post/delete-post/6643b1da603183076cf4bff1 [31m500 4528.662 ms - 302
+2024-05-15 13:38:58 error: 500 - next is not defined - /blog/post/delete-post/6643b1da603183076cf4bff1 - DELETE - ::1
+2024-05-15 13:38:58 info: DELETE /blog/post/delete-post/6643b1da603183076cf4bff1 [31m500 352.915 ms - 306
+2024-05-15 13:39:25 error: 500 - Unable to delete post - /blog/post/delete-post/6643b1da603183076cf4bff1 - DELETE - ::1
+2024-05-15 13:39:25 info: DELETE /blog/post/delete-post/6643b1da603183076cf4bff1 [31m500 7782.359 ms - 302
+2024-05-15 13:41:53 error: 404 - Post not found - /blog/post/delete-post/6643b1da603183076cf4bff1 - DELETE - ::1
+2024-05-15 13:41:53 info: DELETE /blog/post/delete-post/6643b1da603183076cf4bff1 [33m404 887.733 ms - 56
+2024-05-15 13:58:40 info: POST /blog/post/create [32m201 344.755 ms - 11137
+2024-05-15 13:58:54 error: 500 - This doctor does not have any posts - /blog/post/get-doctor-post/6564a2aef1d65c497228a407 - GET - ::1
+2024-05-15 13:58:54 info: GET /blog/post/get-doctor-post/6564a2aef1d65c497228a407 [31m500 138.358 ms - 331
+2024-05-15 13:59:05 info: GET /blog/post/get-3-posts [32m200 151.420 ms - 293
+2024-05-15 13:59:12 error: 500 - This doctor does not have any posts - /blog/post/get-doctor-post/6564a2aef1d65c497228a407 - GET - ::1
+2024-05-15 13:59:12 info: GET /blog/post/get-doctor-post/6564a2aef1d65c497228a407 [31m500 158.895 ms - 331
+2024-05-15 13:59:44 info: POST /blog/post/create [32m201 3586.859 ms - 11137
+2024-05-15 14:03:15 info: POST /blog/post/create [32m201 2417.690 ms - 11137
+2024-05-15 14:04:44 info: GET /blog/post/get-doctor-post/6564a2aef1d65c497228a407 [32m200 299.230 ms - 1081
+2024-05-15 14:37:43 info: GET /blog/post/get-3-posts [32m200 166.477 ms - 877
+2024-05-15 15:13:50 info: GET /blog/post/get-3-posts [32m200 243.502 ms - 877
+2024-05-15 15:14:35 info: GET /blog/post/get-3-posts [32m200 144.674 ms - 877
+2024-05-15 15:28:24 info: GET /blog/post/get-3-posts [32m200 145.198 ms - 877
+2024-05-15 15:29:08 info: GET /blog/post/get-3-posts [32m200 146.862 ms - 877
+2024-05-15 15:29:32 info: GET /blog/post/get-3-posts [32m200 154.261 ms - 877
+2024-05-15 15:29:36 info: GET /blog/post/get-3-posts [36m304 145.017 ms - -
+2024-05-15 15:29:38 info: GET /blog/post/get-3-posts [36m304 159.838 ms - -
+2024-05-15 15:29:58 info: GET /blog/post/get-3-posts [36m304 161.491 ms - -
+2024-05-15 15:30:01 info: GET /blog/post/get-3-posts [32m200 137.315 ms - 877
+2024-05-15 15:30:02 info: GET /blog/post/get-3-posts [32m200 149.935 ms - 877
+2024-05-15 15:30:06 info: GET /blog/post/get-3-posts [32m200 146.980 ms - 877
+2024-05-15 15:30:07 info: GET /blog/post/get-3-posts [36m304 155.955 ms - -
+2024-05-15 15:30:22 info: GET /blog/post/get-3-posts [32m200 153.255 ms - 877
+2024-05-15 15:30:30 info: GET /blog/post/get-3-posts [32m200 135.027 ms - 877
+2024-05-15 15:30:31 info: GET /blog/post/get-3-posts [32m200 140.442 ms - 877
+2024-05-15 15:30:34 info: GET /blog/post/get-3-posts [32m200 137.797 ms - 877
+2024-05-15 15:30:39 info: GET /blog/post/get-3-posts [32m200 140.519 ms - 877
+2024-05-15 15:30:42 info: GET /blog/post/get-3-posts [36m304 145.026 ms - -
+2024-05-15 15:30:51 info: GET /blog/post/get-3-posts [36m304 147.793 ms - -
+2024-05-15 15:31:13 info: GET /blog/post/get-3-posts [32m200 141.636 ms - 877
+2024-05-15 15:31:17 info: GET /blog/post/get-3-posts [32m200 153.272 ms - 877
+2024-05-15 15:31:24 info: GET /blog/post/get-3-posts [32m200 138.023 ms - 877
+2024-05-15 15:31:25 info: GET /blog/post/get-3-posts [32m200 137.878 ms - 877
+2024-05-15 15:35:52 info: GET /blog/post/get-3-posts [32m200 154.861 ms - 877
+2024-05-15 15:39:39 info: GET /blog/post/get-3-posts [32m200 159.217 ms - 877
+2024-05-15 15:41:39 info: GET /blog/post/get-3-posts [36m304 143.935 ms - -
+2024-05-15 15:41:41 info: GET /blog/post/get-3-posts [36m304 140.692 ms - -
+2024-05-15 15:41:47 info: GET /blog/post/get-3-posts [32m200 271.973 ms - 877
+2024-05-15 15:41:50 info: GET /blog/post/get-3-posts [32m200 175.545 ms - 877
+2024-05-15 15:46:15 info: GET /blog/post/get-3-posts [32m200 283.421 ms - 877
+2024-05-15 15:46:19 info: GET /blog/post/get-3-posts [32m200 176.775 ms - 877
+2024-05-15 15:46:21 info: GET /blog/post/get-3-posts [32m200 158.413 ms - 877
+2024-05-15 15:46:59 info: GET /blog/post/get-3-posts [32m200 138.475 ms - 877
+2024-05-15 16:22:48 error: 500 - Failed to fetch hourly posts - /blog/post/get-3-posts - GET - ::ffff:127.0.0.1
+2024-05-15 16:22:48 info: GET /blog/post/get-3-posts [31m500 30024.162 ms - 316
+2024-05-15 16:22:54 error: 500 - Failed to fetch hourly posts - /blog/post/get-3-posts - GET - ::ffff:127.0.0.1
+2024-05-15 16:22:54 info: GET /blog/post/get-3-posts [31m500 30013.897 ms - 316
+2024-05-15 16:22:56 error: 500 - Failed to fetch hourly posts - /blog/post/get-3-posts - GET - ::ffff:127.0.0.1
+2024-05-15 16:22:56 info: GET /blog/post/get-3-posts [31m500 30016.635 ms - 316
+2024-05-15 16:23:16 error: 500 - Failed to fetch hourly posts - /blog/post/get-3-posts - GET - ::ffff:127.0.0.1
+2024-05-15 16:23:16 info: GET /blog/post/get-3-posts [31m500 30014.025 ms - 316
+2024-05-15 16:23:19 error: 500 - Failed to fetch hourly posts - /blog/post/get-3-posts - GET - ::ffff:127.0.0.1
+2024-05-15 16:23:19 info: GET /blog/post/get-3-posts [31m500 30023.345 ms - 316
+2024-05-15 16:23:21 error: 500 - Failed to fetch hourly posts - /blog/post/get-3-posts - GET - ::ffff:127.0.0.1
+2024-05-15 16:23:21 info: GET /blog/post/get-3-posts [31m500 30018.379 ms - 429
+2024-05-15 16:23:23 error: 500 - Failed to fetch hourly posts - /blog/post/get-3-posts - GET - ::ffff:127.0.0.1
+2024-05-15 16:23:23 info: GET /blog/post/get-3-posts [31m500 30015.991 ms - 316
+2024-05-15 16:23:24 error: 500 - Failed to fetch hourly posts - /blog/post/get-3-posts - GET - ::ffff:127.0.0.1
+2024-05-15 16:23:24 info: GET /blog/post/get-3-posts [31m500 30013.022 ms - 316
+2024-05-16 01:34:42 info: GET /blog/post/get-3-posts [32m200 158.785 ms - 877
+2024-05-16 01:34:45 info: GET /blog/post/get-3-posts [32m200 156.387 ms - 877
+2024-05-16 01:34:54 info: GET /blog/post/get-3-posts [32m200 4192.440 ms - 877
+2024-05-16 01:34:59 info: GET /blog/post/get-3-posts [32m200 858.826 ms - 877
+2024-05-16 01:35:01 info: GET /blog/post/get-3-posts [32m200 306.460 ms - 877
+2024-05-16 01:35:01 info: GET /blog/post/get-3-posts [32m200 160.630 ms - 877
+2024-05-16 01:35:09 info: GET /blog/post/get-3-posts [32m200 482.730 ms - 877
+2024-05-16 01:35:37 info: GET /blog/post/get-3-posts [36m304 338.480 ms - -
+2024-05-16 01:35:42 info: GET /blog/post/get-3-posts [32m200 958.261 ms - 877
+2024-05-16 01:35:43 info: GET /blog/post/get-3-posts [32m200 529.869 ms - 877
+2024-05-16 01:35:46 info: GET /blog/post/get-3-posts [32m200 176.188 ms - 877
+2024-05-16 01:35:51 info: GET /blog/post/get-3-posts [32m200 4139.147 ms - 877
+2024-05-16 01:35:57 info: GET /blog/post/get-3-posts [32m200 296.575 ms - 877
+2024-05-16 01:36:01 info: GET /blog/post/get-3-posts [32m200 249.026 ms - 877
+2024-05-16 01:36:09 info: GET /blog/post/get-3-posts [32m200 171.101 ms - 877
+2024-05-16 01:36:12 info: GET /blog/post/get-3-posts [36m304 512.927 ms - -
+2024-05-16 01:36:17 info: GET /blog/post/get-3-posts [32m200 403.641 ms - 877
+2024-05-16 01:36:21 info: GET /blog/post/get-3-posts [32m200 163.778 ms - 877
+2024-05-16 01:36:32 info: GET /blog/post/get-3-posts [32m200 481.917 ms - 877
+2024-05-16 01:40:40 info: GET /blog/post/get-3-posts [36m304 155.841 ms - -
+2024-05-16 01:41:16 info: GET /blog/post/get-3-posts [36m304 185.903 ms - -
+2024-05-16 01:41:18 info: GET /blog/post/get-3-posts [32m200 168.566 ms - 877
+2024-05-16 01:41:39 info: GET /blog/post/get-3-posts [32m200 170.168 ms - 877
+2024-05-16 01:41:56 info: GET /blog/post/get-3-posts [32m200 157.891 ms - 877
+2024-05-16 01:42:00 info: GET /blog/post/get-3-posts [32m200 671.650 ms - 877
+2024-05-16 01:47:11 info: GET /blog/post/get-3-posts [32m200 144.416 ms - 877
+2024-05-16 01:47:12 info: GET /blog/post/get-3-posts [32m200 217.518 ms - 877
+2024-05-16 01:48:11 info: GET /blog/post/get-3-posts [32m200 2027.631 ms - 877
+2024-05-16 01:48:13 info: GET /blog/post/get-3-posts [36m304 166.250 ms - -
+2024-05-16 01:48:18 info: GET /blog/post/get-3-posts [32m200 154.177 ms - 877
+2024-05-16 01:51:42 info: GET /blog/post/get-3-posts [36m304 455.522 ms - -
+2024-05-16 01:51:47 info: GET /blog/post/get-3-posts [36m304 179.173 ms - -
+2024-05-16 01:51:55 info: GET /blog/post/get-3-posts [32m200 1355.529 ms - 877
+2024-05-16 01:51:55 info: GET /blog/post/get-3-posts [32m200 405.202 ms - 877
+2024-05-16 01:52:00 info: GET /blog/post/get-3-posts [32m200 444.817 ms - 877
+2024-05-16 01:52:12 info: GET /blog/post/get-3-posts [36m304 553.889 ms - -
+2024-05-16 01:52:14 info: GET /blog/post/get-3-posts [32m200 150.240 ms - 877
+2024-05-16 01:52:17 info: GET /blog/post/get-3-posts [32m200 147.142 ms - 877
+2024-05-16 01:52:18 info: GET /blog/post/get-3-posts [36m304 142.031 ms - -
+2024-05-16 01:52:21 info: GET /blog/post/get-3-posts [32m200 199.646 ms - 877
+2024-05-16 01:52:23 info: GET /blog/post/get-3-posts [32m200 141.446 ms - 877
+2024-05-16 01:52:25 info: GET /blog/post/get-3-posts [32m200 146.527 ms - 877
+2024-05-16 01:52:27 info: GET /blog/post/get-3-posts [32m200 881.971 ms - 877
+2024-05-16 01:52:30 info: GET /blog/post/get-3-posts [32m200 143.408 ms - 877
+2024-05-16 01:52:31 info: GET /blog/post/get-3-posts [36m304 176.565 ms - -
+2024-05-16 01:53:21 info: GET /blog/post/get-3-posts [32m200 1282.720 ms - 877
+2024-05-16 01:53:23 info: GET /blog/post/get-3-posts [32m200 153.913 ms - 877
+2024-05-16 01:53:31 info: GET /blog/post/get-3-posts [36m304 169.326 ms - -
+2024-05-16 01:53:36 info: GET /blog/post/get-3-posts [32m200 170.945 ms - 877
+2024-05-16 01:53:39 info: GET /blog/post/get-3-posts [32m200 147.018 ms - 877
+2024-05-16 01:53:47 info: GET /blog/post/get-3-posts [32m200 159.352 ms - 877
+2024-05-16 01:54:02 info: GET /blog/post/get-3-posts [32m200 152.096 ms - 877
+2024-05-16 01:54:07 info: GET /blog/post/get-3-posts [32m200 144.328 ms - 877
+2024-05-16 01:54:12 info: GET /blog/post/get-3-posts [32m200 169.090 ms - 877
+2024-05-16 01:54:20 info: GET /blog/post/get-3-posts [36m304 1182.833 ms - -
+2024-05-16 01:54:20 info: GET /blog/post/get-3-posts [36m304 157.235 ms - -
+2024-05-16 01:54:25 info: GET /blog/post/get-3-posts [36m304 1040.021 ms - -
+2024-05-16 01:54:25 info: GET /blog/post/get-3-posts [32m200 145.266 ms - 877
+2024-05-16 01:56:03 info: GET /blog/post/get-3-posts [36m304 340.498 ms - -
+2024-05-16 01:56:05 info: GET /blog/post/get-3-posts [32m200 170.332 ms - 877
+2024-05-16 02:06:04 info: GET /blog/post/get-3-posts [32m200 158.014 ms - 877
+2024-05-16 02:06:52 info: GET /blog/post/get-3-posts [36m304 158.815 ms - -
+2024-05-16 02:07:57 info: GET /blog/post/get-3-posts [32m200 452.696 ms - 877
+2024-05-16 02:07:58 info: GET /blog/post/get-3-posts [32m200 164.460 ms - 877
+2024-05-16 02:08:02 info: GET /blog/post/get-3-posts [32m200 244.203 ms - 877
+2024-05-16 02:08:04 info: GET /blog/post/get-3-posts [32m200 326.801 ms - 877
+2024-05-16 02:08:14 info: GET /blog/post/get-3-posts [32m200 823.163 ms - 877
+2024-05-16 02:08:28 info: GET /blog/post/get-3-posts [36m304 2535.578 ms - -
+2024-05-16 02:08:28 info: GET /blog/post/get-3-posts [32m200 1409.429 ms - 877
+2024-05-16 02:08:30 info: GET /blog/post/get-3-posts [32m200 146.552 ms - 877
+2024-05-16 02:09:49 info: GET /blog/post/get-3-posts [32m200 1517.830 ms - 877
+2024-05-16 02:10:46 info: GET /blog/post/get-3-posts [32m200 178.815 ms - 877
+2024-05-16 02:13:34 info: GET /blog/post/get-3-posts [36m304 158.999 ms - -
+2024-05-16 02:13:36 info: GET /blog/post/get-3-posts [36m304 145.080 ms - -
+2024-05-16 02:16:04 info: GET /blog/post/get-3-posts [32m200 163.464 ms - 877
+2024-05-16 02:16:05 info: GET /blog/post/get-3-posts [32m200 146.214 ms - 877
+2024-05-16 02:25:59 info: GET /blog/post/get-3-posts [32m200 160.027 ms - 877
+2024-05-16 02:26:01 info: GET /blog/post/get-3-posts [36m304 145.226 ms - -
+2024-05-16 02:30:13 info: GET /blog/post/get-3-posts [36m304 670.220 ms - -
+2024-05-16 02:30:14 info: GET /blog/post/get-3-posts [32m200 730.111 ms - 877
+2024-05-16 02:30:27 info: GET /blog/post/get-3-posts [32m200 146.563 ms - 877
+2024-05-16 02:30:31 info: GET /blog/post/get-3-posts [32m200 1407.546 ms - 877
+2024-05-16 02:30:32 info: GET /blog/post/get-3-posts [32m200 243.634 ms - 877

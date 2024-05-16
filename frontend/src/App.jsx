@@ -53,6 +53,9 @@ import AvailabilityForm, {
 import VerifyPage from "./pages/VerifyPage/VerifyPage";
 import NotificationPage from "./pages/Notificationpage/NotificationPage";
 import PremiumSubscribe from "./pages/PremiumSubscribe/PremiumSubscribe";
+import Blog from "./pages/blog/Blog.jsx";
+import PostPage from "./pages/PostPage/PostPage.jsx";
+import PostBlogPost from "./pages/PostBlogPost/PostBlogPost.jsx";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -109,6 +112,7 @@ const App = () => {
 
           <Suspense fallback={<LoadingComponent />}>
             <Routes>
+              {/* unprotected routes */}
               <Route path="/" element={<Home />} />
               <Route path="/signin" element={<SignIn />} />
               {/* <Route path="/signup" element={<SignUp />} /> */}
@@ -121,12 +125,18 @@ const App = () => {
               <Route path="/services" element={<Services />} />
               <Route path="/contact-us" element={<ContactUs />} />
 
+              {/* blog routes */}
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/post/:id" element={<PostPage />} />
+
+              {/* staff routes */}
               <Route element={<StaffOnly />}>
                 <Route
                   path="/get-available-dates/"
                   element={<AvailabilityForm />}
                 />
               </Route>
+              <Route path="/post/create" element={<PostBlogPost />} />
 
               <Route path="/coming-soon" element={<Services />} />
 

@@ -26,6 +26,6 @@ export const setRoutes = () => {
   router.use("/appointment", isUserOrStaff, appointmentRoute());
   router.use("/admin", auth, isAdmin, adminRoute());
   router.use("/notification", isUserOrStaff, NotificationRouter());
-  router.use("/blog", isUserOrStaff, blogRoute);
+  router.use("/blog", blogRoute);
   return router;
 };

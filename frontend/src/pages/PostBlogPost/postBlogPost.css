@@ -1,0 +1,62 @@
+.post-blog-post {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.post-blog-post-inner {
+    display: flex;
+    width: min(95%, 600px);
+    margin-top: 2rem;
+
+    flex-direction: column;
+}
+
+.post-blog-post-header {
+    display: block;
+    margin-bottom: 1rem;
+
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.post-blog-post-label-and-input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    margin-top: 1rem;
+}
+
+.post-blog-post-label-and-input label {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.post-blog-post-label-and-input input {
+    border: 1px solid #e3e3e3;
+    padding: 0.7rem 1rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+}
+
+.post-blog-post-label-and-input textarea {
+    border: 1px solid #e3e3e3;
+    padding: 0.7rem 1rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+}
+
+.submit-button {
+    padding: 0.5rem 2rem;
+    border: 1px solid #e3e3e3;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 0.9rem;
+
+    cursor: pointer;
+
+    max-width: fit-content;
+
+    margin-top: 2rem;
+}
