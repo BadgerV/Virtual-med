@@ -114,8 +114,7 @@
 
 .blog-bottom-posts {
     padding: 1rem;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
-    flex-wrap: wrap;
 }

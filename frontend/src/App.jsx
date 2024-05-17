@@ -5,6 +5,7 @@ import { lazy, Suspense, useEffect } from "react";
 import LoadingComponent from "./components/LoadingComponent/LoadingComponent";
 import { useState } from "react";
 import io from "socket.io-client";
+import { ToastContainer } from "react-toastify";
 
 import { useDispatch, useSelector } from "react-redux";
 import { myProfile } from "./redux/user/UserSlice";
@@ -109,6 +110,7 @@ const App = () => {
       {loading === false && otherLoading === false ? (
         <>
           <Navbar />
+          <ToastContainer />
 
           <Suspense fallback={<LoadingComponent />}>
             <Routes>
@@ -126,7 +128,7 @@ const App = () => {
               <Route path="/contact-us" element={<ContactUs />} />
 
               {/* blog routes */}
-              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/" element={<Blog />} />
               <Route path="/post/:id" element={<PostPage />} />
 
               {/* staff routes */}

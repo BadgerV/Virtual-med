@@ -19,6 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 3rem;
 }
 
 .post-page-title-and-button button {
@@ -74,4 +75,10 @@
 
 .post-page-reaction-and-number img {
     height: 1rem;
+}
+
+.post-page-image {
+    border: 1px solid #e3e3e3;
+    min-width: 100%;
+    object-fit: cover;
 }

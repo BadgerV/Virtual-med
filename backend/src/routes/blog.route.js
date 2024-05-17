@@ -4,6 +4,7 @@ import {
   deletePostByid,
   getDoctorPost,
   getPostById,
+  getRecentPosts,
   getThreePosts,
 } from "../controllers/blogController.js";
 import { isUserOrStaff } from "../common/middleware/auth.js";
@@ -16,6 +17,7 @@ const blogRoute = () => {
   router.get("/post/get-post-by-id/:id", getPostById);
   router.delete("/post/delete-post/:id", isUserOrStaff, deletePostByid);
   router.get("/post/get-doctor-post/:doctorID", getDoctorPost);
+  router.get("/post/get-recent-posts", getRecentPosts);
 
   return router;
 };

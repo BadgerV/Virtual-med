@@ -3,7 +3,7 @@ import axios from "axios";
 const DEVELOPMENT = "http://localhost:8000";
 // const PROD = "https://virtual-med-backend.onrender.com";
 
-const createPost = async (title, content, tags, image) => {
+const createPost = async ({ title, content, tags, image }) => {
   const token = localStorage.getItem("token");
 
   const response = await axios.post(
@@ -20,7 +20,7 @@ const createPost = async (title, content, tags, image) => {
       },
     }
   );
-  return response.data;
+  return response;
 };
 
 const getThreePosts = async () => {
@@ -33,6 +33,11 @@ const getPostById = async (id) => {
   const response = await axios.get(
     `${DEVELOPMENT}/blog/post/et-post-by-id/${id}`
   );
+
+  return response.data;
+};
+const getRecentPosts = async (id) => {
+  const response = await axios.get(`${DEVELOPMENT}/blog/post/get-recent-posts`);
 
   return response.data;
 };
@@ -54,26 +59,29 @@ const deletePost = async (id) => {
 
 const getPostByDoctorId = async (doctorId, page = 1, limit = 10) => {
   try {
-    const response = await axios.get(`${DEVELOPMENT}/blog/get-doctor-post/${doctorId}`, {
-      params: {
-        page,
-        limit
+    const response = await axios.get(
+      `${DEVELOPMENT}/blog/get-doctor-post/${doctorId}`,
+      {
+        params: {
+          page,
+          limit,
+        },
       }
-    });
+    );
     return response.data;
   } catch (error) {
-    console.error('Error fetching posts:', error);
+    console.error("Error fetching posts:", error);
     throw error;
   }
 };
-
 
 const blogApiCalls = {
   createPost,
   getThreePosts,
   getPostById,
   deletePost,
-  getPostByDoctorId
+  getPostByDoctorId,
+  getRecentPosts,
 };
 
 export default blogApiCalls;

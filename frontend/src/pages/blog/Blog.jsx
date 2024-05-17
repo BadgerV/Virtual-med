@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./blog.css";
 
 import blogApiCalls from "../../services/apiCalls/blogApiCalls";
@@ -13,7 +13,12 @@ import AppleIcon from "/assets/apple-icon.png";
 import BrainIcon from "/assets/brain-icon.png";
 import Post from "../../components/Post/Post";
 
+import LoadingComponent from "../../components/LoadingComponent/LoadingComponent";
+
 const Blog = () => {
+  const [fetchedPosts, setFetchedPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
   const arrayOfTopicsAndIcons = [
     {
       text: "Doctors & Clinics",
@@ -50,50 +55,57 @@ const Blog = () => {
   ];
   useEffect(() => {
     const fetchData = async () => {
-      const result = await blogApiCalls.getThreePosts();
-      console.log(result);
+      blogApiCalls.getRecentPosts().then((res) => {
+        setFetchedPosts(res);
+        console.log(res);
+        setLoading(false);
+      });
     };
     fetchData();
   }, []);
 
   return (
     <div className="blog-page">
-      <div className="blog-splash">
-        <span className="blog-span-text">
-          Your go-to platform for medical insights.
-        </span>
+      {loading ? (
+        <LoadingComponent />
+      ) : (
+        <>
+          <div className="blog-splash">
+            <span className="blog-span-text">
+              Your go-to platform for medical insights.
+            </span>
 
-        <div className="blog-search">
-          <div className="blog-search-inner">
-            <input type="text" placeholder="Search for topics" />
-            <button>Explore</button>
+            <div className="blog-search">
+              <div className="blog-search-inner">
+                <input type="text" placeholder="Search for topics" />
+                <button>Explore</button>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div className="blog-middle">
-        <span className="blog-middle-header">Medical</span>
+          <div className="blog-middle">
+            <span className="blog-middle-header">Medical</span>
 
-        <div className="blog-middle-bottom">
-          {arrayOfTopicsAndIcons.map((values, i) => {
-            return (
-              <IconAndtext icon={values.icon} text={values.text} key={i} />
-            );
-          })}
-        </div>
-      </div>
-
-      <div className="blog-bottom">
-        <div className="blog-recent-posts">
-          <span className="blog-recent-posts-header">Recent Posts</span>
-
-          <div className="blog-bottom-posts">
-            {Array.from({ length: 4 }).map((_, i) => (
-              <Post key={i} />
-            ))}
+            <div className="blog-middle-bottom">
+              {arrayOfTopicsAndIcons.map((values, i) => (
+                <IconAndtext icon={values.icon} text={values.text} key={i} />
+              ))}
+            </div>
           </div>
-        </div>
-      </div>
+
+          <div className="blog-bottom">
+            <div className="blog-recent-posts">
+              <span className="blog-recent-posts-header">Recent Posts</span>
+
+              <div className="blog-bottom-posts">
+                {fetchedPosts.map((values, i) => (
+                  <Post key={i} {...values} />
+                ))}
+              </div>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 };

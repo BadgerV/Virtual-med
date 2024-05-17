@@ -39,3 +39,7 @@ export const isStrongPassword = (password) => {
   }
 };
 
+export function convertHashtagsToArray(hashtagsString) {
+  // Split the string by comma and space, then map to remove the '#' symbol
+  return hashtagsString.split(", ").map((tag) => tag.replace("#", ""));
+}

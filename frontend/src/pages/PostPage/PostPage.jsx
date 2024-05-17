@@ -1,8 +1,14 @@
 import { useState } from "react";
 import "./postPage.css";
+import { useLocation } from "react-router-dom";
+import { formatDate } from "../../utils/helper";
 
 const PostPage = () => {
   const doctorName = "Segunmaru Faozan";
+
+  const location = useLocation();
+  const postData = location.state;
+  console.log(postData.postData.postData);
 
   const [liked, setLiked] = useState(false);
   const [foundHelpful, setFoundHelpful] = useState(false);
@@ -12,30 +18,28 @@ const PostPage = () => {
         <div className="post-page-top">
           <div className="post-page-title-and-button">
             <span className="post-page-post-header">
-              The Future of Healthcare
+              {postData.postData.postData.title}
             </span>
 
             <button>Follow</button>
           </div>
 
-          <span className="post-page-by-author">By {doctorName}</span>
+          <span className="post-page-by-author">
+            By {postData.postData.postData.author.lastName}{" "}
+            {postData.postData.postData.author.firstName}
+          </span>
 
-          <span className="post-page-date">July 16, 2023</span>
+          <span className="post-page-date">
+            {formatDate(postData.postData.postData.createdAt)}
+          </span>
 
           <span className="post-page-in-healthcare">In healthcare</span>
 
           <span className="post-page-post-detail">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            nobis minus autem explicabo reprehenderit voluptatem nisi dolore
-            modi nihil fugiat rem optio, magnam possimus eos voluptas quibusdam.
-            Totam, explicabo? Ipsum. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. At harum dignissimos, quasi asperiores omnis
-            facere eligendi maiores! Consequatur, harum dolorem! Deserunt
-            dolorum recusandae eveniet mollitia consequatur, autem voluptatem
-            minus illo.
+            {postData.postData.postData.content}
           </span>
 
-          <img src="/assets/hero-image.png" alt="" />
+          <img src={postData.postData.postData.image} className="post-page-image" alt="" />
 
           <div className="post-page-reactions-container">
             <div

@@ -14088,3 +14088,114 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2024-05-16 02:30:27 info: GET /blog/post/get-3-posts [32m200 146.563 ms - 877
 2024-05-16 02:30:31 info: GET /blog/post/get-3-posts [32m200 1407.546 ms - 877
 2024-05-16 02:30:32 info: GET /blog/post/get-3-posts [32m200 243.634 ms - 877
+2024-05-16 14:45:11 error: 401 - JsonWebTokenError: jwt malformed - /blog/post/create - POST - ::ffff:127.0.0.1
+2024-05-16 14:45:11 info: POST /blog/post/create [33m401 9.616 ms - 1471
+2024-05-16 18:55:37 error: 400 - Post validation failed: title: Cast to string failed for value "{
+  title: 'The Importance of Regular Health Check-Ups',
+  content: 'Maintaining good health is crucial for leading a happy and productive life. Regular health check-ups play a significant role in early detection and prevention of various health issues. Here’s why you should prioritize routine visits to your healthcare provider.\n' +
+    '\n' +
+    '1. Early Detection of Diseases\n' +
+    '\n' +
+    'One of the primary benefits of regular health check-ups is the early detection of diseases. Many serious health conditions, such as heart disease, diabetes, and cancer, often do not show symptoms in their early stages. Regular screenings and tests can help identify these conditions early, making them easier to treat and manage.\n' +
+    '\n' +
+    '2. Prevention is Better than Cure\n' +
+    '\n' +
+    'Regular check-ups are not just about detecting diseases but also about preventing them. During these visits, your doctor can provide valuable advice on lifestyle changes, diet, and exercise to prevent health issues. Vaccinations and immunizations are also an essential part of preventive care.\n' +
+    '\n' +
+    '3. Monitoring Existing Health Conditions\n' +
+    '\n' +
+    'For individuals with chronic health conditions like hypertension, diabetes, or asthma, regular check-ups are vital. These visits allow your doctor to monitor your condition, adjust treatment plans, and ensure that your health is stable. Continuous monitoring can prevent complications and improve your quality of life.\n' +
+    '\n' +
+    '4. Building a Relationship with Your Doctor\n' +
+    '\n' +
+    'Regular visits help build a strong doctor-patient relationship. When your doctor knows your medical history and personal health concerns, they can provide more personalized care. This relationship fosters trust and open communication, making it easier for you to discuss any health issues or concerns.\n' +
+    '\n' +
+    '5. Health Education and Guidance\n' +
+    '\n' +
+    'During check-ups, doctors provide education on various health topics, including nutrition, exercise, mental health, and stress management. This guidance is invaluable in helping you make informed decisions about your health and well-being.\n' +
+    '\n' +
+    '6. Mental Health Check\n' +
+    '\n' +
+    'Physical health is closely linked to mental health. Regular check-ups can help identify signs of mental health issues like depression, anxiety, and stress. Early intervention and appropriate treatment can significantly improve mental health outcomes.',
+  tags: [],
+  image: 'https://res.cloudinary.com/dfn3xhl0a/image/upload/v1715882134/images/medical-banner-with-stethoscope_23-2149611199.avif'
+}" (type Object) at path "title", content: Path `content` is required. - /blog/post/create - POST - ::ffff:127.0.0.1
+2024-05-16 18:55:37 info: POST /blog/post/create [33m400 230.133 ms - 5986
+2024-05-16 18:57:14 error: 400 - Post validation failed: title: Cast to string failed for value "{
+  title: 'The Importance of Regular Health Check-Ups',
+  content: 'Maintaining good health is crucial for leading a happy and productive life. Regular health check-ups play a significant role in early detection and prevention of various health issues. Here’s why you should prioritize routine visits to your healthcare provider.\n' +
+    '\n' +
+    '1. Early Detection of Diseases\n' +
+    '\n' +
+    'One of the primary benefits of regular health check-ups is the early detection of diseases. Many serious health conditions, such as heart disease, diabetes, and cancer, often do not show symptoms in their early stages. Regular screenings and tests can help identify these conditions early, making them easier to treat and manage.\n' +
+    '\n' +
+    '2. Prevention is Better than Cure\n' +
+    '\n' +
+    'Regular check-ups are not just about detecting diseases but also about preventing them. During these visits, your doctor can provide valuable advice on lifestyle changes, diet, and exercise to prevent health issues. Vaccinations and immunizations are also an essential part of preventive care.\n' +
+    '\n' +
+    '3. Monitoring Existing Health Conditions\n' +
+    '\n' +
+    'For individuals with chronic health conditions like hypertension, diabetes, or asthma, regular check-ups are vital. These visits allow your doctor to monitor your condition, adjust treatment plans, and ensure that your health is stable. Continuous monitoring can prevent complications and improve your quality of life.\n' +
+    '\n' +
+    '4. Building a Relationship with Your Doctor\n' +
+    '\n' +
+    'Regular visits help build a strong doctor-patient relationship. When your doctor knows your medical history and personal health concerns, they can provide more personalized care. This relationship fosters trust and open communication, making it easier for you to discuss any health issues or concerns.\n' +
+    '\n' +
+    '5. Health Education and Guidance\n' +
+    '\n' +
+    'During check-ups, doctors provide education on various health topics, including nutrition, exercise, mental health, and stress management. This guidance is invaluable in helping you make informed decisions about your health and well-being.\n' +
+    '\n' +
+    '6. Mental Health Check\n' +
+    '\n' +
+    'Physical health is closely linked to mental health. Regular check-ups can help identify signs of mental health issues like depression, anxiety, and stress. Early intervention and appropriate treatment can significantly improve mental health outcomes.',
+  tags: [ 'checkups', 'mental health', 'medical', 'wellness' ],
+  image: 'https://res.cloudinary.com/dfn3xhl0a/image/upload/v1715882134/images/medical-banner-with-stethoscope_23-2149611199.avif'
+}" (type Object) at path "title", content: Path `content` is required. - /blog/post/create - POST - ::ffff:127.0.0.1
+2024-05-16 18:57:14 info: POST /blog/post/create [33m400 163.514 ms - 6090
+2024-05-16 18:58:16 info: POST /blog/post/create [32m201 386.004 ms - 13701
+2024-05-16 18:59:04 info: POST /blog/post/create [32m201 462.380 ms - 13701
+2024-05-16 19:05:16 info: POST /blog/post/create [32m201 411.332 ms - 13834
+2024-05-16 19:06:30 info: POST /blog/post/create [32m201 335.176 ms - 13995
+2024-05-16 19:10:32 info: POST /blog/post/create [32m201 406.320 ms - 14653
+2024-05-16 19:10:32 info: GET /blog/post/get-3-posts [32m200 203.855 ms - 9039
+2024-05-16 19:12:20 info: GET /blog/post/get-3-posts [32m200 214.638 ms - 3236
+2024-05-16 19:12:21 info: GET /blog/post/get-3-posts [32m200 178.599 ms - 5889
+2024-05-16 19:12:24 info: GET /blog/post/get-3-posts [32m200 228.790 ms - 5728
+2024-05-16 19:12:53 info: GET /blog/post/get-3-posts [32m200 460.337 ms - 6022
+2024-05-16 19:13:10 info: GET /blog/post/get-3-posts [32m200 179.672 ms - 5728
+2024-05-16 19:13:14 info: GET /blog/post/get-3-posts [32m200 150.773 ms - 5728
+2024-05-16 19:13:18 info: GET /blog/post/get-3-posts [32m200 146.296 ms - 5728
+2024-05-16 19:13:46 info: GET /blog/post/get-3-posts [32m200 180.584 ms - 3530
+2024-05-16 19:13:57 info: GET /blog/post/get-3-posts [32m200 157.531 ms - 3236
+2024-05-16 19:14:12 info: GET /blog/post/get-3-posts [32m200 155.790 ms - 5728
+2024-05-16 19:14:16 info: GET /blog/post/get-3-posts [32m200 155.201 ms - 6841
+2024-05-16 19:14:25 info: GET /blog/post/get-3-posts [32m200 156.157 ms - 6547
+2024-05-16 19:14:27 info: GET /blog/post/get-3-posts [32m200 141.655 ms - 3236
+2024-05-16 19:14:31 info: GET /blog/post/get-3-posts [32m200 191.642 ms - 5728
+2024-05-16 19:14:35 info: GET /blog/post/get-3-posts [32m200 151.952 ms - 3236
+2024-05-16 19:14:51 info: GET /blog/post/get-3-posts [32m200 169.553 ms - 5728
+2024-05-16 19:16:23 info: GET /blog/post/get-3-posts [32m200 167.159 ms - 5728
+2024-05-16 19:17:06 info: GET /blog/post/get-3-posts [32m200 169.758 ms - 4188
+2024-05-16 19:18:19 info: GET /blog/post/get-3-posts [32m200 148.010 ms - 9200
+2024-05-16 19:19:09 info: GET /blog/post/get-3-posts [32m200 145.089 ms - 5889
+2024-05-16 19:19:17 info: GET /blog/post/get-3-posts [32m200 153.174 ms - 5595
+2024-05-16 19:23:24 info: GET /blog/post/get-recent-posts [32m200 325.501 ms - 15511
+2024-05-16 19:23:46 info: GET /blog/post/get-3-posts [32m200 145.427 ms - 5728
+2024-05-16 19:23:50 info: GET /blog/post/get-3-posts [32m200 166.661 ms - 8087
+2024-05-16 19:24:00 info: GET /blog/post/get-3-posts [32m200 145.509 ms - 9039
+2024-05-16 19:24:01 info: GET /blog/post/get-3-posts [32m200 216.799 ms - 4188
+2024-05-16 19:24:13 info: GET /blog/post/get-3-posts [32m200 162.644 ms - 6022
+2024-05-16 19:24:23 info: GET /blog/post/get-recent-posts [32m200 483.045 ms - 15511
+2024-05-16 19:24:31 info: GET /blog/post/get-recent-posts [36m304 280.861 ms - -
+2024-05-16 19:26:09 info: GET /blog/post/get-recent-posts [32m200 2086.572 ms - 15903
+2024-05-16 19:26:23 info: GET /blog/post/get-recent-posts [32m200 417.762 ms - 15903
+2024-05-16 19:31:16 info: GET /blog/post/get-recent-posts [36m304 523.504 ms - -
+2024-05-16 19:41:00 info: GET /blog/post/get-recent-posts [32m200 429.876 ms - 15903
+2024-05-16 19:41:04 info: GET /blog/post/get-recent-posts [36m304 468.491 ms - -
+2024-05-16 19:45:05 info: GET /blog/post/get-recent-posts [36m304 492.468 ms - -
+2024-05-16 19:50:54 info: GET /blog/post/get-recent-posts [36m304 459.203 ms - -
+2024-05-16 19:51:22 info: GET /blog/post/get-recent-posts [36m304 486.634 ms - -
+2024-05-16 19:57:22 info: GET /blog/post/get-recent-posts [36m304 461.812 ms - -
+2024-05-16 20:00:48 info: GET /blog/post/get-recent-posts [36m304 430.193 ms - -
+2024-05-16 20:02:59 info: GET /blog/post/get-recent-posts [32m200 413.968 ms - 15903
+2024-05-16 20:05:41 info: GET /blog/post/get-recent-posts [36m304 418.215 ms - -

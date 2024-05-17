@@ -6,7 +6,6 @@
 
     border: 1px solid #e3e3e3;
     border-radius: 16px;
-    flex-grow: 1;
 
     cursor: pointer;
 }
@@ -29,17 +28,29 @@
 .post-post-desc {
     font-size: 0.9rem;
     min-width: 100%;
+
     max-width: 20rem;
+    max-height: 20rem;
 }
 
 .post-bottom {
     margin-top: 1rem;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 1.5rem;
 
     align-items: center;
+}
+
+.post-bottom img {
+    width: 20rem;
+    height: 20rem;
+    max-width: 20rem;
+    max-height: 20rem;
+    object-fit: cover;
+
+    outline: 1px solid #e3e3e3;
 }
 
 .post-tag {

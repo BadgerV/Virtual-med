@@ -40,6 +40,21 @@ export const getThreePosts = catchAsync(async (req, res) => {
   }
 });
 
+export const getRecentPosts = catchAsync(async (req, res) => {
+  try {
+    // Fetch the last 10 recent posts with populated author details
+    const posts = await Post.find().sort({ createdAt: -1 }).limit(10).populate({
+      path: "author",
+      select: "firstName lastName", // Specify the fields you want to include
+    });
+
+    res.send(posts);
+  } catch (error) {
+    console.error("Error fetching recent posts:", error);
+    throw new AppError("Failed to fetch recent posts");
+  }
+});
+
 export const getPostById = catchAsync(async (req, res) => {
   try {
     const { id } = req.params;
@@ -90,7 +105,6 @@ export const deletePostByid = catchAsync(async (req, res, next) => {
   }
 });
 
-
 export const getDoctorPost = catchAsync(async (req, res, next) => {
   const { doctorID } = req.params;
   const page = parseInt(req.query.page, 10) || 1; // Default to page 1
@@ -99,8 +113,8 @@ export const getDoctorPost = catchAsync(async (req, res, next) => {
 
   const posts = await Post.find({ author: doctorID })
     .populate({
-      path: 'author',
-      select: 'firstname lastName email' // Specify the fields you want to include
+      path: "author",
+      select: "firstname lastName email", // Specify the fields you want to include
     })
     .skip(skip)
     .limit(limit);
@@ -113,7 +127,7 @@ export const getDoctorPost = catchAsync(async (req, res, next) => {
   const totalPages = Math.ceil(totalPosts / limit);
 
   res.status(200).json({
-    status: 'success',
+    status: "success",
     results: posts.length,
     currentPage: page,
     totalPages,
