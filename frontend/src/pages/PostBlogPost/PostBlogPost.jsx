@@ -2,14 +2,18 @@ import { useEffect, useState } from "react";
 import "./postBlogPost.css";
 import axios from "axios";
 
-import { convertHashtagsToArray } from "../../services/utils";
+import {
+  convertHashtagsToArray,
+  isNonEmptyArrayOrNonWhitespaceString,
+  isStringAtLeastXLettersLong,
+} from "../../services/utils";
 import blogApiCalls from "../../services/apiCalls/blogApiCalls";
-import { Navigate } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 //import from react-toastify
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // Import CSS for styling
+import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner";
 
 const PostBlogPost = () => {
   const [formData, setFormData] = useState({
@@ -23,6 +27,31 @@ const PostBlogPost = () => {
 
   const [selectedfile, setSelectedFile] = useState(null);
   const [loading, setLoading] = useState(false);
+
+  const hasAllCredentials = () => {
+    if (
+      isNonEmptyArrayOrNonWhitespaceString(formData.title) ||
+      isNonEmptyArrayOrNonWhitespaceString(formData.content) ||
+      isNonEmptyArrayOrNonWhitespaceString(formData.tags) ||
+      isNonEmptyArrayOrNonWhitespaceString(formData.image)
+    ) {
+      toast.error("Please fill all the fields", {
+        position: "top-right", // Adjust position if needed
+      });
+
+      return false;
+    }
+
+    if (isStringAtLeastXLettersLong(formData.content, 200)) {
+      toast.error("Please fill all the fields", {
+        position: "top-right", // Adjust position if needed
+      });
+
+      return false;
+    }
+
+    return true;
+  };
 
   const handleFileInputChange = (event) => {
     setSelectedFile(event.target.files[0]);
@@ -65,6 +94,7 @@ const PostBlogPost = () => {
   }, [selectedfile]);
 
   const navigate = useNavigate();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -72,17 +102,21 @@ const PostBlogPost = () => {
 
     setFormData({ ...formData, tags: tagArray });
 
-    const result = await blogApiCalls.createPost(formData);
+    const canProceed = hasAllCredentials();
 
-    if (result.status == "201") {
-      toast.success("Article created successfully", {
-        position: "top-right", // Adjust position if needed
-      });
-      navigate("/blog");
-    } else {
-      toast.error("Failed to create new article", {
-        position: "top-right", // Adjust position if needed
-      });
+    if (canProceed) {
+      const result = await blogApiCalls.createPost(formData);
+
+      if (result.status == "201") {
+        toast.success("Article created successfully", {
+          position: "top-right", // Adjust position if needed
+        });
+        navigate("/blog");
+      } else {
+        toast.error("Failed to create new article", {
+          position: "top-right", // Adjust position if needed
+        });
+      }
     }
   };
 
@@ -125,12 +159,19 @@ const PostBlogPost = () => {
         </div>
         <div className="post-blog-post-label-and-input">
           <label htmlFor="content">Select an image</label>
-          <input
-            type="file"
-            placeholder="Upload an image"
-            onChange={handleFileInputChange}
-            name="file"
-          />
+
+          <div className="post-blog-post-input-container">
+            <input
+              type="file"
+              placeholder="Upload an image"
+              onChange={handleFileInputChange}
+              name="file"
+            />
+
+            <span>Upload an image</span>
+
+            <LoadingSpinner />
+          </div>
         </div>
 
         <button className="submit-button" onClick={(e) => handleSubmit(e)}>

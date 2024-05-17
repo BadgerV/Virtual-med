@@ -60,3 +60,27 @@
 
     margin-top: 2rem;
 }
+
+.post-blog-post-input-container {
+    outline: 1px solid red;
+    position: relative;
+
+}
+
+.post-blog-post-input-container input {
+    width: 100% !important;
+    opacity: 0;
+    padding: 0.7rem 1rem;
+
+}
+
+
+.post-blog-post-input-container span {
+    font-size: 0.9rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 1rem;
+    color: #e3e3e3;
+}

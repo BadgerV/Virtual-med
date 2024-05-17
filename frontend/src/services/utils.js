@@ -43,3 +43,18 @@ export function convertHashtagsToArray(hashtagsString) {
   // Split the string by comma and space, then map to remove the '#' symbol
   return hashtagsString.split(", ").map((tag) => tag.replace("#", ""));
 }
+
+export function isNonEmptyArrayOrNonWhitespaceString(input) {
+  if (Array.isArray(input)) {
+    return input.length > 0;
+  } else if (typeof input === 'string') {
+    return input.trim().length > 0;
+  }
+  return false; // If input is neither an array nor a string
+}
+export function isStringAtLeastXLettersLong(str, x) {
+  if (typeof str !== 'string') {
+    return false; // Ensure the input is a string
+  }
+  return str.length >= x;
+}
