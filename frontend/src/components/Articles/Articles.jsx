@@ -1,4 +1,4 @@
-import "./Articles.css";
+import "./articles.css";
 import { Link, useNavigate } from "react-router-dom";
 import Post from "../Post/Post";
 import { useEffect, useState } from "react";
