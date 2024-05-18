@@ -1,4 +1,4 @@
-import DoctorCard from "../../components/DoctorCard/DoctorCard";
+import DoctorCard from "../../components/DoctorCard/doctorCard";
 import "./findDoctor.css";
 import { getDoctors } from "../../redux/doctors/DoctorsSlice";
 import { useDispatch, useSelector } from "react-redux";
@@ -105,7 +105,7 @@ const FindDoctor = () => {
         <div className="find-doctor-right">
           {!isLoading ? (
             doctors.map((doctor, index) => {
-              return <DoctorCard key={index} {...doctor}/>;
+              return <DoctorCard key={index} {...doctor} />;
             })
           ) : (
             <LoadingComponennt />

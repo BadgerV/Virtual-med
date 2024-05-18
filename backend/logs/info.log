@@ -14202,3 +14202,25 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2024-05-17 18:23:49 error: 400 - Post validation failed: title: Path `title` is required., content: Path `content` is required. - /blog/post/create - POST - ::ffff:127.0.0.1
 2024-05-17 18:23:49 info: POST /blog/post/create [33m400 913.395 ms - 448
 2024-05-18 07:35:15 info: GET /blog/post/get-recent-posts [36m304 492.960 ms - -
+2024-05-18 17:34:32 info: GET /blog/post/get-recent-posts [36m304 754.825 ms - -
+2024-05-18 17:35:00 info: GET /blog/post/get-recent-posts [36m304 975.200 ms - -
+2024-05-18 17:44:44 info: GET /blog/post/get-recent-posts [32m200 532.479 ms - 15903
+2024-05-18 17:45:07 info: GET /blog/post/get-3-posts [32m200 735.360 ms - 4188
+2024-05-18 17:45:36 info: GET /blog/post/get-3-posts [32m200 227.473 ms - 5728
+2024-05-18 17:45:36 info: GET /blog/post/get-3-posts [32m200 218.189 ms - 8381
+2024-05-18 17:45:37 info: GET /blog/post/get-3-posts [32m200 267.512 ms - 6547
+2024-05-18 17:45:51 info: GET /blog/post/get-3-posts [32m200 169.164 ms - 3236
+2024-05-18 17:45:57 info: GET /blog/post/get-3-posts [32m200 262.183 ms - 6022
+2024-05-18 17:45:59 info: GET /blog/post/get-3-posts [32m200 213.468 ms - 5728
+2024-05-18 17:46:03 info: GET /blog/post/get-3-posts [32m200 158.952 ms - 3236
+2024-05-18 17:48:26 info: GET /blog/post/get-3-posts [32m200 187.427 ms - 3530
+2024-05-18 17:48:29 info: GET /blog/post/get-3-posts [32m200 187.148 ms - 6680
+2024-05-18 17:49:41 info: GET /blog/post/get-3-posts [32m200 176.927 ms - 5728
+2024-05-18 17:49:51 info: GET /blog/post/get-3-posts [32m200 162.298 ms - 3369
+2024-05-18 17:53:13 info: GET /blog/post/get-3-posts [32m200 230.080 ms - 6547
+2024-05-18 17:53:31 info: GET /blog/post/get-3-posts [32m200 183.357 ms - 3530
+2024-05-18 17:53:36 info: GET /blog/post/get-3-posts [32m200 190.858 ms - 3530
+2024-05-18 17:57:25 info: GET /blog/post/get-recent-posts [36m304 499.724 ms - -
+2024-05-18 17:58:19 info: GET /blog/post/get-3-posts [32m200 238.276 ms - 5889
+2024-05-18 18:09:15 info: GET /blog/post/get-3-posts [32m200 223.034 ms - 3236
+2024-05-18 18:13:07 info: GET /blog/post/get-3-posts [32m200 262.965 ms - 4188
