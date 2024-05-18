@@ -14199,3 +14199,6 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2024-05-16 20:00:48 info: GET /blog/post/get-recent-posts [36m304 430.193 ms - -
 2024-05-16 20:02:59 info: GET /blog/post/get-recent-posts [32m200 413.968 ms - 15903
 2024-05-16 20:05:41 info: GET /blog/post/get-recent-posts [36m304 418.215 ms - -
+2024-05-17 18:23:49 error: 400 - Post validation failed: title: Path `title` is required., content: Path `content` is required. - /blog/post/create - POST - ::ffff:127.0.0.1
+2024-05-17 18:23:49 info: POST /blog/post/create [33m400 913.395 ms - 448
+2024-05-18 07:35:15 info: GET /blog/post/get-recent-posts [36m304 492.960 ms - -

@@ -171,6 +171,10 @@ const Navbar = () => {
                 <Link to="/coming-soon" className="buttonModal-button">
                   My Profile
                 </Link>
+
+                <Link to="/post/create" className="buttonModal-button">
+                  Create post
+                </Link>
                 <Link
                   to="/get-available-dates"
                   className="buttonModal-button"

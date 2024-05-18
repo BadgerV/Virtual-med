@@ -163,14 +163,23 @@ const PostBlogPost = () => {
           <div className="post-blog-post-input-container">
             <input
               type="file"
+              accept="image/*"
               placeholder="Upload an image"
               onChange={handleFileInputChange}
               name="file"
             />
 
-            <span>Upload an image</span>
+            <span>
+              {formData.image === "" ? "Upload an image" : "Image uploaded"}
+            </span>
 
-            <LoadingSpinner />
+            {loading && (
+              <>
+                <div className="post-blog-post-loading-container">
+                  <LoadingSpinner />
+                </div>
+              </>
+            )}
           </div>
         </div>
 

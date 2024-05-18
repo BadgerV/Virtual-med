@@ -1,13 +1,13 @@
 import axios from "axios";
 
-const DEVELOPMENT = "http://localhost:8000";
-// const PROD = "https://virtual-med-backend.onrender.com";
+// const DEVELOPMENT = "http://localhost:8000";
+const PROD = "https://virtual-med-backend.onrender.com";
 
 const createPost = async ({ title, content, tags, image }) => {
   const token = localStorage.getItem("token");
 
   const response = await axios.post(
-    `${DEVELOPMENT}/blog/post/create`,
+    `${PROD}/blog/post/create`,
     {
       title,
       content,
@@ -24,20 +24,20 @@ const createPost = async ({ title, content, tags, image }) => {
 };
 
 const getThreePosts = async () => {
-  const response = await axios.get(`${DEVELOPMENT}/blog/post/get-3-posts`);
+  const response = await axios.get(`${PROD}/blog/post/get-3-posts`);
 
   return response.data;
 };
 
 const getPostById = async (id) => {
   const response = await axios.get(
-    `${DEVELOPMENT}/blog/post/et-post-by-id/${id}`
+    `${PROD}/blog/post/et-post-by-id/${id}`
   );
 
   return response.data;
 };
-const getRecentPosts = async (id) => {
-  const response = await axios.get(`${DEVELOPMENT}/blog/post/get-recent-posts`);
+const getRecentPosts = async () => {
+  const response = await axios.get(`${PROD}/blog/post/get-recent-posts`);
 
   return response.data;
 };
@@ -46,7 +46,7 @@ const deletePost = async (id) => {
   const token = localStorage.getItem("token");
 
   const response = await axios.delete(
-    `${DEVELOPMENT}/blog/post/delete-post/${id}`,
+    `${PROD}/blog/post/delete-post/${id}`,
     {
       headers: {
         Authorization: `Bearer ${token}`,
@@ -60,7 +60,7 @@ const deletePost = async (id) => {
 const getPostByDoctorId = async (doctorId, page = 1, limit = 10) => {
   try {
     const response = await axios.get(
-      `${DEVELOPMENT}/blog/get-doctor-post/${doctorId}`,
+      `${PROD}/blog/get-doctor-post/${doctorId}`,
       {
         params: {
           page,

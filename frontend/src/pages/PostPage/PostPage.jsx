@@ -4,11 +4,19 @@ import { useLocation } from "react-router-dom";
 import { formatDate } from "../../utils/helper";
 
 const PostPage = () => {
-  const doctorName = "Segunmaru Faozan";
+  const [heart, setHeart] = useState(7);
+  const [bangade, setBandage] = useState(3);
+
+  const likePost = () => {
+    setHeart(heart + 1);
+  };
+
+  const bandagePost = () => {
+    setBandage(bangade + 1);
+  };
 
   const location = useLocation();
   const postData = location.state;
-  console.log(postData.postData.postData);
 
   const [liked, setLiked] = useState(false);
   const [foundHelpful, setFoundHelpful] = useState(false);
@@ -39,23 +47,33 @@ const PostPage = () => {
             {postData.postData.postData.content}
           </span>
 
-          <img src={postData.postData.postData.image} className="post-page-image" alt="" />
+          <img
+            src={postData.postData.postData.image}
+            className="post-page-image"
+            alt=""
+          />
 
           <div className="post-page-reactions-container">
             <div
               className="post-page-reaction-and-number"
-              onClick={() => setLiked(!liked)}
+              onClick={() => {
+                setLiked(!liked);
+                likePost();
+              }}
             >
               <img
                 src={`/assets/heart-rate-${liked ? "full" : "empty"}-icon.svg`}
                 alt=""
               />
-              <span>14.5k</span>
+              <span>{heart}</span>
             </div>
 
             <div
               className="post-page-reaction-and-number"
-              onClick={() => setFoundHelpful(!foundHelpful)}
+              onClick={() => {
+                setFoundHelpful(!foundHelpful);
+                bandagePost();
+              }}
             >
               <img
                 src={`/assets/medical-cross-${
@@ -63,13 +81,13 @@ const PostPage = () => {
                 }-icon.svg`}
                 alt=""
               />
-              <span>14.5k</span>
+              <span>{bangade}</span>
             </div>
 
-            <div className="post-page-reaction-and-number">
+            {/* <div className="post-page-reaction-and-number">
               <img src="/assets/comment-icon.svg" alt="" />
               <span>14.5k</span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

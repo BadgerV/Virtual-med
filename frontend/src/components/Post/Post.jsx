@@ -29,7 +29,7 @@ const Post = ({ _id, title, content, image, tags, author, createdAt }) => {
         {author.lastName} {author.firstName}
       </span>
 
-      <span className="post-post-desc">{shortenText(content, 250)}</span>
+      <span className="post-post-desc">{shortenText(content, 300)}</span>
 
       <div className="post-bottom">
         <img src={image} alt="" />
