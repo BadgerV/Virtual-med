@@ -78,7 +78,7 @@ const App = () => {
 
   const [notificationID, setNotificationID] = useState("");
 
-  const socket = io("https://virtual-med-backend.onrender.com"); // Replace with the actual server URL
+  const socket = io(" http://localhost:8000"); // Replace with the actual server URL
   useEffect(() => {
     // Listen for appointment status changes
 

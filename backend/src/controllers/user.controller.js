@@ -52,7 +52,7 @@ export const registerUser = catchAsync(async (req, res) => {
   // console.log(newUser.verificationToken);
 
   // // Step 2: Generate the verification link and compose the email
-  // const verificationLink = `http://localhost:8000/user/verify?token=${newUser.verificationToken}`;
+  // const verificationLink = ` http://localhost:8000/user/verify?token=${newUser.verificationToken}`;
 
   // const mailOptions = {
   //   from: "your_email@gmail.com",

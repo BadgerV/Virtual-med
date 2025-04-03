@@ -12,6 +12,7 @@ import Chat from "../models/ChatModel.js";
 import Notification from "../models/NotificationSchema.js";
 import moment from "moment";
 import { io } from "../server.js";
+import axios from "axios"
 
 export const fetchAppointments = catchAsync(async (req, res) => {
   const isUser = req.user ? true : false;
@@ -265,7 +266,6 @@ const payStack = {
         // callback_url: "https://medconnig.netlify.app/verify",
         callback_url: "https://medconnig.netlify.app/verify",
       });
-      // options
 
       const options = {
         hostname: "api.paystack.co",
@@ -285,7 +285,6 @@ const payStack = {
             data += chunk;
           });
           apiRes.on("end", () => {
-            // res.redirect(JSON.parse(data).data?.authorization_url);
             return res.status(200).json(JSON.parse(data));
           });
         })
@@ -300,55 +299,37 @@ const payStack = {
       res.status(500).json({ error: "An error occurred" });
     }
   },
-  verifyPayment: (req, res, paymentReference) => {
-    return new Promise((resolve, reject) => {
+  verifyPayment: async (req, res, paymentReference) => {
+    return new Promise(async (resolve, reject) => {
       try {
-        const verificationOptions = {
-          hostname: "api.paystack.co",
-          port: 443,
-          path: `/transaction/verify/${paymentReference}`,
-          method: "GET",
-          headers: {
-            Authorization: `Bearer ${ENVIRONMENT.APP.PAYSTACK}`,
-            "Content-Type": "application/json",
-          },
-        };
-
-        const verificationReq = https.request(verificationOptions, (apiRes) => {
-          let data = "";
-
-          apiRes.on("data", (chunk) => {
-            data += chunk;
+        const response = await axios.get(
+          `https://api.paystack.co/transaction/verify/${paymentReference}`,
+          {
+            headers: {
+              Authorization: `Bearer ${process.env.PAYSTACK_TEST_SECRET_KEY}`,
+              "Content-Type": "application/json",
+            },
+          }
+        );
+  
+        const responseData = response.data;
+  
+        // Check the status of the verification response
+        if (
+          responseData.data?.status === "success" &&
+          responseData.data?.paid_at !== null
+        ) {
+          // Payment verification successful
+          resolve({
+            message: "Payment verification successful",
+            data: responseData.data,
           });
 
-          apiRes.on("end", () => {
-            const responseData = JSON.parse(data);
-
-            // Check the status of the verification response
-            if (
-              responseData.data?.status == "success" &&
-              responseData.data?.paid_at !== null
-            ) {
-              // Payment verification successful
-              resolve({
-                message: "Payment verification successful",
-                data: responseData.data,
-              });
-            } else {
-              // Payment verification failed
-              resolve(undefined);
-            }
-          });
-        });
-
-        verificationReq.on("error", (error) => {
-          console.error(error);
-          reject({
-            error: "An error occurred during payment verification",
-          });
-        });
-
-        verificationReq.end();
+          console.log("Payment went successfully")
+        } else {
+          // Payment verification failed
+          resolve(undefined);
+        }
       } catch (error) {
         console.error(error);
         reject({
@@ -356,53 +337,85 @@ const payStack = {
         });
       }
     });
-  },
+  }
+  
 };
 
 export const makeAppointment = catchAsync(async (req, res) => {
-  const isUser = req.user ? true : false;
-  // console.log(req.user)
-
-  if (!isUser) {
+  if (!req.user) {
     throw new AppError("You are a staff, you cannot make an appointment", 400);
   }
 
   const { doctorId, appointmentTime, duration, notes } = req.body;
+  if (!doctorId || !appointmentTime || !notes || !duration) {
+    throw new AppError("Please fill out all the fields", 400);
+  }
 
-  const foundDoctor = await Staff.findOne({ _id: doctorId });
+  const foundDoctor = await Staff.findById(doctorId);
+  if (!foundDoctor) {
+    throw new AppError("Doctor not found", 404);
+  }
 
   const totalCost = calculateTotalCost(foundDoctor.hourlyPrice, duration);
-
-  if (!doctorId || !appointmentTime || !notes || !duration) {
-    throw new AppError("Please fill out all the fields");
-  }
   const realAppointmentTime = new Date(appointmentTime);
-  // console.log(realAppointmentTime);
 
   const availability = await checkAvailability(
     doctorId,
     realAppointmentTime,
     duration
   );
-
   if (!availability) {
     throw new AppError("Appointment time is not available", 400);
   }
 
   const paymentReference = uuidv4();
 
-  payStack.acceptPayment(req, res, paymentReference, totalCost, req.user.email);
+  // Process payment with Paystack API
+  try {
+    const paymentResponse = await axios.post(
+      "https://api.paystack.co/transaction/initialize",
+      {
+        amount: totalCost * 100, // Paystack requires amount in kobo (smallest currency unit)
+        email: req.user.email,
+        callback_url: `http://localhost:5173/verify`,
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${process.env.PAYSTACK_TEST_SECRET_KEY}`,
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
-  const appointment = new Appointment({
-    doctorId,
-    patientId: req.user._id,
-    appointmentTime: realAppointmentTime,
-    duration,
-    notes,
-    paystackRef: paymentReference,
-  });
+    console.log(paymentResponse);
 
-  await appointment.save();
+    if (!paymentResponse.data.status) {
+      throw new AppError("Payment initiation failed", 400);
+    }
+
+    const appointment = new Appointment({
+      doctorId,
+      patientId: req.user._id,
+      appointmentTime: realAppointmentTime,
+      duration,
+      notes,
+      paystackRef: paymentResponse.data.data.reference,
+    });
+
+    await appointment.save();
+
+    res.status(201).json({
+      status: "success",
+      message: "Appointment created successfully. Proceed to payment.",
+      data: {
+        appointment,
+        paymentUrl: paymentResponse.data.data.authorization_url,
+      },
+    });
+  } catch (error) {
+    console.log(error)
+    throw new AppError("Failed to connect to Paystack API", 500);
+  }
 });
 
 export const confirmAppointment = catchAsync(async (req, res) => {
@@ -416,9 +429,9 @@ export const confirmAppointment = catchAsync(async (req, res) => {
   const verification = await payStack.verifyPayment(req, res, paystackRef);
 
   if (!verification) {
-    throw new AppError("Payment verification failed", 400);
+    throw new AppError("Payment  verification failed", 400);
   }
-
+  
   const foundAppointment = await Appointment.findOne({
     $and: [{ paystackRef }, { status: "confirmed" }],
   });

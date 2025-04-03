@@ -5,7 +5,7 @@ import axios from "axios";
 // import axios from "axios";
 
 const DEVELOPMENT = "http://localhost:8000";
-const PROD = "https://virtual-med-backend.onrender.com";
+const PROD = "http://localhost:8000";
 
 // var socket, selectedChatCompared;
 
@@ -123,6 +123,7 @@ export const sendMessage = createAsyncThunk(
   "/chat/message/sendMessage",
   async ({ chatId, content }) => {
     const token = localStorage.getItem("token");
+    console.log(token)
 
     try {
       const response = await axios.post(
@@ -154,7 +155,7 @@ export const getAllMessages = createAsyncThunk(
         },
       });
 
-      // console.log(response);
+      console.log(response);
 
       return response.data;
     } catch (error) {
@@ -181,7 +182,7 @@ const chatSlice = createSlice({
         state.error = action.payload;
       })
       .addCase(sendMessage.pending, (state) => {
-        state.loading = true;
+        // state.loading = true;
       })
       .addCase(sendMessage.fulfilled, (state, action) => {
         state.loading = false;

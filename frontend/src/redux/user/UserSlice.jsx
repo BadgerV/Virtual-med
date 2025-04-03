@@ -1,8 +1,8 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const DEVELOPMENT = "https://virtual-med-backend.onrender.com";
-// const PROD = "http://localhost:8000";
+const DEVELOPMENT = " http://localhost:8000";
+// const PROD = " http://localhost:8000";
 
 const initialState = {
   user: null,
@@ -300,8 +300,8 @@ export const makeAppointment = createAsyncThunk(
       );
       console.log(response);
 
-      console.log(response.data.data.authorization_url);
-      return response.data.data.authorization_url;
+      console.log(response.data.data.paymentUrl);
+      return response.data.data.paymentUrl;
     } catch (error) {
       console.log(error);
       return thunkAPI.rejectWithValue(error.response.data);

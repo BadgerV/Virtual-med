@@ -2,11 +2,14 @@ import "./verifyPage.css";
 import { useDispatch, useSelector } from "react-redux";
 import LoadingComponent from "../../components/LoadingComponent/LoadingComponent";
 import { formatDateAndTime } from "../../utils/helper";
+import { useNavigate, useSearchParams } from "react-router-dom";
+
 
 const VerifyPage = () => {
+  const [searchParams] = useSearchParams();
   useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.href);
-    const reference = urlParams.get("reference");
+    const reference = searchParams.get("reference");
+
     dispatch(confirmAppointment(reference));
   }, []);
 

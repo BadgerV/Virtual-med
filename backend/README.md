@@ -56,4 +56,4 @@ Once you've configured your environment variables, you can start your project:
 npm run dev
 ```
 
-Your backend server should now be running at http://localhost:<specified-port>.
+Your backend server should now be running at  http://localhost:<specified-port>.

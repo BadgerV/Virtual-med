@@ -64,5 +64,7 @@ export const allMessages = catchAsync(async (req, res) => {
     select: "email firstName lastName nickName passportImage",
   });
 
+  console.log("this is what isb being called", messages);
+
   res.status(200).send(messages);
 });

@@ -18,7 +18,13 @@ import http from "http";
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "*",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true, // Allow cookies/auth headers
+  })
+);
 
 const server = http.createServer(app); 
 
@@ -29,9 +35,6 @@ export const io = new SocketIOServer(server, {
   },
 });
 
-// io.on("connection", (socket) => {
-//   console.log("a reply detected!");
-// });
 io.on("connection", (socket) => {
   socket.on("setup", (chatID) => {
     socket.join(chatID);
@@ -108,7 +111,7 @@ app.use(handleError);
 /**
  * Bootstrap server
  */
-server.listen(port, () => {
+server.listen(port, "0.0.0.0", () => {
   console.log("=> " + appName + "app listening on port " + port + "!");
   connectDb();
 });

@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// const DEVELOPMENT = "http://localhost:8000";
-const PROD = "https://virtual-med-backend.onrender.com";
+// const DEVELOPMENT = " http://localhost:8000";
+const PROD = "http://localhost:8000";
 
 const createPost = async ({ title, content, tags, image }) => {
   const token = localStorage.getItem("token");

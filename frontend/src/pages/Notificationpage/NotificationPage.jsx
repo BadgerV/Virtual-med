@@ -25,7 +25,7 @@ const NotificationPage = () => {
     }
   }, [notificationID]);
 
-  // const socket = io("http://localhost:8000"); // Replace with the actual server URL
+  // const socket = io(" http://localhost:8000"); // Replace with the actual server URL
 
   // useEffect(() => {
   //   // Listen for appointment status changes

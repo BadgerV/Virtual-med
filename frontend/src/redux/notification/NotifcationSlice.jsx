@@ -1,8 +1,8 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const DEVELOPMENT = "http://localhost:8000";
-const PROD = "https://virtual-med-backend.onrender.com";
+const DEVELOPMENT = " http://localhost:8000";
+const PROD = " http://localhost:8000";
 
 
 const initialState = {
