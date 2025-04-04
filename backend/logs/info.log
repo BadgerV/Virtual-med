@@ -14818,3 +14818,6 @@ Use mongoose.model(name, schema) - /chat/accessChat - POST - ::1
 2025-04-03 20:19:31 info: POST /message/sendMessage [32m200 732.846 ms - 633
 2025-04-03 20:19:34 info: POST /message/sendMessage [32m200 749.879 ms - 624
 2025-04-03 20:19:35 info: POST /message/sendMessage [32m200 728.199 ms - 619
+2025-04-03 22:36:19 info: POST /auth/regster [33m404 6.526 ms - 152
+2025-04-03 22:36:28 info: POST /auth/register [31m500 6.880 ms - 40
+2025-04-03 22:37:57 info: POST /auth/register [32m201 16522.957 ms - 839

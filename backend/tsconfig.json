@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "allowJs": true, // Allows JavaScript files in the project
+    "checkJs": false, // (Optional) If true, TypeScript will type-check JS files
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "module": "CommonJS",
+    "target": "ES6",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}

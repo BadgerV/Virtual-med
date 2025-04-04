@@ -18,6 +18,9 @@ import { auth } from "../common/middleware/auth.js";
 import NotificationRouter from "./notificationRoute.js";
 import blogRoute from "./blog.route.js";
 
+//new routes imports
+import authRoute from "./authRoute.ts";
+
 export const setRoutes = () => {
   router.use("/user", userRoutes());
   router.use("/staff", staffRoutes());
@@ -27,5 +30,8 @@ export const setRoutes = () => {
   router.use("/admin", auth, isAdmin, adminRoute());
   router.use("/notification", isUserOrStaff, NotificationRouter());
   router.use("/blog", blogRoute);
+
+  //new routes
+  router.use("/auth", authRoute);
   return router;
 };

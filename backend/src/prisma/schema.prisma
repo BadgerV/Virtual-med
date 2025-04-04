@@ -1,0 +1,81 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                 String   @id @default(uuid())
+  firstName          String
+  lastName           String
+  email              String   @unique
+  password           String
+  phoneNumber        String?
+  accountType        UserType @default(USER)
+  isPremium          Boolean  @default(false)
+  isAdmin            Boolean  @default(false)
+  isVerified         Boolean  @default(false)
+  verificationToken  String   @default("Nothing yet")
+
+  // Staff-specific fields
+  medicalLicense       String?
+  boardCertification   String?
+  speciality           String?
+  passportImage        String?
+  location             String?
+  isActive             Boolean  @default(true)
+  hourlyPrice          Float?
+  proofOfIdentity      String?
+  dateOfBirth          DateTime?
+  professionalMembership String?
+  major                String?
+  degree               String?
+  university           String?
+  graduationDate       DateTime?
+  rating              Float?
+  noOfRatings         Int?
+  CV                  String?
+  degreeCertificate   String?
+  POMI                String?
+  aboutMe             String?
+
+  // Relationships
+//  assignedDoctors     User[]    @relation("AssignedDoctors")
+  //currentPatients     User[]    @relation("CurrentPatients")
+  //allPatients         User[]    @relation("AllPatients")
+  //pendingPatients     User[]    @relation("PendingPatients")
+  availability        Availability[]
+
+  createdAt          DateTime   @default(now())
+  updatedAt          DateTime   @updatedAt
+}
+
+model Availability {
+  id        String  @id @default(uuid())
+  userId    String
+  user      User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  startTime String
+  endTime   String
+}
+
+
+model PremiumSubscribers {
+  id  String  @id @default(uuid())
+  ids String[]
+}
+
+
+enum UserType {
+  USER
+  STAFF
+}
+
